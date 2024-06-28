@@ -89,10 +89,6 @@ western_kentucky_area = {
 	#Unused area in North America
 }
 
-eastern_maine_area = {
-	#Unused area in Canada
-}
-
 minnessota_area = {
 	#Unused area in North America
 }
@@ -2655,9 +2651,9 @@ new_york_area = {
 	7309 
 }
 great_woods_area = {
-	969 2563 2564 4871 4873 
-	7307  7317 7308 2562
-	7316 2013 970
+	969 2563 2564 4871  
+	7307   7308 2562
+	  970
 }
 massachusetts_bay_area = {
 	968 966 4874 2561 7305 7306
@@ -2667,12 +2663,12 @@ connecticut_valley_area = {
 	7302 7303 7304     
 	 
 }
-hudson_valley_area = {
-	 
+eastern_maine_area = {
+	7316 7317 2013 4873
 }
 delaware_valley_area = {
-	 957  2023 
-	7318 7321 956
+	955 2023 
+	7323 7321 956
 }
 iroquoisia_area = {
 	960 961 964 2559 4912 
@@ -2686,8 +2682,8 @@ new_jersey_area = {
 	7319 7320 2639 962
 }
 susquehanna_area = {
-	955  2556 2557 4876 
-	7322 7323 7324 7326
+	  2556 2557 4876 
+	7322 7324 7326
 	 
 }
 westsylvania_area = {
@@ -2741,10 +2737,15 @@ grand_river_area = { # BT
 # Southeast America
 ###
 chesapeake_area = {
-	950 952 953 2550 2554 4877 
+	950 952 953 2550  4877 
+	 7330 7331   
+}
+delmarva_area = {
+	7329 7333 2554 7318 957
 }
 great_valley_area = {
 	949 2011 2549 2552 2553 4878 
+	7332
 }
 piedmont_north_america_area = {
 	933 937 2541 2544 2545 4882 
@@ -4122,7 +4123,7 @@ unused_area = {
 	7247 
 	7260 7261 7265 
 	#7300s - Reserved by APE
-	 7328 7329 7330 7331 7332 7333 7334 7335 7336 7337 7338 7339 7340 7341 7342 7343 7344 7345 7346 7347 7348 7349 
+	7334 7335 7336 7337 7338 7339 7340 7341 7342 7343 7344 7345 7346 7347 7348 7349 
 	7350 7351 7352 7353 7354 7355 7356 7357 7358 7359 7360 7361 7362 7363 7364 7365 7366 7367 7368 7369 7370 7371 7372 7373 7374 
 	7375 7376 7377 7378 7379 7380 7381 7382 7383 7384 7385 7386 7387 7388 7389 7390 7391 7392 7393 7394 7395 7396 7397 7398 7399 
 	#7400s - Reserved by APE

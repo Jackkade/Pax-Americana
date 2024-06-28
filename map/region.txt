@@ -1129,6 +1129,7 @@ northeast_america_region = { # 8 areas
 		delaware_valley_area
 		iroquoisia_area
 		susquehanna_area
+		eastern_maine_area
 	}
 }
 canada_region = { # 13 areas
@@ -1159,6 +1160,7 @@ southeast_america_region =  { # 9 areas
 		upper_american_georgia_area
 		florida_area
 		north_florida_area
+		delmarva_area
 	}
 	monsoon = {
 		00.06.01
@@ -1779,7 +1781,6 @@ unused_region = {
 		volga_area #Unused in Ural
 		kansas_area #Unused in North America
 		western_kentucky_area #Unused in North America
-		eastern_maine_area #Unused in Canada
 		minnessota_area #Unused in North America
 		south_carolina_piedmont_area #Unused in North America
 		ostra_svealand_area #Unused in Scandinavia
