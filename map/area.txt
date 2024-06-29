@@ -2667,16 +2667,13 @@ eastern_maine_area = {
 	7316 7317 2013 4873
 }
 delaware_valley_area = {
-	955 2023 7322
+	955 2023 7322 
 	7323 7321 956
 }
 iroquoisia_area = {
 	960 961 964 2559 4912 
 	958 959 4872  
 	7313 7314 7315 7310 7311 7312
-}
-south_iroquoisia_area = {
-	
 }
 new_jersey_area = {
 	7319 7320 2639 962
@@ -4212,3 +4209,5 @@ indonesian_islands_area = {  }
 #iceland_area = { }
 
 south_laos_area = { }
+
+south_iroquoisia_area = { }
