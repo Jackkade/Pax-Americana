@@ -12,4 +12,7 @@ tags={
 	"National Ideas"
 }
 name="-BT Addon: Pax Americana"
+dependencies={
+	"Beyond Typus"
+}
 supported_version="v1.37.2.0"
