@@ -366,6 +366,8 @@ categories = {
 		local_build_cost = 0.5 # BT; Most expensive terrain to build on. Arctic should stay low dev and weak
 		terrain_override = {
 			998 1072 1104 1105 1805 1811 1812 2025 2074 2128 2129 2425 2574 3111 3112 3113 3285 4969 4970 4971 4976 4990 4991 4992 4993 4994 4995 4996 4997 4998 5006 5007 5067 5069 5070 5071 5072 5073 5074 5075 5076 5093 5588 5589 5590 5591 5595 5596 5678 8011 8012 8545
+			# Pax Americana Provinces
+			6495
 		}
 	}
 	impassable_mountains = {
