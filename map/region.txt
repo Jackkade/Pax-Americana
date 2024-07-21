@@ -1163,6 +1163,7 @@ southeast_america_region =  { # 9 areas
 		florida_area
 		north_florida_area
 		appalachia_area
+		south_appalachia_area
 	}
 	monsoon = {
 		00.06.01
@@ -1172,7 +1173,7 @@ southeast_america_region =  { # 9 areas
 mississippi_region = { # 11 areas
 	areas = {
 		
-		south_appalachia_area
+		
 		west_florida_area
 		mississippi_area
 		choctaw_area
