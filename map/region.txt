@@ -1150,6 +1150,7 @@ canada_region = { # 13 areas
 		upper_ontario_area
 		huronia_area
 		grand_river_area
+		estrie_area
 	}
 }
 southeast_america_region =  { # 9 areas
