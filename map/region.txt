@@ -1130,6 +1130,8 @@ northeast_america_region = { # 8 areas
 		iroquoisia_area
 		susquehanna_area
 		eastern_maine_area
+		great_valley_area 
+		delmarva_area
 	}
 }
 canada_region = { # 13 areas
@@ -1152,7 +1154,6 @@ canada_region = { # 13 areas
 southeast_america_region =  { # 9 areas
 	areas = {
 		chesapeake_area
-		great_valley_area
 		piedmont_north_america_area
 		carolinas_area
 		south_carolina_area
@@ -1160,7 +1161,6 @@ southeast_america_region =  { # 9 areas
 		upper_american_georgia_area
 		florida_area
 		north_florida_area
-		delmarva_area
 		appalachia_area
 	}
 	monsoon = {
