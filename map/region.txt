@@ -1128,6 +1128,7 @@ northeast_america_region = { # 8 areas
 		hudson_valley_area
 		delaware_valley_area
 		iroquoisia_area
+		south_iroquoisia_area
 		susquehanna_area
 		eastern_maine_area
 		great_valley_area 
@@ -1789,6 +1790,6 @@ unused_region = {
 		southern_illinois_area #Unused in North America
 		iowa_area #Unused in North America
 		ottawa_valley_area #Unused in North America
-		south_iroquoisia_area
+		
 	}
 }
