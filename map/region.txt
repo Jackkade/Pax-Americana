@@ -1122,7 +1122,6 @@ northeast_america_region = { # 8 areas
 		great_woods_area
 		new_york_area
 		new_jersey_area
-		westsylvania_area
 		massachusetts_bay_area
 		connecticut_valley_area
 		hudson_valley_area
@@ -1173,17 +1172,15 @@ southeast_america_region =  { # 9 areas
 }
 mississippi_region = { # 11 areas
 	areas = {
-		
-		
 		west_florida_area
 		mississippi_area
 		choctaw_area
 		alabama_area
-		kentucky_area
 		mississippi_plain_area
 		lower_louisiana_area
 		upper_louisiana_area
 		ozarks_area
+		southern_illinois_area
 	}
 	monsoon = {
 		00.06.01
@@ -1199,6 +1196,9 @@ great_lakes_region = { # 7 areas
 		lake_superior_area 
 		wisconsin_area
 		dakota_area
+		erie_area
+		kentucky_area
+		westsylvania_area
 	}
 }
 rio_grande_region = { # 10 areas
@@ -1791,7 +1791,6 @@ unused_region = {
 		south_carolina_piedmont_area #Unused in North America
 		ostra_svealand_area #Unused in Scandinavia
 		algiers_area #Unused in Maghreb
-		southern_illinois_area #Unused in North America
 		iowa_area #Unused in North America
 		ottawa_valley_area #Unused in North America
 		
