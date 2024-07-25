@@ -1176,11 +1176,13 @@ mississippi_region = { # 11 areas
 		mississippi_area
 		choctaw_area
 		alabama_area
-		mississippi_plain_area
 		lower_louisiana_area
 		upper_louisiana_area
 		ozarks_area
-		southern_illinois_area
+		right_bank_delta_area
+		left_bank_delta_area
+		ouachita_area
+		atchafalaya_area
 	}
 	monsoon = {
 		00.06.01
@@ -1195,10 +1197,11 @@ great_lakes_region = { # 7 areas
 		michigan_area
 		lake_superior_area 
 		wisconsin_area
-		dakota_area
 		erie_area
 		kentucky_area
 		westsylvania_area
+		mississippi_plain_area
+		southern_illinois_area
 	}
 }
 rio_grande_region = { # 10 areas
@@ -1229,8 +1232,10 @@ great_plains_region = { # 10 areas
 		southern_rockies  
 		yellowstone_area
 		lakota_area
+		dakota_area
 		west_dakota_area
 		upper_platte_area
+		iowa_area
 	}
 }
 cascadia_region = { # 23 areas
@@ -1791,7 +1796,6 @@ unused_region = {
 		south_carolina_piedmont_area #Unused in North America
 		ostra_svealand_area #Unused in Scandinavia
 		algiers_area #Unused in Maghreb
-		iowa_area #Unused in North America
 		ottawa_valley_area #Unused in North America
 		
 	}
