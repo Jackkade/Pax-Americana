@@ -25,6 +25,12 @@
  PROV_ADJ7305:0 "Noscusset"
  PROV7306:0 "Wamesit"
  PROV_ADJ7306:0 "Wamesit"
+ PROV7307:0 "Pemigewasett"
+ PROV_ADJ7307:0 "Pemigewasett"
+ PROV7308:0 "Sokoki"
+ PROV_ADJ7308:0 "Sokoki"
+ PROV7309:0 "Chepontuc"
+ PROV_ADJ7309:0 "Chepontuc"
 
  #Canada
  PROV6436:0 "Mossquawaunk"
