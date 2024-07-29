@@ -1,4 +1,31 @@
 ﻿l_english:
+ #US
+ #Tradenodes
+ massachusets_bay_trade:0 "Massachusets Bay"
+ missouri_river_trade:0 "Missouri River"
+ ohio_river_trade:0 "Ohio River"
+ #Areas
+ erie_area:0 "Erie"
+ atchafalaya_area:0 "Atchafalaya"
+ ouachita_area:0 "Ouachita"
+ right_bank_delta_area:0 "Right Bank Delta"
+ left_bank_delta_area:0 "Left Bank Delta"
+ #Provinces
+ PROV7300:0 "Montaukett"
+ PROV_ADJ7300:0 "Montaukett"
+ PROV7301:0 "Wappinger"
+ PROV_ADJ7301:0 "Wappinger"
+ PROV7302:0 "Podunck"
+ PROV_ADJ7302:0 "Podunck"
+ PROV7303:0 "Wabbaqaussett"
+ PROV_ADJ7303:0 "Wabbaqaussett"
+ PROV7304:0 "Nashaway"
+ PROV_ADJ7304:0 "Nashaway"
+ PROV7305:0 "Noscusset"
+ PROV_ADJ7305:0 "Noscusset"
+ PROV7306:0 "Wamesit"
+ PROV_ADJ7306:0 "Wamesit"
+
  #Canada
  PROV6436:0 "Mossquawaunk"
  PROV_ADJ6436:0 "Mossquawaunk"
