@@ -1,0 +1,31 @@
+# No previous file for Pax Americana province
+
+owner = CAY
+controller = CAY
+culture = iroquois
+religion = totemism
+capital = "Kanadasega"
+trade_goods = fur
+hre = no
+base_tax = 2  
+base_production = 2
+base_manpower = 1 
+is_city = yes
+add_core = CAY
+native_size = 25
+native_ferocity = 7
+native_hostileness = 2
+
+
+
+discovered_by = north_american
+
+1444.11.15 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = CAY
+	controller = CAY
+}
