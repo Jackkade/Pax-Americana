@@ -4,6 +4,17 @@
  massachusets_bay_trade:0 "Massachusets Bay"
  missouri_river_trade:0 "Missouri River"
  ohio_river_trade:0 "Ohio River"
+ #Trade Companies
+ trade_company_massachusets_bay_trade:0 "Massachusets Charter"
+ trade_company_chesapeake_bay_trade:0 "Chesapeake Charter"
+ trade_company_carribean_trade:0 "Caribbean Charter"
+ trade_company_mississippi_river_trade:0 "Mississippi Charter"
+ trade_company_ohio_river_trade:0 "Ohio Charter"
+ trade_company_great_lakes_trade:0 "Great Lakes Charter"
+ trade_company_st_lawrence_trade:0 "St Lawrence Charter"
+ trade_company_missouri_river_trade:0 "Missouri Charter"
+ trade_company_hudson_bay_trade:0 "Hudson Bay Charter"
+ 
  #Areas
  erie_area:0 "Erie"
  atchafalaya_area:0 "Atchafalaya"
