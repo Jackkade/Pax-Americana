@@ -686,7 +686,7 @@ colonial_acadia = {
 }
 
 #BT's Florida reannexed to Eastern US CR for now.
-Florida
+#Florida
 colonial_florida = {
 	color = { 78 202 78 }			#base caribbean colour
 
