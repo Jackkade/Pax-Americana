@@ -8,7 +8,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7767;1983;sea;5494;-1;-1;-1;-1;Sjaelland-Lolland
 123;124;sea;1307;-1;-1;-1;-1;Calabria-Messina
 151;316;sea;1320;-1;-1;-1;-1;Thrace-Bithynia
-911;945;sea;1662;-1;-1;-1;-1;Menominee-Michigan
+7428;945;sea;1662;-1;-1;-1;-1;Menominee-Michigan
 1;1930;sea;1928;-1;-1;-1;-1;Stockholm-�land
 1930;27;sea;1928;-1;-1;-1;-1;�land-Finland
 4110;369;sea;1299;-1;-1;-1;-1;Sutherland-Orkney
@@ -23,7 +23,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 35;3227;sea;1256;-1;-1;-1;-1;�sel-Piltene
 597;620;sea;1361;-1;-1;-1;-1;Johor-Siak
 5048;982;sea;1491;-1;-1;-1;-1;Esgigeoag-Unamakik
-4891;983;sea;1491;-1;-1;-1;-1;Segepenegatig-Epekwitk
+4891;6454;sea;1491;-1;-1;-1;-1;Segepenegatig-Epekwitk
 1050;4658;sea;1379;-1;-1;-1;-1;Deren-Nanghaer
 8888;387;sea;1330;-1;-1;-1;-1;Obock-Mocha
 54;3136;sea;1268;-1;-1;-1;-1;Stade-Dithmarschen
@@ -73,8 +73,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4934;4935;sea;1697;-1;-1;-1;-1;Maui-Oahu
 4935;4936;sea;1697;-1;-1;-1;-1;Oahu-Kauai
 1001;5039;sea;1661;-1;-1;-1;-1;Soto-Manidoowaaling
-911;1001;sea;1663;-1;-1;-1;-1;Menominee-Sault
-911;5039;sea;1661;-1;-1;-1;-1;Belem-Manidoowaaling
+7428;1001;sea;1663;-1;-1;-1;-1;Menominee-Sault
+7428;5039;sea;1661;-1;-1;-1;-1;Belem-Manidoowaaling
 4973;5039;sea;1661;-1;-1;-1;-1;Waanabidebiing-Manidoowaaling
 2576;2578;sea;1490;-1;-1;-1;-1;Mingan-Anticosti
 985;983;sea;1491;-1;-1;-1;-1;Mikmaq-Epekwitk
@@ -206,4 +206,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2730;6219;sea;1410;-1;-1;-1;-1;TorresStraitIslands
 1230;8892;sea;4333;-1;-1;-1;-1;Massawa-Dahlak
 5298;8892;sea;4333;-1;-1;-1;-1;Zula-Dahlak
+7430;911;sea;1662;-1;-1;-1;-1;Manitowoc-Menominee
+965;2639;sea;1500;-1;-1;-1;-1;Manhattan-Raritan
+7300;2560;sea;1500;-1;-1;-1;-1;Montaukett-Quinipac
+7300;2010;sea;1500;-1;-1;-1;-1;Montaukett-Peqout
+7318;7319;sea;1500;-1;-1;-1;-1;Siconese-Unalachitgo
+957;962;sea;1500;-1;-1;-1;-1;Delaware-Unami
+7331;7329;sea;1501;-1;-1;-1;-1;Yacocomico-Wicomico
+7331;2554;sea;1501;-1;-1;-1;-1;Yacocomico-Nanticoke
+7331;2550;sea;1501;-1;-1;-1;-1;Yacocomico-Rappihanok
+953;2550;sea;1501;-1;-1;-1;-1;Rappihanok-Conoy
+7333;7334;sea;1501;-1;-1;-1;-1;Accohanoc-Chesapeake
 -1;-1;;-1;-1;-1;-1;-1;-1;
