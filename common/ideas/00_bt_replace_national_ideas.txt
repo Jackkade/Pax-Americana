@@ -1,0 +1,51 @@
+#United States
+new_USA_ideas = {
+	start = {
+		reelection_cost = -0.15 				#Historically stable transitions of power
+		culture_conversion_cost = -0.2			#US was historically really good at assimilating people. the so called 'melting pot'
+	}
+	
+	bonus = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 1 #Buffed Because US is formed on republican ideals
+		meritocracy = 1
+		horde_unity = 1 # How would you even get this
+	}
+	
+	trigger = {
+		tag = USA
+	}
+	free = yes
+	
+	new_usa_freedom_of_religion = {
+		tolerance_heretic = 5
+		global_heathen_missionary_strength = 0.03 #Added for mainly gameplay reasons
+	}
+	new_usa_bill_of_rights = {
+		global_unrest = -2
+		monthly_reform_progress_modifier = 0.1		#Reforming is easier when its in the constitution
+	}
+	new_usa_manifest_destiny = {
+		colonists = 2 #There are too many provinces for only one colonist. Eventually this will be replaced by a frontier mechanic
+		governing_capacity_modifier = 0.25 #Added because I am a true American patriot
+		effect = { remove_temporary_colonist = yes }
+	}
+	new_usa_lessons_of_valley_forge = {
+		land_morale = 0.10
+		land_attrition = -0.15 #This is actually what valley forge was about 
+	}
+	new_usa_workshop_of_the_world = {
+		global_trade_goods_size_modifier = 0.15
+		local_dev_points_modifier = 0.1			#Those Damn immigrants came and massively expanded the size of our working population leading to increased economic activity and better living standards for all!
+	}
+	new_usa_shining_city_on_a_hill = {
+		candidate_random_bonus = 2 # Honestly can't even justify this outside of george washington, I just like the modifier -Jackkade
+	#	prestige = 1 #Prestige is boring and largely useless. -Jackkade
+	}
+	new_usa_empire_of_liberty = {
+	#	min_autonomy_in_territories = -0.10 	#This is a weird modifier for US which didn't really form an empire in the timeframe.
+		allowed_marine_fraction = 0.5 			#Moved here because it doesn't really make sense as a tradition. Also, ther were founded in 1775, I'm not sure why Draiocht thinks they were founded in 1944 -Jackkade 
+		global_foreign_trade_power = 0.33  		#Big Bonus to represent free trade ideology
+	}
+}
