@@ -1,0 +1,12 @@
+#(Jackkade) American English
+# Really only New World and maybe oceania should be included here.
+# Post independence names should go here ex. Washington DC
+# In areas with English names that were not part of US, new names should be given only 
+# if it is a direct reference to monarchy ex. Prince Edward Island -> Edward Island
+# 
+
+#Core US
+#Northeast
+953 = { "Washington" "Washington D.C." } #DC
+
+#Southeast
