@@ -2639,12 +2639,12 @@ skeleton_coast_land_area = {
 ###
 
 new_york_area = {
-	7300 7301 965 963  2558
-	7309
+	965 963 2558
+	7300 7301 7309
 }
 great_woods_area = {
 	969 2563 2559 2564 4871 4873 
-	7307  7317
+	7307 7317
 }
 massachusetts_bay_area = {
 	968 970 2013 2561 
@@ -2653,8 +2653,6 @@ massachusetts_bay_area = {
 connecticut_valley_area = {
 	966 967 2010 2560 2562 4874 
 	7302 7303 7304 7308
-}
-eastern_maine_area = {
 }
 delaware_valley_area = {
 	956 962 2023 2639 
@@ -2667,9 +2665,6 @@ iroquoisia_area = {
 south_iroquoisia_area = {
 	958 959 960 
 	7312 7313 7314
-}
-new_jersey_area = {
-	
 }
 susquehanna_area = {
 	2556 2557 4875 4876
@@ -4262,3 +4257,6 @@ indonesian_islands_area = {  }
 
 south_laos_area = { }
 
+new_jersey_area = { }
+
+eastern_maine_area = { }
