@@ -801,7 +801,6 @@
 2023 = { "Scranton" "Scranton" } #Scranton 
 2553 = { "Frederick" "Frederick" } #Frederick
 2554 = { "Easton" "Easton" } #Easton 
-2555 = { "Pittsburgh" "Pittsburgh" } #Pittsburgh
 2556 = { "Huntingdon" "Huntingdon" } #Huntingdon
 2557 = { "State College" "State College" } #State College
 2558 = { "Monticello" "Monticello" } #Monticello 
@@ -843,9 +842,7 @@
 7322 = { "Gettysburg" "Gettysburg" } #Gettysburg
 7323 = { "Reading" "Reading" } #Reading
 7324 = { "Williamsport" "Williamsport" } #Williamsport
-7325 = { "New Castle" "New Castle" } #New Castle
 7326 = { "Waynesboro" "Waynesboro" } #Waynesboro
-7327 = { "Uniontown" "Uniontown" } #Uniontown
 
 7329 = { "Salisbury" "Salisbury" } #Salisbury
 7330 = { "Baltimore" "Baltimore" } #Baltimore
@@ -1048,6 +1045,7 @@
 946 = { "Toledo" "Toledo" } #Toledo
 947 = { "Mentor" "Mentor" } #Mentor
 948 = { "Marietta" "Marietta" } #Marietta
+951 = { "Parkersburg" "Parkersburg" } #Parkersburg
 954 = { "Erie" "Erie" } #Erie 
 
 2517 = { "St. Paul" "St. Paul" } #St. Paul 
@@ -1059,8 +1057,11 @@
 2523 = { "Terre Haute" "Terre Haute" } #Terre Haute 
 2524 = { "North Vernon" "North Vernon" } #North Vernon 
 2525 = { "Chillicothe" "Chillicothe" } #Chillicothe 
+2551 = { "Morgantown" "Morgantown" } #Morgantown 
+2555 = { "Pittsburgh" "Pittsburgh" } #Pittsburgh
 
 4872 = { "Buffalo" "Buffalo" }  #Buffalo
+4889 = { "Huntington" "Huntington" }  #Huntington
 4898 = { "Marquette" "Marquette" }  #Marquette
 4899 = { "Marinette" "Marinette" }  #Marinette
 4902 = { "International Falls" "International Falls" } #International Falls 
@@ -1069,6 +1070,10 @@
 4907 = { "Columbus" "Columbus" } #Columbus 
 4922 = { "South Bend" "South Bend" } #South Bend 
 
+
+7325 = { "New Castle" "New Castle" } #New Castle
+7327 = { "Uniontown" "Uniontown" } #Uniontown
+7346 = { "Wheeling" "Wheeling" } #Wheeling 
 7401 = { "Cincinnati" "Cincinnati" } #Cincinnati 
 7402 = { "Cleveland" "Cleveland" } #Cleveland 
 7403 = { "Youngstown" "Youngstown" } #Youngstown 
@@ -1103,6 +1108,7 @@
 7432 = { "La Crosse" "La Crosse" } #La Crosse 
 7433 = { "Stevens Point" "Stevens Point" } #Stevens Point 
 7434 = { "Hayward" "Hayward" } #Hayward 
+7468 = { "Bemidji" "Bemidji" } #Bemidji 
 
 
 #Great Plains
