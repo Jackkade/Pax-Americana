@@ -2796,18 +2796,9 @@ kentucky_area = {
 	934 939 940 941 2526 4921
 	7363 7364 7365 7371 
 }
-mississippi_plain_area = {
-	916 917 
-	2519 
-	7421 7424 7425 7426
-}
-southern_illinois_area = {
-	2520 4904
-	7422 7423
-}
 lower_louisiana_area = {
 	893 921 
-	7387 7435 7437 7438 7469
+	7435 7437 7438 7469
 }
 atchafalaya_area = {
 	2014 2516
@@ -2857,6 +2848,15 @@ miami_river_area = {
 illinois_country_area = {
 	915 4903 4922
 	7408 7412 7414 7419 7420 7427
+}
+mississippi_plain_area = {
+	916 917 
+	2519 
+	7421 7424 7425 7426
+}
+southern_illinois_area = {
+	2520 4904
+	7422 7423
 }
 michigan_area = {
 	944 945 2521 2522
