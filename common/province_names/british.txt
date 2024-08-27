@@ -1093,7 +1093,7 @@
 7417 = { "Port Huron" "Port Huron" } #Port Huron 
 7418 = { "Mount Pleasant" "Mount Pleasant" } #Mount Pleasant 
 7419 = { "Rockford" "Rockford" } #Rockford 
-7420 = { "Morris" "Morris" } #Morris 
+7420 = { "Naperville" "Naperville" } #Naperville 
 7421 = { "Mattoon" "Mattoon" } #Mattoon 
 7422 = { "Effingham" "Effingham" } #Effingham 
 7423 = { "Centralia" "Centralia" } #Centralia 
