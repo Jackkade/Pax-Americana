@@ -780,7 +780,6 @@
 #Great Lakes
 #Northeast
 953 = { "Prince George's" "Georgetown" } #Georgetown
-954 = { "Erie" "Erie" } #Erie 
 955 = { "Harrisburg" "Harrisburg" } #Harrisburg
 956 = { "Philadelphia" "Philadelphia" } #Philadelphia
 957 = { "Wilmington" "Wilmington" } #Wilmington 
@@ -814,7 +813,6 @@
 2564 = { "Gorham" "Gorham" } #Gorham
 2639 = { "Trenton" "Trenton" } #Trenton
 4871 = { "St. Johnsbury" "St. Johnsbury" } #St. Johnsbury
-4872 = { "Buffalo" "Buffalo" }  #Buffalo
 4873 = { "Farmington" "Farmington" } #Farmington 
 4874 = { "Pittsfield" "Pittsfield" } #Pittsfield 
 4875 = { "St. Marys" "St. Marys" } #St. Marys
@@ -1034,6 +1032,77 @@
 7469 = { "Houma" "Houma" } #Houma
 7470 = { "Oxford" "Oxford" } #Oxford
 
+#Great Lakes
+910 = { "Duluth" "Duluth" } #Duluth
+911 = { "Escanaba" "Escanaba" } #Escanaba
+912 = { "Wausau" "Wausau" } #Wausau
+913 = { "Eau Claire" "Eau Claire" } #Eau Claire
+914 = { "Milwaukee" "Milwaukee" } #Milwaukee
+915 = { "Moline" "Moline" } #Moline
+916 = { "Decatur" "Decatur" } #Decatur
+917 = { "Belleville" "Belleville" } #Belleville
+942 = { "Lafayette-Wabash" "Lafayette-Wabash" } #Lafayette-Wabash
+943 = { "Indianapolis" "Indianapolis" } #Indianapolis
+944 = { "Detroit" "Detroit" } #Detroit
+945 = { "Traverse City" "Traverse City" } #Traverse City
+946 = { "Toledo" "Toledo" } #Toledo
+947 = { "Mentor" "Mentor" } #Mentor
+948 = { "Marietta" "Marietta" } #Marietta
+954 = { "Erie" "Erie" } #Erie 
+
+2517 = { "St. Paul" "St. Paul" } #St. Paul 
+2518 = { "Superior" "Superior" } #Superior 
+2519 = { "Danville" "Danville" } #Danville 
+2520 = { "Mount Vernon" "Mount Vernon" } #Mount Vernon 
+2521 = { "Bay City" "Bay City" } #Bay City
+2522 = { "Grand Rapids" "Grand Rapids" } #Grand Rapids
+2523 = { "Terre Haute" "Terre Haute" } #Terre Haute 
+2524 = { "North Vernon" "North Vernon" } #North Vernon 
+2525 = { "Chillicothe" "Chillicothe" } #Chillicothe 
+
+4872 = { "Buffalo" "Buffalo" }  #Buffalo
+4898 = { "Marquette" "Marquette" }  #Marquette
+4899 = { "Marinette" "Marinette" }  #Marinette
+4902 = { "International Falls" "International Falls" } #International Falls 
+4903 = { "Chicago" "Chicago" } #Chicago 
+4904 = { "Carbondale" "Carbondale" } #Carbondale 
+4907 = { "Columbus" "Columbus" } #Columbus 
+4922 = { "South Bend" "South Bend" } #South Bend 
+
+7401 = { "Cincinnati" "Cincinnati" } #Cincinnati 
+7402 = { "Cleveland" "Cleveland" } #Cleveland 
+7403 = { "Youngstown" "Youngstown" } #Youngstown 
+7404 = { "Lima" "Lima" } #Lima 
+7405 = { "Findlay" "Findlay" } #Findlay 
+7406 = { "Lancaster" "Lancaster" } #Lancaster 
+7407 = { "Evansville" "Evansville" } #Evansville 
+7408 = { "Fort Wayne" "Fort Wayne" } #Fort Wayne 
+7409 = { "Jeffersonville" "Jeffersonville" } #Jeffersonville 
+7410 = { "Muncie" "Muncie" } #Muncie 
+7411 = { "Bloomington" "Bloomington" } #Bloomington 
+7412 = { "Gary" "Gary" } #Gary 
+7413 = { "Monroe" "Monroe" } #Monroe 
+7414 = { "Kalmazoo" "Kalmazoo" } #Kalmazoo 
+7415 = { "Lansing" "Lansing" } #Lansing 
+7416 = { "Flint" "Flint" } #Flint 
+7417 = { "Port Huron" "Port Huron" } #Port Huron 
+7418 = { "Mount Pleasant" "Mount Pleasant" } #Mount Pleasant 
+7419 = { "Rockford" "Rockford" } #Rockford 
+7420 = { "Morris" "Morris" } #Morris 
+7421 = { "Mattoon" "Mattoon" } #Mattoon 
+7422 = { "Effingham" "Effingham" } #Effingham 
+7423 = { "Centralia" "Centralia" } #Centralia 
+7424 = { "Quincy" "Quincy" } #Quincy 
+7425 = { "Springfield-Catham" "Springfield-Catham" } #Springfield-Catham 
+7426 = { "Peoria" "Peoria" } #Peoria 
+7427 = { "Ottawa" "Ottawa" } #Ottawa 
+7428 = { "Saint Ignace" "Saint Ignace" } #Saint Ignace 
+7429 = { "Houghton" "Houghton" } #Houghton 
+7430 = { "Green Bay" "Green Bay" } #Green Bay 
+7431 = { "Madison" "Madison" } #Madison 
+7432 = { "La Crosse" "La Crosse" } #La Crosse 
+7433 = { "Stevens Point" "Stevens Point" } #Stevens Point 
+7434 = { "Hayward" "Hayward" } #Hayward 
 
 
 #Great Plains
@@ -1450,7 +1519,6 @@
 2506 = "Wind River"			#Notes - 
 2510 = "Washburn"			#Notes - 
 2512 = "Fort Ridgely"			#Notes - Or Minnesota
-2517 = "St. Paul"			#Notes - 
 #1008 covered in 2.0
 #1009 covered in 2.0
 #1010 covered in 2.0
