@@ -972,13 +972,15 @@
 2526 = { "Lexington" "Lexington" } #Lexington
 2528 = { "Greenwood" "Greenwood" } #Greenwood
 2529 = { "Vicksburg" "Vicksburg" } #Vicksburg
+2530 = { "Biloxi" "Biloxi" } #Biloxi
 2531 = { "Gadsen" "Gadsen" } #Gadsen
 2532 = { "Birmingham" "Birmingham" } #Birmingham
+2533 = { "Destin" "Destin" } #Destin
 
 4883 = { "Tuscaloosa" "Tuscaloosa" } #McComb
 4884 = { "McComb" "McComb" } #McComb
 4885 = { "Ferriday" "Ferriday" } #Ferriday
-4886 = { "Ashdown" "Ashdown" } #Ashdown
+4886 = { "De Queen" "De Queen" } #De Queen
 4887 = { "Paducah" "Paducah" } #Paducah
 4913 = { "Huntsville" "Huntsville" } #Huntsville
 4921 = { "Hopkinsville" "Hopkinsville" } #Hopkinsville
@@ -997,14 +999,19 @@
 7377 = { "Demopolis" "Demopolis" } #Demopolis
 7378 = { "Andalusia" "Andalusia" } #Andalusia
 7379 = { "Anniston" "Anniston" } #Anniston
+7380 = { "Gulf Shores" "Gulf Shores" } #Gulf Shores
+7381 = { "Gulfport" "Gulfport" } #Gulfport
 7382 = { "Yazoo City" "Yazoo City" } #Yazoo City
 7383 = { "Jackson" "Jackson" } #Jackson
 7384 = { "Clarksdale" "Clarksdale" } #Clarksdale
 7385 = { "Meridian" "Meridian" } #Meridian
 7386 = { "Tupelo" "Tupelo" } #Tupelo
 7387 = { "Natchez" "Natchez" } #Natchez
+7388 = { "Fort Walton Beach" "Fort Walton Beach" } #Fort Walton Beach
+7389 = { "Panama City" "Panama City" } #Panama City
 7391 = { "Port Saint Joe" "Port Saint Joe" } #Port Saint Joe
 7435 = { "Hammond" "Hammond" } #Hammond
+7436 = { "Slidell" "Slidell" } #Slidell
 7437 = { "Marrero" "Marrero" } #Marrero
 7438 = { "Donaldsonville" "Donaldsonville" } #Donaldsonville
 7439 = { "Lake Charles" "Lake Charles" } #Lake Charles
@@ -1017,6 +1024,7 @@
 7446 = { "Hot Springs" "Hot Springs" } #Hot Springs
 7447 = { "Mountain Home" "Mountain Home" } #Mountain Home
 7448 = { "Fort Smith" "Fort Smith" } #Fort Smith
+7449 = { "Lafayette" "Lafayette" } #Lafayette
 7450 = { "Joplin" "Joplin" } #Joplin
 7452 = { "Jefferson City" "Jefferson City" } #Jefferson City
 7454 = { "Saint Charles" "Saint Charles" } #Saint Charles
@@ -1143,9 +1151,6 @@
 
 #BT200 New Provinces
 4920 = "Aleut" # Aleut East										#Generic name
-4921 = "Naknek" # Naugeik										#Generic name
-4922 = "Dilingham" # Curyuk									#Anglophone name
-4923 = "Bethel" # Mamterilleq									#Christian name used by Anglophone
 4924 = "Unalakleet" # Unalaqliq								#Generic name
 4925 = "Nome" # Chinik											#Anglophone name
 4926 = "Kenai" # Kena												#Generic name
