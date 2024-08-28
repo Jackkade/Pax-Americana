@@ -1,0 +1,184 @@
+#Beyond Typus Note -
+#Unfortunately, it appears there is no way to modify the new gov system without overriding it, an odd and somewhat disappointing choice of Paradox's end, to be honest.
+#I'll try to document the file well and keep things as organised as possible, but any submods or addons wanting to add their own content will be forced to update 
+#fresh each BT update as far as I can tell, sadly. I'm afraid the matter appears to be completely out of my hands, but if you have a suggestion to improve cross compatibility, please do share.
+# -This file contains new reforms at the bottom.
+
+american_republic = {
+	icon = "parliament"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "American Dream"
+		OR = {
+			AND = {
+				OR = {
+					tag = USA
+					primary_culture = american
+				}
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = american_republic
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "American Dream"
+	}
+	legacy_equivalent = american_republic_legacy
+	modifiers = {
+		war_exhaustion = -0.04
+		stability_cost_modifier = -0.15
+		governing_capacity = 100
+		max_absolutism = 35
+		max_terms = 4
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_limited_terms = yes
+		has_candidate_bonus = yes
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
+	}
+	duration = 4
+}
+
+federal_republic = {
+	icon = "constitution"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "American Dream"
+		OR = {
+			AND = {
+				tag = USA
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = federal_republic
+			}
+		}
+	}
+	legacy_equivalent = federal_republic_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "American Dream"
+	}
+	modifiers = {
+		diplomatic_reputation = 1
+		global_spy_defence = 0.1
+		candidate_random_bonus = 1
+		governing_capacity = 100
+		max_absolutism = 10
+		max_terms = 2
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_limited_terms = yes
+		has_candidate_bonus = yes
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
+	}
+	duration = 4
+}
+
+english_parliamentary_republic_government = {
+	icon = "house_of_lords"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			culture_group = british
+			culture = anglois
+		}
+		NOT = {
+			culture = american
+		}
+	}
+	nation_designer_cost = 20
+	nation_designer_trigger = {
+		OR = {
+			culture_group = british
+			culture = anglois
+		}
+		NOT = {
+			culture = american
+		}
+	}
+	valid_for_nation_designer = yes
+	modifiers = {
+		num_of_parliament_issues = 1
+		republican_tradition = 0.25
+		max_absolutism = 5
+	}
+	duration = 5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		has_parliament = yes
+		custom_attributes = {
+			english_parliament = yes
+		}
+	}
+}
+
+public_land_survey_system_reform = {
+	icon = "landscape"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_government_attribute = is_pirate_republic_reform
+		}
+		tag = USA
+	}
+	modifiers = {
+		native_uprising_chance = 0.25 
+		colonists = 1
+		colony_development_boost = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
