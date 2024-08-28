@@ -742,6 +742,8 @@ republic = {
 				german_other_reform
 				#1.37
 				support_state_reform
+				#Pax Americana
+				bill_of_rights_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
