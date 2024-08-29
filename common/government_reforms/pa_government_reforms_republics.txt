@@ -53,6 +53,7 @@ american_republic = {
 		has_parliament = yes
 		custom_attributes = {
 			blocked_call_diet = yes
+			english_parliament = yes
 		}
 	}
 	duration = 4
@@ -105,6 +106,7 @@ federal_republic = {
 		has_parliament = yes
 		custom_attributes = {
 			blocked_call_diet = yes
+			english_parliament = yes
 		}
 	}
 	duration = 4
