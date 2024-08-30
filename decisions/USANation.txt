@@ -113,8 +113,9 @@ country_decisions = {
 			colonial_eastern_america = {
 				limit = {
 					NOT = { owned_by = ROOT }
+					culture_group = british
 				}
-				add_permanent_claim = USA
+				add_core = USA
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
