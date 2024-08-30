@@ -1,0 +1,30 @@
+	### Winds of Change Mission Icons ###	
+	
+spriteTypes = {	
+	
+	spriteType = {
+		name = "mission_usa_declare_independence"
+		texturefile = "gfx/interface/missions/mission_usa_declare_independence.dds"
+	}
+	spriteType = {
+		name = "mission_usa_boston"
+		texturefile = "gfx/interface/missions/mission_usa_boston.dds"
+	}
+	spriteType = {
+		name = "mission_usa_rev_troops"
+		texturefile = "gfx/interface/missions/mission_usa_rev_troops.dds"
+	}
+	spriteType = {
+		name = "mission_usa_swamplands"
+		texturefile = "gfx/interface/missions/mission_usa_swamplands.dds"
+	}
+	spriteType = {
+		name = "mission_usa_appalachia"
+		texturefile = "gfx/interface/missions/mission_usa_appalachia.dds"
+	}
+	spriteType = {
+		name = "mission_usa_florida"
+		texturefile = "gfx/interface/missions/mission_usa_florida.dds"
+	}
+
+}	
