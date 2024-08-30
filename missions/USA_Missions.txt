@@ -1,0 +1,558 @@
+##BranchStart 0
+USA_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	usa_liberate_acadia = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_secure_new_england
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_group = usa_liberate_acadia_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_liberate_acadia_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 15
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_liberate_canada }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_liberate_canada = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_liberate_acadia
+		}
+		position = 5
+		provinces_to_highlight = {
+			province_group = usa_liberate_canada_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_liberate_canada_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 40
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+USA_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	usa_secure_new_england = {
+		icon = mission_usa_boston
+		required_missions {
+			usa_declare_our_independence
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_group = usa_secure_new_england_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_secure_new_england_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 20
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_liberate_acadia }
+			give_permaclaims_for_mission = { mission=usa_settle_northwest }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_settle_northwest = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_secure_new_england usa_protect_midatlantic
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_group = usa_settle_northwest_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_settle_northwest_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 50
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_breadbasket_america = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_up_old_man_river
+		}
+		position = 6
+		provinces_to_highlight = {
+			province_group = usa_breadbasket_america_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_breadbasket_america_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 40
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_sea_to_shining_sea }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_sea_to_shining_sea = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_breadbasket_america
+		}
+		position = 7
+		provinces_to_highlight = {
+			province_group = usa_sea_to_shining_sea_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_sea_to_shining_sea_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 50
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+USA_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	usa_declare_our_independence = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_subject = no
+			capital_scope = {
+				controlled_by = ROOT
+			} 
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_free_dixieland }
+			give_permaclaims_for_mission = { mission=usa_protect_midatlantic }
+			give_permaclaims_for_mission = { mission=usa_secure_new_england }
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_protect_midatlantic = {
+		icon = mission_usa_rev_troops
+		required_missions {
+			usa_declare_our_independence
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_group = usa_protect_midatlantic_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_protect_midatlantic_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 30
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_across_appalachia }
+			give_permaclaims_for_mission = { mission=usa_settle_northwest }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_across_appalachians = {
+		icon = mission_usa_appalachia
+		required_missions {
+			usa_protect_midatlantic
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_group = usa_across_appalachians_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_across_appalachians_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 30
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_up_old_man_river = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_aquire_new_orleans usa_across_appalachians
+		}
+		position = 5
+		provinces_to_highlight = {
+			province_group = usa_up_old_man_river_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_up_old_man_river_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 30
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission= usa_breadbasket_america }
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+USA_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	usa_free_dixieland = {
+		icon = mission_usa_swamplands
+		required_missions {
+			usa_declare_our_independence
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_group = usa_free_dixieland_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_free_dixieland_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 40
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_settle_mississippi_territory }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_aquire_new_orleans = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_settle_mississippi_territory
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_group = usa_aquire_new_orleans_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_general_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_aquire_new_orleans_provinces
+				triggers="
+					owned_by = ROOT
+				"
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_up_old_man_river }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_liberate_texas = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_aquire_new_orleans
+		}
+		position = 6
+		provinces_to_highlight = {
+			province_group = usa_liberate_texas_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_liberate_texas_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 25
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_secure_hispanolia = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_cuban_statehood
+		}
+		position = 8
+		provinces_to_highlight = {
+			province_group = usa_liberate_texas_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_general_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_liberate_texas_provinces
+				triggers="
+					owned_by = ROOT
+				"
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+USA_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	usa_settle_mississippi_territory = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_free_dixieland
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_group = usa_settle_mississippi_territory_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_settle_mississippi_territory_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 25
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_aquire_new_orleans }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_conquer_florida = {
+		icon = mission_usa_florida
+		required_missions {
+			usa_settle_mississippi_territory
+		}
+		position = 5
+		provinces_to_highlight = {
+			province_group = usa_conquer_florida_territory_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_conquer_florida_territory_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 20
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_cuban_statehood }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_cuban_statehood = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_conquer_florida
+		}
+		position = 7
+		provinces_to_highlight = {
+			province_group = usa_cuban_statehood_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_general_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_cuban_statehood_provinces
+				triggers="
+					owned_by = ROOT
+				"
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_place_in_the_sun }
+			give_permaclaims_for_mission = { mission=usa_secure_hispanolia }
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_place_in_the_sun = {
+		icon = mission_usa_declare_independence
+		required_missions {
+			usa_cuban_statehood
+		}
+		position = 8
+		provinces_to_highlight = {
+			province_group = usa_place_in_the_sun_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			usa_place_in_the_sun_trigger = {
+				tooltip=country_holds_highlighted
+				provinces=usa_conquer_florida_territory_provinces
+				triggers="
+					owned_by = ROOT
+				"
+				amount = 25
+			}
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4
