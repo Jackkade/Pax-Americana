@@ -296,7 +296,7 @@ USA_missions_3 = {
 			}
 		}
 		effect = {
-			give_permaclaims_for_mission = { mission=usa_across_appalachia }
+			give_permaclaims_for_mission = { mission=usa_across_appalachians }
 			give_permaclaims_for_mission = { mission=usa_settle_northwest }
 			change_government_reform_progress = 100
 			add_country_modifier = {
