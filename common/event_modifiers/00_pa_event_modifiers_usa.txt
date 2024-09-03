@@ -1,0 +1,56 @@
+
+##################################################################################################
+##################################################################################################
+##################################################################################################
+# Jackkade- USA
+##################################################################################################
+##################################################################################################
+##################################################################################################
+
+### Country ###
+
+usa_rugged_independence = {
+	hostile_attrition = 1 
+	max_hostile_attrition = 1 
+}
+
+usa_go_west_young_man = {
+	colonists = 1 
+}
+
+usa_mississippi_mouth = {
+	merchants = 1
+	placed_merchant_power = 5
+}
+
+
+### Province ###
+
+usa_southern_cash_crops = {
+	local_production_efficiency = 0.05 
+	trade_goods_size_modifier = 0.05
+}
+
+usa_western_settlers = {
+	local_colonist_placement_chance = 0.10
+}
+
+usa_interior_settlement = {
+	local_development_cost = -0.1
+	local_build_cost = -0.15
+}
+
+usa_fortify_florida = {
+	local_fort_maintenance_modifier = -0.33
+	local_defensiveness = 0.25
+}
+
+usa_carribean_plantations = {
+	allowed_num_of_buildings = 1 
+}
+
+usa_expediated_statehood = {
+	statewide_governing_cost = -0.20
+	local_development_cost = -0.1 
+	local_culture_conversion_cost = -0.15
+}
