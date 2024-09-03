@@ -654,26 +654,26 @@ USA_missions_5 = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			province_group = usa_conquer_florida_territory_provinces
+			province_group = usa_conquer_florida_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
-				provinces=usa_conquer_florida_territory_provinces
+				provinces=usa_conquer_florida_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 				value=20
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 4
-				province_group = usa_conquer_florida_territory_provinces
+				province_group = usa_conquer_florida_provinces
 				fort_level = 1
 			}
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=usa_cuban_statehood }
-			usa_conquer_florida_territory_provinces = {
+			usa_conquer_florida_provinces = {
 				limit = {
 					fort_level = 1
 				}

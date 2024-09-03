@@ -1121,7 +1121,6 @@ northeast_america_region = { # 8 areas
 	areas = {
 		great_woods_area
 		new_york_area
-		new_jersey_area
 		massachusetts_bay_area
 		connecticut_valley_area
 		hudson_valley_area

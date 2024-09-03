@@ -4257,8 +4257,6 @@ indonesian_islands_area = {  }
 
 south_laos_area = { }
 
-new_jersey_area = { }
-
 eastern_maine_area = { }
 
 hudson_valley_area = { }
