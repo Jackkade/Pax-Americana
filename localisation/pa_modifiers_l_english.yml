@@ -9,3 +9,10 @@
  usa_fortify_florida:0 "Floridan Fortifications"
  usa_carribean_plantations:0 "Caribbean Plantations"
  usa_expediated_statehood:0 "Cuban State Capital"
+
+
+ #Trade
+ USA_TRADE_ST_LAWRENCE:0 "St. Lawrence Trade Fleet"
+ USA_TRADE_GREAT_LAKES:0 "Great Lakes Trade Fleet"
+ USA_TRADE_MISSISSIPPI:0 "Mississippi Trade Fleet"
+ USA_TRADE_CARRIBEAN:0 "Caribbean Private Trade Fleet"
