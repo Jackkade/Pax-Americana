@@ -1,4 +1,5 @@
 # No previous file for Pax Americana province
+
 owner = ONE
 controller = ONE
 culture = iroquois
@@ -6,14 +7,25 @@ religion = totemism
 capital = "Oswega"
 trade_goods = fur
 hre = no
-base_tax = 2
+base_tax = 2  
 base_production = 2
-base_manpower = 1
+base_manpower = 1 
 is_city = yes
 add_core = ONE
-native_size = 15
-native_ferocity = 1
-native_hostileness = 3
+native_size = 50
+native_ferocity = 10
+native_hostileness = 10
+
+
+
 discovered_by = north_american
-1444.11.15 = { owner = XXX controller = XXX tribal_owner = XXX } 
-1444.11.18 = { owner = ONE controller = ONE } 
+
+1444.11.15 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = ONE
+	controller = ONE
+}
