@@ -11,7 +11,7 @@ USA_missions_1 = {
 	
 	##Mission Start
 	usa_liberate_acadia = {
-		icon = mission_usa_declare_independence
+		icon = mission_invade_island
 		required_missions {
 			usa_secure_new_england
 		}
@@ -36,7 +36,7 @@ USA_missions_1 = {
 	##Mission End
 	##Mission Start
 	usa_liberate_canada = {
-		icon = mission_usa_declare_independence
+		icon = mission_rb_colonise_canada
 		required_missions {
 			usa_liberate_acadia
 		}
@@ -133,7 +133,7 @@ USA_missions_2 = {
 	##Mission End
 	##Mission Start
 	usa_settle_northwest = {
-		icon = mission_usa_declare_independence
+		icon = ne_great_lakes_conquest
 		required_missions {
 			usa_secure_new_england usa_protect_midatlantic
 		}
@@ -174,7 +174,7 @@ USA_missions_2 = {
 	##Mission End
 	##Mission Start
 	usa_breadbasket_america = {
-		icon = mission_usa_declare_independence
+		icon = mission_maize
 		required_missions {
 			usa_up_old_man_river
 		}
@@ -208,7 +208,7 @@ USA_missions_2 = {
 	##Mission End
 	##Mission Start
 	usa_sea_to_shining_sea = {
-		icon = mission_usa_declare_independence
+		icon = mission_colonize_california
 		required_missions {
 			usa_breadbasket_america
 		}
@@ -334,7 +334,7 @@ USA_missions_3 = {
 	##Mission End
 	##Mission Start
 	usa_up_old_man_river = {
-		icon = mission_usa_declare_independence
+		icon = se_along_the_river
 		required_missions {
 			usa_aquire_new_orleans usa_across_appalachians
 		}
@@ -420,7 +420,7 @@ USA_missions_4 = {
 	##Mission End
 	##Mission Start
 	usa_aquire_new_orleans = {
-		icon = mission_usa_declare_independence
+		icon = mission_european_church
 		required_missions {
 			usa_settle_mississippi_territory
 		}
@@ -458,7 +458,7 @@ USA_missions_4 = {
 	##Mission End
 	##Mission Start
 	usa_liberate_texas = {
-		icon = mission_usa_declare_independence
+		icon = mission_sw_against_the_desert
 		required_missions {
 			usa_aquire_new_orleans
 		}
@@ -562,7 +562,7 @@ USA_missions_4 = {
 	##Mission End
 	##Mission Start
 	usa_secure_hispanolia = {
-		icon = mission_usa_declare_independence
+		icon = mission_claim_hispaniola
 		required_missions {
 			usa_cuban_statehood
 		}
@@ -610,7 +610,7 @@ USA_missions_5 = {
 	
 	##Mission Start
 	usa_settle_mississippi_territory = {
-		icon = mission_usa_declare_independence
+		icon = mission_usa_florida 
 		required_missions {
 			usa_free_dixieland
 		}
@@ -648,7 +648,7 @@ USA_missions_5 = {
 	##Mission End
 	##Mission Start
 	usa_conquer_florida = {
-		icon = mission_usa_florida
+		icon = mission_colonize_florida
 		required_missions {
 			usa_settle_mississippi_territory
 		}
@@ -687,7 +687,7 @@ USA_missions_5 = {
 	##Mission End
 	##Mission Start
 	usa_cuban_statehood = {
-		icon = mission_usa_declare_independence
+		icon = mission_found_havana
 		required_missions {
 			usa_conquer_florida
 		}
@@ -720,7 +720,7 @@ USA_missions_5 = {
 	##Mission End
 	##Mission Start
 	usa_place_in_the_sun = {
-		icon = mission_usa_declare_independence
+		icon = mission_colonize_the_caribbean
 		required_missions {
 			usa_cuban_statehood
 		}
