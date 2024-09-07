@@ -133,7 +133,7 @@ USA_missions_2 = {
 	##Mission End
 	##Mission Start
 	usa_settle_northwest = {
-		icon = ne_great_lakes_conquest
+		icon = dutch_architecture
 		required_missions {
 			usa_secure_new_england usa_protect_midatlantic
 		}
@@ -334,7 +334,7 @@ USA_missions_3 = {
 	##Mission End
 	##Mission Start
 	usa_up_old_man_river = {
-		icon = se_along_the_river
+		icon = mission_advance_to_the_dnieper
 		required_missions {
 			usa_aquire_new_orleans usa_across_appalachians
 		}
