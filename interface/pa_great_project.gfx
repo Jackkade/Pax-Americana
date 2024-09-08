@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_great_project_independence_hall"	
+		texturefile = "gfx//interface//great_projects//great_project_independence_hall.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_ny_city_hall"	
+		texturefile = "gfx//interface//great_projects//great_project_ny_city_hall.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_virginia_state_capitol"	
+		texturefile = "gfx//interface//great_projects//great_project_virginia_state_capitol.dds"
+	}
+}
