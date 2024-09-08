@@ -1,0 +1,25 @@
+afro_american_group = { 
+	#English Speaking
+	anglo_afro_american = {
+		primary = XXX
+	}
+	anglo_afro_caribbean = {
+		primary = XXX
+	}
+
+	#Castillian Speaking
+	#Carribean Sea adjacents
+	afro_caribeno = {
+		primary = XXX
+	}
+	#Spanish Main 
+	afro_colombianos = {
+		primary = XXX
+	}
+
+	#Portuguese 
+	afro_brazilian = {
+		primary = XXX
+	}
+
+}

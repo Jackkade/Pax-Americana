@@ -1,4 +1,9 @@
 ﻿l_english:
+
+ #Generic
+ pa_slave_plantation:0 "Slave Plantations"
+ pa_slave_plantation_desc:0 "Local Landowners have imported a workforce of african slave who work the cash crop plantation."
+
  #US
  usa_rugged_independence:0 "Rugged Independence"
  usa_go_west_young_man:0 "Go west, Young man!"
@@ -11,8 +16,12 @@
  usa_expediated_statehood:0 "Cuban State Capital"
 
 
+
  #Trade
  USA_TRADE_ST_LAWRENCE:0 "St. Lawrence Trade Fleet"
  USA_TRADE_GREAT_LAKES:0 "Great Lakes Trade Fleet"
  USA_TRADE_MISSISSIPPI:0 "Mississippi Trade Fleet"
  USA_TRADE_CARRIBEAN:0 "Caribbean Private Trade Fleet"
+
+ #Estate
+ PA_SLAVERY_EXPANDED:0 "Slavery Expanded"
