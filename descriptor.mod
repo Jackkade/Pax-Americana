@@ -11,7 +11,7 @@ tags={
 	"Religion"
 	"National Ideas"
 }
-name="-BT Addon: Pax Americana"
+name="Pax Americana: Beyond Typus Addon"
 dependencies={
 	"Beyond Typus"
 }
