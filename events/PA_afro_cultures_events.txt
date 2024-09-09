@@ -16,6 +16,12 @@ province_event = { #Anglo-African-American
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = british
+        NOT = {
+            has_province_modifier = pa_slave_plantation 
+        }
+        NOT = {
+            has_province_flag = pa_ang_afro_american_slave_plantation
+        }
 		province_group = culture_anglo_afro_american_region
         OR = {
             trade_goods = cotton
@@ -73,6 +79,9 @@ province_event = { #Anglo-African-American
         }
 	}
 
+    immediate = {
+        set_province_flag = pa_ang_afro_american_slave_plantation 
+    }
 
 	option = { # Allow them to continue
 		name = anglo_african_american_spread.a

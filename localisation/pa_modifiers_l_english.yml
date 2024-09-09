@@ -2,7 +2,7 @@
 
  #Generic
  pa_slave_plantation:0 "Slave Plantations"
- pa_slave_plantation_desc:0 "Local Landowners have imported a workforce of african slave who work the cash crop plantation."
+ pa_slave_plantation_desc:0 "Local Landowners have imported a workforce of african slaves who work the fields on cash crop plantations."
 
  #US
  usa_rugged_independence:0 "Rugged Independence"
