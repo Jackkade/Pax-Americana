@@ -98,6 +98,7 @@ province_event = { #Anglo-African-American
             influence = 10
             duration = 1825
         }
+        ai_chance = { factor = 100 }
 	}
     
 	option = { # Prevent the spread of slavery
@@ -109,5 +110,6 @@ province_event = { #Anglo-African-American
             estate = estate_nobles
             loyalty = -5
         }
+        ai_chance = { factor = 0 }
 	}
 }

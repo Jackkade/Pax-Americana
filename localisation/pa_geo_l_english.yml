@@ -14,6 +14,9 @@
  trade_company_st_lawrence_trade:0 "St Lawrence Charter"
  trade_company_missouri_river_trade:0 "Missouri Charter"
  trade_company_hudson_bay_trade:0 "Hudson Bay Charter"
+
+ # Colonial Regions
+ colonial_rio_grande:0 "Colonial Rio Grande"
  
  #Areas
  estrie_area:0 "Estrie"
