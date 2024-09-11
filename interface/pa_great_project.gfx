@@ -14,4 +14,39 @@ spriteTypes = {
 		name = "GFX_great_project_virginia_state_capitol"	
 		texturefile = "gfx//interface//great_projects//great_project_virginia_state_capitol.dds"
 	}
+
+	spriteType = {
+		name = "GFX_great_project_boston_harbor"	
+		texturefile = "gfx//interface//great_projects//great_project_boston_harbor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_castillo_de_san_marcos"	
+		texturefile = "gfx//interface//great_projects//great_project_castillo_de_san_marcos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_itaba_etowah"	
+		texturefile = "gfx//interface//great_projects//great_project_itaba_etowah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_monastere_des_ursulines"	
+		texturefile = "gfx//interface//great_projects//great_project_monastere_des_ursulines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_monticello"	
+		texturefile = "gfx//interface//great_projects//great_project_monticello.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_niagara_falls"	
+		texturefile = "gfx//interface//great_projects//great_project_niagara_falls.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_vieux_carre"	
+		texturefile = "gfx//interface//great_projects//great_project_vieux_carre.dds"
+	}
 }
