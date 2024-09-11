@@ -2900,9 +2900,6 @@ new_mexico_area = {
 upper_rio_grande_area = { # BT
 	881 882 2496 4630 5830 5832 5844 7514
 }
-durango_area = {
-	860 4647 4648 7527
-}
 
 ###
 # Great Plains
@@ -3226,6 +3223,9 @@ huasteca_area = {
 }
 nayarit_area  = { #Replacing BT's sinaloa_area
 	855 859 5063
+}
+durango_area = {
+	860 4647 4648 7527
 }
 
 ###

@@ -18,9 +18,7 @@ add_UOP_modifier = {
 				region = kongo_region
 				region = central_africa_region
 				region = east_africa_region
-				#
-				region = rio_grande_region	
-				#
+				#	
 				region = mexico_region
 				region = central_america_region
 				# 
@@ -40,6 +38,12 @@ add_UOP_modifier = {
 				area = circassia_area
 				area = dagestan_area
 				province_id = 2195 #Adyghe
+			}
+			NOT = {
+				OR = {
+					area = durango_area
+					area = nayarit_area
+				}
 			}
 		}
 		add_permanent_province_modifier = {
