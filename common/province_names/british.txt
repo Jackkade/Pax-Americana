@@ -772,12 +772,44 @@
 
 #Canada
 #Hudson Bay
+
+1011 = "Grand Rapids"
+2016 = "Grandes Fourches" # Isangyathi					#Francophone name by Anglophone
+2511 = "Devil's Lake" # Mni Wakang						#Anglophone name
+4901 = { "Fargo" "Fargo" }
+5623 = "Minot"			#Notes - 
+5625 = "Pembina"			#Notes - 
+7509 = { "Grand Forks" "Grand Forks" }
+7510 = { "Estevan" "Estevan" }
+7462 = { "Fergus Falls" "Fergus Falls" }
+
+
+
 #Northwest Territories
 #Alaska
 #Cascadia
 #California
-#Great Plains
-#Great Lakes
+
+
+862 = { "Hermosillo" "Hermosillo" }
+2616 = { "Caborca" "Caborca" }
+4577 = { "Puerto Penaso" "Puerto Penaso" }
+4633 = { "Nogales" "Nogales" }
+4649 = { "Navajoa" "Navajoa" }
+4650 = { "Cananea" "Cananea" }
+4964 = { "Enpalme" "Enpalme" }
+5061 = { "Esperansa" "Esperansa" }
+7522 = { "Granados" "Granados" }
+
+865 = { "Black Warrior" "Black Warrior" }
+866 = { "La Paz" "La Paz" }
+2620 = { "San Felipe" "San Felipe" }
+5043 = { "Mexicali" "Mexicali" }
+5859 = { "Tijuana" "Tijuana" }
+5860 = { "San Quintin" "San Quintin" }
+5861 = { "Loreto" "Loreto" }
+5862 = { "Cape San Lucas" "Cape San Lucas" }
+
 #Northeast
 953 = { "Prince George's" "Georgetown" } #Georgetown
 955 = { "Harrisburg" "Harrisburg" } #Harrisburg
@@ -1112,10 +1144,190 @@
 
 
 #Great Plains
+
+
+
+890 = { "Witchita" "Witchita" }
+891 = { "Woodward" "Woodward" }
+892 = { "Lawton" "Lawton" }
+898 = { "Topeka" "Topeka" }
+899 = { "Garden City" "Garden City" }
+901 = { "Kearney" "Kearney" }
+903 = { "Omaha" "Omaha" }
 905 = { "Ames" "Ames" } #Ames
+904 = { "Mason City" "Mason City" }
+906 = { "Jamestown" "Jamestown" }
+907 = { "Mitchell" "Mitchell" }
+908 = { "St. Cloud" "St. Cloud" }
+
+
+1809 = { "Fort Caspar" "Fort Caspar" }  #Or modern Casper
+2006 = { "Bozeman" "Bozeman" }		#Or Coulson (early name of Billings)
+2007 = { "Mobridge" "Mobridge" }
+2008 = { "Dickinson" "Dickinson" }
+2009 = { "Valentine" "Valentine" }
+
+2501 = { "Great Falls" "Great Falls" }
+2502 = { "Fort Belknap" "Fort Belknap" }
+2503 = { "Bighorn" "Bighorn" }
+2504 = { "Worland" "Worland" }		#or Themopolis, or Bighorn Basin
+2505 = { "Black Hills" "Black Hills" }
+2506 = { "Wind River" "Wind River" }
+2507 = { "Alliance" "Alliance" }
+2508 = { "Dunning" "Dunning" }
+2510 = { "Washburn" "Washburn" }
+2512 = { "Fort Ridgely" "Fort Ridgely" }			#Or Minnesota
+2513 = { "Des Moines" "Des Moines" }
+
+2625 = { "Goodland" "Goodland" }
+2672 = { "Salina" "Salina" }
+
+4900 = { "Sioux City" "Sioux City" }
+4905 = { "Davenport" "Davenport" }
+4906 = { "Hannibal" "Hannibal" }
+4908 = { "Oklahoma City" "Oklahoma City" }
+4914 = { "Coffeyville" "Coffeyville" }
+4915 = { "Nebraska" "Nebraska" }
+4916 = { "O'Neill" "O'Neill" } 
+4918 = { "Glendive" "Glendive" } 
+
+5066 = { "Alamosa" "Alamosa" }
+5616 = { "Glasgow" "Glasgow" }
+5617 = { "Fort James" "Fort James" }    #or Fort Berthold, or Fort Atkinson, or Sakakawea
+5618 = { "Timberlake" "Timberlake" }
+5619 = { "Fort Robinson" "Fort Robinson" }
+5629 = { "Fort Laramie" "Fort Laramie" }
+5627 = { "Havre" "Havre" }
+5633 = { "Fort Peck" "Fort Peck" }
+5638 = { "Milbank" "Milbank" }
+
+
+7451 = { "St. Joeseph" "St. Joeseph" }
+7453 = { "Kirksville" "Kirksville" }
+7458 = { "Fort Madison" "Fort Madison" }
+7459 = { "Decorah" "Decorah" }
+7460 = { "Red Oak" "Red Oak" }
+7461 = { "Council Bluffs" "Council Bluffs" }
+7489 = { "Ponca City" "Ponca City" }
+7490 = { "Tulsa" "Tulsa" }
+7491 = { "Sallisaw" "Sallisaw" }
+7492 = { "Elk City" "Elk City" }
+7493 = { "Pampa" "Pampa" }
+7494 = { "Amarillo" "Amarillo" }
+7495 = { "Mosquero" "Mosquero" }
+7496 = { "No Man's Land" "No Man's Land" }
+7497 = { "Lamar" "Lamar" }
+7498 = { "Fort Morgan" "Fort Morgan" }
+7499 = { "Hutchinson" "Hutchinson" }
+7500 = { "Leavenworth" "Leavenworth" }
+7501 = { "Hays" "Hays" }
+7502 = { "North Platte" "North Platte" }
+7503 = { "Ogallala" "Ogallala" }
+7504 = { "Central City" "Central City" }
+7505 = { "Pierre" "Pierre" }
+7507 = { "Sioux Falls" "Sioux Falls" }
+7508 = { "Redfield" "Redfield" }
 
 #Rio Grande
+
+883 = { "Pearsall" "Pearsall" }
+884 = { "Lake Jackson" "Lake Jackson" }
+885 = { "Lubbock" "Lubbock" }
+886 = { "Sherman" "Sherman" }
+887 = { "Waco" "Waco" }
+#By neo Nov 2020
+888 = { "Galveston" "Galveston" } #Houston, the city, is named after Sam Houston, who wasn't alive until the mid 19th century and was a famous figure in the Mexican-American War and the independence of Texas from Mexico
+896 = { "Broken Bow" "Broken Bow" }
+906 = { "Bismark" "Bismark" }
+909 = { "Bismark" "Bismark" }
+2495 = { "Grants" "Grants" }	
+2496 = { "Jicarilla" "Jicarilla" }
+2497 = { "Odessa" "Odessa" }
+2498 = { "Presidio" "Presidio" }
+2499 = { "McAllen" "McAllen" }
+2500 = { "Snyder" "Snyder" }
+2665 = { "Port Arthur" "Port Arthur" } # Also Beaumont but Beaumont exists already
+2666 = { "Del Rio" "Del Rio" }
+2669 = { "Nagodoches" "Nagodoches" }
+2667 = { "Piedras Negras" "Piedras Negras" }
+4628 = { "El Paso" "El Paso" }
+4627 = { "Austin" "Austin" }
+4629 = { "McCamey" "McCamey" }
+4630 = { "Carrizozo" "Carrizozo" }
+4631 = { "Albuquerque" "Albuquerque" }
+4632 = { "Ponderosa" "Ponderosa" }
+4909 = { "Witchita Falls" "Witchita Falls" }
+4910 = { "Brownwood" "Brownwood" }
+4911 = { "New Boston" "New Boston" }
+5826 = { "Taos" "Taos" }
+5827 = { "Los Alamos" "Los Alamos" }
+5830 = { "Socorro" "Socorro" }
+5832 = {  "Mesilla Valley" "Mesilla Valley" } #Or Las Cruces
+5844 = { "Carlsbad" "Carlsbad" }
+
+7471 = { "Longview" "Longview" }
+7472 = { "Fort Worth" "Fort Worth" }
+7473 = { "Tyler" "Tyler" }
+7474 = { "New Braunfels" "New Braunfels" }
+7475 = { "San Antonio" "San Antonio" }
+7476 = { "Abilene" "Abilene" }
+7477 = { "Chorpus Christi" "Chorpus Christi" }
+7478 = { "Laredo" "Laredo" } # Mexican Side is Nuevo Laredo
+7479 = { "San Angilo" "San Angilo" }
+7480 = { "Sanderson" "Sanderson" }
+7481 = { "Pecos" "Pecos" }
+7483 = { "Rockport" "Rockport" } # Also Victoria
+7484 = { "Uvalde" "Uvalde" }
+7485 = { "Cypress" "Cypress" }
+7485 = { "Lufkin" "Lufkin" }
+7487 = { "Dallas" "Dallas" }
+7488 = { "Ardmore" "Ardmore" }
+7506 = { "Rapid City" "Rapid City" }
+7511 = { "Broadus" "Broadus" }
+7512 = { "Crow Agency" "Crow Agency" }
+7514 = { "Alamogordo" "Alamogordo" }
+
+# Mexican Side of Rio Grande
+858 = { "Victory City" "Victory City" }
+861 = { "Monclova" "Monclova" }
+863 = { "Juarez City" "Juarez City" }
+864 = { "El Sueco" "El Sueco" }
+
+2614 = { "Monterry" "Monterry" }
+2618 = { "Chihuahua" "Chihuahua" }
+2619 = { "Torreon" "Torreon" }
+2667 = { "Zaragoza" "Zaragoza" }
+2668 = { "San Fernando" "San Fernando" }
+4606 = { "Sierra Mojada" "Sierra Mojada" }
+4644 = { "Ascension" "Ascension" }
+4646 = { "San Juanito" "San Juanito" }
+
+7515 = { "Altamira" "Altamira" }
+7516 = { "Eagle Pass" "Eagle Pass" }
+7517 = { "La Rosita" "La Rosita" }
+7518 = { "Ocampa" "Ocampa" }
+7519 = { "Saltillo" "Saltillo" }
+7520 = { "Mother Mountain" "Mother Mountain" }
+7521 = { "Montemorelos" "Montemorelos" }
+7523 = { "Jimenez" "Jimenez" }
+7524 = { "Guachochi" "Guachochi" }
+7525 = { "Ojinaga" "Ojinaga" }
+7526 = { "Madera" "Madera" }
+7528 = { "Rio Bravo" "Rio Bravo" }
+
+
 #Mexico
+
+
+855 = { "Mazatlan" "Mazatlan" }
+859 = { "Los Mochis" "Los Mochis" }
+860 = { "Lerdo" "Lerdo" }
+5063 = { "Culiacan" "Culiacan" }
+4647 = { "Old Durango" "Old Durango" }
+4648 = { "Papasquiro" "Papasquiro" }
+
+7527 = { "Cuencame" "Cuencame" }
+
 #Central America
 #Colombia
 #Peru
@@ -1138,7 +1350,6 @@
 
 #BT200 Overhaul Vanilla renaming
 865 = "Cochimi" # Cochimi										#Generic name
-866 = "La Paz" # Guaycura										#Iberian name used by Anglophone
 867 = "Cahuilla" # �viluqaletem									#Iberian name used by Anglophone
 868 = "Santa Barbara" # Chumash								#Iberian name used by Anglophone
 869 = "King City" # Salinan										#Iberian name used by Anglophone modified
@@ -1176,7 +1387,6 @@
 2003 = "Cranbrook" # Ktunaxa								#Anglophone name 
 2004 = "Lethbridge" # Kainawa									#Anglophone name
 2005 = "Pile o' Bones" # Oscana								#Anglophone name
-2016 = "Grandes Fourches" # Isangyathi					#Francophone name by Anglophone
 2017 = "Fort Edmonton" # Nehiyawewin					#Anglophone name
 2018 = "Jasper" # Tsuu Tina										#Anglophone name problem better name needed
 2019 = "Nez Perces" # Niimiipu								#Francophone name by Anglophone
@@ -1197,7 +1407,6 @@
 2488 = "Yakima" # Yakama										#Generic name
 2489 = "Boise" # Bannock											#Anglophone name problem anachronistic is Bannock better less recognisable
 2490 = "Salt Lake City" # Gutsipupiutsi					#Anglophone name
-2511 = "Devil's Lake" # Mni Wakang						#Anglophone name
 2573 = "Cape Ray" # Qalipu										#Anglophone name
 2574 = "Naina" # Sikumiut										#Cristian name used by Anglophone
 2575 = "Goose Bay" # Mishtashipu							#Anglophone name
@@ -1222,7 +1431,6 @@
 2611 = "Kodiak" # Qikrtaq										#Generic name
 2612 = "Cordova" # Eyak											#Iberian name used by Anglophone modified
 2613 = "Sitka" # Shee Atika										#Generic name
-2620 = "Tijuana" # Kumeyaay									#Iberian name used by Anglophone
 
 #BT200 New Provinces
 4920 = "Aleut" # Aleut East										#Generic name
@@ -1335,7 +1543,6 @@
 5040 = "Kaska" # Kaska											#Generic name
 5041 = "Nahanni" # Nahanni										#Generic name
 5042 = "Mohave" # Aha Makhav								#Generic name
-5043 = "Mexicali" # Cocopah									#Iberian name used by Anglophone
 5044 = "Mono Lake" # Kucadikadi							#Anglophone name
 5045 = "Redding" # Wintu											#Anglophone name
 
@@ -1410,36 +1617,25 @@
 5060 = "Eastern Townships"	# Mamhlawbagak		#Anglophone name
 
 #BT400  Overhaul Vanilla renaming
-855 = "Mazatl�n"	# Huichol									#Generic name
-859 = "Sinaloa"	# Sinaloa											#Generic name
-862 = "Opateria"	# Yaqui										#Generic name Hispanified
 875 = "Hopi"	# Canyon											#Generic name
 876 = "Phoenix"	# Yavapai										#Generic name
 877 = "Tucson"	# Pima												#Generic name
 878 = "Junction City"	# Navajo								#Anglophone name
 879 = "Tonto"	# Apache										#Anglophone name
 880 = "Santa Fe"	# Pueblo										#Iberian name used by Anglophone
-881 = "Alamogordo"	# Piro										#Iberian name used by Anglophone, Iberians get La Luz instead
+881 = "Ruidoso"	# Piro										#Iberian name used by Anglophone, Iberians get La Luz instead
 882 = "Roswell"	# Mescalero									#Sumner or Carlsbad might be better, but people love Roswell. May be considered a 'light' easter egg
 2491 = "Hualapai"	# Hualapai									#Generic name
 2492 = "Silver City"	# Chiricahua							#Anglophone name
 2493 = "Zuni"	# Hopi											#Generic name
 2494 = "Gila"	# Zuni													#Iberian name, I think, Mogollon also an option
-2495 = "Albuquerque"	# Acoma								#Iberian name used by Anglophone
-2496 = "Jicarilla"	# Jicarilla										#Generic name
 2608 = "Defiance" # Rocky Mountains						#Anglophone name
-2616 = "Caborca" # Seri												#Generic name
 
 #BT400 New Provinces
-4964 = "Seri" # Comcaac											#Generic name
 4975 = "Moab" # Sahyehpeech									#Christian name
 4979 = "Navajo" # NavojoWest									#Generic name
-5061 = "Guaymas" # Guaymas									#Generic name
-4649 = "Navojoa" # Yoreme										#Generic name
-5063 = "Culiac�n" # Colhuacan									#Generic name
 5064 = "Durango" # Hisatsinom								#Iberian name used by Anglophone
 5065 = "Pueblo" # Muache										#Iberian name used by Anglophone
-5066 = "Alamosa" # Taveewachii						#Anglophone name
 
 #BT500  Overhaul Vanilla renaming					
 484 = "Havana"	# Havana										
@@ -1505,26 +1701,7 @@
 #BT800  Overhaul Vanilla renaming
 #Note from Draiocht - Some of these are really crap. Eventually I'm hoping to find the time to come back and fix some of these with more period appropriate names and historical settlements, but the historical situation here is rather a mess and there is more heresay and legends than scholarly research, so I'm 
 #just moving on for now and leaving this rubbish setup. BT's mandate is quality, while bearing in mind most people would prefer 50 provinces with alright detail to 5 provinces with every single last possible detail (they might even more prefer 500 horrible ones, but I have no interest in doing really bad stuff =p).
-904 = "Mason City"			#Notes - 
-906 = "Jamestown"			#Notes - 
-907 = "Sioux Falls"			#Notes - 
-908 = "St. Cloud"			#Notes - 
-909 = "Bismark"			#Notes - 
-910 = "Duluth"			#Notes - 
-1011 = "Grand Rapids"			#Notes - 
-1809 = "Fort Caspar"			#Notes - Or modern Casper
-2006 = "Bozeman"			#Notes - Or Coulson (early name of Billings)
-2007 = "Mobridge"			#Notes - 
-2008 = "Dickinson"			#Notes - 
-2009 = "Valentine"			#Notes - 
-2501 = "Great Falls"			#Notes - 
-2502 = "Fort Belknap"			#Notes - 
-2503 = "Bighorn"			#Notes - Better name would be great here, but going with the mountain range and national forest for now.
-2504 = "Worland"			#Notes - or Themopolis, or Bighorn Basin
-2505 = "Black Hills"			#Notes - Or Hot Springs, or Deadwood, or Rapid City
-2506 = "Wind River"			#Notes - 
-2510 = "Washburn"			#Notes - 
-2512 = "Fort Ridgely"			#Notes - Or Minnesota
+
 #1008 covered in 2.0
 #1009 covered in 2.0
 #1010 covered in 2.0
@@ -1537,20 +1714,13 @@
 5613 = "Yellowstone"			#Notes - 
 5614 = "Forsyth"			#Notes - 
 5615 = "Miles City"			#Notes - or Fort Keogh
-5616 = "Glasgow"			#Notes - 
-5617 = "Fort James"			#Notes - or Fort Berthold, or Fort Atkinson, or Sakakawea
 5618 = "Fort Pierre"			#Notes - 
-5619 = "Fort Robinson"			#Notes - 
+5619 = ""			#Notes - 
 5620 = "Oacoma"			#Notes - 
 5621 = "Minneapolis"			#Notes - Or Fort St. Anthony
 5622 = "Virginia"			#Notes - 
-5623 = "Minot"			#Notes - 
 5624 = "Brandon House"			#Notes - 
-5625 = "Pembina"			#Notes - 
 5626 = "Centralia"			#Notes - or Fargo
-5627 = "Havre"			#Notes - 
-5628 = "Sioux City"			#Notes - 
-5629 = "Fort Laramie"			#Notes - 
 
 #BT900  Overhaul Vanilla renaming (South Africa)
 #South Africa Proper
@@ -1667,7 +1837,6 @@
 
 #BT900 New Provinces (North America), note these are all mostly rubbish names I placed mostly from memory. Eventually I'd like to merge the proper research I did in the province files with the names here.
 5632 = "Sweetgrass" #
-5633 = "Fort Peck" #
 5634 = "Assiniboia" #
 5635 = "Swift Current" #
 5636 = "Lloydminster" #
@@ -1776,13 +1945,7 @@
 5823 = "Peach Springs" #ERROR bad name, come back later
 5824 = "Saleesh House" #
 5825 = "Dixie" #ERROR bad name, come back later
-5826 = "Taos" #
-5827 = "Los Alamos" #
-4632 = "Ponderosa" #
-4631 = "Albuquerque" #
-5830 = "Socorro" #
-4630 = "Carrizozo" #ERROR bad name, come back later
-5832 = "Mesilla Valley" #Or Las Cruces
+
 5833 = "Cache Valley" #
 5834 = "Duchesne" #
 5835 = "Paradox" #Hehe, bit of an easter egg like Roswell. La Sal would be better
@@ -1794,7 +1957,6 @@
 5841 = "Hayden" #ERROR bad name, come back later
 4634 = "Flagstaff" #
 5843 = "Animas" #
-5844 = "Carlsbad" #
 5845 = "Rock Springs" #
 5846 = "Bighorn Mountains" #
 
@@ -1923,13 +2085,6 @@
 #haiti
 4619 = "Isle of Turtles"
 
-#tejas
-883 = "San Antonio"
-2498 = "El Paso County"
-2666 = "Del Rio"
-2667 = "Piedras Negras"
-4627 = "Austin"
-4629 = "Ector County"
 
 #columbia
 827 = "Antioch"
@@ -2274,6 +2429,3 @@
 
 #Campeche
 845 = "Campeachy" #Or Campechy
-
-#By neo Nov 2020
-888 = { "Galveston" "Galveston" } #Houston, the city, is named after Sam Houston, who wasn't alive until the mid 19th century and was a famous figure in the Mexican-American War and the independence of Texas from Mexico
