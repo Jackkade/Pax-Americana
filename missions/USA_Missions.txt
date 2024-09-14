@@ -397,7 +397,7 @@ USA_missions_4 = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=usa_free_dixieland_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=40
+				value=25
 			}
 		}
 		effect = {

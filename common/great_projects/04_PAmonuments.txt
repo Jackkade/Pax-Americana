@@ -181,7 +181,7 @@ independence_hall = {
 		country_modifiers = {
 			num_of_parliament_issues = 1
 			monthly_reform_progress_modifier = 0.10
-			dip_advisor_cost = -0.5
+			dip_advisor_cost = -0.05
 		}
 
 		#what effects happen when this tier is achieved
