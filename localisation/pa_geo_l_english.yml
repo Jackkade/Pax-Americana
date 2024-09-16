@@ -17,6 +17,12 @@
 
  # Colonial Regions
  colonial_rio_grande:0 "Colonial Rio Grande"
+ COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_Texas:0 "[Root.GetAdjective] Texas"
+ COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_Texas_ADJ:0 "[Root.GetAdjective] Texan"
+ COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_RioGrande:0 "[Root.GetAdjective] Rio Grande"
+ COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_RioGrande_ADJ:0 "[Root.GetAdjective] Rio Grandese"
+ COLONIAL_RIO_GRANDE_RioGrande:0 "Rio Grande"
+ COLONIAL_RIO_GRANDE_RioGrande_ADJ:0 "Rio Grandese"
  
  #Areas
  estrie_area:0 "Estrie"
