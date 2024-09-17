@@ -148,7 +148,7 @@ USA_missions_2 = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=usa_settle_northwest_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=50
+				value=30
 			}
 		}
 		effect = {
@@ -349,7 +349,7 @@ USA_missions_3 = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=usa_up_old_man_river_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=30
+				value=20
 			}
 		}
 		effect = {
@@ -473,7 +473,7 @@ USA_missions_4 = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=usa_liberate_texas_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=25
+				value=35
 			}
 		}
 		effect = {
