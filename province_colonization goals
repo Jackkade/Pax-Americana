@@ -1,0 +1,16 @@
+send colonist -> ticks up until 1000 pop -> you have territorial core
+
+Issues with current system:
+-restricted by number of colonists
+-heavily encourages modifier stacking
+-not tied to size of country
+-"free" development
+-bad ai colonization
+-takes an idea slot to even participate
+
+Goals of the new system:
+-Model different styles of colonization
+-Not tied to amount of colonists
+-Cost dev points in some manner
+-Reasonable spread of development
+-Show Uncolonized natives better
