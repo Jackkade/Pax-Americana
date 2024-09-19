@@ -35,8 +35,8 @@ native_basic_reform = {
 		NOT = { religion = inti }
 		capital_scope = {
 			OR = {
-				continent = north_america
-				continent = south_america
+				continent = north_america_new
+				continent = south_america_new
 				continent = new_world
 				region = australia_region
 			}
