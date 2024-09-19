@@ -1,0 +1,28 @@
+
+on_startup = {
+    pre_colonial_culture_preserver_effect = yes
+}
+
+##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
+on_colony_established = {
+    if = {
+        limit = {
+    		has_province_flag = ci_set_pre_colonial_culture_var
+        }
+		change_culture = variable:pre_colonial_culture_var
+		change_religion = variable:pre_colonial_religion_var
+		clr_province_flag = ci_set_pre_colonial_culture_var
+    }
+}
+
+on_colony_finished = { #ROOT - Province
+	#on_colony_finished_effect = yes
+    if = {
+        limit = {
+    		has_province_flag = ci_set_pre_colonial_culture_var
+        }
+		change_culture = variable:pre_colonial_culture_var
+		change_religion = variable:pre_colonial_religion_var
+		clr_province_flag = ci_set_pre_colonial_culture_var
+    }
+}

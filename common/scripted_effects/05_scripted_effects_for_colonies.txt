@@ -1,0 +1,67 @@
+#Overwritten to not remove native cultures
+on_colonist_boosting_colony_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					religion = noreligion
+					is_in_capital_area = yes
+					NOT = {
+						OR = {
+							has_dlc = "Dharma"
+							has_dlc = "Wealth of Nations"
+						}
+					}
+				}
+			}
+			change_religion = FROM
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = noculture
+					is_in_capital_area = yes
+					NOT = {
+						OR = {
+							has_dlc = "Dharma"
+							has_dlc = "Wealth of Nations"
+						}
+					}
+				}
+			}
+			change_culture = FROM
+			change_original_culture = FROM
+		}
+		if = {
+			limit = {
+				has_province_flag = ci_set_pre_colonial_culture_var
+			}
+			change_culture = variable:pre_colonial_culture_var
+			change_religion = variable:pre_colonial_religion_var
+			clr_province_flag = ci_set_pre_colonial_culture_var
+		}
+	}
+}
+
+#Credit to Hadrios
+pre_colonial_culture_preserver_effect = {
+	every_province = {
+		limit = {
+			OR = {
+				is_city = no
+				owner = { primitives = yes }
+			}
+			native_size = 1 #Must be inhabited
+			NOT = { has_province_flag = ci_set_pre_colonial_culture_var }
+		}
+		export_to_variable = {
+			which = pre_colonial_culture_var
+			value = culture
+		}
+		export_to_variable = {
+			which = pre_colonial_religion_var
+			value = religion
+		}
+		set_province_flag = ci_set_pre_colonial_culture_var
+	}
+}
