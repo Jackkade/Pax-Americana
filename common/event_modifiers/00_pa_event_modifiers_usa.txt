@@ -62,3 +62,21 @@ pa_slave_plantation = {
 	local_culture_conversion_cost = 1.0
 	local_institution_spread = -0.3 
 }
+
+
+pa_new_colony_cooldown = {
+	# 2 Ducats per month, to represent continued upkeep
+	global_tax_income = -24	
+
+	#Still a drain on national resources
+	local_tax_modifier = -1.0 
+	trade_goods_size_modifier = -1.0
+	local_production_efficiency = -1.0
+	local_autonomy = 0.1 
+
+	#Natives don't like you
+	local_unrest = 2 
+
+	#Counteract Territory/wrong culture negatives
+	local_missionary_strength = 0.02 
+}

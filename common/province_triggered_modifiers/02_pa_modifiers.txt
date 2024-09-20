@@ -1,0 +1,47 @@
+pa_new_colony = {
+	potential = {
+		always = yes
+	}
+
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			OR = {	
+				
+				#The idea here is that the colony will be finished once the owner has invested something in the province.
+				
+				has_owner_religion = yes 
+
+				num_of_times_improved_by_owner = 3
+
+				
+				num_of_buildings_in_province = 3
+
+				#This will result in instant conversion in some cases, but it kind of makes sense that places where significant trading is happening may develop much faster
+				province_has_center_of_trade_of_level = 1
+
+				#AI will never do this unfortuately
+				num_of_times_expanded_infrastructure = 1
+				
+			}
+		}
+		has_province_modifier = pa_new_colony_cooldown 
+	}
+
+	
+	#Province scope
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		remove_province_triggered_modifier = pa_new_colony
+		remove_province_modifier = pa_new_colony_cooldown
+
+		#Adding this here again just for redundancy
+		clr_province_flag = ci_set_pre_colonial_culture_var
+		change_culture = owner
+        change_original_culture = owner
+		change_religion = owner
+	}
+}

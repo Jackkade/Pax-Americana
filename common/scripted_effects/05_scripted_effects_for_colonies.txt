@@ -5,13 +5,6 @@ on_colonist_boosting_colony_effect = {
 			limit = {
 				OR = {
 					religion = noreligion
-					is_in_capital_area = yes
-					NOT = {
-						OR = {
-							has_dlc = "Dharma"
-							has_dlc = "Wealth of Nations"
-						}
-					}
 				}
 			}
 			change_religion = FROM
@@ -20,25 +13,10 @@ on_colonist_boosting_colony_effect = {
 			limit = {
 				OR = {
 					culture = noculture
-					is_in_capital_area = yes
-					NOT = {
-						OR = {
-							has_dlc = "Dharma"
-							has_dlc = "Wealth of Nations"
-						}
-					}
 				}
 			}
 			change_culture = FROM
 			change_original_culture = FROM
-		}
-		if = {
-			limit = {
-				has_province_flag = ci_set_pre_colonial_culture_var
-			}
-			change_culture = variable:pre_colonial_culture_var
-			change_religion = variable:pre_colonial_religion_var
-			clr_province_flag = ci_set_pre_colonial_culture_var
 		}
 	}
 }

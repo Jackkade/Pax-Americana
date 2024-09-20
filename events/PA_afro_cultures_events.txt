@@ -1,7 +1,5 @@
 namespace = pax_americana_afro_cultures
 
-
-
 province_event = { #Anglo-African-American
 	id = pax_americana_afro_cultures.1
 	title = anglo_african_american_spread.title

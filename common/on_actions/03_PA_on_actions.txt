@@ -5,14 +5,13 @@ on_startup = {
 
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
 on_colony_established = {
-    if = {
-        limit = {
-    		has_province_flag = ci_set_pre_colonial_culture_var
-        }
-		change_culture = variable:pre_colonial_culture_var
-		change_religion = variable:pre_colonial_religion_var
-		clr_province_flag = ci_set_pre_colonial_culture_var
-    }
+}
+
+#scope = new country, FROM = parent country
+on_colonial_nation_established = {
+        #   Fix to colonial nations adopting
+    change_primary_culture = FROM
+    change_religion = FROM
 }
 
 on_colony_finished = { #ROOT - Province
@@ -22,7 +21,32 @@ on_colony_finished = { #ROOT - Province
     		has_province_flag = ci_set_pre_colonial_culture_var
         }
 		change_culture = variable:pre_colonial_culture_var
+        change_original_culture = variable:pre_colonial_culture_var
 		change_religion = variable:pre_colonial_religion_var
 		clr_province_flag = ci_set_pre_colonial_culture_var
+    }
+	add_permanent_province_modifier = {
+		name = pa_new_colony_cooldown
+		duration = 1825		#Currently 5 Years, may need to be higher
+	}
+    add_province_triggered_modifier = pa_new_colony
+}
+
+# province, general conversion through effects
+on_province_culture_changed = {
+    if = {
+        limit = {
+    		has_province_flag = ci_set_pre_colonial_culture_var
+        }
+		change_culture = variable:pre_colonial_culture_var
+    }
+}
+
+on_province_religion_changed = {
+    if = {
+        limit = {
+    		has_province_flag = ci_set_pre_colonial_culture_var
+        }
+		change_religion = variable:pre_colonial_religion_var
     }
 }

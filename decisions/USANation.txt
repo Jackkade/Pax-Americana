@@ -15,8 +15,8 @@ country_decisions = {
 					tag = UHW
 					capital_scope = {
 						OR = {
-							continent = north_america_new
-							continent = south_america_new
+							continent = north_america
+							continent = south_america
 						}
 					}
 				}
