@@ -1,0 +1,23 @@
+#	###	Pax America Historical Colonization Rework ###
+#
+#	This will have to be dynamic in some sense, as we don't want some parts of the world to be completely uncolonizable by AI, if say, a country fails to exist.
+#	
+#	Hiearchy for which nations should get colonization rights and when ->
+#	
+#	-	Spain/Castille should get priority in historical Spanish colonies in the americas
+#	-	Portugal Should be colonizing africa/ indian ocean first, then brazil. Brazil will open up in 1500 to Portugal, or to Castille if Portugal doesn't exist. 
+#	-	Portugal Should not be colonizing New World Outside of Brazil, unless castille/Spain no longer exist then it may go for South America 
+#	-	Spain should not colonize North America until 1550 at the earliest, outside of rio grande and carribean
+#	-	Spain Should Focus on the large caribbean islands, and no colonization of anywhere else until they control it all
+#	-	Spain will get free reign on NA once Mexico is conquered, and England and France have had the opertunity to colonize it for 75 years
+#	-	Portugal Can get access to NA if no other colonizers exist.
+#	-	Portugal can colonize Australia if english aren't colonizing
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+#
+#	-	French Colonization of NA can commence in 1525 (First colony in Gaspe penninsula in quebec in 1534)
+#	-	French can try to colonize Brazil in 1550
+#	-	French can colonize carribean in 1600
+#	-	French can colonize australia if English aren't colonizing 
+#	-	
+can_colonize_province = {
+}
