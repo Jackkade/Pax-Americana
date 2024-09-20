@@ -1137,7 +1137,7 @@ exploration_ideas = {
 		naval_attrition = -0.1
 	}
 	overseas_exploration = {
-		range = 0.5
+		range = 0.2		#Nerfed, colonial range is already abundant currently, and it usually isn't super useful anyways
 	}
 	land_of_opportunity = {
 		global_colonial_growth = 20 # BT; 10
