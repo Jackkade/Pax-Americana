@@ -5,6 +5,21 @@ on_startup = {
 
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
 on_colony_established = {
+    add_province_triggered_modifier = pa_new_colony
+}
+
+# province
+# root = location, from = country that abandons colony
+# Fired right before the colony is abandoned.
+on_abandon_colony = {
+    if = {
+        limit = {
+    		has_province_flag = ci_set_pre_colonial_culture_var
+        }
+		change_culture = variable:pre_colonial_culture_var
+        change_original_culture = variable:pre_colonial_culture_var
+		change_religion = variable:pre_colonial_religion_var
+    }
 }
 
 #scope = new country, FROM = parent country
@@ -29,7 +44,7 @@ on_colony_finished = { #ROOT - Province
 		name = pa_new_colony_cooldown
 		duration = 1825		#Currently 5 Years, may need to be higher
 	}
-    add_province_triggered_modifier = pa_new_colony
+    
 }
 
 # province, general conversion through effects
