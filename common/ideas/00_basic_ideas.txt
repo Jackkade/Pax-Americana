@@ -1469,7 +1469,7 @@ exploration_ideas = {
 			is_colonial_nation = yes
 		}	#From vanilla, because we don't want Canada to have land in Asia, Mexico to have land in Africa, or Australia to colonise Siberia. Colonial nations expand with expansion instead.
 		modifier = {
-			factor = 0.1
+			factor = 0.75	#PA Buffed from BT's 0.1, we want PUs to still colonize ideally.
 			is_subject = yes
 		}	#Now less likely, but not impossible, for subjects to form colonies (happened historically, actually, with the Netherlands, Scotland, and others)
 		modifier = {
