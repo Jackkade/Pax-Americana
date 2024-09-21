@@ -14,7 +14,7 @@ technology = { #Early Ships
 	year = 1350
 	
 	naval_morale			=	2.0
-	range					=	60
+	range					=	50
 	may_fabricate_claims = yes
 
 	enable = war_canoe
@@ -61,7 +61,7 @@ technology = { #The Early Carrack
 
 	naval_morale			=	0.1
 	naval_maintenance		= 	0.1
-	range					= 	30
+	range					= 	50
 	trade_efficiency 		= 	0.02
 	global_colonial_growth	= 	15
 	may_build_flagships = yes
@@ -121,7 +121,7 @@ technology = { #Naval Ambitions
 	}
 	
 	naval_morale			= 0.3
-	range					= 55
+	range					= 50
 	impressment_offices 	= yes
 	naval_engagement_width = 10
 }
@@ -186,7 +186,7 @@ technology = { #Wharf
 		new_world_i = 0.5
 	}
 	
-	range					= 	100
+	range					= 	50
 
 	wharf = yes
 
