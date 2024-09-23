@@ -7,6 +7,6 @@
 
 #Core US
 #Northeast
-953 = { "Washington" "Washington D.C." } #DC
+953 = { "Washington" "Washington D.C." } #District of Colombia, kinda necessary
 
 #Southeast
