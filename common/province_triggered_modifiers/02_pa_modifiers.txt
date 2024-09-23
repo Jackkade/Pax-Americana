@@ -30,6 +30,7 @@ pa_new_colony = {
 	
 	#Province scope
 	on_activation = {
+		reset_to_pre_colonial_culture_religion = yes
 	}
 	
 

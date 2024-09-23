@@ -111,3 +111,31 @@ province_event = { #Anglo-African-American
         ai_chance = { factor = 0 }
 	}
 }
+#Attempts to preserve pre-colonial cultures
+province_event = { #Colony Finished
+	id = colony_reset_culture_vars.100
+	title = null
+	desc = null
+	picture = null
+
+	hidden = yes
+    is_triggered_only = yes
+	trigger = {
+		is_city = no
+	}
+
+	immediate = { #
+		export_to_variable = {
+			which = pre_colonial_culture_var
+			value = culture
+		}
+		export_to_variable = {
+			which = pre_colonial_religion_var
+			value = religion
+		}
+	}
+
+	option = {
+		name = null
+	}
+}

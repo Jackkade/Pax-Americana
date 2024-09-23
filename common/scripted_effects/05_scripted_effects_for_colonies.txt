@@ -1,24 +1,12 @@
 #Overwritten to not remove native cultures
 on_colonist_boosting_colony_effect = {
-	hidden_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = noreligion
-				}
-			}
-			change_religion = FROM
-		}
-		if = {
-			limit = {
-				OR = {
-					culture = noculture
-				}
-			}
-			change_culture = FROM
-			change_original_culture = FROM
-		}
-	}
+    reset_to_pre_colonial_culture_religion = yes
+}
+
+reset_to_pre_colonial_culture_religion = {
+	change_culture = variable:pre_colonial_culture_var
+    change_original_culture = variable:pre_colonial_culture_var
+	change_religion = variable:pre_colonial_religion_var
 }
 
 #Credit to Hadrios
@@ -28,7 +16,6 @@ pre_colonial_culture_preserver_effect = {
 			OR = {
 				is_city = no
 				owner = { primitives = yes }
-				
 			}
 			native_size = 1 #Must be inhabited
 			NOT = { has_province_flag = ci_set_pre_colonial_culture_var }
