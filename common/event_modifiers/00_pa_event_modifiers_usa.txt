@@ -70,6 +70,7 @@ pa_new_colony_cooldown = {
 
 	#Still a drain on national resources
 	local_tax_modifier = -1.0 
+	trade_goods_size = -0.2
 	trade_goods_size_modifier = -1.0
 	local_production_efficiency = -1.0
 	local_autonomy = 0.1 

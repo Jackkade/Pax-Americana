@@ -3,7 +3,7 @@ pa_new_colony = {
 		always = yes
 	}
 
-	#hidden = yes
+	hidden = yes
 
 	trigger = {
 		NOT = {
@@ -11,10 +11,10 @@ pa_new_colony = {
 				
 				#The idea here is that the colony will be finished once the owner has invested something in the province.
 
-				num_of_times_improved_by_owner = 3
+				num_of_times_improved_by_owner = 5
 
 				
-				num_of_buildings_in_province = 2
+				num_of_buildings_in_province = 3
 
 				#AI will never do this unfortuately
 				num_of_times_expanded_infrastructure = 1
