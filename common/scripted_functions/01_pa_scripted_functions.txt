@@ -20,4 +20,46 @@
 #	-	French can colonize australia if English aren't colonizing 
 #	-	
 can_colonize_province = {
+	condition = {
+		potential = {
+            FROM = { 
+                ai = yes
+            }
+            OR = {
+                #####    Portugal Americas & oceania
+                AND = {
+                    FROM = { tag = POR }
+                    OR = {
+                        continent = oceania
+                        continent = north_america 
+                        region = la_plata_region
+                        region = upper_peru_region
+                        region = peru_region
+                        region = colombia_region
+                    }
+                }
+                #####
+
+                #####    Castille Banned Locations
+                AND = {
+                    FROM = { 
+                        OR = {
+                            tag = CAS 
+                            tag = SPA
+                        }
+                    }
+                    OR = {
+                        continent = africa
+                        region = mississippi_region
+                        region = canada_region
+                        region = northeast_america_region
+                    }
+                }
+                #####
+            }
+		}
+		allow = {
+			always = no 
+		}
+	}
 }
