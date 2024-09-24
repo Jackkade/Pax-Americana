@@ -4,12 +4,28 @@ on_colonist_boosting_colony_effect = {
 }
 
 reset_to_pre_colonial_culture_religion = {
-	change_culture = variable:pre_colonial_culture_var
-    change_original_culture = variable:pre_colonial_culture_var
-	change_religion = variable:pre_colonial_religion_var
+	if = {
+		limit = {
+			check_variable = {
+				which = pre_colonial_culture_var
+				value = 1
+			}
+		}
+		change_culture = variable:pre_colonial_culture_var
+    	change_original_culture = variable:pre_colonial_culture_var
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = pre_colonial_religion_var
+				value = 1
+			}
+		}
+		change_religion = variable:pre_colonial_religion_var
+	}
 }
 
-#Credit to Hadrios
+#Credit to Hadrios' Culture Influence mod for original effect and concept
 pre_colonial_culture_preserver_effect = {
 	every_province = {
 		limit = {
