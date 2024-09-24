@@ -57,6 +57,23 @@ can_colonize_province = {
                     }
                 }
                 #####
+
+                #####    Non European Non adjacent
+                AND = {
+                    FROM = { 
+                        NOT = {
+                            OR = {
+                                technology_group = western 
+                                technology_group = eastern
+                            }
+
+                        }
+                    }
+                    NOT = {
+                        is_neighbor_of = FROM
+                    }
+                }
+                #####
             }
 		}
 		allow = {
