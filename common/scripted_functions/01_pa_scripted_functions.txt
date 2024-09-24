@@ -36,6 +36,7 @@ can_colonize_province = {
                         region = upper_peru_region
                         region = peru_region
                         region = colombia_region
+                        region = iberia_region
                     }
                 }
                 #####
