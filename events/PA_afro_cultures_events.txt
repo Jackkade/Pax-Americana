@@ -125,14 +125,19 @@ province_event = { #Colony Finished
 	}
 
 	immediate = { #
-		export_to_variable = {
-			which = pre_colonial_culture_var
-			value = culture
-		}
-		export_to_variable = {
-			which = pre_colonial_religion_var
-			value = religion
-		}
+        if = {
+            limit = {
+                native_size = 1
+            }
+            export_to_variable = {
+                which = pre_colonial_culture_var
+                value = culture
+            }
+            export_to_variable = {
+                which = pre_colonial_religion_var
+                value = religion
+            }
+        }
 	}
 
 	option = {
