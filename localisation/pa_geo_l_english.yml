@@ -493,7 +493,12 @@
  PROV_ADJ7527:0 "Caxcanes"
  PROV7528:0 "Amapoalas"
  PROV_ADJ7528:0 "Amapoalas"
-
+ #1.2 Carribean
+ PROV7535:0 "Tortuga"
+ PROV_ADJ7535:0 "Tortuga"
+ PROV7537:0 "Guanabo"
+ PROV_ADJ7537:0 "Guanabo"
+ 
 
 
  #Canada
