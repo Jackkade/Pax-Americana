@@ -4672,7 +4672,9 @@ usa_secure_hispanolia_provinces = {
 	488 489 490 
 	2658 2659 
 	4618 4619 4620 4621 
-	5563 5565 5567
+	5563 5565 5567 
+	7535 7536 7537 7538 7540 7541 7542 7543 
+	7552
 }
 
 usa_settle_mississippi_territory_provinces = {
@@ -4696,7 +4698,8 @@ usa_cuban_statehood_provinces = {
 	484 485 486 
 	2654 2655 2656 
 	4622 4623 4624 
-	5572
+	5572 
+	7544 7545 7546 7547 7548 7549 7550 7551
 }
 
 usa_place_in_the_sun_provinces = {
@@ -4705,6 +4708,7 @@ usa_place_in_the_sun_provinces = {
 	5577 5578 5579 5581 5582 5583 5584 5585 
 	5586 6046 6047 6048 6049 6050 6051 6052 
 	6053 6054 6055 6056 6057 6058 6059 6061
+	7529 7530 7531 7532 7533 7534 7539
 }
 
 usa_great_white_north_provinces = {
