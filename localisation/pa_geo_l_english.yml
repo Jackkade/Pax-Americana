@@ -34,6 +34,8 @@
  left_bank_delta_area:0 "Left Bank Delta"
  winnipeg_area:0 "Winnipeg"
  east_prairies_area:0 "East Prairies"
+ central_hispaniola_area:0 "Central Hispaniola"
+ jamaica_area:0 "Jamaica"
  #Provinces
  PROV7300:0 "Montaukett"
  PROV_ADJ7300:0 "Montaukett"
