@@ -1373,9 +1373,12 @@ central_america_region = { # 10 areas
 carribeans_region = { # 8 areas
 	areas = {
 		cuba_area
+		east_cuba_area
 		hispaniola_area
+		central_hispaniola_area
 		dominica_area
 		greater_antilles_area
+		jamaica_area
 		lucayan_area
 		leeward_islands_area
 		windward_islands_area
@@ -1783,7 +1786,6 @@ unused_region = {
 		angkor_area #Unused in Indochina
 		maryland_area #Unused in North America
 		western_sicily_area #Unused in Italy
-		east_cuba_area #Unused in Carribeans
 		texas_plains_area #Unused in North America
 		trois_rivieres_area #Unused in North America
 		west_micronesia_area #Unused in Oceania

@@ -58,10 +58,6 @@ western_sicily_area = {
 	#Unused area in Italy
 }
 
-east_cuba_area = {
-	#Unused area in Carribeans
-}
-
 texas_plains_area = {
 	#Unused area in North America
 }
@@ -3265,17 +3261,26 @@ panama_area = {
 ###
 # Carribeans
 ###
-cuba_area = {
-	484 485 486 2654 2655 2656 4622 4623 4624 5572
+cuba_area = { # West Cuba
+	484 485 4622 4623 4624 7546 7547 7548 7549 7550
 }
-hispaniola_area = {
-	490 2658 2659 4620 4621 5565 5567
+east_cuba_area = {
+	486 2654 2655 2656 5572 7544 7545 7551
 }
-dominica_area = {
-	488 489 4618 4619 5563
+hispaniola_area = { # East Hispaniola
+	490 4620 4621 7541 7542 7543
 }
-greater_antilles_area = {
-	481 487 492 6061
+central_hispaniola_area = {
+	2658 2659 5565 5567 7540 7552
+}
+dominica_area = { # West Hispaniola
+	488 489 4618 4619 5563 7535 7536 7537 7538
+}
+greater_antilles_area = { # Puerto Rico
+	492 7529 7530 7531 7539
+}
+jamaica_area = {
+	487 6061 7532 7533 7534
 }
 lucayan_area = { #Northern Bahamas
 	482 5574 5575 6052 6053 6054 6055 6056 6057
@@ -3293,7 +3298,7 @@ leeward_antilles_area = { # BT
 	491 5578 5579 6046 6058 6059
 }
 virgin_islands_area = { #BT
-	493 5584 6050
+	481 493 5584 6050
 }
 
 ###
