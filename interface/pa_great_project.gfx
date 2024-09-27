@@ -54,4 +54,14 @@ spriteTypes = {
 		name = "GFX_great_project_catedral_de_san_cristobal"	
 		texturefile = "gfx//interface//great_projects//great_project_catedral_de_san_cristobal.dds"
 	}
+
+	spriteType = {
+		name = "GFX_great_project_ciudad_colonial"	
+		texturefile = "gfx//interface//great_projects//great_project_ciudad_colonial.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_rosehall_great_house"	
+		texturefile = "gfx//interface//great_projects//great_project_rosehall_great_house.dds"
+	}
 }
