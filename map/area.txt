@@ -2718,7 +2718,7 @@ grand_river_area = { # BT
 # Southeast America
 ###
 chesapeake_area = {
-	938 950 952 953 2547 2550 
+	938 950 952 2547 2550 
 	7334 7335  7339 7347 
 }
 delmarva_area = {

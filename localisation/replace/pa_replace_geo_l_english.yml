@@ -1,6 +1,13 @@
 ﻿l_english:
 
-
+ new_york_area:0 "Hudson Valley"
+ great_valley_area:0 "Potomac"
+ piedmont_north_america_area:0 "Tuscarora"
+ south_carolina_area:0 "Carolinas Piedmont"
+ carolinas_area:0 "Carolinas"
+ upper_american_georgia_area:0 "Cherokea"
+ american_georgia_area:0 "Georgia"
+ lower_louisiana_area:0 "Mississippi Delta"
  greater_antilles_area:0 "Puerto Rico"
  cuba_area:0 "West Cuba"
  PROV485:0 "Ormopay"
