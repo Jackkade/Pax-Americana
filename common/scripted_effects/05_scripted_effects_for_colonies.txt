@@ -26,8 +26,7 @@ reset_to_pre_colonial_culture_religion = {
 }
 
 #Credit to Hadrios' Culture Influence mod for original effect and concept
-pre_colonial_culture_preserver_effect = {
-	
+pre_colonial_culture_preserver_effect = {	
 	every_province = {
 		limit = {
 			OR = {

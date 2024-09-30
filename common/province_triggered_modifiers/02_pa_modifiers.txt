@@ -18,6 +18,18 @@ pa_new_colony = {
 
 				#AI will never do this unfortuately
 				num_of_times_expanded_infrastructure = 1
+
+				#Has Production Manufactory
+				has_building = wharf
+				has_building = weapons
+				has_building = textile
+				has_building = plantations
+				has_building = tradecompany
+				has_building = farm_estate
+				has_building = mills
+				#Maybe Shouldn't? 
+				has_building = furnace
+				has_building = mint
 			}
 		}
 		OR = {
