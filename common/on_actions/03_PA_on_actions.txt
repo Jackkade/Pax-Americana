@@ -24,6 +24,15 @@ on_colonial_nation_established = {
         #   Fix to colonial nations adopting
     change_primary_culture = FROM
     change_religion = FROM
+    every_owned_province = {
+        limit = {
+            has_active_triggered_province_modifier = pa_new_colony
+        }
+        add_province_modifier = {
+            name = pa_new_colonial_nation_colony
+            duration = 9125		#Currently 25 Years, may need to be lower
+        }
+    }
     add_country_modifier = { 
         name = pa_new_colonial_nation
         duration = 9125 

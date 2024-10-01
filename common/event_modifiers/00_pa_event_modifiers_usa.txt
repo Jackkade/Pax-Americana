@@ -11,8 +11,7 @@
 
 ## Colony Rework
 pa_new_colonial_nation = { #Modifier meant to prevent colonial nations from bankrupting at any cost.
-	global_tax_income = 144
-	interest = -1 
+	interest = -1
 	inflation_reduction = 0.3
 }
 
@@ -87,4 +86,13 @@ pa_new_colony_cooldown = {
 
 	#Counteract Territory/wrong culture negatives
 	local_missionary_strength = 0.02 
+}
+
+pa_new_colonial_nation_colony = {
+	# 3 Ducats per month, to refund ducats
+	global_tax_income = 36	
+
+	#Prevent death spiral
+	local_unrest = -2 
+
 }
