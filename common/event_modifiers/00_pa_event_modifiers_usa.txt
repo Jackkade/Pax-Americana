@@ -72,7 +72,7 @@ pa_slave_plantation = {
 
 pa_new_colony_cooldown = {
 	# 3 Ducats per month, to represent continued upkeep
-	global_tax_income = -36	
+	global_tax_income = -24	
 
 	#Still a drain on national resources
 	local_tax_modifier = -1.0 
@@ -90,7 +90,7 @@ pa_new_colony_cooldown = {
 
 pa_new_colonial_nation_colony = {
 	# 3 Ducats per month, to refund ducats
-	global_tax_income = 36	
+	global_tax_income = 24	
 
 	#Prevent death spiral
 	local_unrest = -2 
