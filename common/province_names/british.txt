@@ -748,8 +748,8 @@
 500 = { "Saint Vincent" "Kingstown" }								
 501 = { "Barbados" "Saint Michael" }
 502 = { "Trinidad" "Port of Spain" }
-1881 = { "Anguilla" "The Valley" }						
-2654 = { "Baracoa" "Baracoa" }	# Bayamo									#No localised naming used	
+1881 = { "Anguilla" "The Valley" }			
+2654 = { "Bay of Honey" "Bay of Honey" }
 2655 = { "Bayamo" "Bayamo" }	# Bayamo									#No localised naming used	
 2656 = { "Camaguey" "Camaguey" }	# Camaguey								
 2658 = { "South Durham" "South Durham" }			#totally made up, their are south places like Orkney and Shetland near Antartica, why not a South Durham
@@ -793,14 +793,13 @@
 6059 = { "Southern Keys" "Grand Key" } #(JP) Totally made up
 6060 = { "Old Providence" "New Westminster" }	
 6061 = { "Cayman Islands" "George Town" }		
-
 7529 = { "Isabella Town" "Isabella Town" }
 7530 = { "Cabot" "Cabot" }      #Ponce: Named after a spanish governor's son, so John Cabot gets a city named after him.
 7531 = { "Caguax" "Caguax" }    #Taino Name
 7532 = { "Montego Bay" "Montego Bay" }
 7533 = { "St. Ann's Bay" "St. Ann's Bay" }
 7534 = { "Mandeville" "Mandeville" }
-7535 = { "Tortuga Island" "Tortuga Island" }
+7535 = { "Isle of Turtles" "Isle of Turtles" }
 7536 = { "Jeremy" "Jeremy" }
 7537 = { "Guanabo Island" "Guanabo Island" }
 7538 = { "Hinche" "Hinche" }
@@ -2100,12 +2099,6 @@
 
 #namibia
 5426 = "Namibe"
-
-#cuba
-2654 = "Bay of Honey"
-
-#haiti
-4619 = "Isle of Turtles"
 
 
 #columbia
