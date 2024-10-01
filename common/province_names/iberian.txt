@@ -1237,7 +1237,14 @@
 7541 = { "Cotu�" "Cotu�" }
 7542 = { "Santo Domingo" "Santo Domingo" }
 7543 = { "Sabana de la Mar" "Sabana de la Mar" }
-
+7544 = { "Santiago de Cuba" "Santiago de Cuba" }
+7545 = { "Las Tunas" "Las Tunas" }
+7546 = { "Zapata" "Zapata" }
+7547 = { "Guane" "Guane" }
+7548 = { "Matanzas" "Matanzas" }
+7549 = { "Cienfuegos" "Cienfuegos" }
+7550 = { "Moron" "Moron" }
+7551 = { "Florida" "Florida" }
 7552 = { "Dajabon" "Dajabon" }
 
 #Brazil
