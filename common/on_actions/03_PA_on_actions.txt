@@ -24,6 +24,11 @@ on_colonial_nation_established = {
         #   Fix to colonial nations adopting
     change_primary_culture = FROM
     change_religion = FROM
+    add_country_modifier = { 
+        name = pa_new_colonial_nation
+        duration = 9125 
+        hidden = yes
+    }
 }
 
 on_colony_finished = { #ROOT - Province
