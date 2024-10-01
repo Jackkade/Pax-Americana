@@ -4,7 +4,7 @@ province_event = { #Anglo-African-American
 	id = pax_americana_afro_cultures.1
 	title = anglo_african_american_spread.title
 	desc = anglo_african_american_spread.desc
-	picture = CULTURE_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 	goto = root
 	
 	trigger = {
@@ -25,6 +25,7 @@ province_event = { #Anglo-African-American
             trade_goods = cotton
             trade_goods = tobacco
         }
+        is_city = yes
     }
 
 	mean_time_to_happen = {
@@ -111,6 +112,363 @@ province_event = { #Anglo-African-American
         ai_chance = { factor = 0 }
 	}
 }
+
+
+province_event = { #Anglo-African-Caribbean
+	id = pax_americana_afro_cultures.2
+	title = anglo_african_american_spread.title
+	desc = anglo_african_american_spread.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	goto = root
+	
+	trigger = {
+		OWNER = {
+            culture_group = british
+            has_estate = estate_nobles
+            NOT = { has_country_modifier = the_abolish_slavery_act }
+        }
+		culture_group = british
+        NOT = {
+            has_province_modifier = pa_slave_plantation 
+        }
+        NOT = {
+            has_province_flag = pa_ang_afro_caribbean_slave_plantation
+        }
+		region = carribeans_region
+        OR = {
+            trade_goods = cotton
+            trade_goods = tobacco
+            trade_goods = coffee
+            trade_goods = sugar
+            trade_goods = cocoa
+            trade_goods = tropical_wood
+            trade_goods = bt_trade_good_fruit
+        }
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template Settled MTTH
+		years = 15 # Made Faster In caribbean
+
+		#MTTH settings
+
+
+		#Dev Factors, penalties begin at 30 Dev
+		modifier = {
+			factor = 1.5
+			development = 30
+		}
+		modifier = {
+			factor = 1.5
+			development = 40
+		}
+		modifier = {
+			factor = 1.5
+			development = 50
+		}
+        modifier = {
+            factor = 0.9
+            estate_influence = {
+                estate = estate_nobles
+                influence = 40
+            }
+        }
+        modifier = {
+            factor = 0.8
+            estate_influence = {
+                estate = estate_nobles
+                influence = 50
+            }
+        }
+        modifier = {
+            factor = 0.7
+            estate_influence = {
+                estate = estate_nobles
+                influence = 65
+            }
+        }
+        modifier = {
+            factor = 0.6
+            estate_influence = {
+                estate = estate_nobles
+                influence = 80
+            }
+        }
+	}
+
+    immediate = {
+        set_province_flag = pa_ang_afro_caribbean_slave_plantation 
+    }
+
+	option = { # Allow them to continue
+		name = anglo_african_caribbean_spread.a
+
+		change_culture = anglo_afro_caribbean
+        add_base_production = 3
+        add_permanent_province_modifier  = { 
+            name = pa_slave_plantation
+            duration = -1  
+        }
+        add_estate_influence_modifier = {
+            estate = estate_nobles
+            desc = PA_SLAVERY_EXPANDED
+            influence = 10
+            duration = 1825
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Prevent the spread of slavery
+		name = anglo_african_american_spread.b
+        add_base_tax = -1
+        add_base_production = -1
+        add_base_manpower = -1  
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -5
+        }
+        ai_chance = { factor = 0 }
+	}
+}
+
+province_event = { #Franco-Afro-Antillean
+	id = pax_americana_afro_cultures.3
+	title = anglo_african_american_spread.title
+	desc = anglo_african_american_spread.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	goto = root
+	
+	trigger = {
+		OWNER = {
+            culture_group = french
+            has_estate = estate_nobles
+            NOT = { has_country_modifier = the_abolish_slavery_act }
+        }
+		culture_group = french
+        NOT = {
+            has_province_modifier = pa_slave_plantation 
+        }
+        NOT = {
+            has_province_flag = pa_franco_afro_antillean_slave_plantation
+        }
+		region = carribeans_region
+        OR = {
+            trade_goods = cotton
+            trade_goods = tobacco
+            trade_goods = coffee
+            trade_goods = sugar
+            trade_goods = cocoa
+            trade_goods = tropical_wood
+            trade_goods = bt_trade_good_fruit
+        }
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template Settled MTTH
+		years = 15 # Made Faster In caribbean
+
+		#MTTH settings
+
+
+		#Dev Factors, penalties begin at 30 Dev
+		modifier = {
+			factor = 1.5
+			development = 30
+		}
+		modifier = {
+			factor = 1.5
+			development = 40
+		}
+		modifier = {
+			factor = 1.5
+			development = 50
+		}
+        modifier = {
+            factor = 0.9
+            estate_influence = {
+                estate = estate_nobles
+                influence = 40
+            }
+        }
+        modifier = {
+            factor = 0.8
+            estate_influence = {
+                estate = estate_nobles
+                influence = 50
+            }
+        }
+        modifier = {
+            factor = 0.7
+            estate_influence = {
+                estate = estate_nobles
+                influence = 65
+            }
+        }
+        modifier = {
+            factor = 0.6
+            estate_influence = {
+                estate = estate_nobles
+                influence = 80
+            }
+        }
+	}
+
+    immediate = {
+        set_province_flag = pa_franco_afro_antillean_slave_plantation 
+    }
+
+	option = { # Allow them to continue
+		name = anglo_african_caribbean_spread.a
+
+		change_culture = afro_antillean
+        add_base_production = 3
+        add_permanent_province_modifier  = { 
+            name = pa_slave_plantation
+            duration = -1  
+        }
+        add_estate_influence_modifier = {
+            estate = estate_nobles
+            desc = PA_SLAVERY_EXPANDED
+            influence = 10
+            duration = 1825
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Prevent the spread of slavery
+		name = anglo_african_american_spread.b
+        add_base_tax = -1
+        add_base_production = -1
+        add_base_manpower = -1  
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -5
+        }
+        ai_chance = { factor = 0 }
+	}
+}
+
+province_event = { #Ibero-Afro-Caribeno
+	id = pax_americana_afro_cultures.4
+	title = anglo_african_american_spread.title
+	desc = anglo_african_american_spread.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	goto = root
+	
+	trigger = {
+		OWNER = {
+            culture_group = iberian
+            has_estate = estate_nobles
+            NOT = { has_country_modifier = the_abolish_slavery_act }
+        }
+		culture_group = iberian
+        NOT = {
+            has_province_modifier = pa_slave_plantation 
+        }
+        NOT = {
+            has_province_flag = pa_ibero_afro_caribeno_slave_plantation
+        }
+		region = carribeans_region
+        OR = {
+            trade_goods = cotton
+            trade_goods = tobacco
+            trade_goods = coffee
+            trade_goods = sugar
+            trade_goods = cocoa
+            trade_goods = tropical_wood
+            trade_goods = bt_trade_good_fruit
+        }
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template Settled MTTH
+		years = 15 # Made Faster In caribbean
+
+		#MTTH settings
+
+
+		#Dev Factors, penalties begin at 30 Dev
+		modifier = {
+			factor = 1.5
+			development = 30
+		}
+		modifier = {
+			factor = 1.5
+			development = 40
+		}
+		modifier = {
+			factor = 1.5
+			development = 50
+		}
+        modifier = {
+            factor = 0.9
+            estate_influence = {
+                estate = estate_nobles
+                influence = 40
+            }
+        }
+        modifier = {
+            factor = 0.8
+            estate_influence = {
+                estate = estate_nobles
+                influence = 50
+            }
+        }
+        modifier = {
+            factor = 0.7
+            estate_influence = {
+                estate = estate_nobles
+                influence = 65
+            }
+        }
+        modifier = {
+            factor = 0.6
+            estate_influence = {
+                estate = estate_nobles
+                influence = 80
+            }
+        }
+	}
+
+    immediate = {
+        set_province_flag = pa_ibero_afro_caribeno_slave_plantation 
+    }
+
+	option = { # Allow them to continue
+		name = anglo_african_caribbean_spread.a
+
+		change_culture = afro_caribeno
+        add_base_production = 3
+        add_permanent_province_modifier  = { 
+            name = pa_slave_plantation
+            duration = -1  
+        }
+        add_estate_influence_modifier = {
+            estate = estate_nobles
+            desc = PA_SLAVERY_EXPANDED
+            influence = 10
+            duration = 1825
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Prevent the spread of slavery
+		name = anglo_african_american_spread.b
+        add_base_tax = -1
+        add_base_production = -1
+        add_base_manpower = -1  
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -5
+        }
+        ai_chance = { factor = 0 }
+	}
+}
+
+
 #Attempts to preserve pre-colonial cultures
 province_event = { #Colony Finished
 	id = colony_reset_culture_vars.100

@@ -1,5 +1,6 @@
 ﻿l_english:
  anglo_african_american_spread.title:0 "Establishment of Slave Plantations"
- anglo_african_american_spread.desc:0 "Landowners have begun the import of african slaves to a plantation to cultivate and sell cash crops. This has resulted in a large number of slave coming to preside in [ROOT.GetName]. "
+ anglo_african_american_spread.desc:0 "Landowners have begun the import of african slaves to a plantation to cultivate and sell cash crops. This has resulted in a large number of slaves coming to preside in [ROOT.GetName]. "
  anglo_african_american_spread.a:0 "A Peculiar Institution"
+ anglo_african_caribbean_spread.a:0 "The Increase in workforce will help our production!"
  anglo_african_american_spread.b:0 "We should prevent the spread of the slavery in our nation."
