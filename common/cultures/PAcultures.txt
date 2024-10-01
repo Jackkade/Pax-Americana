@@ -7,6 +7,12 @@ afro_american_group = {
 		primary = XXX
 	}
 
+	#French Speaking
+	#Caribbean Sea
+	afro_antillean = {
+		primary = XXX
+	}
+
 	#Castillian Speaking
 	#Carribean Sea adjacents
 	afro_caribeno = {
