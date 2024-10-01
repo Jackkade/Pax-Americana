@@ -729,7 +729,15 @@
 481 = { "Bermuda" "Hamilton" }
 482 = { "Grand Bahama" "West End" }
 483 = { "Turks & Caicos" "Cockburn Town" }
+484 = { "Havana" "Havana" }	# Havana										
+485 = { "Trinidad" "Trinidad" }	# Moron										
+486 = { "Guantanamo" "Guantanamo Bay" }	# Guantamano							
+487 = { "Port Royal" "Port Royal" }	# Jamaica									
+488 = { "Prince's Port" "Prince's Port" }			#or Hospital. first is direct translation whilst second is translation of the name of the area around Port-au-Prince
+489 = { "French Cape" "French Cape" }			#English name of Cap-Francais
+490 = { "Sunrise Point" "Sunrise Point" }			#Higuey means place where sun is first seen in Taino
 491 = { "Cura�ao" "William Town" }
+492 = { "St. John's Port" "St. John's Port" }	# Puerto Rico
 493 = { "Tortola" "Road Town" }
 494 = { "Saint Christopher and Nevis" "Lowtown" }
 495 = { "Antigua" "Saint John's" }
@@ -740,7 +748,23 @@
 500 = { "Saint Vincent" "Kingstown" }								
 501 = { "Barbados" "Saint Michael" }
 502 = { "Trinidad" "Port of Spain" }
-1881 = { "Anguilla" "The Valley" }
+1881 = { "Anguilla" "The Valley" }						
+2654 = { "Baracoa" "Baracoa" }	# Bayamo									#No localised naming used	
+2655 = { "Bayamo" "Bayamo" }	# Bayamo									#No localised naming used	
+2656 = { "Camaguey" "Camaguey" }	# Camaguey								
+2658 = { "South Durham" "South Durham" }			#totally made up, their are south places like Orkney and Shetland near Antartica, why not a South Durham
+2659 = { "St. James" "St. James" }			#Santiago, would be Saint James of the Thirty Knights
+4618 = { "Artibonite Valley" "Artibonite Valley" }			#wanted something english-y, so whilst Gonaibo would good too, this was the name of the valley and river in the province
+4619 = { "Port o' Peace" "Port o' Peace" }			#translation
+4620 = { "Gold Plain" "Gold Plain" }			#similar reasoning to Maguana. Named after the Magua chiefdom
+4621 = { "St. Peter" "St. Peter" }
+4622 = { "Isle of Youth" "New Jerry" }
+4623 = { "St. Claire" "St. Claire" }
+4624 = { "Pine River" "Pine River" }
+5563 = { "New Gloucester" "New Gloucester" }			#totally made up, 100%. It's just a name, I can't find another alternative after half an hour of research
+5565 = { "Cross Peninsula" "Cross Peninsula" }			#Barahona full name is Santa Cruz de Barahona. Cruz means cross. The province is a peninsula. Alt history name anyway
+5567 = { "St. John" "St. John" }			#Maguana means the first stone, or the only stone. Thought it would be fitting
+5572 = { "Holguin" "Holguin" }
 5574 = { "Eleuthera" "Governor's Harbour" }
 5575 = { "Long Island" "Clarence Town" }
 5576 = { "Acklins Island" "Lovely Bay" }
@@ -769,6 +793,32 @@
 6059 = { "Southern Keys" "Grand Key" } #(JP) Totally made up
 6060 = { "Old Providence" "New Westminster" }	
 6061 = { "Cayman Islands" "George Town" }		
+
+7529 = { "Isabella Town" "Isabella Town" }
+7530 = { "Cabot" "Cabot" }      #Ponce: Named after a spanish governor's son, so John Cabot gets a city named after him.
+7531 = { "Caguax" "Caguax" }    #Taino Name
+7532 = { "Montego Bay" "Montego Bay" }
+7533 = { "St. Ann's Bay" "St. Ann's Bay" }
+7534 = { "Mandeville" "Mandeville" }
+7535 = { "Tortuga Island" "Tortuga Island" }
+7536 = { "Jeremy" "Jeremy" }
+7537 = { "Guanabo Island" "Guanabo Island" }
+7538 = { "Hinche" "Hinche" }
+7539 = { "Hope Point" "Hope Point" }
+
+7540 = { "Maco's Buttock" "Maco's Buttock" } #Google Translate gave me this, too funny not to include
+7541 = { "Vega" "Vega" }
+7542 = { "St. Dominic" "St. Dominic" }
+7543 = { "Savannah Sea" "Savannah Sea" }
+7544 = { "Santiago" "Santiago" }
+7545 = { "Pickly Pears" "Pickly Pears" }    #Translation
+7546 = { "Zapata Swamps" "Zapata Swamps" }
+7547 = { "Guane" "Guane" }
+7548 = { "Blue Dock" "Blue Dock" }
+7549 = { "Hundred Fires" "Hundred Fires" }
+7550 = { "Moron" "Moron" }
+7551 = { "Flowers" "Flowers" }
+7552 = { "Mount Christ" "Mount Christ" }
 
 #Canada
 #Hudson Bay
@@ -1638,24 +1688,11 @@
 5065 = "Pueblo" # Muache										#Iberian name used by Anglophone
 
 #BT500  Overhaul Vanilla renaming					
-484 = "Havana"	# Havana										
-485 = "Trinidad"	# Moron										
-486 = "Guantanamo"	# Guantamano							
-487 = "Jamaica"	# Jamaica									
-488 = "Port-au-Prince"	# Les Cayes								
-489 = "Cap-Fran�ais"	# Tortuga									
-490 = "Higuey"	# Barahonas									
-492 = "Puerto Rico"	# Puerto Rico								
 1104 = "Juliana's Hope"	# Eiriksfjord								
 1105 = "Egedesminde"	# Vestbygden								
 #1805 = "Ungava"	# Qu�bec										#No localised naming used	
 1811 = "Tadoule Lake"	# Nunavut									
 1812 = "Snowdrift"	# Northwest Territories				
-#2654 = "Baracoa"	# Baracoa									#No localised naming used	
-#2655 = "Bayamo"	# Bayamo									#No localised naming used	
-2656 = "Camaguey"	# Camaguey								
-2658 = "Azua"	# Maguana									
-2659 = "Santiago"	# Magua										
 
 #BT500 Messing with BtP
 3111 = "Christian's Hope"	# Amerloq									
@@ -1678,16 +1715,7 @@
 5079 = "Big Salmon"	# Tage Cho Hudan						
 5093 = "Desolation Islands"	# Kerguelen Islands					
 #4619 = "Port de Paix"	# Marien										
-5563 = "Jacmel"	# Yaquimel									
-4618 = "Gonaives"	# Gonaibo									
-5565 = "Barahona"	# Baoruco									
-4620 = "La Vega"	# Magua2									
-#5567 = "Maguana"	# Maguana2							#No localised naming used	
 #4621 = "Santo Domingo"	# Hosama									
-4624 = "Pinar del Rio"	# Guanahatabey							
-4622 = "Isle of Pines"	# Siwanea									
-4623 = "Santa Clara"	# Cubanacan								
-5572 = "Holguin"	# Bani											
 #5588 = "Sermersooq"	# Sermersooq							#No localised naming used	
 #5589 = "Angmagssalik"	# Angmagssalik					#No localised naming used			
 5590 = "Liverpool Land"	# Scoresbysund							
@@ -1715,12 +1743,6 @@
 5614 = "Forsyth"			#Notes - 
 5615 = "Miles City"			#Notes - or Fort Keogh
 5618 = "Fort Pierre"			#Notes - 
-5619 = ""			#Notes - 
-5620 = "Oacoma"			#Notes - 
-5621 = "Minneapolis"			#Notes - Or Fort St. Anthony
-5622 = "Virginia"			#Notes - 
-5624 = "Brandon House"			#Notes - 
-5626 = "Centralia"			#Notes - or Fargo
 
 #BT900  Overhaul Vanilla renaming (South Africa)
 #South Africa Proper
@@ -2103,21 +2125,6 @@
 
 
 #JP's Work (with some tweaks from Draiocht)
-
-#Caribbea
-4619 = "Port o' Peace"			#translation
-489 = "French Cape"			#English name of Cap-Francais
-#4618 = "Artibonite Valley"			#wanted something english-y, so whilst Gonaibo would good too, this was the name of the valley and river in the province
-488 = "Prince's Port"			#or Hospital. first is direct translation whilst second is translation of the name of the area around Port-au-Prince
-5563 = "New Gloucester"			#totally made up, 100%. It's just a name, I can't find another alternative after half an hour of research
-2659 = "St. James"			#Santiago, would be Saint James of the Thirty Knights
-5567 = "St. John"			#Maguana means the first stone, or the only stone. Thought it would be fitting
-5565 = "Cross Peninsula"			#Barahona full name is Santa Cruz de Barahona. Cruz means cross. The province is a peninsula. Alt history name anyway
-2658 = "South Durham"			#totally made up, their are south places like Orkney and Shetland near Antartica, why not a South Durham
-#4620 = "Gold Plain"			#similar reasoning to Maguana. Named after the Magua chiefdom
-490 = "Sunrise Point"			#Higuey means place where sun is first seen in Taino
-4621 = "St. Dominic"			#from Santo Domingo
-
 
 
 #Beyond Typus 10.0 major localised naming contribution from multiple people, credit to everyone but Draiocht. Integrated 2018-11-16

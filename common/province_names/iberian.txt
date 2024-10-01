@@ -1214,7 +1214,7 @@
 4618 = { "Los Gonaibos" "Los Gonaibos" }
 4619 = { "La Navidad" "La Navidad" }
 4620 = { "Samana" "Samana" }
-4621 = { "San Pedro de Macrois" "San Pedro de Macrois" }
+4621 = { "San Pedro de Macor�s" "San Pedro de Macor�s" }
 4622 = { "La Evangelista" "Nueva Gerona" }
 4623 = { "Santa Clara" "Santa Clara" }
 4624 = { "Pinar del Rio" "Guanajay" }
@@ -1233,7 +1233,7 @@
 7537 = { "Los Guanabos" "Los Guanabos" }
 7538 = { "Hinche" "Hinche" }
 7539 = { "Viques" "Viques" }
-7540 = { "Las Matas" "Las Matas" }
+7540 = { "Les Matas" "Les Matas" }
 7541 = { "Cotu�" "Cotu�" }
 7542 = { "Santo Domingo" "Santo Domingo" }
 7543 = { "Sabana de la Mar" "Sabana de la Mar" }
