@@ -503,7 +503,7 @@
 4419 = { "Addanki" "Addanki" }
 4420 = { "Chandragiri" "Chandragir" }
 4425 = { "Kondaveedu" "Kondaveedu" }
-5093 = { "Kerguelen Islands" "Port-of-Britain" } #(JP) French capital name is "Port-aux-Fran?ais", not perfect but yeah
+5093 = { "Kerguelen Islands" "Port-of-Britain" } #(JP) French capital name is "Port-aux-Franùais", not perfect but yeah
 8545 = { "Crozet Islands" "Port Alfred" }
 8581 = { "Nicobar Islands" "Car Nicobar" }
 
@@ -736,7 +736,7 @@
 488 = { "Prince's Port" "Prince's Port" }			#or Hospital. first is direct translation whilst second is translation of the name of the area around Port-au-Prince
 489 = { "French Cape" "French Cape" }			#English name of Cap-Francais
 490 = { "Sunrise Point" "Sunrise Point" }			#Higuey means place where sun is first seen in Taino
-491 = { "Cura?ao" "William Town" }
+491 = { "Curaùcao" "William Town" }
 492 = { "St. John's Port" "St. John's Port" }	# Puerto Rico
 493 = { "Tortola" "Road Town" }
 494 = { "Saint Christopher and Nevis" "Lowtown" }
@@ -1399,7 +1399,7 @@
 
 #BT200 Overhaul Vanilla renaming
 865 = "Cochimi" # Cochimi										#Generic name
-867 = "Cahuilla" # ?viluqaletem									#Iberian name used by Anglophone
+867 = "Cahuilla" # ùviluqaletem									#Iberian name used by Anglophone
 868 = "Santa Barbara" # Chumash								#Iberian name used by Anglophone
 869 = "King City" # Salinan										#Iberian name used by Anglophone modified
 870 = "Merced" # Yatchicumne								#Anglophone name
@@ -1462,7 +1462,7 @@
 2592 = "Fort Severn" # Omaskekowak						#Anglophone name
 2593 = "Rat Portage" # Minitie						#Anglophone name
 2594 = "Nelson" # Powinigow									#Anglophone name
-2595 = "?le-?-la-Crosse" # Sakittawak						#Francophone name by Anglophone
+2595 = "Œle-‡-la-Crosse" # Sakittawak						#Francophone name by Anglophone
 2596 = "Qu'Appelle" # Hohe										#Francophone name by Anglophone
 2597 = "Saskatchewan" # Kisiskaciwani Sipiy			#Generic name
 2598 = "Moose Jaw" # Moose Gaw							#Anglophone name
@@ -1609,7 +1609,7 @@
 991 = "Renfrew" # Ottawa										#Anglophone name
 992 = "Outaouais"	# Algonquin								#Francophone name from Native name
 993 = "Laurentides"	# Hochelega							#Francophone name 
-#994 = "Qu?bec"	# Stadacona										#Francophone name from Native name
+#994 = "Quùbec"	# Stadacona										#Francophone name from Native name
 995 = "Tadoussac"	# Atiamekw								#Francophone name from Native name
 1001 =  "Sault Ste. Marie" # Sault								#Francophone name 
 1002 = "Abitibi"	#Abitibi											#Native name
@@ -1624,14 +1624,14 @@
 2571 = "Woodstock"	# Madawaska							#Anglophone name
 2572 = "Miramichi"	# Siknikt									#Francophone name from Native name
 2576 = "Mingan"	# Mingan									#Native name
-2577 = "Sept-?les"	# Manicouagan							#Francophone name 
+2577 = "Sept-Œles"	# Manicouagan							#Francophone name 
 2578 = "Anticosti"	# Anticosti									#Francophone name 
 2579 = "Saguenay"	# Piekougami								#Native name
 2580 = "Haute-Mauricie"	# Atikamekw					#Francophone name 
 2581 = "Obadjiwan"	# Timiskaming						#Native name
 2582 = "Rimouski"	# Maliseet									#Native name
-2583 = "Trois-Rivi?res"	# Etchemins						#Francophone name 
-#2584 = "Montr?al"	# Loup										#Francophone name 
+2583 = "Trois-Riviùres"	# Etchemins						#Francophone name 
+#2584 = "Montrùal"	# Loup										#Francophone name 
 2585 =  "Glengarry" # Kichesipi								#Gaelic name used by Anglophone
 2586 =  "Sarnia" # Tionontate									#Generic name 
 2587 =  "Collingwood" # Odawa								#Anglophone name
@@ -1657,7 +1657,7 @@
 5051 = "Shelburne"	# Keespongwitk						#Anglophone name
 5052 = "Piscataquis"	# Panawahpskek						#Native name
 5053 = "Kamouraska"	# Kamouraska						#Francophone name from native name
-5054 = "Gasp?"	# Gespeg											#Francophone name
+5054 = "GaspÈ"	# Gespeg											#Francophone name
 5055 = "Pointe-aux-Outardes"	# Piletipistu Neshkau		#Francophone name
 5056 = "Pontiac"	# Kichesipirini							#Francophone name
 5057 = "Harricana"	# Nanikana									#Generic name
@@ -1689,7 +1689,7 @@
 #BT500  Overhaul Vanilla renaming					
 1104 = "Juliana's Hope"	# Eiriksfjord								
 1105 = "Egedesminde"	# Vestbygden								
-#1805 = "Ungava"	# Qu?bec										#No localised naming used	
+#1805 = "Ungava"	# Quùbec										#No localised naming used	
 1811 = "Tadoule Lake"	# Nunavut									
 1812 = "Snowdrift"	# Northwest Territories				
 
@@ -1854,7 +1854,7 @@
 #5423 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
 #5424 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
 #Angola
-5426 = "Mo??medes"
+5426 = "Moùùmedes"
 
 #BT900 New Provinces (North America), note these are all mostly rubbish names I placed mostly from memory. Eventually I'd like to merge the proper research I did in the province files with the names here.
 5632 = "Sweetgrass" #
@@ -2064,7 +2064,7 @@
 224 = "Seville"
 5446 = "Malaga"
 
-#k?rnten
+#kùrnten
 7082 = "Middleburg"
 
 #russia
@@ -2195,9 +2195,9 @@
 5610 = "Masterton"
 
 #canada
-994 = "Quebec" #Without the "?" for english
+994 = "Quebec" #Without the "ù" for english
 2012 = "Victoriaville"
-2584 = "Montreal" #Without the "?" for English
+2584 = "Montreal" #Without the "ù" for English
 
 #Cinnamon Ryce Jan 2019
 
@@ -2387,7 +2387,7 @@
 #Maranhao
 749 = "Maragnan" #Francophone, alternatively Marahan
 
-#Cear?
+#Cearù
 751 = "Siara"
 753 = "Grand River" #Possible English name
 
