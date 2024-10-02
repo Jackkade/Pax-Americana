@@ -1,0 +1,32 @@
+Pax Americana update 1.2 - A Place in the Sun
+
+# Map Content:
+- Reworked map of Cuba
+- 8 new provinces
+- Reworked map of Hispanolia
+- 9 new provinces
+- Reworked map of Jamaica & Puerto Rico
+- 7 new provinces
+- Added New World African cultures for Caribbean 
+- British, French, Iberian, and Germanic Afro-caribbean cultures
+- Afro Caribbean Cultures appear in provinces producing agricultural goods 
+- Added British and Iberian localized province names for Caribbean region
+- Added French localised province names for Hispanolia
+
+# Colony Rework:
+- Rework of how Colonies grow into provinces
+- Colonies no longer automatically convert culture and religion.
+- After finishing the intial setup of the colony, the province will be given a new modifier,
+  Newly Established Colony. This modifier nullifies all economic benefits of the province except
+  trade, as well as costs the nation 2 ducats per month.
+  To remove the modifier, build 3 buildings, build a manufactory, develop it 5 times, 
+  expand infrastructure, or wait 25 years. 
+- When the modifier is removed, The colony will convert
+  to your culture and religion if it is in the new world.
+- Rebalanced Expansion and Exploration Ideas around this system.
+- Settler chance now gives 50 population when it succeeds instead of 25
+- 10 provinces are now required to form a colonial nation
+- Colonial nations get economic buffs when forming so that they do not collapse
+- Colonial nations are refunded the cost of the colonies they inherit
+
+# Many Bugfixes
