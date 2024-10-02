@@ -28,4 +28,10 @@ afro_american_group = {
 		primary = XXX
 	}
 
+	#Dutch/German (Mainly Dutch)
+	#Caribbeans
+	afro_caribisch = {
+		primary = XXX
+	}
+
 }
