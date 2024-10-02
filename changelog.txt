@@ -12,6 +12,7 @@ Pax Americana update 1.2 - A Place in the Sun
 - Afro Caribbean Cultures appear in provinces producing agricultural goods 
 - Added British and Iberian localized province names for Caribbean region
 - Added French localised province names for Hispanolia
+- Added 3 new monuments to caribbean region
 
 # Colony Rework:
 - Rework of how Colonies grow into provinces
