@@ -1140,7 +1140,9 @@ exploration_ideas = {
 		range = 0.2		#Nerfed, colonial range is already abundant currently, and it usually isn't super useful anyways
 	}
 	land_of_opportunity = {
-		global_colonial_growth = 20 # BT; 10
+		colonist_placement_chance = 0.05
+		min_autonomy_in_territories = -0.1
+		#global_colonial_growth = 20 # BT; 10
 	}
 	factories = {
 		trade_company_governing_cost = -0.1
@@ -1871,7 +1873,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
- 		min_autonomy_in_territories = -0.1
+		colonists = 1
 	}
 
 	additional_colonists = {
@@ -1882,7 +1884,7 @@ expansion_ideas = {
 		merchants = 1
 	}
 	faster_colonists = {
-		global_colonial_growth = 20
+		colony_cost_modifier = -0.15
 	}
 	vice_roys  = {
 		global_tariffs = 0.10
@@ -1893,7 +1895,6 @@ expansion_ideas = {
 		reduced_liberty_desire_on_other_continent = 5
 	}
 	general_colonization_law  = {
-		colonists = 1
 		colonist_placement_chance = 0.05
 		effect = { remove_temporary_colonist = yes }
 	}
