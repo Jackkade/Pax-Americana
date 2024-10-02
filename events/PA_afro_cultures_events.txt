@@ -8,9 +8,12 @@ province_event = { #Anglo-African-American
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = british
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = british
@@ -50,30 +53,44 @@ province_event = { #Anglo-African-American
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -122,9 +139,12 @@ province_event = { #Anglo-African-Caribbean
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = british
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = british
@@ -169,30 +189,44 @@ province_event = { #Anglo-African-Caribbean
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -240,9 +274,12 @@ province_event = { #Franco-Afro-Antillean
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = french
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = french
@@ -287,30 +324,44 @@ province_event = { #Franco-Afro-Antillean
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -358,9 +409,12 @@ province_event = { #Ibero-Afro-Caribeno
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = iberian
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = iberian
@@ -405,30 +459,44 @@ province_event = { #Ibero-Afro-Caribeno
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -477,9 +545,12 @@ province_event = { #Dutch-Afro-Caribisch
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = germanic
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = germanic
