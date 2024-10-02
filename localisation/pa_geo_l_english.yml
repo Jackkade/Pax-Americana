@@ -15,6 +15,9 @@
  trade_company_missouri_river_trade:0 "Missouri Charter"
  trade_company_hudson_bay_trade:0 "Hudson Bay Charter"
 
+ # Province Groups
+ culture_anglo_afro_american_region:0 ""
+
  # Colonial Regions
  colonial_rio_grande:0 "Colonial Rio Grande"
  COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_Texas:0 "[Root.GetAdjective] Texas"
