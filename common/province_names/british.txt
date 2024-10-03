@@ -1062,7 +1062,7 @@
 
 #California
 862 = { "Hermosillo" "Santisima Trinidad" }
-865 = { "Muleg?" "Santa Rosalia" }
+865 = { "Mulege" "Santa Rosalia" }
 866 = { "Santa Cruz" "La Paz" }
 867 = { "Ehrenberg" "Ehrenberg" }
 868 = { "Santa Barbara" "Santa Barbara" }
