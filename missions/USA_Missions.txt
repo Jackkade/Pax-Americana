@@ -582,7 +582,7 @@ USA_missions_4 = {
 			}
 		}
 		effect = {
-			1521 = {
+			1516 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -713,14 +713,6 @@ USA_missions_5 = {
 				add_province_modifier = {
 					name = "usa_expediated_statehood"
 					duration = -1
-				}
-			}
-			1505 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 30
-					key = USA_TRADE_CARRIBEAN
 				}
 			}
 		}
