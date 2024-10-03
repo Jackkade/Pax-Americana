@@ -38,6 +38,21 @@ on_colonial_nation_established = {
         duration = 9125 
     }
 }
+#Fix to colonial nation bankruptcy when fed colonies
+on_province_owner_change = {
+    if = {
+        limit = {
+            owner = {
+                is_colonial_nation = yes
+            }
+            has_active_triggered_province_modifier = pa_new_colony
+        }
+        add_province_modifier = {
+            name = pa_new_colonial_nation_colony
+            duration = 9125		#Currently 25 Years, may need to be lower
+        }
+    }
+}
 
 on_colony_finished = { #ROOT - Province
 	#on_colony_finished_effect = yes
