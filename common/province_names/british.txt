@@ -1142,7 +1142,7 @@
 5797 = { "Chico" "Chico" }
 5799 = { "Red Bluff" "Red Bluff" }
 5814 = { "San Jose" "San Jose" }
-5815 = { "Salt Lake Desert" "Elko" } #Vanilla EU4 issue in which the last letter is cut upon clicking on it due to going beyond character limit with "Great Salt Lake Desert"
+5815 = { "Elko" "Elko" }
 5821 = { "Las Vegas" "Las Vegas" }
 5822 = { "St. George" "St. George" }
 5823 = { "Peach Springs" "Kingman" }
