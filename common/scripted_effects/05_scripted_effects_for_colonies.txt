@@ -13,7 +13,7 @@ reset_to_pre_colonial_culture_religion = {
 	}
 	else_if = {
 		limit = {
-			is_colony = yes 
+			culture = noculture
 		}
 		change_culture = owner
     	change_original_culture = owner
@@ -26,7 +26,7 @@ reset_to_pre_colonial_culture_religion = {
 	}
 	else_if = {
 		limit = {
-			is_colony = yes 
+			religion = noreligion
 		}
 		change_religion = owner
 	}
