@@ -820,17 +820,141 @@
 7552 = { "Mount Christ" "Mount Christ" }
 
 #Canada
+971 = { "Bangor" "Bangor" }
+980 = { "Grand Falls" "Grand Falls Windsor" }
+981 = { "Corner Brook" "Corner Brook" }
+982 = { "Port Hawkesbury" "Port Hawkesbury" }
+983 = { "Summerside" "Summerside" }
+984 = { "Truro" "Truro" }
+985 = { "Moncton" "Moncton" }
+986 = { "Papegiack" "Papegiack" }
+987 = { "Hamilton" "Hamilton" }
+989 = { "Kingston" "Kingston" }
+990 = { "Hat" "Hat" }
+991 = { "Ottawa" "Ottawa" }
+992 = { "Hull" "Hull" }
+993 = { "Saintsaviour" "Saintsaviour" }
+994 = { "Canada" "Canada City" }
+995 = { "Murray Bay" "Murray Bay" }
+996 = { "St. Paul River" "St. Paul River" }
+997 = { "Port Hope Simpson" "Port Hope Simpson" }
+998 = { "Windsor" "Windsor" }
+1001 = { "Saint Mary's" "Saint Mary's" }
+1007 = { "Nipigon" "Nipigon" }
+2012 = { "Victoriaville" "Victoriaville" }
+2015 = { "Marathon" "Marathon" }
+2565 = { "Moosehead" "Moosehead" }
+2566 = { "Calais" "Calais" }
+2567 = { "Preque Isle" "Preque Isle" }
+2568 = { "Digby" "Digby" }
+2569 = { "Halifax" "Halifax" }
+2570 = { "Saint John" "Saint John" }
+2571 = { "Woodstock" "Woodstock" }
+2572 = { "Miramichi" "Miramichi" }
+2573 = { "Basqueport" "Basqueport" }
+2574 = { "Nain" "Nain" }
+2575 = { "Goose Bay" "Happy Valley" }
+2576 = { "Long Point" "Long Point" }
+2577 = { "Seven Iles" "Seven Iles" }
+2578 = { "Nanticaust" "Nanticaust" }
+2579 = { "Saguenay" "Saguenay" }
+2580 = { "Wemotaci" "Wemotaci" }
+2581 = { "Beautiful Earth" "Beautiful Earth" }
+2582 = { "Rimoskee" "Rimoskee" }
+2583 = { "Three Rivers" "Three Rivers" }
+2585 = { "Cornwall" "Cornwall" }
+2586 = { "Stratford" "Stratford" }
+2587 = { "Collingwood" "Collingwood" }
+2590 = { "Englehart" "Englehart" }
+2670 = { "Toronto" "Toronto" }
+2671 = { "Bracebridge" "Bracebridge" }
+2584 = { "Mount Royal" "Mount Royal" }
+2588 = { "North Bay" "North Bay" }
+4891 = { "New Glasgow" "New Glasgow" }
+4894 = { "Waltham" "Waltham" }
+4895 = { "Mount Laurel" "Mount Laurel" }
+4896 = { "Fredericton" "Fredericton" }
+4973 = { "Sudbury" "Sudbury" }
+4974 = { "Fortune Bay" "Harbour Breton" }
+5008 = { "Lake Evans" "Lake Evans" }
+5009 = { "Chapais" "Chapais" }
+5010 = { "Drop Passes" "Drop Passes" }
+5011 = { "Manic Five" "Manic Five" }
+5012 = { "Natashquan" "Natashquan" }
+5013 = { "St. John's" "St. John's" }
+5014 = { "Labrador City" "Labrador City" }
+5015 = { "Churchill Falls" "Churchill Falls" }
+5019 = { "St. Peter & Michel" "St. Peter & Michel" }
+5037 = { "Barrie" "Barrie" }
+5038 = { "Belleville" "Belleville" }
+5039 = { "Owen Sound" "Owen Sound" }
+5048 = { "Antigonish" "Antigonish" }
+5049 = { "Bathurst" "Bathurst" }
+5050 = { "Edmunston" "Edmunston" }
+5051 = { "Digby" "Digby" }
+5052 = { "Houlton" "Houlton" }
+5053 = { "Wolf River" "Wolf River" }
+5054 = { "Gaspeg" "Gaspeg" }
+5055 = { "Forestville" "Forestville" }
+5057 = { "Matagami" "Matagami" }
+5058 = { "Trepassy" "Trepassy" }
+5059 = { "Placentia" "Placentia" }
+5060 = { "Sherbrooke" "Sherbrooke" }
+5904 = { "Brantford" "Brantford" }
+6436 = { "Niagara Falls" "Niagara Falls" }
+6437 = { "London" "London" }
+6438 = { "Kitchener" "Kitchener" }
+6439 = { "Kincardine" "Kincardine" }
+6440 = { "Peterborough" "Peterborough" }
+6441 = { "Bancroft" "Bancroft" }
+6442 = { "Pembroke" "Pembroke" }
+6443 = { "St. Jerome" "St. Jerome" }
+6444 = { "Sorel" "Sorel" }
+6445 = { "Granby" "Granby" }
+6446 = { "St. Georges" "St. Georges" }
+6447 = { "St. Marie" "St. Marie" }
+6448 = { "Donnacona" "Donnacona" }
+6449 = { "Magnus" "Magnus" }
+6450 = { "St. Paul's Bay" "St. Paul's Bay" }
+6451 = { "Eskomine" "Eskomine" }
+6452 = { "Murdochville" "Murdochville" }
+6454 = { "Charlottetown" "Charlottetown" }
+6455 = { "Magdeline Islands" "Magdeline Islands" }
+6456 = { "Sydney" "Sydney" }
+6457 = { "Bonavista" "Bonavista" }
+6458 = { "Springdale" "Springdale" }
+6459 = { "New Liskeard" "New Liskeard" }
+6460 = { "Dubreuilville" "Dubreuilville" }
+6467 = { "Thunder Bay" "Thunder Bay" }
+6468 = { "Elliot Lake" "Elliot Lake" }
+6470 = { "Foreman's River" "Foreman's River" }
+7345 = { "Fort Kent" "Fort Kent" }
+7464 = { "Grand Bay" "Grand Bay-Westfield" }
+
 #Hudson Bay
 
-1011 = "Grand Rapids"
-2016 = "Grandes Fourches" # Isangyathi					#Francophone name by Anglophone
-2511 = "Devil's Lake" # Mni Wakang						#Anglophone name
+998 = { "Pov" "Pov" }
+999 = { "Fort George" "Fort George" }
+1000 = { "Eastmain" "Eastmain" }
+1002 = { "Iroqois Falls" "Iroqois Falls" }
+1003 = { "Fort Albany" "Fort Albany" }
+1004 = { "Moose Factory" "Moose Factory" }
+1011 = { "Grand Rapids" "Grand Rapids" }
+2016 = { "Grandes Fourches" "Grandes Fourches" } # Isangyathi					#Francophone name by Anglophone
+2511 = { "Devil's Lake" "Devil's Lake" } # Mni Wakang						#Anglophone name
+2589 = { "Timmins" "Timmins" }
+2591 = { "Hearst" "Hearst" }
 4901 = { "Fargo" "Fargo" }
-5623 = "Minot"			#Notes - 
-5625 = "Pembina"			#Notes - 
+5006 = { "Cape Wolstenholme" "Cape Wolstenholme" }
+5007 = { "Fort Chimo" "Fort Chimo" }
+5623 = { "Minot" "Minot" }
+5625 = { "Pembina" "Pembina" }
+6461 = { "Smoky Falls" "Smoky Falls" }
+6469 = { "Rupert Bay" "Rupert Bay" }
 7509 = { "Grand Forks" "Grand Forks" }
 7510 = { "Estevan" "Estevan" }
 7462 = { "Fergus Falls" "Fergus Falls" }
+
 
 
 
@@ -1223,7 +1347,7 @@
 7314 = { "Olean" "Olean" } #Olean
 7315 = { "Mayville" "Mayville" } #Mayville
 7316 = { "Lewiston" "Lewiston" } #Lewiston
-7317 = { "Skowhegan" "Skowhegan" } #Skowhegan
+7317 = { "Waterville" "Waterville" } #Skowhegan
 7318 = { "Dover" "Dover" } #Dover
 7319 = { "Cape May" "Cape May" } #Cape May
 7320 = { "Newark" "Newark" } #Newark
@@ -1705,123 +1829,9 @@
 2315 = "Suez"
 2326 = "Bardia"
 
-#BT300 Overhaul Vanilla renaming
-971 = "Castine"	# Abnaki											#Francophone name 
-982 = "Cape Breton"	# Unamakik							#Anglophone name
-983 = "Prince Edward Island"	# Epekwitk				#Anglophone name
-984 = "Windsor"	# Acadia										#Anglophone name
-985 = "Moncton"	# Micmac									#Anglophone name
-986 = "New Richmond"	# Kespek							#Anglophone name
-987 = "Niagara" # Niagara											#Native name 
-988 = "London" # Huron											#Anglophone name
-989 = "Kingston" # Ontario										#Anglophone name 
-990 = "Mauricie"	# Kwedech									#Francophone name 
-991 = "Renfrew" # Ottawa										#Anglophone name
-992 = "Outaouais"	# Algonquin								#Francophone name from Native name
-993 = "Laurentides"	# Hochelega							#Francophone name 
-#994 = "Qu?bec"	# Stadacona										#Francophone name from Native name
-995 = "Tadoussac"	# Atiamekw								#Francophone name from Native name
-1001 =  "Sault Ste. Marie" # Sault								#Francophone name 
-1002 = "Abitibi"	#Abitibi											#Native name
-1007 =  "Thunder Bay" # Ojibwa								#Anglophone name
-#2012 = "Arthabaska"	# Arsigantegok						#Generic name
-2015 =  "Wawa" # Nipigon										#Unknown name
-2566 = "Machias"	# Passamaquoddy						#Native name
-2567 = "Aroostook"	# Aroostook							#Native name
-2568 = "Annapolis"	# Kespukwitk							#Anglophone name
-2569 = "Halifax"	# Eskikewakik								#Anglophone name
-2570 = "Saint John"	# Wolystoq								#Anglophone name
-2571 = "Woodstock"	# Madawaska							#Anglophone name
-2572 = "Miramichi"	# Siknikt									#Francophone name from Native name
-2576 = "Mingan"	# Mingan									#Native name
-2577 = "Sept-?les"	# Manicouagan							#Francophone name 
-2578 = "Anticosti"	# Anticosti									#Francophone name 
-2579 = "Saguenay"	# Piekougami								#Native name
-2580 = "Haute-Mauricie"	# Atikamekw					#Francophone name 
-2581 = "Obadjiwan"	# Timiskaming						#Native name
-2582 = "Rimouski"	# Maliseet									#Native name
-2583 = "Trois-Rivi?res"	# Etchemins						#Francophone name 
-#2584 = "Montr?al"	# Loup										#Francophone name 
-2585 =  "Glengarry" # Kichesipi								#Gaelic name used by Anglophone
-2586 =  "Sarnia" # Tionontate									#Generic name 
-2587 =  "Collingwood" # Odawa								#Anglophone name
-2588 =  "Nipissing" # Piscatang									#Native name
-2589 =  "Cochrane" # Kesagami									#Anglophone name
-2590 =  "Temiskaming" # Shaggami							#Native name
-2591 =  "Missinaibi" # Outoulibi								#Native name
-2670 =  "York" # Tkaronto										#Anglophone name alternatives would be Home District or Toronto
-2671 =  "Muskoka" # Mississage								#Anglophone name from native name anachronistic better idea needed
 
-#BT300 New Provinces
-4973 = "Sudbury" # Waanabidebiing							#Anglophone name
-4974 = "Grand Bank" # Grand Bank							#Anglophone name
-5036 = "Dryden" # Atikokan										#Anglophone name anachronistic better idea needed
-5037 = "Huronia" # Wendake									#Anglophone name from francophone name
-5038 = "Quinte" # Quinte											#Anglophone name from francophone name fron native name
-5039 = "Ekaentouton" # Manidoowaaling					#Anglophone name
-5046 = "Fredericton"	# Nashwaak							#Anglophone name
-5047 = "Tatamagouche"	# Epegoitnag						#Native name
-5048 = "Canso"	# Esgigeoag										#Unknown name
-5049 = "Bathurst"	# Gespegeoag								#Anglophone name
-5050 = "Edmunston"	# Madawaska II						#Anglophone name
-5051 = "Shelburne"	# Keespongwitk						#Anglophone name
-5052 = "Piscataquis"	# Panawahpskek						#Native name
-5053 = "Kamouraska"	# Kamouraska						#Francophone name from native name
-5054 = "Gasp?"	# Gespeg											#Francophone name
-5055 = "Pointe-aux-Outardes"	# Piletipistu Neshkau		#Francophone name
-5056 = "Pontiac"	# Kichesipirini							#Francophone name
-5057 = "Harricana"	# Nanikana									#Generic name
-5058 = "Trepassey"	# Avalon II								#Anglophone from Francophone name or possibly Welsh name
-5059 = "Placentia"	# Avalon III								#Generic name
-5060 = "Eastern Townships"	# Mamhlawbagak		#Anglophone name
-
-#BT500  Overhaul Vanilla renaming						
-1104 = "Juliana's Hope"	# Eiriksfjord								
-1105 = "Egedesminde"	# Vestbygden								
-#1805 = "Ungava"	# Qu?bec										#No localised naming used	
-1811 = "Tadoule Lake"	# Nunavut									
-1812 = "Snowdrift"	# Northwest Territories				
-
-#BT500 Messing with BtP
-3111 = "Christian's Hope"	# Amerloq									
-3112 = "Good Hope"	# Kikertarsocitsiak						
-3113 = "Frederick's Hope"	# Mellembygden							
-	
-#BT500 New Provinces
-5067 = "Baker's Lake"	# Qamanituaq								
-5068 = "Keewatin"	# Paallirmiut								
-5069 = "Ennadai"	# Ihalmiut									
-5070 = "Lake Brochet"	# Etthen Eldili								
-5071 = "Great Fish River"	# Thlewechodyeth						
-5072 = "Dogribs"	# Tatsaotine								
-5073 = "Fort Confidence"	# EastSahtu									
-5074 = "Colville Lake"	# Kahbamitue								
-#5075 = "Ivvavik"	# Ivvavik										#No localised naming used	
-5076 = "Barter Island"	# Qaaktugvik								
-5077 = "Saint Lawrence Island"	# Sivuqaq									
-5078 = "Mayo"	# Nacho Nyak Dun					
-5079 = "Big Salmon"	# Tage Cho Hudan						
 5093 = "Desolation Islands"	# Kerguelen Islands					
-#4619 = "Port de Paix"	# Marien										
-5563 = "Jacmel"	# Yaquimel									
-4618 = "Gonaives"	# Gonaibo									
-5565 = "Barahona"	# Baoruco									
-4620 = "La Vega"	# Magua2									
-#5567 = "Maguana"	# Maguana2							#No localised naming used	
-#4621 = "Santo Domingo"	# Hosama									
-4624 = "Pinar del Rio"	# Guanahatabey							
-4622 = "Isle of Pines"	# Siwanea									
-4623 = "Santa Clara"	# Cubanacan								
-5572 = "Holguin"	# Bani											
-#5588 = "Sermersooq"	# Sermersooq							#No localised naming used	
-#5589 = "Angmagssalik"	# Angmagssalik					#No localised naming used			
-5590 = "Liverpool Land"	# Scoresbysund							
 5591 = "Isabella"	# Jan Mayen									#Dutch 'Maurits Eylandt'
-5592 = "Schefferville"	# North Naskapi							
-5593 = "Fort Mackenzie"	# Caniapiscau								
-#5594 = "Nitchequon"	# Nitchequon								#No localised naming used	
-5595 = "Cumberland"	# Panniqtuuq								
-5596 = "Clyde River"	# Kanngiqtugaapik						
 
 #BT800  Overhaul Vanilla renaming
 #Note from Draiocht - Some of these are really crap. Eventually I'm hoping to find the time to come back and fix some of these with more period appropriate names and historical settlements, but the historical situation here is rather a mess and there is more heresay and legends than scholarly research, so I'm 
@@ -1949,12 +1959,6 @@
 
 
 
-#By Reddbane, unoverhauled areas
-2639 = "East Jersey"
-962 = "West Jersey"
-
-
-
 #Arga's Work
 
 #2017 Jun 5
@@ -2066,12 +2070,6 @@
 #namibia
 5426 = "Namibe"
 
-#cuba
-2654 = "Bay of Honey"
-
-#haiti
-4619 = "Isle of Turtles"
-
 
 #columbia
 827 = "Antioch"
@@ -2086,25 +2084,6 @@
 
 #argentine
 2842 = "Saint James"
-
-
-
-#JP's Work (with some tweaks from Draiocht)
-
-#Caribbea
-4619 = "Port o' Peace"			#translation
-489 = "French Cape"			#English name of Cap-Francais
-#4618 = "Artibonite Valley"			#wanted something english-y, so whilst Gonaibo would good too, this was the name of the valley and river in the province
-488 = "Prince's Port"			#or Hospital. first is direct translation whilst second is translation of the name of the area around Port-au-Prince
-5563 = "New Gloucester"			#totally made up, 100%. It's just a name, I can't find another alternative after half an hour of research
-2659 = "St. James"			#Santiago, would be Saint James of the Thirty Knights
-5567 = "St. John"			#Maguana means the first stone, or the only stone. Thought it would be fitting
-5565 = "Cross Peninsula"			#Barahona full name is Santa Cruz de Barahona. Cruz means cross. The province is a peninsula. Alt history name anyway
-2658 = "South Durham"			#totally made up, their are south places like Orkney and Shetland near Antartica, why not a South Durham
-#4620 = "Gold Plain"			#similar reasoning to Maguana. Named after the Magua chiefdom
-490 = "Sunrise Point"			#Higuey means place where sun is first seen in Taino
-4621 = "St. Dominic"			#from Santo Domingo
-
 
 
 #Beyond Typus 10.0 major localised naming contribution from multiple people, credit to everyone but Draiocht. Integrated 2018-11-16
@@ -2181,10 +2160,6 @@
 2728 = "Darwin" 
 5610 = "Masterton"
 
-#canada
-994 = "Quebec" #Without the "?" for english
-2012 = "Victoriaville"
-2584 = "Montreal" #Without the "?" for English
 
 #Cinnamon Ryce Jan 2019
 
