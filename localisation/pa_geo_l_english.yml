@@ -131,8 +131,8 @@
  PROV_ADJ7343:0 "Monacan"
  PROV7344:0 "Okahok Amai"
  PROV_ADJ7344:0 "Okahok Amai"
- PROV7345:0 "Southern Allegheny Mountains"
- PROV_ADJ7345:0 "Southern Allegheny Mountains"
+ PROV7345:0 "Chesuncook"
+ PROV_ADJ7345:0 "Chesuncook"
  PROV7346:0 "Honniasont"
  PROV_ADJ7346:0 "Honniasont"
  PROV7347:0 "Machapunga"
@@ -369,8 +369,8 @@
  PROV_ADJ7462:0 "Bdewakanthun"
  PROV7463:0 "Wahpekute"
  PROV_ADJ7463:0 "Wahpekute"
-
-
+ PROV7464:0 "Bocabec"
+ PROV_ADJ7464:0 "Bocabec"
  PROV7465:0 "Mdewankanton"
  PROV_ADJ7465:0 "Mdewankanton"
  PROV7466:0 "Minnesota"

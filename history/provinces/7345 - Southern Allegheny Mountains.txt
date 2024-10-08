@@ -1,4 +1,0 @@
-# No previous file for Pax Americana province
-
-hre = no
-discovered_by = north_american
