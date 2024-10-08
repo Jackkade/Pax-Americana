@@ -1711,6 +1711,7 @@
 
 #Rio Grande
 
+882 = { "Roswell" "Roswell" }
 883 = { "Pearsall" "Pearsall" }
 884 = { "Lake Jackson" "Lake Jackson" }
 885 = { "Lubbock" "Lubbock" }
@@ -1740,10 +1741,18 @@
 4909 = { "Witchita Falls" "Witchita Falls" }
 4910 = { "Brownwood" "Brownwood" }
 4911 = { "New Boston" "New Boston" }
+4917 = { "Helena" "Helena" }
+4959 = { "Denver" "Denver" }
+5065 = { "Pueblo" "Pueblo" }
+5613 = { "Grand Teton" "Moran" }
+5630 = { "Big Sky" "Big Sky" }
+5632 = { "Milk River" "Milk River" }
+5634 = { "Milk River" "Milk River" }
 5826 = { "Taos" "Taos" }
 5827 = { "Los Alamos" "Los Alamos" }
 5830 = { "Socorro" "Socorro" }
 5832 = {  "Mesilla Valley" "Mesilla Valley" } #Or Las Cruces
+5837 = {  "Colorado Springs" "Colorado Springs" } 
 5844 = { "Carlsbad" "Carlsbad" }
 
 7471 = { "Longview" "Longview" }
