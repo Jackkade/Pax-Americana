@@ -1191,7 +1191,7 @@
 867 = { "Ehrenberg" "Ehrenberg" }
 868 = { "Santa Barbara" "Santa Barbara" }
 869 = { "King City" "King City" }
-870 = { "Merced" "Merced" }
+870 = { "Modesto" "Modesto" }
 875 = { "Mesa Verde" "San Bernardo" }
 876 = { "Phoenix" "Phoenix" }
 877 = { "Tucson" "Tucson" }
