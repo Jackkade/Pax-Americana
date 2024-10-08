@@ -1,4 +1,4 @@
-culture = navajo
+culture = coahuiltec
 religion = totemism
 capital = "Pacal"
 trade_goods = unknown

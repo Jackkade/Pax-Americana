@@ -1,5 +1,5 @@
 
-culture = wichita
+culture = pawnee
 religion = totemism
 capital = "Tsetsehesh"
 trade_goods = unknown

@@ -1,4 +1,4 @@
-culture = navajo
+culture = coahuiltec
 religion = totemism
 capital = "Cuanalees"
 trade_goods = unknown

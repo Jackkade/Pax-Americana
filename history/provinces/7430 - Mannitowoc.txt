@@ -1,6 +1,6 @@
 # No previous file for Pax Americana province
 
-culture = anishinabe
+culture = winnebago
 religion = totemism
 capital = "Mannitowoc"
 trade_goods = unknown

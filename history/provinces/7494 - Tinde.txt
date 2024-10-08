@@ -1,4 +1,4 @@
-culture = navajo
+culture = kiowa
 religion = totemism
 capital = "Tinde"
 trade_goods = unknown

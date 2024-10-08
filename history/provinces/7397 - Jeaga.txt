@@ -1,6 +1,6 @@
 # No previous file for Pax Americana province
 
-culture = yamasee
+culture = jeaga
 religion = totemism
 capital = "Jeaga"
 trade_goods = unknown

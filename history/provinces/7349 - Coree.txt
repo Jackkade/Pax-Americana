@@ -1,6 +1,6 @@
 # No previous file for Pax Americana province
 
-culture = catawba
+culture = weapemeoc
 religion = totemism
 capital = "Coree"
 trade_goods = unknown

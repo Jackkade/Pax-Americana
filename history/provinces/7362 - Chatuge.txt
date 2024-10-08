@@ -1,6 +1,6 @@
 # No previous file for Pax Americana province
 
-culture = creek
+culture = cherokee
 religion = totemism
 capital = "Chatuge"
 trade_goods = unknown
