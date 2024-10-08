@@ -115,7 +115,7 @@ categories = {
 			4629 4910 7476 7479 7482 7484
 			# Pax Americana Provinces CAN
 			#changed
-			2598 5939
+			2598 5939 4918
 		}
 	}
 	woods = { # 486
