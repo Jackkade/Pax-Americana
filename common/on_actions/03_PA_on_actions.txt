@@ -6,6 +6,7 @@ on_startup = {
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
 on_colony_established = {
     add_province_triggered_modifier = pa_new_colony
+    add_colonysize = 1000
 }
 
 # province
