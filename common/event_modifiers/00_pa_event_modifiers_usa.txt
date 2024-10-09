@@ -38,7 +38,7 @@ usa_mississippi_mouth = {
 
 pa_new_colony_cooldown = {
 	# 3 Ducats per month, to represent continued upkeep
-	global_tax_income = -24	
+	global_tax_income = -36	
 
 	#Still a drain on national resources
 	local_tax_modifier = -1.0 
@@ -50,8 +50,8 @@ pa_new_colony_cooldown = {
 	#Natives don't like you
 	local_unrest = 2 
 
-	#Counteract Territory/wrong culture negatives
-	local_missionary_strength = 0.02 
+	#Don't have infrastructure to convert entire population
+	local_missionary_strength = -0.02 
 }
 
 pa_new_colonial_nation_colony = {
