@@ -13,6 +13,9 @@ native_hostileness = 6
 tribal_owner = KSK
 discovered_by = north_american
 tribal_owner = KSK
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX } 
+1444.11.18 = { tribal_owner = XXX } 
 1670.1.1 = { discovered_by = FRA } # Robert Cavelier de La Salle
 1679.1.1 = { discovered_by = ENG } 
 1703.1.1 = { 

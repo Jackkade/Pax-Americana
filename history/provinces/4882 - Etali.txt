@@ -1,4 +1,8 @@
 # No previous file for Etali
+owner = CHE
+controller = CHE
+is_city = yes
+add_core = CHE
 culture = cherokee
 religion = totemism
 capital = "Eta"
@@ -11,19 +15,6 @@ native_size = 20
 native_ferocity = 1
 native_hostileness = 6
 discovered_by = north_american
-1444.1.1 = { tribal_owner = CHE } 
-1610.1.1 = { 
-    owner = CHE
-    controller = CHE
-    add_core = CHE
-    culture = cherokee
-    is_city = yes
-}
-
-1785.11.2 = { 
-    owner = USA
-    controller = USA
-    add_core = USA
-    culture = american
-    religion = protestant
-} # Treaty of Hopewell (with the Cherokee), define a new border
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }

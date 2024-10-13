@@ -1,6 +1,10 @@
 # No previous file for Pax Americana province
-culture = cherokee
+owner = ETO
+controller = ETO
+add_core = ETO
+culture = creek
 religion = totemism
+is_city = yes
 capital = "Chatuge"
 trade_goods = unknown
 hre = no
@@ -11,6 +15,6 @@ native_size = 20
 native_ferocity = 3
 native_hostileness = 7
 discovered_by = north_american
-1444.1.1 = { tribal_owner = ETO } 
+1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
-1444.11.18 = { tribal_owner = ETO } 
+1444.11.18 = { tribal_owner = XXX } 

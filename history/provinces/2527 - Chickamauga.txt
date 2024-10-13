@@ -2,7 +2,7 @@
 owner = SAT
 controller = SAT
 add_core = SAT
-culture = yuchi
+culture = creek
 religion = totemism
 capital = "Atali"
 trade_goods = fur
@@ -14,6 +14,9 @@ native_size = 20
 native_ferocity = 1
 native_hostileness = 2
 discovered_by = north_american
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }
 1540.1.1 = { discovered_by = SPA } # Hernando de Soto
 1650.1.1 = { 
     owner = CHE

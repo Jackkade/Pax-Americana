@@ -12,6 +12,9 @@ native_ferocity = 2
 native_hostileness = 5
 tribal_owner = OEO
 discovered_by = north_american
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX } 
+1444.11.18 = { tribal_owner = XXX } 
 1634.1.1 = { discovered_by = FRA } # Jean Nicolet
 1650.1.1 = { tribal_owner = FOX } 
 1664.1.1 = { discovered_by = ENG } 

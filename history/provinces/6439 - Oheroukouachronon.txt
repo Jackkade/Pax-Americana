@@ -1,4 +1,8 @@
 # No previous file for Pax Americana province
+owner = TIO
+controller = TIO
+add_core = TIO
+is_city = yes
 culture = anishinabe
 religion = totemism
 capital = "Oheroukouachronon"
@@ -14,6 +18,6 @@ discovered_by = north_american
 ################################################################################
 # Province History
 ################################################################################
-1444.1.1 = { tribal_owner = OTT } 
-1444.11.15 = { tribal_owner = xxx } 
-1444.11.18 = { tribal_owner = OTT } 
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX } 
+1444.11.18 = { tribal_owner = XXX } 

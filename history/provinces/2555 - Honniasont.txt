@@ -13,7 +13,9 @@ native_hostileness = 2
 discovered_by = north_american
 extra_cost = 8
 center_of_trade = 1
-1444.1.1 = { tribal_owner = ERI } 
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }
 1656.1.1 = { owner = IRO controller = IRO culture = iroquois } # Iroquois drive off other natives in Beaver Wars
 1671.1.1 = { discovered_by = ENG } # Abraham Wood
 1707.5.12 = { discovered_by = GBR } 

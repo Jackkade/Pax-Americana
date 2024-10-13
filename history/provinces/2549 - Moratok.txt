@@ -14,7 +14,9 @@ discovered_by = north_american
 # 2549 - Moratok
 ################################################################################
 latent_trade_goods = { coal }
-1444.1.1 = { tribal_owner = TSC } 
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }
 1607.1.1 = { discovered_by = ENG } # John Smith
 1755.1.1 = { 
     owner = GBR

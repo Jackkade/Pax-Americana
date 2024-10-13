@@ -1,5 +1,5 @@
 # 980 - Beothuk
-culture = innu
+culture = beothuk
 religion = totemism
 capital = "Beothuk"
 trade_goods = unknown

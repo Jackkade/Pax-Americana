@@ -15,6 +15,9 @@ tribal_owner = LEN
 # 2023 - Munsee #North-eastern Pennsylvania
 ################################################################################
 latent_trade_goods = { coal }
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }
 1643.1.1 = { discovered_by = SWE } 
 1655.1.1 = { discovered_by = NED } 
 1667.1.1 = { discovered_by = ENG } 

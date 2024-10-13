@@ -1,5 +1,5 @@
 # 981 - Taqamkuk
-culture = innu
+culture = beothuk
 religion = totemism
 capital = "Taqamkuk"
 trade_goods = unknown

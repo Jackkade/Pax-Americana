@@ -11,7 +11,7 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 6
 discovered_by = north_american
-1444.1.1 = { tribal_owner = CHI } 
+1444.1.1 = { tribal_owner = XXX } 
 1600.1.1 = { tribal_owner = CHI } # Growth of Chickasaw power
 1786.1.10 = { 
     owner = USA

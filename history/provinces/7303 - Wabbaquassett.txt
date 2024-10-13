@@ -1,4 +1,8 @@
 # No previous file for Pax Americana province
+is_city = yes
+owner = PEQ
+controller = PEQ
+add_core = PEQ
 culture = pequot
 religion = totemism
 capital = "Wabbaquassett"
@@ -14,6 +18,6 @@ discovered_by = north_american
 ################################################################################
 # Province History
 ################################################################################
-1444.1.1 = { tribal_owner = PEQ } 
+1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
-1444.11.18 = { tribal_owner = PEQ } 
+1444.11.18 = { tribal_owner = XXX } 

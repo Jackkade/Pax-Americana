@@ -1,4 +1,8 @@
 # No previous file for Missiquoi
+add_core = MAH
+owner = MAH
+controller = MAH
+is_city = yes
 culture = mahican
 religion = totemism
 capital = "Missisquoi"
@@ -11,7 +15,9 @@ native_size = 15
 native_ferocity = 1
 native_hostileness = 2
 discovered_by = north_american
-1444.1.1 = { tribal_owner = ABE } 
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }
 1609.1.1 = { discovered_by = FRA } # Samuel de Champlain
 1629.1.1 = { discovered_by = ENG } 
 1707.5.12 = { discovered_by = GBR } 

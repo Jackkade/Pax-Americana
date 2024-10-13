@@ -1,4 +1,8 @@
 # No previous file for Skiri
+add_core = PAW
+owner = PAW
+controller = PAW
+is_city = yes
 culture = pawnee
 religion = totemism
 capital = "Skiri"

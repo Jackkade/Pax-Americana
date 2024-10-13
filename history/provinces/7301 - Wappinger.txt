@@ -14,6 +14,6 @@ discovered_by = north_american
 ################################################################################
 # Province History
 ################################################################################
-1444.1.1 = { tribal_owner = LEN } 
+1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
-1444.11.18 = { tribal_owner = LEN } 
+1444.11.18 = { tribal_owner = XXX } 

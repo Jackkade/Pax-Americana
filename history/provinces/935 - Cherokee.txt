@@ -15,6 +15,9 @@ native_size = 20
 native_ferocity = 7
 native_hostileness = 2
 discovered_by = north_american
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }
 1610.1.1 = { owner = CHE controller = CHE add_core = CHE } 
 1673.1.1 = { discovered_by = ENG } # James Needham and Gabriel Arthur
 1707.5.12 = { discovered_by = GBR } 

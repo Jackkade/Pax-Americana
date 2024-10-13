@@ -1,4 +1,8 @@
 # No previous file for Pax Americana province
+owner = TAH
+controller = TAH
+add_core = TAH
+is_city = yes
 culture = huron
 religion = totemism
 capital = "Aazhaway"
@@ -14,6 +18,4 @@ discovered_by = north_american
 ################################################################################
 # Province History
 ################################################################################
-1444.1.1 = { tribal_owner = HUR } 
-1444.11.15 = { tribal_owner = xxx } 
-1444.11.18 = { tribal_owner = HUR } 
+1444.1.1 = { tribal_owner = XXX } 

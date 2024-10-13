@@ -1,4 +1,8 @@
 # No previous file for Juniata
+add_core = SUS
+owner = SUS
+controller = SUS
+is_city = yes
 culture = susquehannock
 religion = totemism
 capital = "Juniata"
@@ -11,7 +15,9 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 2
 discovered_by = north_american
-1444.1.1 = { tribal_owner = SUS } 
+1444.1.1 = { tribal_owner = XXX } 
+1444.11.15 = { tribal_owner = XXX }
+1444.11.18 = { tribal_owner = XXX }
 1656.1.1 = { 
     owner = IRO
     controller = IRO
