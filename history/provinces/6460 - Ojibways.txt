@@ -1,5 +1,4 @@
 # No previous file for Pax Americana province
-
 culture = algonquin
 religion = totemism
 capital = "Ojibays"
@@ -8,17 +7,13 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
-native_size = 20
+native_size = 5
 native_ferocity = 1
 native_hostileness = 1
-
 discovered_by = north_american
-#Province History
-
-1444.1.1 = { tribal_owner = OJI }
-1444.11.15 = { #BeyondTypus batch edit shortcut no vassal start date begin
-	tribal_owner = XXX
-}
-1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
-	tribal_owner = OJI
-}
+################################################################################
+# Province History
+################################################################################
+1444.1.1 = { tribal_owner = OJI } 
+1444.11.15 = { tribal_owner = XXX } 
+1444.11.18 = { tribal_owner = OJI } 

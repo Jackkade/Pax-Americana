@@ -1,5 +1,4 @@
 # No previous file for Pax Americana province
-
 owner = MOH
 controller = MOH
 culture = iroquois
@@ -7,25 +6,14 @@ religion = totemism
 capital = "Sacandaga"
 trade_goods = fur
 hre = no
-base_tax = 2  
+base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = MOH
-native_size = 35
+native_size = 10
 native_ferocity = 7
 native_hostileness = 3
-
-
-
 discovered_by = north_american
-
-1444.11.15 = { #BT Performance Start Begin
-	owner = XXX
-	controller = XXX
-	tribal_owner = XXX
-}
-1444.11.18 = { #BT Performance Start End
-	owner = MOH
-	controller = MOH
-}
+1444.11.15 = { owner = XXX controller = XXX tribal_owner = XXX } 
+1444.11.18 = { owner = MOH controller = MOH } 
