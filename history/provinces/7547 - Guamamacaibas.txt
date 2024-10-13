@@ -1,16 +1,14 @@
 # No previous file for Guamamacaibas
-
 culture = guanahatabey
 religion = animism
 capital = "Guamamacaibas"
-trade_goods = unknown 
+trade_goods = unknown
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-native_size = 10
+native_size = 15
 native_ferocity = 1
 native_hostileness = 2
-
-1444.1.1 = { discovered_by = CAB }
-1444.1.1 = { discovered_by = ARW }
+1444.1.1 = { discovered_by = CAB } 
+1444.1.1 = { discovered_by = ARW } 

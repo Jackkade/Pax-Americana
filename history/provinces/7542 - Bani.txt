@@ -1,5 +1,4 @@
 # No previous file for Bani
-
 culture = arawak
 religion = animism
 capital = "Bani"
@@ -8,9 +7,8 @@ hre = no
 base_tax = 2
 base_production = 3
 base_manpower = 2
-native_size = 30			#Approx. 750k over 12 provinces
+native_size = 15 # Approx. 750k over 12 provinces
 native_ferocity = 1
 native_hostileness = 1
-
-1444.1.1 = { discovered_by = CAB }
-1444.1.1 = { discovered_by = ARW }
+1444.1.1 = { discovered_by = CAB } 
+1444.1.1 = { discovered_by = ARW } 
