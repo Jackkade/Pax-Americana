@@ -69,9 +69,130 @@ pa_new_colony = {
 					}
 				}
 			}
-			change_culture = owner
-			change_original_culture = owner
-			change_religion = owner
+			#Hugeass switch case incoming
+			if = {			#North America
+				limit = {
+					continent = north_america
+				}
+				if = {	#British
+					limit = {
+						owner = {
+							culture_group = british
+						}
+					}
+					change_culture = american
+					change_original_culture = american
+				}
+				else_if = { #French in canada
+					limit = {
+						region = canada_region
+						owner = {
+							culture_group = french
+						}
+					}
+					change_culture = quebecois
+					change_original_culture = quebecois
+				}
+				else_if = { #French elsewhere
+					limit = {
+						owner = {
+							culture_group = french
+						}
+					}
+					change_culture = louisianans
+					change_original_culture = louisianans
+				}
+				else_if = { #Dutch
+					limit = {
+						owner = {
+							culture_group = germanic
+						}
+					}
+					change_culture = amerikaans
+					change_original_culture = amerikaans
+				}
+				else_if = {	#Portugese
+					limit = {
+						owner = {
+							primary_culture = portugese
+						}
+					}
+					change_culture = brazilian
+					change_original_culture = brazilian
+				}
+				else_if = {	#Spanish
+					limit = {
+						owner = {
+							culture_group = iberian
+						}
+					}
+					change_culture = mexican
+					change_original_culture = mexican
+				}
+				else = {	#None of previous cultures
+					change_culture = owner
+					change_original_culture = owner
+				}
+			}
+			else_if = {		#South America
+				limit = {
+					continent = south_america
+				}
+				if = {	#British
+					limit = {
+						owner = {
+							culture_group = british
+						}
+					}
+					change_culture = columbian
+					change_original_culture = columbian
+				}
+				else_if = { #French
+					limit = {
+						owner = {
+							culture_group = french
+						}
+					}
+					change_culture = antartique
+					change_original_culture = antartique
+				}
+				else_if = { #Dutch
+					limit = {
+						owner = {
+							culture_group = germanic
+						}
+					}
+					change_culture = braziliaans
+					change_original_culture = braziliaans
+				}
+				else_if = {	#Portugese
+					limit = {
+						owner = {
+							primary_culture = portugese
+						}
+					}
+					change_culture = brazilian
+					change_original_culture = brazilian
+				}
+				else_if = {	#Spanish
+					limit = {
+						owner = {
+							culture_group = iberian
+						}
+					}
+					change_culture = platinean
+					change_original_culture = platinean
+				}
+				else = {	#None of previous
+					change_culture = owner
+					change_original_culture = owner
+				}
+			}
+			else = {		#Neither
+				change_culture = owner
+				change_original_culture = owner
+			}
+			change_religion = owner		#Always Change religion
 		}
 
 		remove_province_triggered_modifier = pa_new_colony
