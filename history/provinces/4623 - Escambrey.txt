@@ -1,5 +1,5 @@
 # No previous file for Escambrey
-culture = arawak
+culture = west_taino
 religion = animism
 capital = "Escambrey"
 trade_goods = unknown

@@ -14,8 +14,5 @@ base_manpower = 1
 native_size = 15
 native_ferocity = 1
 native_hostileness = 2
-tribal_owner = OSH
+center_of_trade = 1
 discovered_by = north_american
-1444.1.1 = { tribal_owner = XXX }
-1444.11.15 = { tribal_owner = XXX }
-1444.11.18 = { tribal_owner = XXX }

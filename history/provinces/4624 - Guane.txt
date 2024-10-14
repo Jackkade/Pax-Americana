@@ -1,5 +1,5 @@
 # No previous file for Guane
-culture = arawak
+culture = guanahatabey
 religion = animism
 capital = "Guane"
 trade_goods = unknown

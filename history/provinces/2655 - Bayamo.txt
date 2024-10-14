@@ -1,5 +1,5 @@
 # No previous file for Bayamo
-culture = arawak
+culture = west_taino
 religion = animism
 capital = "Bayamo"
 trade_goods = unknown

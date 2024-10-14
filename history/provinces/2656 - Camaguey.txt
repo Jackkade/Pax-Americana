@@ -1,5 +1,5 @@
 # No previous file for Camaguey
-culture = arawak
+culture = west_taino
 religion = animism
 capital = "Camaguey"
 trade_goods = unknown
