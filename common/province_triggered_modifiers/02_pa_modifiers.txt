@@ -55,6 +55,18 @@ pa_new_colony = {
 					continent = south_america
 					continent = oceania
 				}
+				owner = { # Natives to the continents won't replace other natives except through convential means
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = south_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = aboriginal_tech
+							technology_group = polynesian_tech
+						}
+					}
+				}
 			}
 			change_culture = owner
 			change_original_culture = owner
@@ -63,5 +75,16 @@ pa_new_colony = {
 
 		remove_province_triggered_modifier = pa_new_colony
 		remove_province_modifier = pa_new_colony_cooldown
+		remove_province_modifier = pa_new_colonial_nation_colony
+
+		#Colony cost modifiers
+		remove_province_modifier = pa_new_colony_reduced_cost_1
+		remove_province_modifier = pa_new_colony_reduced_cost_2
+		remove_province_modifier = pa_new_colony_reduced_cost_3
+		remove_province_modifier = pa_new_colony_increased_cost_1
+		remove_province_modifier = pa_new_colony_increased_cost_2
+		remove_province_modifier = pa_new_colony_increased_cost_3
+		remove_province_modifier = pa_new_colony_increased_cost_4
+		remove_province_modifier = pa_new_colony_increased_cost_native
 	}
 }

@@ -1873,7 +1873,8 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		colonists = 1
+		
+		colony_cost_modifier = -0.25
 	}
 
 	additional_colonists = {
@@ -1884,7 +1885,7 @@ expansion_ideas = {
 		merchants = 1
 	}
 	faster_colonists = {
-		colony_cost_modifier = -0.15
+		colonist_placement_chance = 0.05
 	}
 	vice_roys  = {
 		global_tariffs = 0.10
@@ -1895,7 +1896,7 @@ expansion_ideas = {
 		reduced_liberty_desire_on_other_continent = 5
 	}
 	general_colonization_law  = {
-		colonist_placement_chance = 0.05
+		colonists = 1
 		effect = { remove_temporary_colonist = yes }
 	}
 	competetive_merchants  = {

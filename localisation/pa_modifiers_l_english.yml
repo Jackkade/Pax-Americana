@@ -9,7 +9,14 @@
  pa_new_colony_cooldown_desc:0 "This colony is still establishing itself and will reach maturity in 25 years. §YBuilding 3 Buildings§!, §YBuilding a Manufactory§!, §YExpanding Infrastructure§! in the colony, or §YDeveloping the Province 5 times§! will finish the colony and make it a full province."
  pa_new_colonial_nation:0 "Newly Established Colonial Nation"
  pa_new_colonial_nation_colony:0 "New Established Colonial Nation Colony"
-
+ pa_new_colony_reduced_cost_1:0 "Reduced Colony Cost - §YExpansion Ideas§! "
+ pa_new_colony_reduced_cost_2:0 "Reduced Colony Cost"
+ pa_new_colony_reduced_cost_3:0 "Reduced Colony Cost"
+ pa_new_colony_increased_cost_1:0 "Increased Colony Cost - §Y10 Colonies§! "
+ pa_new_colony_increased_cost_2:0 "Increased Colony Cost - §Y25 Colonies§! "
+ pa_new_colony_increased_cost_3:0 "Increased Colony Cost - §Y30 Colonies§! "
+ pa_new_colony_increased_cost_4:0 "Increased Colony Cost - §Y35 Colonies§! "
+ pa_new_colony_increased_cost_native:0 "Increase Colony Cost - §YPrimitive Nation§! "
  #US
  usa_rugged_independence:0 "Rugged Independence"
  usa_go_west_young_man:0 "Go west, Young man!"

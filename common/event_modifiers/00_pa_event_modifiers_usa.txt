@@ -62,6 +62,35 @@ pa_new_colonial_nation_colony = {
 
 }
 
+# Reduced Cost Modifiers
+pa_new_colony_reduced_cost_1 = { #-25%
+	global_tax_income = 6
+}
+pa_new_colony_reduced_cost_2 = { #-50%
+	global_tax_income = 12
+}
+pa_new_colony_reduced_cost_3 = { #-75%
+	global_tax_income = 18
+}
+
+# Increased Cost Modifiers
+pa_new_colony_increased_cost_1 = { #+50%
+	global_tax_income = -12
+}
+pa_new_colony_increased_cost_2 = { #+100%
+	global_tax_income = -24
+}
+pa_new_colony_increased_cost_3 = { #+150%
+	global_tax_income = -36
+}
+pa_new_colony_increased_cost_4 = { #+200%
+	global_tax_income = -48
+}
+# Native Colony Cost Modifiers
+pa_new_colony_increased_cost_native = { #+50%
+	global_tax_income = -12
+}
+
 ## Missions
 usa_southern_cash_crops = {
 	local_production_efficiency = 0.05 
