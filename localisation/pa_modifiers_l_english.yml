@@ -6,7 +6,7 @@
 
  #Colony Rework
  pa_new_colony_cooldown:0 "Newly Established Colony"
- pa_new_colony_cooldown_desc:0 "This colony is still establishing itself and will reach maturity in 25 years. §YBuilding 3 Buildings§!, §YBuilding a Manufactory§!, §YExpanding Infrastructure§! in the colony, or §YDeveloping the Province 5 times§! will finish the colony and make it a full province."
+ pa_new_colony_cooldown_desc:0 "This colony is still establishing itself and will reach maturity in 25 years. §YBuilding 3 Buildings§!, §YBuilding a Manufactory§!, §YExpanding Infrastructure§! in the colony, or §YDeveloping the Province 5 times§! will finish the colony and make it a full province. §YHaving more than §! §R10 Province with this modifier§! §Y will incur increased cost for new colonies.§!"
  pa_new_colonial_nation:0 "Newly Established Colonial Nation"
  pa_new_colonial_nation_colony:0 "New Established Colonial Nation Colony"
  pa_new_colony_reduced_cost_1:0 "Reduced Colony Cost - §YExpansion Ideas§! "
