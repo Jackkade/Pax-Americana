@@ -2376,6 +2376,9 @@ pagan = {
 		}
 
 		ancestors = yes
+		religious_reforms = yes
+		require_reformed_for_institution_development = yes
+		reform_tooltip = INTI_REFORM_TOOLTIP
 		
 		heretic = { BEAR_SPIRIT }	
 	}

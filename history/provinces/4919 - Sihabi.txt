@@ -1,4 +1,8 @@
 # No previous file for Sihabi
+owner = ASI
+controller = ASI
+add_core = ASI
+is_city = yes
 culture = nakota
 religion = totemism
 capital = "Sihabi"
@@ -11,12 +15,3 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 6
 discovered_by = north_american
-1763.10.9 = { 
-    owner = NAK
-    controller = NAK
-    add_core = NAK
-    is_city = yes
-    remove_core = NAK
-    religion = totemism
-    culture = bungi
-} # Royal proclamation, Britan recognize native lands (as protectorates)

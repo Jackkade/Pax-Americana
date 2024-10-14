@@ -82,3 +82,12 @@ on_province_religion_changed = {
 		change_religion = variable:pre_colonial_religion_var
     }
 }
+
+on_buy_religious_reform = {
+	events = {
+		religious_reforms.1
+		religious_reforms.2
+		religious_reforms.3
+        religious_reforms.4
+	}
+}

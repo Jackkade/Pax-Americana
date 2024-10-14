@@ -15,7 +15,6 @@ pa_new_colonial_nation = { #Modifier meant to prevent colonial nations from bank
 	inflation_reduction = 0.3
 }
 
-
 ## Missions
 usa_rugged_independence = {
 	hostile_attrition = 1 
