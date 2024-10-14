@@ -22,9 +22,23 @@ on_abandon_colony = {
 
 #scope = new country, FROM = parent country
 on_colonial_nation_established = {
-        #   Fix to colonial nations adopting
-    change_primary_culture = FROM
-    change_religion = FROM
+        #   Fix to colonial nations adopting native culture
+    if = {
+        limit = {
+            NOT = {
+                culture_group = FROM
+            }
+        }
+        change_primary_culture = FROM
+    }
+    if = {
+        limit = {
+            NOT = {
+                religion_group = FROM
+            }
+        }
+        change_religion = FROM
+    }
     every_owned_province = {
         limit = {
             has_active_triggered_province_modifier = pa_new_colony
