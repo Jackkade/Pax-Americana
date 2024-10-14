@@ -64,6 +64,7 @@ pa_new_colony = {
 							technology_group = andean
 							technology_group = aboriginal_tech
 							technology_group = polynesian_tech
+							technology_group = high_american
 						}
 					}
 				}

@@ -64,6 +64,7 @@ on_conquest = {
                     OR = {
                         technology_group = north_american
                         technology_group = south_american
+						technology_group = high_american
                     }
                 }
             }
