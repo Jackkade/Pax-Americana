@@ -1,0 +1,181 @@
+country_decisions = {
+
+	iroquois_nation = {
+		major = yes
+		potential = {
+			primary_culture = iroquois
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+            NOT = { tag = IRO }
+            NOT = {
+                has_country_flag = formed_iroquois_flag
+            }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 2
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				region = northeast_america_region
+				is_core = ROOT
+			}
+            OR = {
+                AND = {
+                    owns_core_province = 958
+                    owns_core_province = 7314
+                }
+                SEN = {
+                    is_subject_of = ROOT
+                    NOT = { liberty_desire = 10 }
+                    has_opinion = {
+                        who = ROOT
+                        value = 100
+                    }
+                }
+            }
+            OR = {
+                AND = {
+                    owns_core_province = 959
+                    owns_core_province = 7313
+                }
+                CAY = {
+                    is_subject_of = ROOT
+                    NOT = { liberty_desire = 10 }
+                    has_opinion = {
+                        who = ROOT
+                        value = 100
+                    }
+                }
+            }
+            OR = {
+                AND = {
+                    owns_core_province = 960
+                    owns_core_province = 7312
+                }
+                ONO = {
+                    is_subject_of = ROOT
+                    NOT = { liberty_desire = 10 }
+                    has_opinion = {
+                        who = ROOT
+                        value = 100
+                    }
+                }
+            }
+            OR = {
+                AND = {
+                    owns_core_province = 961
+                    owns_core_province = 7311
+                }
+                ONE = {
+                    is_subject_of = ROOT
+                    NOT = { liberty_desire = 10 }
+                    has_opinion = {
+                        who = ROOT
+                        value = 100
+                    }
+                }
+            }
+            OR = {
+                AND = {
+                    owns_core_province = 964
+                    owns_core_province = 7310
+                }
+                MOH = {
+                    is_subject_of = ROOT
+                    NOT = { liberty_desire = 10 }
+                    has_opinion = {
+                        who = ROOT
+                        value = 100
+                    }
+                }
+            }
+
+			NOT = { exists = IRO }
+		}
+		effect = {
+			change_tag = IRO
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { region = northeast_america_region }
+					culture_group = iroquoian
+				}
+				ROOT = { inherit = PREV }
+			}
+			south_iroquoisia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					culture_group = british
+				}
+				add_permanent_claim = IRO
+			}
+            iroquoisia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = IRO
+			}
+			susquehanna_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					culture_group = british
+				}
+				add_permanent_claim = IRO
+			}
+            lower_canada_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = IRO
+			}
+            erie_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = IRO
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 25
+            add_stability = 2
+			set_country_flag = formed_iroquois_flag #BT Added: This decision was missing a specific tag.
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+}
