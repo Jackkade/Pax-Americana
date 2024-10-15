@@ -19,6 +19,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = GRL }
 			greenland_area = {
+				type = all
 				NOT = {
 					has_province_modifier = pa_new_colony_cooldown
 				}
@@ -28,6 +29,7 @@ country_decisions = {
 		effect = {
             greenland_area = {
 				add_core = GRL
+				remove_core = ROOT
 			}
 			release = GRL
 			create_subject = {
