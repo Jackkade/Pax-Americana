@@ -20,6 +20,9 @@
  trade_company_st_lawrence_trade:0 "St Lawrence Charter"
  trade_company_missouri_river_trade:0 "Missouri Charter"
  trade_company_hudson_bay_trade:0 "Hudson Bay Charter"
+ trade_company_greenland:0 "Greenland Charter"
+ TRADE_COMPANY_GREENLAND_Root_Culture_GetName:0 "[Root.Culture.GetName] Greenland Company"
+ TRADE_COMPANY_GREENLAND_Trade_Company:0 "Greenland Trade Company"
 
  # Province Groups
  culture_anglo_afro_american_region:0 ""

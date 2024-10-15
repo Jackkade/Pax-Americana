@@ -1,0 +1,19 @@
+
+#Greenland
+trade_company_greenland = {
+	color = { 47 188 22 }
+	
+	provinces = {
+		1104 1105 3111 3112 3113
+		1804 5588 5589 5590
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_GREENLAND_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_GREENLAND_Trade_Company"
+	}
+}
