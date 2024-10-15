@@ -130,3 +130,9 @@ pa_slave_plantation = {
 	local_institution_spread = -0.3 
 }
 
+#Geography
+nuuk_natural_harbor_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+

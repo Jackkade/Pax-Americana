@@ -38,3 +38,7 @@
 
  #Estate
  PA_SLAVERY_EXPANDED:0 "Slavery Expanded"
+
+ #Geography
+ nuuk_natural_harbor_modifier:0 "Nuuk Natural Harbor"
+ nuuk_natural_harbor_modifier_desc:0 "Controlling the natural harbor of Nuuk strengthens our hold of trade in the region."
