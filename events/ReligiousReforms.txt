@@ -265,7 +265,6 @@ country_event = {
 					# add_truce_with = PREV
 				# }
 			# }
-			release_all_subjects = yes
 			add_war_exhaustion = 3
 			
 			add_country_modifier = {
@@ -284,10 +283,6 @@ country_event = {
 		tooltip = {
 			add_stability = -6
 			add_war_exhaustion = 3
-			
-			custom_tooltip = " "
-			
-			release_all_subjects = yes
 			
 			custom_tooltip = " "
 			
