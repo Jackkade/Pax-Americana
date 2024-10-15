@@ -1,5 +1,10 @@
 ﻿l_english:
  #US
+
+ #Nations
+ GRL:0 "Greenland"
+ GRL_ADJ:0 "Greenlandic"
+
  #Tradenodes
  massachusets_bay_trade:0 "Massachusets Bay"
  missouri_river_trade:0 "Missouri River"

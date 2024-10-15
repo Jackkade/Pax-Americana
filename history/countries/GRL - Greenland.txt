@@ -1,0 +1,5 @@
+government = republic
+technology_group = western
+primary_culture = danish
+religion = protestant
+capital = 3112
