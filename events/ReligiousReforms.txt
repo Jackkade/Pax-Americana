@@ -257,7 +257,8 @@ country_event = {
 	}
 	
 	immediate = {
-		hidden_effect = { 
+		hidden_effect = {
+			add_random_development = -20
 			add_stability = -6
 			# every_subject_country = {
 				# add_truce_with = ROOT
@@ -281,6 +282,8 @@ country_event = {
 	option = {
 		name = religious_reforms.1.a
 		tooltip = {
+			add_random_development = -20
+			custom_tooltip = " "
 			add_stability = -6
 			add_war_exhaustion = 3
 			
