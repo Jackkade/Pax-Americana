@@ -1122,37 +1122,39 @@ economic_ideas = {
 
 exploration_ideas = {
 	category = DIP
-	important = yes
+	#important = yes
 
 	bonus = {
-		cb_on_primitives = yes
+		center_of_trade_upgrade_cost = -0.15 
+		trade_company_investment_cost = -0.1
 	}
-
-	colonial_ventures = { # BT; 2.
+	
+	quest_for_the_new_world	= {
+		may_explore = yes
+		trade_range_modifier = 0.33
+	}
+	colonial_ventures = { 
 		colonists = 1
 		effect = { remove_temporary_colonist = yes } #BT Note: Not sure if we need to change this or not given how we modify this.
-	}
-	quest_for_the_new_world	= { # BT; 1.
-		may_explore = yes
-		naval_attrition = -0.1
+		cb_on_overseas = yes
 	}
 	overseas_exploration = {
 		range = 0.2		#Nerfed, colonial range is already abundant currently, and it usually isn't super useful anyways
+		naval_attrition = -0.1
 	}
 	land_of_opportunity = {
-		colonist_placement_chance = 0.05
 		min_autonomy_in_territories = -0.1
-		#global_colonial_growth = 20 # BT; 10
+		placed_merchant_power_modifier = 0.15
 	}
 	factories = {
-		trade_company_governing_cost = -0.1
-		trade_company_investment_cost = -0.1
+		trade_company_governing_cost = -0.15
 	}
 	free_colonies = {
-		colonists = 1 # BT; colonist_placement_chance = 0.1
+		merchants = 1
+		envoy_travel_time = -0.2 
 	}
 	global_empire = {
-		naval_forcelimit_modifier = 0.25
+		vassal_naval_forcelimit_bonus = 0.25
 		treasure_fleet_income = 0.25
 	}
 
@@ -1868,13 +1870,13 @@ quantity_ideas = {
 }
 
 
-expansion_ideas = {
+expansion_ideas = {	#Expansion Reworked to include general expansion
 	category = ADM
-	important = yes
+	#important = yes
 
 	bonus = {
-		
-		colony_cost_modifier = -0.25
+		colony_cost_modifier = -0.25	#Technically does nothing, but the colonies check this when determining their cost
+		harsh_treatment_cost = -0.15
 	}
 
 	additional_colonists = {
@@ -1883,21 +1885,22 @@ expansion_ideas = {
 	}
 	additional_merchants = {
 		merchants = 1
+		global_tariffs = 0.10
 	}
 	faster_colonists = {
-		colonist_placement_chance = 0.05
+		core_creation = -0.1
+ 		envoy_travel_time = -0.20
 	}
 	vice_roys  = {
-		global_tariffs = 0.10
- 		envoy_travel_time = -0.20
+		governing_capacity = 150
+		vassal_forcelimit_bonus = 0.2 
  	}
 	additional_diplomats = {
-		diplomatic_upkeep = 1 # BT; diplomats = 1
+		ae_impact = -0.1
 		reduced_liberty_desire_on_other_continent = 5
 	}
 	general_colonization_law  = {
-		colonists = 1
-		effect = { remove_temporary_colonist = yes }
+		culture_conversion_time = -0.15
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.2
