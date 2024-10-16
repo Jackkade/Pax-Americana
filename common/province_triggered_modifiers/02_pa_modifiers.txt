@@ -122,6 +122,51 @@ pa_new_colony = {
 					change_culture = caribeno
 					change_original_culture = caribeno
 				}
+				else_if = {	#Scandinavian
+					limit = {
+						owner = {
+							culture_group = scandinavian
+						}
+					}
+					change_culture = karibisk
+					change_original_culture = karibisk
+				}
+			}
+			else_if = {			#Canada
+				limit = {
+					region = canada_region
+				}
+				if = { #French
+					limit = {
+						owner = {
+							culture_group = french
+						}
+					}
+					change_culture = quebecois
+					change_original_culture = quebecois
+				}
+				else_if = {	#Scandinavian
+					limit = {
+						owner = {
+							culture_group = scandinavian
+						}
+					}
+					change_culture = vinlandic
+					change_original_culture = vinlandic
+				}
+			}	#Break Here, this is kinda hackey but I want this to be well organized
+
+			if = {	#If the culture has already been converted, don't convert again
+				limit = {
+					OR = {
+						culture_group = british
+						culture_group = french
+						culture_group = iberian
+						culture_group = germanic
+						culture_group = scandinavian
+					}
+				}
+				#Pass
 			}
 			else_if = {			#North America
 				limit = {
@@ -136,17 +181,7 @@ pa_new_colony = {
 					change_culture = american
 					change_original_culture = american
 				}
-				else_if = { #French in canada
-					limit = {
-						region = canada_region
-						owner = {
-							culture_group = french
-						}
-					}
-					change_culture = quebecois
-					change_original_culture = quebecois
-				}
-				else_if = { #French elsewhere
+				else_if = { #French
 					limit = {
 						owner = {
 							culture_group = french
@@ -181,6 +216,15 @@ pa_new_colony = {
 					}
 					change_culture = mexican
 					change_original_culture = mexican
+				}
+				else_if = {	#Scandinavian
+					limit = {
+						owner = {
+							culture_group = scandinavian
+						}
+					}
+					change_culture = nyasvenish
+					change_original_culture = nyasvenish
 				}
 				else = {	#None of previous cultures
 					change_culture = owner
@@ -235,6 +279,15 @@ pa_new_colony = {
 					}
 					change_culture = platinean
 					change_original_culture = platinean
+				}
+				else_if = {	#Scandinavian
+					limit = {
+						owner = {
+							culture_group = scandinavian
+						}
+					}
+					change_culture = antarktish
+					change_original_culture = antarktish
 				}
 				else = {	#None of previous
 					change_culture = owner
