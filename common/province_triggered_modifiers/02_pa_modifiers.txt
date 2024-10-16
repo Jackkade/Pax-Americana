@@ -50,6 +50,9 @@ pa_new_colony = {
 		if = {
 			limit = {
 				is_empty = no
+				NOT = {
+					culture_group = afro_american_group
+				}
 				OR = {      # Only convert colony in New World & Oceania
 					continent = north_america
 					continent = south_america
