@@ -13,6 +13,7 @@ native_hostileness = 6
 tribal_owner = KSK
 discovered_by = north_american
 tribal_owner = KSK
+latent_trade_goods = { coal }
 1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
 1444.11.18 = { tribal_owner = XXX } 

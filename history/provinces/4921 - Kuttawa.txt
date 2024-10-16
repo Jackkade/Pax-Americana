@@ -12,6 +12,7 @@ native_ferocity = 1
 native_hostileness = 6
 tribal_owner = KSP
 discovered_by = north_american
+latent_trade_goods = { coal }
 1444.1.1 = { tribal_owner = XXX } 
 1774.10.19 = { 
     owner = GBR
