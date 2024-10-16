@@ -73,7 +73,57 @@ pa_new_colony = {
 				}
 			}
 			#Hugeass switch case incoming
-			if = {			#North America
+			if = {			#Caribbeans
+				limit = {
+					region = carribeans_region
+				}
+				if = {	#British
+					limit = {
+						owner = {
+							culture_group = british
+						}
+					}
+					change_culture = anglo_caribbean
+					change_original_culture = anglo_caribbean
+				}
+				else_if = { #French
+					limit = {
+						owner = {
+							culture_group = french
+						}
+					}
+					change_culture = antillean
+					change_original_culture = antillean
+				}
+				else_if = { #Dutch
+					limit = {
+						owner = {
+							culture_group = germanic
+						}
+					}
+					change_culture = caribisch
+					change_original_culture = caribisch
+				}
+				else_if = {	#Portugese
+					limit = {
+						owner = {
+							primary_culture = portugese
+						}
+					}
+					change_culture = brazilian
+					change_original_culture = brazilian
+				}
+				else_if = {	#Spanish
+					limit = {
+						owner = {
+							culture_group = iberian
+						}
+					}
+					change_culture = caribeno
+					change_original_culture = caribeno
+				}
+			}
+			else_if = {			#North America
 				limit = {
 					continent = north_america
 				}
