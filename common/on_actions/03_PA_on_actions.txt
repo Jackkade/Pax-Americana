@@ -60,7 +60,7 @@ on_province_owner_change = {
             owner = {
                 is_colonial_nation = yes
             }
-            has_active_triggered_province_modifier = pa_new_colony
+            has_province_modifier = pa_new_colony_cooldown
         }
         add_province_modifier = {
             name = pa_new_colonial_nation_colony
