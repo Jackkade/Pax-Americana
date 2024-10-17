@@ -91,6 +91,68 @@ pa_new_colony_increased_cost_native = { #+50%
 	global_tax_income = -12
 }
 
+#Overlord cost for colonial nation colonies
+pa_new_colonial_nation_colony_overlord_upkeep_1 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_2 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_3 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_4 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_5 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_6 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_7 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_8 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_9 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_10 = {
+	global_tax_income = -24
+}
+pa_new_colonial_nation_colony_overlord_upkeep_11 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_12 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_13 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_14 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_15 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_16 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_17 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_18 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_19 = {
+	global_tax_income = -36
+}
+pa_new_colonial_nation_colony_overlord_upkeep_20 = {
+	global_tax_income = -36
+}
+
 ## Missions
 usa_southern_cash_crops = {
 	local_production_efficiency = 0.05 
