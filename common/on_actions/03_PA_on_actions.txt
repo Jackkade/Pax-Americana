@@ -47,6 +47,18 @@ on_colonial_nation_established = {
             name = pa_new_colonial_nation_colony
             duration = 9125		#Currently 25 Years, may need to be lower
         }
+        overlord = {
+            random_owned_province = {
+                limit = {
+                    NOT = { has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep }
+                }
+                add_province_modifier = {
+                    name = pa_new_colonial_nation_colony_overlord_upkeep
+                    #hidden = yes
+                    duration = 9125		#Currently 25 Years, may need to be lower
+                }
+            }
+        }
     }
     add_country_modifier = { 
         name = pa_new_colonial_nation
@@ -61,6 +73,18 @@ on_province_owner_change = {
                 is_colonial_nation = yes
             }
             has_province_modifier = pa_new_colony_cooldown
+            overlord = {
+                random_owned_province = {
+                    limit = {
+                        NOT = { has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep }
+                    }
+                    add_province_modifier = {
+                        name = pa_new_colonial_nation_colony_overlord_upkeep
+                        #hidden = yes
+                        duration = 9125		#Currently 25 Years, may need to be lower
+                    }
+                }
+            }
         }
         add_province_modifier = {
             name = pa_new_colonial_nation_colony

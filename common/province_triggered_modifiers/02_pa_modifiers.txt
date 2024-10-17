@@ -7,8 +7,7 @@ pa_new_colony = {
 
 	trigger = {
 		NOT = {
-			OR = {	
-				
+			OR = {
 				#The idea here is that the colony will be finished once the owner has invested something in the province.
 
 				num_of_times_improved_by_owner = 5
@@ -300,7 +299,20 @@ pa_new_colony = {
 			}
 			change_religion = owner		#Always Change religion
 		}
-
+		#Remove Cost from random overlord province
+		if = {
+			limit = {
+				is_colonial_nation = yes
+			}
+			overlord = {
+				random_owned_province = {
+					limit = {
+						has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
+					}
+					remove_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
+				}
+			}
+		}
 		remove_province_triggered_modifier = pa_new_colony
 		remove_province_modifier = pa_new_colony_cooldown
 		remove_province_modifier = pa_new_colonial_nation_colony
