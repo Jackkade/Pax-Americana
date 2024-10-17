@@ -73,6 +73,8 @@ on_province_owner_change = {
                 is_colonial_nation = yes
             }
             has_province_modifier = pa_new_colony_cooldown
+        }
+        owner = {
             overlord = {
                 random_owned_province = {
                     limit = {
@@ -113,6 +115,24 @@ on_conquest = {
         }
         add_province_triggered_modifier = pa_new_colony
         add_nationalism = -20   #Nerf to sepratism, colony already represented
+    }
+    if = {
+        limit = {
+            FROM = {
+                is_colonial_nation = yes
+            }
+            has_province_modifier = pa_new_colonial_nation_colony
+        }
+        FROM = {
+            overlord = {
+				random_owned_province = {
+					limit = {
+						has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
+					}
+					remove_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
+				}
+			}
+        }
     }
 }
 
