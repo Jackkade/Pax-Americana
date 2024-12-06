@@ -48,6 +48,9 @@
  east_prairies_area:0 "East Prairies"
  central_hispaniola_area:0 "Central Hispaniola"
  jamaica_area:0 "Jamaica"
+ hidalgo_area:0 "Hidalgo"
+ yucatan_jungle_area:0 "Central Yucatan"
+ el_salvador_area:0 "El Salvador"
  #Provinces
  PROV7300:0 "Montaukett"
  PROV_ADJ7300:0 "Montaukett"
