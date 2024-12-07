@@ -1342,6 +1342,7 @@ mexico_region = { # 15 areas
 		puebla_area
 		hidalgo_area
 		guerrero_area
+		tlapanec_area
 		oaxaca_area
 		mixteca_area
 		eastern_mexico_area

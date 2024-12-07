@@ -181,7 +181,7 @@ california={
 		250 150 10 
 	}
 	outgoing={
-		name="mexico"
+		name="jalisco_trade"
 		path={
 			1555 1554 1552 1551 
 		}
