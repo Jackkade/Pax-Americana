@@ -35,7 +35,7 @@
  COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_RioGrande_ADJ:0 "[Root.GetAdjective] Rio Grandese"
  COLONIAL_RIO_GRANDE_RioGrande:0 "Rio Grande"
  COLONIAL_RIO_GRANDE_RioGrande_ADJ:0 "Rio Grandese"
- 
+ colonial_central_america:0 "Colonial Central America"
  #Areas
  estrie_area:0 "Estrie"
  delmarva_area:0 "Delmarva Peninsula"
