@@ -1,7 +1,7 @@
 # 858 - Tamaulipas
 culture = wastek
 is_city = no
-religion = mesoamerican_religion
+religion = animism
 capital = "Tamaulipas"
 trade_goods = unknown
 hre = no
@@ -15,7 +15,7 @@ discovered_by = mesoamerican
 discovered_by = mesoamerican
 discovered_by = north_american
 1517.1.1 = { discovered_by = SPA } 
-1519.3.13 = { discovered_by = SPA } # Hernán Cortés
+1519.3.13 = { discovered_by = SPA } # Hernï¿½n Cortï¿½s
 1521.8.13 = { 
     owner = SPA
     controller = SPA
