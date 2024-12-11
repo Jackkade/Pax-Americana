@@ -1,1 +1,9 @@
 religion = mesoamerican_religion
+culture = yucatec
+base_tax = 3
+base_production = 3
+base_manpower = 3
+owner = CTM
+controller = CTM
+add_core = CTM
+discovered_by = mesoamerican

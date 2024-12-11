@@ -1,1 +1,9 @@
 religion = nahuatl
+culture = purepecha
+base_tax = 2
+base_production = 4
+base_manpower = 3
+owner = TAR
+controller = TAR
+add_core = TAR
+discovered_by = mesoamerican

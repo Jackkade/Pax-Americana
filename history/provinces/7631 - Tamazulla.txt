@@ -1,1 +1,9 @@
 religion = nahuatl
+culture = purepecha
+base_tax = 3
+base_production = 2
+base_manpower = 3
+owner = CLM
+controller = CLM
+add_core = CLM
+discovered_by = mesoamerican

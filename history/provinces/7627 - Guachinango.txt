@@ -1,1 +1,9 @@
 religion = nahuatl
+culture = tecos
+base_tax = 3
+base_production = 3
+base_manpower = 3
+owner = CLM
+controller = CLM
+add_core = CLM
+discovered_by = mesoamerican

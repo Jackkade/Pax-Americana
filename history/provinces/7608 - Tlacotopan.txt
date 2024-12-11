@@ -1,1 +1,9 @@
 religion = mesoamerican_religion
+culture = chontales
+base_tax = 4
+base_production = 3
+base_manpower = 4
+owner = YOK
+controller = YOK
+add_core = YOK
+discovered_by = mesoamerican

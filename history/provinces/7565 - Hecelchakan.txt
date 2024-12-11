@@ -1,1 +1,9 @@
 religion = mesoamerican_religion
+culture = yucatec
+base_tax = 3
+base_production = 3
+base_manpower = 3
+owner = XIU
+controller = XIU
+add_core = XIU
+discovered_by = mesoamerican

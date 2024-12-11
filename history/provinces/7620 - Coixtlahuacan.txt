@@ -1,1 +1,9 @@
 religion = nahuatl
+culture = aztek
+base_tax = 3
+base_production = 2
+base_manpower = 2
+owner = TEO
+controller = TEO
+add_core = TEO
+discovered_by = mesoamerican

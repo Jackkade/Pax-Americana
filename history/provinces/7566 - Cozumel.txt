@@ -1,1 +1,9 @@
 religion = mesoamerican_religion
+culture = yucatec
+base_tax = 1
+base_production = 1
+base_manpower = 1
+owner = COC
+controller = COC
+add_core = COC
+discovered_by = mesoamerican

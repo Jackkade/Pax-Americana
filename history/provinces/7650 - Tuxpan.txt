@@ -1,4 +1,3 @@
-
 culture = wastek
 owner = HST
 controller = HST
@@ -8,14 +7,10 @@ religion = mesoamerican_religion
 capital = "Tuxpan"
 trade_goods = sugar
 hre = no
-base_tax = 1 
+base_tax = 1
 base_production = 1
 base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
-
-
-
 discovered_by = mesoamerican
-

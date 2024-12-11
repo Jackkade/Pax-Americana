@@ -1,1 +1,9 @@
 religion = mesoamerican_religion
+culture = highland_mayan
+base_tax = 2
+base_production = 1
+base_manpower = 1
+owner = CHT
+controller = CHT
+add_core = CHT
+discovered_by = mesoamerican

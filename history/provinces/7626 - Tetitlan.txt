@@ -1,1 +1,9 @@
 religion = nahuatl
+culture = tepic
+base_tax = 1
+base_production = 3
+base_manpower = 3
+owner = XAL
+controller = XAL
+add_core = XAL
+discovered_by = mesoamerican

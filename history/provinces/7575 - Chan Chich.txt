@@ -1,1 +1,9 @@
 religion = mesoamerican_religion
+culture = putun
+base_tax = 3
+base_production = 3
+base_manpower = 1
+owner = CTM
+controller = CTM
+add_core = CTM
+discovered_by = mesoamerican

@@ -1,1 +1,9 @@
 religion = nahuatl
+culture = tlapanec
+base_tax = 2
+base_production = 2
+base_manpower = 2
+owner = TLA
+controller = TLA
+add_core = TLA
+discovered_by = mesoamerican
