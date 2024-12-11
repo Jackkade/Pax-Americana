@@ -1,5 +1,5 @@
 # No previous file for Tzapotzingo
-culture = tepic
+culture = corachol
 religion = nahuatl
 owner = XAL
 controller = XAL

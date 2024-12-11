@@ -1,5 +1,5 @@
 religion = nahuatl
-culture = tlapanec
+culture = cuitaltec
 base_tax = 3
 base_production = 3
 base_manpower = 2

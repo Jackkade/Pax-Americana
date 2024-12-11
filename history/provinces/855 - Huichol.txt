@@ -1,5 +1,5 @@
 # 855 - Huichol
-culture = tepic
+culture = cahita
 religion = animism
 capital = "Huichol"
 trade_goods = unknown

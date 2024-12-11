@@ -1,5 +1,5 @@
 religion = nahuatl
-culture = tepic
+culture = corachol
 base_tax = 2
 base_production = 3
 base_manpower = 2

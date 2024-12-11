@@ -1,5 +1,5 @@
 # No previous file for Champutun
-culture = yucatec
+culture = chontales
 owner = CNP
 controller = CNP
 add_core = CNP

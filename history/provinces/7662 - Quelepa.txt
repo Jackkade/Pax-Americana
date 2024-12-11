@@ -1,5 +1,5 @@
 religion = mesoamerican_religion
-culture = highland_mayan
+culture = miskito
 base_tax = 1
 base_production = 1
 base_manpower = 1

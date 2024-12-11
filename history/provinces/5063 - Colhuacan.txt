@@ -1,5 +1,5 @@
 # No previous file for Hualapai
-culture = piman
+culture = cahita
 religion = animism
 capital = "Colhuacan"
 trade_goods = unknown
@@ -21,7 +21,7 @@ discovered_by = mesoamerican
     culture = castillian
     religion = catholic
     is_city = yes
-    capital = "San Miguel de CuliacÃƒÂ¡n" # founded in 1531 by the Spanish, but it is a native name (from Nahuatl, related language to local people)
+    capital = "San Miguel de CuliacÃƒÆ’Ã‚Â¡n" # founded in 1531 by the Spanish, but it is a native name (from Nahuatl, related language to local people)
 }
 
 1810.9.16 = { owner = MEX add_core = MEX controller = MEX } # Mexican War of Independence

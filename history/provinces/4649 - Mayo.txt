@@ -1,5 +1,5 @@
 # No previous file for Mayo
-culture = piman
+culture = cahita
 religion = totemism
 capital = "Mayo"
 trade_goods = unknown

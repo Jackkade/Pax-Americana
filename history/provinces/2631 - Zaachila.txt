@@ -1,5 +1,5 @@
 # No previous file for Zaachila
-culture = chontales
+culture = mixe
 owner = YOK
 controller = YOK
 add_core = YOK

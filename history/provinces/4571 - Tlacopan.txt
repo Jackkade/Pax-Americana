@@ -2,7 +2,7 @@
 owner = AZT
 controller = AZT
 add_core = AZT
-culture = aztek
+culture = matlatzinca
 religion = nahuatl
 capital = "Tlacopan"
 trade_goods = gold

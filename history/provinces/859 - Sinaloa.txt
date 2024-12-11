@@ -1,5 +1,5 @@
 # 859 - Sinaloa
-culture = piman
+culture = cahita
 religion = totemism
 capital = "Sinaloa"
 trade_goods = unknown
@@ -17,7 +17,7 @@ discovered_by = mesoamerican
     owner = SPA
     controller = SPA
     add_core = SPA
-    capital = "CuliacÃ¡n"
+    capital = "CuliacÃƒÂ¡n"
     is_city = yes
     culture = castillian
     religion = catholic

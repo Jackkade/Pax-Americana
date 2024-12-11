@@ -1,5 +1,5 @@
 # No previous file for Teloloapan
-culture = aztek
+culture = matlatzinca
 owner = AZT
 controller = AZT
 add_core = AZT

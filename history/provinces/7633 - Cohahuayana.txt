@@ -1,9 +1,9 @@
 religion = nahuatl
-culture = purepecha
+culture = cuitaltec
 base_tax = 3
 base_production = 2
 base_manpower = 2
-owner = TAR
-controller = TAR
-add_core = TAR
+owner = CLM
+controller = CLM
+add_core = CLM
 discovered_by = mesoamerican

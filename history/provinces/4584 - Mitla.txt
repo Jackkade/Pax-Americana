@@ -1,7 +1,7 @@
 # No previous file for Mitla
 owner = ZAP
 controller = ZAP
-culture = chontales
+culture = mixe
 religion = nahuatl
 capital = "Mitla"
 trade_goods = sugar
