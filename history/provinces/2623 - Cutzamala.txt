@@ -1,5 +1,5 @@
 # No previous file for Cutzamala
-culture = matlatzinca
+culture = purepecha
 owner = MAT
 controller = MAT
 add_core = MAT

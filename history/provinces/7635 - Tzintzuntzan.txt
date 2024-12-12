@@ -1,5 +1,5 @@
 religion = nahuatl
-culture = matlatzinca
+culture = purepecha
 base_tax = 4
 base_production = 4
 base_manpower = 3
