@@ -19,9 +19,6 @@ add_UOP_modifier = {
 				region = central_africa_region
 				region = east_africa_region
 				#	
-				region = mexico_region
-				region = central_america_region
-				# 
 				region = guinea_region
 				region = niger_region
 				region = sahel_region
@@ -38,12 +35,11 @@ add_UOP_modifier = {
 				area = circassia_area
 				area = dagestan_area
 				province_id = 2195 #Adyghe
-			}
-			NOT = {
-				OR = {
-					area = durango_area
-					area = nayarit_area
-				}
+				#Central American Below Mayans
+				area = honduras_area
+				area = nicaragua_area
+				area = costa_rica_area
+				area = panama_area
 			}
 		}
 		add_permanent_province_modifier = {
