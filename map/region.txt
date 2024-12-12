@@ -1358,6 +1358,7 @@ mexico_region = { # 15 areas
 central_america_region = { # 10 areas
 	areas = {
 		chiapas_area
+		lacandon_area
 		yucatan_area
 		east_yucatan_area
 		yucatan_jungle_area

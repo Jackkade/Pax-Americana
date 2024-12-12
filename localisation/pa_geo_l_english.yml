@@ -53,6 +53,8 @@
  hidalgo_area:0 "Hidalgo"
  yucatan_jungle_area:0 "Central Yucatan"
  el_salvador_area:0 "El Salvador"
+ lacandon_area:0 "Lacandon"
+ 
  #Provinces
  PROV7300:0 "Montaukett"
  PROV_ADJ7300:0 "Montaukett"
