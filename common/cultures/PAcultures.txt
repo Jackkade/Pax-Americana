@@ -316,8 +316,8 @@ afro_american_group = {
 #Colonial Cultures
 #Currently one for each continent for simplicity
 british = {
-	aztec = { #British Mexican Culture
-		primary = USA
+	aztech_anglo = { #British Mexican Culture
+		primary = XXX
 		male_names = {
 			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
 			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
@@ -600,6 +600,37 @@ french	= {
 
 iberian = { #Castillian
 	floridian = { #Non-Mexican NA
+		primary = XXX
+		dynasty_names = {#Castillian Names
+			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
+			#CK2
+			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
+			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
+			Z��iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+		}
+		male_names = {
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso �lvaro Baltasar
+			Bernardo Bertr�n Hernando
+			Cristobal Diego Domingo Esteban Fadrique Francisco Garc�a G�mez Gonzalo Gutierre Hermenegildo
+			Ignacio La�n Lope Miguel Nu�o Od�n Ram�n Rodrigo Tom�s Valeriano
+			Alfonso Alphonse Alonso Alphonse �lvar Oliver �lvaro Oliver Bermudo Vermudo Diego Diaco
+			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila Garc�a Garcia Gil
+			Egidius G�mez Gomez Gonzalo Gonzalo Guill�n William Guillermo William Gutierre Walter Juan
+			Lope Lupo Luis Louis Manrique Amalric Mart�n Martin Munio Munio Nu�o Nuno Ordo�o Ordono
+			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho
+			Suero Tello Vela Vela Suero Oveco John Enrique
+		}
+		female_names = {
+			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza
+			Constance Elvira Elvira Estefan�a Stephania Fronilda Fronilde Gontroda Gotruda In�s Agnes
+			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda Mar�a Maria Marina Marine
+			Mayor Mayor Menc�a Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
+			Isabel
+		}
+
+	}
+	norteno = { #Eastern NA non-mexican
 		primary = XXX
 		dynasty_names = {#Castillian Names
 			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
