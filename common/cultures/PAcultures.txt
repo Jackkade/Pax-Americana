@@ -663,6 +663,94 @@ iberian = { #Castillian
 			Isabel
 		}
 	}
+	#Portuguese
+	alemarese = {	#Portuguese NA
+		country = { } 
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = POR
+		dynasty_names = {
+			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
+			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
+			#CK2
+			"da C�mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+		}
+		male_names = {
+			Afonso Aires Aleixo Alexandre Alberto �lvaro Andr� Ant�nio Bartolomeu Barnab� Benjamim Bermudo 
+			Bernardo Caetano Carlos Crist�v�o Daniel Dami�o Dinis Diogo Duarte Eduardo Egas Est�v�o Fern�o 
+			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gon�alo Guilherme Gustavo 
+			Guterre Henrique Herm�gio In�cio Jaime Jo�o Joaquim Jorge Jos� "Jos� Maria" Lopo Louren�o Lucas 
+			Lu�s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
+			Ot�vio Pascoal Paulo Paio Pedro Pero P�ncio Rafael Rodrigo Rog�rio Rui Raimundo Sancho Sebasti�o 
+			Sim�o Soeiro Tiago Teodoro Teod�sio Teot�nio Tobias Tom�s Uriel Vasco Vicente V�tor Xavier 
+		}
+		female_names = {
+			Aldara Aldon�a Ana "Ana Maria" Beatriz Bereng�ria Branca Cristina Cristiana Constan�a D�rdia 
+			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar In�s J�lia Joana 
+			Leonor Let�cia Madalena Mafalda Matilda Margarida Maria "Maria da Concei��o" "Maria das Dores" 
+			"Maria da Assun��o" "Maria da Natividade" "Maria de F�tima" "Maria de Lurdes" "Maria do C�u" 
+			"Maria da Luz" "Maria da Gra�a" "Maria Jos�" "Maria Madalena" "Maria Teresa" "Maria Ant�nia" 
+			"Maria Carolina" "Maria Jo�o" "Maria Manuel" "Maria Lu�s" Mariana Marisa Marinha Mor Ouroana 
+			Sancha Teodora Teresa Urraca Vit�ria
+		}
+	}
+	mestico = {	#Portuguese Mestizo
+		country = { } 
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = POR
+		dynasty_names = {
+			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
+			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
+			#CK2
+			"da C�mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+		}
+		male_names = {
+			Afonso Aires Aleixo Alexandre Alberto �lvaro Andr� Ant�nio Bartolomeu Barnab� Benjamim Bermudo 
+			Bernardo Caetano Carlos Crist�v�o Daniel Dami�o Dinis Diogo Duarte Eduardo Egas Est�v�o Fern�o 
+			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gon�alo Guilherme Gustavo 
+			Guterre Henrique Herm�gio In�cio Jaime Jo�o Joaquim Jorge Jos� "Jos� Maria" Lopo Louren�o Lucas 
+			Lu�s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
+			Ot�vio Pascoal Paulo Paio Pedro Pero P�ncio Rafael Rodrigo Rog�rio Rui Raimundo Sancho Sebasti�o 
+			Sim�o Soeiro Tiago Teodoro Teod�sio Teot�nio Tobias Tom�s Uriel Vasco Vicente V�tor Xavier 
+		}
+		female_names = {
+			Aldara Aldon�a Ana "Ana Maria" Beatriz Bereng�ria Branca Cristina Cristiana Constan�a D�rdia 
+			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar In�s J�lia Joana 
+			Leonor Let�cia Madalena Mafalda Matilda Margarida Maria "Maria da Concei��o" "Maria das Dores" 
+			"Maria da Assun��o" "Maria da Natividade" "Maria de F�tima" "Maria de Lurdes" "Maria do C�u" 
+			"Maria da Luz" "Maria da Gra�a" "Maria Jos�" "Maria Madalena" "Maria Teresa" "Maria Ant�nia" 
+			"Maria Carolina" "Maria Jo�o" "Maria Manuel" "Maria Lu�s" Mariana Marisa Marinha Mor Ouroana 
+			Sancha Teodora Teresa Urraca Vit�ria
+		}
+	}
+	carregadores = {	#Portuguese SA
+		country = { } 
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = POR
+		dynasty_names = {
+			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
+			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
+			#CK2
+			"da C�mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+		}
+		male_names = {
+			Afonso Aires Aleixo Alexandre Alberto �lvaro Andr� Ant�nio Bartolomeu Barnab� Benjamim Bermudo 
+			Bernardo Caetano Carlos Crist�v�o Daniel Dami�o Dinis Diogo Duarte Eduardo Egas Est�v�o Fern�o 
+			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gon�alo Guilherme Gustavo 
+			Guterre Henrique Herm�gio In�cio Jaime Jo�o Joaquim Jorge Jos� "Jos� Maria" Lopo Louren�o Lucas 
+			Lu�s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
+			Ot�vio Pascoal Paulo Paio Pedro Pero P�ncio Rafael Rodrigo Rog�rio Rui Raimundo Sancho Sebasti�o 
+			Sim�o Soeiro Tiago Teodoro Teod�sio Teot�nio Tobias Tom�s Uriel Vasco Vicente V�tor Xavier 
+		}
+		female_names = {
+			Aldara Aldon�a Ana "Ana Maria" Beatriz Bereng�ria Branca Cristina Cristiana Constan�a D�rdia 
+			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar In�s J�lia Joana 
+			Leonor Let�cia Madalena Mafalda Matilda Margarida Maria "Maria da Concei��o" "Maria das Dores" 
+			"Maria da Assun��o" "Maria da Natividade" "Maria de F�tima" "Maria de Lurdes" "Maria do C�u" 
+			"Maria da Luz" "Maria da Gra�a" "Maria Jos�" "Maria Madalena" "Maria Teresa" "Maria Ant�nia" 
+			"Maria Carolina" "Maria Jo�o" "Maria Manuel" "Maria Lu�s" Mariana Marisa Marinha Mor Ouroana 
+			Sancha Teodora Teresa Urraca Vit�ria
+		}
+	}
 }
 germanic = { #These are assumed to be dutch currently
 	
