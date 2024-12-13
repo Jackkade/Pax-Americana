@@ -251,8 +251,8 @@ beneficial_neglect = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	colonist_placement_chance = 0.05
-	global_trade_power = 0.1
+
+	global_trade_power = 0.2
 
 
 	effect = {}
@@ -1402,9 +1402,7 @@ steppe_nomad_migrations_policy = {
 		full_idea_group = horde_gov_ideas
 		full_idea_group = exploration_ideas
 	}
-	
-	colonist_placement_chance = 0.05
-	native_uprising_chance = -0.5
+	culture_conversion_cost = -0.15
 
 	effect = {}
 	removed_effect = {}
