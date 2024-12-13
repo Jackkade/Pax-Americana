@@ -109,13 +109,17 @@ pa_new_colony = {
 							primary_culture = portugese
 						}
 					}
-					change_culture = brazilian
-					change_original_culture = brazilian
+					change_culture = carregadores
+					change_original_culture = carregadores
 				}
 				else_if = {	#Spanish
 					limit = {
 						owner = {
 							culture_group = iberian
+							NOT = { primary_culture = brazilian }
+							NOT = { primary_culture = alemarese }
+							NOT = { primary_culture = mestico }
+							NOT = { primary_culture = carregadores }
 						}
 					}
 					change_culture = caribeno
@@ -211,10 +215,14 @@ pa_new_colony = {
 					limit = {
 						owner = {
 							culture_group = iberian
+							NOT = { primary_culture = brazilian }
+							NOT = { primary_culture = alemarese }
+							NOT = { primary_culture = mestico }
+							NOT = { primary_culture = carregadores }
 						}
 					}
-					change_culture = mexican
-					change_original_culture = mexican
+					change_culture = norteno
+					change_original_culture = norteno
 				}
 				else_if = {	#Scandinavian
 					limit = {
@@ -274,6 +282,10 @@ pa_new_colony = {
 					limit = {
 						owner = {
 							culture_group = iberian
+							NOT = { primary_culture = brazilian }
+							NOT = { primary_culture = alemarese }
+							NOT = { primary_culture = mestico }
+							NOT = { primary_culture = carregadores }
 						}
 					}
 					change_culture = platinean
