@@ -131,7 +131,6 @@ province_event = { #Anglo-African-American
 	}
 }
 
-
 province_event = { #Anglo-African-Caribbean
 	id = pax_americana_afro_cultures.2
 	title = anglo_african_american_spread.title
@@ -530,7 +529,6 @@ province_event = { #Ibero-Afro-Caribeno
         ai_chance = { factor = 0 }
 	}
 }
-
 
 province_event = { #Dutch-Afro-Caribisch
 	id = pax_americana_afro_cultures.5
