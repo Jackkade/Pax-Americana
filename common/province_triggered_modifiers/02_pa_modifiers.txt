@@ -135,6 +135,24 @@ pa_new_colony = {
 					change_original_culture = karibisk
 				}
 			}
+			else_if = {			#Central America
+				limit = {
+					region = central_america_region
+				}
+				if = { #Castillian
+					limit = {
+						owner = {
+							culture_group = iberian
+							NOT = { primary_culture = brazilian }
+							NOT = { primary_culture = alemarese }
+							NOT = { primary_culture = mestico }
+							NOT = { primary_culture = carregadores }
+						}
+					}
+					change_culture = centrado
+					change_original_culture = centrado
+				}
+			}
 			else_if = {			#Canada
 				limit = {
 					region = canada_region
