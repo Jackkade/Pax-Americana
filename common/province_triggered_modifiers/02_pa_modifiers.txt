@@ -139,7 +139,16 @@ pa_new_colony = {
 				limit = {
 					region = central_america_region
 				}
-				if = { #Castillian
+				if = {	#British
+					limit = {
+						owner = {
+							culture_group = british
+						}
+					}
+					change_culture = belizean
+					change_original_culture = belizean
+				}
+				else_if = { #Castillian
 					limit = {
 						owner = {
 							culture_group = iberian
