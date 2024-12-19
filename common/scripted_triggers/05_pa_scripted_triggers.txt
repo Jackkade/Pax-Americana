@@ -36,7 +36,6 @@ is_valid_for_conquest_colony = {
 		culture_group = carribean
 		culture_group = araucanian
 		culture_group = mataco
-		culture_group = chibchan
 		culture_group = maranon
 		culture_group = je
 		culture_group = je_tupi
