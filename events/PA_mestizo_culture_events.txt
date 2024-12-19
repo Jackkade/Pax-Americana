@@ -51,6 +51,12 @@ province_event = { #Mexican/Castillian Mestizo
 			factor = 0.5
 			num_of_times_improved = 25
 		}
+        modifier = {
+            factor = 0.8
+            any_neighbor_province = {
+                culture_group = iberian
+            } 
+        }
 
 		#Nahua
 		modifier = {
