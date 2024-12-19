@@ -49,8 +49,9 @@ pa_new_colony_cooldown = {
 	#Natives don't like you
 	local_unrest = 2 
 
-	#Don't have infrastructure to convert entire population
-	local_missionary_strength = -0.02 
+	#Don't have infrastructure to convert population
+	local_missionary_strength = -1 
+	local_religious_unity_contribution = -1
 }
 
 pa_new_colonial_nation_colony = {
