@@ -54,5 +54,6 @@ is_valid_for_conquest_colony = {
 		culture_group = timucua_group
 		culture_group = calusa_group
 		culture_group = karankwa_group
+		culture = piman
 	}
 }
