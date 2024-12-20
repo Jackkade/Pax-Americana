@@ -38,6 +38,11 @@
  COLONIAL_RIO_GRANDE_RioGrande:0 "Rio Grande"
  COLONIAL_RIO_GRANDE_RioGrande_ADJ:0 "Rio Grandese"
  colonial_central_america:0 "Colonial Central America"
+ COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_Guatemala:0 "[Root.GetAdjective] Guatemala"
+ COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_CentralAmerica:0 "[Root.GetAdjective] Central America"
+ COLONIAL_CENTRAL_AMERICA_Belize:0 "Belize"
+ COLONIAL_CENTRAL_AMERICA_Panama:0 "Panama"
+
  #Areas
  estrie_area:0 "Estrie"
  delmarva_area:0 "Delmarva Peninsula"
