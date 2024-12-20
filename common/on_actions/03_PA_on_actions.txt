@@ -115,6 +115,7 @@ on_conquest = {
         }
         add_province_triggered_modifier = pa_new_colony
         add_nationalism = -20   #Nerf to sepratism, colony already represented
+        #Kicking out all the natives makes the infrastructure collapse
         set_base_tax = 1 
         set_base_production = 1
         set_base_manpower = 1
