@@ -40,7 +40,6 @@ is_valid_for_conquest_colony = {
 		culture_group = je
 		culture_group = je_tupi
 		culture_group = salish_group
-		culture_group = southern_uto_aztecan
 		culture_group = pacific_na_dene
 		culture_group = hokan
 		culture_group = dorset
