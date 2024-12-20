@@ -184,7 +184,7 @@ province_event = { #Portuguese Mestico
 	option = { # Allow them to continue
 		name = event_mestizo_spread_option.a
 
-		change_culture = mexican
+		change_culture = mestico
         add_base_tax = 2
         add_base_production = 1
         add_province_modifier  = { 
@@ -197,6 +197,367 @@ province_event = { #Portuguese Mestico
 	option = { # Encourage Local traditions
 		name = event_mestizo_spread_option.b
         set_province_flag = pa_portuguese_mestico_culture_denied
+        add_base_manpower = 2
+        add_province_modifier  = { 
+            name = pa_local_traditions_reaffirmed
+            duration = 9125
+        }
+        ai_chance = { factor = 0 }
+	}
+}
+
+
+province_event = { #English/Aztech Mestizo
+	id = pax_americana_mestizo_cultures.3
+	title = mexican_castillian_spread.title
+	desc = mexican_castillian_spread.desc
+	picture = southamericagfx_RELIGIOUS_CONVERSION_eventPicture
+	goto = root
+	
+	trigger = {
+		owner = {
+            culture_group = british
+            religion_group = christian 
+        }
+        OR = {
+		    culture_group = southern_uto_aztecan
+            culture_group = central_american
+            culture_group = otomanguean
+            culture_group = mayan
+        }
+        NOT = {
+            nationalism = 1
+        }
+        NOT = {
+            has_province_flag = pa_english_aztech_culture_denied
+        }
+        #Must be christian and accepted culture
+        has_owner_accepted_culture = yes 
+        has_owner_religion = yes 
+		region = mexico_region
+        #Add this back if too fast
+        #num_of_times_improved_by_owner = 5
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template MTTH
+		years = 50
+
+		#MTTH settings
+
+        modifier = {
+			factor = 0.9
+			num_of_times_improved = 5
+		}
+        modifier = {
+			factor = 0.75
+			num_of_times_improved = 10 
+		}
+        modifier = {
+			factor = 0.5
+			num_of_times_improved = 25
+		}
+        modifier = {
+            factor = 0.8
+            any_neighbor_province = {
+                culture_group = british
+            } 
+        }
+
+		#Nahua
+		modifier = {
+			factor = 0.9
+			culture = aztek
+		}
+	}
+
+	option = { # Allow them to continue
+		name = event_mestizo_spread_option.a
+
+		change_culture = aztech_anglo
+        add_base_tax = 2
+        add_base_production = 1
+        add_province_modifier  = { 
+            name = pa_new_mixed_population
+            duration = 9125
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Encourage Local traditions
+		name = event_mestizo_spread_option.b
+        set_province_flag = pa_english_aztech_culture_denied
+        add_base_manpower = 2
+        add_province_modifier  = { 
+            name = pa_local_traditions_reaffirmed
+            duration = 9125
+        }
+        ai_chance = { factor = 0 }
+	}
+}
+
+province_event = { #French/Mehique Mestizo
+	id = pax_americana_mestizo_cultures.4
+	title = mexican_castillian_spread.title
+	desc = mexican_castillian_spread.desc
+	picture = southamericagfx_RELIGIOUS_CONVERSION_eventPicture
+	goto = root
+	
+	trigger = {
+		owner = {
+            culture_group = french
+            religion_group = christian 
+        }
+        OR = {
+		    culture_group = southern_uto_aztecan
+            culture_group = central_american
+            culture_group = otomanguean
+            culture_group = mayan
+        }
+        NOT = {
+            nationalism = 1
+        }
+        NOT = {
+            has_province_flag = pa_french_mehique_culture_denied
+        }
+        #Must be christian and accepted culture
+        has_owner_accepted_culture = yes 
+        has_owner_religion = yes 
+		region = mexico_region
+        #Add this back if too fast
+        #num_of_times_improved_by_owner = 5
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template MTTH
+		years = 50
+
+		#MTTH settings
+
+        modifier = {
+			factor = 0.9
+			num_of_times_improved = 5
+		}
+        modifier = {
+			factor = 0.75
+			num_of_times_improved = 10 
+		}
+        modifier = {
+			factor = 0.5
+			num_of_times_improved = 25
+		}
+        modifier = {
+            factor = 0.8
+            any_neighbor_province = {
+                culture_group = french
+            } 
+        }
+
+		#Nahua
+		modifier = {
+			factor = 0.9
+			culture = aztek
+		}
+	}
+
+	option = { # Allow them to continue
+		name = event_mestizo_spread_option.a
+
+		change_culture = mehique
+        add_base_tax = 2
+        add_base_production = 1
+        add_province_modifier  = { 
+            name = pa_new_mixed_population
+            duration = 9125
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Encourage Local traditions
+		name = event_mestizo_spread_option.b
+        set_province_flag = pa_french_mehique_culture_denied
+        add_base_manpower = 2
+        add_province_modifier  = { 
+            name = pa_local_traditions_reaffirmed
+            duration = 9125
+        }
+        ai_chance = { factor = 0 }
+	}
+}
+
+province_event = { #Dutch/Meksikaans Mestizo
+	id = pax_americana_mestizo_cultures.5
+	title = mexican_castillian_spread.title
+	desc = mexican_castillian_spread.desc
+	picture = southamericagfx_RELIGIOUS_CONVERSION_eventPicture
+	goto = root
+	
+	trigger = {
+		owner = {
+            culture_group = germanic
+            religion_group = christian 
+        }
+        OR = {
+		    culture_group = southern_uto_aztecan
+            culture_group = central_american
+            culture_group = otomanguean
+            culture_group = mayan
+        }
+        NOT = {
+            nationalism = 1
+        }
+        NOT = {
+            has_province_flag = pa_dutch_meksikaans_culture_denied
+        }
+        #Must be christian and accepted culture
+        has_owner_accepted_culture = yes 
+        has_owner_religion = yes 
+		region = mexico_region
+        #Add this back if too fast
+        #num_of_times_improved_by_owner = 5
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template MTTH
+		years = 50
+
+		#MTTH settings
+
+        modifier = {
+			factor = 0.9
+			num_of_times_improved = 5
+		}
+        modifier = {
+			factor = 0.75
+			num_of_times_improved = 10 
+		}
+        modifier = {
+			factor = 0.5
+			num_of_times_improved = 25
+		}
+        modifier = {
+            factor = 0.8
+            any_neighbor_province = {
+                culture_group = germanic
+            } 
+        }
+
+		#Nahua
+		modifier = {
+			factor = 0.9
+			culture = aztek
+		}
+	}
+
+	option = { # Allow them to continue
+		name = event_mestizo_spread_option.a
+
+		change_culture = meksikaans
+        add_base_tax = 2
+        add_base_production = 1
+        add_province_modifier  = { 
+            name = pa_new_mixed_population
+            duration = 9125
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Encourage Local traditions
+		name = event_mestizo_spread_option.b
+        set_province_flag = pa_dutch_meksikaans_culture_denied
+        add_base_manpower = 2
+        add_province_modifier  = { 
+            name = pa_local_traditions_reaffirmed
+            duration = 9125
+        }
+        ai_chance = { factor = 0 }
+	}
+}
+
+province_event = { #Danish/Thulenlandic Mestizo
+	id = pax_americana_mestizo_cultures.5
+	title = mexican_castillian_spread.title
+	desc = mexican_castillian_spread.desc
+	picture = southamericagfx_RELIGIOUS_CONVERSION_eventPicture
+	goto = root
+	
+	trigger = {
+		owner = {
+            culture_group = scandinavian
+            religion_group = christian 
+        }
+        OR = {
+		    culture_group = southern_uto_aztecan
+            culture_group = central_american
+            culture_group = otomanguean
+            culture_group = mayan
+        }
+        NOT = {
+            nationalism = 1
+        }
+        NOT = {
+            has_province_flag = pa_danish_thulenlandic_culture_denied
+        }
+        #Must be christian and accepted culture
+        has_owner_accepted_culture = yes 
+        has_owner_religion = yes 
+		region = mexico_region
+        #Add this back if too fast
+        #num_of_times_improved_by_owner = 5
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template MTTH
+		years = 50
+
+		#MTTH settings
+
+        modifier = {
+			factor = 0.9
+			num_of_times_improved = 5
+		}
+        modifier = {
+			factor = 0.75
+			num_of_times_improved = 10 
+		}
+        modifier = {
+			factor = 0.5
+			num_of_times_improved = 25
+		}
+        modifier = {
+            factor = 0.8
+            any_neighbor_province = {
+                culture_group = scandinavian
+            } 
+        }
+
+		#Nahua
+		modifier = {
+			factor = 0.9
+			culture = aztek
+		}
+	}
+
+	option = { # Allow them to continue
+		name = event_mestizo_spread_option.a
+
+		change_culture = thulenlandic
+        add_base_tax = 2
+        add_base_production = 1
+        add_province_modifier  = { 
+            name = pa_new_mixed_population
+            duration = 9125
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Encourage Local traditions
+		name = event_mestizo_spread_option.b
+        set_province_flag = pa_danish_thulenlandic_culture_denied
         add_base_manpower = 2
         add_province_modifier  = { 
             name = pa_local_traditions_reaffirmed
