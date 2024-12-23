@@ -1,8 +1,8 @@
 # No previous file for Tzotzil
 culture = lacandon
-owner = LAC
-controller = LAC
-add_core = LAC
+owner = ZOQ
+controller = ZOQ
+add_core = ZOQ
 is_city = yes
 religion = mesoamerican_religion
 capital = "Tzotzil"

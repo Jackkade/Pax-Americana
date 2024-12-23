@@ -1,8 +1,8 @@
 # No previous file for Xicallanco
 culture = chontales
-owner = YOK
-controller = YOK
-add_core = YOK
+owner = XIC
+controller = XIC
+add_core = XIC
 is_city = yes
 religion = mesoamerican_religion
 capital = "Xicallanco"

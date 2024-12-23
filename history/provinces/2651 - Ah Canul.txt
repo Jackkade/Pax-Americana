@@ -1,8 +1,8 @@
 # No previous file for Ah Canul
 culture = yucatec
-owner = XIU
-controller = XIU
-add_core = XIU
+owner = ACN
+controller = ACN
+add_core = ACN
 is_city = yes
 religion = mesoamerican_religion
 capital = "Ah Canul"

@@ -1,8 +1,8 @@
 # No previous file for Champutun
 culture = chontales
-owner = CNP
-controller = CNP
-add_core = CNP
+owner = CPU
+controller = CPU
+add_core = CPU
 is_city = yes
 religion = mesoamerican_religion
 capital = "Champutun"

@@ -1,8 +1,8 @@
 # No previous file for Tochtepec
 culture = mixe
-owner = YOK
-controller = YOK
-add_core = YOK
+owner = CAZ
+controller = CAZ
+add_core = CAZ
 is_city = yes
 religion = mesoamerican_religion
 capital = "Tochtepec"

@@ -1,6 +1,6 @@
 # No previous file for Mitla
-owner = ZAP
-controller = ZAP
+owner = TOC
+controller = TOC
 culture = mixe
 religion = nahuatl
 capital = "Mitla"
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = ZAP
+add_core = TOC
 discovered_by = mesoamerican
 1524.1.1 = { 
     discovered_by = SPA
