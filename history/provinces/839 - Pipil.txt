@@ -1,6 +1,6 @@
 # 839 - Pipil
 is_city = no
-culture = miskito
+culture = aztek
 religion = mesoamerican_religion
 capital = "Pipil"
 hre = no
