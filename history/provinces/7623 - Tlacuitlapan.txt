@@ -7,3 +7,4 @@ owner = GAM
 controller = GAM
 add_core = GAM
 discovered_by = mesoamerican
+trade_goods = wool

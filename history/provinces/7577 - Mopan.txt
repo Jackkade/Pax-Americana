@@ -1,5 +1,6 @@
 religion = mesoamerican_religion
 culture = putun
+trade_goods = naval_supplies
 base_tax = 2
 base_production = 3
 base_manpower = 1

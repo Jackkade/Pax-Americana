@@ -7,3 +7,4 @@ owner = CPA
 controller = CPA
 add_core = CPA
 discovered_by = mesoamerican
+trade_goods = gems

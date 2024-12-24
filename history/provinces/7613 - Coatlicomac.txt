@@ -7,3 +7,4 @@ owner = CTL
 controller = CTL
 add_core = CTL
 discovered_by = mesoamerican
+trade_goods = sugar

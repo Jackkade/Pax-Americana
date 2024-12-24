@@ -7,3 +7,4 @@ owner = TLX
 controller = TLX
 add_core = TLX
 discovered_by = mesoamerican
+trade_goods = sugar

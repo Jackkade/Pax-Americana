@@ -7,3 +7,4 @@ owner = MAT
 controller = MAT
 add_core = MAT
 discovered_by = mesoamerican
+trade_goods = grain

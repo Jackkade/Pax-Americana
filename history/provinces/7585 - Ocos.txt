@@ -7,3 +7,4 @@ owner = XOC
 controller = XOC
 add_core = XOC
 discovered_by = mesoamerican
+trade_goods = cocoa

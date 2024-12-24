@@ -7,3 +7,4 @@ owner = XIU
 controller = XIU
 add_core = XIU
 discovered_by = mesoamerican
+trade_goods = cocoa

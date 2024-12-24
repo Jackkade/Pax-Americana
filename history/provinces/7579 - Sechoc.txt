@@ -7,3 +7,4 @@ owner = TZU
 controller = TZU
 add_core = TZU
 discovered_by = mesoamerican
+trade_goods = cocoa

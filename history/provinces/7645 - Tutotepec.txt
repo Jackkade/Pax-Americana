@@ -7,3 +7,4 @@ owner = AZT
 controller = AZT
 add_core = AZT
 discovered_by = mesoamerican
+trade_goods = grain

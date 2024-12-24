@@ -7,3 +7,4 @@ owner = TIX
 controller = TIX
 add_core = TIX
 discovered_by = mesoamerican
+trade_goods = cocoa

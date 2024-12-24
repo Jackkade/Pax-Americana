@@ -7,3 +7,4 @@ owner = HKB
 controller = HKB
 add_core = HKB
 discovered_by = mesoamerican
+trade_goods = cocoa

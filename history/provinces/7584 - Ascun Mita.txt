@@ -7,3 +7,4 @@ owner = KAQ
 controller = KAQ
 add_core = KAQ
 discovered_by = mesoamerican
+trade_goods = gems

@@ -7,3 +7,4 @@ owner = ECA
 controller = ECA
 add_core = ECA
 discovered_by = mesoamerican
+trade_goods = cocoa

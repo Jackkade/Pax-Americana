@@ -7,3 +7,4 @@ owner = CPU
 controller = CPU
 add_core = CPU
 discovered_by = mesoamerican
+trade_goods = cocoa

@@ -7,3 +7,4 @@ owner = LAC
 controller = LAC
 add_core = LAC
 discovered_by = mesoamerican
+trade_goods = sugar

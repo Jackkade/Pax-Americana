@@ -7,3 +7,4 @@ owner = CCM
 controller = CCM
 add_core = CCM
 discovered_by = mesoamerican
+trade_goods = spices

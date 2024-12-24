@@ -7,3 +7,4 @@ owner = UAY
 controller = UAY
 add_core = UAY
 discovered_by = mesoamerican
+trade_goods = cocoa

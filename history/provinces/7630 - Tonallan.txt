@@ -7,3 +7,4 @@ owner = TON
 controller = TON
 add_core = TON
 discovered_by = mesoamerican
+trade_goods = cotton

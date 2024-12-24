@@ -7,3 +7,4 @@ owner = KIC
 controller = KIC
 add_core = KIC
 discovered_by = mesoamerican
+trade_goods = cocoa

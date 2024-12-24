@@ -7,3 +7,4 @@ owner = TAZ
 controller = TAZ
 add_core = TAZ
 discovered_by = mesoamerican
+trade_goods = cocoa

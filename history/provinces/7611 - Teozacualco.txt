@@ -7,3 +7,4 @@ owner = TEZ
 controller = TEZ
 add_core = TEZ
 discovered_by = mesoamerican
+trade_goods = grain

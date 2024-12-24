@@ -7,3 +7,4 @@ owner = TOT
 controller = TOT
 add_core = TOT
 discovered_by = mesoamerican
+trade_goods = fish

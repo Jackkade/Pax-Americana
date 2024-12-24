@@ -7,3 +7,4 @@ owner = CKN
 controller = CKN
 add_core = CKN
 discovered_by = mesoamerican
+trade_goods = cocoa

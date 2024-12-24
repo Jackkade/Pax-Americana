@@ -7,3 +7,4 @@ owner = CEH
 controller = CEH
 add_core = CEH
 discovered_by = mesoamerican
+trade_goods = cocoa

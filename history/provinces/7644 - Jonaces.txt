@@ -7,3 +7,4 @@ owner = OTO
 controller = OTO
 add_core = OTO
 discovered_by = mesoamerican
+trade_goods = cotton

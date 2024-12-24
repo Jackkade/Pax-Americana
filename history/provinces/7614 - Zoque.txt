@@ -1,4 +1,4 @@
-religion = nahuatl
+religion = mesoamerican_religion
 culture = mixe
 base_tax = 2
 base_production = 1
@@ -7,3 +7,4 @@ owner = ZOQ
 controller = ZOQ
 add_core = ZOQ
 discovered_by = mesoamerican
+trade_goods = spices

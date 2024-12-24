@@ -7,3 +7,4 @@ owner = YOK
 controller = YOK
 add_core = YOK
 discovered_by = mesoamerican
+trade_goods = spices

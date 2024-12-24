@@ -7,3 +7,4 @@ owner = ACN
 controller = ACN
 add_core = ACN
 discovered_by = mesoamerican
+trade_goods = cocoa

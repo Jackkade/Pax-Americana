@@ -7,3 +7,4 @@ owner = CTM
 controller = CTM
 add_core = CTM
 discovered_by = mesoamerican
+trade_goods = sugar

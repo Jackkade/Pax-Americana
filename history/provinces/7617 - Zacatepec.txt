@@ -7,3 +7,4 @@ owner = CYL
 controller = CYL
 add_core = CYL
 discovered_by = mesoamerican
+trade_goods = wool

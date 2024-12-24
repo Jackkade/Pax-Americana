@@ -1,10 +1,10 @@
 # No previous file for Xoconochco
-culture = zapotek
+culture = highland_mayan
 owner = XOC
 controller = XOC
 add_core = XOC
 is_city = yes
-religion = nahuatl
+religion = mesoamerican_religion
 capital = "Xoconochco"
 trade_goods = cocoa
 hre = no

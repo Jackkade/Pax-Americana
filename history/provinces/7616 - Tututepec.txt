@@ -7,3 +7,4 @@ owner = MIX
 controller = MIX
 add_core = MIX
 discovered_by = mesoamerican
+trade_goods = spices

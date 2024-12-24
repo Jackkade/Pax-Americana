@@ -7,3 +7,4 @@ owner = MPN
 controller = MPN
 add_core = MPN
 discovered_by = mesoamerican
+trade_goods = cocoa

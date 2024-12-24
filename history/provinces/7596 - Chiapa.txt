@@ -7,3 +7,4 @@ owner = ZAP
 controller = ZAP
 add_core = ZAP
 discovered_by = mesoamerican
+trade_goods = sugar

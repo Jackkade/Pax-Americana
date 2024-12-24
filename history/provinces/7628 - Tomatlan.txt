@@ -7,3 +7,4 @@ owner = CLM
 controller = CLM
 add_core = CLM
 discovered_by = mesoamerican
+trade_goods = fish
