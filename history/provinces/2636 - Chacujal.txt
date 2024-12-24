@@ -1,8 +1,8 @@
 # No previous file for Chacujal
 culture = highland_mayan
-owner = KAQ
-controller = KAQ
-add_core = KAQ
+owner = CHT
+controller = CHT
+add_core = CHT
 is_city = yes
 religion = mesoamerican_religion
 capital = "Chacujal"
