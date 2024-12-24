@@ -1,7 +1,7 @@
 # No previous file for Tzul
 owner = TZU
 controller = TZU
-culture = putun
+culture = highland_mayan
 religion = mesoamerican_religion
 capital = "Tute"
 trade_goods = cocoa
