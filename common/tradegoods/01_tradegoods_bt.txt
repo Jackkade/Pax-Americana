@@ -73,7 +73,7 @@ bt_trade_good_fruit = {
 		local_monthly_devastation = -0.1
 	}
 	chance = {
-		factor = 20
+		factor = 15 #Reduced, way too common
 		# BT16 Seven Cities rework addition
 		modifier = {
 			factor = 300
@@ -107,6 +107,7 @@ bt_trade_good_fruit = {
 		modifier = {
 			factor = 0.1
 			OR = {
+				has_winter = normal_winter
 				has_terrain = desert
 				has_terrain = coastal_desert
 				has_terrain = steppe
@@ -124,7 +125,7 @@ bt_trade_good_fruit = {
 		modifier = {
 			factor = 0.5
 			OR = {
-				has_winter = normal_winter
+				has_winter = mild_winter
 				has_terrain = farmlands # Counterintuitive, but in core farming areas we would typically prefer grain or rich goods like cloth.
 				has_terrain = savannah
 				has_terrain = woods
@@ -161,9 +162,14 @@ bt_trade_good_fruit = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.75	#Turned into malus, carribeans should be making sugar
 			is_random_new_world = no
 			region = carribeans_region
+		}
+		modifier = {
+			factor = 1.5
+			is_random_new_world = no
+			region = central_america_region
 		}
 		modifier = {
 			factor = 4
@@ -486,117 +492,6 @@ bt_trade_good_silver = {
 			OR = {
 				province_id = 5021		# NZ Islands
 				province_id = 5022		# NZ Islands
-			}
-		}
-	}
-}
-
-bt_trade_good_gunpowder = {
-	color = { 0.62 0.38 0.01 } 
-	modifier = {
-		fire_damage = 0.05
-	}
-	province = {
-		local_defensiveness = 0.25
-	}
-	chance = {
-		# Manual only, Not found in colonizable provinces
-		factor = 0
-	}
-}
-
-bt_trade_good_masonry = {
-	color = { 0.25 0.25 0.27 } 
-	modifier = {
-		great_project_upgrade_cost = -0.10
-	}
-	province = {
-		local_build_time = -0.25
-	}
-	chance = {
-		factor = 1
-		modifier = { # A few terrain modifiers
-			factor = 2.0
-			OR = {
-				has_terrain = mountain
-				has_terrain = hills
-				has_terrain = highlands
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { has_terrain = mountain }
-				NOT = { has_terrain = hills }
-				NOT = { has_terrain = highlands }
-			}
-		}
-	}
-}
-
-bt_trade_good_whaling = {
-	color = { 0.45 0.92 0.97 } 
-	modifier = {
-		envoy_travel_time = -0.1
-	}
-	province = {
-		local_dev_points_modifier = 0.1
-	}
-	chance = {
-		factor = 8
-		modifier = {
-			factor = 0
-			AND = {
-				NOT = { has_port = yes }
-				OR = {	
-					NOT = { region = canada_region }
-					NOT = { region = hudson_bay_region }
-					NOT = { region = cascadia_region }
-					NOT = { region = moluccas_region }
-					NOT = { region = indonesia_region }
-					NOT = { region = borneo_region }
-					NOT = { region = philippines_region }
-					NOT = { region = celebes_region }
-					NOT = { region = carribeans_region }
-					NOT = { region = northeast_america_region }
-					NOT = { region = southeast_america_region }
-					NOT = { region = east_siberia_region }
-					NOT = { region = oceanea_region }
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			area = newfoundland_area
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				region = hudson_bay_region
-				region = canada_region 
-				region = cascadia_region
-				region = east_siberia_region
-			}
-		}
-		
-		modifier = {
-			factor = 1.5
-			OR = {
-				region = moluccas_region
-				region = indonesia_region
-				region = borneo_region
-				region = philippines_region
-				region = celebes_region
-			}
-		}
-		
-		modifier = {
-			factor = 1.2
-			OR = {
-				region = oceanea_region
-				region = carribeans_region
-				region = northeast_america_region
-				region = southeast_america_region
 			}
 		}
 	}
