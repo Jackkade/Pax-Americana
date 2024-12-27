@@ -7,4 +7,4 @@ owner = CHT
 controller = CHT
 add_core = CHT
 discovered_by = mesoamerican
-trade_goods = gems
+trade_goods = grain

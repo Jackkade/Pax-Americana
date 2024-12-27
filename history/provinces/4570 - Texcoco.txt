@@ -5,7 +5,7 @@ add_core = AZT
 culture = aztek
 religion = nahuatl
 capital = "Texcoco"
-trade_goods = gold
+trade_goods = pa_trade_good_obsidian
 hre = no
 base_tax = 5
 base_production = 5
@@ -15,6 +15,7 @@ discovered_by = mesoamerican
 discovered_by = MAY
 discovered_by = ZAP
 discovered_by = mesoamerican
+add_province_triggered_modifier = MAY_obsidian_source
 1519.1.1 = { discovered_by = SPA } 
 1521.8.13 = { 
     owner = SPA
