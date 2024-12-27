@@ -108,6 +108,9 @@ on_conquest = {
                     }
                 }
             }
+            NOT = {
+                has_province_modifier = pa_new_colony_cooldown 
+            }
         }
         add_province_modifier = {
             name = pa_new_colony_cooldown
