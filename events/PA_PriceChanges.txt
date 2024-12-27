@@ -36,6 +36,16 @@ country_event = {
 			value = -3.0
 			duration = -1
 		}
+		2657 = {
+			change_trade_goods = iron
+		}
+		4572 = {
+			change_trade_goods = iron
+		}
+		4641 = {
+			change_trade_goods = iron
+		}
+
 		add_years_of_income  = 0.10
 		add_prestige = 5
 		set_global_flag = metalworking_in_america
