@@ -8,3 +8,6 @@
  mexican_castillian_spread.desc:0 "Immigrants from our homeland have been intermarrying with the local native population in [Root.GetName], and so have beget a new demographic of mixed european-natives. Should we choose, we could encourage this and so encourage integration into the colonial system."
  event_mestizo_spread_option.a:0 "Fascinating"
  event_mestizo_spread_option.b:0 "We should encourage the traditions of the natives instead"
+ PAprices.1.t:0 "Spread of metalworking in Americas"
+ PAprices.1.d:0 "After significant contact with old world nations, the mesoamerican nations have begun to adopt iron as the choice for weaponsmithing, as the old obsidian weapons fall out of style. This has caused a sharp decline in the desirability of obsidian as a resource. It is still finds use in ornamental uses, but it has lost all of it's strategic importance."
+ PAprices.1.a:0 "Very interesting..."
