@@ -10,7 +10,7 @@
 pa_trade_good_obsidian = {
 	color = { 0.15 0.15 0.35 }
 	modifier = {
-		infantry_shock = 0.05
+		infantry_cost = -0.15
 	}
 	province = {
 		land_forcelimit = 1
