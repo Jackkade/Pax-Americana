@@ -39,7 +39,7 @@ country_decisions = {
 			GRL = {
 				change_primary_culture = ROOT
 				change_religion = ROOT
-
+				change_country_color = { country = ROOT } 
 				add_accepted_culture = kalaallisut
 			}
 			set_country_flag = released_greenland_colony
