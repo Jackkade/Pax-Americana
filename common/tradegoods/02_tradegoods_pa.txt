@@ -1,0 +1,33 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new resources, make sure they are uniquely named.
+# Please add price definitions to prices.txt as well.
+
+#New goods in PA
+#pa_trade_good_obsidian
+
+#Beyond Typus trade goods
+### 37
+pa_trade_good_obsidian = {
+	color = { 0.15 0.15 0.35 }
+	modifier = {
+		infantry_shock = 0.05
+	}
+	province = {
+		land_forcelimit = 1
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			area = newfoundland_area
+		}
+		modifier = {
+			factor = 0
+			NOT = { development = 99 } # Lower average dev in BT, so lowering from 18 to 12
+		}
+		modifier = {
+			factor = 2
+			development = 100 # Lower average dev in BT, so lowering from 22 to 16
+		}
+	}
+}
