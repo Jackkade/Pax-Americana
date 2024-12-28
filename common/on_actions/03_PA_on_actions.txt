@@ -117,7 +117,7 @@ on_conquest = {
             duration = 9125		#Currently 25 Years, may need to be lower
         }
         add_province_triggered_modifier = pa_new_colony
-        add_core = FROM
+        add_core = ROOT
         add_nationalism = -20   #Nerf to sepratism, colony already represented
         #Kicking out all the natives makes the infrastructure collapse
         set_base_tax = 1 
@@ -179,12 +179,12 @@ on_conquest = {
     }
     if = {
         limit = {
-            FROM = {
+            ROOT = {
                 is_colonial_nation = yes
             }
             has_province_modifier = pa_new_colonial_nation_colony
         }
-        FROM = {
+        ROOT = {
             overlord = {
 				random_owned_province = {
 					limit = {
