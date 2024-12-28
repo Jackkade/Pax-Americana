@@ -1588,6 +1588,46 @@
 5020 = { "Islas Revilla Gigedo" "Santo Tomás" }
 5063 = { "Culiacán" "Villa de San Miguel" }
 
+7553 = { "Las Coloradas" "Las Coloradas" }
+7554 = { "Colonia Yucatan" "Colonia Yucatan" }
+7555 = { "Playa del Carmen" "Playa del Carmen" }
+7556 = { "Tulum" "Tulum" }
+7557 = { "Tizimin" "Tizimin" }
+7558 = { "Espita" "Espita" }
+7559 = { "Merida de Yucatán" "Merida de Yucatán" }
+7560 = { "Tecoh" "Tecoh" }
+
+#Mex
+7561 = { "Guasave" "Guasave" }
+7562 = { "Escuinapa de Hidalgo" "Escuinapa de Hidalgo" }
+
+#Cali
+7563 = { "Navojoa" "Navojoa" }
+
+7564 = { "Maxcanu" "Maxcanu" }
+7565 = { "Hecelchakan" "Hecelchakan" }
+7566 = { "Isla Cozumel" "Isla Cozumel" }
+7567 = { "José Maria Morelos" "José Maria Morelos" }
+7568 = { "Vicente Guerrero" "Vicente Guerrero" }
+7569 = { "Felipe Carrillo Puerto" "Felipe Carrillo Puerto" }
+7570 = { "Nicolàs Bravo" "Nicolàs Bravo" }
+7571 = { "Reforma" "Reforma" }
+7572 = { "Candelaria" "Candelaria" }
+7573 = { "Sabancuy" "Sabancuy" }
+7574 = { "El Desengano" "El Desengano" }
+7575 = { "Dangriga" "Dangriga" }
+7576 = { "San Ignacio" "San Ignacio" }
+7577 = { "Punta Gorda" "Punta Gorda" }
+7578 = { "Valles" "Valles" }
+7579 = { "Lanquin" "Lanquin" }
+7580 = { "San Benito" "San Benito" }
+7581 = { "Poptun" "Poptun" }
+7582 = { "Benemerito de las Americas" "Benemerito de las Americas" }
+7583 = { "Chiquimulilla" "Chiquimulilla" }
+7584 = { "Jutiapa" "Jutiapa" }
+7585 = { "Coatepeque" "Coatepeque" }
+7586 = { "San José de Guatemala" "San José de Guatemala" }
+
 #California
 862 = { "Hermosillo" "Santísima Trinidad" }
 865 = { "Mulegé" "Santa Rosalía" }
