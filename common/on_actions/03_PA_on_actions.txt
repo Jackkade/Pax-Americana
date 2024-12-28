@@ -179,12 +179,12 @@ on_conquest = {
     }
     if = {
         limit = {
-            ROOT = {
+            FROM = {
                 is_colonial_nation = yes
             }
             has_province_modifier = pa_new_colonial_nation_colony
         }
-        ROOT = {
+        FROM = {
             overlord = {
 				random_owned_province = {
 					limit = {
