@@ -891,7 +891,7 @@
 5048 = { "Antigonish" "Antigonish" }
 5049 = { "Bathurst" "Bathurst" }
 5050 = { "Edmunston" "Edmunston" }
-5051 = { "Digby" "Digby" }
+5051 = { "Yarmouth" "Yarmouth" }
 5052 = { "Houlton" "Houlton" }
 5053 = { "Wolf River" "Wolf River" }
 5054 = { "Gaspeg" "Gaspeg" }
