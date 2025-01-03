@@ -1284,19 +1284,24 @@ exploration_ideas = {
 			adm_tech = 5
 		}	#Bonus for historical countries at the first idea (Approximately year 1466)
 		modifier = {
-			factor = 20
+			factor = 35
 			OR = {
 				tag = ENG			#Historically 1607
 				tag = GBR			#Historically 1607 (as England, also Scotland)
 				tag = FRA			#Historically 1604
 				tag = NED			#Historically 1602
-				tag = HOL			#Historically 1602	(as Netherlands)
-				tag = SCO			#Historically 1622
 				tag = TNA			#BT tag who should colonise if it manages to form (precedent of Irish discovery and colonisation or the North Isles, Iceland, and according to some scholars likely Northern Canada, Greenland, and Jan Mayen)
 				tag = CEL			#BtP tag who should colonise if it manages to form (precedent of Irish discovery and colonisation or the North Isles, Iceland, and according to some scholars likely Northern Canada, Greenland, and Jan Mayen)
 			}
 			adm_tech = 14
-		}	#Bonus for historical countries at the fourth idea (Approximately year 1583)
+		}	#Bonus for historical countries at the fourth idea (Approximately year 1583)modifier = {
+			factor = 15
+			OR = {
+				tag = HOL			#Historically 1602	(as Netherlands)
+				tag = SCO			#Historically 1622
+			}
+			adm_tech = 14
+		}	#Smaller bonus for nations that shouldn't be colonizing as much
 		modifier = {
 			factor = 20
 			OR = {
@@ -1319,6 +1324,7 @@ exploration_ideas = {
 					}	#Must own either a core port in the Low Countries, or Carinthia
 				}
 			}
+			is_subject = no
 			adm_tech = 26
 		}	#Bonus for historical countries at the seventh idea (Approximately year 1745)
 		modifier = {
@@ -1417,7 +1423,7 @@ exploration_ideas = {
 		}	#For non colonial countries with 5 or more provinces with a direct land connection to the capital and uncolonised neighbours. In 1444, this is just Uzbek, but will likely include Russia and any American/African/Siberian tags who manage to conquer a good chunck of their neighbours
 		modifier = {
 			factor = 0.2
-			NOT = { total_development = 200 }
+			NOT = { total_development = 400 }
 		}	#Malus against smaller countries to discourage a few tags like Irish minors, Brittany, Grenada, Iceland, or other unexpected nations. Not enough to prevent it if other factors encourage it.
 		modifier = {
 			factor = 0.1
@@ -1434,8 +1440,7 @@ exploration_ideas = {
 					region = ireland_region # Brian; changed from _area
 				}
 			}
-			NOT = { adm_tech = 14 }
-		}	#Very unlikely if not western Europe before the fourth idea (this is when Russia should choose exploration, in the late 1500s or early 1600s). Also note eastern and northern Europe came later, and were never as big, but they did try their hand at colonialism, too, so the malus should be mostly removed after this
+		}	#Very unlikely if not western Europe
 		modifier = {
 			factor = 0.2
 			capital_scope = { NOT = { continent = europe } }
