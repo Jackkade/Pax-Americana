@@ -68,6 +68,25 @@ can_colonize_province = {
                     }
                 }
                 #####
+                
+                #####    Russia/East Slavic Banned Locations
+                AND = {
+                    FROM = { 
+                        OR = {
+                            tag = RUS
+                            tag = MOS
+                            tag = NOV
+                            tag = UKR
+                        }
+                    }
+                    OR = {
+                        region = alaska_region
+                        region = northwest_territories_region
+                        region = cascadia_region
+                    }
+                }
+                #####
+
 
                 #####    Non European Non adjacent
                 AND = {

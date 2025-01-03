@@ -1285,13 +1285,6 @@ exploration_ideas = {
 		}	#Bonus for historical countries at the first idea (Approximately year 1466)
 		modifier = {
 			factor = 20
-			tag = RUS			#Historically 1580 (Russian exploration and conquest of Siberia under Yermak Timofeyevich. Note Russian America began 1799.)
-			tag = NOV			#To Moscovy in 1478, but seriously engaged in the exploration and expansion into the Siberia east from the very beginning. Note it will also be taking expansion ideas as 1st idea, most of the time.
-			tag = MOS			#In case Russia does not form in a timely manner. Note a pan russian bonus is found in expansion, but not here in exploration.
-			adm_tech = 14
-		}	#Bonus for historical countries at the third idea (Approximately year 1531)
-		modifier = {
-			factor = 20
 			OR = {
 				tag = ENG			#Historically 1607
 				tag = GBR			#Historically 1607 (as England, also Scotland)
@@ -1320,15 +1313,9 @@ exploration_ideas = {
 				tag = NOR			#Historically 1754 (as Denmark)
 				AND = {
 					tag = HAB			#Historically 1775 (though very brief and largely unsuccessful, so adding further requirements)
-					OR = {
-						any_core_province = {
-							region = low_countries_region
-							has_port = yes
-						}
-						any_core_province = {
-							area = carinthia_area
-							has_port = yes
-						}
+					any_core_province = {
+						region = low_countries_region
+						has_port = yes
 					}	#Must own either a core port in the Low Countries, or Carinthia
 				}
 			}
