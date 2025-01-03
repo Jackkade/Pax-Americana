@@ -6,5 +6,6 @@ base_manpower = 1
 owner = OTO
 controller = OTO
 add_core = OTO
+is_city = yes
 discovered_by = mesoamerican
 trade_goods = cotton
