@@ -1,8 +1,8 @@
 # No previous file for Cutzamala
 culture = purepecha
-owner = MAT
-controller = MAT
-add_core = MAT
+owner = TAR
+controller = TAR
+add_core = TAR
 is_city = yes
 religion = nahuatl
 capital = "Cutzamala"

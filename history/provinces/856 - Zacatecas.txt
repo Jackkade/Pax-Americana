@@ -1,12 +1,9 @@
 # 856 - Zacatecas
 culture = chichimecan
 religion = animism
-is_city = yes
-owner = GAM
-controller = GAM
-add_core = GAM
+is_city = no
 capital = "Zacatecas"
-trade_goods = gold
+trade_goods = unknown
 hre = no
 base_tax = 1
 base_production = 1
