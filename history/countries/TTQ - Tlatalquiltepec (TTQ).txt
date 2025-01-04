@@ -1,0 +1,16 @@
+# No previous file for Tlatalquiltepec (TTQ)
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = totonac
+religion = nahuatl
+technology_group = mesoamerican
+capital = 7651
+
+
+1440.1.1 = {
+	monarch = {
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+} #No known Totonac rulers in-timeline

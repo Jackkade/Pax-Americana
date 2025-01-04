@@ -1,5 +1,5 @@
 # No previous file for Tizapan
-culture = purepecha
+culture = aztek
 owner = TON
 controller = TON
 add_core = TON

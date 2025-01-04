@@ -1,5 +1,5 @@
 # No previous file for Apatzingan
-culture = purepecha
+culture = aztek
 owner = CLM
 controller = CLM
 add_core = CLM
