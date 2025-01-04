@@ -895,6 +895,9 @@
  PROV_ADJ7673:0 "Cak Aya"
  PROV7674:0 "Chilapan"
  PROV_ADJ7674:0 "Chilapan"
+ PROV7675:0 "Lake Texcoco" 
+ PROV7676:0 "Lake Chapala"
+ PROV7677:0 "Lake Izabal"
 
  #Canada
  PROV6436:0 "Mossquawaunk"
