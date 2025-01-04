@@ -1,8 +1,8 @@
 # No previous file for Cuetlaxtlan
 culture = totonac
-owner = TOT
-controller = TOT
-add_core = TOT
+owner = CUE
+controller = CUE
+add_core = CUE
 is_city = yes
 religion = nahuatl
 capital = "Cuetlaxtlan"
@@ -27,6 +27,6 @@ center_of_trade = 2
     capital = "Veracruz"
     culture = castillian
     religion = catholic
-} # Founded by HernÃƒÆ’Ã‚Â¡n CortÃƒÆ’Ã‚Â©s
+} # Founded by HernÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡n CortÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s
 
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

@@ -1,7 +1,7 @@
 # No previous file for Metztitlan
-owner = HST
-controller = HST
-add_core = HST
+owner = MZT
+controller = MZT
+add_core = MZT
 is_city = yes
 culture = wastek
 religion = mesoamerican_religion

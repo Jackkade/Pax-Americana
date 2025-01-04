@@ -1,8 +1,8 @@
 # No previous file for Cuauhtochco
 culture = totonac
-owner = TOT
-controller = TOT
-add_core = TOT
+owner = QUH
+controller = QUH
+add_core = QUH
 is_city = yes
 religion = nahuatl
 capital = "Cuauhtochco"

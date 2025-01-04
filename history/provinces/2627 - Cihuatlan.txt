@@ -1,8 +1,8 @@
 # 2627 - Cihuatlan
 culture = tlapanec
-owner = TLA
-controller = TLA
-add_core = TLA
+owner = CIH
+controller = CIH
+add_core = CIH
 is_city = yes
 religion = nahuatl
 capital = "Cihuatlan"

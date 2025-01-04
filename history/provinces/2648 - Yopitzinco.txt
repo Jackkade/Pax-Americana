@@ -1,8 +1,8 @@
 # No previous file for Yopitzinco
 culture = tlapanec
-owner = TLA
-controller = TLA
-add_core = TLA
+owner = YOP
+controller = YOP
+add_core = YOP
 is_city = yes
 religion = nahuatl
 capital = "Yopi"

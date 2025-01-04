@@ -1,8 +1,8 @@
 # No previous file for Teloloapan
 culture = matlatzinca
-owner = AZT
-controller = AZT
-add_core = AZT
+owner = TPC
+controller = TPC
+add_core = TPC
 is_city = yes
 religion = nahuatl
 capital = "Teloloapan"
