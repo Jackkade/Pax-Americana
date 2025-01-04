@@ -1,0 +1,2 @@
+# No previous file for Lake Izabal
+discovered_by = mesoamerican
