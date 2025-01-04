@@ -1430,6 +1430,11 @@ exploration_ideas = {
 			NOT = { is_year = 1490 }
 		}	#Extremely unlikely before 1490, requiring massive bonuses (like Iberia has) to overcome the malus
 		modifier = {
+			factor = 0.1
+			NOT = { government_rank = 2 }
+		}	#Nations who have not secured their borders and grown to a respectable size should be disincentivized from going colonial
+		
+		modifier = {
 			factor = 0.2
 			capital_scope = {
 				NOT = {
