@@ -1,0 +1,6 @@
+#node = tradenode to appear in
+domestic_merchant_trigger = {
+	most_province_trade_power = {
+		has_country_modifier = merchant_for_$node$
+	}
+}

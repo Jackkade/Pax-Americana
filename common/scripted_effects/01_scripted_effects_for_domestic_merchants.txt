@@ -1,0 +1,13 @@
+#node = tradenode to search
+domestic_merchant_effect = {
+	every_country = {
+		remove_country_modifier = merchant_for_$node$
+	}
+	most_province_trade_power = {
+		add_country_modifier = {
+			name = merchant_for_$node$
+			duration = -1
+            hidden = no
+		}
+	}
+}

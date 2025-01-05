@@ -1,0 +1,6 @@
+
+trade_company_strong = {
+	#merchants = 1
+	prestige = 0.2
+	monthly_arabic_trade_influence_power = 0.01
+}
