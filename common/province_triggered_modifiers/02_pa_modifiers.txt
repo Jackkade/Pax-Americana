@@ -10,14 +10,8 @@ pa_new_colony = {
 			OR = {
 				#The idea here is that the colony will be finished once the owner has invested something in the province.
 
-				AND = {
-					#Now this will work
-					num_of_times_improved = 5
-					had_province_flag = {
-						flag = new_colony_established
-						days = 32
-					}
-				}
+				#Now this will work
+				num_of_times_improved = 3
 
 				
 				num_of_buildings_in_province = 3
@@ -36,6 +30,10 @@ pa_new_colony = {
 				#Maybe Shouldn't? 
 				has_building = furnace
 				has_building = mint
+			}
+			had_province_flag = {
+				flag = new_colony_established
+				days = 365
 			}
 		}
 		OR = {
