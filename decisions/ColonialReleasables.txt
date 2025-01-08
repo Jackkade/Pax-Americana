@@ -1,0 +1,52 @@
+country_decisions = {
+
+	greenland_colony_release = {
+		major = yes
+		potential = {
+			any_owned_province = {
+				area = greenland_area
+			}
+			OR = {
+				technology_group = eastern
+				technology_group = western
+			}
+			capital_scope = {
+				continent = europe
+			}
+			NOT = { exists = GRL }
+			NOT = { has_country_flag = released_greenland_colony}
+		}
+		allow = {
+			NOT = { exists = GRL }
+			greenland_area = {
+				type = all
+				NOT = {
+					has_province_modifier = pa_new_colony_cooldown
+				}
+				owned_by = ROOT
+			}
+		}
+		effect = {
+            greenland_area = {
+				add_core = GRL
+				remove_core = ROOT
+			}
+			release = GRL
+			create_subject = {
+				subject_type = crown_colony
+				subject = GRL
+			}
+			GRL = {
+				change_primary_culture = ROOT
+				change_religion = ROOT
+				change_country_color = { country = ROOT } 
+				add_accepted_culture = kalaallisut
+			}
+			set_country_flag = released_greenland_colony
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+}

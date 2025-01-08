@@ -1,0 +1,11 @@
+religion = nahuatl
+culture = aztek
+base_tax = 3
+base_production = 3
+base_manpower = 3
+owner = TMT
+controller = TMT
+add_core = TMT
+discovered_by = mesoamerican
+trade_goods = wool
+is_city = yes

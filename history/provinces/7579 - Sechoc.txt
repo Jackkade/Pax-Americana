@@ -1,0 +1,10 @@
+religion = mesoamerican_religion
+culture = highland_mayan
+base_tax = 2
+base_production = 3
+base_manpower = 3
+owner = TZU
+controller = TZU
+add_core = TZU
+discovered_by = mesoamerican
+trade_goods = cocoa

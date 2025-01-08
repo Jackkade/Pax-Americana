@@ -1,0 +1,25 @@
+#Haudenosaunee Confederacy
+vassal = {
+	first = ONO
+	second = CAY
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+vassal = {
+	first = ONO
+	second = SEN
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+vassal = {
+	first = ONO
+	second = ONE
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+vassal = {
+	first = ONO
+	second = MOH
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}

@@ -1,0 +1,10 @@
+religion = animism
+culture = guamares
+base_tax = 2
+base_production = 1
+base_manpower = 1
+owner = GAM
+controller = GAM
+add_core = GAM
+discovered_by = mesoamerican
+trade_goods = wool

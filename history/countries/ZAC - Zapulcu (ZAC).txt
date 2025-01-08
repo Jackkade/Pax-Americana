@@ -1,0 +1,18 @@
+# No previous file for Zapulcu (ZAC)
+
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = highland_mayan
+religion = mesoamerican_religion
+technology_group = mesoamerican
+capital = 7588
+
+1431.1.1 = {
+	monarch = {
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+

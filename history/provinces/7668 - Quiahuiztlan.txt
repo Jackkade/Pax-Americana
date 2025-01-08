@@ -1,0 +1,11 @@
+religion = nahuatl
+culture = totonac
+base_tax = 4
+base_production = 3
+base_manpower = 4
+owner = QUH
+controller = QUH
+add_core = QUH
+discovered_by = mesoamerican
+trade_goods = fish
+is_city = yes

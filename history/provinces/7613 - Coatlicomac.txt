@@ -1,0 +1,10 @@
+religion = mesoamerican_religion
+culture = mixe
+base_tax = 2
+base_production = 1
+base_manpower = 3
+owner = COA
+controller = COA
+add_core = COA
+discovered_by = mesoamerican
+trade_goods = sugar

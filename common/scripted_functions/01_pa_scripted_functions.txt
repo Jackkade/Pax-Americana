@@ -25,18 +25,55 @@ can_colonize_province = {
             FROM = { 
                 ai = yes
             }
+		}
+        potential = {
+            FROM = { 
+                ai = yes
+            }
             OR = {
-                #####    Portugal Americas & oceania
+                FROM = { #Must be economically able to colonize
+                    NOT = {
+                        current_income_balance = 6
+                        tax_income_percentage = 0.01
+                    }
+                }
+                #####    Portugal Banned with cas or SPA
                 AND = {
-                    FROM = { tag = POR }
+                    FROM = { 
+                        OR = {
+                            tag = POR
+                            tag = IBE
+                        }
+                    }
                     OR = {
-                        continent = oceania
+                        exists = CAS
+                        exists = SPA
+                    }
+                    OR = {
                         continent = north_america 
                         region = la_plata_region
                         region = upper_peru_region
                         region = peru_region
                         region = colombia_region
                         region = iberia_region
+                    }
+                }
+                #####
+
+                #####    Portugal Americas & oceania
+                AND = {
+                    FROM = { 
+                        OR = {
+                            tag = POR
+                            tag = IBE
+                        }
+                    }
+                    NOT = {
+                        is_year = 1600
+                    }
+                    OR = {
+                        continent = oceania
+                        superregion = north_america_superregion
                     }
                 }
                 #####
@@ -49,14 +86,75 @@ can_colonize_province = {
                             tag = SPA
                         }
                     }
+                    NOT = { 
+                        is_year = 1650
+                    }
                     OR = {
-                        continent = africa
+                        region = alaska_region
+                        region = cascadia_region
                         region = mississippi_region
                         region = canada_region
                         region = northeast_america_region
                     }
                 }
                 #####
+
+                #####    Castille Banned If no Portugal
+                AND = {
+                    FROM = { 
+                        OR = {
+                            tag = CAS
+                            tag = SPA
+                        }
+                    }
+                    OR = {
+                        exists = POR
+                        exists = IBE
+                    }
+                    OR = {
+                        continent = africa
+                        region = brazil_region
+                    }
+                }
+                #####
+                
+                #####    Russia/East Slavic Banned Locations
+                AND = {
+                    FROM = { 
+                        OR = {
+                            tag = RUS
+                            tag = MOS
+                            tag = NOV
+                            tag = UKR
+                        }
+                    }
+                    OR = {
+                        continent = asia
+                        continent = africa
+                        continent = oceania
+                        continent = south_america
+                        superregion = central_america_superregion
+                    }
+                }
+                #####
+                
+                #####    Danish-Norwegians banned from colonizing not greenland
+                AND = {
+                    FROM = { 
+                        OR = {
+                            tag = DAN
+                            tag = NOR
+                        }
+                    }
+                    NOT = {
+                        is_year = 1600
+                    }
+                    OR = {
+                        NOT = {
+                            area = greenland_area
+                        }
+                    }
+                }
 
                 #####    Non European Non adjacent
                 AND = {

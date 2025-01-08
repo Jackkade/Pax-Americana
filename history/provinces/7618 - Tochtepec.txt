@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = mixe
+base_tax = 3
+base_production = 2
+base_manpower = 3
+owner = TOC
+controller = TOC
+add_core = TOC
+discovered_by = mesoamerican
+trade_goods = gold

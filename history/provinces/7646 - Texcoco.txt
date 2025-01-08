@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = aztek
+base_tax = 5
+base_production = 4
+base_manpower = 4
+owner = AZT
+controller = AZT
+add_core = AZT
+discovered_by = mesoamerican
+trade_goods = gold

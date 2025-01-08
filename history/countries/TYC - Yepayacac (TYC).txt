@@ -1,0 +1,16 @@
+# No previous file for Tepayacac (TYC)
+government = republic
+add_government_reform = city_alliance_reform
+primary_culture = aztek
+religion = nahuatl
+technology_group = mesoamerican
+capital = 7653
+
+
+1440.1.1 = {
+	monarch = {
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

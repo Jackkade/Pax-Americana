@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = zapotek
+base_tax = 3
+base_production = 4
+base_manpower = 2
+owner = ZAP
+controller = ZAP
+add_core = ZAP
+discovered_by = mesoamerican
+trade_goods = dyes

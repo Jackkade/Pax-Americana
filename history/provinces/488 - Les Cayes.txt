@@ -1,5 +1,4 @@
-#488 - Les Cayes
-
+# 488 - Les Cayes
 culture = west_taino
 religion = animism
 capital = "Guava"
@@ -8,11 +7,9 @@ hre = no
 base_tax = 3
 base_production = 4
 base_manpower = 2
-native_size = 30			#Approx. 750k over 12 provinces
+native_size = 15 # Approx. 750k over 12 provinces
 native_ferocity = 1
 native_hostileness = 1
-
-1444.1.1 = { discovered_by = CAB }
-1444.1.1 = { discovered_by = ARW }
-
 center_of_trade = 1
+1444.1.1 = { discovered_by = CAB } 
+1444.1.1 = { discovered_by = ARW } 

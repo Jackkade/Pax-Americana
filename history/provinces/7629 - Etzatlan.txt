@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = aztek
+base_tax = 2
+base_production = 3
+base_manpower = 3
+owner = TON
+controller = TON
+add_core = TON
+discovered_by = mesoamerican
+trade_goods = dyes

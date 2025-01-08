@@ -1,0 +1,309 @@
+merchant_for_northwest_territories = {
+	merchants = 1
+}
+merchant_for_columbia = {
+	merchants = 1
+}
+merchant_for_alaska = {
+	merchants = 1
+}
+merchant_for_australia = {
+	merchants = 1
+}
+merchant_for_patagonia = {
+	merchants = 1
+}
+merchant_for_amazonas_node = {
+	merchants = 1
+}
+merchant_for_southern_australia = {
+	merchants = 1
+}
+merchant_for_california = {
+	merchants = 1
+}
+merchant_for_missouri_river_trade = {
+	merchants = 1
+}
+merchant_for_rio_grande = {
+	merchants = 1
+}
+merchant_for_ohio_river_trade = {
+	merchants = 1
+}
+merchant_for_mississippi_river = {
+	merchants = 1
+}
+merchant_for_james_bay = {
+	merchants = 1
+}
+merchant_for_ohio = {
+	merchants = 1
+}
+merchant_for_laplata = {
+	merchants = 1
+}
+merchant_for_cuiaba = {
+	merchants = 1
+}
+merchant_for_lima = {
+	merchants = 1
+}
+merchant_for_jalisco_trade = {
+	merchants = 1
+}
+merchant_for_mexico = {
+	merchants = 1
+}
+merchant_for_yucatan_trade = {
+	merchants = 1
+}
+merchant_for_african_great_lakes = {
+	merchants = 1
+}
+merchant_for_kongo = {
+	merchants = 1
+}
+merchant_for_namibia_trade = {
+	merchants = 1
+}
+merchant_for_zambezi = {
+	merchants = 1
+}
+merchant_for_katsina = {
+	merchants = 1
+}
+merchant_for_ethiopia = {
+	merchants = 1
+}
+merchant_for_dongola_trade = {
+	merchants = 1
+}
+merchant_for_timbuktu = {
+	merchants = 1
+}
+merchant_for_girin = {
+	merchants = 1
+}
+merchant_for_lhasa = {
+	merchants = 1
+}
+merchant_for_burma = {
+	merchants = 1
+}
+merchant_for_chengdu = {
+	merchants = 1
+}
+merchant_for_gulf_of_siam = {
+	merchants = 1
+}
+merchant_for_canton = {
+	merchants = 1
+}
+merchant_for_the_moluccas = {
+	merchants = 1
+}
+merchant_for_philippines = {
+	merchants = 1
+}
+merchant_for_polynesia_node = {
+	merchants = 1
+}
+merchant_for_nippon = {
+	merchants = 1
+}
+merchant_for_hangzhou = {
+	merchants = 1
+}
+merchant_for_xian = {
+	merchants = 1
+}
+merchant_for_beijing = {
+	merchants = 1
+}
+merchant_for_malacca = {
+	merchants = 1
+}
+merchant_for_siberia = {
+	merchants = 1
+}
+merchant_for_yumen = {
+	merchants = 1
+}
+merchant_for_ganges_delta = {
+	merchants = 1
+}
+merchant_for_doab = {
+	merchants = 1
+}
+merchant_for_lahore = {
+	merchants = 1
+}
+merchant_for_deccan = {
+	merchants = 1
+}
+merchant_for_comorin_cape = {
+	merchants = 1
+}
+merchant_for_gujarat = {
+	merchants = 1
+}
+merchant_for_gulf_of_aden = {
+	merchants = 1
+}
+merchant_for_hormuz = {
+	merchants = 1
+}
+merchant_for_samarkand = {
+	merchants = 1
+}
+merchant_for_persia = {
+	merchants = 1
+}
+merchant_for_basra = {
+	merchants = 1
+}
+merchant_for_pontus_trade = {
+	merchants = 1
+}
+merchant_for_aleppo = {
+	merchants = 1
+}
+merchant_for_astrakhan = {
+	merchants = 1
+}
+merchant_for_kazan = {
+	merchants = 1
+}
+merchant_for_zanzibar = {
+	merchants = 1
+}
+merchant_for_cape_of_good_hope = {
+	merchants = 1
+}
+merchant_for_ivory_coast = {
+	merchants = 1
+}
+merchant_for_panama = {
+	merchants = 1
+}
+merchant_for_brazil = {
+	merchants = 1
+}
+merchant_for_florida_straights_trade = {
+	merchants = 1
+}
+merchant_for_carribean_trade = {
+	merchants = 1
+}
+merchant_for_chesapeake_bay = {
+	merchants = 1
+}
+merchant_for_massachusets_bay_trade = {
+	merchants = 1
+}
+merchant_for_st_lawrence = {
+	merchants = 1
+}
+merchant_for_alexandria = {
+	merchants = 1
+}
+merchant_for_tunis = {
+	merchants = 1
+}
+merchant_for_safi = {
+	merchants = 1
+}
+merchant_for_white_sea = {
+	merchants = 1
+}
+merchant_for_murava = {
+	merchants = 1
+}
+merchant_for_moscow_trade = {
+	merchants = 1
+}
+merchant_for_crimea = {
+	merchants = 1
+}
+merchant_for_kiev = {
+	merchants = 1
+}
+merchant_for_novgorod = {
+	merchants = 1
+}
+merchant_for_constantinople = {
+	merchants = 1
+}
+merchant_for_aegean_trade = {
+	merchants = 1
+}
+merchant_for_pest = {
+	merchants = 1
+}
+merchant_for_krakow = {
+	merchants = 1
+}
+merchant_for_ragusa = {
+	merchants = 1
+}
+merchant_for_danzig_trade = {
+	merchants = 1
+}
+merchant_for_baltic_sea = {
+	merchants = 1
+}
+merchant_for_napoli = {
+	merchants = 1
+}
+merchant_for_porto_trade = {
+	merchants = 1
+}
+merchant_for_sevilla = {
+	merchants = 1
+}
+merchant_for_valencia = {
+	merchants = 1
+}
+merchant_for_venice = {
+	merchants = 1
+}
+merchant_for_genua = {
+	merchants = 1
+}
+merchant_for_wien = {
+	merchants = 1
+}
+merchant_for_irish_sea = {
+	merchants = 1
+}
+merchant_for_north_sea = {
+	merchants = 1
+}
+merchant_for_lubeck = {
+	merchants = 1
+}
+merchant_for_saxony = {
+	merchants = 1
+}
+merchant_for_lyon_trade = {
+	merchants = 1
+}
+merchant_for_bordeaux = {
+	merchants = 1
+}
+merchant_for_rheinland = {
+	merchants = 1
+}
+merchant_for_koeln_trade = {
+	merchants = 1
+}
+merchant_for_rouen_trade = {
+	merchants = 1
+}
+merchant_for_champagne = {
+	merchants = 1
+}
+merchant_for_english_channel = {
+	merchants = 1
+}

@@ -1,0 +1,15 @@
+# 846 - Yucatan
+owner = AKC
+controller = AKC
+add_core = AKC
+culture = yucatec
+religion = mesoamerican_religion
+capital = "Sotuta"
+trade_goods = fish
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+is_city = yes
+discovered_by = mesoamerican
+add_province_triggered_modifier = mayan_chichen_itza

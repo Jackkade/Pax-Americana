@@ -1340,12 +1340,15 @@ mexico_region = { # 15 areas
 		zacatecas_area
 		mexico_area
 		puebla_area
+		hidalgo_area
 		guerrero_area
+		tlapanec_area
 		oaxaca_area
 		mixteca_area
 		eastern_mexico_area
 		huasteca_area
 		nayarit_area
+		sonora_y_sinaloa_area
 	}
 	monsoon = {
 		00.06.01
@@ -1355,11 +1358,14 @@ mexico_region = { # 15 areas
 central_america_region = { # 10 areas
 	areas = {
 		chiapas_area
+		lacandon_area
 		yucatan_area
 		east_yucatan_area
+		yucatan_jungle_area
 		campeche_area
 		guatemala_area
 		guatemala_lowlands_area
+		el_salvador_area
 		honduras_area
 		nicaragua_area
 		costa_rica_area

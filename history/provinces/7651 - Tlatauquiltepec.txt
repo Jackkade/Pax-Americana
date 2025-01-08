@@ -1,0 +1,11 @@
+religion = nahuatl
+culture = totonac
+base_tax = 4
+base_production = 4
+base_manpower = 3
+owner = TTQ
+controller = TTQ
+add_core = TTQ
+discovered_by = mesoamerican
+trade_goods = sugar
+is_city = yes

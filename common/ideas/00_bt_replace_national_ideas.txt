@@ -27,7 +27,7 @@ new_USA_ideas = {
 		monthly_reform_progress_modifier = 0.1	#Reforming is easier when its in the constitution
 	}
 	new_usa_manifest_destiny = {
-		colonists = 2 							#There are too many provinces for only one colonist. Eventually this will be replaced by a frontier mechanic
+		colonists = 1							#There are too many provinces for only one colonist. Eventually this will be replaced by a frontier mechanic
 		governing_capacity_modifier = 0.25 		#Added because I am a true American patriot
 		effect = { remove_temporary_colonist = yes }
 	}
@@ -45,7 +45,7 @@ new_USA_ideas = {
 	}
 	new_usa_empire_of_liberty = {
 	#	min_autonomy_in_territories = -0.10 	#This is a weird modifier for US which didn't really form an empire in the timeframe.
-		allowed_marine_fraction = 0.5 			#Moved here because it doesn't really make sense as a tradition. Also, ther were founded in 1775, I'm not sure why Draiocht thinks they were founded in 1944 -Jackkade 
+		allowed_marine_fraction = 0.5 			#Moved here because it doesn't really make sense as a tradition. Also, they were founded in 1775, I'm not sure why Draiocht thinks they were founded in 1944 -Jackkade 
 		global_foreign_trade_power = 0.33  		#Big Bonus to represent free trade ideology
 	}
 }

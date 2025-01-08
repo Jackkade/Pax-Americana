@@ -6,22 +6,29 @@ on_colonist_boosting_colony_effect = {
 reset_to_pre_colonial_culture_religion = {
 	if = {
 		limit = {
-			check_variable = {
-				which = pre_colonial_culture_var
-				value = 0
-			}
+			native_size = 1
 		}
 		change_culture = variable:pre_colonial_culture_var
     	change_original_culture = variable:pre_colonial_culture_var
 	}
+	else_if = {
+		limit = {
+			culture = noculture
+		}
+		change_culture = owner
+    	change_original_culture = owner
+	}
 	if = {
 		limit = {
-			check_variable = {
-				which = pre_colonial_religion_var
-				value = 0
-			}
+			native_size = 1
 		}
 		change_religion = variable:pre_colonial_religion_var
+	}
+	else_if = {
+		limit = {
+			religion = noreligion
+		}
+		change_religion = owner
 	}
 }
 
@@ -33,7 +40,7 @@ pre_colonial_culture_preserver_effect = {
 				is_city = no
 				owner = { primitives = yes }
 			}
-			native_size = 1 #Must be inhabited
+			#native_size = 1 #Must be inhabited
 			NOT = { has_province_flag = ci_set_pre_colonial_culture_var }
 		}
 		export_to_variable = {

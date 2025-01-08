@@ -1,0 +1,21 @@
+# No previous file for Onondaga
+
+government = native
+add_government_reform = native_federation_reform
+government_rank = 1
+primary_culture = iroquois
+religion = totemism
+technology_group = north_american
+capital = 960
+set_estate_privilege = estate_nobles_strong_duchies
+set_estate_privilege = estate_nobles_very_strong_duchies
+
+1444.11.11 = {
+	monarch = {
+		name = "Native Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

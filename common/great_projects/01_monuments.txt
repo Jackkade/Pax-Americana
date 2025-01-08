@@ -3692,7 +3692,12 @@ tenochtitlan = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = central_american
+		OR = {
+			culture_group = otomanguean
+			culture_group = southern_uto_aztecan
+			culture_group = central_american
+			is_mestizo_culture = yes
+		}
 		province_is_or_accepts_culture = yes
 	}
 
@@ -3708,13 +3713,23 @@ tenochtitlan = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = central_american
+		OR = {
+			culture_group = otomanguean
+			culture_group = southern_uto_aztecan
+			culture_group = central_american
+			is_mestizo_culture = yes
+		}
 		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = central_american
+		OR = {
+			culture_group = otomanguean
+			culture_group = southern_uto_aztecan
+			culture_group = central_american
+			is_mestizo_culture = yes
+		}
 		province_is_or_accepts_culture = yes
 	}
 

@@ -123,31 +123,31 @@ afro_american_group = {
 		"de Barrau" "de La Fayette" "d'Armagnac" "de Roug�" "du Quenoy" "de Ficquelmont"
 		"de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie"
 		"de Vaudemont" "de Nicola�"
-	}
-	male_names = {
-		�douard �rrard �tienne Ad�mar Adrien Aimery Alain
-		Aldebert Ald�ric Alphonse Amaury Am�d�e Ancel Andr� Antoine Archambaud Arnaud
-		Arnault Arnoul Aubry Aymar Barth�l�mi Baudouin Beno�t B�renger Bernard Bertrand Bohemond
-		Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Fran�ois
-		Fr�d�ric Gaucher Gaucelin Gauthier Geoffroi G�raud Gilbert Gilles Godefroi
-		Guichard Guiges Guilhem Guillaume Guy H�lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
-		Jaufr� Jaspert Jean Jourdain Julien L�on L�onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
-		Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thi�baut
-		Thierry Thomas Valeran Yves
-	}
-	female_names = {
-		�l�onore �lodie �tiennette Ad�le Adalmode Adelaide Adelinde
-		Agn�s Al�arde Alice Ali�nor Agathe
-		Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
-		B�atrice B�atrix Belleassez Beno�te B�reng�re
-		Berthe Blanche Bonne Bourgogne Bourguigne C�cile Cath�rine
-		Charlotte Constance Denise Douce Echive Eglantine
-		Elisabeth Emma Ermengarde Ermessinde Esclarmonde
-		Euphrosine Eustachie Eve Gerberge Gis�le Guillaumette H�loise Helvis Hodierne Ide Ild�garde
-		Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
-		Mascarose Mathilde M�lisande M�lisende M�lusine P�ronelle Pernelle Perinne Pernette Plaisance
-		Raymonde Sarrazine Sol�ne Sophie St�phanie Sybille Tiburge Valence Yolande
-	}
+		}
+		male_names = {
+			�douard �rrard �tienne Ad�mar Adrien Aimery Alain
+			Aldebert Ald�ric Alphonse Amaury Am�d�e Ancel Andr� Antoine Archambaud Arnaud
+			Arnault Arnoul Aubry Aymar Barth�l�mi Baudouin Beno�t B�renger Bernard Bertrand Bohemond
+			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Fran�ois
+			Fr�d�ric Gaucher Gaucelin Gauthier Geoffroi G�raud Gilbert Gilles Godefroi
+			Guichard Guiges Guilhem Guillaume Guy H�lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
+			Jaufr� Jaspert Jean Jourdain Julien L�on L�onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
+			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thi�baut
+			Thierry Thomas Valeran Yves
+		}
+		female_names = {
+			�l�onore �lodie �tiennette Ad�le Adalmode Adelaide Adelinde
+			Agn�s Al�arde Alice Ali�nor Agathe
+			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
+			B�atrice B�atrix Belleassez Beno�te B�reng�re
+			Berthe Blanche Bonne Bourgogne Bourguigne C�cile Cath�rine
+			Charlotte Constance Denise Douce Echive Eglantine
+			Elisabeth Emma Ermengarde Ermessinde Esclarmonde
+			Euphrosine Eustachie Eve Gerberge Gis�le Guillaumette H�loise Helvis Hodierne Ide Ild�garde
+			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
+			Mascarose Mathilde M�lisande M�lisende M�lusine P�ronelle Pernelle Perinne Pernette Plaisance
+			Raymonde Sarrazine Sol�ne Sophie St�phanie Sybille Tiburge Valence Yolande
+		}
 	}
 
 	#Castillian Speaking
@@ -273,4 +273,1899 @@ afro_american_group = {
 		}
 	}
 
+	#Scandanavian
+	afro_karibisk = {
+		primary = XXX
+		male_names = {
+			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward 
+			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf Jørn Jakob Jacob Jens Joakim Johann
+			John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael 
+			Mogens Nicholas Odd Olav Olaf Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven Sämund Thorolf Thorvald Torben Torbjørn
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
+			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Frans Gnupa
+		}
+		female_names = {
+			Sophie Dorothe Margrete Sigrun
+			Agnethe Anna Asta Benedikte Benedicta Birgitta Brigid Bodil Cecilie Cecilia Christina Dagmar 
+			Dorothea Dorothy Elisabeth Ellinor Eleanor Emilie Emily Erika Ester Estrid Astrid Frederikke 
+			Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
+			Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
+			Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
+			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
+		}
+		dynasty_names = {
+			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
+			"Friis" "Gyllenstierna" #Gyldenstierne
+			"Bille" "Adeler" "Arenstorff" "Brockenhuus"
+			"Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
+			"Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
+			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt"
+			"Frille" "Rønnow"
+			# CKII
+			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
+			"Reventlow" "Juul" "Ulfeldt" "Bang"
+		}
+	}
+}
+
+#Colonial Cultures
+#Currently one for each continent for simplicity
+british = {
+	aztech_anglo = { #British Mexican Culture
+		primary = XXX
+		male_names = {
+			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
+			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
+			Cyrus Charles Cyril Christopher Casey Clarence Clark Calvin Chester
+			David Donald Daniel Duncan
+			Elihu Elias Eric Ebenezer Elbridge Eugene Eustace Ernest Edmund Ephraim Earl Ezra Emory
+			Francis Frederick Ferdinand
+			George Gregory Gideon Gerald Grover Gouveneur Gordon
+			Humphrey Howard Hector Harold Horatio Henry
+			Isaac Israel Ian Irving
+			Joseph Jeffrey Jubal John Jebediah James Jacob Julius Julian Justin Josiah Joshua
+			Leonard Louis Lawrence Leland Luke Lionel Lorenzo Lamont Lyman
+			Moses Michael Mark Martin Milton Merriweather
+			Nathaniel Noah Nehemiah Nicholas
+			Oliver Obadiah Orville Owen
+			Philip Peter Paul Patrick
+			Rutherford Robert Richard Ronald Reuchlin Rufus Rhett
+			Samuel Stephen Sampson Sylvester
+			Theodore Thomas Timothy
+			Upton Ulysses
+			Victor Vincent
+			William Walter Winfield Wilbur Wallace Walker
+			Zachary
+		}
+		female_names = {
+			Anne Amanda Ada April Amphyllis Abigail Alice Adell Amelia Antoinette Arabella Alma Agnes Agatha
+			Barbara Brigit Blanche Bertha Belle
+			Caroline Charlotte Christine Catharine Clementine Clara Constance Claudia Carrie Cora
+			Dolley Dorothy Deborah Daisy Doris
+			Edith Evangeline Elizabeth Esther Emily Emma Ernestine Ethel
+			Flora Frances Florence
+			Gladys Gloria Grace Gertrude
+			Heather Hannah Hermina Harriet Helen Hortense Hope
+			Ida Isabella
+			Joan Jane Julia Josephine
+			Laura Lucy Lydia Lillie Lena
+			Michelle Mary Marta Muriel Mildred Margaret Mercy Mathilda Marion Madeline Marilla Mabel
+			Nancy Noami Nell
+			Olympia
+			Prudence Patricia Pauline Patience Pamela Phoebe Paula
+			Rachel Rebecca Rhoda Rosalie Ruth Rosa
+			Scarlett Sarah Sally Sylvia Susanna Sybil Susa Sophia
+			Tabitha Theodora
+			Victoria Virginia Verina Valeria
+			Winifred
+			Zerelda
+		}
+		dynasty_names = {
+			Austin Anderson Adams Armstrong Astor Albright Averill Ayers Arnold Armistead
+			Boone Bannister Brown Buchanan Bacon Bryant Barclay Butler Brooks Bowie Bagge Berlin Baird Baker
+			Banks Banning Bailey Booth Barnum Barlett Bates Boyle Buell Burnside Burr
+			Coolidge Chamberlain Crockett Cooper Carpenter Coles Coffey Clemens Cleveland Cass Curley Choate
+			Custis Curtiss Clinch Cranston Call Canby Crawford Corbin
+			Davis Daniels Dolan Durant Dewitt Dent Drake Dilworth
+			Early Evans Eppes
+			Findlay Franklin Ford Farragut Featherstone Fitzgerald Firefly Fox Fillmore
+			Garrett Gurney Grant Gibson Garfield Gage Gallatin Gorslin
+			Harding Hayes Hamilton Hughes Hart Harrison Hannegan Hill Hicks Holly Hammer Harney Halleck
+			Hancock Hawkins Harris
+			Jackson Jefferson Jones Jennings Johnson Jessup Jay Joslyn
+			Kirkpatrick Key Kent Kearney
+			Lee Lincoln Langley Lovelace London Larned Lewis
+			Monroe Madison McKinley Meade Morganson McNeely Miller McClellan Mulhouse May Malone McCarthy
+			McGivney MacGregor Morris Mason McCauley
+			Owens "O'Hara" Oswald "O'Neill"
+			Peck Peterson Peel Poole Pierce Pickett Palmer Payne Penn Parton Parker
+			Rogers Richardson Roberts Reed Rice Ratliffe Randolph Revere Ross
+			Scott Stevens Smith Sanders "St. Paul" "St. Germaine" Simmons "St. Vincent" Stuart Sewall Sousa
+			Sullivan Sherman Sheridan Stuyvesant Short Shaftoe
+			Taft Thompson Tweed Taylor Todd Temple Trump Twiggs Totten Tuttle Twigden
+			Vane
+			Washington Wayne Wilson Wood Williams Whitney Waldron Wolfe Wright Wyatt Worsam Wilkes Wythe
+			Waterhouse
+			Young Yelverton
+		}
+	}
+	columbian = { #With a 'U'
+		primary = USA
+		male_names = {
+			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
+			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
+			Cyrus Charles Cyril Christopher Casey Clarence Clark Calvin Chester
+			David Donald Daniel Duncan
+			Elihu Elias Eric Ebenezer Elbridge Eugene Eustace Ernest Edmund Ephraim Earl Ezra Emory
+			Francis Frederick Ferdinand
+			George Gregory Gideon Gerald Grover Gouveneur Gordon
+			Humphrey Howard Hector Harold Horatio Henry
+			Isaac Israel Ian Irving
+			Joseph Jeffrey Jubal John Jebediah James Jacob Julius Julian Justin Josiah Joshua
+			Leonard Louis Lawrence Leland Luke Lionel Lorenzo Lamont Lyman
+			Moses Michael Mark Martin Milton Merriweather
+			Nathaniel Noah Nehemiah Nicholas
+			Oliver Obadiah Orville Owen
+			Philip Peter Paul Patrick
+			Rutherford Robert Richard Ronald Reuchlin Rufus Rhett
+			Samuel Stephen Sampson Sylvester
+			Theodore Thomas Timothy
+			Upton Ulysses
+			Victor Vincent
+			William Walter Winfield Wilbur Wallace Walker
+			Zachary
+		}
+		female_names = {
+			Anne Amanda Ada April Amphyllis Abigail Alice Adell Amelia Antoinette Arabella Alma Agnes Agatha
+			Barbara Brigit Blanche Bertha Belle
+			Caroline Charlotte Christine Catharine Clementine Clara Constance Claudia Carrie Cora
+			Dolley Dorothy Deborah Daisy Doris
+			Edith Evangeline Elizabeth Esther Emily Emma Ernestine Ethel
+			Flora Frances Florence
+			Gladys Gloria Grace Gertrude
+			Heather Hannah Hermina Harriet Helen Hortense Hope
+			Ida Isabella
+			Joan Jane Julia Josephine
+			Laura Lucy Lydia Lillie Lena
+			Michelle Mary Marta Muriel Mildred Margaret Mercy Mathilda Marion Madeline Marilla Mabel
+			Nancy Noami Nell
+			Olympia
+			Prudence Patricia Pauline Patience Pamela Phoebe Paula
+			Rachel Rebecca Rhoda Rosalie Ruth Rosa
+			Scarlett Sarah Sally Sylvia Susanna Sybil Susa Sophia
+			Tabitha Theodora
+			Victoria Virginia Verina Valeria
+			Winifred
+			Zerelda
+		}
+		dynasty_names = {
+			Austin Anderson Adams Armstrong Astor Albright Averill Ayers Arnold Armistead
+			Boone Bannister Brown Buchanan Bacon Bryant Barclay Butler Brooks Bowie Bagge Berlin Baird Baker
+			Banks Banning Bailey Booth Barnum Barlett Bates Boyle Buell Burnside Burr
+			Coolidge Chamberlain Crockett Cooper Carpenter Coles Coffey Clemens Cleveland Cass Curley Choate
+			Custis Curtiss Clinch Cranston Call Canby Crawford Corbin
+			Davis Daniels Dolan Durant Dewitt Dent Drake Dilworth
+			Early Evans Eppes
+			Findlay Franklin Ford Farragut Featherstone Fitzgerald Firefly Fox Fillmore
+			Garrett Gurney Grant Gibson Garfield Gage Gallatin Gorslin
+			Harding Hayes Hamilton Hughes Hart Harrison Hannegan Hill Hicks Holly Hammer Harney Halleck
+			Hancock Hawkins Harris
+			Jackson Jefferson Jones Jennings Johnson Jessup Jay Joslyn
+			Kirkpatrick Key Kent Kearney
+			Lee Lincoln Langley Lovelace London Larned Lewis
+			Monroe Madison McKinley Meade Morganson McNeely Miller McClellan Mulhouse May Malone McCarthy
+			McGivney MacGregor Morris Mason McCauley
+			Owens "O'Hara" Oswald "O'Neill"
+			Peck Peterson Peel Poole Pierce Pickett Palmer Payne Penn Parton Parker
+			Rogers Richardson Roberts Reed Rice Ratliffe Randolph Revere Ross
+			Scott Stevens Smith Sanders "St. Paul" "St. Germaine" Simmons "St. Vincent" Stuart Sewall Sousa
+			Sullivan Sherman Sheridan Stuyvesant Short Shaftoe
+			Taft Thompson Tweed Taylor Todd Temple Trump Twiggs Totten Tuttle Twigden
+			Vane
+			Washington Wayne Wilson Wood Williams Whitney Waldron Wolfe Wright Wyatt Worsam Wilkes Wythe
+			Waterhouse
+			Young Yelverton
+		}
+	}
+	anglo_caribbean  = {	#Caribbean
+		primary = USA
+		male_names = {
+			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
+			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
+			Cyrus Charles Cyril Christopher Casey Clarence Clark Calvin Chester
+			David Donald Daniel Duncan
+			Elihu Elias Eric Ebenezer Elbridge Eugene Eustace Ernest Edmund Ephraim Earl Ezra Emory
+			Francis Frederick Ferdinand
+			George Gregory Gideon Gerald Grover Gouveneur Gordon
+			Humphrey Howard Hector Harold Horatio Henry
+			Isaac Israel Ian Irving
+			Joseph Jeffrey Jubal John Jebediah James Jacob Julius Julian Justin Josiah Joshua
+			Leonard Louis Lawrence Leland Luke Lionel Lorenzo Lamont Lyman
+			Moses Michael Mark Martin Milton Merriweather
+			Nathaniel Noah Nehemiah Nicholas
+			Oliver Obadiah Orville Owen
+			Philip Peter Paul Patrick
+			Rutherford Robert Richard Ronald Reuchlin Rufus Rhett
+			Samuel Stephen Sampson Sylvester
+			Theodore Thomas Timothy
+			Upton Ulysses
+			Victor Vincent
+			William Walter Winfield Wilbur Wallace Walker
+			Zachary
+		}
+		female_names = {
+			Anne Amanda Ada April Amphyllis Abigail Alice Adell Amelia Antoinette Arabella Alma Agnes Agatha
+			Barbara Brigit Blanche Bertha Belle
+			Caroline Charlotte Christine Catharine Clementine Clara Constance Claudia Carrie Cora
+			Dolley Dorothy Deborah Daisy Doris
+			Edith Evangeline Elizabeth Esther Emily Emma Ernestine Ethel
+			Flora Frances Florence
+			Gladys Gloria Grace Gertrude
+			Heather Hannah Hermina Harriet Helen Hortense Hope
+			Ida Isabella
+			Joan Jane Julia Josephine
+			Laura Lucy Lydia Lillie Lena
+			Michelle Mary Marta Muriel Mildred Margaret Mercy Mathilda Marion Madeline Marilla Mabel
+			Nancy Noami Nell
+			Olympia
+			Prudence Patricia Pauline Patience Pamela Phoebe Paula
+			Rachel Rebecca Rhoda Rosalie Ruth Rosa
+			Scarlett Sarah Sally Sylvia Susanna Sybil Susa Sophia
+			Tabitha Theodora
+			Victoria Virginia Verina Valeria
+			Winifred
+			Zerelda
+		}
+		dynasty_names = {
+			Austin Anderson Adams Armstrong Astor Albright Averill Ayers Arnold Armistead
+			Boone Bannister Brown Buchanan Bacon Bryant Barclay Butler Brooks Bowie Bagge Berlin Baird Baker
+			Banks Banning Bailey Booth Barnum Barlett Bates Boyle Buell Burnside Burr
+			Coolidge Chamberlain Crockett Cooper Carpenter Coles Coffey Clemens Cleveland Cass Curley Choate
+			Custis Curtiss Clinch Cranston Call Canby Crawford Corbin
+			Davis Daniels Dolan Durant Dewitt Dent Drake Dilworth
+			Early Evans Eppes
+			Findlay Franklin Ford Farragut Featherstone Fitzgerald Firefly Fox Fillmore
+			Garrett Gurney Grant Gibson Garfield Gage Gallatin Gorslin
+			Harding Hayes Hamilton Hughes Hart Harrison Hannegan Hill Hicks Holly Hammer Harney Halleck
+			Hancock Hawkins Harris
+			Jackson Jefferson Jones Jennings Johnson Jessup Jay Joslyn
+			Kirkpatrick Key Kent Kearney
+			Lee Lincoln Langley Lovelace London Larned Lewis
+			Monroe Madison McKinley Meade Morganson McNeely Miller McClellan Mulhouse May Malone McCarthy
+			McGivney MacGregor Morris Mason McCauley
+			Owens "O'Hara" Oswald "O'Neill"
+			Peck Peterson Peel Poole Pierce Pickett Palmer Payne Penn Parton Parker
+			Rogers Richardson Roberts Reed Rice Ratliffe Randolph Revere Ross
+			Scott Stevens Smith Sanders "St. Paul" "St. Germaine" Simmons "St. Vincent" Stuart Sewall Sousa
+			Sullivan Sherman Sheridan Stuyvesant Short Shaftoe
+			Taft Thompson Tweed Taylor Todd Temple Trump Twiggs Totten Tuttle Twigden
+			Vane
+			Washington Wayne Wilson Wood Williams Whitney Waldron Wolfe Wright Wyatt Worsam Wilkes Wythe
+			Waterhouse
+			Young Yelverton
+		}
+	}
+	belizean  = {	#Central American
+		primary = XXX
+		male_names = {
+			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
+			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
+			Cyrus Charles Cyril Christopher Casey Clarence Clark Calvin Chester
+			David Donald Daniel Duncan
+			Elihu Elias Eric Ebenezer Elbridge Eugene Eustace Ernest Edmund Ephraim Earl Ezra Emory
+			Francis Frederick Ferdinand
+			George Gregory Gideon Gerald Grover Gouveneur Gordon
+			Humphrey Howard Hector Harold Horatio Henry
+			Isaac Israel Ian Irving
+			Joseph Jeffrey Jubal John Jebediah James Jacob Julius Julian Justin Josiah Joshua
+			Leonard Louis Lawrence Leland Luke Lionel Lorenzo Lamont Lyman
+			Moses Michael Mark Martin Milton Merriweather
+			Nathaniel Noah Nehemiah Nicholas
+			Oliver Obadiah Orville Owen
+			Philip Peter Paul Patrick
+			Rutherford Robert Richard Ronald Reuchlin Rufus Rhett
+			Samuel Stephen Sampson Sylvester
+			Theodore Thomas Timothy
+			Upton Ulysses
+			Victor Vincent
+			William Walter Winfield Wilbur Wallace Walker
+			Zachary
+		}
+		female_names = {
+			Anne Amanda Ada April Amphyllis Abigail Alice Adell Amelia Antoinette Arabella Alma Agnes Agatha
+			Barbara Brigit Blanche Bertha Belle
+			Caroline Charlotte Christine Catharine Clementine Clara Constance Claudia Carrie Cora
+			Dolley Dorothy Deborah Daisy Doris
+			Edith Evangeline Elizabeth Esther Emily Emma Ernestine Ethel
+			Flora Frances Florence
+			Gladys Gloria Grace Gertrude
+			Heather Hannah Hermina Harriet Helen Hortense Hope
+			Ida Isabella
+			Joan Jane Julia Josephine
+			Laura Lucy Lydia Lillie Lena
+			Michelle Mary Marta Muriel Mildred Margaret Mercy Mathilda Marion Madeline Marilla Mabel
+			Nancy Noami Nell
+			Olympia
+			Prudence Patricia Pauline Patience Pamela Phoebe Paula
+			Rachel Rebecca Rhoda Rosalie Ruth Rosa
+			Scarlett Sarah Sally Sylvia Susanna Sybil Susa Sophia
+			Tabitha Theodora
+			Victoria Virginia Verina Valeria
+			Winifred
+			Zerelda
+		}
+		dynasty_names = {
+			Austin Anderson Adams Armstrong Astor Albright Averill Ayers Arnold Armistead
+			Boone Bannister Brown Buchanan Bacon Bryant Barclay Butler Brooks Bowie Bagge Berlin Baird Baker
+			Banks Banning Bailey Booth Barnum Barlett Bates Boyle Buell Burnside Burr
+			Coolidge Chamberlain Crockett Cooper Carpenter Coles Coffey Clemens Cleveland Cass Curley Choate
+			Custis Curtiss Clinch Cranston Call Canby Crawford Corbin
+			Davis Daniels Dolan Durant Dewitt Dent Drake Dilworth
+			Early Evans Eppes
+			Findlay Franklin Ford Farragut Featherstone Fitzgerald Firefly Fox Fillmore
+			Garrett Gurney Grant Gibson Garfield Gage Gallatin Gorslin
+			Harding Hayes Hamilton Hughes Hart Harrison Hannegan Hill Hicks Holly Hammer Harney Halleck
+			Hancock Hawkins Harris
+			Jackson Jefferson Jones Jennings Johnson Jessup Jay Joslyn
+			Kirkpatrick Key Kent Kearney
+			Lee Lincoln Langley Lovelace London Larned Lewis
+			Monroe Madison McKinley Meade Morganson McNeely Miller McClellan Mulhouse May Malone McCarthy
+			McGivney MacGregor Morris Mason McCauley
+			Owens "O'Hara" Oswald "O'Neill"
+			Peck Peterson Peel Poole Pierce Pickett Palmer Payne Penn Parton Parker
+			Rogers Richardson Roberts Reed Rice Ratliffe Randolph Revere Ross
+			Scott Stevens Smith Sanders "St. Paul" "St. Germaine" Simmons "St. Vincent" Stuart Sewall Sousa
+			Sullivan Sherman Sheridan Stuyvesant Short Shaftoe
+			Taft Thompson Tweed Taylor Todd Temple Trump Twiggs Totten Tuttle Twigden
+			Vane
+			Washington Wayne Wilson Wood Williams Whitney Waldron Wolfe Wright Wyatt Worsam Wilkes Wythe
+			Waterhouse
+			Young Yelverton
+		}
+	}
+}
+
+french	= {
+	mehique = {		#French Mestizo
+		primary = XXX
+	}
+	antartique = {	#South American
+		primary = XXX
+	}
+	antillean = {	#Caribbean
+		primary = XXX
+		dynasty_names = { #French Names
+		"de Valois" "de Bourbon" "de la Tour" "d'Anjou"
+		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
+		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
+		"de Castellane" "d'Auvergne" "de Montb�liard" "de Metz"
+		#CKII Frankish
+		"de Laval" "de la Tour du Pin" "de La Tr�moille" "de Cr�quy" "de Broglie"
+		"de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier"
+		"de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy"
+		"de Barrau" "de La Fayette" "d'Armagnac" "de Roug�" "du Quenoy" "de Ficquelmont"
+		"de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie"
+		"de Vaudemont" "de Nicola�"
+		}
+		male_names = {
+			�douard �rrard �tienne Ad�mar Adrien Aimery Alain
+			Aldebert Ald�ric Alphonse Amaury Am�d�e Ancel Andr� Antoine Archambaud Arnaud
+			Arnault Arnoul Aubry Aymar Barth�l�mi Baudouin Beno�t B�renger Bernard Bertrand Bohemond
+			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Fran�ois
+			Fr�d�ric Gaucher Gaucelin Gauthier Geoffroi G�raud Gilbert Gilles Godefroi
+			Guichard Guiges Guilhem Guillaume Guy H�lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
+			Jaufr� Jaspert Jean Jourdain Julien L�on L�onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
+			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thi�baut
+			Thierry Thomas Valeran Yves
+		}
+		female_names = {
+			�l�onore �lodie �tiennette Ad�le Adalmode Adelaide Adelinde
+			Agn�s Al�arde Alice Ali�nor Agathe
+			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
+			B�atrice B�atrix Belleassez Beno�te B�reng�re
+			Berthe Blanche Bonne Bourgogne Bourguigne C�cile Cath�rine
+			Charlotte Constance Denise Douce Echive Eglantine
+			Elisabeth Emma Ermengarde Ermessinde Esclarmonde
+			Euphrosine Eustachie Eve Gerberge Gis�le Guillaumette H�loise Helvis Hodierne Ide Ild�garde
+			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
+			Mascarose Mathilde M�lisande M�lisende M�lusine P�ronelle Pernelle Perinne Pernette Plaisance
+			Raymonde Sarrazine Sol�ne Sophie St�phanie Sybille Tiburge Valence Yolande
+		}
+	}
+}
+
+iberian = { #Castillian
+	norteno = { #Eastern NA non-mexican
+		primary = XXX
+		dynasty_names = {#Castillian Names
+			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
+			#CK2
+			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
+			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
+			Z��iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+		}
+		male_names = {
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso �lvaro Baltasar
+			Bernardo Bertr�n Hernando
+			Cristobal Diego Domingo Esteban Fadrique Francisco Garc�a G�mez Gonzalo Gutierre Hermenegildo
+			Ignacio La�n Lope Miguel Nu�o Od�n Ram�n Rodrigo Tom�s Valeriano
+			Alfonso Alphonse Alonso Alphonse �lvar Oliver �lvaro Oliver Bermudo Vermudo Diego Diaco
+			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila Garc�a Garcia Gil
+			Egidius G�mez Gomez Gonzalo Gonzalo Guill�n William Guillermo William Gutierre Walter Juan
+			Lope Lupo Luis Louis Manrique Amalric Mart�n Martin Munio Munio Nu�o Nuno Ordo�o Ordono
+			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho
+			Suero Tello Vela Vela Suero Oveco John Enrique
+		}
+		female_names = {
+			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza
+			Constance Elvira Elvira Estefan�a Stephania Fronilda Fronilde Gontroda Gotruda In�s Agnes
+			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda Mar�a Maria Marina Marine
+			Mayor Mayor Menc�a Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
+			Isabel
+		}
+
+	}
+	centrado = { #Central American
+		primary = XXX
+		dynasty_names = {#Castillian Names
+			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
+			#CK2
+			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
+			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
+			Z��iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+		}
+		male_names = {
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso �lvaro Baltasar
+			Bernardo Bertr�n Hernando
+			Cristobal Diego Domingo Esteban Fadrique Francisco Garc�a G�mez Gonzalo Gutierre Hermenegildo
+			Ignacio La�n Lope Miguel Nu�o Od�n Ram�n Rodrigo Tom�s Valeriano
+			Alfonso Alphonse Alonso Alphonse �lvar Oliver �lvaro Oliver Bermudo Vermudo Diego Diaco
+			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila Garc�a Garcia Gil
+			Egidius G�mez Gomez Gonzalo Gonzalo Guill�n William Guillermo William Gutierre Walter Juan
+			Lope Lupo Luis Louis Manrique Amalric Mart�n Martin Munio Munio Nu�o Nuno Ordo�o Ordono
+			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho
+			Suero Tello Vela Vela Suero Oveco John Enrique
+		}
+		female_names = {
+			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza
+			Constance Elvira Elvira Estefan�a Stephania Fronilda Fronilde Gontroda Gotruda In�s Agnes
+			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda Mar�a Maria Marina Marine
+			Mayor Mayor Menc�a Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
+			Isabel
+		}
+	}
+	caribeno = {
+		primary = XXX
+		dynasty_names = {#Castillian Names
+			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
+			#CK2
+			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
+			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
+			Z��iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+		}
+		male_names = {
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso �lvaro Baltasar
+			Bernardo Bertr�n Hernando
+			Cristobal Diego Domingo Esteban Fadrique Francisco Garc�a G�mez Gonzalo Gutierre Hermenegildo
+			Ignacio La�n Lope Miguel Nu�o Od�n Ram�n Rodrigo Tom�s Valeriano
+			Alfonso Alphonse Alonso Alphonse �lvar Oliver �lvaro Oliver Bermudo Vermudo Diego Diaco
+			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila Garc�a Garcia Gil
+			Egidius G�mez Gomez Gonzalo Gonzalo Guill�n William Guillermo William Gutierre Walter Juan
+			Lope Lupo Luis Louis Manrique Amalric Mart�n Martin Munio Munio Nu�o Nuno Ordo�o Ordono
+			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho
+			Suero Tello Vela Vela Suero Oveco John Enrique
+		}
+		female_names = {
+			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza
+			Constance Elvira Elvira Estefan�a Stephania Fronilda Fronilde Gontroda Gotruda In�s Agnes
+			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda Mar�a Maria Marina Marine
+			Mayor Mayor Menc�a Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
+			Isabel
+		}
+	}
+	#Portuguese
+	alemarese = {	#Portuguese NA
+		country = { } 
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = POR
+		dynasty_names = {
+			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
+			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
+			#CK2
+			"da C�mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+		}
+		male_names = {
+			Afonso Aires Aleixo Alexandre Alberto �lvaro Andr� Ant�nio Bartolomeu Barnab� Benjamim Bermudo 
+			Bernardo Caetano Carlos Crist�v�o Daniel Dami�o Dinis Diogo Duarte Eduardo Egas Est�v�o Fern�o 
+			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gon�alo Guilherme Gustavo 
+			Guterre Henrique Herm�gio In�cio Jaime Jo�o Joaquim Jorge Jos� "Jos� Maria" Lopo Louren�o Lucas 
+			Lu�s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
+			Ot�vio Pascoal Paulo Paio Pedro Pero P�ncio Rafael Rodrigo Rog�rio Rui Raimundo Sancho Sebasti�o 
+			Sim�o Soeiro Tiago Teodoro Teod�sio Teot�nio Tobias Tom�s Uriel Vasco Vicente V�tor Xavier 
+		}
+		female_names = {
+			Aldara Aldon�a Ana "Ana Maria" Beatriz Bereng�ria Branca Cristina Cristiana Constan�a D�rdia 
+			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar In�s J�lia Joana 
+			Leonor Let�cia Madalena Mafalda Matilda Margarida Maria "Maria da Concei��o" "Maria das Dores" 
+			"Maria da Assun��o" "Maria da Natividade" "Maria de F�tima" "Maria de Lurdes" "Maria do C�u" 
+			"Maria da Luz" "Maria da Gra�a" "Maria Jos�" "Maria Madalena" "Maria Teresa" "Maria Ant�nia" 
+			"Maria Carolina" "Maria Jo�o" "Maria Manuel" "Maria Lu�s" Mariana Marisa Marinha Mor Ouroana 
+			Sancha Teodora Teresa Urraca Vit�ria
+		}
+	}
+	mestico = {	#Portuguese Mestizo
+		country = { } 
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = POR
+		dynasty_names = {
+			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
+			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
+			#CK2
+			"da C�mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+		}
+		male_names = {
+			Afonso Aires Aleixo Alexandre Alberto �lvaro Andr� Ant�nio Bartolomeu Barnab� Benjamim Bermudo 
+			Bernardo Caetano Carlos Crist�v�o Daniel Dami�o Dinis Diogo Duarte Eduardo Egas Est�v�o Fern�o 
+			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gon�alo Guilherme Gustavo 
+			Guterre Henrique Herm�gio In�cio Jaime Jo�o Joaquim Jorge Jos� "Jos� Maria" Lopo Louren�o Lucas 
+			Lu�s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
+			Ot�vio Pascoal Paulo Paio Pedro Pero P�ncio Rafael Rodrigo Rog�rio Rui Raimundo Sancho Sebasti�o 
+			Sim�o Soeiro Tiago Teodoro Teod�sio Teot�nio Tobias Tom�s Uriel Vasco Vicente V�tor Xavier 
+		}
+		female_names = {
+			Aldara Aldon�a Ana "Ana Maria" Beatriz Bereng�ria Branca Cristina Cristiana Constan�a D�rdia 
+			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar In�s J�lia Joana 
+			Leonor Let�cia Madalena Mafalda Matilda Margarida Maria "Maria da Concei��o" "Maria das Dores" 
+			"Maria da Assun��o" "Maria da Natividade" "Maria de F�tima" "Maria de Lurdes" "Maria do C�u" 
+			"Maria da Luz" "Maria da Gra�a" "Maria Jos�" "Maria Madalena" "Maria Teresa" "Maria Ant�nia" 
+			"Maria Carolina" "Maria Jo�o" "Maria Manuel" "Maria Lu�s" Mariana Marisa Marinha Mor Ouroana 
+			Sancha Teodora Teresa Urraca Vit�ria
+		}
+	}
+	carregadores = {	#Portuguese SA
+		country = { } 
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = POR
+		dynasty_names = {
+			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
+			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
+			#CK2
+			"da C�mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+		}
+		male_names = {
+			Afonso Aires Aleixo Alexandre Alberto �lvaro Andr� Ant�nio Bartolomeu Barnab� Benjamim Bermudo 
+			Bernardo Caetano Carlos Crist�v�o Daniel Dami�o Dinis Diogo Duarte Eduardo Egas Est�v�o Fern�o 
+			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gon�alo Guilherme Gustavo 
+			Guterre Henrique Herm�gio In�cio Jaime Jo�o Joaquim Jorge Jos� "Jos� Maria" Lopo Louren�o Lucas 
+			Lu�s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
+			Ot�vio Pascoal Paulo Paio Pedro Pero P�ncio Rafael Rodrigo Rog�rio Rui Raimundo Sancho Sebasti�o 
+			Sim�o Soeiro Tiago Teodoro Teod�sio Teot�nio Tobias Tom�s Uriel Vasco Vicente V�tor Xavier 
+		}
+		female_names = {
+			Aldara Aldon�a Ana "Ana Maria" Beatriz Bereng�ria Branca Cristina Cristiana Constan�a D�rdia 
+			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar In�s J�lia Joana 
+			Leonor Let�cia Madalena Mafalda Matilda Margarida Maria "Maria da Concei��o" "Maria das Dores" 
+			"Maria da Assun��o" "Maria da Natividade" "Maria de F�tima" "Maria de Lurdes" "Maria do C�u" 
+			"Maria da Luz" "Maria da Gra�a" "Maria Jos�" "Maria Madalena" "Maria Teresa" "Maria Ant�nia" 
+			"Maria Carolina" "Maria Jo�o" "Maria Manuel" "Maria Lu�s" Mariana Marisa Marinha Mor Ouroana 
+			Sancha Teodora Teresa Urraca Vit�ria
+		}
+	}
+}
+germanic = { #These are assumed to be dutch currently
+	
+	amerikaans = {	#NA
+		primary = XXX #Needs new tag
+	}
+	meksikaans = {	#Dutch Mestizo
+		primary = XXX #Needs new tag
+	}
+	braziliaans = { #SA
+		primary = XXX #Needs new tag
+	}
+	caribisch = {	#Caribbean
+		primary = XXX
+		male_names = { # Dutch Names
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
+			Gerulf
+			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
+			Gwijde Hendrik Henry Herman Herman Hubert
+			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
+			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Marquart Niclaes Nicholas
+			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Robert Robert Rodulf 
+			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
+			Waelram Walter Walter
+			Wicher Willem William Wolfard Hendrik Maurits
+			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
+			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
+			Roeland Rogier Thomas Vincent Zacharias
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+		}
+		dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van J�lich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+	}
+}
+
+#Mostly Norwegian, but it's likely that a player will have consolidated scandanavia anyways
+scandinavian = {
+	nyasvenish = {		#North America, based on swedish because of new sweden
+		primary = XXX
+		
+		male_names = {
+			Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid 
+			Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante 
+			Tomas Ulrik
+			Albrikt Albert Alf Algot Anders Arne Arnfast Astrad 
+			Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror
+			Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip 
+			Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold
+			Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar
+			Edward Johan John Karl Klas Knut Lars Magnus
+			Markus Marcus 
+			Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf 
+			Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven
+			Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf 
+			Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen 
+		}
+		female_names = {
+			Christina Ulrika Eleonora Hedwig
+			Anna Asta Astrid Beata Birgitta Brigid Bothild Cecilia Elin 
+			Elisabet Gunhild Helena Holmfrid Iliana Inga 
+			Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda 
+			Margareta Märta Martha Ragnhild Sara Sarah Sigrid Sofia 
+			Sophia Thordis Ulvhilde Åsa
+		}
+		dynasty_names = {
+			"Bonde" "Vasa" "Tre Rosor" "Oxenstierna" "Sparre" "Sture" "Tott" "Trolle" "Bielke" "Brahe"
+			"Horn" "Ribbing" "Skytte" "Banér" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud" 
+			"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "Burensköld"
+			"Böllja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
+			"Hård" "Forstena" "Kurck" "Eka" "Hjort" "Jägerhorn" "Lilliehöök"
+			"Porse" "Palme" Gumsehuvud
+			"Bååt" "Ulv" "Sjöblad" "Läma" "Posse" "Rosenstråle" "Thott" "Bagge"
+			"Bese" "Gädda" "Hatt" "Marsvin" "Oxhufvud" "Stake" "Tre Rutor" "Hästesko"
+			"Ulfsax" "Tre Sjöblad" "Bratt" "Munk" "Eketrä" "Gera"
+			"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
+		}
+	}
+	antarktish = {	#South America, pretty much made up but included for completeness. GT from antarctic
+		primary = XXX
+		male_names = {
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
+				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
+				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke 
+				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Guðmundr 
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
+				Kjartan Klas Knut Kol Kolbjörn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten 
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund 
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand 
+				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
+				Vagn Valdemar Vladimir Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjørn Daniel Edvard Eilert Elias Esben 
+				Kasper Kennet Knut Ludvig Mikael Njåld Njord Oddmund Peder Rikard Simon Søren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Anna Asa Åsa Aslaug Asta Astrid Beata 
+			Birgitta Brigid Björg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena 
+			Helen Holmfrid Iliana Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid Karin 
+			Katarina Catherine Kraka Kristina Christina Linda Maer Malmfrið Malmfrid Margareta Margaret 
+			Maria Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
+			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra 
+			Thyra
+		}
+		dynasty_names = {
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
+	vinlandic = {	#Canadian... May be split further later into vinlandic and markish, but the distinction is unessecary currently.
+		primary = XXX
+		male_names = {
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
+				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
+				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke 
+				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Guðmundr 
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
+				Kjartan Klas Knut Kol Kolbjörn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten 
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund 
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand 
+				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
+				Vagn Valdemar Vladimir Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjørn Daniel Edvard Eilert Elias Esben 
+				Kasper Kennet Knut Ludvig Mikael Njåld Njord Oddmund Peder Rikard Simon Søren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Anna Asa Åsa Aslaug Asta Astrid Beata 
+			Birgitta Brigid Björg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena 
+			Helen Holmfrid Iliana Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid Karin 
+			Katarina Catherine Kraka Kristina Christina Linda Maer Malmfrið Malmfrid Margareta Margaret 
+			Maria Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
+			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra 
+			Thyra
+		}
+		dynasty_names = {
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
+	hellulandic = {	#Hudson Bay region. May spread to greenland currently.
+		primary = XXX
+		male_names = {
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
+				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
+				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke 
+				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Guðmundr 
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
+				Kjartan Klas Knut Kol Kolbjörn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten 
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund 
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand 
+				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
+				Vagn Valdemar Vladimir Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjørn Daniel Edvard Eilert Elias Esben 
+				Kasper Kennet Knut Ludvig Mikael Njåld Njord Oddmund Peder Rikard Simon Søren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Anna Asa Åsa Aslaug Asta Astrid Beata 
+			Birgitta Brigid Björg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena 
+			Helen Holmfrid Iliana Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid Karin 
+			Katarina Catherine Kraka Kristina Christina Linda Maer Malmfrið Malmfrid Margareta Margaret 
+			Maria Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
+			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra 
+			Thyra
+		}
+		dynasty_names = {
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
+	karibisk = {	#Caribbean / Danish
+		primary = XXX
+		male_names = {
+			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward 
+			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf Jørn Jakob Jacob Jens Joakim Johann
+			John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael 
+			Mogens Nicholas Odd Olav Olaf Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven Sämund Thorolf Thorvald Torben Torbjørn
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
+			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Frans Gnupa
+		}
+		female_names = {
+			Sophie Dorothe Margrete Sigrun
+			Agnethe Anna Asta Benedikte Benedicta Birgitta Brigid Bodil Cecilie Cecilia Christina Dagmar 
+			Dorothea Dorothy Elisabeth Ellinor Eleanor Emilie Emily Erika Ester Estrid Astrid Frederikke 
+			Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
+			Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
+			Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
+			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
+		}
+		dynasty_names = {
+			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
+			"Friis" "Gyllenstierna" #Gyldenstierne
+			"Bille" "Adeler" "Arenstorff" "Brockenhuus"
+			"Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
+			"Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
+			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt"
+			"Frille" "Rønnow"
+			# CKII
+			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
+			"Reventlow" "Juul" "Ulfeldt" "Bang"
+		}
+	}
+	thulenlandic = {	#Danish Mestizo
+		primary = XXX
+		male_names = {
+			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward 
+			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf Jørn Jakob Jacob Jens Joakim Johann
+			John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael 
+			Mogens Nicholas Odd Olav Olaf Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven Sämund Thorolf Thorvald Torben Torbjørn
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
+			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Frans Gnupa
+		}
+		female_names = {
+			Sophie Dorothe Margrete Sigrun
+			Agnethe Anna Asta Benedikte Benedicta Birgitta Brigid Bodil Cecilie Cecilia Christina Dagmar 
+			Dorothea Dorothy Elisabeth Ellinor Eleanor Emilie Emily Erika Ester Estrid Astrid Frederikke 
+			Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
+			Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
+			Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
+			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
+		}
+		dynasty_names = {
+			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
+			"Friis" "Gyllenstierna" #Gyldenstierne
+			"Bille" "Adeler" "Arenstorff" "Brockenhuus"
+			"Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
+			"Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
+			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt"
+			"Frille" "Rønnow"
+			# CKII
+			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
+			"Reventlow" "Juul" "Ulfeldt" "Bang"
+		}
+	}
+}
+
+eastern_algonquian = {
+	
+	conoy = {
+		primary = XXX
+		dynasty_names = {
+			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
+			Absecon Assupink Communipaw Hakensack Hoboken Hohokus Hopatcong Mahwah Manahawkin
+			Manalapan Mantoloking Mantua Matawan Metuchen Minisin Musconetcong Passaic Peapack
+			Naraticong Scheyichbi Secaucus Weehawken
+			Conshohocken Manayunk Passyunk Shackamaxon Wissahickon
+		}
+		male_names = {
+			Tetabuxike Bukongehelas Hockingpomskenn Kechkawhanund Alimee Tomaguee Missenewand Petchekekapon
+			Kithteeleland Lapahnihe Apacahund Netahopuna Tunis Caghkoo Petchenanalas Quenaghtoothmait Pooshies
+			Nanotetauxien Sarcoxey Neconhecond Kockkatowha Quacornowha Neshapanacumin Queshatowha Pondoxy
+			Ahlaachick Neconhecon Rockatowah Buckongahelas Gelelemend Oratam Neolin Hopocan Tamanend Tamaqua
+			Teedyuscung Kkoquethagechton Kockkockquas
+		}
+		female_names = {
+			Awowas Moconnoquah Cholena
+		}
+	}
+	
+	nanticoke = {
+		primary = XXX
+		dynasty_names = {
+			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
+			Absecon Assupink Communipaw Hakensack Hoboken Hohokus Hopatcong Mahwah Manahawkin
+			Manalapan Mantoloking Mantua Matawan Metuchen Minisin Musconetcong Passaic Peapack
+			Naraticong Scheyichbi Secaucus Weehawken
+			Conshohocken Manayunk Passyunk Shackamaxon Wissahickon
+		}
+		male_names = {
+			Tetabuxike Bukongehelas Hockingpomskenn Kechkawhanund Alimee Tomaguee Missenewand Petchekekapon
+			Kithteeleland Lapahnihe Apacahund Netahopuna Tunis Caghkoo Petchenanalas Quenaghtoothmait Pooshies
+			Nanotetauxien Sarcoxey Neconhecond Kockkatowha Quacornowha Neshapanacumin Queshatowha Pondoxy
+			Ahlaachick Neconhecon Rockatowah Buckongahelas Gelelemend Oratam Neolin Hopocan Tamanend Tamaqua
+			Teedyuscung Kkoquethagechton Kockkockquas
+		}
+		female_names = {
+			Awowas Moconnoquah Cholena
+		}
+	}
+	
+	weapemeoc = {
+		primary = XXX
+		dynasty_names = {
+			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
+			Absecon Assupink Communipaw Hakensack Hoboken Hohokus Hopatcong Mahwah Manahawkin
+			Manalapan Mantoloking Mantua Matawan Metuchen Minisin Musconetcong Passaic Peapack
+			Naraticong Scheyichbi Secaucus Weehawken
+			Conshohocken Manayunk Passyunk Shackamaxon Wissahickon
+		}
+		male_names = {
+			Tetabuxike Bukongehelas Hockingpomskenn Kechkawhanund Alimee Tomaguee Missenewand Petchekekapon
+			Kithteeleland Lapahnihe Apacahund Netahopuna Tunis Caghkoo Petchenanalas Quenaghtoothmait Pooshies
+			Nanotetauxien Sarcoxey Neconhecond Kockkatowha Quacornowha Neshapanacumin Queshatowha Pondoxy
+			Ahlaachick Neconhecon Rockatowah Buckongahelas Gelelemend Oratam Neolin Hopocan Tamanend Tamaqua
+			Teedyuscung Kkoquethagechton Kockkockquas
+		}
+		female_names = {
+			Awowas Moconnoquah Cholena
+		}
+	}
+	
+	wappinger = {
+		primary = XXX
+		dynasty_names = {
+			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
+			Absecon Assupink Communipaw Hakensack Hoboken Hohokus Hopatcong Mahwah Manahawkin
+			Manalapan Mantoloking Mantua Matawan Metuchen Minisin Musconetcong Passaic Peapack
+			Naraticong Scheyichbi Secaucus Weehawken
+			Conshohocken Manayunk Passyunk Shackamaxon Wissahickon
+		}
+		male_names = {
+			Tetabuxike Bukongehelas Hockingpomskenn Kechkawhanund Alimee Tomaguee Missenewand Petchekekapon
+			Kithteeleland Lapahnihe Apacahund Netahopuna Tunis Caghkoo Petchenanalas Quenaghtoothmait Pooshies
+			Nanotetauxien Sarcoxey Neconhecond Kockkatowha Quacornowha Neshapanacumin Queshatowha Pondoxy
+			Ahlaachick Neconhecon Rockatowah Buckongahelas Gelelemend Oratam Neolin Hopocan Tamanend Tamaqua
+			Teedyuscung Kkoquethagechton Kockkockquas
+		}
+		female_names = {
+			Awowas Moconnoquah Cholena
+		}
+	}
+	
+	pennacook = {
+		primary = XXX
+		dynasty_names = {
+			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
+			Absecon Assupink Communipaw Hakensack Hoboken Hohokus Hopatcong Mahwah Manahawkin
+			Manalapan Mantoloking Mantua Matawan Metuchen Minisin Musconetcong Passaic Peapack
+			Naraticong Scheyichbi Secaucus Weehawken
+			Conshohocken Manayunk Passyunk Shackamaxon Wissahickon
+		}
+		male_names = {
+			Tetabuxike Bukongehelas Hockingpomskenn Kechkawhanund Alimee Tomaguee Missenewand Petchekekapon
+			Kithteeleland Lapahnihe Apacahund Netahopuna Tunis Caghkoo Petchenanalas Quenaghtoothmait Pooshies
+			Nanotetauxien Sarcoxey Neconhecond Kockkatowha Quacornowha Neshapanacumin Queshatowha Pondoxy
+			Ahlaachick Neconhecon Rockatowah Buckongahelas Gelelemend Oratam Neolin Hopocan Tamanend Tamaqua
+			Teedyuscung Kkoquethagechton Kockkockquas
+		}
+		female_names = {
+			Awowas Moconnoquah Cholena
+		}
+	}
+}
+
+iroquoian = {
+	tuscarora = {
+		primary = XXX
+		dynasty_names = {
+			Awegen Ahaouet
+			Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
+			Deseroken Dayoitgao Deonundagae Deyodeshot Deyohnegano Deyonongdadagana
+			Gweugwehono Gandasetaigon Ganogeh Gayagaanhe Gewauga Goiogouen Gadoquat Gannentaha
+			Hostayuntwa
+			Kawauka Kente Kanagaro Kowogoconnughariegugharie Kanadaseagea Kanatakowa
+			Neodakheat Nowadaga Nundawaono
+			Onekagoncka Onoalagona Oquaga Osquake Onayotekaono Oriska Ossewingo
+			Skannayutenate Saratoga Schaunactada Schoharie
+			Teatontaloga Tewanondadon Tionnontoguen Tegasoke Teseroken Tetosweken
+			Yoroonwago
+		}
+		male_names = {
+			Theyanoguin Teiorhenhsere Thayendanega Oronhyatekha Onogwendahonji Touighnatogon Oheadanghton
+			Tayagonendagighti Tehonwaenghrigagi Otyadonenghti Dagaheari Oraghoaenendagen Onnonghsawenghti
+			Kayenthoghke Cageaga Sawedowa Kiondushowa Oncahye Soaheas Otachsaka Tekahias Onecnsetee Kiatulaho
+			Kiandogewa Owenewa Gyantwaia Gyasota Kannasseee Achiout Anachout Chishekoa Sessewa Sicahowa Tewanias
+			Snoachshowa Hickonquash Ononyeahnee Konneatorteeooh Tokenhyouau Oneshauee Aupaumut Neeshonshuk
+			Sohhonteoquent Ooduhtsait Konoohqung Tossonggaulolus Skenendoa Oneatorleeooh Kussauwatau
+			Kohnyeaugaong Shaguiesa Teeroos Sooshaoowau Sonhyoowauna Onaahhah Hotoshahen Kaukondanaiya
+			Kosshishtowau Oojaugenta Toheonggo Ootaguasso Joonondauwanonch Kiyauhaonh Ootaujeaugenth Tauhoondos
+			Twaukewasha Sequidonguquee Kodjeote Kenjauaugus Soononhquaukau Twenniyana Jishkaaga Tuggehshotta
+			Tehongyagauna Tehongyoowush Konneyoowesot Tioohquaottakauna Taoundaudeesh Honayawus Soggooyawauthau
+			Konyootiayoo Sauhtakaongyees Ounnashattakau Kaungyanehquee Sooayoowau Kaujeagaonh Soonoohshoowau
+			Thaoowaunias Soonongjoowau Kiantwhauka Kaunehshonggoo Kenneronkwa Telenemut Katarioniecha
+			Kendarindgon Nondiyauka Kanatsoyh Eootenyootauook Aqueia Tarondawagon
+		}
+		female_names = {
+			Tyonajanegen Alliquippa Konwatsitiaienni Genessee Sat�kon Tekakwitha
+		}
+	}
+}
+
+siouan = {
+	tutelo = {
+		primary = XXX
+		dynasty_names = {
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk
+			Saukenuk Thakiwakie
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
+	winnebago = {
+		primary = XXX
+		dynasty_names = {
+			Wazhaze Tsishu Pasueli Wahakolin Sansueli Wyota Picayune Koholo Neodesha
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+			Caygache Pahuroguesie Miaasa Manjaguida Mantsa Nicagaris Dogachinga Tavaingare Tavainthere Naguemani
+			Nicanauthe Chonmelase Nenonbas Pograngue Cayque Nonpevoite Vesasche Tonchenanque Lihibi Grinache
+			Nicouilbran Chonnonsogue Lisansandhe Mequaque Megahe Manhegare Meyhe Nudhetavoi Thecayque Voitasean
+			Cahapiche Manhevoi Talechiga Pedhechiga Cheganonsas Nesaque Lolechinga Panenvoiguanda Tavoinhihi
+			Mithechinga Manquesi Chingavoisa Talevoile Voiengran Scamani Nurahague Mechinga Pachigue Roudanique
+			Voibisandhe Nehizanga Nehudhe Pagranque Chahetonga Manguepeemani Voibalune Poneavoitaniga Taslondhe
+			Nendogualui voibahe Onhehomani Nuranin Noguinilayque Nanlatoho Bashemindhe Savoi Chouquemonnon
+			Manilourana Nequevoile Chonguehanga Ponlachinga Aguigueda Voidoguega Sindhe Ninchagari Voidhadani
+			Quinihonigue Nognithechinga Natanhi Ousabe Voichinouthe Amanpasse Cutsagabe Channahon Nonbasocri
+			Pedhechinga Bassechinga Ponlavoitasuga Manyvoile Mandarihi Nepaste
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
+	ofo = {
+		primary = XXX
+		dynasty_names = {
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk
+			Saukenuk Thakiwakie
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
+	biloxi = {
+		primary = XXX
+		dynasty_names = {
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk
+			Saukenuk Thakiwakie
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
+	missoula = {
+		primary = XXX
+		dynasty_names = {
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk
+			Saukenuk Thakiwakie
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
+	iowa = {
+		primary = XXX
+		dynasty_names = {
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk
+			Saukenuk Thakiwakie
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
+}
+
+timucua_group = {
+	graphical_culture = northamericagfx
+	timucua = { 
+		primary = XXX
+		dynasty_names = {
+			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
+			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
+			Couiloussa Etoukouma Falatchao Gouytola Hummalala Hussinkoma Hykehah
+			"Latcha Hoa Run" "Ogoula-Tchetoka" "Onthaba-atchosa" Ooeasa Oucahata
+			Oucthambolo Outanquatle Phalachehs Pontotoc Shatara Shiokaya Tanyachilca
+			Taposa Thanbolo Teshatulla Tokshish Tuckahaw Tuskawillao Tuskaroilloe Yaneka
+		}
+		male_names = {
+			Itawamba Tootemastubbe Piomingo Tishomingo Mingatuska Taskietoka Latopoia Ashalatubbi Ishtehotopa Topulkah
+			Emubby Pistahlahtubee Ishtimolutka Immahhoolotubbe Ishtahachah Lahfinhubbe Shoppowme Ninuckahumba
+			Illuppahhumba Conmushkaishkah Bahhakahtubbe Bahmahahtubbe Iyahhoutubbe Tokholthlachah Okelahnahnubbe
+			Immetubbe Inkahyea Ahshacubbe Immohhobah Fitchahpla Untemiahtubbe Okelahhinlubbe Bahmehubbe Hushtahtahubbe
+			Untihakahtubbe Yummotubbe Ohhacubbe Ahfahmah Ahtakintubbe Ahtokowah Tahhacubbe Kinhoicha Ishteahtubbe
+			Chickahshananubbe Chewutaha Foluttachah Wininapa Okelahshahcubbe Ishtakiyukatabbe MAhtekoshubbe Tomchickah
+			Eiochetubbe Nuckshopubbe Fahlahmotubbe Cochubbe Okelahshapia
+		}
+		female_names = {
+			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
+		}
+	}
+	ais = { 
+		primary = XXX
+		dynasty_names = {
+			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
+			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
+			Couiloussa Etoukouma Falatchao Gouytola Hummalala Hussinkoma Hykehah
+			"Latcha Hoa Run" "Ogoula-Tchetoka" "Onthaba-atchosa" Ooeasa Oucahata
+			Oucthambolo Outanquatle Phalachehs Pontotoc Shatara Shiokaya Tanyachilca
+			Taposa Thanbolo Teshatulla Tokshish Tuckahaw Tuskawillao Tuskaroilloe Yaneka
+		}
+		male_names = {
+			Itawamba Tootemastubbe Piomingo Tishomingo Mingatuska Taskietoka Latopoia Ashalatubbi Ishtehotopa Topulkah
+			Emubby Pistahlahtubee Ishtimolutka Immahhoolotubbe Ishtahachah Lahfinhubbe Shoppowme Ninuckahumba
+			Illuppahhumba Conmushkaishkah Bahhakahtubbe Bahmahahtubbe Iyahhoutubbe Tokholthlachah Okelahnahnubbe
+			Immetubbe Inkahyea Ahshacubbe Immohhobah Fitchahpla Untemiahtubbe Okelahhinlubbe Bahmehubbe Hushtahtahubbe
+			Untihakahtubbe Yummotubbe Ohhacubbe Ahfahmah Ahtakintubbe Ahtokowah Tahhacubbe Kinhoicha Ishteahtubbe
+			Chickahshananubbe Chewutaha Foluttachah Wininapa Okelahshahcubbe Ishtakiyukatabbe MAhtekoshubbe Tomchickah
+			Eiochetubbe Nuckshopubbe Fahlahmotubbe Cochubbe Okelahshapia
+		}
+		female_names = {
+			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
+		}
+	}
+	tocobaga = { 
+		primary = XXX
+		dynasty_names = {
+			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
+			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
+			Couiloussa Etoukouma Falatchao Gouytola Hummalala Hussinkoma Hykehah
+			"Latcha Hoa Run" "Ogoula-Tchetoka" "Onthaba-atchosa" Ooeasa Oucahata
+			Oucthambolo Outanquatle Phalachehs Pontotoc Shatara Shiokaya Tanyachilca
+			Taposa Thanbolo Teshatulla Tokshish Tuckahaw Tuskawillao Tuskaroilloe Yaneka
+		}
+		male_names = {
+			Itawamba Tootemastubbe Piomingo Tishomingo Mingatuska Taskietoka Latopoia Ashalatubbi Ishtehotopa Topulkah
+			Emubby Pistahlahtubee Ishtimolutka Immahhoolotubbe Ishtahachah Lahfinhubbe Shoppowme Ninuckahumba
+			Illuppahhumba Conmushkaishkah Bahhakahtubbe Bahmahahtubbe Iyahhoutubbe Tokholthlachah Okelahnahnubbe
+			Immetubbe Inkahyea Ahshacubbe Immohhobah Fitchahpla Untemiahtubbe Okelahhinlubbe Bahmehubbe Hushtahtahubbe
+			Untihakahtubbe Yummotubbe Ohhacubbe Ahfahmah Ahtakintubbe Ahtokowah Tahhacubbe Kinhoicha Ishteahtubbe
+			Chickahshananubbe Chewutaha Foluttachah Wininapa Okelahshahcubbe Ishtakiyukatabbe MAhtekoshubbe Tomchickah
+			Eiochetubbe Nuckshopubbe Fahlahmotubbe Cochubbe Okelahshapia
+		}
+		female_names = {
+			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
+		}
+	}
+}
+
+calusa_group = {
+	graphical_culture = northamericagfx
+	calusa = { 
+		primary = XXX
+		dynasty_names = {
+			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
+			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
+			Couiloussa Etoukouma Falatchao Gouytola Hummalala Hussinkoma Hykehah
+			"Latcha Hoa Run" "Ogoula-Tchetoka" "Onthaba-atchosa" Ooeasa Oucahata
+			Oucthambolo Outanquatle Phalachehs Pontotoc Shatara Shiokaya Tanyachilca
+			Taposa Thanbolo Teshatulla Tokshish Tuckahaw Tuskawillao Tuskaroilloe Yaneka
+		}
+		male_names = {
+			Itawamba Tootemastubbe Piomingo Tishomingo Mingatuska Taskietoka Latopoia Ashalatubbi Ishtehotopa Topulkah
+			Emubby Pistahlahtubee Ishtimolutka Immahhoolotubbe Ishtahachah Lahfinhubbe Shoppowme Ninuckahumba
+			Illuppahhumba Conmushkaishkah Bahhakahtubbe Bahmahahtubbe Iyahhoutubbe Tokholthlachah Okelahnahnubbe
+			Immetubbe Inkahyea Ahshacubbe Immohhobah Fitchahpla Untemiahtubbe Okelahhinlubbe Bahmehubbe Hushtahtahubbe
+			Untihakahtubbe Yummotubbe Ohhacubbe Ahfahmah Ahtakintubbe Ahtokowah Tahhacubbe Kinhoicha Ishteahtubbe
+			Chickahshananubbe Chewutaha Foluttachah Wininapa Okelahshahcubbe Ishtakiyukatabbe MAhtekoshubbe Tomchickah
+			Eiochetubbe Nuckshopubbe Fahlahmotubbe Cochubbe Okelahshapia
+		}
+		female_names = {
+			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
+		}
+	}
+	jeaga = { 
+		primary = XXX
+		dynasty_names = {
+			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
+			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
+			Couiloussa Etoukouma Falatchao Gouytola Hummalala Hussinkoma Hykehah
+			"Latcha Hoa Run" "Ogoula-Tchetoka" "Onthaba-atchosa" Ooeasa Oucahata
+			Oucthambolo Outanquatle Phalachehs Pontotoc Shatara Shiokaya Tanyachilca
+			Taposa Thanbolo Teshatulla Tokshish Tuckahaw Tuskawillao Tuskaroilloe Yaneka
+		}
+		male_names = {
+			Itawamba Tootemastubbe Piomingo Tishomingo Mingatuska Taskietoka Latopoia Ashalatubbi Ishtehotopa Topulkah
+			Emubby Pistahlahtubee Ishtimolutka Immahhoolotubbe Ishtahachah Lahfinhubbe Shoppowme Ninuckahumba
+			Illuppahhumba Conmushkaishkah Bahhakahtubbe Bahmahahtubbe Iyahhoutubbe Tokholthlachah Okelahnahnubbe
+			Immetubbe Inkahyea Ahshacubbe Immohhobah Fitchahpla Untemiahtubbe Okelahhinlubbe Bahmehubbe Hushtahtahubbe
+			Untihakahtubbe Yummotubbe Ohhacubbe Ahfahmah Ahtakintubbe Ahtokowah Tahhacubbe Kinhoicha Ishteahtubbe
+			Chickahshananubbe Chewutaha Foluttachah Wininapa Okelahshahcubbe Ishtakiyukatabbe MAhtekoshubbe Tomchickah
+			Eiochetubbe Nuckshopubbe Fahlahmotubbe Cochubbe Okelahshapia
+		}
+		female_names = {
+			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
+		}
+	}
+	tekesta = { 
+		primary = XXX
+		dynasty_names = {
+			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
+			Chesafaliah Chinica Chopoussa Chucalissa Chukafalaya Chula Coppertown
+			Couiloussa Etoukouma Falatchao Gouytola Hummalala Hussinkoma Hykehah
+			"Latcha Hoa Run" "Ogoula-Tchetoka" "Onthaba-atchosa" Ooeasa Oucahata
+			Oucthambolo Outanquatle Phalachehs Pontotoc Shatara Shiokaya Tanyachilca
+			Taposa Thanbolo Teshatulla Tokshish Tuckahaw Tuskawillao Tuskaroilloe Yaneka
+		}
+		male_names = {
+			Itawamba Tootemastubbe Piomingo Tishomingo Mingatuska Taskietoka Latopoia Ashalatubbi Ishtehotopa Topulkah
+			Emubby Pistahlahtubee Ishtimolutka Immahhoolotubbe Ishtahachah Lahfinhubbe Shoppowme Ninuckahumba
+			Illuppahhumba Conmushkaishkah Bahhakahtubbe Bahmahahtubbe Iyahhoutubbe Tokholthlachah Okelahnahnubbe
+			Immetubbe Inkahyea Ahshacubbe Immohhobah Fitchahpla Untemiahtubbe Okelahhinlubbe Bahmehubbe Hushtahtahubbe
+			Untihakahtubbe Yummotubbe Ohhacubbe Ahfahmah Ahtakintubbe Ahtokowah Tahhacubbe Kinhoicha Ishteahtubbe
+			Chickahshananubbe Chewutaha Foluttachah Wininapa Okelahshahcubbe Ishtakiyukatabbe MAhtekoshubbe Tomchickah
+			Eiochetubbe Nuckshopubbe Fahlahmotubbe Cochubbe Okelahshapia
+		}
+		female_names = {
+			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
+		}
+	}
+}
+
+muskogean = {
+	koasati = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	apalachee = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	chatot = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	alabama = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	houma = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	tohome = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	chitimatcha = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	atakapa = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+}
+
+karankwa_group = {
+	graphical_culture = northamericagfx
+
+	karankwa = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+	tonkawa = {
+		primary = XXX
+		dynasty_names = {
+			Chitto "Hasse Ola" Hopoethe "Talof Harjo" Yaholo Menewa Chebona Osceola Hothlepoya "Lumhe Chati"
+		}
+		male_names = {
+			"Hoboi-Hili-Miko" "Mico Malatchi" Opothleyaholo Emistesigo Fife Lamochattee Yahatatastenake Taskanugi Hatke
+			Fuskatchemico Neathlock Hallethemalthle Opaymico Totkeshajou Hopothemico Opototaache Soholoesee Ocheehajou
+			Tuskenaah Homatah Chinnabie Juleetaulematah Chawooklymico Coosadeshopoy Muthtee Stimafutchkee Stilnaleeje
+			Mumagechee
+		}
+		female_names = {
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+			Nahomtima Immahoka Lunnabaga
+		}
+	}
+}
+
+hokan = {
+	
+	coahuiltec = {
+		#primary = XXX
+		dynasty_names = {
+			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
+			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
+		}
+		male_names = {
+			Oacpicagiguya Kaviu Papago Panhop Cajem�
+		}
+		female_names = {
+			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
+		}
+	}
+}
+
+southern_uto_aztecan = {
+	graphical_culture = northamericagfx
+
+	piman = {
+		primary = PIM
+		dynasty_names = {
+			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
+			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
+		}
+		male_names = {
+			Oacpicagiguya Kaviu Papago Panhop Cajem�
+		}
+		female_names = {
+			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
+		}
+	}
+	cahita = {
+		primary = WWI
+		dynasty_names = {
+			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
+			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
+		}
+		male_names = {
+			Oacpicagiguya Kaviu Papago Panhop Cajem�
+		}
+		female_names = {
+			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
+		}
+	}
+	corachol = {
+		dynasty_names = {
+			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
+			Yoreme Hiakim Potam Vicam Torim Bacum Cocorit Huirivis Benem Rahum
+		}
+		male_names = {
+			Oacpicagiguya Kaviu Papago Panhop Cajem�
+		}
+		female_names = {
+			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
+		}
+	}
+	suma_culture = {
+		#primary = XXX
+		dynasty_names = {
+			Samish Sawehamish Semiahmoo Shishalh Siletz Skagits Skokomish Snohomish Snoqualmie Songhees Squamish Squaxin
+			Stillaguamish Stolo Aitchelitz Chawathil Cheam
+			Kwantlen Katzie Leqamel Matsqui Popkum Shxwowhamel Skway Skowkale Skwah Soowalhie Chehalis Sumas Tzeatchen
+			Yakweakwioose Suiaxbixw Suquamish Swinomish
+			Tsawassen "Tsleil-Waututh" Tulalip Xacuabs
+		}
+		male_names = {
+			Seattle Patkanam Chowitshoot Goliah Kwallatum S'hootst-hoot Snah-talc Squush-um Seeallapahan Heuhkanam
+			Tsenahtalc Nsskioos Watskalahtchie Smehmaihu Slateahkanam Sthauai Lugsken Shehtsoolt Doqueoosatl
+			Klemshkanam Tshuahntl Kwusskanam Helmits Skwaikwi Sehlekqu Shchehoos Whailanhu Sheahdelthu Kwultseh
+			Kwullethu Klehkentsoot Sohnhehovs S'dehapkan Chulwhiltan Skeehtum Patchkanam Satskanam Sdzomathl Dahtldemin
+			Sdzekdunum Nowachais Mislotche Sloonokshtan Moowhahladhu Toolehplan Hasehdooan Hooviltmehtum Weaipah
+			S'ahanhu Shehope Hwnlahlakq Chtsimpt Tsesumten Klthahlten Kuttakanam Chlahben Noohehoos Hwehuk Pehnus
+			Yimkadam Twooiaskut Luchalkanam S'hootkanam Smeakanam Sadziskeh Hehmahl Hatch Kwentum Yoikum Tkwamahan
+			Stodumkan Belole D'zololegwamhu Stehshail Kelkahltsoot Patsen Pattehus Shoolkkanam Chloksuts
+		}
+		female_names = {
+			Kikisoblu Wewick Sholeetsa Ladalia Olahl
+		}
+	}
+	aztek = {
+		primary = AZT
+		male_names = {
+			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc
+			Motelchiuh Tehuetstiquitzin Tlacotzin Xochiquentzin Acamapichtli Chimalpopoca Tenoch Acacitli
+			Axacaya Cacamatzin Eyahue Huicton Ilhuicamina Itzquautzin Mazatl Nopaltzin Olintecke Opochtli
+			Quetzalmantzin Quimichetl Texcoyo Timas Tlacaelel Tlotzin Xiuhcozcatl Xocoyol Yaztachimal Zolton
+			Ahcambal Huanitzin Panitzin
+		}
+		female_names = {
+			Centehua Moyolehuani Yaotl Mixcoatl Necahual Nelli Ohtli Papa Patli
+		}
+	}
+	chichimecan = {
+		primary = CCM
+		male_names = {
+			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc
+			Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui
+			Topiltzin Totoquihuaztli
+			Ueman Yaotl Yayauhqui Yolotli Yolyamanitzin Xicohtencatl Xiuhpilli Xihuitl Xipil Xipilli Xochitl
+			Xochipepe Xochipilli Yaotl Zipactonal Zolin
+		}
+		female_names = {
+			Quiauhxochitl Sacnite Techichpotzin Tezozomoc Tziquetzalpoztectzin
+			Tezcatlan Tlacotl Tlahco Tlahcoehua Toltecatl Tonalnan Tlazozomizqui
+			Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin Zyanya
+			Acacitlu Citali Citlamina Etapali Ichtaca Icnoyotl Ilhuitl Macuilxochitl Mahuitzic Moyolehuani Moztla
+			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl
+		}
+	}
+	guamares = {
+		primary = GAM
+		male_names = {
+			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc
+			Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui
+			Topiltzin Totoquihuaztli
+			Ueman Yaotl Yayauhqui Yolotli Yolyamanitzin Xicohtencatl Xiuhpilli Xihuitl Xipil Xipilli Xochitl
+			Xochipepe Xochipilli Yaotl Zipactonal Zolin
+		}
+		female_names = {
+			Quiauhxochitl Sacnite Techichpotzin Tezozomoc Tziquetzalpoztectzin
+			Tezcatlan Tlacotl Tlahco Tlahcoehua Toltecatl Tonalnan Tlazozomizqui
+			Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin Zyanya
+			Acacitlu Citali Citlamina Etapali Ichtaca Icnoyotl Ilhuitl Macuilxochitl Mahuitzic Moyolehuani Moztla
+			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl
+		}
+	}
+}
+
+central_american = {
+	graphical_culture = southamericagfx
+
+	purepecha = {
+		primary = TAR
+		male_names = {
+			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha
+			Cuinierangari Bibejw Binech Bzojj Chs�axcejj Ch�alaxa Chonna Bicu Coqui Djoraxa Gw�ib�on� Gyazob
+			Ipalnemoani Ji Jzi� Jituh Jzi� L�xda�xo Lyebe Mbalaz Na Yel Naquichinisa Naxi�anguiiu Ngolbex An
+			Rire Nisa Ro Pijje Jzi� Tobi Rusiguunda V�eni Vezi� Zne Yel Zni� Zyrx Gyejj Nguiiu
+		}
+		female_names = {
+			Zyanya Nayeli Teiuc Teicuih Teyacapan Tepin
+		}
+	}
+	cuitaltec = {
+		primary = XXX
+		male_names = {
+			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha
+			Cuinierangari Bibejw Binech Bzojj Chs�axcejj Ch�alaxa Chonna Bicu Coqui Djoraxa Gw�ib�on� Gyazob
+			Ipalnemoani Ji Jzi� Jituh Jzi� L�xda�xo Lyebe Mbalaz Na Yel Naquichinisa Naxi�anguiiu Ngolbex An
+			Rire Nisa Ro Pijje Jzi� Tobi Rusiguunda V�eni Vezi� Zne Yel Zni� Zyrx Gyejj Nguiiu
+		}
+		female_names = {
+			Zyanya Nayeli Teiuc Teicuih Teyacapan Tepin
+		}
+	}
+	dynasty_names = {
+		# CKII
+		"Acatl" "Atl" "Calli" "Cipactli" "Coatl" "Coyotl" "Cozcaquauhtli" "Cuetzpalin" "Ehecatl" "Icpalli"
+		"Itz" "Itzcuintli" "Macehualli" "Malinalli" "Mazatl" "Miquiztli" "Nezahual" "Nochtli" "Ocelotl"
+		"Ollin" "Otli" "Ozomatli" "Pipiltin" "Pochtecatl" "Quauhtli" "Quauitl" "Quiautl" "Tecpatl"
+		"Tecuhtli" "Tepetl" "Tetl" "Tlantli" "Tochtli" "Toltecatl" "Xochitl"
+	}
+}
+
+otomanguean = {
+	graphical_culture = southamericagfx
+	zapotek = {
+		primary = ZAP
+		male_names = {
+			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzi� Pwuix Dao
+			Binech Bzojj Chs�axcejj Ch�alaxa Chonna Bicu Coqui Djoraxa Gw�ib�on� Gyazob Gyejj Ipalnemoani Ji
+			Jzi� L�xda�xo Lyebe Mbalaz Na Yel Naquichinisa Naxi�anguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje
+			Rusiguunda V�eni Vezi� Zne Yel Zni� Zyrx Beljjw Bibejw Jzi� Jituh Jzi� Tobi
+		}
+		female_names = {
+			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
+		}
+	}
+	matlatzinca = {
+		primary = MAT
+		male_names = {
+			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha
+			Cuinierangari Bibejw Binech Bzojj Chs�axcejj Ch�alaxa Chonna Bicu Coqui Djoraxa Gw�ib�on� Gyazob
+			Ipalnemoani Ji Jzi� Jituh Jzi� L�xda�xo Lyebe Mbalaz Na Yel Naquichinisa Naxi�anguiiu Ngolbex An
+			Rire Nisa Ro Pijje Jzi� Tobi Rusiguunda V�eni Vezi� Zne Yel Zni� Zyrx Gyejj Nguiiu
+		}
+		female_names = {
+			Zyanya Nayeli Teiuc Teicuih Teyacapan Tepin
+		}
+	}
+	mixtec = {
+		primary = MIX
+		male_names = {
+			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzi� Pwuix Dao
+			Binech Bzojj Chs�axcejj Ch�alaxa Chonna Bicu Coqui Djoraxa Gw�ib�on� Gyazob Gyejj Ipalnemoani Ji
+			Jzi� L�xda�xo Lyebe Mbalaz Na Yel Naquichinisa Naxi�anguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje
+			Rusiguunda V�eni Vezi� Zne Yel Zni� Zyrx Beljjw Bibejw Jzi� Jituh Jzi� Tobi
+		}
+		female_names = {
+			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
+		}
+	}
+	otomi = {
+		primary = OTO
+		male_names = {
+			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc
+			Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui
+			Topiltzin Totoquihuaztli
+			Ueman Yaotl Yayauhqui Yolotli Yolyamanitzin Xicohtencatl Xiuhpilli Xihuitl Xipil Xipilli Xochitl
+			Xochipepe Xochipilli Yaotl Zipactonal Zolin
+		}
+		female_names = {
+			Quiauhxochitl Sacnite Techichpotzin Tezozomoc Tziquetzalpoztectzin
+			Tezcatlan Tlacotl Tlahco Tlahcoehua Toltecatl Tonalnan Tlazozomizqui
+			Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin Zyanya
+			Acacitlu Citali Citlamina Etapali Ichtaca Icnoyotl Ilhuitl Macuilxochitl Mahuitzic Moyolehuani Moztla
+			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl
+		}
+	}
+	tlapanec = {
+		primary = TLA
+		male_names = {
+			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzi� Pwuix Dao
+			Binech Bzojj Chs�axcejj Ch�alaxa Chonna Bicu Coqui Djoraxa Gw�ib�on� Gyazob Gyejj Ipalnemoani Ji
+			Jzi� L�xda�xo Lyebe Mbalaz Na Yel Naquichinisa Naxi�anguiiu Ngolbex An Nguiiu Rire Nisa Ro Pijje
+			Rusiguunda V�eni Vezi� Zne Yel Zni� Zyrx Beljjw Bibejw Jzi� Jituh Jzi� Tobi
+		}
+		female_names = {
+			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
+		}
+	}
+	dynasty_names = {
+		Beljjw Bibejw Binech "Bzojj Chs�axcejj" Ch�alaxa Coqui Djoraxa Gwpeib�on� Gyazob Gyejj "Ji Jzi�" Jituh Jzi� L�xda�xo
+		Lyebe Mbalaz "Na Yel" "Ngolbex An" "Pijje Jzi�" "Pwuix Dao" V�eni Vzi� "Zne Yel" Zni� Zyrx Zaachila "�uhu Tocuisi" Oaxaca
+	}
+}
+
+aridoamerican = { #New group added in 1.28... I'm.... not really a huge fan, but I'll leave it until I can handle it myself.
+	graphical_culture = southamericagfx
+	tecos = {
+		primary = CLM
+		male_names = {
+			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin
+			Chimalli Chimalpilli Chimalpopoca Cipac Coanacoch Coatl Cozahtli Cuauhtemoc Cuauhtl Cuetlachtli
+			Cuetzpalli Cuixtli Cuitlahuac
+			Huitzilin Huitzilihuitl Huitzitl Huitztecol Iquehuacatzin Itzcoatl Itzli Itzcuintli Ixtlilxochitl
+			Mahchimaleh Matlal Mazatl Matlalihuitl Matlatzincatzin Maxtla Miztli Moctezuma Moquihuix Necuametl
+			Nezahualcoyotl Nezahualpilli Nochehuatl
+		}
+		female_names = {
+			Achcauhtli Acxocueitl Ahuiliztli Amoxtli Atl Atotoztli Ayauhcihuatl Azcalxochitzin Centehua
+			Cihuaton Citlalmina Chalchiuitl Chicahua Chichimecacihuatzin Chipahua Chicomecoatl Chimalma
+			Cihuaton Citlali Citlalli Citlalmina Coaxoch Coszcatl
+			Cozamalotl Cuicatl Eleuia Eloxochitl Etalpalli Eztli Huehue-Zaca Itotia Iuitl Ixcatzin Izel
+			Malinalxochitl Manauia Matlalatzin Mecatl Meztli Miahuaxiuitl Miyaoaxochitl Mizquixahual Momoztli
+
+		}
+	}
+	# Brian; totonac duplicate removed
+	tepic = {
+		primary = XAL
+		male_names = {
+			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin
+			Chimalli Chimalpilli Chimalpopoca Cipac Coanacoch Coatl Cozahtli Cuauhtemoc Cuauhtl Cuetlachtli
+			Cuetzpalli Cuixtli Cuitlahuac
+			Huitzilin Huitzilihuitl Huitzitl Huitztecol Iquehuacatzin Itzcoatl Itzli Itzcuintli Ixtlilxochitl
+			Mahchimaleh Matlal Mazatl Matlalihuitl Matlatzincatzin Maxtla Miztli Moctezuma Moquihuix Necuametl
+			Nezahualcoyotl Nezahualpilli Nochehuatl
+		}
+		female_names = {
+			Achcauhtli Acxocueitl Ahuiliztli Amoxtli Atl Atotoztli Ayauhcihuatl Azcalxochitzin Centehua
+			Cihuaton Citlalmina Chalchiuitl Chicahua Chichimecacihuatzin Chipahua Chicomecoatl Chimalma
+			Cihuaton Citlali Citlalli Citlalmina Coaxoch Coszcatl
+			Cozamalotl Cuicatl Eleuia Eloxochitl Etalpalli Eztli Huehue-Zaca Itotia Iuitl Ixcatzin Izel
+			Malinalxochitl Manauia Matlalatzin Mecatl Meztli Miahuaxiuitl Miyaoaxochitl Mizquixahual Momoztli
+
+		}
+	}
+	yaqui = {
+		primary = YAQ
+		male_names = {
+			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha
+			Cuinierangari Bibejw Binech Bzojj Chs�axcejj Ch�alaxa Chonna Bicu Coqui Djoraxa Gw�ib�on� Gyazob
+			Ipalnemoani Ji Jzi� Jituh Jzi� L�xda�xo Lyebe Mbalaz Na Yel Naquichinisa Naxi�anguiiu Ngolbex An
+			Rire Nisa Ro Pijje Jzi� Tobi Rusiguunda V�eni Vezi� Zne Yel Zni� Zyrx Gyejj Nguiiu
+		}
+		female_names = {
+			Zyanya Nayeli Teiuc Teicuih Teyacapan Tepin
+		}
+	}
+	dynasty_names = {
+		# CKII
+		"Acatl" "Atl" "Calli" "Cipactli" "Coatl" "Coyotl" "Cozcaquauhtli" "Cuetzpalin" "Ehecatl" "Icpalli"
+		"Itz" "Itzcuintli" "Macehualli" "Malinalli" "Mazatl" "Miquiztli" "Nezahual" "Nochtli" "Ocelotl"
+		"Ollin" "Otli" "Ozomatli" "Pipiltin" "Pochtecatl" "Quauhtli" "Quauitl" "Quiautl" "Tecpatl"
+		"Tecuhtli" "Tepetl" "Tetl" "Tlantli" "Tochtli" "Toltecatl" "Xochitl"
+	}
+}
+
+maya = {
+	graphical_culture = southamericagfx
+
+	yucatec = {
+		primary = XIU
+		male_names = {
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
+			Ahmik Anoki Chogan Dasan Elki Honon Jacy Len
+		}
+		female_names = {
+			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme Yaxkin
+		}
+	}
+	totonac = {
+		primary = TOT
+		male_names = {
+			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc
+			Motelchiuh Tehuetstiquitzin Tlacotzin Xochiquentzin Acamapichtli Chimalpopoca Tenoch Acacitli
+			Axacaya Cacamatzin Eyahue Huicton Ilhuicamina Itzquautzin Mazatl Nopaltzin Olintecke Opochtli
+			Quetzalmantzin Quimichetl Texcoyo Timas Tlacaelel Tlotzin Xiuhcozcatl Xocoyol Yaztachimal Zolton
+			Ahcambal Huanitzin Panitzin
+		}
+		female_names = {
+			Centehua Moyolehuani Yaotl Xipil Xitlali Xiuhcoatl Xochicotzin Xochiyotl Xoco Yayauhqui Yolihuani Yoloxochitl
+			Yolyamanitzin
+		}
+	}
+	mixe = {
+		primary = XXX
+		male_names = {
+			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc
+			Motelchiuh Tehuetstiquitzin Tlacotzin Xochiquentzin Acamapichtli Chimalpopoca Tenoch Acacitli
+			Axacaya Cacamatzin Eyahue Huicton Ilhuicamina Itzquautzin Mazatl Nopaltzin Olintecke Opochtli
+			Quetzalmantzin Quimichetl Texcoyo Timas Tlacaelel Tlotzin Xiuhcozcatl Xocoyol Yaztachimal Zolton
+			Ahcambal Huanitzin Panitzin
+		}
+		female_names = {
+			Centehua Moyolehuani Yaotl Xipil Xitlali Xiuhcoatl Xochicotzin Xochiyotl Xoco Yayauhqui Yolihuani Yoloxochitl
+			Yolyamanitzin
+		}
+	}
+	putun = {
+		primary = ITZ
+		male_names = {
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
+			Ahmik Anoki Chogan Dasan Elki Honon Jacy Len
+		}
+		female_names = {
+			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
+		}
+	}
+	mayan = {
+		primary = MAY
+		dynasty_names = {
+			Ahkinxoc Ahmetakkukul Ahmok Ahnakukpech Ahpop-Achi Arana Bakan Balam Bor Canek Chaob Chiam Hnuyg Kayom K�in Kukumatz
+			Mochcouoh Nachancan Nohochacyum Pacal "Quitze Balam" Tecunuman Vataki Yumcaax Zotz
+		}
+		male_names = {
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
+			Ahmik Anoki Chogan Dasan Elki Honon Jacy Len
+		}
+		female_names = {
+			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
+		}
+	}
+	highland_mayan = {
+		primary = KIC
+		male_names = {
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
+		}
+		female_names = {
+			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
+		}
+	}
+	lacandon = {
+		primary = LAC
+		male_names = {
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
+		}
+		female_names = {
+			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
+		}
+	}
+	wastek = {
+		primary = HST
+		male_names = {
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
+		}
+		female_names = {
+			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
+		}
+	}
+	chontales = {
+		primary = YOK
+		male_names = {
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
+		}
+		female_names = {
+			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
+		}
+	}
+	dynasty_names = {
+		Ak� Bonampak Becan Bolonchen Chaac Camazotz Cancu�n Caracol Cerros Chacchoben Chacmultun Chinikiha Chinkultic
+		Chunchucmil Civiltuk Calakmul Copan Coba Dzibilchaltun Dzibilnocac Dzilam Edzn� Ekab Gumarcaj Gucumatz Hocchob
+		Hormiguero Hunahpu Huracan Ixbalanque Ixchel Ixtab Ichmac Ichmul Itzan Ixil Iximche Ixlu Izamal Labn� Louisville
+		Lubaantun Lubaantun Jaina Jolja Kaminaljuyu Kabah Kiuic "Kantunil Kin" Lamanai Mayapan Machaquila Mani Muluchtzekel
+		Muyil Nakum Nakbe Naranjo Nebaj Okop Oxcutzcab Oxkintok Palenque Pomon� Pusilha Quirigua Sayil Seibal Sisila Tonina
+		Tikal Tulum Tancah Tazumal Tecoh Topoxt� Uxmal Uaxactun Ucanal Uci Utatlan Wak� Xcalumkin Xcaret Xcorralche Xcucsuc
+		Xculoc Xlapak Xpuhil Xultun Xunantunich Yaklmai Yaxchilan Yaxha Yo'okop Zipacna Zaculeu
+	}
 }

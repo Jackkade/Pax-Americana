@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = mixtec
+base_tax = 2
+base_production = 2
+base_manpower = 2
+owner = CYL
+controller = CYL
+add_core = CYL
+discovered_by = mesoamerican
+trade_goods = wool

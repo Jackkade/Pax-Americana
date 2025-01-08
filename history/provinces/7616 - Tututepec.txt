@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = mixtec
+base_tax = 2
+base_production = 3
+base_manpower = 2
+owner = MIX
+controller = MIX
+add_core = MIX
+discovered_by = mesoamerican
+trade_goods = spices

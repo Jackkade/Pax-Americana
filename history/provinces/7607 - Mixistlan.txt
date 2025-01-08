@@ -1,0 +1,10 @@
+religion = mesoamerican_religion
+culture = chontales
+base_tax = 3
+base_production = 3
+base_manpower = 3
+owner = YOK
+controller = YOK
+add_core = YOK
+discovered_by = mesoamerican
+trade_goods = spices

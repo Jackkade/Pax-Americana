@@ -1,0 +1,11 @@
+religion = nahuatl
+culture = totonac
+base_tax = 3
+base_production = 2
+base_manpower = 3
+owner = HCC
+controller = HCC
+add_core = HCC
+discovered_by = mesoamerican
+trade_goods = spices
+is_city = yes

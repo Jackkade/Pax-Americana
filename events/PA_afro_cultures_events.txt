@@ -8,9 +8,12 @@ province_event = { #Anglo-African-American
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = british
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = british
@@ -24,6 +27,7 @@ province_event = { #Anglo-African-American
         OR = {
             trade_goods = cotton
             trade_goods = tobacco
+            trade_goods = sugar
         }
         is_city = yes
     }
@@ -50,30 +54,44 @@ province_event = { #Anglo-African-American
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -113,7 +131,6 @@ province_event = { #Anglo-African-American
 	}
 }
 
-
 province_event = { #Anglo-African-Caribbean
 	id = pax_americana_afro_cultures.2
 	title = anglo_african_american_spread.title
@@ -122,9 +139,12 @@ province_event = { #Anglo-African-Caribbean
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = british
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = british
@@ -141,15 +161,13 @@ province_event = { #Anglo-African-Caribbean
             trade_goods = coffee
             trade_goods = sugar
             trade_goods = cocoa
-            trade_goods = tropical_wood
-            trade_goods = bt_trade_good_fruit
         }
         is_city = yes
     }
 
 	mean_time_to_happen = {
 		#Template Settled MTTH
-		years = 15 # Made Faster In caribbean
+		years = 35 # Made Faster In caribbean
 
 		#MTTH settings
 
@@ -169,30 +187,44 @@ province_event = { #Anglo-African-Caribbean
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -240,9 +272,12 @@ province_event = { #Franco-Afro-Antillean
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = french
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = french
@@ -259,15 +294,13 @@ province_event = { #Franco-Afro-Antillean
             trade_goods = coffee
             trade_goods = sugar
             trade_goods = cocoa
-            trade_goods = tropical_wood
-            trade_goods = bt_trade_good_fruit
         }
         is_city = yes
     }
 
 	mean_time_to_happen = {
 		#Template Settled MTTH
-		years = 15 # Made Faster In caribbean
+		years = 35 # Made Faster In caribbean
 
 		#MTTH settings
 
@@ -287,30 +320,44 @@ province_event = { #Franco-Afro-Antillean
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -358,9 +405,12 @@ province_event = { #Ibero-Afro-Caribeno
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = iberian
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = iberian
@@ -377,15 +427,13 @@ province_event = { #Ibero-Afro-Caribeno
             trade_goods = coffee
             trade_goods = sugar
             trade_goods = cocoa
-            trade_goods = tropical_wood
-            trade_goods = bt_trade_good_fruit
         }
         is_city = yes
     }
 
 	mean_time_to_happen = {
 		#Template Settled MTTH
-		years = 15 # Made Faster In caribbean
+		years = 35 # Made Faster In caribbean
 
 		#MTTH settings
 
@@ -405,30 +453,44 @@ province_event = { #Ibero-Afro-Caribeno
 		}
         modifier = {
             factor = 0.9
-            estate_influence = {
-                estate = estate_nobles
-                influence = 40
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 40
+                }
             }
         }
         modifier = {
             factor = 0.8
-            estate_influence = {
-                estate = estate_nobles
-                influence = 50
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 50
+                }
             }
         }
         modifier = {
             factor = 0.7
-            estate_influence = {
-                estate = estate_nobles
-                influence = 65
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 65
+                }
             }
         }
         modifier = {
             factor = 0.6
-            estate_influence = {
-                estate = estate_nobles
-                influence = 80
+            owner = {
+                estate_influence = {
+                    estate = estate_nobles
+                    influence = 80
+                }
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
             }
         }
 	}
@@ -468,7 +530,6 @@ province_event = { #Ibero-Afro-Caribeno
 	}
 }
 
-
 province_event = { #Dutch-Afro-Caribisch
 	id = pax_americana_afro_cultures.5
 	title = anglo_african_american_spread.title
@@ -477,9 +538,12 @@ province_event = { #Dutch-Afro-Caribisch
 	goto = root
 	
 	trigger = {
-		OWNER = {
+		owner = {
             culture_group = germanic
-            has_estate = estate_nobles
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
             NOT = { has_country_modifier = the_abolish_slavery_act }
         }
 		culture_group = germanic
@@ -496,15 +560,13 @@ province_event = { #Dutch-Afro-Caribisch
             trade_goods = coffee
             trade_goods = sugar
             trade_goods = cocoa
-            trade_goods = tropical_wood
-            trade_goods = bt_trade_good_fruit
         }
         is_city = yes
     }
 
 	mean_time_to_happen = {
 		#Template Settled MTTH
-		years = 15 # Made Faster In caribbean
+		years = 35 # Made Faster In caribbean
 
 		#MTTH settings
 
@@ -550,6 +612,12 @@ province_event = { #Dutch-Afro-Caribisch
                 influence = 80
             }
         }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
+            }
+        }
 	}
 
     immediate = {
@@ -587,6 +655,130 @@ province_event = { #Dutch-Afro-Caribisch
 	}
 }
 
+province_event = { #Nordic-Afro-Karibish
+	id = pax_americana_afro_cultures.6
+	title = anglo_african_american_spread.title
+	desc = anglo_african_american_spread.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	goto = root
+	
+	trigger = {
+		owner = {
+            culture_group = scandinavian
+            OR = {
+                has_estate = estate_nobles
+                is_colonial_nation = yes 
+            }
+            NOT = { has_country_modifier = the_abolish_slavery_act }
+        }
+		culture_group = scandinavian
+        NOT = {
+            has_province_modifier = pa_slave_plantation 
+        }
+        NOT = {
+            has_province_flag = pa_nordic_afro_karibish_slave_plantation
+        }
+		region = carribeans_region
+        OR = {
+            trade_goods = cotton
+            trade_goods = tobacco
+            trade_goods = coffee
+            trade_goods = sugar
+            trade_goods = cocoa
+        }
+        is_city = yes
+    }
+
+	mean_time_to_happen = {
+		#Template Settled MTTH
+		years = 35 # Made Faster In caribbean
+
+		#MTTH settings
+
+
+		#Dev Factors, penalties begin at 30 Dev
+		modifier = {
+			factor = 1.5
+			development = 30
+		}
+		modifier = {
+			factor = 1.5
+			development = 40
+		}
+		modifier = {
+			factor = 1.5
+			development = 50
+		}
+        modifier = {
+            factor = 0.9
+            estate_influence = {
+                estate = estate_nobles
+                influence = 40
+            }
+        }
+        modifier = {
+            factor = 0.8
+            estate_influence = {
+                estate = estate_nobles
+                influence = 50
+            }
+        }
+        modifier = {
+            factor = 0.7
+            estate_influence = {
+                estate = estate_nobles
+                influence = 65
+            }
+        }
+        modifier = {
+            factor = 0.6
+            estate_influence = {
+                estate = estate_nobles
+                influence = 80
+            }
+        }
+        modifier = {
+            factor = 0.3 #Around equal to nobles at 80 influence
+            owner = {
+                is_colonial_nation = yes 
+            }
+        }
+	}
+
+    immediate = {
+        set_province_flag = pa_nordic_afro_karibish_slave_plantation 
+    }
+
+	option = { # Allow them to continue
+		name = anglo_african_caribbean_spread.a
+
+		change_culture = afro_karibisk
+        add_base_production = 3
+        add_permanent_province_modifier  = { 
+            name = pa_slave_plantation
+            duration = -1  
+        }
+        add_estate_influence_modifier = {
+            estate = estate_nobles
+            desc = PA_SLAVERY_EXPANDED
+            influence = 10
+            duration = 1825
+        }
+        ai_chance = { factor = 100 }
+	}
+    
+	option = { # Prevent the spread of slavery
+		name = anglo_african_american_spread.b
+        add_base_tax = -1
+        add_base_production = -1
+        add_base_manpower = -1  
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -5
+        }
+        ai_chance = { factor = 0 }
+	}
+}
 
 #Attempts to preserve pre-colonial cultures
 province_event = { #Colony Finished

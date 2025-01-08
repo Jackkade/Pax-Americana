@@ -1,0 +1,10 @@
+religion = mesoamerican_religion
+culture = yucatec
+base_tax = 3
+base_production = 3
+base_manpower = 3
+owner = ECA
+controller = ECA
+add_core = ECA
+discovered_by = mesoamerican
+trade_goods = cocoa

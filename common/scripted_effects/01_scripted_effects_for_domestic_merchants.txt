@@ -1,0 +1,21 @@
+#node = tradenode to search
+domestic_merchant_effect = {
+	set_global_flag = $node$_deactivated
+	if = {
+		limit = {
+			has_saved_global_event_target = strongest_in_$node$
+		}
+		event_target:strongest_in_$node$ = {
+			remove_country_modifier = merchant_for_$node$
+			clear_global_event_target = strongest_in_$node$
+		}
+	}
+	most_province_trade_power = {
+		save_global_event_target_as = strongest_in_$node$
+		add_country_modifier = {
+			name = merchant_for_$node$
+			duration = -1
+            hidden = yes
+		}
+	}
+}

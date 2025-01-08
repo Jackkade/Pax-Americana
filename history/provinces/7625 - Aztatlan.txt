@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = corachol
+base_tax = 2
+base_production = 3
+base_manpower = 2
+owner = XAL
+controller = XAL
+add_core = XAL
+discovered_by = mesoamerican
+trade_goods = fish

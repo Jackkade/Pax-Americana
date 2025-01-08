@@ -1,0 +1,11 @@
+religion = nahuatl
+culture = tlapanec
+base_tax = 2
+base_production = 2
+base_manpower = 2
+owner = CIH
+controller = CIH
+add_core = CIH
+discovered_by = mesoamerican
+trade_goods = sugar
+is_city = yes

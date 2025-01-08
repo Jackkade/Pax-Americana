@@ -1122,37 +1122,39 @@ economic_ideas = {
 
 exploration_ideas = {
 	category = DIP
-	important = yes
+	#important = yes
 
 	bonus = {
-		cb_on_primitives = yes
+		center_of_trade_upgrade_cost = -0.15 
+		trade_company_investment_cost = -0.1
 	}
-
-	colonial_ventures = { # BT; 2.
+	
+	quest_for_the_new_world	= {
+		may_explore = yes
+		trade_range_modifier = 0.33
+	}
+	colonial_ventures = { 
 		colonists = 1
 		effect = { remove_temporary_colonist = yes } #BT Note: Not sure if we need to change this or not given how we modify this.
-	}
-	quest_for_the_new_world	= { # BT; 1.
-		may_explore = yes
-		naval_attrition = -0.1
+		cb_on_overseas = yes
 	}
 	overseas_exploration = {
 		range = 0.2		#Nerfed, colonial range is already abundant currently, and it usually isn't super useful anyways
+		naval_attrition = -0.1
 	}
 	land_of_opportunity = {
-		colonist_placement_chance = 0.05
 		min_autonomy_in_territories = -0.1
-		#global_colonial_growth = 20 # BT; 10
+		placed_merchant_power_modifier = 0.15
 	}
 	factories = {
-		trade_company_governing_cost = -0.1
-		trade_company_investment_cost = -0.1
+		trade_company_governing_cost = -0.15
 	}
 	free_colonies = {
-		colonists = 1 # BT; colonist_placement_chance = 0.1
+		merchants = 1
+		envoy_travel_time = -0.2 
 	}
 	global_empire = {
-		naval_forcelimit_modifier = 0.25
+		vassal_naval_forcelimit_bonus = 0.25
 		treasure_fleet_income = 0.25
 	}
 
@@ -1282,26 +1284,24 @@ exploration_ideas = {
 			adm_tech = 5
 		}	#Bonus for historical countries at the first idea (Approximately year 1466)
 		modifier = {
-			factor = 20
-			tag = RUS			#Historically 1580 (Russian exploration and conquest of Siberia under Yermak Timofeyevich. Note Russian America began 1799.)
-			tag = NOV			#To Moscovy in 1478, but seriously engaged in the exploration and expansion into the Siberia east from the very beginning. Note it will also be taking expansion ideas as 1st idea, most of the time.
-			tag = MOS			#In case Russia does not form in a timely manner. Note a pan russian bonus is found in expansion, but not here in exploration.
-			adm_tech = 14
-		}	#Bonus for historical countries at the third idea (Approximately year 1531)
-		modifier = {
-			factor = 20
+			factor = 35
 			OR = {
 				tag = ENG			#Historically 1607
 				tag = GBR			#Historically 1607 (as England, also Scotland)
 				tag = FRA			#Historically 1604
 				tag = NED			#Historically 1602
-				tag = HOL			#Historically 1602	(as Netherlands)
-				tag = SCO			#Historically 1622
 				tag = TNA			#BT tag who should colonise if it manages to form (precedent of Irish discovery and colonisation or the North Isles, Iceland, and according to some scholars likely Northern Canada, Greenland, and Jan Mayen)
 				tag = CEL			#BtP tag who should colonise if it manages to form (precedent of Irish discovery and colonisation or the North Isles, Iceland, and according to some scholars likely Northern Canada, Greenland, and Jan Mayen)
 			}
 			adm_tech = 14
-		}	#Bonus for historical countries at the fourth idea (Approximately year 1583)
+		}	#Bonus for historical countries at the fourth idea (Approximately year 1583)modifier = {
+			factor = 15
+			OR = {
+				tag = HOL			#Historically 1602	(as Netherlands)
+				tag = SCO			#Historically 1622
+			}
+			adm_tech = 14
+		}	#Smaller bonus for nations that shouldn't be colonizing as much
 		modifier = {
 			factor = 20
 			OR = {
@@ -1318,18 +1318,13 @@ exploration_ideas = {
 				tag = NOR			#Historically 1754 (as Denmark)
 				AND = {
 					tag = HAB			#Historically 1775 (though very brief and largely unsuccessful, so adding further requirements)
-					OR = {
-						any_core_province = {
-							region = low_countries_region
-							has_port = yes
-						}
-						any_core_province = {
-							area = carinthia_area
-							has_port = yes
-						}
+					any_core_province = {
+						region = low_countries_region
+						has_port = yes
 					}	#Must own either a core port in the Low Countries, or Carinthia
 				}
 			}
+			is_subject = no
 			adm_tech = 26
 		}	#Bonus for historical countries at the seventh idea (Approximately year 1745)
 		modifier = {
@@ -1428,12 +1423,17 @@ exploration_ideas = {
 		}	#For non colonial countries with 5 or more provinces with a direct land connection to the capital and uncolonised neighbours. In 1444, this is just Uzbek, but will likely include Russia and any American/African/Siberian tags who manage to conquer a good chunck of their neighbours
 		modifier = {
 			factor = 0.2
-			NOT = { total_development = 200 }
+			NOT = { total_development = 400 }
 		}	#Malus against smaller countries to discourage a few tags like Irish minors, Brittany, Grenada, Iceland, or other unexpected nations. Not enough to prevent it if other factors encourage it.
 		modifier = {
 			factor = 0.1
 			NOT = { is_year = 1490 }
 		}	#Extremely unlikely before 1490, requiring massive bonuses (like Iberia has) to overcome the malus
+		modifier = {
+			factor = 0.1
+			NOT = { government_rank = 2 }
+		}	#Nations who have not secured their borders and grown to a respectable size should be disincentivized from going colonial
+		
 		modifier = {
 			factor = 0.2
 			capital_scope = {
@@ -1445,8 +1445,7 @@ exploration_ideas = {
 					region = ireland_region # Brian; changed from _area
 				}
 			}
-			NOT = { adm_tech = 14 }
-		}	#Very unlikely if not western Europe before the fourth idea (this is when Russia should choose exploration, in the late 1500s or early 1600s). Also note eastern and northern Europe came later, and were never as big, but they did try their hand at colonialism, too, so the malus should be mostly removed after this
+		}	#Very unlikely if not western Europe
 		modifier = {
 			factor = 0.2
 			capital_scope = { NOT = { continent = europe } }
@@ -1868,12 +1867,13 @@ quantity_ideas = {
 }
 
 
-expansion_ideas = {
+expansion_ideas = {	#Expansion Reworked to include general expansion
 	category = ADM
-	important = yes
+	#important = yes
 
 	bonus = {
-		colonists = 1
+		colony_cost_modifier = -0.20	#Technically does nothing, but the colonies check this when determining their cost
+		harsh_treatment_cost = -0.15
 	}
 
 	additional_colonists = {
@@ -1882,21 +1882,22 @@ expansion_ideas = {
 	}
 	additional_merchants = {
 		merchants = 1
+		global_tariffs = 0.10
 	}
 	faster_colonists = {
-		colony_cost_modifier = -0.15
+		core_creation = -0.1
+ 		envoy_travel_time = -0.20
 	}
 	vice_roys  = {
-		global_tariffs = 0.10
- 		envoy_travel_time = -0.20
+		governing_capacity = 150
+		vassal_forcelimit_bonus = 0.2 
  	}
 	additional_diplomats = {
-		diplomatic_upkeep = 1 # BT; diplomats = 1
+		ae_impact = -0.1
 		reduced_liberty_desire_on_other_continent = 5
 	}
 	general_colonization_law  = {
-		colonist_placement_chance = 0.05
-		effect = { remove_temporary_colonist = yes }
+		culture_conversion_time = -0.15
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.2

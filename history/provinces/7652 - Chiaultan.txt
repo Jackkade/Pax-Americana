@@ -1,0 +1,10 @@
+religion = nahuatl
+culture = matlatzinca
+base_tax = 5
+base_production = 4
+base_manpower = 2
+owner = COI
+controller = COI
+add_core = COI
+discovered_by = mesoamerican
+trade_goods = gold
