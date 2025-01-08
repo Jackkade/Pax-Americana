@@ -1,6 +1,40 @@
 #node = tradenode to appear in
 domestic_merchant_trigger = {
-	most_province_trade_power = {
-		has_country_modifier = merchant_for_$node$
+	OR = {
+		if = {
+			limit = {
+				has_saved_global_event_target = strongest_in_$node$
+			}
+			event_target:strongest_in_$node$ = {
+				is_at_war = yes
+			}
+		}
+		most_province_trade_power = {
+			OR = {
+				is_at_war = yes
+				has_country_modifier = merchant_for_$node$
+			}
+		}
+		AND = {
+			had_global_flag = {
+				flag = $node$_deactivated
+				days = 350
+			}
+			NOT = { 
+				had_global_flag = {
+					flag = $node$_deactivated
+					days = 380
+				}
+			}
+		}
+		AND = {
+			AND = {
+				NOT = { is_month = 1 }
+				is_month = 0
+			}
+			NOT = {
+				has_saved_global_event_target = strongest_in_$node$
+			}
+		}
 	}
 }
