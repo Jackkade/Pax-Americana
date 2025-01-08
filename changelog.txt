@@ -31,3 +31,31 @@ Pax Americana update 1.2 - A Place in the Sun
 - Colonial nations are refunded the cost of the colonies they inherit
 
 # Many Bugfixes
+
+Pax Americana Update 1.3 - Mesoamerica
+
+# Major Map rework
+- Slightly Updated Map of Northern Mexico
+- 7 New provinces 
+- Completely Reworked map of Central Mexico
+- 71 New Provinces
+- 17 New Tags
+- Completely Reworked map of Yucatan & Mayan Highlands
+- 52 New Provinces 
+- 22 New Tags
+- 3 New Trade Nodes, Jalisco, Yucatan, and Florida Straights
+- New Trade Good, Obsidian.
+- Obsidian is a powerful good to control at the start, but loses value once guns are introduced to mesoamerica.
+
+# Colony Changes
+- Colonies will now instantly finish instead of becoming a colony.
+- The Colonized province will still receive unfinished colony modifier.
+- Exploration and Expansion Ideas have been reworked to be more generally useful & no longer colony-focused.
+- Expansion is based around general expansion
+- Exploration is now based around gaining and exploiting trade companies.
+- Colony Cost modifier now reduces upkeep for colonies.
+
+# Integrated Mod: Domestic Colonies.
+- Having the Most provincial trade power in a trade node will now give a merchant
+- Trade companies no longer give merchants
+- Reduced base merchants to 1  
