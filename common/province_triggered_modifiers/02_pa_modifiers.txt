@@ -374,5 +374,6 @@ pa_new_colony = {
 		remove_province_modifier = pa_new_colony_increased_cost_3
 		remove_province_modifier = pa_new_colony_increased_cost_4
 		remove_province_modifier = pa_new_colony_increased_cost_native
+		remove_province_modifier = pa_new_colony_increased_cost_burgers_privilege
 	}
 }

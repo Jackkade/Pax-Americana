@@ -18,7 +18,8 @@
  pa_new_colony_increased_cost_2:0 "Increased Colony Cost - §R25 Colonies§! "
  pa_new_colony_increased_cost_3:0 "Increased Colony Cost - §R30 Colonies§! "
  pa_new_colony_increased_cost_4:0 "Increased Colony Cost - §R35 Colonies§! "
- pa_new_colony_increased_cost_native:0 "Increase Colony Cost - §RPrimitive Nation§! "
+ pa_new_colony_increased_cost_native:0 "Increased Colony Cost - §RPrimitive Nation§! "
+ pa_new_colony_increased_cost_burgers_privilege:0 "Increased Colony Cost - §RNew World Charter§!"
  pa_new_colonial_nation_colony_overlord_upkeep:0 ""
  
  #US

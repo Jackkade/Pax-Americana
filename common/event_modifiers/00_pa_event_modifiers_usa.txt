@@ -91,10 +91,14 @@ pa_new_colony_increased_cost_4 = { #+200%
 pa_new_colony_increased_cost_native = { #+50%
 	global_tax_income = -12
 }
+# Burghers Privilege increased cost
+pa_new_colony_increased_cost_burgers_privilege = { #+50%
+	global_tax_income = -8
+}
 
 #Overlord cost for colonial nation colonies
 pa_new_colonial_nation_colony_overlord_upkeep = {
-	global_tax_income = -24
+	global_tax_income = -36
 }
 
 ## Missions
