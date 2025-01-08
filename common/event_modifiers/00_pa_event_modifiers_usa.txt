@@ -64,14 +64,14 @@ pa_new_colonial_nation_colony = {
 }
 
 # Reduced Cost Modifiers
-pa_new_colony_reduced_cost_1 = { #-25%
-	global_tax_income = 6
+pa_new_colony_reduced_cost_1 = { #-20%
+	global_tax_income = 4.8
 }
-pa_new_colony_reduced_cost_2 = { #-25%
-	global_tax_income = 6
+pa_new_colony_reduced_cost_2 = { #-20%
+	global_tax_income = 4.8
 }
-pa_new_colony_reduced_cost_3 = { #-50%
-	global_tax_income = 12
+pa_new_colony_reduced_cost_3 = { #-20%
+	global_tax_income = 4.8
 }
 
 # Increased Cost Modifiers

@@ -220,7 +220,7 @@ colonial_expansions = {
 
 	#global_colonial_growth = 15
 	#native_uprising_chance = -0.5
-	colony_cost_modifier = -0.5
+	colony_cost_modifier = -0.20
 
 	effect = {}
 	removed_effect = {}

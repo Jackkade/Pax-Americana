@@ -628,18 +628,29 @@ on_colony_finished = { #ROOT - Province
             }
         }
         add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_3
+            name = pa_new_colony_reduced_cost_1
             duration = 9125		#Currently 25 Years, may need to be lower
         }
     }
-    else_if = {
+    if = {
         limit = {
             owner = {
                 full_idea_group = expansion_ideas
             }
         }
         add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_1
+            name = pa_new_colony_reduced_cost_2
+            duration = 9125		#Currently 25 Years, may need to be lower
+        }
+    }
+    if = {
+        limit = {
+            owner = {
+                has_estate_privilege = estate_nobles_expedition_rights
+            }
+        }
+        add_permanent_province_modifier = {
+            name = pa_new_colony_reduced_cost_3
             duration = 9125		#Currently 25 Years, may need to be lower
         }
     }
