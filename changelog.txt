@@ -46,6 +46,7 @@ Pax Americana Update 1.3 - Mesoamerica
 - 3 New Trade Nodes, Jalisco, Yucatan, and Florida Straights
 - New Trade Good, Obsidian.
 - Obsidian is a powerful good to control at the start, but loses value once guns are introduced to mesoamerica.
+- New Colonial Region - Colonial Central America
 
 # Colony Changes
 - Colonies will now instantly finish instead of becoming a colony.
@@ -61,4 +62,22 @@ Pax Americana Update 1.3 - Mesoamerica
 # Integrated Mod: Domestic Colonies.
 - Having the Most provincial trade power in a trade node will now give a merchant
 - Trade companies no longer give merchants
-- Reduced base merchants to 1  
+- Reduced base merchants to 1
+
+# New Colonial Cultures
+- New 'Mestizo' Cultures.
+  these represent mixed race cultures in Mexico. These appear in a province 
+  by having the current culture accepted,
+  it be your (christian) religion,
+  and having no sepratism.
+- Mestizo cultures exist for:
+  - English:      Aztech
+  - Castillian:   Mexican
+  - Portuguese:   Mestico
+  - French:       Mestique
+  - Dutch:        Meksikaans
+  - Scandanavian: Thulenlandic
+- New Colonial Cultures:
+  - 'Norteno' North American Castillian
+  - 'Centrado' Central American Castillian
+  - 'Belizean' Central American British
