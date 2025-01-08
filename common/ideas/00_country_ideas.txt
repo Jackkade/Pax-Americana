@@ -199,7 +199,7 @@ GBR_ideas = {
 		governing_capacity_modifier = 0.1
 	}
 	city_upon_a_hill = {
-		global_colonial_growth = 20
+		colonists = 1
 		global_tariffs = 0.15
 	}
 	the_british_parliament = {
@@ -391,7 +391,7 @@ DAN_ideas = {
 		naval_morale = 0.15
 	}
 	dan_colonial_ventures = {
-		global_colonial_growth = 15
+		global_tariffs = 0.15
 		build_cost = -0.1
 	}
 	dan_danish_absolutism_idea = {
@@ -794,7 +794,7 @@ CAS_ideas = {
 		naval_forcelimit_modifier = 0.25
 	}
 	bonus = {
-		global_colonial_growth = 25
+		leader_land_fire = 1
 	}
 	trigger = {
 		tag = CAS
@@ -1707,7 +1707,7 @@ POR_ideas = {
 		global_trade_power = 0.1
 	}
 	land_before_faith = {
-		global_colonial_growth = 15
+		trade_steering = 0.30
 	}
 	the_bandeirantes = {
 		trade_efficiency = 0.15
@@ -2507,7 +2507,7 @@ JAP_ideas = {
 		prestige = 1
 	}
 	jap_kaitakudan = {
-		global_colonial_growth = 20
+		development_cost_in_primary_culture = 0.1
 	}
 	jap_great_power_diplomacy = {
 		ae_impact = -0.15
@@ -6783,7 +6783,7 @@ LVA_ideas = {
 	}
 	lva_livonian_colonization = {
 		range = 0.25
-		global_colonial_growth = 10
+		global_tariffs = 0.33
 	}
 	lva_naval_professionalism = {
 		naval_morale = 0.2
@@ -9684,7 +9684,7 @@ MNS_ideas = {
 		army_tradition_from_battle = 0.5
 	}
 	mns_overseas_ambition = {
-		global_colonial_growth = 15
+		colonists = 1
 	}
 }
 
@@ -11456,7 +11456,7 @@ AKT_ideas = {
 		transport_cost = -0.2
 	}
 	bonus = {
-		global_colonial_growth = 15
+		colonists = 1
 	}
 	trigger = {
 		tag = AKT
@@ -14079,7 +14079,7 @@ MCM_ideas = {
 		discipline = 0.05
 	}
 	mcm_fairer_shores = {
-		global_colonial_growth = 15
+		colonists = 1
 	}
 	mcm_pirate_haven = {
 		navy_tradition = 1
@@ -15654,7 +15654,7 @@ TEX_ideas = {
 AUS_ideas = {
 	start = {	
 		global_ship_recruit_speed = -0.2
-		global_colonial_growth = 25
+		development_cost_in_primary_culture = 0.15
 	}
 	bonus = {
 		development_cost = -0.15
@@ -15722,7 +15722,7 @@ NZL_ideas = {
 		shock_damage = 0.1
 	}
 	NZL_company = {
-		global_colonial_growth = 25
+		global_foreign_trade_power = 0.2
 	}
 	NZL_rejecting_australia = {
 		land_morale = 0.15
@@ -15748,7 +15748,7 @@ ALA_ideas = {
 		development_cost = -0.15
 	}
 	ALA_hard_push_east = {
-		global_colonial_growth = 25
+		colonists = 1
 	}
 	ALA_secretary_icebox = {
 		core_creation = -0.2
@@ -17081,7 +17081,7 @@ ATJ_ideas = {
 		interest = -1
 	}
 	settle_the_islands = { # same as malay ideas
-		global_colonial_growth = 20
+		colonists = 1
 	}
 }
 
@@ -17098,7 +17098,7 @@ BLI_ideas = {
 	}
 	free = yes
 	bli_island_settlers = {
-		global_colonial_growth = 20
+		colonists = 1
 	}
 	javanese_culture = {
 		technology_cost = -0.05
@@ -17181,7 +17181,7 @@ BEI_ideas = {
 		reduced_liberty_desire = 10
 	}
 	settle_the_islands = { # same as malay ideas
-		global_colonial_growth = 20
+		colonists = 1
 	}
 	bei_naval_prowess = {
 		naval_morale = 0.15
@@ -17246,7 +17246,7 @@ MSA_ideas = {
 	}
 	free = yes
 	settle_the_islands = { # same as malay ideas
-		global_colonial_growth = 20
+		colonists = 1
 	}
 	msa_advanced_galley_warfare = {
 		galley_power = 0.25
@@ -17580,7 +17580,6 @@ tongan_ideas = { #Credit to James Beaumont
 	}
 	tonga_oceanic_empire = {
 		may_explore = yes
-		global_colonial_growth = 15
 	}
 }
 
