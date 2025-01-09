@@ -436,7 +436,7 @@ on_colony_established = {
 on_abandon_colony = {
     reset_to_pre_colonial_culture_religion = yes
     province_event = { 
-        id = colony_reset_culture_vars.100
+        id = pax_americana_afro_cultures.100
         days = 1
     }
     clr_province_flag = new_colony_established
