@@ -33,10 +33,6 @@ banten_area = {
 surabaya_area = {
 	#Unused unless we want to split Java into five areas like vanilla does.
 }
-
-gulf_of_arabia_area = { #Currently used in EMP_Crusader missions. Need adjustment probably
-	#Unused area in Egypt/Levant
-}
 west_mindanao_area = {
 	#Unused area in Philippines
 }
@@ -120,88 +116,91 @@ st_john_valley_area = {
 
 brittany_area = {
 	color = { 118 99 151 }
-	169 172 4384 7992 7993 7994 7995 7996 8013
+	169 172 4384 7992 7993 7994 7995 7996 8013 
 }
 lower_brittany_area = { # BT
-	170 171 3068 7997 7998 7999
+	170 171 3068 7997 7998 7999 
 }
 normandy_area = {
-	167 1879 3073 7967 7970 7971 7972 7982
+	167 1879 3073 7967 7970 7971 7972 7982 
 }
 lower_normandy_area = { # BT
-	168 3110 4385 7983 7984 7985 7986 7987
+	168 3110 4385 7983 7984 7985 7986 7987 
 }
 provence_area = {
-	201 202 2991 4696 7890 7891 7892 7893 7894
+	201 202 2991 4696 7890 7891 7892 7893 7894 
 }
 guyenne_area = {
-	174 194 3081 7925 7927 7928 7930
+	174 194 3081 7925 7927 7928 7930 
 }
 pyrenees_area = {
-	173 176 3083 7923 7924 7926
+	173 176 3083 7923 7924 7926 
 }
 bourgogne_area = { #Burgundy Proper
 	color = { 144 0 32 }
-	191 192 1877 3091 4392 7938 7951 7952 8028
+	191 192 1877 3091 4392 7938 7951 7952 8028 
 }
 west_burgundy_area = { #Franche-Comt�
-	193 3092 4764 7939 7940 7942 8029 8030
+	193 3092 4764 7939 7940 7942 8029 8030 
 }
 languedoc_area = { #Moved for better colour assignment. Was identical to Provence
-	200 3085 4391 7898 7899 7906
+	200 3085 4391 7898 7899 7906 
 }
 massif_central_area = {
 	color = { 26 26 217 }
-	190 199 3087 7914 7915 7916 7917
+	190 199 3087 7914 7915 7916 7917 
 }
 savoy_dauphine_area = { #Savoy and Dauphin�, Upper Burgundy
-	205 3046 4719 7913 8031
+	205 3046 4719 7913 8031 
 }
 lorraine_area = {
 	189 7945 7946 7949 8423 8424
 }
 picardy_area = {
-	87 88 89 7965 7966 7968 7969 7973 7974
+	87 88 89 7965 7966 7968 7969 7973 7974 
 }
 ile_de_france_area = { #Champagne and Ile de France
-	182 183 185 3070 7960 7961 7962 7963
+	182 183 185 3070 7960 7961 7962 7963 
 }
 loire_area = {
 	color = { 231 143 5 }
-	184 3075 4388 4776 7957 7958 7979 7981
+	184 3075 4388 4776 7957 7958 7979 7981 
 }
 orleans_area = {
-	177 178 7980 7988 7989 7990 7991
+	177 178 7980 7988 7989 7990 7991 
 }
 poitou_area = {
-	180 3077 4111 4386 4387 7932 7933 7934
+	180 3077 4111 4386 4387 7932 7933 7934 
 }
 champagne_area = {
-	181 186 3071 4390 7950 7953 7955 7956 7964
+	181 186 3071 4390 7950 7953 7955 7956 7964 
 }
 berry_touraine_area = { # BT
-	179 4389 7935 7936 7937 7959
+	179 4389 7935 7936 7937 7959 
 }
 lyonnais_area = { # BT
-	203 4777 7908 7909 7911
+	203 4777 7908 7909 7911 
 }
 west_languedoc_area = { # BT
-	196 2753 4694 4695 7900 7901 7904
+	196 2753 4694 4695 7900 7901 7904 
 }
 dauphine_area = { # BT
-	204 3089 7895 7896 7897 7910
+	204 3089 7895 7896 7897 7910 
 }
 upper_guyenne_area = { # BT
-	198 4112 7905 7907
+	198 4112 7905 7907 
 }
 upper_gascony = {  # BT
-	175 7919 7921 7922
+	175 7919 7921 7922 
 }
 limousin_area = { # BT
-	195 4697 7918 7931
+	195 4697 7918 7931 
 }
 barrois_area = {
 	187 188 8421 8422 4766 7947
+}
+french_wastelands_area = {	#French Wastelands - BT17 Added
+	4157 5544 
 }
 
 ###
@@ -213,28 +212,28 @@ wallonia_area = {
 	91 1743 7976 7977
 }
 holland_area = {
-	96 97 98 4383 7954 7975 8112
+	96 97 98 4383 7954 7975 8112 
 }
 flanders_area = {
-	90 1865 3064 4769 8015 8018 8020 8021
+	90 1865 3064 4769 8015 8018 8020 8021 
 }
 frisia_area = {
 	100 1931 4382 8119 8299 8401
 }
 brabant_area = {
-	92 95 1744 4770 8019
+	92 95 1744 4770 8019 
 }
 north_brabant_area = {
-	99 3060 3063 8017 8032
+	99 3060 3063 8017 8032  
 }
 luxembourg_area = { # BT
 	94 3066 7948 8024 8027 8418 8419 8420
 }
 luxemburg_liege_area = {
-	93 1742 1866 2974 8014 8022 8023 8025
+	93 1742 1866 2974 8014 8022 8023 8025 
 }
 oversticht_area = {
-	3058 4381 8118 8120 8400
+	3058 4381 8118 8120 8400 
 }
 
 ###
@@ -243,156 +242,161 @@ oversticht_area = {
 
 
 aragon_area = {
-	211 214 2990 3095 8108 8109 8110 8111 8116 8117
+	211 214 2990 3095 8108 8109 8110 8111 8116 8117 
 }
 catalonia_area = {
-	197 212 213 2987 2988 4557 7889 8113 8114 8115
+	197 212 213 2987 2988 4557 7889 8113 8114 8115 
 }
 valencia_area = {
-	220 1750 4549 4550 8088 8089
+	220 1750 4549 4550 8088 8089 
 }
 lower_andalucia_area = {
-	224 226 1749 4548 8075 8076 8077 8078 8079 8080
+	224 226 1749 4548 8075 8076 8077 8078 8079 8080 
 }
 upper_andalucia_area = {
-	222 223 4546 8081 8082 8083 8084 8085 8086 8087
+	222 223 4546 8081 8082 8083 8084 8085 8086 8087 
 }
 castille_area = {
 	color = { 58 58 207 }
-	1746 2755 2989 8047 8048 8049
+	1746 2755 2989 8047 8048 8049 
 }
 toledo_area = {
-	219 2754 8054 8057 8059 8064 8121
+	219 2754 8054 8057 8059 8064 8121 
 }
 asturias_area = {
-	207 1745 8033 8034 8035 8037 8038 8039
+	207 1745 8033 8034 8035 8037 8038 8039 
 }
 galicia_area = {
-	206 4554 4555 4558 8040 8041 8042
+	206 4554 4555 4558 8040 8041 8042 
 }
 baleares_area = {
-	333 4559 4560
+	333 4559 4560 
 }
 basque_country = {
-	209 210 7903 7920 7929 8016 8026
+	209 210 7903 7920 7929 8016 8026 
 }
 leon_area = {
 	color = { 243 235 28 }
-	208 215 216 4552 4553 8043 8044 8045 8050
+	208 215 216 4552 4553 8043 8044 8045 8050 
 }
 extremadura_area = {
-	218 1747 3099 4788 8058 8060 8061 8062
+	218 1747 3099 4788 8058 8060 8061 8062 
 }
 beieras_area = {
-	228 1851 4556 8096 8097 8099
+	228 1851 4556 8096 8097 8099 
 }
 alentejo_area = {
-	229 4150 8063 8100 8101 8102 8104
+	229 4150 8063 8100 8101 8102 8104 
 }
 macaronesia_area = {
-	366 367 368 4565 5096
+	366 367 368 4565 5096 
 }
 murcia_area = { # BT# Moved for colour change
-	221 4547 8065 8066 8067 8068 8069
+	221 4547 8065 8066 8067 8068 8069 
 }
 new_castile_area = { # BT
-	217 2751 8052 8053 8055 8056
+	217 2751 8052 8053 8055 8056 
 }
 northern_andalusia_area = { # BT
-	225 1748 8070 8071 8072 8073 8074
+	225 1748 8070 8071 8072 8073 8074 
 }
 minho_duoro_area = { # BT
-	231 232 3104 8090 8091 8092 8093 8094 8095
+	231 232 3104 8090 8091 8092 8093 8094 8095 
 }
 estremadura_area = { # BT
-	227 3108 4787 8098 8103
+	227 3108 4787 8098 8103 
 }
 algarve_area = { # BT
-	230 8105 8106 8107
+	230 8105 8106 8107 
 }
 segovia_area = { # BT
-	4551 4789 8036 8051
+	4551 4789 8036 8051 
 }
-
+iberian_wastelands_area	= {	#Iberian Wastelands - BT17 Added
+	4154 5545 
+}
 ###
 # Italy - 25
 ###
 
 venetia_area = {
-	108 112 1774 4729 7076 7081 7084 7085 7086 7087
+	108 112 1774 4729 7076 7081 7084 7085 7086 7087 
 }
 lombardy_area = { #repurposed into lower lombardy, then repurposed back into west
-	104 3054 4728 4740 7078
+	104 3054 4728 4740 7078 
 }
 po_valley_area = {
-	107 109 1862 3294 4739 7083
+	107 109 1862 3294 4739 7083 
 }
 piedmont_area = {
-	103 2981 7048 7058 7061 7065 7066 7070 7071
+	103 2981 7048 7058 7061 7065 7066 7070 7071 
 }
 tuscany_area = {
-	115 116 2978 2980 3042 7047 7049 7051 7059
+	115 116 2978 2980 3042 7047 7049 7051 7059 
 }
 liguria_area = {
-	101 2992 7053 7054 7055 7056
+	101 2992 7053 7054 7055 7056 
 }
 corsica_sardinia_area = {
-	1247 5092 7038 7040
+	1247 5092 7038 7040 
 }
 sicily_area = {
-	124 125 126 2982 4736 4737 7001 7002
+	124 125 126 2982 4736 4737 7001 7002 
 }
 naples_area = {
-	121 2983 3039 4734 7009 7012 7016 7017
+	121 2983 3039 4734 7009 7012 7016 7017 
 }
 lazio_area = {
-	118 3295 4732 7019 7020 7021
+	118 3295 4732 7019 7020 7021 
 }
 calabria_area = { #+Lucania
-	123 1934 2984 7003 7004 7008
+	123 1934 2984 7003 7004 7008 
 }
 apulia_area = {
-	122 1933 2985 7005 7006 7007 7011
+	122 1933 2985 7005 7006 7007 7011 
 }
 emilia_romagna_area = {
 	#color = { 24 222 66 }
-	114 7028 7031 7032 7033
+	114 7028 7031 7032 7033 
 }
 central_italy_area = {
-	119 2977 7025 7026 7027 7029 7030 7034 7035 7037
+	119 2977 7025 7026 7027 7029 7030 7034 7035 7037 
 }
 emilia_area = { # BT
-	106 113 4730 7067 7068
+	106 113 4730 7067 7068 
 }
 sardinia_area = { # BT
-	127 2986 4735 5091 7095 7097 7099
+	127 2986 4735 5091 7095 7097 7099 
 }
 friuli_area = { # BT
-	111 1769 4738 7091 7096
+	111 1769 4738 7091 7096 
 }
 istria_area = { # BT
-	130 7082 7090
+	130 7082 7090  
 }
 carnia_area = { # BT
-	7088 7089 7094 7098
+	7088 7089 7094 7098 
 }
 north_piedmont_area = { # BT
-	2979 3045 7072 7075 7079 7080
+	2979 3045 7072 7075 7079 7080 
 }
 south_piedmont_area = { # BT
-	102 1875 4727 7052 7062 7063 7064
+	102 1875 4727 7052 7062 7063 7064 
 }
 south_tuscany_area = { # BT
-	117 3040 7039 7041 7042 7043 7044 7046 7050
+	117 3040 7039 7041 7042 7043 7044 7046 7050 
 }
 umbria_area = { # BT
-	2976 4731 7022 7024 7036
+	2976 4731 7022 7024 7036 
 }
 abruzzo_area = { # BT
-	120 4733 7013 7014 7015
+	120 4733 7013 7014 7015 
 }
 upper_emilia_area = { # BT# Cut with area overhaul, then re-added in 12 .0 for trade reasons.
-	105 7045 7057 7060
+	105 7045 7057 7060 
+}
+italian_wastelands_area = {	#Italian Wastelands - BT17 Added
+	4160 4161 5118 5546  
 }
 
 ###
@@ -400,16 +404,16 @@ upper_emilia_area = { # BT# Cut with area overhaul, then re-added in 12 .0 for t
 ###
 
 leinster_area = {
-	373 374 3009 4120 4379 8163 8165
+	373 374 3009 4120 4379 8163 8165 
 }
 ulster_area = {
-	372 3005 3006 4121 4380 8156 8157 8158 8159
+	372 3005 3006 4121 4380 8156 8157 8158 8159 
 }
 munster_area = {
-	375 4118 4377 4378 8164 8166 8167 8168 8169
+	375 4118 4377 4378 8164 8166 8167 8168 8169 
 }
 connacht_area = {
-	376 3014 4119 8160 8161 8162
+	376 3014 4119 8160 8161 8162 
 }
 
 ###
@@ -417,107 +421,110 @@ connacht_area = {
 ###
 
 kingdom_of_the_isles_area = {
-	253 4363 4364 4365
+	253 4363 4364 4365 
 }
 highlands_area = {
-	252 3137 3138 4110 8153 8154 8155
+	252 3137 3138 4110 8153 8154 8155 
 }
 lowlands_area = {
-	248 4361 8145 8146 8148 8149 8150
+	248 4361 8145 8146 8148 8149 8150 
 }
 wales_area = {
-	242 8138 8139 8140 8141
+	242 8138 8139 8140 8141 
 }
 northern_england_area = { # BT
-	246 4368 8136 8137
+	246 4368 8136 8137 
 }
 east_midlands_area = {
-	243 1861 4372 4376 8126 8128 8130 8131
+	243 1861 4372 4376 8126 8128 8130 8131 
 }
 wessex_area = {
-	233 234 239 4130 4373 4374 8122 8124 8170
+	233 234 239 4130 4373 4374 8122 8124 8170 
 }
 east_anglia_area = {
-	1860 3028 4370
+	1860 3028 4370 
 }
 scottish_marches_area = {
-	249 3008 3019 4362 8147
+	249 3008 3019 4362 8147 
 }
 west_midlands_area = {
-	244 247 4375 8135
+	244 247 4375 8135 
 }
 home_counties_area = {
-	235 236 237 238 4371 8123 8125 8127
+	235 236 237 238 4371 8123 8125 8127 
 }
 yorkshire_area = {
-	245 4367 4785 8133 8134
+	245 4367 4785 8133 8134 
 }
 deheubarth_area = { # BT
-	241 3034 3036 4369 8143 8144
+	241 3034 3036 4369 8143 8144 
 }
 powys_area = { # BT
-	240 4366 8129 8142
+	240 4366 8129 8142 
 }
 grampians_area = { # BT
-	250 251 3139 8151 8152
+	250 251 3139 8151 8152 
 }
 
 ###
-# Scandinavia
+# Scandinavia 
 ###
 
 jutland_area = {
-	15 1984 4142 4149 7769 7770 7771
+	15 1984 4142 4149 7769 7770 7771 
 }
 denmark_area = {
-	12 14 1983 7767 7768
+	12 14 1983 7767 7768 
 }
 skaneland_area = {
-	6 26 1981 1982 4165 7766 7779
+	6 26 1981 1982 4165 7766 7779 
 }
 gotaland_area = {
-	2 3 25 3120 3121 4166 7790 7792 7793
+	2 3 25 3120 3121 4166 7790 7792 7793 
 }
 vastra_gotaland_area = { #V�stra G�taland
-	5 7 16 4163 4164 7791 7795
+	5 7 16 4163 4164 7791 7795 
 }
 svealand_area = {
-	1 4 8 9 1930 1985 3122 3123 7794 7863
+	1 4 8 9 1930 1985 3122 3123 7794 7863 
 }
 norrland_area = {
-	11 18 3124 4114 7797 7798 7799 7800
+	11 18 3124 4114 7797 7798 7799 7800 
 }
 finland_area = {
-	27 28 29 31 3128 4123 7803 7804 7805 7807
+	27 28 29 31 3128 4123 7803 7804 7805 7807 
 }
 bothnia_area = {
-	19 4113 4151 4152 7801 7802 7864
+	19 4113 4151 4152 7801 7802 7864 
 }
-northern_norway = {
-	21 315 3119 7747 7789
+northern_norway = {  
+	21 315 3119 7747 7789 
 }
-eastern_norway = {
-	17 22 3117 4143 4144 7780 7781 7783 7784
+eastern_norway = {  
+	17 22 3117 4143 4144 7780 7781 7783 7784 
 }
-western_norway = {
+western_norway = {  
 	23 24 2752 3118 4145 7772 7782 7785 7786 7809
 }
 subarctic_islands_area = { #no longer includes Greenland
-	369 1978 1979 5591
+	369 1978 1979 5591 
 }
 iceland_area = {
-	370 371 3114 3115
+	370 371 3114 3115 
 }
 schleswig_area = { # BT
-	13 3134 3135 7773 7774
+	13 3134 3135 7773 7774 
 }
 west_karelia_area = { # BT
-	30 32 4124 7806 7808
+	30 32 4124 7806 7808 
 }
 southern_norway_area = { # BT, deprecated. Keeping declaration in case something goes wrong.
 }
 trondelag_area = { # BT
-	10 20 7787 7788 7796
+	10 20 7787 7788 7796 
+}
+scandinavian_wastelands_area = {	#Scandinavian Wastelands - BT17 Added
+	4146 5126 
 }
 
 ###
@@ -529,10 +536,10 @@ bohemia_area = {
 	266 2970 4724 8253 8254 8257 8260 8252
 }
 erzgebirge_area = {
-	267 1771 2967 8255 8256
+	267 1771 2967 8255 8256 
 }
 moravia_area = {
-	265 3297 4237 4726 8236 8237 8238
+	265 3297 4237 4726 8236 8237 8238 
 }
 upper_bavaria_area = {
 	65 2955 4707 4708 8455 8456 8457 8458
@@ -550,11 +557,11 @@ franconia_area = { #(JP) Lower Franconia
 upper_franconia_area = {
 	66 67 4717 8451 8452
 }
-lower_swabia_area = {
+lower_swabia_area = { 
 	70 77 3206 8434 8435 8436 8437 8438
 }
 upper_swabia_area = {
-	69 1872 3204 4712 4713 8442 8443 8444 8445
+	69 1872 3204 4712 4713 8442 8443 8444 8445 
 }
 east_bavaria_area = { #Cut BT's eastern_swabia_area
 	68 1868 8446 4711 8447 8448
@@ -580,7 +587,7 @@ carinthia_area = {
 	128 4759 8480 8481
 }
 carniola_area = {
-	129 7760 7761 7762 7764
+	129 7760 7761 7762 7764 
 }
 switzerland_area = { #(JP) Swiss Plateau
 	165 166 1869 3055 8485 8487 8488 8489
@@ -595,13 +602,16 @@ upper_rhineland_area = { #(JP) Baden
 	72 74 4714 8439 8440 8441
 }
 bohemian_forest_area = { # BT
-	2968 4725 8258 8259
+	2968 4725 8258 8259 
 }
 alsace_area = {
-	75 1880 4765 7944
+	75 1880 4765 7944 
 }
 palatinate_area = { #(JP) Lower Palatinate
 	1761 4767 8431 8432 8433
+}
+south_german_wastelands_area = {	#South German Wastelands - BT17 Added
+	4159 4162 4763 5547 5548 
 }
 
 ###
@@ -609,23 +619,23 @@ palatinate_area = { #(JP) Lower Palatinate
 ###
 
 holstein_area = {
-	44 45 1775 1857 4141 7775 7776 7777 7778
+	44 45 1775 1857 4141 7775 7776 7777 7778 
 }
 mecklenburg_area = {
-	46 2996 4749 7811 7812 7813
+	46 2996 4749 7811 7812 7813 
 }
 vorpommern_area = {
-	47 2994 4745 7815 7816 7817 7842
+	47 2994 4745 7815 7816 7817 7842 
 }
 hinter_pommern_area = {
-	48 1858 2995 4746 7818 7819 7823 7824
+	48 1858 2995 4746 7818 7819 7823 7824 
 }
 lusatia_area = {
 	60 1763 4778 8262 8263 8264 8265 8268
 }
 neumark_area = {
 	color = { 234 232 44 }
-	49 2969 4747 7821 8266
+	49 2969 4747 7821 8266 
 }
 mittelmark_area = {
 	50 51 1759 2993 4748 8267 8269 8270
@@ -679,40 +689,40 @@ bremen_verden_area = {
 ###
 
 estonia_ingria_area = {
-	35 36 1842 3230 3231 7853 7855 7856 7857
+	35 36 1842 3230 3231 7853 7855 7856 7857 
 }
 livonia_area = {
-	38 4241 7843 7844 7845 7848 7849
+	38 4241 7843 7844 7845 7848 7849 
 }
 curonia_area = {
-	39 3227 7838 7839 7840 7854
+	39 3227 7838 7839 7840 7854 
 }
 east_prussia_area = {
-	41 42 1841 1859 2958 7829 7833 7834 7862
+	41 42 1841 1859 2958 7829 7833 7834 7862 
 }
 west_prussia_area = {
-	43 2997 5097 7825 7826 7827 7828
+	43 2997 5097 7825 7826 7827 7828 
 }
 samogitia_area = {
-	271 3226 7210 7212 7859 7860
+	271 3226 7210 7212 7859 7860 
 }
 lithuania_area = {
-	1936 4534 4535 7213 7216 7861
+	1936 4534 4535 7213 7216 7861 
 }
 nadruvia_area = { # BT
-	40 3224 7835 7836 7837
+	40 3224 7835 7836 7837 
 }
 latgallia_area = { # BT
-	37 273 7846 7847
+	37 273 7846 7847 
 }
 masuria_area = { # BT
-	767 7830 7831 7832
+	767 7830 7831 7832 
 }
 north_livonia_area = { # BT
-	1834 3229 7850 7851 7852
+	1834 3229 7850 7851 7852 
 }
 semigallia_area = { # BT
-	1935 3293 7841
+	1935 3293 7841 
 }
 
 ###
@@ -721,31 +731,31 @@ semigallia_area = { # BT
 
 
 wielkopolska_area = { #Poznan in BT
-	254 255 2963 4526 8226 8227 8228 8229
+	254 255 2963 4526 8226 8227 8228 8229 
 }
 malopolska_area = { #Krakow area in BT
 	262 2960 3220 8222 8224 8176
 }
 mazovia_area = {
-	256 257 1938 4525 7264 8230 8231 8232 8233
+	256 257 1938 4525 7264 8230 8231 8232 8233 
 }
 central_poland_area = { #Sieradz
-	258 4527 4533 8225
+	258 4527 4533 8225 
 }
 sandomierz_area = { #Just converting BT Sandomierz area into new 1 .27 area, same id so no changes needed.
-	259 260 2959 3221 8223 8234
+	259 260 2959 3221 8223 8234 
 }
 kuyavia_area = { #converting in BT Kalisz area, and cutting the old BT Kalisz
-	1939 4523 4524 4528
+	1939 4523 4524 4528 
 }
 silesia_area = {
-	263 3142 4723 8221 8239 8240 8241
+	263 3142 4723 8221 8239 8240 8241 
 }
 lower_silesia_area = { # BT
-	2966 4238 8245 8246 8247 8248
+	2966 4238 8245 8246 8247 8248 
 }
 middle_silesia_area = { # BT
-	264 8243 8244 8249 8251
+	264 8243 8244 8249 8251 
 }
 
 ###
@@ -753,55 +763,55 @@ middle_silesia_area = { # BT
 ###
 
 red_ruthenia_area = { #Galicia in BT
-	261 2424 2961 4541 7267 7269 7270 7271 7273
+	261 2424 2961 4541 7267 7269 7270 7271 7273 
 }
 podolia_volhynia_area = { #Podolia in BT
-	281 1943 3239 3241 4540 7206 7208 7209 7254 7272
+	281 1943 3239 3241 4540 7206 7208 7209 7254 7272 
 }
 volhynia_area = { #West Volhynia in BT
-	279 1940 4538 7243 7253 7266 7268
+	279 1940 4538 7243 7253 7266 7268 
 }
 pripyat_area = {
-	1941 7232 7233 7241 7245
+	1941 7232 7233 7241 7245 
 }
 podlasie_area = {
-	269 277 278 7230 7262 7263
+	269 277 278 7230 7262 7263 
 }
 west_dniepr_area = { #Right Bank Ukraine
-	280 1942 1944 3242 4247 7228 7239 7242 7246 7259
+	280 1942 1944 3242 4247 7228 7239 7242 7246 7259 
 }
 east_dniepr_area = { #Left bank Ukraine
-	289 290 2407 4542 7237 7248 7250 7255 7256
+	289 290 2407 4542 7237 7248 7250 7255 7256 
 }
 white_ruthenia_area = {
-	4115 4246 7229 7234 7235 7236 7238 7240
+	4115 4246 7229 7234 7235 7236 7238 7240 
 }
 minsk_area = {
-	276 4544 4545 7220 7221 7225 7231
+	276 4544 4545 7220 7221 7225 7231 
 }
 bryansk_area = { # BT
-	297 3270 4244 7882
+	297 3270 4244 7882 
 }
 eastern_volhynia_area = { # BT
-	2962 3238 4539 7207 7244
+	2962 3238 4539 7207 7244 
 }
 chernigov_area = { #Replacing BT's severia_area in BT14
-	298 1945 3246 3267 4543 5670 7249 7252
+	298 1945 3246 3267 4543 5670 7249 7252 
 }
 vitebsk_area = { # BT
-	292 771 4242 7217 7222 7227
+	292 771 4242 7217 7222 7227 
 }
 polotsk_area = { # BT
-	275 5660 7214 7215 7858
+	275 5660 7214 7215 7858 
 }
 novogrudok_area = { # BT
-	1937 4537 7223 7224 7226
+	1937 4537 7223 7224 7226 
 }
 yotvingia_area = { # BT
-	3223 3225 7211
+	3223 3225 7211 
 }
 trakai_area = { # BT
-	270 272 770 4536 7218 7219
+	270 272 770 4536 7218 7219 
 }
 
 ###
@@ -809,39 +819,39 @@ trakai_area = { # BT
 ###
 
 sloboda_ukraine_area = {
-	291 3247 7205 7258
+	291 3247 7205 7258 
 }
 yedisan_area = {
-	282 7195 7197 7279
+	282 7195 7197 7279 
 }
 zaporizhia_area = {
-	2411 3243 3302 7196 7198 7199 7202 7204 7251 7257
+	2411 3243 3302 7196 7198 7199 7202 7204 7251 7257 
 }
 azov_area = {
 	color = { 120 22 102 } # Brian
-	286 287 468 2413 2414 2447
+	286 287 468 2413 2414 2447 
 }
 crimea_area = {
-	284 285 2410 3244 3245 7190 7191 7192 7193
+	284 285 2410 3244 3245 7190 7191 7192 7193 
 }
 astrakhan_area = {
-	464 2417 3264
+	464 2417 3264 
 }
 lower_don_area = {
-	288 466 1971 3265
+	288 466 1971 3265 
 }
 lower_yik_area = {
-	469 474 2365 2367
+	469 474 2365 2367 
 }
 middle_don_area = { # BT
-	299 467 2409 3266 3291 5671
+	299 467 2409 3266 3291 5671 
 }
 lower_dnieper_area = { # BT
-	283 1974 2406 7194
+	283 1974 2406 7194 
 }
 pryazovia_area = { # BT
 	color = { 74 224 252 } # Brian
-	2412 7200 7201 7203
+	2412 7200 7201 7203 
 }
 
 ###
@@ -849,61 +859,61 @@ pryazovia_area = { # BT
 ###
 
 ryazan_area = {
-	301 306 1754 1778 3279 5669
+	301 306 1754 1778 3279 5669 
 }
 moscow_area = {
-	295 3277 4251 4252 5651 5659 5665 5682 5683
+	295 3277 4251 4252 5651 5659 5665 5682 5683 
 }
 vladimir_area = { #Repurposed into a south of the Ladoga for BT
-	1961 2749 7867 7868 7869 7870 7876
+	1961 2749 7867 7868 7869 7870 7876 
 }
 yaroslavl_area = {
-	308 312 1753 4117 4250 5655
+	308 312 1753 4117 4250 5655 
 }
 tver_area = {
-	294 1752 3290 4248 4249 5656 5657 7878
+	294 1752 3290 4248 4249 5656 5657 7878 
 }
 suzdal_area = { #Repurposed into Zalesye area for BT
-	307 1956 3276 3278 4147 4253 4254 5658
+	307 1956 3276 3278 4147 4253 4254 5658 
 }
 oka_area = { #Specifically East oka in BT
-	296 4116 5662 5663 5664 5666 5667 5680 5681
+	296 4116 5662 5663 5664 5666 5667 5680 5681 
 }
 smolensk_area = {
-	293 3271 3301 4245 5684 5685 7881
+	293 3271 3301 4245 5684 5685 7881 
 }
 novgorod_area = {
-	310 311 3273 5645 7871 7872 7873 7874 7875 7879
+	310 311 3273 5645 7871 7872 7873 7874 7875 7879 
 }
 pskov_area = {
-	274 1960 5642 5643
+	274 1960 5642 5643 
 }
 vologda_area = { #Repurposed into Sukhona-Galich area for BT
-	314 1755 1957 4262 4263
+	314 1755 1957 4262 4263 
 }
 beloozero_area = {
-	1959 4260 4261 5653 5654 7877
+	1959 4260 4261 5653 5654 7877 
 }
 pomor_area = { #Repurposed into Northern Dvina for BT
-	313 1955 3284 4122 4129 4256 4257 4259 5673
+	313 1955 3284 4122 4129 4256 4257 4259 5673 
 }
 arkhangelsk_area = { #Repurposed into Onega for BT
-	1958 3282 4258 5652
+	1958 3282 4258 5652 
 }
 galich_area = {
-	300 2408 3268 4255 5668 5679
+	300 2408 3268 4255 5668 5679 
 }
 laponia_area = {
-	1777 5649 5650
+	1777 5649 5650 
 }
 karelia_area = { #Karelia & Kola
-	309 1776 5647 5648 7865 7866
+	309 1776 5647 5648 7865 7866 
 }
 north_karelia = { #Repurposed into Ingria for BT
-	33 34 5644 5646
+	33 34 5644 5646 
 }
 toropets_area = { # BT
-	4148 4243 5661 7880
+	4148 4243 5661 7880 
 }
 
 ###
@@ -911,34 +921,34 @@ toropets_area = { # BT
 ###
 
 kazan_area = {
-	1082 1083 2422 3280 4264
+	1082 1083 2422 3280 4264 
 }
 samara_area = {
-	473 1081 4267
+	473 1081 4267 
 }
 ural_area = {
-	1078 1080 1780 2427 2441
+	1078 1080 1780 2427 2441 
 }
 bashkiria_area = {
-	475 1965 1966 2420 2444
+	475 1965 1966 2420 2444 
 }
 kama_area = {
-	2421 4265 4266
+	2421 4265 4266 
 }
 tambov_area = {
-	302 304 2415 2423 5672
+	302 304 2415 2423 5672 
 }
 saratov_area = {
-	303 2418 2419
+	303 2418 2419 
 }
 perm_area = {
-	305 1077 1962 1963 1964 5676
+	305 1077 1962 1963 1964 5676 
 }
 vyatka_area = { # BT
-	1079 1972 3281
+	1079 1972 3281 
 }
 pechora_area = { # BT
-	2425 3285 5674 5675 5677 5678
+	2425 3285 5674 5675 5677 5678 
 }
 
 ###
@@ -946,68 +956,68 @@ pechora_area = { # BT
 ###
 
 macedonia_area = { #Macedonia + Albania
-	148 1853 7122 7123 7124 7142
+	148 1853 7122 7123 7124 7142 
 }
 morea_area = { #Central Greece
-	145 1773 3178 3179 4701 7100 7101 7102 7163
+	145 1773 3178 3179 4701 7100 7101 7102 7163 
 }
 northern_greece_area = { #BT Epirus
-	144 4699 7132 7133 7140 7141
+	144 4699 7132 7133 7140 7141 
 }
 thrace_area = {
-	149 151 3170 4705 4779 7130 7134 7136 7137 7138
+	149 151 3170 4705 4779 7130 7134 7136 7137 7138 
 }
 bulgaria_area = {
-	1765 3000 4703 7703 7705 7711
+	1765 3000 4703 7703 7705 7711 
 }
 silistria_area = {
-	3164 3165 4706 7154 7759 7765
+	3164 3165 4706 7154 7759 7765 
 }
 serbia_area = {
-	141 1827 3185 4176 4757 7717
+	141 1827 3185 4176 4757 7717 
 }
 rascia_area = {
-	1766 7700 7701 7702 7709 7710 7712
+	1766 7700 7701 7702 7709 7710 7712 
 }
 albania_area = {
-	143 3181 4174 4175 4750 7143 7144
+	143 3181 4174 4175 4750 7143 7144 
 }
 bosnia_area = {
-	140 3002 3193 3194 4755 7722 7724 7725
+	140 3002 3193 3194 4755 7722 7724 7725 
 }
 croatia_area = {
 	color = { 18 126 16 }
-	131 1826 3196 4752 7734 7735 7736
+	131 1826 3196 4752 7734 7735 7736 
 }
 slavonia_area = {
-	152 1767 3190 4756 7738 8187
+	152 1767 3190 4756 7738 8187 
 }
 east_adriatic_coast_area = {
-	136 137 4753 4754 7730 7731 7732 7733
+	136 137 4753 4754 7730 7731 7732 7733 
 }
 aegean_archipelago_area = {
 	164 320 2348 3195 4700 6096
 }
 eastern_mediterrenean_islands_area = {
-	163 3180 7106 7107
+	163 3180 7106 7107 
 }
 western_aegean_area = { # BT# Western part of the Archipelago Eyalet# Hellas, or Boeotia and Attika
-	146 3003 3177 7109 7110 7111 7113 7114
+	146 3003 3177 7109 7110 7111 7113 7114 
 }
 upper_thrace_area = { # BT
-	2750 3168 3169 7149 7150 7151
+	2750 3168 3169 7149 7150 7151 
 }
 northern_macedonia_area = { # BT
-	3001 3183 4780 7146 7147 7148
+	3001 3183 4780 7146 7147 7148 
 }
 eastern_macedonia_area = { # BT
-	3167 4702 7120 7127 7128 7129
+	3167 4702 7120 7127 7128 7129 
 }
 northern_epirus_area = { # BT# Repurposed to Ionian Island area
-	142 4698 7125 7126
+	142 4698 7125 7126 
 }
 northern_thrace_area = { # BT
-	1764 7139 7152 7155 7156
+	1764 7139 7152 7155 7156 
 }
 aetolia_area = { # BT
 	3175 7108 7112 7115
@@ -1113,6 +1123,9 @@ kartli_kakheti_area = { #Lower Kartli
 talysh_area = { #Talysh/Gilan
 	424 4340 7285
 }
+caucasian_wastelands_area = {	#Caucasian Wastelands - BT17 Added
+	4156 5121 7280 7281
+}
 
 ###
 # Anatolia
@@ -1155,13 +1168,16 @@ pontus_area = { # BT# East Pontus
 	330 1846 3248 4315 5206 6040
 }
 karasi_area = { # BT# Mysia
-	2296 5130 5156 5171 6004
+	2296 5130 5156 5171 6004 
 }
 pamphylia_area = { # BT# Lycia-Pamphylia
-	2298 5147 5162 6013 6014 6020
+	2298 5147 5162 6013 6014 6020 
 }
 caria_area = { #BT# Caria
-	319 4308 4309 5134 6009 6010
+	319 4308 4309 5134 6009 6010 
+}
+anatolia_wastelands_area = {	#Anatolian Wastelands - BT17 Added
+	5551 5552 5553 
 }
 
 ###
@@ -1171,17 +1187,13 @@ aleppo_area = { #Lower Syria
 	377 2313 4271 5170 6080 6086 6094 6095
 }
 syria_area = { #Upper Syria
-	382 405 1849 6084 6085 6086 6088
+	382 405 1849 6084 6085 6086 6088 
 }
 trans_jordan_area = { #Transjordan
 	380 381 4270 5203 6081
 }
 palestine_area = { #Palestine
 	364 379 1854 1855 5180 6071
-}
-syrian_desert_area = { #Sinai
-	#color = { 219 30 57 }
-	365 4268 5181
 }
 cyprus_area = { #Cyprus
 	321 5139 5145 6076 6077 6078
@@ -1190,11 +1202,14 @@ tripoli_area = { #Lebanon
 	378 4297 5205 6074 6075
 }
 #bargylus_area = { #Bargylus #(JP) Removed in BT16
-#
+#	
 #}
 #hauran_area = { #Hawran #(JP) Removed in BT16
-#
+#	
 #}
+levantine_wastelands_area = {	#Levantine Wastelands - BT17 Added
+	6097 6098 
+}
 
 ###
 # Mesopotamia
@@ -1243,18 +1258,21 @@ corduene_area = { #Corduene
 adiabene_area = { #Adiabene
 	411 2309 4293 5296 6118 6120 6123 6125
 }
+mesopotamian_wastelands_area = {	#Mesopotamian Wastelands - BT17 Added
+	5554 5555 5556 5557 5558 5559 5560 6146 6147 6148 
+}
 
 ###
 # Arabia
 ###
 bahrain_area = {
-	394 395 396 5250 5251
+	394 395 396 5250 5251 
 }
 pirate_coast_area = {
-	397 398 2333 4285 4286 5249
+	397 398 2333 4285 4286 5249 
 }
 nafud_area = {
-	393 2328 2332 4272 4273 4276
+	393 2328 2332 4272 4273 4276 
 }
 tabuk_area = {
 	383 2327 4269
@@ -1301,17 +1319,20 @@ mascat_area = {
 	399 400 5334
 }
 persian_gulf_islands_area = { # BT
-	2999 5255
+	2999 5255 
+}
+arabian_wastelands_area = {	#BT17 Added
+	1779 2334
 }
 
 ###
 # Persia
 ###
 luristan_area = {
-	413 414 2209 2210
+	413 414 2209 2210 
 }
 khuzestan_area = {
-	412 2217 4289 4290 4342
+	412 2217 4289 4290 4342 
 }
 farsistan_area = {
 	2218 4329 4330 4331
@@ -1334,11 +1355,11 @@ tabarestan_area = {
 kerman_area = {
 	432 2220 2234 4345
 }
-persian_gulf_coast = {
-	430 2219 2223 4332
+persian_gulf_coast = {  
+	430 2219 2223 4332 
 }
 mogostan_area = {
-	431 4327
+	431 4327 
 }
 
 ###
@@ -1375,57 +1396,63 @@ merv_area = {
 	444 445 2350
 }
 balkh_area = {
-	450 2227 2228
+	450 2227 2228 
+}
+khorasan_wastelands_area = {	#Khorasani Wastelands - BT17 Added
+	2200 
 }
 
 ###
 # Central Asia
 ###
 ferghana_area = {
-	458 460 1967
+	458 460 1967 
 }
 arys_area = {
-	457 2356 2364
+	457 2356 2364 
 }
 kyzylkum_area = {
-	455 1970 2363
+	455 1970 2363 
 }
 transoxiana_area = {
-	442 453 454
+	442 453 454 
 }
 termez_area = {
-	1968 4343 4344
+	1968 4343 4344 
 }
 khiva_area = {
-	440 441 1973 2362 2370
+	440 441 1973 2362 2370 
 }
 nogai_area = {
-	465 470 471 472 2366
+	465 470 471 472 2366 
 }
 transcaspia_area = {
-	437 438 439 443 2349
+	437 438 439 443 2349 
 }
 balchasj_area = {
-	477 478 2355 2360 4685
+	477 478 2355 2360 4685 
 }
 kazakhstan_area = {
-	476 2351 2353 2358 2359
+	476 2351 2353 2358 2359 
 }
 jetysuu_area = {
 	color = { 56 37 169 }
-	459 461 2125 2126 2368
+	459 461 2125 2126 2368 
 }
 syr_darya_area = {
-	456 1969 2352 2361
+	456 1969 2352 2361 
 }
 kashgaria_area = { #Just Kashgar & Yarkand
-	739 2124 2127 4209 4210
+	739 2124 2127 4209 4210 
 }
 tarim_basin_area = { #The rest of the Seven Cities
-	712 2121 2192
+	712 2121 2192 
 }
 shanshan_area = {
-	710 711 2123 4693
+	710 711 2123 4693 
+}
+central_asia_wastelands_area = {	#Central Asian Wastelands - BT17 Added
+	1784 1785 1786 
 }
 
 ###
@@ -1618,7 +1645,10 @@ baisi_rajya_area = {
 	554 4491 4492
 }
 kashmir_area = {
-	508 2073 2074 4449 4521
+	508 2073 2074 4449 4521 
+}
+hindustan_wastelands_area = {	#Hindustani Wastelands - BT17 Added
+	1787 
 }
 
 ###
@@ -1656,7 +1686,10 @@ garjat_area = {
 	547 2048 4445 4446 4448
 }
 assam_area = {
-	566 571 2040 2042 4440
+	566 571 2040 2042 4440 
+}
+bengal_wastelands_area = {	#Bengali Wastelands - BT17 Added
+	1950 4400 
 }
 
 ###
@@ -1863,7 +1896,10 @@ utsang_area = {
 	676 4514 4515 4518
 }
 ngari_area = {
-	2128 4516 4520
+	2128 4516 4520 
+}
+tibet_wastelands_area = {	#Tibetan Wastelands - BT17 Added
+	1788 2129 2194 
 }
 
 ###
@@ -1953,7 +1989,10 @@ chuannan_area = {
 	675 2168 2748 4213
 }
 chuanbei_area = {
-	2169 2170 4211
+	2169 2170 4211 
+}
+xinan_wastelands_area = {	#Xinan Wastelands - BT17 Added
+	4402 4403 
 }
 
 ###
@@ -2003,7 +2042,10 @@ arakan_area = {
 	579 2402 8584 8585 8643
 }
 north_tenasserim_area = {
-	591 2404 4835 8636
+	591 2404 4835 8636 
+}
+burma_wastelands_area = {	#Burmese Wastelands - BT17 Added
+	4401 
 }
 
 ###
@@ -2050,7 +2092,10 @@ prachin_area = { # BT
 	603 612 4830 4836 8580 8642
 }
 thai_cantons = {  # BT
-	2371 4820 8573 8646 8648 8656
+	2371 4820 8573 8646 8648 8656 
+}
+indochina_wastelands_area = {	#Indochinese Wastelands - BT17 Added
+	4843 8608 8609 
 }
 
 ###
@@ -2123,7 +2168,10 @@ banjar_area = { #Replacing BT kalimantan_area
 	639 2707 2708 4800 4801 8565 8698 8702 8703
 }
 kalimantan_area = { #Shuffled over from banjar_area, replacing kapuas_area in Bt
-	640 2706 4802 4803 8546 8680 8686 8697 8699
+	640 2706 4802 4803 8546 8680 8686 8697 8699 
+}
+borneo_wastelands_area = {	#Bornean Wastelands - BT17 Added
+	2740 4807 
 }
 
 ###
@@ -2152,119 +2200,306 @@ lesser_sunda_islands_area = {
 	631 632 633 634 2693 8630 8631 8722
 }
 timor_area = {
-	635 2695 8724 8725 8726 8727
+	635 2695 8724 8725 8726 8727 
+}
+
+###
+# Western Maghreb
+###
+sus_area = {							#Sous
+	1110 2466 5212 5228 9183 9186 9187
+}
+tafilalt_area = {						#Tafilalt
+	346 2460 2464 9181 9182
+}
+marrekesh_area = {						#Marrakesh
+	344 2470 9184 9185 9190 9191
+}
+central_morocco_area = {				#Tamesna		- BT17 Added
+	345 348 2469 4564 4568 5211 5226 9006 9192
+}
+western_morocco_area = {				#Fez
+	343 2467 2468 4563 9193 9194 9195 
+}
+northwest_morocco_area = {				#The Habt		- BT17 Added
+	334 342 1751 4561 5219 9199
+}
+northern_morocco_area = {				#The Rif
+	335 5210 5218 9197 9198
+}
+southern_morocco_area = {				#Eastern Morocco
+	349 5213 5220 5229 9179 9180 9196
+}
+hautes_plaines_area = {					#Western Plain
+	2462 2463 5327 5328 9136
+}
+algiers_area = {						#Oran			- BT17 Added
+	336 337 2461 2465 4562 9134
+}
+barbary_coast_area = {					#Algeria
+	338 2459 5322 9131 9132 9133 
+}
+western_maghreb_wastelands_area = {		#Western Maghreb Wastelands	- BT17 Added
+	4167 4168 4569 8999 
+}
+
+###
+# Eastern Maghreb
+###
+kabylia_area = {						#Kabylia
+	339 5318 5321 5323 9130
+}
+central_algeria_area = {				#Hodna			- BT17 Added
+	2458 5324 9127 9128 9129
+}
+eastern_algeria_area = {				#Constanine		- BT17 Added
+	340 1882 5319 9120 9121
+}
+ouled_nail_area = { 					#Aures
+	5320 5325 5326 9123
+}
+southeast_algeria_area = {				#Zab			- BT17 Added
+	351 5329 9124 9125
+}
+tunisia_area = {						#Zeugitana
+	341 2455 5314 5315 5317 5224 9119 9122
+}
+south_tunisia_area = {					#Byzacena		- BT17 Added
+	352 2453 2454 2473 4566 5312 5313 5225 9118
+}
+southwest_tunisia_area = {				#Qastiliya		- BT17 Added
+	2450 5316 9116 9117
+}
+djerba_area = {							#Gabes
+	353 2954 9113 9114 9115
+}
+tripolitania_area = {					#Tripolitania
+	354 355 2451 2452 5274 5311 
+}
+nafusa_mountains_area = { 				#Nafusa Mountains
+	4567 5306 5309 5310 9111 9112
+}
+cyrenaica_area = {						#Cyrenaica
+	356 357 9095 9096 9097
 }
 
 ###
 # Egypt
 ###
-al_wahat_area = {
-	1233 2318 2325 4323 5272 5273 5301
+marmarica_area = {						#Marmarica		- BT17 Added
+	2325 2326 5272 9093 9094
 }
-delta_area = {
-	358 362 363 2316 4316 4317 5261
+al_wahat_area = {						#Egyptian Oases
+	1233 2318 4323 5273 9090 9091 9092 
 }
-bahari_area = { #Lower Egypt
+delta_area = {							#Nile Delta
+	358 362 363 5261 9077
+}
+bahari_area = { 						#Lower Egypt
 	color = { 19 193 219 }
-	359 361 4318 5264 5267
+	361 5264 2316 4316 4317 9076 9078
 }
-vostani_area = { #Middle Egypt
-	2315 2320 2321 4321 5271
+vostani_area = {					#Middle Egypt	- BT17 Added
+	359 2317 2319 4318 5267 9080 9081
 }
-said_area = { #Upper Egypt
-	360 1231 2317 2319 4319 4320
+said_area = { 							#Upper Egypt
+	360 1231 4319 4320 9082 9087 
 }
-lower_nubia_area = {
-	1234 2322 5277 5278
+syrian_desert_area = { 					#Sinai
+	#color = { 219 30 57 }
+	365 2315 4268 5181
 }
-dongola_area = {
-	1229 2323 4322 5280
+gulf_of_arabia_area = { 						#Eastern Desert
+	2320 2321 9079 9083 9084 9085
 }
-upper_nubia_area = {
-	1220 1228 2797 5279 5281 5284 5302
-}
-red_sea_coast_area = {
-	1232 2324 5282 5283
+egyptian_wastelands_area = {			#Egyptian Wastelands - BT17 Added
+	4321 8973 8974 8975 8976 
 }
 
 ###
-# Maghreb
+# Nubia
 ###
-tripolitania_area = {
-	354 355 2451 2452 5311
+lower_nubia_area = {					#Lower Nubia
+	1234 2322 5277 5278 9011 9088
 }
-cyrenaica_area = {
-	356 357 2326 5274 5303 5304
+middle_nubia_area = {					#Middle Nubia	- BT17 Added
+	1228 5279 5281 5302 9012 9013
 }
-tunisia_area = {
-	341 2453 2454 2455 2473 4566 5224 5225 5314 5317
+upper_nubia_area = {					#Upper Nubia
+	1220 2797 2798 5285 5284 9022
 }
-djerba_area = {
-	352 353 2450 2954 5312 5316
+red_sea_coast_area = {					#Red Sea Coast
+	1232 2324 5271 5282 5283 9015 9086
 }
-barbary_coast_area = {
-	336 337 338 2459 2461 4562 5322
+dongola_area = {						#Atbai
+	1226 1229 2323 4322 9014 9016 9017 
 }
-kabylia_area = {
-	339 340 1882 5318 5319 5321 5323
+butana_area = { 						#Butana
+	1225 4033 9018 9019 9020 9021 9025 9026 9027
 }
-hautes_plaines_area = {
-	2462 2463 5324 5327 5328
+sennar_area = { 						#Blue Nile
+	color = { 26 63 145 }
+	1217 2799 5287 5289 9009 9010 9023 9028
 }
-ouled_nail_area = { #repurposed into Aures area for BT
-	5313 5315 5320 5325 5326
+white_nile_area = { 					#White Nile
+	color = { 235 235 235 }
+	1222 2800 5290 9007 9024 9030
 }
-north_saharan_area = {
-	350 351 2456 2457 2458 2472 5329
+kurdufan_area = {						#Kordofan
+	color = { 97 110 203 }
+	1221 5286 9031 9032 9039 9040 9044 
 }
-tafilalt_area = {
-	346 2460 2464 5220
+nuba_mountain_area = {					#Nuba Mountains	- BT17 Added
+	1216 9029 9033 9034 9035 9036 9037 9038 9041
 }
-sus_area = {
-	347 1110 2466 5212 5228
+southeast_sahara_area = { 				#Nubian Oases
+	5266 5301 9053 9054 9089
 }
-southern_morocco_area = { #repurposed into tagmudant for BT
-	349 2465 5213 5229
+nubian_wastelands_area = {				#Nubian Wastelands - BT17 Added
+	5300 8965 8971 8972 
 }
-western_morocco_area = {
-	342 343 2467 2468 4563 5211 5219
+
+###
+# Eastern Sahara
+###
+darfur_central_sahara_area = {			#Marrah Mountains
+	1219 2801 9049 9050 9051 9052  
 }
-marrekesh_area = {
-	344 345 348 2469 2470 4564 4568 5226
+baggara_belt_area = {					#Daju			- BT17 Added
+	774 2802 9042 9043 9045 9046 9047 9048 9055 9056
 }
-northern_morocco_area = {
-	334 335 1751 4561 5210 5218
+wadai_area = {							#Wadai			- BT17 Added
+	2932 9057 9058 9059 9060
 }
-nafusa_mountains_area = { # BT
-	2449 4567 5306 5309 5310
+tibesti_mountains_area = {				#Tibesti		- BT17 Added
+	9061 9062 9063 9064 9065
+}
+kouar_oases_area = {					#Kouar			- BT17 Added
+	2277 9068 9069
+}
+djado_area = {							#Djado			- BT17 Added
+	2475 9066 9067 9110
+}
+berdoa_toubou_area = {					#Berdoa			- BT17 Added
+	9099 9100 9101 9102
+}
+fezzan_area = {							#Fezzan
+	2448 2474 9106 9107 9108 9109
+}
+libyan_oases_area = {					#Libyan Oases	- BT17 Added
+	2449 5303 5304 9098 9103 9104 9105
+}
+eastern_sahara_wastelands_area = {			#Eastern Sahara Wastelands - BT17 Added
+	1795 8977 8978 8980 8981 8982 8983 8984 8985 
+}
+
+###
+# Central Sahara
+###
+north_saharan_area = {					#Algerian Oases
+	350 2456 2457 2472 9126 9135
+}
+northwest_sahara_area = { 				#Saoura
+	5221 5222 9137 9138 9139
+}
+gourara_oasis_area = {					#Gourara		- BT17 Added
+	9140 9141 9142 9143 
+}
+tuat_oasis_area = {						#Tuat			- BT17 Added
+	1127 9147 9148 9149
+}
+tidikelt_oasis_area = {					#Tidikelt		- BT17 Added
+	9144 9145 9146
+}
+hoggar_mountains_area = {				#Hoggar			- BT17 Added
+	5307 9150 9151 9152 9153 9154
+}
+east_azbin_area = {						#Air Mountains
+	2274 9070 9071 9072 9073 9075
+}
+southern_sahara_area = {				#South Sahara	- BT17 Added
+	1130 2271 9074 9155
+}
+central_sahara_wastelands_area = {			#Central Sahara Wastelands - BT17 Added
+	1794 2275 8979 8986 8987 8988 8989 8991 8992 8993 8994 8995 8996 8997
+}
+
+###
+# Western Sahara
+###
+western_sahara_area = {					#Taoudenit
+	1128 9156 9177 9178 
+}
+saguia_el_hamra_area = {				#Saguia el-Hamra- BT17 Added
+	5223 9173 9175 9176 9188
+}
+cape_juby_area = {						#Cape Juby		- BT17 Added
+	347 9172 9174 9189
+}
+cape_blanc_area = {						#Cape Blanc		- BT17 Added
+	1111 9169 9170 9171 
+}
+idjil_area = {							#Idjil			- BT17 Added
+	9161 9162 9163 9164 9165
+}
+trarza_area = {							#Traza			- BT17 Added
+	1112 9166 9167 9168 9169
+}
+tagant_area = {							#Tagant			- BT17 Added
+	9157 9158 9159 9160
+}
+western_sahara_wastelands_area = {		#Western Sahara Wastelands - BT17 Added
+	1793 8998
+}
+
+###
+# Sahel
+###
+azbin_area = {							#Tahoua
+	1156 2272 2273 2276 
+}
+baghena_area = {
+	1129 2243 2245 2246 2247 
+}
+niger_bend_area ={
+	1132 1133 2260 2262 2264 
+}
+bornu_area = {
+	1157 1160 2282 2283 2284 
+}
+kanem_area = {
+	1158 1159 2286 2287 2288 
+}
+dendi_area = {
+	1142 2268 2269 2270 
 }
 
 ###
 # Guinea
 ###
-cap_verde_area = {
-	1096 1111
-}
 jolof_area = {
-	1112 1113 1116 2239
+	1096 1113 1116 2239 
 }
 gulf_of_guinea_area = {
-	1151 1163 1164 1165
+	1151 1163 1164 1165 
 }
 benin_area = {
-	1147 2289 2290 2294
+	1147 2289 2290 2294 
 }
 sao_tome_area = {
-	1097 1306
+	1097 1306 
 }
 west_africa_coast_area = {
-	1126 1139 1141 2257 2258
+	1126 1139 1141 2257 2258 
 }
 guinea_coast_area = {
-	1118 1119 2241 2242
+	1118 1119 2241 2242 
 }
 futa_jallon_area = {
-	1114 1117 2238
+	1114 1117 2238 
+}
+guinea_wastelands_area = {
+	2251 
 }
 
 ###
@@ -2311,61 +2546,10 @@ atacora_oueme_area = {
 }
 
 ###
-# Sahel
-###
-fezzan_area = {
-	2448 2474 5307
-}
-western_sahara_area = {
-	1128 1129 1130 2271
-}
-baghena_area = {
-	2243 2245 2246 2247
-}
-niger_bend_area ={
-	1132 1133 2260 2262 2264
-}
-bornu_area = {
-	1157 1160 2282 2283 2284
-}
-kanem_area = {
-	1158 1159 2286 2287 2288
-}
-dendi_area = {
-	1142 2268 2269 2270
-}
-azbin_area = {
-	1156 2272 2273 2274 2276
-}
-east_azbin_area = {
-	2275 2277 2475
-}
-darfur_central_sahara_area = {
-	774 1219 2801 2802 2932
-}
-kurdufan_area = {
-	color = { 97 110 203 }
-	1216 1221 5286
-}
-southeast_sahara_area = { # BT
-	5266 5300
-}
-northwest_sahara_area = { # BT
-	1127 5221 5222 5223
-}
-
-###
 # Horn of Africa
 ###
 ogaden_area = { #Central Somailia
-	1206 1207 1208 2024 2778 2790 2792 8806
-}
-sennar_area = { #Blue Nile
-	color = { 26 63 145 }
-	2798 2799 5287 5289
-}
-tigray_area = { #Tigray
-	1227 2767 8883 8885 8886
+	1206 1207 1208 2024 2778 2790 2792 8806 
 }
 ifat_area = { #Hararghe
 	1211 2764 2773 2793 8860 8861 8862 8863
@@ -2373,23 +2557,8 @@ ifat_area = { #Hararghe
 somaliland_area = { #Barbaria
 	1209 1212 1215 2786 2789 8805 8887
 }
-southern_ethiopia_area = { #Gibe
-	2758 4158 8843 8844
-}
-hadiya_area = { #Rift Valley
-	1218 2756 8827 8828 8829 8832
-}
-central_ethiopia_area = { #Amhara
-	1214 2768 2769 8858 8859 8867 8868 8870 8884
-}
-damot_area = { #Damot
-	2762 2763 8831 8849 8850 8851 8852 8853 8854
-}
 aussa_area = { #Danakil
-	2765 8864 8888 8889 8890 8891
-}
-shewa_area = { #Shewa
-	1213 2791 8855 8856 8857 8865 8866
+	2765 8864 8888 8889 8890 8891 
 }
 mogadishu_area = { #Lower Shebelle
 	color = { 239 36 74 }
@@ -2401,12 +2570,30 @@ ajuuran_area = { #Upper Shebelle
 majarteen_area = { #Majeerteenia
 	2788 8802 8803 8804
 }
-white_nile_area = { #White Nile
-	color = { 235 235 235 }
-	1217 1222 2800 5285 5290
+hobyo_area = { #Hobyo
+	2783 2784 2785 2795 8801
 }
-butana_area = { #Butana
-	1225 1226 4033 5297 8895 8896 8897 8898
+
+###
+# Abyssinia
+###
+tigray_area = { #Tigray
+	1227 2767 8883 8885 8886
+}
+southern_ethiopia_area = { #Gibe
+	2758 4158 8843 8844
+}
+hadiya_area = { #Rift Valley
+	1218 2756 8827 8828 8829 8832
+}
+central_ethiopia_area = { #Amhara
+	1214 2768 2769 8858 8859 8867 8868 8870 8884
+}
+damot_area = { #Damot
+	2762 2763 8831 8849 8850 8851 8852 8853 8854 
+}
+shewa_area = { #Shewa
+	1213 2791 8855 8856 8857 8865 8866
 }
 medri_bahri_area = { #Eritrea
 	1230 2766 2787 5288 5298 8892 8893 8894 8899
@@ -2435,30 +2622,30 @@ bale_area = { #Bale
 borana_area = { #Borana
 	8817 8818 8819 8820 8821 8822 8823 8824 8825 8826
 }
-hobyo_area = { #Hobyo
-	2783 2784 2785 2795 8801
+western_eritrea_area = { #Western Eritrea
+	5297 8895 8896 8897 8898
 }
 
 ###
 # East Africa
 ###
 madagascar_highlands_area = {
-	1792 4023 4027
+	1792 4023 4027 
 }
 betsimasaraka_area = {
 	color = { 29 162 26 }
-	4021 4024 4025
+	4021 4024 4025 
 }
 sakalava_area = {
-	1193 1194 4022 4031 4032
+	1193 1194 4022 4031 4032 
 }
-southern_madagascar = {
+southern_madagascar = {  
 	color = { 232 29 34 }
-	4026 4028 4029 4030
+	4026 4028 4029 4030 
 }
 lower_zambezi_area = {
 	color = { 213 127 69 }
-	1187 1190 1191
+	1187 1190 1191 
 }
 upper_zambezi_area = {
 	4046 4047 4050
@@ -2627,7 +2814,10 @@ ovambo_area = {
 	5396 5397 5398 5399 5402 5403
 }
 skeleton_coast_land_area = {
-	1174 1175 5387 5426
+	1174 1175 5387 5426 
+}
+south_african_wastelands_area = {	#South African Wastelands - BT17 Added
+	1173 1801 5119 5520 5521 5522 
 }
 
 ###
@@ -3174,6 +3364,9 @@ tanana_area = {
 klondike_area = {
 	4981 5078 5079 5083 5896 5897 5937 5938 
 }
+alaskan_wastelands_area = {	#Alaskan Wastelands - BT17 Added
+	5111 5112 5120 5127 5507 5533 5534 5535 5536 5537 5538 5542 5543 
+}
 
 ###
 # Mexico
@@ -3406,7 +3599,10 @@ amapa_area = {
 	747 2935 2938
 }
 amazon_area = {
-	2889 2930 2933 2934
+	2889 2930 2933 2934 
+}
+brazilian_wastelands_area = {	#Brazilian Wastelands - BT17 Added
+	1802 1803 2936 
 }
 ###
 # La Plata
@@ -3681,7 +3877,10 @@ kimberley_area = {	#BT16
 	6368 6369 6370 6374 6375 6376 6377
 }
 dampierland_area = {	#BT16
-	4866 4867 6378 6379 6380
+	4866 4867 6378 6379 6380 
+}
+northern_australian_wastelands_area	= {	#Northern Australian Wastelands - BT17 Added
+	1790 1791 6435 
 }
 ###
 # Western Australia
@@ -3719,7 +3918,10 @@ avon_savanna_area = {	#BT16
 	4863 6411 6412 6428 6429 6430
 }
 rainbow_coast_area = {	#BT16
-	1084 2727 6423 6424 6425 6426 6427
+	1084 2727 6423 6424 6425 6426 6427 
+}
+western_australian_wastelands_area	= {	#Western Australian Wastelands - BT17 Added
+	6434 
 }
 
 ###
@@ -3770,6 +3972,9 @@ polynesia_area = {
 }
 fiji_area = { # new in 1.31
 	1242 4937 4938
+}
+new_guinea_wastelands_area = {	#New Guinean Wastelands - BT17 Added
+	1789 
 }
 
 #####
@@ -3984,31 +4189,18 @@ true_north_atlantic_sea_area = { # BT
 
 lake_area = { # 106
 # see: lakes
-	#1250 1251 1253 1260 1261 1262 1325 1326 1327 1648 1649 1650 1651 1653 1654 1655 1656 1657 1658 1659 1660 1661 1662 1663 1665 1883 1884 1885 1886 1887 1888 1889 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1902 1903 1904 1905 1906 1907 1908 1909 1912 1914 1915 1921 1922 1923 1976 1977 2000 2001 2953 3015 3303 4132 4133 4134 4135 4137 4138 4139 4235 4870 4940 4941 5101 5102 5103 5104 5105 5106 5107 5108 5109 5110 5469 5471 5477 5478 5487 5489 5490 5491 5492 5496 5497 5498 5499 5500 5501 5502 5503 5504 5505 6042 6043 6044 6045 6062 6063 6064 8300 8301
+	#1250 1251 1253 1260 1261 1262 1325 1326 1327 1648 1649 1650 1651 1653 1654 1655 1656 1657 1658 1659 1660 1661 1662 1663 1665 1883 1884 1885 1886 1887 1888 1889 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1902 1903 1904 1905 1906 1907 1908 1909 1912 1914 1915 1921 1922 1923 1976 1977 2000 2001 2953 3015 3303 4132 4133 4134 4135 4137 4138 4139 4235 4870 4940 4941 5101 5102 5103 5104 5105 5106 5107 5108 5109 5110 5469 5471 5477 5478 5487 5489 5490 5491 5492 5496 5497 5498 5499 5500 5501 5502 5503 5504 5505 6042 6043 6044 6045 6062 6063 6064 6065 6066 8300 8301 8966 8967 8968 8969 8970 
 }
-wasteland_area = { # 120
-# see: impassable
-	1173
-	1779 1781 1782 1783 1784 1785 1786 1787 1788 1789 1790 1791 1793 1794 1795 1796 1797 1798 1799
-	1801 1802 1803 1804 1807 1814
-	1913 1950
-	2129 2194
-	2200 2251
-	2334
-	2426
-	2740
-	2936
-	4146 4154 4156 4157 4159 4160 4161 4162 4167 4168
-	4400 4401 4402 4403
-	4522 4569
-	4763
-	4807 4843
-	4924 4925 4926 4928 4930 4931 4932 4933
-	5111 5112 5116 5117 5118 5120 5121 5123 5124 5125 5126 5127 5129
-	5507 5508 5509 5510 5511 5512 5513 5514 5515 5516 5517 5518 5519 5520 5521 5522 5523 5524
-	5525 5526 5527 5528 5529 5530 5531 5532 5533 5534 5535 5536 5537 5538 5539 5540 5541 5542 5543 5544 5545 5546 5547 5548 5549
-	5550 5551 5552 5553 5554 5555 5556 5557 5558 5559 5560
-	6097 6098 6432 6433 6434 6435 8608 8609 7280 7281 7282 7283
+wasteland_area = { # 120	#BT17 Note, many wastelands have been moved to regionname_wastelands_areas, in order to get better name placements, make sure any triggers region triggers that use all provinces are adjusted to not include wasteland provinces
+# see: impassable 
+	1781 1782 1783 1796 1797 1798 1799 
+	2426   
+	4522   
+	5125 
+	5513 5518 5519 5523 
+	5527 5539 5540 5541 5549 
+	5550
+	7282 7283
 	8796
 	# Pax Americana Provinces
 	7328 7341 7340 7342 7372
@@ -4141,15 +4333,15 @@ unused_area = {
 	5056 5062
 	5090 5098 5099
 	#5100s - BT provinces in the Mediterranean and some wastelands, and what's below is cut.
-	5113 5114 5115 5119 5122
-	5128 5131 5132 5133 5136 5140 5141 5142 5143 5144 5148 5149
-	5153 5159 5160 5165 5166 5168 5169 5173 5174
-	5175 5176 5177 5178 5179 5182 5183 5184 5185 5186 5187 5188 5189 5190 5191 5192 5193 5194 5195 5196 5197 5198 5199
+	5113 5114 5115 5122 
+	5128 5131 5132 5133 5136 5140 5141 5142 5143 5144 5148 5149 
+	5153 5159 5160 5165 5166 5168 5169 5173 5174 
+	5175 5176 5177 5178 5179 5182 5183 5184 5185 5186 5187 5188 5189 5190 5191 5192 5193 5194 5195 5196 5197 5198 5199 
 	#5200s - BT provinces and some wastelands with random additions.
-	5200 5201 5202 5204 5207 5208 5209 5214 5215 5216 5217 5227 5230 5234
-	5236 5237 5238 5240 5242 5245 5247 5248
-	5252 5253 5254 5257 5258 5259 5260 5262 5263 5265 5268 5269 5270
-	5275 5276 5291 5292 5293 5294 5299
+	5200 5201 5202 5204 5207 5208 5209 5214 5215 5216 5217 5227 5230 5234 
+	5236 5237 5238 5240 5242 5245 5247 5248 
+	5252 5253 5254 5257 5258 5259 5260 5262 5263 5265 5268 5269 5270 
+	5275 5276 5280 5291 5292 5293 5294 5299
 	#5300s - BT provinces
 	5305 5308
 	5335 5336 5337 5338 5339
@@ -4268,10 +4460,27 @@ unused_area = {
 	#8800s
 	8830
 	#8900s
-	8900 8901 8902 8903 8904 8905 8906 8907 8908 8909 8910 8911 8912 8913 8914 8915 8916 8917 8918 8919 8920 8921 8922 8923 8924
-	8925 8926 8927 8928 8929 8930 8931 8932 8933 8934 8935 8936 8937 8938 8939 8940 8941 8942 8943 8944 8945 8946 8947 8948 8949
-	8950 8951 8952 8953 8954 8955 8956 8957 8958 8959 8960 8961 8962 8963 8964 8965 8966 8967 8968 8969 8970 8971 8972 8973 8974
-	8975 8976 8977 8978 8979 8980 8981 8982 8983 8984 8985 8986 8987 8988 8989 8990 8991 8992 8993 8994 8995 8996 8997 8998 8999
+	8900 8901 8902 8903 8904 8905 8906 8907 8908 8909 8910 8911 8912 8913 8914 8915 8916 8917 8918 8919 8920 8921 8922 8923 8924 
+	8925 8926 8927 8928 8929 8930 8931 8932 8933 8934 8935 8936 8937 8938 8939 8940 8941 8942 8943 8944 8945 8946 8947 8948 8949 
+	8950 8951 8952 8953 8954 8955 8956 8957 8958 8959 8960 8961 8962 8963 8964 8990 
+	#9000s
+	9000 9001 9002 9003 9004 9005 9008
+	#9100s
+	#9200s
+	9200 9201 9202 9203 9204 9205 9206 9207 9208 9209 9210 9211 9212 9213 9214 9215 9216 9217 9218 9219 9220 9221 9222 9223 9224
+	9225 9226 9227 9228 9229 9230 9231 9232 9233 9234 9235 9236 9237 9238 9239 9240 9241 9242 9243 9244 9245 9246 9247 9248 9249
+	9250 9251 9252 9253 9254 9255 9256 9257 9258 9259 9260 9261 9262 9263 9264 9265 9266 9267 9268 9269 9270 9271 9272 9273 9274
+	9275 9276 9277 9278 9279 9280 9281 9282 9283 9284 9285 9286 9287 9288 9289 9290 9291 9292 9293 9294 9295 9296 9297 9298 9299
+	#9300s
+	9300 9301 9302 9303 9304 9305 9306 9307 9308 9309 9310 9311 9312 9313 9314 9315 9316 9317 9318 9319 9320 9321 9322 9323 9324
+	9325 9326 9327 9328 9329 9330 9331 9332 9333 9334 9335 9336 9337 9338 9339 9340 9341 9342 9343 9344 9345 9346 9347 9348 9349
+	9350 9351 9352 9353 9354 9355 9356 9357 9358 9359 9360 9361 9362 9363 9364 9365 9366 9367 9368 9369 9370 9371 9372 9373 9374
+	9375 9376 9377 9378 9379 9380 9381 9382 9383 9384 9385 9386 9387 9388 9389 9390 9391 9392 9393 9394 9395 9396 9397 9398 9399
+	#9400s
+	9400 9401 9402 9403 9404 9405 9406 9407 9408 9409 9410 9411 9412 9413 9414 9415 9416 9417 9418 9419 9420 9421 9422 9423 9424
+	9425 9426 9427 9428 9429 9430 9431 9432 9433 9434 9435 9436 9437 9438 9439 9440 9441 9442 9443 9444 9445 9446 9447 9448 9449
+	9450 9451 9452 9453 9454 9455 9456 9457 9458 9459 9460 9461 9462 9463 9464 9465 9466 9467 9468 9469 9470 9471 9472 9473 9474
+	9475 9476 9477 9478 9479 9480 9481 9482 9483 9484 9485 9486 9487 9488 9489 9490 9491 9492 9493 9494 9495 9496 9497 9498 9499
 }
 temp_area = {
 }
@@ -4290,12 +4499,6 @@ netherlands_area = { }
 
 indonesian_islands_area = {  }
 
-#iceland_area = { }
-
 south_laos_area = { }
 
-eastern_maine_area = { }
-
-hudson_valley_area = { }
-
-south_dakota_area = { }
+cap_verde_area = { }

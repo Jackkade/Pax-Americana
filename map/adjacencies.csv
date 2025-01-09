@@ -1,5 +1,5 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
-7766;12;sea;1258;-1;-1;-1;-1;Sk�ne-Sjaelland
+7766;12;sea;1258;-1;-1;-1;-1;Skåne-Sjaelland
 7768;14;sea;5494;-1;-1;-1;-1;Sjaelland-Fyn
 14;4142;sea;5494;-1;-1;-1;-1;Fyn-Aarhus
 14;4149;sea;5494;-1;-1;-1;-1;Fyn-Kolding
@@ -20,7 +20,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4186;1825;sea;1390;-1;-1;-1;-1;Aki-Iyo
 2159;666;sea;1370;-1;-1;-1;-1;Jiangmen-Hainan
 3231;7857;sea;1926;-1;-1;-1;-1;Haapsalu-Hiiumaa
-35;3227;sea;1256;-1;-1;-1;-1;�sel-Piltene
+35;3227;sea;1256;-1;-1;-1;-1;Ösel-Piltene
 597;620;sea;1361;-1;-1;-1;-1;Johor-Siak
 5048;982;sea;1491;-1;-1;-1;-1;Esgigeoag-Unamakik
 4891;6454;sea;1491;-1;-1;-1;-1;Segepenegatig-Epekwitk
@@ -53,13 +53,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 646;647;sea;1401;-1;-1;-1;-1;Ambom-Ceram
 2678;622;sea;1361;-1;-1;-1;-1;Banka-Palembang
 748;2890;sea;1529;-1;-1;-1;-1;Belem-Marajo
-2954;353;sea;1305;-1;-1;-1;-1;Djerba-Tataouine
+2954;353;sea;1305;-1;-1;-1;-1;Djerba-Medenine
+2954;9113;sea;1305;-1;-1;-1;-1;Djerba-Xarxis
 431;2999;sea;1334;-1;-1;-1;-1;Mogostan-Hormuz
 2999;5249;sea;1334;-1;-1;-1;-1;Hormuz-Khasab
 4351;4352;sea;1397;-1;-1;-1;-1;Buglas-Cebu
 7194;7195;sea;1322;-1;-1;-1;-1;Kinburn-Ochakiv
-35;7857;sea;1926;-1;-1;-1;-1;Hiiumaa-�sel
-3231;35;sea;1256;-1;-1;-1;-1;Haapsalu-�sel
+35;7857;sea;1926;-1;-1;-1;-1;Hiiumaa-Ösel
+3231;35;sea;1256;-1;-1;-1;-1;Haapsalu-Ösel
 4363;4364;sea;1283;-1;-1;-1;-1;Argyll-Inner Hebrides
 8155;4364;sea;1283;-1;-1;-1;-1;Locahber-Inner Hebrides
 3137;4364;sea;1283;-1;-1;-1;-1;Ross-Inner Hebrides
@@ -171,8 +172,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 6051;483;sea;1503;-1;-1;-1;-1;Mayaguana-Inagua
 6051;5577;sea;1503;-1;-1;-1;-1;Mayaguana-TurksAndCaicos
 5577;483;sea;1503;-1;-1;-1;-1;TurksAndCaicos-Inagua
-7531;7539;sea;1526;-1;-1;-1;-1;PuertoRico-StThomas
-5584;7539;sea;1526;-1;-1;-1;-1;PuertoRico-StThomas
+492;5584;sea;1526;-1;-1;-1;-1;PuertoRico-StThomas
 493;5584;sea;1526;-1;-1;-1;-1;StThomas-Tortola
 5584;6050;sea;1526;-1;-1;-1;-1;StThomas-StCroix
 1881;5586;sea;1523;-1;-1;-1;-1;Anguilla-StMartin
