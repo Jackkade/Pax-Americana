@@ -1295,6 +1295,7 @@ exploration_ideas = {
 			}
 			adm_tech = 14
 		}	#Bonus for historical countries at the fourth idea (Approximately year 1583)modifier = {
+		modifier= {
 			factor = 15
 			OR = {
 				tag = HOL			#Historically 1602	(as Netherlands)
