@@ -1352,6 +1352,7 @@ estate_nobles_statutory_rights = {
 	}
 	penalties = {
 		min_autonomy = 25
+		global_autonomy = 0.2
 	}
 	benefits = {
 	}

@@ -240,7 +240,7 @@ native_settle_down_reform = {
 	fixed_rank = 0
 	modifiers = {
 		global_institution_spread = 0.2
-		governing_capacity_modifier = 0.25
+		governing_capacity_modifier = -0.25
 	}
 	removed_effect = {
 		add_stability = -1
@@ -450,7 +450,6 @@ native_remain_being_native_reform = {
 	modifiers = {
 		land_morale = 0.10
 		movement_speed = 0.05
-		colonists = 1
 	}
 	ai = {
 		factor = 100
