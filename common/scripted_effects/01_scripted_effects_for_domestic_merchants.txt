@@ -19,3 +19,14 @@ domestic_merchant_effect = {
 		}
 	}
 }
+
+owner_has_ducats = {
+	FROM = {
+		current_income_balance = 0 	# Must have positive income
+		is_at_war = no				# Must be at peace
+		treasury = $cash$			# Amount of cash the nation needs
+		NOT = {
+			num_of_loans = 1		# Must not have loans
+		}
+	}
+}
