@@ -201,7 +201,7 @@ native_longhouse = {
 	}
 	modifier = {
 		monthly_reform_progress_building = 0.1
-		local_governing_cost = -0.25
+		local_autonomy = -0.05
 	}
 	government_specific = yes
 
