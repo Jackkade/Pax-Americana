@@ -1,31 +1,55 @@
-#Contributions from a wide range, including Draiocht, JP, 
+#Contributions from a wide range, including Draiocht, JP, Arga, Imagine, Alexious, Chrys, Cinnamon Ryce
 #(JP) British English, will be overwritten by local American, Scottish, Northumbrian, Old English etc
 #(JP) I have reorganised and cleaned up all the prior British/English naming to try and make it more legible, consistant and keep it easier to edit in future
 
-#England
+#Britain
 233 = { "Cornwall" "Truro" }
-234 = { "Hampshire" "Winchester" } #(JP) Also contains "Portsmouth" and "Southampton"
+234 = { "Hampshire" "Southampton" } #(JP) Also contains "Portsmouth" and "Winchester". Latter is the capital, and will be set in ENG.txt
 235 = { "Kent" "Canterbury" }
 236 = { "Middlesex" "London" }
 237 = { "Oxford" "Oxford" }
 238 = { "Essex" "Chelmsford" }
-239 = { "Gloucester" "Gloucester" } #(JP) Later "Bristol" 
+239 = { "Bristol" "Bristol" } #(JP) Earlier "Gloucester" 
 240 = { "Shropshire" "Salisbury" }
+241 = { "Glamorgan" "Cardiff" }
+242 = { "Carnarvon" "Carnarvon" } #(Chrys) Carnarvon is the more traditional anglicization, Caernarvon is a later, more Welsh form from the 20th century
 243 = { "Lincoln" "Lincoln" }
 244 = { "Lancashire" "Lancaster" } #(JP) Later "Manchester", "Salford", "Liverpool" or "Preston"
 245 = { "York" "York" }
-246 = { "Northumberland" "Alnwick" } #(JP) Later "Newcastle upon Tyne"
+246 = { "Northumberland" "Alnwick" } #(JP) Later "Newcastle-upon-Tyne"
 247 = { "Cumberland" "Carlisle" }
+248 = { "Lothian" "Edinburgh" }
+249 = { "Ayrshire" "Ayr" }
+250 = { "Perth" "Perth" }
+251 = { "Aberdeen" "Aberdeen" }
+252 = { "Inverness" "Inverness" }
+253 = { "Outer Hebrides" "Stornoway" }
 1860 = { "Norfolk" "Norwich" }
 1861 = { "Derby" "Derby" }
+3008 = { "Galloway" "Wigtown" }
+3019 = { "Lanark" "Lanark" } #(JP) Later "Glasgow" 
 3028 = { "Suffolk" "Ipswich" }
+3034 = { "Brecon" "Brecon" }
+3036 = { "Cardigan" "Cardigan" }
+3137 = { "Ross" "Dingwall" }
+3138 = { "Athole" "Blair Athole" }
+3139 = { "Angus" "Forfar" }
+4110 = { "Caithness" "Wick" }
 4130 = { "Somerset" "Taunton" }
-4367 = { "Hull" "Kingston upon Hull" }
+4361 = { "Teviotdale" "Jedburgh" } #(JP) Earlier "Roxburgh" for capital
+4362 = { "Dumfries" "Dumfries" }
+4363 = { "Argyle" "Tarbert" }
+4364 = { "Inner Hebrides" "Finlaggan" }
+4365 = { "Mann" "Castletown" }
+4366 = { "Montgomery" "Montgomery" }
+4367 = { "Hull" "Kingston-upon-Hull" }
 4368 = { "Durham" "Durham" }
+4369 = { "Pembroke" "Pembroke" }
 4370 = { "Cambridge" "Cambridge" }
 4371 = { "Sussex" "Chichester" }
 4372 = { "Worcester" "Worcester" }
 4373 = { "South Devon" "Exeter" }
+4374 = { "Dorset" "Dorchester" }
 4375 = { "Cheshire" "Chester" }
 4376 = { "Leicester" "Leicester" }
 4785 = { "Sheffield" "Sheffield" }
@@ -44,15 +68,6 @@
 8135 = { "Westmoreland" "Appleby" }
 8136 = { "Tynedale" "Hexham" }
 8137 = { "Berwick" "Berwick-upon-Tweed" }
-8170 = { "Wiltshire" "Salisbury" }
-
-#Wales
-241 = { "Glamorgan" "Cardiff" }
-242 = { "Caernarvon" "Caernarvon" }
-3034 = { "Brecon" "Brecon" }
-3036 = { "Cardigan" "Cardigan" }
-4366 = { "Montgomery" "Montgomery" }
-4369 = { "Pembroke" "Pembroke" }
 8138 = { "Anglesey" "Holyhead" } #(JP) Welsh capital is "Aberffraw" 
 8139 = { "Flint" "Flint" }
 8140 = { "Denbigh" "Denbigh" }
@@ -60,25 +75,6 @@
 8142 = { "Radnor" "Radnor" }
 8143 = { "Carmarthen" "Carmarthen" }
 8144 = { "Monmouth" "Monmouth" }
-
-#Scotland
-248 = { "Lothian" "Edinburgh" }
-249 = { "Ayrshire" "Ayr" }
-250 = { "Perth" "Perth" }
-251 = { "Aberdeen" "Aberdeen" }
-252 = { "Inverness" "Inverness" }
-253 = { "Outer Hebrides" "Stornoway" }
-3008 = { "Galloway" "Wigtown" }
-3019 = { "Lanark" "Lanark" } #(JP) Later "Glasgow" 
-3137 = { "Ross" "Dingwall" }
-3138 = { "Athole" "Blair Athole" }
-3139 = { "Angus" "Forfar" }
-4110 = { "Caithness" "Wick" }
-4361 = { "Teviotdale" "Jedburgh" } #(JP) Earlier "Roxburgh" for capital
-4362 = { "Dumfries" "Dumfries" }
-4363 = { "Argyle" "Tarbert" }
-4364 = { "Inner Hebrides" "Finlaggan" }
-4365 = { "Mann" "Castletown" }
 8145 = { "Tweeddale" "Peebles" } #(JP) Capital could also be "Selkirk"
 8146 = { "The Merse" "Greenlaw" }
 8147 = { "Lennox" "Dumbarton" }
@@ -90,6 +86,7 @@
 8153 = { "Sutherland" "Dornoch" }
 8154 = { "Lorne" "Oban" }
 8155 = { "Lochaber" "Inverlochy" }
+8170 = { "Wiltshire" "Salisbury" }
 
 #Ireland
 #(JP) For Ireland, I have decided to stick with non-British Irish names for the most part. These are in ENG, GBR and UNK.txt.
@@ -128,20 +125,27 @@
 8169 = { "Carbery" "Kilbrittain" }
 
 #Scandinavia
-23 = { "Berkdal" "Berkdal" } #(JP) "Bergen" means "mountain meadow", "Berg-" -> "Berk-" and "-dal" is of Germanic origin for meadow
+23 = { "Bergh" "Bergh" } #(Chrys) Apparently attested as "Bergh" in Middle English
 369 = { "Orkney" "Kirkwall" }
 1978 = { "Shetland" "Lerwick" }
 1979 = { "Faeroe" "Thorshaven" }
 1984 = { "Alburgh" "Alburgh" } #(JP) "Aalborg"
 3134 = { "Abenrad" "Abenrad" }
 4142 = { "Aremouth" "Aremouth" } #(JP) Adaptation of "Aarhus", with "-hus" meaning river mouth
+5591 = { "Isabella" "Port Isabella" }
 
 #North Germany
+44 = { "Hamborough" "Hamborough" } #(Chrys) the most common of many spellings found in the 1600s https://www.british-history.ac.uk/no-series/traded-goods-dictionary/1550-1820/hamburg-hammer-handle
 50 = { "Berlin" "Berlin" }
+52 = { "Maidensburg" "Maidensburg" }
 57 = { "Brunswick" "Brunswick" }
 60 = { "Batsen" "Batsen" }
+85 = { "Coleyn" "Coleyn" } #(Chrys) similar to how the variants of Bologne in Middle English became Boleyn, attested in Middle English as Coloyne and later Coleyne before being replaced by French spelling
+1758 = { "Hanover" "Hanover" }
+1760 = { "Coblenz" "Coblenz" }
 1874 = { "Bremen" "Bremen" }
 1878 = { "Aix-la-Chapelle" "Aix-la-Chapelle" } #(JP) "Traditional English"
+3198 = { "Saarbridge" "Saarbridge" }
 8412 = { "Boncaster" "Boncaster" } #(JP) "Castrum Bonna"
 
 #Low Countries
@@ -149,57 +153,86 @@
 92 = { "Brussels" "Brussels" }
 97 = { "Amsterdam" "Amsterdam" }
 99 = { "Arnem" "Arnem" }
+1743 = { "Camerick" "Camerick" }
 1744 = { "Antwerp" "Antwerp" }
+1865 = { "Gaunt" "Gaunt" } #(Chrys) older exonym, replaced by Ghent
 3066 = { "Arlond" "Arlond" }
+4383 = { "The Hague" "The Hague" } #(Chrys) perhaps also "The Haw" as haag is cognate to the haw in words like hawthorn in English
+7975 = { "Dort" "Dort" }
 8018 = { "Alst" "Alst" }
 8024 = { "Bastenack" "Bastenack" }
 8032 = { "Beaulon" "Beaulon" }
 
 #France
-87 = { "Cales" "Cales" }
+87 = { "Caleys" "Caleys" } #(Chrys) attested as "Caleys", "Calais", "Calays", "Callis" and "Cales" in Early Modern English
 88 = { "Aras" "Aras" }
+167 = { "Rone" "Rone" } #(Chrys) attested historical English name of Rouen still well in use in the 15th century
+168 = { "Cane" "Cane" } #(Chrys) from historical name of a special kind of stone used for construction called Canestone, originating in Caen, used in 14th and 15th centuries
 170 = { "Brest" "Brest" }
-174 = { "Bordeaux" "Bordeaux" }
-#174 = { "Bordele" "Bordele" } #(JP) This sounds more English to me, but I can find no evidence of what name the English Kings used.
-193 = { "Besants" "Besants" } 
-202 = { "Avenham" "Avenham" } #(JP) Looking at the Latin name "Avenio"/"Avenium", I noticed the similarity to a local park near me, "Avenham"
+174 = { "Bordeaux" "Bordeaux" } #(Chrys) found spellings as "Burdeux" used multiple times in the 15th century but not sure if it signifies any substantial non-orthographic difference from current name
+#174 = { "Bordele" "Bordele" } #(JP) This sounds more English to me, but I can find no evidence of what name the English Kings used. #(Chrys) found one attestation of Burdeux c1410, which I believe would be Burdous in modern English orthography, but more research on this is needed before moving forward, also there is a Scots exonym of "Burdeous"
+175 = { "Arminack" "Aush" } #(Chrys) found evidence of use of this name to refer to the Counts of Armagnac in the 16th century, city name is an educated guess
+193 = { "Besance" "Besance" } 
+202 = { "Avinion" "Avinion" } #(Chrys) "This pope Clement translate firste of alle other bischoppes of Rome the seete of the pope unto Avinion", pronounced to rhyme with the word minion, this pronunciation is kept in the Oxford English Dictionary recommended pronunciation of the name of the "Avignon berry", though the spelling has since been changed to that of French
 7893 = { "Aix-en-Provence" "Aix-en-Provence" } #(JP) Following the tradition with "Aachen" using French
 7965 = { "Abbeyton" "Abbeyton" }
-7969 = { "Baloney" "Baloney" } #(JP) For the lolz
+7969 = { "Boleyn" "Boleyn" } #(Chrys) origin of the Boleyn surname is from Boulogne-sur-Mer
+7974 = { "Bethwyn" "Bethwyn" }
 
 #Iberia
 209 = { "Biscay" "Bilbao" }
 213 = { "Barcelona" "Barcelona" }
 222 = { "Almeria" "Almeria" }
+224 = { "Seville" "Seville" }
+227 = { "Lisbon" "Lisbon" }
 232 = { "Bragansa" "Bragansa" }
 3104 = { "Braga" "Braga" }
 4547 = { "Albacete" "Albacete" }
+5446 = { "Malaga" "Malaga" }
 
 #Italy
+101 = { "Genua" "Genua" }
+107 = { "Brescia" "Brescia" }
 111 = { "Exilia" "Exilia" } #(JP) Bullshitting here, but "Aq" is pronounced similar to "Ex" in places like "Exeter"
+116 = { "Florence" "Florence" }
+118 = { "Rome" "Rome" }
 119 = { "Ancona" "Ancona" }
+121 = { "Naples" "Naples" }
+122 = { "Tarent" "Tarent" } #(JP) Found on its wikipedia page.
 3045 = { "Augusta" "Augusta" } 
 4730 = { "Baloney" "Baloney" } #(JP) For the lolz
 4739 = { "Berkham" "Berkham" } #(JP) German "Berg" becomes either "bergh" or "berk". With "-heim" = "-ham", I thought "Berk-" to be more fitting
 5092 = { "Bastia" "Bastia" }
+7017 = { "Gathia" "Gathia" }
 7038 = { "Bonifacio" "Bonifacio" }
 7079 = { "Biella" "Biella" }
 
 #South Germany
+110 = { "Trent" "Trent" }
+134 = { "Vienna" "Vienna" }
 165 = { "Berne" "Berne" } #(JP) or just "Bern" 
 265 = { "Berne" "Berne" } #(JP) or just "Bern" 
 1868 = { "Augburgh" "Augburgh" } #(JP) or "Augustaburgh"
+1869 = { "Zurich" "Zurich" }
+1870 = { "St. Gall" "St. Gall" }
 3048 = { "Bolcan" "Bolcan" }
 3055 = { "Basle" "Basle" }
 4718 = { "Ashburgh" "Ashburgh" } #(JP) or "Ashaphaburgh" 
+7082 = { "Middleburg" "Middleburg" }
 
 #Balkans
 143 = { "Whitborough" "Whitborough" } #(JP) "White town/castle"
 146 = { "Athens" "Athens" }
+148 = { "Salonica" "Salonica" }
+149 = { "Adrianople" "Adrianople" }
+3179 = { "Nauplia" "Nauplia" }
+3181 = { "Avlona" "Avlona" }
 3183 = { "Monaster" "Monaster" }
+4174 = { "Durazzo" "Durazzo" }
 4239 = { "Belgrade" "Belgrade" }
 4756 = { "Belobar" "Belobar" }
 7140 = { "Butrint" "Butrint" }
+7163 = { "Malmsey" "Malmsey" } #(JP) Historical name of Malvasia Wine in English, the Italian name of Monemvasia
 7708 = { "Antibar" "Antibar" }
 
 #Carpathia
@@ -208,26 +241,46 @@
 3154 = { "Whitburgh" "Whitburgh" } #(JP) "White town/castle"
 3157 = { "Bacaford" "Bacaford" } 
 4128 = { "Brasoff" "Brasoff" }
+4529 = { "Jassy" "Jassy" }
 8184 = { "Etselburgh" "Etselburgh" }
 
 #Poland
+264 = { "Breslow" "Breslow" }
+2960 = { "New Sadec" "New Sadec" }
+
 #Baltic
+38 = { "Rie" "Rie" }
+39 = { "Goldingia" "Goldingia" }
+41 = { "Kingsberg" "Kingsberg" }
+3227 = { "Pilten" "Pilten" }
 7826 = { "Butow" "Butow" }
 
 #Ruthenia
 277 = { "Brest" "Brest" }
 
 #Russia
+33 = { "St. Petersburg" "St. Petersburg" }
+34 = { "Koporia" "Koporia" }
+274 = { "Plescow" "Plescow" }
+295 = { "Moscow" "Moscow" }
 313 = { "Archangel" "Archangel" }
+3273 = { "Oldenrussia" "Oldenrussia" }
+3276 = { "Saint Sergius" "Saint Sergius" }
 
 #Ural
+
 #Pontic Steppe
 464 = { "Astrakhan" "Astrakhan" }
+3243 = { "Nikopol" "Nikopol" }
 
 #Caucasia
+
 #Anatolia
+
 #Mesopotamia
 407 = { "Rakkah" "Rakkah" } #(JP) "Raqqa"
+410 = { "Baghdad" "Baghdad" }
+411 = { "Mosul" "Mosul" }
 2134 = { "Rahba" "Rahba" }
 4298 = { "Hantab" "Hantab" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
@@ -246,7 +299,6 @@
 1854 = { "Naples" "Naples" }
 1855 = { "Saphet" "Saphet" } #(JP) "Safed"
 2313 = { "Antioch" "Antioch" }
-4268 = { "Elyn" "Elyn" } #(JP) "Aqaba"
 4270 = { "Maan" "Maan" }
 4271 = { "Idlib" "Idlib" }
 4297 = { "Becaa" "Balbeck" }
@@ -254,10 +306,8 @@
 5145 = { "Famagusta" "Famagusta" }
 5170 = { "Latakia" "Latakia" }
 5180 = { "Gaza" "Gaza" }
-5181 = { "Nekhel" "Nekhel" }
 5203 = { "Montreal" "Montreal" } #(JP) "Shoubak"
 5205 = { "Baruth" "Baruth" }
-365 = { "Sinai" "Saint Catherine" }
 6071 = { "Beersheba" "Beersheba" }
 6074 = { "Tyre" "Tyre" }
 6075 = { "Sidon" "Sidon" }
@@ -275,9 +325,14 @@
 6095 = { "Kilis" "Kilis" }
 
 #Arabia
+388 = { "Aden" "Aden" }
+
 #Persia
+
 #Khorasan
+
 #Central Asia
+
 #Tibet
 
 #(JP) Just some notes here on choices for British India (and to an extent, theoretical indonesia)
@@ -503,7 +558,7 @@
 4419 = { "Addanki" "Addanki" }
 4420 = { "Chandragiri" "Chandragir" }
 4425 = { "Kondaveedu" "Kondaveedu" }
-5093 = { "Kerguelen Islands" "Port-of-Britain" } #(JP) French capital name is "Port-aux-Franùais", not perfect but yeah
+5093 = { "Kerguelen Islands" "Port-of-Britain" } #(JP) French capital name is "Port-aux-FranÁais", not perfect but yeah
 8545 = { "Crozet Islands" "Port Alfred" }
 8581 = { "Nicobar Islands" "Car Nicobar" }
 
@@ -558,32 +613,786 @@
 4486 = { "Purnea" "Purnea" }
 
 #Burma
+
 #Indochina
+
 #Malaysia
+
 #Sumatra
+
 #Java
+
 #Borneo
+
 #Philippines
+
 #Celebes
+
+#Lesser Sundas
+
 #Polynesia
-#Australia
+
+#Northeastern Australia
+1092 = { "Grafton" "Grafton" }
+1093 = { "Arcadia Valley" "Arcadia Valley" }
+1094 = { "Sunshine Coast" "Caloundra" } #(JP) Aboriginal Capital name used by Anglos
+2730 = { "Somerset" "Somerset" }
+2731 = { "Cooktown" "Cooktown" }
+2732 = { "Cairns" "Cairns" }
+2733 = { "Proserpine" "Proserpine" }
+4849 = { "Gore Point" "Gore Point" }
+4850 = { "Gladstone" "Gladstone" }
+4851 = { "Brisbane" "Brisbane" }
+4852 = { "Warwick" "Warwick" }
+4853 = { "Miles" "Miles" }
+4854 = { "Gold Coast" "Gold Coast" }
+6200 = { "Billa Billa" "Billa Billa" } #(JP) Aboriginal name used by Anglos
+6201 = { "Fitzroy Downs" "Fitzroy Downs Station" } #(JP) Modern "Roma"
+6202 = { "Proston" "Proston" } #(JP) Aboriginal name used by Anglos
+6203 = { "Injune" "Injune Station" }
+6204 = { "Rockhampton" "Rockhampton" }
+6205 = { "Mackay" "Mackay" }
+6206 = { "Moranbah" "Moranbah" } #(JP) Aboriginal name used by Anglos
+6207 = { "Blackwater" "Blackwater" }
+6208 = { "Withersfield" "Withersfield" }
+6209 = { "Clermont" "Clermont" }
+6210 = { "Moongunya" "Moongunya" } #(Chrys) name of Collinsville prior to 1921
+6211 = { "Townsville" "Townsville" }
+6212 = { "Charters Towers" "Charters Towers" }
+6213 = { "Torrens Creek" "Torrens Creek" }
+6214 = { "Mount Surprise" "Mount Surprise" }
+6215 = { "Lyndhurst" "Lyndhurst Station" }
+6216 = { "Port Douglas" "Port Douglas" }
+6217 = { "Lakefield" "Lakefield" }
+6218 = { "Lockhart River" "Lockhart River Station" }
+6219 = { "Torres Strait Islands" "Port Kennedy" }
+6220 = { "Port Musgrave" "Port Musgrave" }
+6221 = { "Albatross Bay" "Mission River Station" }
+6222 = { "Archer River" "Archer River Station" }
+6223 = { "Edward River" "Edward RIver Station" }
+6224 = { "Mitchell River" "Mitchell River Mission" }
+6225 = { "Highbury" "Highbury" }
+6226 = { "Abingdon Downs" "Abingdon Downs Station" }
+6227 = { "Croydon" "Croydon" }
+6228 = { "Georgetown" "Georgetown" }
+6229 = { "Norman River" "Normanton" }
+6230 = { "Victoria Vale" "Victoria Vale" }
+6231 = { "Gregory Downs" "Gregory Downs Station" }
+6232 = { "Taldora" "Taldora Station" }
+6233 = { "Cloncurry" "Cloncurry" }
+6234 = { "Richmond" "Richmond" }
+6235 = { "Hughenden" "Hughenden" }
+6236 = { "Barcaldine Downs" "Barcaldine Downs Station" }
+6237 = { "Blackall" "Blackall" }
+6238 = { "Ilfracombe" "Ilfracombe" }
+6239 = { "Opalton" "Opalton" }
+6251 = { "Birdsville" "Birdsville" }
+6252 = { "Farrars Creek" "Farrars Creek" }
+6254 = { "Hopetoun" "Hopetoun" }
+6255 = { "Durham" "Durham" }
+6256 = { "Yaraka" "Yaraka Station" } #(JP) Aboriginal name used by Anglos
+6257 = { "Toompine" "Toompine" } #(JP) Aboriginal name used by Anglos
+6258 = { "Adavale" "Adavale" }
+6259 = { "Yo Yo Creek" "Yo Yo Creek" } #(JP) Modern "Augathella"
+6260 = { "Cunnamulla" "Cunnamulla Station" } #(JP) Aboriginal name used by Anglos
+6261 = { "St. George" "St. George" }
+6263 = { "Enngonia" "Enngonia" } #(JP) Aboriginal name used by Anglos
+6264 = { "Hungerford" "Hungerford" }
+6265 = { "Cameron Corner" "Cameron Corner" }
+
+#Northern Australia
+2728 = { "Tiwi Islands" "Fort Dundas" }
+2729 = { "Gove Peninsula" "East Arnhem" }
+4846 = { "Darwin" "Darwin" }
+4847 = { "Port McArthur" "Port McArthur" }
+4848 = { "Burketown" "Burketown" }
+4866 = { "Ninety-Mile Beach" "Pardoo Station" }
+4867 = { "Dampier Peninsula" "Waterbank" }
+6241 = { "Mount Isa" "Mount Isa" }
+6242 = { "Camooweal" "Camooweal" } #(JP) Aboriginal name used by Anglos
+6243 = { "Nicholson" "Nicholson" }
+6244 = { "Calvert" "Calvert" }
+6245 = { "McArthur River" "McArthur River Station" }
+6246 = { "Creswell" "Creswell" }
+6247 = { "Ranken" "Ranken" }
+6248 = { "Canteen Creek" "Canteen Creek" }
+6249 = { "Costello" "Costello" }
+6250 = { "Boulia" "Boulia" } #(JP) Aboriginal name used by Anglos
+6334 = { "Ayers Rock" "Ayers Rock" }
+6335 = { "Petermann" "Petermann" }
+6336 = { "Alice Springs" "Alice Springs" }
+6337 = { "Willowra" "Willowra Station" }
+6338 = { "Davenport" "Davenport" }
+6340 = { "Stuart Creek" "Stuart Creek" }
+6341 = { "Tanami" "Tanami" } #(JP) Aboriginal name used by Anglos
+6342 = { "Newcastle Waters" "Newcastle Waters" }
+6343 = { "Tennant Creek" "Tennant Creek" }
+6344 = { "Arnold River" "Arnold River Station" }
+6345 = { "Victoria River" "Victoria River Station" }
+6346 = { "Buchanan" "Buchanan" }
+6347 = { "Timber Creek" "Timber Creek" }
+6348 = { "Delamere" "Delamere" }
+6349 = { "Minyerri" "Minyerri" } #(JP) Aboriginal name used by Anglos
+6350 = { "Limmen" "Limmen" } #(JP) Aboriginal name used by Anglos
+6351 = { "Wilton" "Wilton" }
+6352 = { "Great Island" "Rose River Mission" } #(JP) Translated from Early Modern Dutch "Groote Eylandt"
+6353 = { "Bulman" "Bulman" }
+6354 = { "Buckingham River" "Buckingham River Station" }
+6355 = { "Liverpool River" "West Arnhem" }
+6356 = { "Cobourg Peninsula" "Cape Don" }
+6357 = { "Kakadu" "Kakadu" } #(JP) Aboriginal name used by Anglos
+6358 = { "Alligator Rivers" "Jabiru" } #(JP) Aboriginal capital name used by Anglos
+6359 = { "Pine Creek" "Pine Creek" }
+6360 = { "Beswick" "Beswick" }
+6361 = { "Mataranka" "Mataranka" } #(JP) Aboriginal name used by Anglos
+6362 = { "Katherine" "Katherine" }
+6363 = { "Daly River" "Daly River Station" }
+6364 = { "Port Keats" "Port Keats" }
+6365 = { "Bradshaw's Run" "Bradshaw's Run" }
+6366 = { "Keep River" "Keep River Station" }
+6367 = { "Wyndham" "Wyndham" }
+6368 = { "Forest River" "Forest River Mission" }
+6369 = { "Mitchell Plateau" "Mitchell Plateau Station" }
+6370 = { "Drysdale River" "Drysdale River Station" }
+6371 = { "Ord River" "Ord River Station" }
+6372 = { "Gordon Downs" "Gordon Downs Station" }
+6373 = { "Fitzroy Crossing" "Fitzroy Crossing" }
+6374 = { "Fitzroy River" "Fitzroy River Station" }
+6375 = { "Gibb River" "Gibb River Station" }
+6376 = { "Prince Regent River" "Prince Regent Station" }
+6377 = { "Kimbolton" "Kimbolton" }
+6378 = { "Derby" "Derby" }
+6379 = { "Mount Anderson" "Mount Anderson Station" }
+6380 = { "Lagrange Bay" "Lagrange Bay" }
+
+#Western Australia
+1084 = { "Bunbury" "Bunbury" }
+2726 = { "Carnarvon" "Carnarvon" }
+2727 = { "Albany" "Albany" }
+4863 = { "Hyden" "Hyden" }
+4864 = { "Perth" "Perth" }
+4865 = { "Exmouth Gulf" "Exmouth" }
+5687 = { "Smoky Bay" "Smoky Bay" }
+5686 = { "Madura" "Madura" }
+6253 = { "Kalamurina" "Kalamurina Station" }
+6323 = { "Woomera" "Woomera" } #(JP) Aboriginal name used by Anglos
+6325 = { "Hergott Springs" "Hergott Springs" }
+6326 = { "Mount Eba" "Mount Eba" }
+6327 = { "Mount Finke" "Mount Finke" }
+6328 = { "Coorabie" "Coorabie" }
+6329 = { "Oak Valley" "Oak Valley" }
+6330 = { "Mount Willoughby" "Mount Willoughby" }
+6331 = { "Ernabella" "Ernabella" }
+6332 = { "Mount Davies" "Mount Davies" } #(JP) Modern "Pipalyatjara"
+6333 = { "Jameson" "Jameson" }
+6381 = { "De Grey" "De Grey Station" }
+6382 = { "Marble Bar" "Marble Bar" }
+6383 = { "Port Hedland" "Port Hedland" }
+6384 = { "Roebourne" "Roebourne" }
+6385 = { "Onslow" "Onslow" }
+6386 = { "Nanutarra" "Nanutarra Station" }
+6387 = { "Mulga Downs" "Mulga Downs Station" }
+6388 = { "Angelo River" "Angelo River Station" }
+6389 = { "Mount Newman" "Mount Newman" }
+6390 = { "Kumarina" "Kumarina" } #(JP) Aboriginal name used by Anglos
+6391 = { "Wanna Ranch" "Wanna Ranch" }
+6392 = { "Mount Phillip" "Mount Phillip" }
+6393 = { "Gascoyne Junction" "Gascoyne Junction" }
+6394 = { "Murchison" "Murchison" }
+6395 = { "Peak Hill" "Peak Hill" }
+6396 = { "Wiluna" "Wiluna" } #(JP) Aboriginal name used by Anglos
+6397 = { "Lake Wells" "Lake Wells Station" }
+6398 = { "Warburton" "Warburton" }
+6400 = { "Neale Junction" "Neale Junction" }
+6401 = { "Leinster" "Leinster" }
+6402 = { "Coolgardie" "Coolgardie" }
+6403 = { "Mount Elvire" "Mount Elvire Station" }
+6404 = { "Mount Magnet" "Mount Magnet" }
+6405 = { "Mullewa" "Mullewa" } #(JP) Aboriginal name used by Anglos
+6406 = { "Shark Bay" "Denham" }
+6407 = { "Northampton" "Northampton" }
+6408 = { "Geraldton" "Geraldton" }
+6409 = { "Green Head" "Green Head" }
+6410 = { "Dandaragan" "Dandaragan" } #(JP) Aboriginal name used by Anglos
+6411 = { "York" "York" } #(JP) Just about in this province
+6412 = { "Morawa" "Morawa" } #(JP) Aboriginal name used by Anglos
+6413 = { "Southern Cross" "Southern Cross" }
+6414 = { "Dundas" "Dundas" }
+6415 = { "Rawlinna" "Rawlinna Station" }
+6416 = { "Balladonia" "Balladonia" }
+6417 = { "Cape Arid" "Cape Arid" }
+6418 = { "Esperance" "Esperance" }
+6419 = { "Beaumont" "Beaumont" }
+6420 = { "Ravensthorpe" "Ravensthorpe" }
+6421 = { "Mount Madden" "Mount Madden" }
+6422 = { "Bremer Bay" "Bremer Bay" }
+6423 = { "Mount Barker" "Mount Barker" }
+6424 = { "Peaceful Bay" "Peaceful Bay" }
+6425 = { "Pemberton" "Pemberton" }
+6426 = { "Bridgetown" "Bridgetown" }
+6427 = { "Kojonup" "Kojonup" } #(JP) Aboriginal name used by Anglos
+6428 = { "Broomehill" "Broomehill" }
+6249 = { "Wickepin" "Wickepin" }
+6430 = { "Boddington" "Boddington" }
+6431 = { "Mandurah" "Mandurah" }
+
+#Southeastern Australia
+1085 = { "Hobart" "Hobart" }
+1086 = { "Adelaide" "Adelaide" }
+1087 = { "Melbourne" "Melbourne" }
+1088 = { "Murrayville" "Murrayville" }
+1089 = { "Cowra" "Cowra" }
+1090 = { "Sydney" "Sydney" }
+1091 = { "Wellington" "Wellington" }
+2734 = { "Bairnsdale" "Bairnsdale" }
+2735 = { "Kingston" "Kingston" }
+2736 = { "Port Lincoln" "Port Lincoln" }
+4855 = { "Lightning Ridge" "Lightning Ridge" }
+4856 = { "Armidale" "Armidale" }
+4857 = { "Newcastle" "Newcastle" }
+4858 = { "Dalmeny" "Dalmeny" }
+4859 = { "Batlow" "Batlow" }
+4860 = { "Canberra" "Canberra" }
+4861 = { "Wagga Wagga" "Wagga Wagga" } #(JP) Aboriginal name used by Anglos
+4862 = { "Peterborough" "Peterborough" }
+4868 = { "Launceston" "Launceston" }
+4869 = { "Stanley" "Stanley" }
+6262 = { "Yetman" "Yetman Station" }
+6266 = { "Inverell" "Inverell" }
+6267 = { "Coffs Harbour" "Coffs Harbour" }
+6268 = { "Moree" "Moree" } #(JP) Aboriginal name used by Anglos
+6269 = { "Forster" "Forster" }
+6270 = { "Muswellbrook" "Muswellbrook" }
+6271 = { "Bathurst" "Bathurst" }
+6272 = { "Wollongong" "Wollongong" } #(JP) Aboriginal name used by Anglos
+6273 = { "Batemans Bay" "Batemans Bay" }
+6274 = { "Eden" "Eden" }
+6275 = { "Cooma" "Cooma" } #(JP) Aboriginal name used by Anglos
+6276 = { "Mount Beauty" "Mount Beauty" }
+6277 = { "Albury" "Albury" }
+6278 = { "Forbes" "Forbes" }
+6279 = { "Brewarinna" "Brewarinna" } #(JP) Aboriginal name used by Anglos
+6280 = { "Condobolin" "Condobolin" } #(JP) Aboriginal name used by Anglos
+6281 = { "Bourke" "Bourke" }
+6282 = { "Louth" "Louth" }
+6283 = { "Ivanhoe" "Ivanhoe" }
+6284 = { "Wilcannia" "Wilcannia" }
+6285 = { "White Cliffs" "White Cliffs" }
+6286 = { "Broughams Gate" "Broughams Gate" }
+6287 = { "Cockburn" "Cockburn" }
+6288 = { "Laidleyís Ponds" "Laidleyís Ponds" } #(JP) Modern "Menindee"
+6289 = { "Wentworth" "Wentworth" }
+6290 = { "Balranald" "Balranald" }
+6291 = { "Hay" "Hay" }
+6292 = { "Barham" "Barham" }
+6293 = { "Boundary Bend" "Boundary Bend" }
+6294 = { "Tocumwal" "Tocumwal" } #(JP) Aboriginal name used by Anglos
+6295 = { "Charlton" "Charlton" }
+6296 = { "Seymour" "Seymour" }
+6297 = { "Mount Buller" "Mount Buller" }
+6298 = { "Gipsy Point" "Gipsy Point" } #(JP) Modern "Mallacoota"
+6299 = { "Morwell" "Morwell" }
+6300 = { "Cranbourne" "Cranbourne" }
+6301 = { "Geelong" "Geelong" } #(JP) Aboriginal name used by Anglos
+6302 = { "Port Campbell" "Port Campbell" }
+6303 = { "Ballarat" "Ballarat" } #(JP) Aboriginal name used by Anglos
+6304 = { "Balmoral" "Balmoral" }
+6305 = { "Heywood" "Heywood" }
+6306 = { "Padthaway" "Padthaway" } #(JP) Aboriginal name used by Anglos
+6307 = { "Beachport" "Beachport" }
+6308 = { "Devonport" "Devonport" }
+6309 = { "Bothwell" "Bothwell" }
+6310 = { "Macquarie Harbour" "Macquarie Harbour" }
+6311 = { "Murray Mouth" "Clayton" }
+6312 = { "Murray Bridge" "Murray Bridge" }
+6313 = { "Loxton" "Loxton" }
+6314 = { "Williamstown" "Williamstown" }
+6315 = { "Fleurieu Peninsula" "Victor Harbour" }
+6316 = { "Kangaroo Island" "Kingscote" }
+6317 = { "Yorke Peninsula" "Point Riley" } #(JP) Name given to the point near where the later Copper Triangle towns are
+6318 = { "Clare" "Clare" }
+6319 = { "Port Augusta" "Port Augusta" }
+6320 = { "Cowell" "Cowell" }
+6321 = { "Flinders" "Flinders" } #(JP) Modern "Streaky Bay"
+6322 = { "Wudinna" "Wudinna" } #(JP) Aboriginal name used by Anglos
+6324 = { "Leigh Creek" "Leigh Creek" }
+
 #New Zealand
+1106 = { "Northland" "Bream Bay" ] #(JP) Name given by cook to the bay in which Maori and modern "Whangarei" sits on
+1107 = { "Wellington" "Wellington" }
+1108 = { "Tauranga" "Tauranga" } #(JP) Maori name used by Anglos
+1109 = { "Dunedin" "Dunedin" }
+1246 = { "Invercargill" "Invercargill" }
+2737 = { "Napier" "Napier" }
+2738 = { "Nelson" "Nelson" }
+2739 = { "Hamilton" "Hamilton" }
+4939 = { "Edgecumbe" "Edgecumbe" }
+5021 = { "Auckland Islands" "Carnley Harbour" }
+5022 = { "Chatham Islands" "Petre Bay" }
+5597 = { "Queenstown" "Queenstown" }
+5598 = { "Caroline Bay" "Caroline Bay" } #(JP) Anglo name for the bay in which Maori and modern "Timaru" is situated on. 
+5599 = { "Hokitika" "Hokitika" } #(JP) Maori name used by Anglos
+5600 = { "Christchurch" "Christchurch" }
+5601 = { "Greymouth" "Greymouth" }
+5602 = { "Fyffe's Village" "Fyffe's Village" } #(JP) First name given to modern and Maori "Kaikoura"
+5603 = { "Westport" "Westport" }
+5604 = { "Palmerston" "Palmerston" } #(JP) Modern "Palmerston North" but we have no southern "Palmerston" to distinguish it from
+5605 = { "New Plymouth" "New Plymouth" }
+5606 = { "Kinloch" "Kinloch" } #(JP) A town on Lake Taupo
+5607 = { "Gisborne" "Gisborne" }
+5608 = { "Thames" "Thames" }
+5609 = [ "Auckland" "Auckland" }
+5610 = { "Masterton" "Masterton" }
+
 #South China
+
 #Xinan
+
 #North China
+2139 = { "Port Edward" "Port Edward" } #(JP) Technically "Laizhou" but includes what becomes "Port Edward"
+
 #Japan
+
 #Korea
+
 #Manchuria
+2113 = { "Port Arthur" "Port Arthur" } #(JP) Technically "Gaizhou" but includes what becomes "Port Arthur"
+
 #Mongolia
+
 #West Siberia
+
 #East Siberia
+
 #Egypt
-#Maghreb
+358 = { "Alexandria" "Alexandria" }
+359 = { "Faiyum" "Faiyum" } #(JP) Base Names
+360 = { "Qus" "Qus" } #(JP) Base Names
+361 = { "Cairo" "Cairo" }
+362 = { "Rosetta" "Rosetta" }
+363 = { "Katia" "Katia" } #(JP) Base Names
+365 = { "Sinai" "Saint Catherine" }
+1231 = { "Assuan" "Assuan" }
+1233 = { "Kharga" "Kharga" } #(JP) Base Names
+2315 = { "Suez" "Suez" } #(JP) Base Names
+2316 = { "Tanta" "Tanta" } #(JP) Base Names
+2317 = { "Minya" "Minya" } #(JP) Base Names
+2318 = { "Bahariya" "Bawiti" } #(JP) Base Names
+2319 = { "Asyut" "Asyut" } #(JP) Base Names
+2320 = { "Ras Ghareb" "Ras Ghareb" } #(JP) Base Names
+2321 = { "Qoseir" "Qoseir" } #(JP) Base Names
+2325 = { "Alamein" "Alamein" } #(JP) Base Names
+2326 = { "Tobruck" "Tobruck" }
+4268 = { "Elyn" "Elyn" }
+4316 = { "Mansoura" "Mansoura" }
+4317 = { "Damanhur" "Damanhur" } #(JP) Base Names
+4318 = { "Atfih" "Atfih" } #(JP) Base Names
+4319 = { "Luxor" "Luxor" }
+4320 = { "Girga" "Girga" } #(JP) Base Names
+4323 = { "Dakhla" "Dakhla" } #(JP) Base Names
+5181 = { "Nekhel" "Nekhel" } #(JP) Base Names
+5261 = { "Damietta" "Damietta" } #(JP) Base Names
+5264 = { "Giza" "Giza" } #(JP) Base Names
+5267 = { "Beni Suef" "Beni Suef" } #(JP) Base Names
+5272 = { "Baritun" "Baritun" } #(JP) Base Names
+5273 = { "Siwa" "Siwa" }
+9076 = { "Scetis" "Scetis" } #(JP) Base Names
+9077 = { "Salheya" "Salheya" } #(JP) Base Names
+9078 = { "Bilbeis" "Bilbeis" } #(JP) Base Names
+9079 = { "Saint Anthony" "Saint Anthony" } #(JP) Base Names
+9080 = { "Samalut" "Samalut" } #(JP) Base Names
+9081 = { "Quseyya" "Quseyya" } #(JP) Base Names
+9082 = { "Sohag" "Sohag" } #(JP) Base Names
+9083 = { "Safaga" "Safaga" } #(JP) Base Names
+9084 = { "Wadi Hammamat" "Qasr al-Banat" } #(JP) Base Names
+9085 = { "Marsa Alam" "Marsa Alam" } #(JP) Base Names
+9087 = { "Kom Ombo" "Kom Ombo" } #(JP) Base Names
+9090 = { "Baris" "Baris" } #(JP) Base Names
+9091 = { "Abu Minqar" "Abu Minqar" } #(JP) Base Names
+9092 = { "Farafra" "Farafra" } #(JP) Base Names
+9093 = { "Sallum" "Sallum" } #(JP) Base Names
+9094 = { "Bardia" "Bardia" } #(JP) Base Names
+
+#Eastern Maghreb
+339 = { "Bougie" "Bougie" } #(JP) Using the French name here
+340 = { "Constantine" "Constantine" }
+341 = { "Tunis" "Tunis" }
+351 = { "Biskra" "Biskra" } #(JP) Base Names
+352 = { "Gafsa" "Gafsa" } #(JP) Base Names
+353 = { "Medinine" "Medinine" } #(JP) Base Names
+354 = { "Tripoli" "Tripoli" }
+355 = { "Sirte" "Sirte" }
+356 = { "Benghazi" "Benghazi" }
+357 = { "Derna" "Derna" }
+1882 = { "Bon" "Bon" } #(Chrys) historic, likely borrowed from French
+2450 = { "Kebili" "Kebili" } #(JP) Base Names
+2451 = { "Misrata" "Misrata" } #(JP) Base Names
+2452 = { "Zuwarah" "Zuwarah" } #(JP) Base Names
+2453 = { "Sfax" "Sfax" } #(JP) Base Names
+2454 = { "Cairoan" "Cairoan" }
+2455 = { "Bizerte" "Bizerte" }
+2458 = { "M'sila" "M'sila" } #(JP) Base Names
+2473 = { "Sousse" "Sousse" } #(JP) Base Names
+2954 = { "Jerba" "Jerba" }
+4566 = { "Sbeitla" "Sbeitla" } #(JP) Base Names
+4567 = { "Ghadames" "Ghadames" } #(JP) Base Names
+5224 = { "Cape Bon" "Nabeul" }
+5225 = { "Africa" "Africa" }
+5274 = { "Ajdabiya" "Ajdabiya" } #(JP) Base Names
+5306 = { "Mizda" "Mizda" } #(JP) Base Names
+5309 = { "Gharyan" "Gharyan" } #(JP) Base Names
+5310 = { "Nalut" "Nalut" } #(JP) Base Names
+5311 = { "Khoms" "Khoms" } #(JP) Base Names
+5312 = { "Gabes" "Gabes" } #(JP) Base Names
+5313 = { "Kasserine" "Kasserine" } #(JP) Base Names
+5314 = { "Bayjah" "Bayjah" } #(JP) From Thomas Shaw's "Travels"
+5315 = { "El Kef" "El Kef" } #(JP) Base Names
+5316 = { "Tozeur" "Tozeur" } #(JP) Base Names
+5317 = { "Tabarka" "Tabarka" } #(JP) Base Names
+5318 = { "Koukou" "Koukou" } #(JP) Base Names
+5319 = { "Setif" "Setif" } #(JP) Base Names
+5320 = { "Ain Beida" "Ain Beida" } #(JP) Base Names
+5321 = { "Jijel" "Jijel" } #(JP) Base Names
+5323 = { "Kal‚a" "Kal‚a" } #(JP) Base Names
+5324 = { "Djelfa" "Djelfa" } #(JP) Base Names
+5325 = { "Batna" "Batna" } #(JP) Base Names
+5326 = { "Khenchela" "Khenchela" } #(JP) Base Names
+5329 = { "El Oued" "El Oued" } #(JP) Base Names
+9095 = { "Sidi Rafaa" "Sidi Rafaa" } #(JP) Base Names #(JP) Modern "Bayda", in period known as "Sidi Rafaa", province includes ancient and classical "Cyrene"
+9096 = { "Barca" "Barca" } #(JP) Base Name #(JP) Modern "Al Marj", successor to ancient and classical "Barca"
+9097 = { "Qaminis" "Qaminis" } #(JP) Base Names
+9111 = { "Bani Walid" "Bani Walid" } #(JP) Base Names
+9112 = { "Zintan" "Zintan" } #(JP) Base Names
+9113 = { "Zarzis" "Zarzis" } #(JP) Base Names
+9114 = { "Tataouine" "Tataouine" } #(JP) Base Names (Chrys) technically this could be "Tatooine" lol, since that's a former way of romanizing this
+9115 = { "Ghilane" "Ghilane" } #(JP) Base Names
+9116 = { "Douz" "Douz" } #(JP) Base Names
+9117 = { "Nefta" "Nefta" } #(JP) Base Names
+9118 = { "Monastir" "Monastir" } #(JP) Base Names
+9119 = { "Maktar" "Maktar" } #(JP) Base Names
+9120 = { "Skikda" "Skikda" } #(JP) Base Names
+9121 = { "Collo" "Collo" } #(JP) Base Names
+9122 = { "Souk Ahras" "Souk Ahras" } #(JP) Base Names
+9123 = { "Tebessa" "Tebessa" } #(JP) Base Names
+9124 = { "Sidi Okba" "Sidi Okba" } #(JP) Base Names, ancient "Tabuda"
+9125 = { "Tolga" "Tolga" } #(JP) Base Names
+9127 = { "Bou Saada" "Bou Saada" } #(JP) Base Names
+9128 = { "N'Gaous" "N'Gaous" } #(JP) Base Names
+9129 = { "Ain Oussera" "Ain Oussera" } #(JP) Base Names
+9130 = { "Dellys" "Dellys" }
+
+#Western Maghreb
+334 = { "Tangiers" "Tangiers" }
+335 = { "Melilla" "Melilla" }
+336 = { "Tlemcen" "Tlemcen" } #(JP) Base Names
+337 = { "Oran" "Oran" } #(JP) Base Names
+338 = { "Algiers" "Algiers" }
+342 = { "Ksar el-Kebir" "Ksar el-Kebir" } #(JP) Base Names
+343 = { "Fez" "Fez" }
+344 = { "Marrakesh" "Marrakesh" }
+345 = { "Safi" "Safi" } #(JP) Base Names
+346 = { "Sijilmasa" "Sijilmasa" } #(JP) Base Names
+348 = { "Doukkala" "Chichaoua" } #(JP) Base Names
+349 = { "Figuig" "Figuig" } #(JP) Base Names
+1110 = { "Agadir" "Agadir" } #(JP) Base Names
+1751 = { "Ceuta" "Ceuta" } #(JP) Base Names
+2459 = { "Medea" "Medea" } #(JP) Base Names
+2460 = { "Tamegroute" "Tamegroute" } #(JP) Base Names
+2461 = { "Mostaganem" "Mostaganem" } #(JP) Base Names
+2462 = { "Tiaret" "Tiaret" } #(JP) Base Names
+2463 = { "Na‚ma" "Na‚ma" } #(JP) Base Names
+2464 = { "Warzazat" "Warzazat" } #(JP) Base Names
+2465 = { "Oujda" "Oudja" } #(JP) Base Names
+2466 = { "Akka" "Akka" } #(JP) Base Names
+2467 = { "Meknes" "Meknes" } #(JP) Base Names
+2468 = { "Khenifra" "Khenifra" } #(JP) Base Names
+2469 = { "Mazagan" "Mazagan" } #(JP) Base Names
+2470 = { "Mogador" "Mogador" } #(JP) Base Names
+4561 = { "TÈtouan" "TÈtouan" } #(JP) Base Names
+4562 = { "Nedroma" "Nedroma" } #(JP) Base Names
+4563 = { "Sallee" "Sallee" }
+4564 = { "Anfa" "Anfa" } #(JP) Base Names
+4568 = { "Demnate" "Demnate" } #(JP) Base Names
+5210 = { "Chefchaouen" "Chefchaouen" } #(JP) Base Names
+5211 = { "Tadla" "Kasbah Tadla" } #(JP) Base Names
+5212 = { "Taroudant" "Taroudant" } #(JP) Base Names
+5213 = { "Taza" "Taza" } #(JP) Base Names
+5218 = { "Badis" "Badis" } #(JP) Base Names
+5219 = { "Mehdya" "Mehdya" } #(JP) Base Names, pre-1681 "Al-Ma'mura"
+5220 = { "Boudenib" "Boudenib" } #(JP) Base Names
+5226 = { "Rahamna" "Ben Guerir" } #(JP) Base Names
+5228 = { "Sidi Ifni" "Sidi Ifni" } #(JP) Base Names
+5229 = { "Debdou" "Debdou" } #(JP) Base Names
+5322 = { "Tenes" "Tenes" } #(JP) Base Names
+5327 = { "SaÔda" "SaÔda" } #(JP) Base Names
+5328 = { "Al Baida" "Al Baida" } #(JP) Base Names
+9006 = { "Chaouia" "Settat" } #(JP) Base Names
+9131 = { "Cherchell" "Cherchell" } #(JP) Base Names
+9132 = { "Miliana" "Miliana" } #(JP) Base Names
+9133 = { "Mazouna" "Mazouna" } #(JP) Base Names
+9134 = { "Mascara" "Mascara" } #(JP) Base Names
+9136 = { "AÔn SÈfra" "AÔn SÈfra" } #(JP) Base Names
+9179 = { "Bouarfa" "Bouarfa" } #(JP) Base Names
+9180 = { "Boulemane" "Boulemane" } #(JP) Base Names
+9181 = { "Ksar es-Souk" "Ksar es-Souk" } #(JP) Base Names
+9182 = { "Tinghir" "Tinghir" } #(JP) Base Names
+9183 = { "Tissint" "Tissint" } #(JP) Base Names
+9184 = { "Aghmat" "Aghmat" } #(JP) Base Names 
+9186 = { "Tizourgane" "Tizourgane" } #(JP) Base Names
+9187 = { "Tazerwalt" "Iligh" } #(JP) Base Names
+9190 = { "Haha" "Afughal" } #(JP) Base Names
+9191 = { "Tadnast" "Tadnast" } #(JP) Base Names
+9192 = { "Abda" "Sidi Bennour" } #(JP) Base Names
+9193 = { "Rabat" "Rabat" } #(JP) Base Names
+9194 = { "ZaÎr" "Tifelt" } #(JP) Base Names
+9195 = { "Sefrou" "Sefrou" } #(JP) Base Names
+9196 = { "Guercif" "Guercif" } #(JP) Base Names
+9197 = { "Taourirt" "Taourirt" } #(JP) Base Names
+9198 = { "Tazouta" "Tazouta" } #(JP) Base Names
+9199 = { "Asilah" "Asilah" } #(JP) Base Names
+
+#Western Sahara
+347 = { "Tan-Tan" "Tan-Tan" } #(JP) Base Names
+1111 = { "Arguin" "Arguin" } #(JP) Base Names
+1112 = { "Djourbel" "Djourbel" } #(JP) Base Name, modern Rosso
+1128 = { "Taoudenni" "Taoudenni" } #(JP) Base Names
+5223 = { "Tindouf" "Tindouf" } #(JP) Base Names
+9156 = { "Araouane" "Araouane" } #(JP) Base Names
+9157 = { "Tichit" "Tichit" } #(JP) Base Names
+9158 = { "Aoudaghost" "Aoudaghost" } #(JP) French Names
+9159 = { "Tidjikja" "Tidjikja" } #(JP) Base Names
+9160 = { "Ksar al-Barka" "Ksar al-Barka" } #(JP) Base Names
+9161 = { "Aoujeft" "Aoujeft" } #(JP) Base Names
+9162 = { "Azougui" "Azougui" } #(JP) Base Names
+9163 = { "Chinguetti" "Chinguetti" } #(JP) Base Names
+9164 = { "Ouadane" "Ouadane" } #(JP) Base Names
+9165 = { "Idjil" "Idjil" } #(JP) Base Names
+9166 = { "Akjoujt" "Akjoujt" } #(JP) Base Names
+9167 = { "Aleg" "Aleg" } #(JP) Base Names
+9168 = { "Portendick" "Portendick" }
+9169 = { "Tidra" "Tidra" } #(JP) Base Names
+9170 = { "White Cape" "Port Stephen" } #(JP) …tienne is Stephen. Better than nowt, right? Also torn on "Cape White" or "White Cape". Some Capes are Cape first, like Cape Horn or Cape of Good Hope, but Cape White just feels wrong, though a little colonial nonetheless
+9171 = { "Gold River" "Dakhla" } #(JP) Rio de Oro is River of Gold so...
+9172 = { "Cape Bojador" "Bojador" }
+9173 = { "Guelta Zemmur" "Guelta Zemmur" } #(JP) Base Names
+9174 = { "Laayoune" "Laayoune" } #(JP) French Names
+9175 = { "Smara" "Smara" } #(JP) Base Names
+9176 = { "Tifariti" "Tifariti" } #(JP) Base Names
+9177 = { "Chegga" "Chegga" } #(JP) Base Names
+9178 = { "Taghaza" "Taghaza" } #(JP) Base Names
+9188 = { "Assa" "Assa" } #(JP) Base Names
+9189 = { "Port Victoria" "Port Victoria" }
+
+#Central Sahara
+
+#Eastern Sahara
+774 = { "Geneina" "Geneina" }
+1219 = { "Al Fashir" "Al Fashir" } #(JP) Base Names
+2448 = { "Sabha" "Sabha" } #(JP) Base Names
+2449 = { "Waddan" "Waddan" } #(JP) Base Names
+2474 = { "Murzuk" "Murzuk" } #(JP) Base Names
+2801 = { "Ain Farah" "Ain Farah" } #(JP) Base Names
+2802 = { "Daein" "Daein" } #(JP) Base Names
+5303 = { "Jaghbub" "Jaghbub" } #(JP) Base Names
+5304 = { "Awjila" "Awjila" } #(JP) Base Names
+9042 = { "Abyei" "Abyei" } #(JP) Base Names
+9043 = { "Muglad" "Muglad" }
+9045 = { "Muhajiriyah" "Muhajiriyah" } #(JP) Base Names
+9046 = { "Nyala" "Nyala" } #(JP) Base Names
+9047 = { "Gereida" "Gereida" } #(JP) Base Names
+9048 = { "Zalingei" "Zalingei" } #(JP) Base Names
+9049 = { "Kabkabiya" "Kabkabiya" } #(JP) Base Names
+9050 = { "Kobbei" "Kobbei" } #(JP) Base Names
+9051 = { "Anka Wells" "Anka Wells" }
+9052 = { "Mahla "Wells" "Mahla "Wells" }
+9055 = { "Runga" "Koukou Angarana" } #(JP) Base Names
+9056 = { "Goz Beida" "Goz Beida" } #(JP) Base Names
+9098 = { "Jalu" "Jalu" } #(JP) Base Names
+9103 = { "Marada" "Marada" } #(JP) Base Names
+9104 = { "Zella" "Zella" } #(JP) Base Names
+9105 = { "Sawknah" "Sawknah" }
+9106 = { "Germa" "Germa" } #(JP) Base Names
+9107 = { "Awbari" "Awbari" } #(JP) Base Names
+9108 = { "Zawila" "Zawila" } #(JP) Base Names
+9109 = { "Traghan" "Traghan" } #(JP) Base Names
+
+#Nubia
+1216 = { "Kadugli" "Kadugli" } #(JP) Base Names
+1217 = { "Fazogli" "Fazogli" } #(JP) Base Names
+1220 = { "Wadi Abu Dom" "Ghazali" } #(JP) Base Names
+1221 = { "El-Obeid" "El-Obeid" } #(JP) Base Names
+1222 = { "Dewaim" "Dewaim" } #(JP) Base Names
+1225 = { "Kassala" "Kassala" } #(JP) Base Names
+1226 = { "Sinkat" "Sinkat" } #(JP) Base Names
+1229 = { "Derahib" "Derahib" } #(JP) Base Names
+1228 = { "Dongola" "Dongola" } #(JP) Base Names
+1232 = { "Suakin" "Suakin" } #(JP) Base Names
+1234 = { "Ibrim" "Ibrim" } #(JP) Base Names
+2797 = { "Shendi" "Shendi" } #(JP) Base Names
+2798 = { "Soba" "Soba" } #(JP) Base Names
+2799 = { "Sennar" "Sennar" }
+2800 = { "Saqadi" "Saqadi" } #(JP) Base Names
+2322 = { "Faras" "Faras" } #(JP) Base Names
+2323 = { "Shanka" "Shanka" } #(JP) Base Names
+2324 = { "Aydhab" "Aydhab" } #(JP) Base Names
+4033 = { "Gadarif" "Gadarif" } #(JP) Base Names
+4322 = { "Wadi Allaqi" "Quban" }  #(JP) Cannot find vanilla Abrak, but "Quban" and "Derahib" are the sites of two forts. Derahib is now its own province. "Quban" was anciently known as "Baki" and was the site of Nubian-Egyptian "Contra Pselchis". Maybe "Kuban" for Turkish Quban? Found another reference to a "Qubban" so that seems a clear historical settlement
+5266 = { "Bir Natrun" "Bir Natrun" } #(JP) Base Names
+5271 = { "Baranis" "Baranis" } #(JP) Base Names
+5277 = { "Kulb" "Kulb" } #(JP) Base Names
+5278 = { "Korosko" "Korosko" } #(JP) Base Names
+5279 = { "Maragha" "Maragha" } #(JP) Base Names
+5281 = { "Karima" "Karima" } #(JP) Base Names
+5282 = { "Port Sudan" "Port Sudan" }
+5283 = { "Tokar" "Tokar" } #(JP) Base Names
+5284 = { "Atbara" "Atbara" } #(JP) Base Names
+5285 = { "Tuti" "Tuti" } #(JP) Base Names
+5286 = { "Barah" "Barah" } #(JP) Base Names
+5287 = { "Singa" "Singa" } #(JP) Base Names
+5289 = { "Kurmuk" "Kurmuk" } #(JP) Base Names
+5290 = { "Fashoda" "Fashoda" } #(JP) Base Names
+5301 = { "Selima" "Selima" } #(JP) Base Names
+5302 = { "Abu Hamad" "Abu Hamad" } #(JP) Base Names
+9007 = { "Alays" "Alays" } #(JP) Base Names
+9009 = { "Karbaryn" "Karbaryn" } #(JP) Base Names
+9010 = { "Karkoj" "Karkoj" } #(JP) Base Names
+9011 = { "SaÔ" "SaÔ" } #(JP) Base Names
+9012 = { "Korti" "Korti" } #(JP) Base Names
+9013 = { "Berber" "Berber" } #(JP) Base Names
+9014 = { "Wadi Gabgaba" "Murat Wells" } #(JP) Base Names
+9015 = { "Dungonab" "Dungonab" } #(JP) Base Names
+9016 = { "Gebeit" "Gebeit" } #(JP) Base Names
+9017 = { "Ariab" "Ariab" } #(JP) Base Names
+9018 = { "Musmar" "Musmar" } #(JP) Base Names
+9019 = { "Derudeb" "Derudeb" } #(JP) Base Names
+9020 = { "Filik" "Filik" } #(JP) Base Names
+9021 = { "Adarama" "Adarama" } #(JP) Base Names
+9022 = { "Qarri" "Qarri" } #(JP) Base Names
+9023 = { "Arbagi" "Arbagi" } #(JP) Base Names
+9024 = { "Manaqil" "Manaqil" } #(JP) Base Names
+9025 = { "Showak" "Showak" } #(JP) Base Names
+9026 = { "Ras al-Fil" "Ras al-Fil" } #(JP) Base Names
+9027 = { "Gallabat" "Gallabat" } #(JP) Base Names
+9028 = { "Er Roseires" "Er Roseires" } #(JP) Base Names
+9029 = { "Tegale" "Al-Abbasiyah" } #(JP) Base Names
+9030 = { "Anok" "Anok" } #(JP) Base Names, random town in province
+9031 = { "Umm Ruwaba" "Umm Ruwaba" } #(JP) Base Names
+9032 = { "Kadaru" "Jabal Kadaru" } #(JP) Base Names, capital is a stopgap
+9033 = { "Koalib" "Abri" } #(JP) Base Names, capital is a stopgap
+9034 = { "Tiro" "Abu Jubaiyah" } #(JP) Base Names
+9035 = { "Warnang" "Kau" } #(JP) Base Names, capital is a stopgap
+9036 = { "Tumtum" "Dallas" } #(JP) Base Names, capital is a stopgap
+9037 = { "Talodi" "Talodi" } #(JP) Base Names
+9038 = { "Ghulfan" "Kuli" } #(JP) Base Names, capital is a stopgap
+9039 = { "Dilling" "Dilling" } #(JP) Base Names
+9040 = { "Karko" "El Fula" } #(JP) Base Names
+9041 = { "Keiga" "Ambong" } #(JP) Base Names
+9044 = { "En-Nahud" "En-Nahud" } #(JP) Base Names
+9053 = { "Wadi Howar" "Wadi Howar" } #(JP) Base Names
+9054 = { "Lagia" "Lagia" } #(JP) Base Names
+9086 = { "Shalateen" "Shalateen" } #(JP) Base Names
+9088 = { "Daw" "Daw" } #(JP) Base Names
+9089 = { "Shab" "Shab" } #(JP) Base Names
+
 #Sahel
+
 #Niger
+
 #Guinea
+
 #Congo
+
 #South Africa
+789 = { "St. Lucia" "St. Lucia" }
+833 = { "Graaff-Reinet" "Graaff-Reinet" } #(JP) No real alternate name that I can find.
+1174 = { "Whale Bay" "Whale Bay" }
+1175 = { "Springbuck" "Springbuck" } #(JP) English name for the "Springbok"
+1176 = { "Calvinia" "Calvinia" } #(JP) Not perfect, but is at least in English
+1177 = { "Cape Town" "Cape Town" }
+1178 = { "Victoria" "Victoria" } #(JP) There is no "Victoria East"
+1179 = { "Swellendam" "Swellendam" } #(JP) There isn't really an easy translation here as its a merge of two names.
+1180 = { "Port St. Johns" "Port St. Johns" }
+1181 = { "Pietermaritzburg" "Pietermaritzburg" } #(JP) No real alternative that I can find
+1182 = { "Maputo Bay" "Fort Endurance" }
+1800 = { "St. George" "St. George-on-the-Limpopo" }
+2856 = { "Bloemfontein" "Bloemfontein" } #(JP) No real alternate name that I can find.
+2864 = { "Upington" "Upington" }
+2880 = { "Griquatown" "Griquaton" }
+4781 = { "Pretoria" "Pretoria" } #(JP) No real alternate name that I can find.
+4782 = { "Freeburgh" "Freeburgh" } #(JP) Translated from Boer "Vryburg"
+4783 = { "Swaziland" "Lobamba" }
+4784 = { "Peterborough" "Peterborough" } #(JP) Modern "Polokwane", a translation of the Boer "Pietersburg"
+5340 = { "Stel's Bush" "Stel's Bush" } #(JP) Translation of "Stellenbosch"
+5341 = { "Pearl" "Pearl" } #(JP) Tranlation of "Pearl"
+5342 = { "St. Helena Bay" "St. Helena Bay" } #(JP) Avoiding two "Vredenburg"
+5343 = { "Mount Picket" "Mount Picket" } #(JP) Translation of "Piketberg"
+5344 = { "Buffalo River" "Buffalo River" } #(JP) Modern "Laingsburg", older than the previous province name of "Matjiesfontein"
+5345 = { "Clanwilliam" "Clanwilliam" } #(JP) "Vredendal" is actually a more modern town.
+5346 = { "Dogstone Bay" "Dogstone Bay" } #(JP) Translation of "Hondeklip"
+5347 = { "Pofadder" "Pofadder" }
+5348 = { "Sutherland" "Sutherland" }
+5349 = { "Fraserburgh" "Fraserburgh" } #(JP) Named by Boers after Scottish Rev. Colin Fraser, mimicking the town of "Fraserburgh" in Scotland, with the added "h" at the end
+5350 = { "Mossel Bay" "Mossel Bay" }
+5351 = { "George" "George" }
+5352 = { "Melville" "Melville" } #(JP) Or "Eastford", modern "Knysna"
+5353 = { "St. Francis Bay" "St. Francis Bay" }
+5354 = { "Willowmore" "Willowmore" }
+5355 = { "Cookhouse" "Cookhouse" } #(JP) Or "Bedford"
+5356 = { "Port Elizabeth" "Port Elizabeth" }
+5357 = { "Albany" "Grahamstown" }
+5358 = { "Queen Adelaide's Province" "King William's Town" }
+5359 = { "Queenstown" "Queenstown" }
+5360 = { "Aliwal North" "Aliwal North" }
+5361 = { "Beaufort" "Beaufort" } #(JP) Scrapping the "West" part as "Fort Beaufort" in the Eastern Cape is not a province in BT
+5362 = { "Prieska" "Prieska" }
+5363 = { "Eye of Kuruman" "Eye of Kuruman" }
+5365 = { "Winburgh" "Winburgh" } #(JP) Added "h" to "Winburg"
+5366 = { "Basutoland" "Maseru" }
+5367 = { "Mafeking" "Mafeking" }
+5368 = { "Peaceburgh" "Peaceburgh" } #(JP) Transliteration of Boer "Vredenburg", modern "Mokopane"
+5369 = { "Venda" "Thovhele" } #(JP) Base Names
+5370 = { "Port Shepstone" "Port Shepstone" }
+5371 = { "Durban" "Durban" }
+5372 = { "Ladysmith" "Ladysmith" }
+5373 = { "Richards Bay" "Richards Bay" }
+5374 = { "Newcastle" "Newcastle" } #(JP) Near "Vryheid"
+5376 = { "Ermelo" "Ermelo" } #(JP) Boer Name
+5378 = { "Crown City" "Crown City" } #(JP) Translated from Boer "Kroonstad"
+5380 = { "Phalaborwa" "Phalaborwa" } #(JP) Base Names
+5381 = { "Nelspruit" "Nelspruit" } #(JP) Boer Name
+5382 = { "Xai-Xai" "Xai-Xai" } #(JP) Base Names
+5383 = { "Potchefstroom" "Potchefstroom" } #(JP) No real alternate name that I can find.
+5384 = { "Hopetown" "Hopetown" }
+5385 = { "Kimberly" "Kimberly" }
+5387 = { "Robert Bay" "Robert Bay" } #(JP) A name for the bay in which the town "L¸deritz Bay" is based on
+5415 = { "Francistown" "Francistown" }
+5416 = { "Gobojango" "Gobojango" } #(JP) Base Names
+5417 = { "Shoshong" "Shoshong" } #(JP) Base Names
+5418 = { "Moshaweng" "Moshaweng" } #(JP) Base Names
+5419 = { "Kanye" "Kanye" } #(JP) Base Names
+5420 = { "Molepolole" "Molepolole" } #(JP) Base Names
+5421 = { "Toutswemogala" "Toutswemogala" } #(JP) Base Names
+5426 = { "Port Alexander" "Port Alexander" } #(JP) Modern "Tombua" where the city icon is
+5428 = { "Little Karoo" "Oudtshoorn" }
+
+#Not yet done are Namaqualand, Kalahari, Damaraland, Ovambo, Okavango and Zambezi areas
+5386 = "Karasburg"
+5388 = "Tswanaland"
+5389 = "Namaland"
+5390 = "Buitepos"
+5391 = "Basterland"
+5392 = "Erongo"
+5393 = "Windhoek"
+5394 = "Otjiwarongo"
+5395 = "Damaraland"
+5396 = "Sesfontein"
+5397 = "Koakoveld"
+5405 = "Hereroland"
+5406 = "East Kavangoland"			#Or Ostkavangoland
+5407 = "Caprivi"
+5425 = "Swartmodder"
+5427 = "West Kavangoland"			#Or Westkavangoland
+5409 = "Kalahari"
 
 #East Africa
 2774 = { "Kismayo" "Kismayo" } #(JP) Base Names
@@ -598,33 +1407,13 @@
 1207 = { "Guban" "Danan" } #(JP) Base Names
 1208 = { "Degehabur" "Degehabur" } #(JP) Base Names
 1209 = { "Berbera" "Berbera" } #(JP) Base Names
-1210 = { "Dawaro" "Gende Belo" } #(JP) Base Names
 1211 = { "Harar" "Harar" } #(JP) Base Names
 1212 = { "Zeila" "Zeila" } #(JP) Base Names
-1213 = { "Fatagar" "Telq" } #(JP) Base Names #(JP) Later Addis Ababa
-1214 = { "Amhara" "Atronsa Maryam" } #(JP) Base Names
 1215 = { "Tadjoura" "Tadjoura" } #(JP) Base Names
-1223 = { "Mertule Maryam" "Mertule Maryam" } #(JP) Base Names
-1224 = { "Gondar" "Gondar" } #(JP) Base Names
-1227 = { "Aksum" "Aksum" } #(JP) Base Names
-1230 = { "Semhar" "Massawa" } #(JP) Base Names
 2024 = { "Garoowe" "Garoowe" } #(JP) Base Names
-2757 = { "Kaffa" "Bonga" } #(JP) Base Names
-2758 = { "Ennarea" "Yadare" } #(JP) Base Names
-2759 = { "Baro" "Gambella" } #(JP) Base Names
-2760 = { "Hosaena" "Hosaena" } #(JP) Base Names
-2761 = { "Arababni" "Iteya" } #(JP) Base Names
-2762 = { "Damot" "Tomagarer" } #(JP) Base Names
-2763 = { "Asosa" "Asosa" } #(JP) Base Names
 2764 = { "Aussa" "Aussa" } #(JP) Base Names
 2765 = { "Rahayta" "Rahayta" } #(JP) Base Names
-2766 = { "Sanhit" "Sanhit" } #(JP) Base Names
-2767 = { "Enderta" "Antalo" } #(JP) Base Names
 2768 = { "Dobe'a" "Manadeley" } #(JP) Base Names
-2769 = { "Lasta" "Laibela" } #(JP) Base Names
-2770 = { "Agawmeder" "Kosober" } #(JP) Base Names
-2771 = { "Semien" "Amba Yehouda" } #(JP) Base Names
-2772 = { "Dembiya" "Gorgora" } #(JP) Base Names
 2773 = { "Jigjiga" "Jigjiga" } #(JP) Base Names
 2775 = { "Merca" "Merca" } #(JP) Base Names
 2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
@@ -635,20 +1424,14 @@
 2783 = { "Hobyo" "Hobyo" } #(JP) Base Names
 2784 = { "Galkayo" "Galkayo" } #(JP) Base Names
 2785 = { "El Buur" "El Buur" } #(JP) Base Names
-2786 = { "Port Cassim" "Port Cassim" }
-2787 = { "Hamasien" "Asmara" } #(JP) Base Names
+2786 = { "Port Cassim" "Port Cassim" } #(JP) Base Names
 2788 = { "Hafun" "Hafun" } #(JP) Base Names
 2789 = { "Las Khorey" "Las Khorey" } #(JP) Base Names
 2790 = { "Erigabo" "Erigabo" } #(JP) Base Names
-2791 = { "Ankober" "Ankober" } #(JP) Base Names
 2792 = { "Burao" "Burao" } #(JP) Base Names
 2793 = { "Hargeisa" "Hargeisa" } #(JP) Base Names
 2794 = { "Brava" "Brava" } #(JP) Italian Names
 2795 = { "Mareeg" "Mareeg" } #(JP) Base Names
-4158 = { "Janjero" "Fofa" } #(JP) Base Names
-5288 = { "Ras Kasar" "Ras Kasar" } #(JP) Base Names
-5297 = { "Barka" "Barentu" } #(JP) Base Names
-5298 = { "Buri" "Zula" } #(JP) Base Names
 8797 = { "Burhakaba" "Burhakaba" } #(JP) Base Names
 8798 = { "Jowhar" "Jowhar" } #(JP) Base Names
 8799 = { "Baidoa" "Baidoa" } #(JP) Base Names
@@ -662,6 +1445,45 @@
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8859 = { "Kalo" "Millee" } #(JP) Base Names
+8860 = { "Biqulzar" "Hazalo" } #(JP) Base Names
+8861 = { "Hubat" "Hubat" } #(JP) Base Names
+8862 = { "Hargaya" "Fedis" } #(JP) Base Names
+8863 = { "Adigala" "Adigala" } #(JP) Base Names
+8864 = { "Doobi" "Bododya" } #(JP) Base Names
+8887 = { "Ali Sabieh" "Ali Sabieh" } #(JP) Base Names
+8888 = { "Obock" "Obock" } #(JP) Base Names
+8889 = { "Baylour" "Baylour" }
+8890 = { "Edd" "Edd" } #(JP) Base Names
+8891 = { "Tiyo" "Tiyo" } #(JP) Base Names
+
+#Abyssinia
+1210 = { "Dawaro" "Gende Belo" } #(JP) Base Names
+1213 = { "Fatagar" "Telq" } #(JP) Base Names #(JP) Later Addis Ababa
+1214 = { "Amhara" "Atronsa Maryam" } #(JP) Base Names
+1223 = { "Mertule Maryam" "Mertule Maryam" } #(JP) Base Names
+1224 = { "Gondar" "Gondar" } #(JP) Base Names
+1227 = { "Aksum" "Aksum" } #(JP) Base Names
+1230 = { "Semhar" "Massawa" } #(JP) Base Names
+2757 = { "Kaffa" "Bonga" } #(JP) Base Names
+2758 = { "Ennarea" "Yadare" } #(JP) Base Names
+2759 = { "Baro" "Gambella" } #(JP) Base Names
+2760 = { "Hosaena" "Hosaena" } #(JP) Base Names
+2761 = { "Arababni" "Iteya" } #(JP) Base Names
+2762 = { "Damot" "Tomagarer" } #(JP) Base Names
+2763 = { "Asosa" "Asosa" } #(JP) Base Names
+2766 = { "Sanhit" "Sanhit" } #(JP) Base Names
+2767 = { "Enderta" "Antalo" } #(JP) Base Names
+2769 = { "Lasta" "Laibela" } #(JP) Base Names
+2770 = { "Agawmeder" "Kosober" } #(JP) Base Names
+2771 = { "Semien" "Amba Yehouda" } #(JP) Base Names
+2772 = { "Dembiya" "Gorgora" } #(JP) Base Names
+2787 = { "Hamasien" "Asmara" } #(JP) Base 
+2791 = { "Ankober" "Ankober" } #(JP) Base Names
+4158 = { "Janjero" "Fofa" } #(JP) Base Names
+5288 = { "Ras Kasar" "Ras Kasar" } #(JP) Base Names
+5297 = { "Barka" "Barentu" } #(JP) Base Names
+5298 = { "Buri" "Zula" } #(JP) Base Names
 8813 = { "Sarkha" "Ganbah" } #(JP) Base Names
 8831 = { "Gimbi" "Gimbi" } #(JP) Tulu/Yambel before Oromo Invasions
 8833 = { "Wej" "Zway" } #(JP) Base Names
@@ -683,12 +1505,6 @@
 8856 = { "Endagabatan" "Ambo" } #(JP) Base Names
 8857 = { "Ifat" "Dabra Sina" } #(JP) Base Names
 8858 = { "Gidim" "Fursi" } #(JP) Base Names
-8859 = { "Kalo" "Millee" } #(JP) Base Names
-8860 = { "Biqulzar" "Hazalo" } #(JP) Base Names
-8861 = { "Hubat" "Hubat" } #(JP) Base Names
-8862 = { "Hargaya" "Fedis" } #(JP) Base Names
-8863 = { "Adigala" "Adigala" } #(JP) Base Names
-8864 = { "Doobi" "Bododya" } #(JP) Base Names
 8865 = { "Debre Libanos" "Debre Libanos" } #(JP) Base Names
 8866 = { "Walaqa" "Midda" } #(JP) Base Names
 8867 = { "Manz" "Meshala Maryam" } #(JP) Base Names
@@ -711,11 +1527,6 @@
 8884 = { "Waggarat" "Bahri Haiay" } #(JP) Base Names
 8885 = { "Shire" "Shire" } #(JP) Base Names
 8886 = { "Agame" "Debre Damo" } #(JP) Base Names
-8887 = { "Ali Sabieh" "Ali Sabieh" } #(JP) Base Names
-8888 = { "Obock" "Obock" } #(JP) Base Names
-8889 = { "Baylour" "Baylour" }
-8890 = { "Edd" "Edd" } #(JP) Base Names
-8891 = { "Tiyo" "Tiyo" } #(JP) Base Names
 8892 = { "Dahlak" "Great Dahlak" }
 8893 = { "Akele Guzai" "Dekemhare" } #(JP) Base Names
 8894 = { "Serae" "Debawra" } #(JP) Base Names
@@ -736,7 +1547,7 @@
 488 = { "Prince's Port" "Prince's Port" }			#or Hospital. first is direct translation whilst second is translation of the name of the area around Port-au-Prince
 489 = { "French Cape" "French Cape" }			#English name of Cap-Francais
 490 = { "Sunrise Point" "Sunrise Point" }			#Higuey means place where sun is first seen in Taino
-491 = { "Curaùcao" "William Town" }
+491 = { "CuraÁao" "William Town" }
 492 = { "St. John's Port" "St. John's Port" }	# Puerto Rico
 493 = { "Tortola" "Road Town" }
 494 = { "Saint Christopher and Nevis" "Lowtown" }
@@ -946,349 +1757,464 @@
 2591 = { "Hearst" "Hearst" }
 4901 = { "Fargo" "Fargo" }
 5006 = { "Cape Wolstenholme" "Cape Wolstenholme" }
+1105 = { "Holsteinborough" "Holsteinborough" }
+1805 = { "Lake Minto" "Lake Minto Post" } #(JP) Native name is for "Leaf River"
+1806 = { "Oxford House" "Oxford House" }
+1811 = { "Tadoule Lake" "Tadoule Lake" }
+1813 = { "Fort Paskoyac" "Fort Paskoyac" } #(JP) Modern "The Pas", French "Fort Paskoya" or "Pasquia"
+2004 = { "Fort Hamilton" "Fort Hamilton" }
+2005 = { "Pile o' Bones" "Pile o' Bones" } #(JP) Modern "Regina"
+2016 = { "Grand Forks" "Grand Forks" }
+2017 = { "Fort Edmonton" "Fort Edmonton" }
+2018 = { "Jasper House" "Jasper House" }
+2511 = { "Devils Lake" "Devils Lake" }
+2589 = { "Cochrane" "Cochrane" }
+2591 = { "Brunswick House" "Brunswick House" }
+2592 = { "Fort Severn" "Fort Severn" }
+2593 = { "Rat Portage" "Rat Portage" }
+2594 = { "Norway House" "Norway House" }
+2595 = { "Œle-‡-la-Crosse" "Œle-‡-la-Crosse" } #(JP) French name used by HBC
+2596 = { "Fort Ellice" "Fort Ellice" }
+2597 = { "Fort Albert" "Fort Albert" } #(JP) I can't find the name of this initial settlement, where modern "Prince Albert" is located. This name comes from the 1860's, and "Isbister's Settlement" comes only a few years earlier, but it was settled in the 1770's. So going with "Fort Albert" for lack of somethign better.
+2598 = { "Moose Jaw" "Moose Jaw" }
+2602 = { "Fort Calgary" "Fort Calgary" }
+3111 = { "Jacob's Haven" "Jacob's Haven" }
+3112 = { "Good Hope" "Good Hope" }
+3113 = { "Frederick's Hope" "Frederick's Hope" }
+4901 = { "Centralia" "Centralia" } #(JP) Modern "Fargo". Better than nothing
+4919 = { "Brandon House" "Brandon House" }
+4990 = { "Eskimo Point" "Eskimo Point" }
+4991 = { "Rankin Inlet" "Rankin Inlet" }
+4992 = { "Cape Fullerton" "Fullerton Harbour" }
+4993 = { "Repulse Bay" "Repulse Bay" }
+4994 = { "Melville Peninsula" "Igloolik" }
+4995 = { "Southampton Island" "Coral Harbour" }
+4996 = { "Cape Dorset" "Cape Dorset" }
+4997 = { "Lake Harbour" "Lake Harbour" }
+4998 = { "Frobisher Bay" "Frobisher Bay" }
+4999 = { "Belcher Islands" "South Camp" }
+5002 = { "Bedford House" "Bedford House" } #(JP) Nearby later has "Fort du Brochet", but this was founded 1883. "Bedford House" was established pre-1800, though eventually abandoned.
+5003 = { "Big Beaver House" "Big Beaver House" }
+5004 = { "Ear Falls" "Ear Falls" }
+5005 = { "Fort Weenisk" "Fort Weenisk" }
+5006 = { "Cape Wolstenholme" "Wolstenholme Post" } #(JP) Or "Deception Bay" "Deception"
 5007 = { "Fort Chimo" "Fort Chimo" }
-5623 = { "Minot" "Minot" }
-5625 = { "Pembina" "Pembina" }
-6461 = { "Smoky Falls" "Smoky Falls" }
-6469 = { "Rupert Bay" "Rupert Bay" }
-7509 = { "Grand Forks" "Grand Forks" }
-7510 = { "Estevan" "Estevan" }
-7462 = { "Fergus Falls" "Fergus Falls" }
-
-
-
+5008 = { "Nemaska" "Nemaska" }
+5009 = { "Woswonaby House" "Woswonaby House" } #(JP) Found on the HBC Posts map
+5034 = { "Medicine Hat" "Medicine Hat" }
+5035 = { "Cold Lake House" "Cold Lake House" } #(JP) On "Beaver River"
+5036 = { "English River" "English River Post" }
+5057 = { "Fort Pike" "Fort Pike" } #(JP) Found on map of HBC Forts
+5067 = { "Baker Lake" "Baker Lake" }
+5068 = { "Fort Prince of Wales" "Fort Prince of Wales" } #(JP) This province seems to represent literally nothing. Zilch. Nada. It looks like an error on Draiochts end, the native names relate to a group further noth, and the name "Keewatin" is a much larger name. I can't find a tribe here or anything. Using "Prince of Wales Fort" because its 'something' at least
+5069 = { "Dubawnt Lake" "Dubawnt Lake Post" } #(JP) For lack of a better name
+5070 = { "Ennadai" "Ennadai" } #(JP) For lack of a better name
+5071 = { "Great Fish River" "Great Fish River Post" } #(JP) For lack of a better name
+5088 = { "Fort Dauphin" "Fort Dauphin" } #(JP) French fort name
+5089 = { "Cumberland House" "Cumberland House" }
+5573 = { "La Ronge" "La Ronge" } #(JP) French name used by HBC
+5580 = { "Lake's House" "Lake's House" } #(JP) On the Burntwood River, where "Thompson" would later be built
+5587 = { "Cranberry Portage" "Cranberry Portage" }
+5588 = { "Empty Fjords" "Isertoq" } #(JP) Practically nothing on this stretch of coast, "Isertoq" is just about in the province
+5589 = { "Cape Dan" "Cape Dan" }
+5590 = { "Scoresby Sound" "Scoresby Sound" } #(JP) "Scoresbysund" is named after an English explorer.
+5592 = { "Burnt Creek" "Burnt Creek" } #(JP) Modern "Schefferville"
+5593 = { "South River House" "South River House" } #(JP) Found on map of HBC locations
+5594 = { "Nitchequon" "Nitchequon" } #(JP) Despite being a native name, it seems that HBC used it. Also their most isolated/eastern most(?) site
+5595 = { "Cumberland Sound" "Port Cumberland" } #(JP) Town is actually "Pangnirtung" lacking an English name, so made one up for the sake of it
+5596 = { "Clyde Inlet" "Clyde River" }
+5611 = { "Meadow Lake" "Bolsover House" }
+5623 = { "Mouse River" "Minot" }
+5625 = { "Fort Pembina" "Fort Pembina" }
+5634 = { "Assiniboia" "Assiniboia" } #(JP) Could do with something older here ngl
+5635 = { "Swift Current" "Swift Current" }
+5636 = { "Fort Pitt" "Fort Pitt" }
+5637 = { "Battleford" "Battleford" }
+5639 = { "Nelson House" "Nelson House" }
+5640 = { "Berens River" "Berens River Post" } #(JP) Also contains Poplar River which is what the provinces' native name is based on
+5641 = { "Port Weenisk" "Port Weenisk" } #(JP) Bit made up, never a HBC place here, native town is Peawanuck, or Winisk 90. Using "Fort Weenisk" for the actual fort further inland
+5783 = { "Acton House" "Rocky Mountain and Acton House" } #(JP) Technically, the name "Rocky Mountain House" was kept, but this is too long for the province name. Both were practically the same location and same timeframe
+5784 = { "Banff" "Banff" } #(JP) Founded in 1880's, but basically empty otherwise.
+5785 = { "Brooks" "Brooks" } #(JP) Nothing here is before the 20th Century.... Damn you Drai. 
+5786 = { "Cypress Hills" "Fort Walsh" }
+5787 = { "Carlton House" "Carlton House" } #(JP) Later "Saskatoon"
+5788 = { "Fort Saint Charles" "Fort Saint Charles" }
+5789 = { "Fort Pelly" "Fort Pelly" }
+5901 = { "Osnaburgh House" "Osnaburgh House" }
+5902 = { "Fort Hope" "Fort Hope" }
+5903 = { "Marten Falls" "Marten Falls" }
+5939 = { "Red Deer River" "Fort Normandeau" }
 
 #Northwest Territories
+1812 = { "Fort Reliance" "Fort Reliance" } #(JP) Native settlement here was known as "Snowdrift" but thats a more modern name
+2599 = { "Fort Chipewyan" "Fort Chipewyan" }
+2600 = { "Athabasca Landing" "Athabasca Landing" }
+2601 = { "Fort Vermilion" "Fort Vermilion" }
+2603 = { "Fort Grahame" "Fort Grahame" }
+4976 = { "Mackenzie Delta" "Aklavik" } #(JP) No alternative capital name so creating an English province name at least.
+4978 = { "Fort Good Hope" "Fort Good Hope" }
+4980 = { "Fort Norman" "Fort Norman" }
+4982 = { "Fort McLeod" "Fort McLeod" }
+4983 = { "Fort Simpson" "Fort Simpson" }
+4984 = { "Fort St. John" "Fort St. John" }
+4985 = { "Fort Rae" "Fort Rae" } #(JP) Situation on "Yellowknife Bay" where "Yellowknife" would be established. "Old Fort Providence" was here in 1786 with the new one further south, "Fort Rae" in 1852, "Yellowknife" itself not until the 1930's.
+4986 = { "Fort Providence" "Fort Providence" }
+4987 = { "Fort Nelson" "Fort Nelson" }
+4989 = { "Fort Resolution" "Fort Resolution" }
+5000 = { "Fort McMurray" "Fort McMurray" }
+5001 = { "Stony Rapids" "Stony Rapids" } #(JP) Better than nowt
+5033 = { "Fort Fork" "Fort Fork" }
+5040 = { "Upper Liard" "Lower Post" } #(JP) Eh...
+5041 = { "Fort Liard" "Fort Liard" }
+5072 = { "Fort Enterprise" "Fort Enterprise" }
+5073 = { "Fort Confidence" "Fort Confidence" }
+5074 = { "Colville Lake" "Colville Lake" }
+5080 = { "Fort McPherson" "Fort McPherson" }
+5081 = { "Marten Lakes" "Marten Lakes" } #(JP) Province is technically "GamËtÏ" or "Rae Lakes", but "WhatÏ" or "Marten Lakes" was a NWC Post from 1793 and is the main lake visible in the province, aka "Lac La Martre"
+5082 = { "Fort Wrigley" "Fort Wrigley" }
+5084 = { "Fort Fond-du-Lac" "Fort Fond-du-Lac" } #(JP) French name used by Anglos
+5085 = { "Fort Assiniboine" "Fort Assiniboine" }
+5086 = { "Sawridge" "Sawridge" } #(JP) Original name of the town of "Slave Lake" on the "Lesser Slave Lake" 
+5087 = { "Methye Portage" "Methye Portage" } #(JP) Not a settlement, but can't find any town on the Clearwater River...
+5776 = { "Fort Ware" "Fort Ware" }
+5890 = { "Omineca" "Manson Creek" }
+5891 = { "Grande Prairie" "Grande Prairie" } #(JP) French name used by Anglos
+5894 = { "Dawson Creek" "Dawson Creek" }
+5895 = { "Fort Dunvegan" "Fort Dunvegan" }
+5898 = { "Kechika" "Fireside" } #(JP) Basically nothing on this river... "Fireside" is technically not in the province, but is on the river at least.
+5899 = { "Hay Lake" "Assumption" }
+5900 = { "Wabasca" "Wabasca" }
 
 #Alaska
-977 = { "Yakutat Bay" "Yakutat Bay" } #Yakutat Bay 
-978 = { "Anchorage" "Anchorage" } #Anchorage
-979 = { "Andreanof Islands" "Adak" } #Literally nothing
-1810 = { "Flat" "Flat" } #Flat 
-2611 = { "Kodiak" "Old Harbor" } #Kodiak
-2612 = { "Cordova" "Cordova" } #Cordova
-4968 = { "Kotzebue" "Kotzebue" } #Kotzebue 
-4969 = { "Point Hope" "Point Hope" } #Point Hope 
-4970 = { "Barrow" "Barrow" } #Barrow
-4971 = { "Prudhoe Bay" "Prudhoe Bay" } #Prudhoe Bay 
-4977 = { "Old Crow" "Old Crow" } #Old Crow
-4981 = { "Tagish" "Tagish" } #Tagish
-5075 = { "Nacimiento" "Herschel" } #Ivvavik National Park
-5076 = { "Barter Island" "Kaktovik" } #Barter Island 
-5077 = { "Saint Lawrence Island" "Gambell" } #Saint Lawrence Island
-5078 = { "Mayo" "Gordon Landing" } #Mayo, First Nation of Na-Cho Nyùk Dun
-5079 = { "Big Salmon" "Big Salmon" } #Big Salmon
-5083 = { "Silver City" "Silver City" } #Silver City 
-5095 = { "Saint Paul Island" "Saint Paul" } #St. Paul island
-5722 = { "McGrath" "McGrath" } #McGrath
-5723 = { "Iliamna" "Iliamna" } #Iliamna, only one L for english
-5724 = { "Tyonek" "Tyonek" } #Tyonek
-5725 = { "Rat Islands" "Adak" } #Adak
-5726 = { "Gakona" "Gakona" } #Gakona
-5778 = { "Susitna" "Alexander Creek" } #Susitna North 
-5896 = { "Atlin" "Atlin" } #Teresa Island 
-5897 = { "Heart Peaks" "Heart Peaks" } #Heart Peaks
-5905 = { "Unimak" "King Cove" } #Unimak Island
-5906 = { "Port Heiden" "Port Heiden" } #Port Heiden
-5907 = { "Port Graham" "Port Graham" } #Port Graham
-5908 = { "Katmai" "Kokhanok" } #Katmai
-5909 = { "Chitina" "Chitina" } #Tseti Na (native name)
-5910 = { "Tolsona" "Tolsona" } #Tolsona 
-5911 = { "Healy" "Healy" } #Healy
-5912 = { "Nunivak" "Mekoryuk" } #Mekoryuk
-5913 = { "Red Devil" "Red Devil" } #Red Devil
-5914 = { "Stony River" "Stony River" } #Stony River
-5915 = { "Kalskag" "Kalskag" } #Upper Kalskag
-5916 = { "Kipnuk" "Kipnuk" } #Kipnuk
-5917 = { "St. Mary's" "St. Mary's" } #St. Mary's 
-5918 = { "Marshall" "Marshall" } #Marshall
-5919 = { "Sheldon Point" "Sheldon Point" } #Sheldon Point 
-5920 = { "Fox Islands" "Unalaska" } #Unalaska Was 4920 Pre BT 14.0
-5921 = { "King Salmon" "King Salmon" } #King Salmon. Was 4921 Pre BT 14.0
-5922 = { "Bristol Bay" "Dillingham" } #Alexandrovski/Bristol. Was 4922 Pre BT 14.0
-5923 = { "Bethel" "Bethel" } #Bethel. Was 4923 Pre BT 14.0
-5924 = { "Unalakleet" "St. Michael" } #Unalakleet. Was 4924 Pre BT 14.0
-5925 = { "Name" "Name" } #Name. Was 4925 Pre BT 14.0
-5926 = { "Seldovia" "Seldovia" } #Seldovia. Was 4925 Pre BT 14.0
-5927 = { "Port Valdez" "Valdez" } #Valdez. Was 4927 Pre BT 14.0
-5928 = { "Galena" "Galena" } #Galena. Was 4928 Pre BT 14.0
-5929 = { "Nenana" "Nenana" } #Nenana. Was 4929 Pre BT 14.0
-5930 = { "San Juan del Desierto" "San Juan del Desierto" } #Allakaket. Was 4930 Pre BT 14.0
-5931 = { "Fairbanks" "Fairbanks" } #Fairbanks. Was 4931 Pre BT 14.0
-5932 = { "Beaver" "Beaver" } #Beaver. Was 4932 Pre BT 14.0
-5933 = { "Fort Yukon" "Fort Yukon" } #Fort Yukon. Was 4933 Pre BT 14.0
-5934 = { "Eagle" "Eagle" } #Eagle. Was 4934 Pre BT 14.0
-5935 = { "Tanacross" "Tanacross" } #Tanacross. Was 5935 Pre BT 14.0
-5936 = { "Copperville" "Copperville" } #Copperville. Was 4936 Pre BT 14.0
-5937 = { "Dawson" "Dawson" } #Dawson. Was 4937 Pre BT 14.0
-5938 = { "Whitehorse" "Whitehorse" } #Whitehorse. Was 4938 Pre BT 14.0
-8000 = { "Holy Cross" "Holy Cross" } #Holy Cross 
-8001 = { "Kaltag" "Kaltag" } #Kaltag 
-8002 = { "Elim" "Elim" } #Elim 
-8003 = { "Shishmaref" "Shishmaref" } #Shishmaref
-8004 = { "Noatak" "Noatak" } #Noatak 
-8005 = { "Kiana" "Kiana" } #Nautaagmiut
-8006 = { "Ambler" "Ambler" } #Kochuk
-8007 = { "Ruby" "Ruby" } #Ruby
-8008 = { "Minto" "Minto" } #Minto
-8009 = { "Deltana" "Deltana" } #Deltana
-8010 = { "Chalkyitsik" "Chalkyitsik" } #Chalkyitsik
-8011 = { "Anaktuvuk" "Anaktuvuk" } #Anaktuvuk
-8012 = { "Wainwright" "Wainwright" } #Kugmiut
+977 = { "Yakutat Bay" "Yakutat" }
+978 = { "Anchorage" "Anchorage" }
+979 = { "Andreanof Islands" "Adak Station" }
+1810 = { "Flat" "Flat" } #(JP) So original...
+2611 = { "Kodiak" "Paul's Harbor" }
+2612 = { "Cordova" "Cordova" }
+4970 = { "Barrow" "Barrow" }
+4971 = { "Prudhoe Bay" "Prudhoe Bay" }
+4977 = { "Old Crow" "Old Crow" }
+4981 = { "Caribou Crossing" "Caribou Crossing" }
+4968 = { "Kotzebue" "Kotzebue" }
+4969 = { "Point Hope" "Point Hope" }
+5722 = { "McGrath" "McGrath" }
+5075 = { "Ivvavik" "Whitefish Station" }
+5076 = { "Barter Island" "Barter Island" }
+5077 = { "Saint Lawrence Island" "Savoonga" }
+5078 = { "Mayo" "Mayo" }
+5079 = { "Big Salmon" "Big Salmon Village" }
+5083 = { "Silver City" "Silver City" }
+5095 = { "Fur Seal Islands" "St. Paul" } #(JP) Its this, "Pribilof Islands", or just "St. Paul Island"/"St. John Island"
+5723 = { "Newhalen" "Newhalen" }
+5724 = { "Tyonek" "Tyonek" }
+5725 = { "Near Islands" "Attu Station" }
+5726 = { "Gakona" "Gakona" }
+5778 = { "Susitna" "Susitna" }
+5896 = { "Atlin" "Atlin" }
+5897 = { "Heart Peaks" "Telegraph Creek" } #(JP) This pained me massively Draiocht... The Yukon extends into this province, despite its source being a Glacier at the Juneau Icefields Wasteland. So every settlement in this province drains south/north east, and not northwest into the Yukon. Hatred.
+5905 = { "Sand Point" "Sand Point" }
+5906 = { "Ivanof Bay" "Ivanof Bay" } #(JP) Lacking something better here, and it is where Draiocht placed the capital
+5907 = { "Seward" "Seward" }
+5908 = { "Katmai" "Katmai Village" }
+5909 = { "Chisana" "Chisana" }
+5910 = { "Copperville" "Copperville" }
+5911 = { "Healy Fork" "Healy Fork" } #(JP) Just "Healy" today
+5912 = { "Nunivak Island" "Mekoryuk" }
+5913 = { "Stony River" "Stony River" }
+5914 = { "Sleetmute" "Sleetmute" } #(JP) Or "Red Devil"
+5915 = { "Upper Kalskag" "Upper Kalskag" }
+5916 = { "Kipnuk" "Kipnuk" }
+5917 = { "St. Mary's" "St. Mary's" }
+5918 = { "Russian Mission" "Russian Mission" }
+5919 = { "Sheldon Point" "Sheldon Point" }
+5920 = { "Fox Islands" "Unalaska" }
+5921 = { "Naknek" "Naknek" }
+5922 = { "Dilingham" "Dilingham" }
+5923 = { "Bethel" "Bethel" }
+5924 = { "Fort St. Michael" "Fort St. Michael" } #(JP) Technically "Unalakleet", but "Fort St. Michael" succeeds an earlier Russian settlement here
+5925 = { "Nome" "Nome" }
+5926 = { "Fort Kenay" "Fort Kenay" }
+5927 = { "Valdez" "Valdez" }
+5928 = { "Henry's Point" "Henry's Point" } #(JP) Modern "Galena"
+5929 = { "Hot Springs" "Hot Springs" } #(JP) Modern "Manley Hot Springs"
+5930 = { "St. John's-in-the-Wilderness" "St. John's-in-the-Wilderness" } #(JP) Modern "Allakaket"
+5931 = { "Fairbanks" "Fairbanks" }
+5932 = { "Beaver" "Beaver" }
+5933 = { "Fort Yukon" "Fort Yukon" }
+5934 = { "Eagle" "Eagle" }
+5935 = { "Tanacross" "Tanacross" }
+5936 = { "Chitina" "Chitina" }
+5937 = { "Dawson City" "Dawson City" }
+5938 = { "Whitehorse" "Whitehorse" }
+8000 = { "Holy Cross" "Holy Cross" }
+8001 = { "Kaltag" "Kaltag" }
+8002 = { "Elim" "Elim" }
+8003 = { "Wales" "Wales" } #(JP) Lol
+8004 = { "Noatak" "Noatak" }
+8005 = { "Kiana" "Kiana" }
+8006 = { "Shungnak" "Shungnak" }
+8007 = { "Fort Gibbon" "Fort Gibbon" } #(JP) Modern "Tanana"
+8008 = { "Minto" "Minto" }
+8009 = { "Big Delta" "Big Delta" }
+8010 = { "Fishhook" "Fishhook" }
+8011 = { "Anaktuvuk Pass" "Anaktuvuk Pass" }
+8012 = { "Wainwright" "Wainwright" }
 
 #Cascadia
-871 = { "Meiggsville" "Meiggsville" }
-872 = { "Salem" "Salem" } #Salem 
-873 = { "Astoria" "Astoria" }
-874 = { "Seattle" "Seattle" } #Seattle
-972 = { "Nootka" "Friendly Cove" } #Nootka
-973 = { "Surrey" "Surrey" } #They messed up the position of Vancouver, Surrey is the exact place
-974 = { "Sullivan Bay" "Hopetown" } #Vanilla BT "Fort McLoughlin" is misplaced. 
-975 = { "Bella Coola" "Bella Coola" } #Bella Coola
-976 = { "Wrangell" "Wrangell" } #Fort Stikine
-2003 = { "Cranbrook" "Cranbrook" } #Vanilla, city added
-2019 = { "New Meadows" "New Meadows" } #New Meadows
-2020 = { "Idaho Falls" "Idaho Falls" } #Idaho Falls
-2022 = { "Queen Charlotte Island" "Port Clements" } #Port Clements
-2477 = { "Fortuna" "Fortuna" } #City added 
-2480 = { "Mount Shasta" "Yreka" } #Mount Shasta
-2481 = { "Coos Bay" "Coos Bay" } #Coos Bay 
-2482 = { "Mount Hood" "Mount Hood" } #Mount Hood
-2483 = { "Pasco" "Pasco" }
+871 = { "Duncans Landing" "Duncans Landing" }
+872 = { "Salem" "Salem" }
+873 = { "Fort George" "Fort George" } #(JP) Temporarily "Fort Astoria" for like 1 year before this.
+874 = { "Seattle" "Seattle" }
+972 = { "King George's Sound" "Friendly Cove" } #(JP) Hoping this is not too long. Alternatively, "Nootka Sound"
+973 = { "Fort Langley" "Fort Langley" }
+974 = { "Hopetown" "Hopetown" }
+975 = { "Bella Coola" "Bella Coola" }
+976 = { "Fort Stikine" "Fort Stikine" } #(JP) Modern Wrangell, Founded by Russians as "Fort Svyatogo Dionisiya"
+2003 = { "Fort Steele" "Fort Steele" }
+2019 = { "New Meadows" "New Meadow" }
+2020 = { "Eagle Rock" "Eagle Rock" } #(JP) Old name of "Idaho Falls"
+2022 = { "Queen Charlotte Islands" "Queen Charlotte City" }
+2477 = { "New Jerusalem" "New Jerusalem" }
+2480 = { "Yreka" "Yreka" }
+2481 = { "Coos Bay" "Coos Bay" }
+2482 = { "Mount Hood" "Mount Hood" }
+2483 = { "Fort Walla Walla" "Fort Walla Walla" } #(JP) Technically founded as "Fort Nez PercÈs" by the NWC, it wasn't in the Nez Perce territory, and instead it was in the Walla Walla, who gave the fort its later name
 2484 = { "Port Angeles" "Port Angeles" }
-2485 = { "Macoma" "Macoma" }  #Erroneously tagged as "Olympia" in Iberian.txt
-2486 = { "Snoqualmie" "Fort Alden" } #Snoqualmie
-2487 = { "Spokane" "Spokane" } #Spokane
-2488 = { "Yakima" "Yakima" } #Yakima
-2489 = { "Boise" "Boise" } #Boise
-2604 = { "Prince George" "Prince George" } #USA/Canada only, Fort George is older
-2605 = { "Salmon Arm" "Salmon Arm" } #Salmon Arm 
-2606 = { "Williams Lake" "Williams Lake" } #Fort Alexandria 
-2607 = { "Kelowna" "Kelowna" } #Pixie Beach is only a beach 
-2609 = { "Prince Rupert" "Prince Rupert" } #Prince Rupert 
-2610 = { "Powell River" "Powell River" } #Hernando Island
-2613 = { "Sitka" "Sitka" } #Salisbury Sound 
-4942 = { "Tillamook" "Manzanita" } #Tillamook 
-4943 = { "Smithers" "Smithers" } #Smithers
-4944 = { "Alexis Creek" "Alexis Creek" } #Alexis Creek
-4945 = { "Wasco" "The Dalles" } #Wasco (Should Trade in Fur instead, it's known for it) 
-4946 = { "Maupin" "Maupin" } #Maupin 
-4947 = { "Nelson" "Nelson" } #Nelson
-4948 = { "Kalispell" "Kalispell" } #Kalispell 
-4949 = { "Winthrop" "Winthrop" } #Winthrop
-4956 = { "Grants Pass" "Grants Pass" } #Grants Pass
-4957 = { "Strawberry Mountains" "Baker City" } #Baker City 
-4958 = { "Klamath Falls" "Klamath Falls" } #Klamath Falls 
-4960 = { "Missoula" "Missoula" } #Missoula
-4961 = { "Lewiston" "Lewiston" } #Lewiston
-4972 = { "Telegraph Creek" "Telegraph Creek" } #Telegraph Creek
-4988 = { "Stuart Lake" "Fort St. James" } #Fort St. John
-5017 = { "Ruby Valley" "Elko" } #Ruby Valley 
-5031 = { "Eureka" "Eureka" } #Trinidad Bay
-5612 = { "Salmon" "Salmon" } #Salmon 
-5727 = { "Juneau" "Juneau" } #Juneau
-5728 = { "Prince of Wales Island" "Bucarelli Bay" } #Bucareli Bay 
-5729 = { "Kincolith" "Kincolith" } #OR Greenville
-5730 = { "Hazelton" "Hazelton" } #Hazelton 
-5731 = { "Bella Bella" "Bella Bella" } #Bella Bella	 
-5732 = { "Dawsons Landing" "Dawsons Landing" } #Dawsons Landing
-5733 = { "Port Hardy" "Port Hardy" } #Port Hardy
-5734 = { "Nanaimo" "Nanaimo" } #Nanaimo
-5735 = { "Port Renfrew" "Port Renfrew" } #Port Renfrew
-5736 = { "Squamish" "Squamish" } #Squamish
-5737 = { "Whistler" "Whistler" } #Whistler
-5738 = { "Lillooet" "Lillooet" } #Lillooet
-5739 = { "Chilliwack" "Chilliwack" } #Chilliwack 
-5740 = { "Shelter Bay" "Shelter Bay" } #Shelter Bay 
-5741 = { "Marblehead" "Marblehead" } #Marblehead 
-5742 = { "Castlegar" "Castlegar" } #Castlegar
-5743 = { "Sandpoint" "Sandpoint" } #Sandpoint
-5744 = { "Colville" "Colville" } #Colville (Typo in vanilla BT)
-5745 = { "Brewster" "Brewster" } #Brewster 
-5746 = { "Leavenworth" "Leavenworth" } #Leavenworth
-5747 = { "Everett" "Everett" } #Everett
-5748 = { "Forks" "La Push" } #La Push
-5749 = { "Grays Harbor" "Aberdeen" } #Grays Harbor (Misplaced in BT vanilla) 
-5750 = { "Mossyrock" "Mossyrock" } #Mossyrock
-5751 = { "Moses Lake" "Moses Lake" } #Moses Lake
-5752 = { "Pullman" "Pullman" } #Pullman
-5753 = { "Coeur d'Alene" "Coeur d'Alene" } #Coeur d'Alene
-5754 = { "La Grande" "La Grande" } #La Grande 
-5755 = { "Portland" "Portland" } #Miswritten as "Vancouver", the trade centre file defines 5755 as "Portland" so I changed it
-5756 = { "Boardman" "Boardman" } #Boardman
-5757 = { "Magic Valley" "Twin Falls" } #Twin Falls 
-5758 = { "Rexburg" "Rexburg" } #Rexburg 
-5759 = { "Newport" "Newport" } #OR Florence
-5760 = { "Eugene" "Eugene" } #Eugene
-5761 = { "Gold Beach" "Gold Beach" } #OR "Curry", after its county.
-5762 = { "Weiser" "Weiser" } #Weiser
-5763 = { "Fort Bragg" "Fort Bragg" } #Check for more prominent settlements later 
-5777 = { "Three Sisters" "Sisters" } #Three Sisters 
-5779 = { "Valemount" "Valemount" } #
-5780 = { "Campbell River" "Campbell River" } #Campbell River
-5781 = { "Jefferson" "Port Townsend" } #OR Port Discovery
-5790 = { "Princeton" "Princeton" } #Princeton
-5798 = { "Forks of Salmon" "Callahan" } #Callahan 
-5800 = { "Lakeview" "Bonanza" } #Bonanza 
-5801 = { "Neah Bay" "Neah Bay" } #OR "Clallam", after its county.
-5802 = { "Crescent City" "Crescent City" } #Crescent City 
-5803 = { "Medford" "Medford" } #Medford
-5804 = { "Roseburg" "Roseburg" } #Roseburg 
-5805 = { "Beaverton" "Beaverton" } #Beaverton
-5806 = { "Glenoma" "Glenoma" } #Glenoma 
-5807 = { "Olympia" "Olympia" } #Olympia is the bigger city, but "Port Orchard" could still work. I suggest to split the state into two.
-5808 = { "Concrete" "Concrete" } #Concrete OR Skagit for country
-5809 = { "Apiary" "Apiary" } #Apiary
-5810 = { "Oregon City" "Oregon City" } #Happy Valley 
-5811 = { "Centralia" "Centralia" } #Chehalis
-5812 = { "Priest Rapids" "Desert Aire" } #Desert Aire 
-5813 = { "Lytton" "Lytton" } #Lytton
-5816 = { "Bonners Ferry" "Bonners Ferry" } #Bonners Ferry
-5819 = { "Bend" "Bend" } #Paulina 
-5820 = { "Crowley" "Crowley" } #Crowley 
-5825 = { "Dixie" "Yellow Pine" } #Yellow Pine 
-5847 = { "Medford" "Medford" } #Medford
-5848 = { "Klamath" "Klamath" } #Klamath 
-5849 = { "Burnt Ranch" "Burnt Ranch" } #Burnt Ranch
-5850 = { "Palo Cedro" "Palo Cedro" } #Palo Cedro 
-5851 = { "Shelter Cove" "Shelter Cove" } #Shelter Cove
-5853 = { "Point Arena" "Point Arena" } #Point Arena
-5854 = { "Clearlake" "Clearlake" } #Clearlake
-5863 = { "Haines" "Mosquito Lake" } #Mosquito Lake
-5864 = { "Admiralty Island" "Angoon" } #Angoon
-5866 = { "Revillagigedo Island" "Mountain Point" } #Mountain Point 
-5867 = { "Aristazabal Island" "Port Belmont" } #Port Belmont
-5868 = { "Alberni Canal" "Port Alberni" } #Port Alberni 
-5869 = { "Comox Valley" "Comox" } #Comox
-5870 = { "Texada Island" "Earls Cove" } #Earls Cove 
-5871 = { "Vancouver" "Vancouver" } #Vancouver 
-5872 = { "Grays Harbor" "Point Grenville" } #Point Grenville
-5873 = { "Mason" "Bremerton" } #Quilcene
-5874 = { "Bellingham Bay" "Bellingham" } #Bellingham Bay
-5875 = { "Elma" "Elma" } #Elma
-5876 = { "Silver Star" "Silver Star" } #Silver Star
-5877 = { "Longview" "Longview" } #Longview
-5878 = { "Fort Hope" "Fort Hope" } #Fort Hope 
-5879 = { "Keremeos" "Keremeos" } #Keremeos
-5880 = { "Ellensburg" "Ellensburg" } #Ellensburg 
-5881 = { "Wenatchee" "Wenatchee" } #Wenatchee
-5882 = { "Pateros" "Pateros" } #Pateros 
-5883 = { "Orofino" "Orofino" } #Orofino 
-5884 = { "Avola" "Avola" } #Avola 
-5885 = { "Penticton" "Penticton" } #Penticton
-5886 = { "Wells" "Wells" } #Wells 
-5887 = { "Quesnel" "Quesnel" } #Quesnel
-5888 = { "Kamloops" "Kamloops" } #Kamloops
-5889 = { "Mcbride" "Mcbride" } #Mcbride
-5892 = { "Stewart" "Stewart" } #Stewart
-5893 = { "Chutine" "Chutine Landing" } #Chutine
-5940 = { "Victoria" "Victoria" } #Victoria
+2485 = { "Fort Nisqually" "Fort Nisqually" }
+2486 = { "Fort Alden" "Fort Alden" }
+2487 = { "Spokane House" "Spokane House" }
+2488 = { "Fort Simcoe" "Fort Simcoe" }
+2489 = { "Fort Boise" "Fort Boise" }
+2604 = { "Fort George" "Fort George" }
+2605 = { "Shuswap" "Salmon Arm" }
+2606 = { "Fort Alexandria" "Fort Alexandria" }
+2607 = { "Bay of Sand" "Bay of Sand" } #(JP) Modern "Kelowna", known as "l'Anse au Sable" from 1859 by a Catholic Missionary.
+2609 = { "Prince Rupert" "Prince Rupert" }
+2610 = { "Powell River" "Powell River" }
+2613 = { "Sitka" "Sitka" } #(JP) Derived from native name and used by Russians before "New Archangel". On both "Baranof" and "Chichagof" islands
+4942 = { "Tillamook" "Tillamook" }
+4943 = { "Fort Babine" "Fort Babine" } #(JP) Near "Smithers"
+4944 = { "Fort Chilcotin" "Fort Chilcotin" }
+4945 = { "The Dalles" "The Dalles" }
+4946 = { "Maupin" "Maupin" }
+4947 = { "Nelson" "Nelson" }
+4949 = { "Methow River" "Mazama" }
+4956 = { "Eagle Point" "Eagle Point" }
+4957 = { "Strawberry Mountain" "Strawberry Creek" }
+4958 = { "Linkville" "Linkville" } #(JP) Modern "Klamath Falls"
+4960 = { "Missoula" "Missoula" }
+4961 = { "Lewiston" "Lewiston" }
+4972 = { "Fort Glenora" "Fort Glenora" }
+4988 = { "Fort St. James" "Fort St. James" }
+5017 = { "Elko" "Elko" }
+5031 = { "Eureka" "Eureka" }
+5612 = { "Lemhi Pass" "Salmon Crossing" }
+5727 = { "Juneau" "Juneau" } #(JP) French name used by Anglos
+5728 = { "Prince of Wales Island" "Craig" } #(JP) Probably pronouncing "Craig" as "Creg" like Americans do...
+5729 = { "Fort Simpson" "Fort Simpson" }
+5730 = { "Fort Stager" "Fort Stager" } #(JP) Modern "Hazleton"
+5731 = { "Fort McLoughlin" "Fort McLoughlin" } #(JP) Modern "Bella Bella"
+5732 = { "Rivers Inlet" "Rivers Inlet" }
+5733 = { "Fort Rupert" "Fort Rupert" }
+5734 = { "Colvile Town" "Colvile Town" } #(JP) Modern "Nanaimo"
+5735 = { "Port Renfrew" "Port Renfrew" }
+5736 = { "Squamish" "Squamish" } #(JP) Basically native name
+5737 = { "Fort Anderson" "Fort Anderson" } #(JP) Seen on map of HBC Forts. Around modern "Whistler"
+5738 = { "Fort Berens" "Fort Berens" }
+5739 = { "Fort Hope" "Fort Hope" }
+5740 = { "Arrowhead Lake" "Nakusp" }
+5741 = { "Kootanae House" "Kootanae House" }
+5742 = { "Fort Shepherd" "Fort Shepherd" }
+5743 = { "Kullyspell House" "Kullyspell House" }
+5744 = { "Fort Colville" "Fort Colville" }
+5745 = { "Nespelem" "Nespelem" }
+5746 = { "Wenatchee River" "Leavenworth" }
+5747 = { "Mount Vernon" "Mount Vernon" }
+5748 = { "Forks" "Forks" } #(JP) Edward or Jacob? I beg someone answers this and utterly confuses me one day...
+5749 = { "Grays Harbor" "Aberdeen" }
+5750 = { "Mossyrock" "Mossyrock" }
+5751 = { "Moses Lake" "Moses Lake" }
+5752 = { "Three Forks" "Three Forks" } #(JP) Modern "Pullman" 
+5753 = { "Fort Sherman" "Fort Sherman" } #(JP) Modern "Coeur d'Alene"
+5754 = { "Enterprise" "Enterprise" }
+5755 = { "Fort Vancouver" "Fort Vancouver" }
+5756 = { "Umatilla" "Umatilla" }
+5757 = { "Rock Creek" "Rock Creek" } #(JP) Old name for "Twin Falls" 
+5758 = { "Henry's Fork" "St. Anthony" }
+5759 = { "Newport" "Newport" }
+5760 = { "Eugene City" "Eugene City" }
+5761 = { "Ellensburg" "Ellensburg" } #(JP) Modern "Gold Beach"
+5762 = { "Weiser" "Weiser" }
+5763 = { "Fort Bragg" "Fort Bragg" }
+5777 = { "Three Sisters" "Hazeldell" } #(JP) City is later "Oakridge"
+5779 = { "Boat Encampment" "Boat Encampment" }
+5780 = { "Campbell River" "Campbell River" }
+5781 = { "Port Townsend" "Port Townsend" }
+5790 = { "The Similkameen" "Princeton" }
+5798 = { "Happy Camp" "Happy Camp" }
+5800 = { "Lakeview" "Lakeview" }
+5801 = { "Neah Bay" "Neah Bay" }
+5802 = { "Crescent City" "Crescent City" }
+5803 = { "Medford" "Medford" }
+5804 = { "Roseburg" "Roseburg" }
+5805 = { "Portland" "Portland" }
+5806 = { "Glenoma" "Glenoma" }
+5807 = { "Great Peninsula" "Port Madison" } #(JP) Older name for "Kitsap Peninsula"
+5808 = { "Skagit River" "Hamilton" }
+5809 = { "Clatskanie" "Clatskanie" }
+5810 = { "Oregon City" "Oregon City" }
+5811 = { "Saundersville" "Saundersville" } #(JP) Modern "Chehalis"
+5812 = { "Priest Rapids" "Priest Rapids" }
+5813 = { "The Forks" "The Forks" } #(JP) Modern "Lytton" 
+5816 = { "Bonners Ferry" "Bonners Ferry" }
+5819 = { "Bend" "Bend" }
+5820 = { "Vale" "Vale" }
+5824 = { "Saleesh House" "Saleesh House" }
+5825 = { "Florence" "Florence" }
+5847 = { "Grants Pass" "Grants Pass" }
+5848 = { "Klamath" "Klamath" }
+5849 = { "Hoopa Valley" "Hoopa Valley" }
+5850 = { "Weaverville" "Weaverville" }
+5851 = { "Phillipsville" "Phillipsville" }
+5853 = { "The Corners" "The Corners" } #(JP) Modern "Boonville"
+5854 = { "Lakeport" "Lakeport" }
+5863 = { "Skagway" "Skagway" }
+5864 = { "Admiralty Island" "Angoon" }
+5866 = { "Ketchikan" "Ketchikan" } #(JP) More modern town, not perfect
+5867 = { "Hartley Bay" "Hartley Bay" }
+5868 = { "Ucluelet" "Ucluelet" } #(JP) Basically native name
+5869 = { "Courtenay" "Courtenay" }
+5870 = { "Sechelt" "Sechelt" } #(JP) Basically native name
+5871 = { "Vancouver" "Vancouver" } #(JP) Was never a HBC or NWC Trading Post or Fort. "Vancouver" was the name given in 1792 to the bay/mouth of the Fraser River. "Fort Vancouver" represents "Vancouver" in Oregon instead. The settlement here was first "Gastown" and then "Grenville", but both were outside the scope of our time period anyway. Sticking with "Vancouver" being so recognisable. "Xwayxway" was a native settlement on the island on the Burrard Inlet.
+5872 = { "Quinault" "Quinault" }
+5873 = { "Union" "Union" }
+5874 = { "Fort Bellingham" "Fort Bellingham" }
+5875 = { "Centralia" "Centralia" }
+5876 = { "Amboy" "Amboy" }
+5877 = { "Monticello" "Monticello" } #(JP) Named after Jefferson's Plantation
+5878 = { "Fort Yale" "Fort Yale" }
+5879 = { "Nicola Country" "Forksdale" }
+5880 = { "Ellensburg" "Ellensburg" }
+5881 = { "Chelan Falls" "Chellan Falls" }
+5882 = { "Fort Okanogan" "Fort Okanogan" }
+5883 = { "Kamiah" "Kamiah" }
+5884 = { "Clearwater" "Clearwater" }
+5885 = { "Penticton" "Penticton" }
+5886 = { "Barkerville" "Barkerville" }
+5887 = { "Quesnelle" "Quesnelle" } #(JP) French name used by Anglos
+5888 = { "Fort Thompson" "Fort Thompson" }
+5889 = { "Cranberry Lake" "Cranberry Lake Post" } #(JP) Name first given by HBC as opposed to modern names
+5892 = { "Stewart" "Stewart" }
+5893 = { "Chutine Landing" "Chutine Landing" }
+5940 = { "Fort Victoria" "Fort Victoria" }
+5941 = { "Kitimat" "Kitimat" }
 
 #California
-862 = { "Hermosillo" "Santisima Trinidad" }
-865 = { "Mulege" "Santa Rosalia" }
-866 = { "Santa Cruz" "La Paz" }
-867 = { "Ehrenberg" "Ehrenberg" }
-868 = { "Santa Barbara" "Santa Barbara" }
+862 = { "Pittick" "Pittick" } #(JP) Spanish and modern "Hermosillo"
+865 = { "St. Ignace" "St. Ignace" } #(JP) Spanish "San Ignacio Kadakaam·n"
+866 = { "Holy Cross" "Bay of Peace" } #(JP) Spanish "Santa Cruz" and "Bahia la Paz"
+867 = { "Ehrenberg" "Ehrenberg" } #(JP) Lots of small semi-temporary cities on the east bank of the Colorado here, the first was "La Paz" but Spanish name... This is one that persisted.
+868 = { "St. Barbara" "St. Barbara" } #(JP) Spanish "Santa B·rbara"
 869 = { "King City" "King City" }
 870 = { "Modesto" "Modesto" }
-875 = { "Mesa Verde" "San Bernardo" }
+875 = { "Ash Hill" "Ash Hill" } #(JP) Anglo name of "Walpi", an extant Hopi village
 876 = { "Phoenix" "Phoenix" }
-877 = { "Tucson" "Tucson" }
-878 = { "Junction City" "Junction City" }
-879 = { "Payson" "Payson" }
-1808 = { "Humboldt" "Humboldt" }
-2021 = { "San Francisco" "San Francisco" }
-2476 = { "San Diego" "San Diego" }
-2478 = { "Searles Valley" "Ridgecrest" }
-2479 = { "Plumas" "Chester" } #OR Almanor
+877 = { "St. Augustine" "St. Augustine" } #(JP) Modern "Tucson"
+878 = { "Junction City" "Junction City" } #(JP) Modern "Farmington"
+879 = { "St. Charles" "St. Charles" } #(JP) Spanish "San Carlos" from the Apache Reservation here
+1808 = { "Humboldt River" "Eureka" }
+2021 = { "St. Francis" "St. Francis" } #(JP) Spanish "San Francisco"
+2476 = { "St. James" "St. James" } #(JP) Spanish "San Diego" 
+2478 = { "Searles Valley" "Searles Valley" }
+2479 = { "Elizabethtown" "Elizabethtown" } #(JP) Modern "Quincy"
 2490 = { "Salt Lake City" "Salt Lake City" }
-2491 = { "Clark" "Laughlin" }
-2492 = { "Silver City" "Silver City" }
-2493 = { "Cibola" "Grants" }
-2494 = { "Grant" "Gila" }
-2608 = { "Vail" "Vail" }
-2616 = { "Caborca" "Caborca" }
-2620 = { "San Felipe" "San Felipe" } 
-4577 = { "Rocky Point" "Rocky Point" } #OR Puerto Penasco
-4633 = { "Nogales" "Nogales" }
+2491 = { "Stone's Ferry" "Stone's Ferry" } #(JP) Or "Bonelli's Ferry"
+2492 = { "St. Vincent" "St. Vincent" } #(JP) Modern "Silver City"
+2493 = { "Zuni Pueblo" "Zuni Pueblo" }
+2494 = { "Gila" "Gila" }
+2608 = { "Glenwood Springs" "Glenwood Springs" }
+2616 = { "Caborca" "Caborca" } #(JP) Base Names
+2620 = { "St. Quentin" "St. Quentin" } #(JP) Spanish "San QuintÌn"
+4577 = { "Rocky Point" "Rocky Point" } # (JP) Spanish "Puerto PeÒasco"
+4633 = { "Nogales" "Nogales" } #(JP) Base Names
 4634 = { "Flagstaff" "Flagstaff" }
-4635 = { "Los Padres" "Cuyama" }
-4636 = { "Merced" "Merced" }
-4637 = { "San Juan Bautista" "San Juan Bautista" }
-4638 = { "Vallejo" "Vallejo" }
-4639 = { "Imperial" "Brawley" } #OR El Centro. Vanilla BT Spanish name has san felipe misplaced.
-4649 = { "Navojoa" "Navojoa" }
-4650 = { "Cananea " "Cananea" }
-4950 = { "Fresno" "Fresno" }
-4951 = { "Sacramento" "Sacramento" } #Vanilla BT has a typo
-4952 = { "Owens Valley" "Panamint City" }
-4953 = { "Reno" "Reno" } #Vanilla English name is redundant, as the lake is already called Lake Tahoe
-4954 = { "Goose Lake" "Alturas" } #Goose Lake (Double name with 5800 in vanilla BT)
-4955 = { "Death Valley" "Darwin" }
-4962 = { "Glenwood Springs" "Glenwood Springs" }
-4963 = { "Grand Junction" "Grand Junction" } 
-4964 = { "Empalme" "Punta Chueca" }
-4965 = { "Wasatch" "Loa" }
-4966 = { "Grand Canyon" "Supai" } #Supai is the name of the tribe (Havasupai) 
-4967 = { "Utah" "Manti" }
-4975 = { "Moab" "Moab" }
-4979 = { "Cortez" "Cortez" } #Misplaced in Iberian, Mesa Verde is in 875
+4635 = { "Cuyama" "Cuyama" }
+4636 = { "Merced" "Merced" } #(JP) Spanish name used by Anglos
+4637 = { "St. John" "St. John the Baptist" } #(JP) Spanish "San Juan Bautista"
+4638 = { "Fairfield" "Fairfield" } #(JP) Province is actually "Vallejo" but this is also in the province.
+4639 = { "St. Isabel" "St. Isabel" } #(JP) Spanish "Santa Ysabel Asistencia"
+4649 = { "St. Catherine" "St. Catherine" } #(JP) Modern "Navojoa", founded as "Mission Santa Catalina Camoa"
+4650 = { "Nacozari" "Nacozari" } #(JP) Base Names
+4950 = { "Fort Miller" "Fort Miller" } #(JP) Later "Millerton", near modern "Fresno", now under a Millerton Lake.
+4951 = { "Sutter's Fort" "Sutter's Fort" } #(JP) Anglo predecessor settlement to Sacremento.
+4952 = { "Owens Valley" "Fort Independence" }
+4953 = { "Reno" "Reno" } #(JP) Or "Virginia City" or "Washoe City"
+4954 = { "Dorris Bridge" "Dorris Bridge" } #(JP) Modern "Alturas"
+4955 = { "Death Valley" "Grapevine" }
+4962 = { "Elk Springs" "Elk Springs" }
+4963 = { "Grand Junction" "Grand Junction" }
+4964 = { "Point Seri" "Point Seri" } #(JP) Spanish "Punta Chueca"
+4965 = { "Circleville" "Circleville" }
+4966 = { "Grand Canyon" "Pearce Ferry" }
+4967 = { "Fort Cameron" "Fort Cameron" }
+4975 = { "Elk Mountain" "Elk Mountain" } #(JP) Modern "Moab"
+4979 = { "Four Corners" "Four Corners" } #(JP) I hate it, but its in the province, where the Dinetah is, and its where Drai put the city location...
 5016 = { "Winnemucca" "Winnemucca" }
-5018 = { "Los Angeles" "Los Angeles" }
-5030 = { "San Rafael" "San Rafael" } #Misplaced in Vanilla BT
-5032 = { "Kern" "Bakersfield" }
-5042 = { "Mohave" "Fort Mohave" }
-5043 = { "Mexicali" "Mexicali" }
-5044 = { "Mono Lake" "Mono City" }
-5045 = { "Redding" "Redding" } 
-5061 = { "Guaymas" "Guaymas" }
-5064 = { "Durango" "Durango" }
-5764 = { "Santa Rosa" "Santa Rosa" } #OR Sonoma, after the county.
-5765 = { "Davis" "Davis" }
-5766 = { "Stockton" "Stockton" } #OR Tuleburg, for non-USA tags
-5767 = { "Monterey" "Monterey" }
-5768 = { "Sonora" "Sonora" } #OR Tuolumne, after county.
-5769 = { "Pyramid Lake" "Pyramid" }
-5770 = { "Fallon" "Fallon" } #To check in the future
+5018 = { "The Angles" "The Angles" } #(JP) Need something better here, "Los ¡ngeles" in Spanish.
+5030 = { "St. Raphael" "St. Raphael Archangel" } #(JP) Spanish "San Rafael Arc·ngel"
+5032 = { "Bakersfield" "Bakersfield" }
+5042 = { "Fort Mohave" "Fort Mohave" }
+5043 = { "St. Louis" "St. Louis-upon-Colorado" } #(JP) Spanish "San Luis RÌo Colorado", province is technically "Mexicali"
+5044 = { "Bridgeport" "Bridgeport" }
+5045 = { "Redding" "Redding" }
+5061 = { "St. Joseph" "St. Joseph" } #(JP) Spanish "San JosÈ de Guaymas"
+5064 = { "Durango" "Durango" } #(JP) Spanish name used by Anglos.
+5764 = { "Napa Valley" "St. Helena" }
+5765 = { "Davisville" "Davisville" } #(JP) Modern "Davis"
+5766 = { "Stockton" "Stockton" }
+5767 = { "Monterey Bay" "Monterey" } #(JP) Whilst deriving from Spanish, the actual Spanish is "Monterrey" with two r's
+5768 = { "Sonora" "Sonora" } #(JP) Spanish name used by Anglos. No suitable English name found.
+5769 = { "Pyramid Lake" "Fernley" }
+5770 = { "Fallon" "Fallon" }
 5771 = { "Lancaster" "Lancaster" }
-5772 = { "Kelso" "Kelso" }
+5772 = { "Kelso" "Kelso" } #(JP) Stopgap name here.
 5773 = { "Barstow" "Barstow" }
 5774 = { "Palm Springs" "Palm Springs" }
-5775 = { "Oroville" "Oroville" }
+5775 = { "Paynes Creek" "Paynes Creek" }
 5782 = { "High Desert" "Burns" }
-5791 = { "Indio" "Indio" }
-5792 = { "Santa Maria" "Santa Maria" }
-5793 = { "Kernsville" "Kernsville" }
-5794 = { "Big Sur" "Big Sur" }
-5795 = { "Kings" "Avenal" }
-5796 = { "Placerville" "Placerville" }
-5797 = { "Chico" "Chico" }
+5791 = { "Cahuilla" "Cahuilla" }
+5792 = { "St. Mary" "St. Mary" } #(JP) Spanish "Santa Maria"
+5793 = { "Kernville" "Kernville" }
+5794 = { "Big Sur" "Big Sur Village" }
+5795 = { "Hanford" "Hanford" }
+5796 = { "Sutter's Mill" "Sutter's Mill" } #(JP) Modern "Coloma"
+5797 = { "Camp Bidwell" "Camp Bidwell" } #(JP) American fort at Spanish "Chico"
 5799 = { "Red Bluff" "Red Bluff" }
-5814 = { "San Jose" "San Jose" }
-5815 = { "Elko" "Elko" }
-5821 = { "Las Vegas" "Las Vegas" }
+5814 = { "Oakland" "Oakland" } #(JP) Province is actually "San JosÈ" but this is also in the province.
+5815 = { "Wendover" "Wendover" }
+5821 = { "Las Vegas" "Las Vegas" } #(JP) I can't pass on this name can I...
 5822 = { "St. George" "St. George" }
-5823 = { "Peach Springs" "Kingman" }
+5823 = { "Peach Springs" "Peach Spring" }
 5833 = { "Cache Valley" "Logan" }
-5834 = { "Duchesne" "Duchesne" }
-5835 = { "La Sal" "La Sal" } #Easter Egg removed
+5834 = { "Duchesne City" "Duchesne City" }
+5835 = { "Paradox Valley" "St. Ignace" } #(JP) Town is just "Ignacio"...?
 5836 = { "Montrose" "Montrose" }
-5838 = { "Garfield" "Escalante" }
-5839 = { "Agua Caliente" "Agua Caliente" }
+5838 = { "Lees Ferry" "Lees Ferry" }
+5839 = { "Stanwix Ranch" "Stanwix Ranch" } #(JP) Modern "Agua Caliente"
 5840 = { "Gila Bend" "Gila Bend" }
-5841 = { "Hayden" "Hayden" }
-5843 = { "Hidalgo" "Lordsburg" }
+5841 = { "Dudleyville" "Dudleyville" }
+5843 = { "Animas" "Animas" } #(JP) Spanish name used by Anglos
 5845 = { "Rock Springs" "Rock Springs" }
-5852 = { "Bodega Bay" "Bodega Bay" }
-5855 = { "Oxnard" "Oxnard" }
-5856 = { "Tule" "Glenburn" }
-5857 = { "San Juan" "San Juan Capistrano" }
-5858 = { "Yuma" "Yuma" }
-5859 = { "Tijuana" "Tijuana" }
-5860 = { "San Quintin" "San Quintin" }
-5861 = { "Loreto" "Loreto" } #Nuestra Se?ora de Loreto Conch?
-5862 = { "Cape San Lucas" "Cape San Lucas" }
+5852 = { "St. Rose" "St. Rose" } #(JP) Spanish "Santa Rosa"
+5855 = { "St. Bonaventure" "St. Bonaventure" } #(JP) Modern "Ventura", officially Spanish "San Buenaventura"
+5856 = { "Tulare" "Tulare" }
+5857 = { "Irvine" "Irvine" }
+5858 = { "Fort Yuma" "Fort Yuma" }
+5859 = { "St. Isidore" "St. Isidore" } #(JP) Province is technically "Tijuana", this settlement is just on the American side, Spanish "San Ysidro"
+5860 = { "Angel Bay" "Angel Bay" } #(JP) Spanish "BahÌa de los ¡ngeles"
+5861 = { "Loreto" "Loreto" } #(JP) Base Names
+5862 = { "Cape St. Luke" "St. Luke" } #(JP) Spanish "Cabo San Lucas"
 
 
 #Northeast
@@ -1628,12 +2554,13 @@
 
 
 
+889 = { "Lamar" "Lamar" }
 890 = { "Witchita" "Witchita" }
 891 = { "Woodward" "Woodward" }
 892 = { "Lawton" "Lawton" }
 898 = { "Topeka" "Topeka" }
 899 = { "Garden City" "Garden City" }
-901 = { "Kearney" "Kearney" }
+901 = { "Elwood" "Elwood" }
 903 = { "Omaha" "Omaha" }
 905 = { "Ames" "Ames" } #Ames
 904 = { "Mason City" "Mason City" }
@@ -1819,261 +2746,30 @@
 7527 = { "Cuencame" "Cuencame" }
 
 #Central America
+835 = { "Panama" "Panama" }
+838 = { "Sandy Bay" "Sandy Bay" } #Capital of Mosquito Protectorate
+839 = { "Salvador" "Salvador" } #Possible Anglicization
+840 = { "Truxillo" "Truxillo" }
+845 = { "Campeachy" "Campeachy" } #Or Campechy
+2819 = { "New Caledonia" "New Edinburgh" }
+2636 = { "Livingston" "Livingston" } #Spanish town named after an American politician
+2637 = { "Porto Caballos" "Porto Caballos" }
+2652 = { "Cancoon" "Cancoon" }
+2660 = { "Greytown" "Greytown" } #Historical settlement in San Juan del Norte
+2661 = { "Cape River" "Cape River" } #English name; unknown origin
+2664 = { "Saint James" "Saint James" } #(JP) "Santiago de Veraguas"
+4592 = { "Bluefields" "Bluefields" } #British settlement
+4595 = { "Saint Felix" "Saint Felix" } #(JP) San Felix is in this province, meant to be "GuaymÌ", or "Ng‰be"
+
 #Colombia
+
 #Peru
+
 #Upper Peru
+
 #Brazil
+
 #La Plata
-
-356 = "Benghazi"
-357 = "Derna"
-358 = "Alexandria"
-360 = "Qena"
-361 = "Cairo"
-362 = "Rosetta"
-363 = "Damietta"
-388 = "Aden"
-410 = "Baghdad"
-411 = "Mosul"
-2315 = "Suez"
-2326 = "Bardia"
-
-5093 = "Desolation Islands"	# Kerguelen Islands					
-5591 = "Isabella"	# Jan Mayen									#Dutch 'Maurits Eylandt'
-
-#BT800  Overhaul Vanilla renaming
-#Note from Draiocht - Some of these are really crap. Eventually I'm hoping to find the time to come back and fix some of these with more period appropriate names and historical settlements, but the historical situation here is rather a mess and there is more heresay and legends than scholarly research, so I'm 
-#just moving on for now and leaving this rubbish setup. BT's mandate is quality, while bearing in mind most people would prefer 50 provinces with alright detail to 5 provinces with every single last possible detail (they might even more prefer 500 horrible ones, but I have no interest in doing really bad stuff =p).
-
-#1008 covered in 2.0
-#1009 covered in 2.0
-#1010 covered in 2.0
-#2016 covered in 2.0
-#2511 covered in 2.0
-#2596 covered in 2.0
-
-#BT900  Overhaul Vanilla renaming (South Africa)
-#South Africa Proper
-789 = "Swaziland"
-833 = "Graaf Reinet"
-1175 = "Springbok"
-1176 = "Calvinia"
-1177 = "Capetown"
-1178 = "Victoria West"
-1179 = "Swellendam"
-1180 = "Port St. John"
-1181 = "Pietermaritzburg"
-1182 = "Maputo"			#Or Maputo
-2856 = "Bloemfontein"
-2864 = "Upington"
-2880 = "Giquatown"			#Or Griekwastad
-#Namibia
-1174 = "Walvis Bay"
-
-#BT900 New Provinces (South Africa)
-#South Africa Proper
-5340 = "Stellenbosch"
-5341 = "Roodezand"
-5342 = "Vredenburg"
-5343 = "Picketberg"
-5344 = "Matjiesfontein"
-5345 = "Vredendal"
-5346 = "Hondeklip Bay"
-5347 = "Pofadder"
-5348 = "Sutherland"
-5349 = "Fraserburg"			#Or Williston
-5350 = "Mossel Bay"
-5351 = "George"
-5352 = "Knysna"
-5353 = "St. Francis Bay"			#Or Humansdorp
-5354 = "Willowmore"
-5355 = "Kirkwood"
-5356 = "Port Elizabeth"			#Or Uitenhage
-5357 = "Grahamstown"			#Grahamstad
-5358 = "East London"			#Or King William's Town
-5359 = "Queenstown"
-5360 = "Aliwal North"
-5361 = "Beaufort West"
-5362 = "Prieska"
-5363 = "Kuruman"
-5364 = "Vryburg"
-5365 = "Welkom"
-5366 = "Lesotho"
-5367 = "Mafeking"
-5368 = "Vredenburg"			#2nd one of these, ah well.
-5369 = "Limpopo"			#Or default Vhembe
-5370 = "Port Shepstone"
-5371 = "Durban"
-5372 = "Ladysmith"			#Or Newcastle
-5373 = "Richards Bay"
-5374 = "Vryheid"
-5375 = "St. Lucia"			#Or default Hluhluwe
-5376 = "Ermelo"			#Or Oosvaal
-5377 = "Pretoria"
-5378 = "Kroonstad"
-5379 = "Pietersburg"
-5380 = "Mopani"
-5381 = "Nelspruit"
-#5382 = "Xai Xai"			#Outside of real overhaul, going with default for now.
-5383 = "Klerksdorp"
-5384 = "Hopetown"
-5385 = "Kimberley"
-5428 = "Oudtshoorn"
-#Namibia
-5386 = "Karasburg"
-5387 = "Angra Pequena"
-5388 = "Tswanaland"
-5389 = "Namaland"
-5390 = "Buitepos"
-5391 = "Basterland"
-5392 = "Erongo"
-5393 = "Windhoek"
-5394 = "Otjiwarongo"
-5395 = "Damaraland"
-5396 = "Sesfontein"
-5397 = "Koakoveld"
-#5398 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5399 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5400 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5401 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5402 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5403 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5404 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-5405 = "Hereroland"
-5406 = "East Kavangoland"			#Or Ostkavangoland
-5407 = "Caprivi"
-5425 = "Swartmodder"
-5427 = "West Kavangoland"			#Or Westkavangoland
-#Botswana
-#5408 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-5409 = "Kalahari"
-#5410 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5411 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5412 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5413 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5414 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-5415 = "Francistown"
-#5416 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5417 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-5418 = "Gaborone"
-#5419 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5420 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5421 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5422 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5423 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#5424 = "ABC"			#Leaving Botswana and NW Namibia as default (native) for now
-#Angola
-5426 = "Mo??medes"
-
-
-
-#Arga's Work
-
-#2017 Jun 5
-
-#europe
-12 = "Sealand"
-15 = "West Jutland"
-37 = "Livonia" #or "Livland" (could remain technically)
-41 = "Kingsberg"   #Or King's Hill
-49 = "Newmarch"
-52 = "Maidensburg"
-60 = "Upper Lusatia"
-73 = "Tyrol"
-82 = "Westphalia"
-85 = "Cologne"
-100 = "Frisia"
-132 = "Styria"
-134 = "Vienna"
-264 = "Breslow"
-295 = "Moscow"
-1758 = "Hanover" #note (only a single n)
-1763 = "Lower Lusatia"
-1769 = "Gorizia"
-1770 = "Eastmarch"
-2960 = "New Sadec"
-2964 = "Oldmarch"
-2993 = "Uckermarch"   #Or "Ukranimarch"
-3048 = "Southern Tyrol"
-4383 = "The Hague"
-3135 = "Northfrisia"   #Or "Northern Frisia"
-3243 = "Nikopol"
-3273 = "Old Russia"   #Or "Oldenrussia"
-3276 = "Saint Sergius"
-4142 = "East Jutland"
-
-#china
-2113 = "Port Arthur"
-2139 = "Weihai"
-
-
-
-#2018 December
-
-#patagonia
-782 = "Firelands"
-2869 = "Whiteflower" #or "Whitebloom"
-2874 = "Western Patagonia"
-
-#france
-170 = "Brest"
-180 = "Upper Poitou"
-187 ="Bar"
-193 = "Free-County"
-201 = "Province"
-3046 = "Upper Savoy"
-
-#Deutschland
-189 = "Lotharingia"
-3198 = "Saarbridge"
-
-#Ch
-1869 = "Zurich"
-1870 = "Saint Gall"
-
-#lithuania
-3223 = "Whiteslope"
-
-#kurland
-39 = "Goldingia"
-3227 = "Pilten"
-
-#Spain
-224 = "Seville"
-5446 = "Malaga"
-
-#k?rnten
-7082 = "Middleburg"
-
-#russia
-33 = "St. Petersburg"
-34 = "Koporia"
-
-#scandies
-11 = "Westrobothnia"
-19 = "Ostrobothnia"
-31 = "Savonia"
-315 = "Finnmarch"
-4114 = "East Lappland"
-4123 = "Birchlands"
-
-#algeria
-338 = "Algeria"
-
-#guinea
-2241 = "Conakry"
-
-#westafrica
-1113 = "Saint Louis"
-1114 = "Guinea-Bissau"
-1116 = "Diourbel"
-2239 = "The Gambia"
-
-#ghana
-1138 = "Coomassie"
-1139 = "Fort James"
-1141 = "Newport"
-2257 = "Ashantiland"
 
 #namibia
 5426 = "Namibe"
@@ -2085,93 +2781,7 @@
 2807 = "Cabimas"
 4599 = "Turbo"
 
-#germany
-75 = "Alsace"
-1760 = "Coblenz"
-1761 = "Palatinate"
-
-#argentine
-2842 = "Saint James"
-
-
-#Beyond Typus 10.0 major localised naming contribution from multiple people, credit to everyone but Draiocht. Integrated 2018-11-16
-#Help from Arga
-# Italy
-101 = "Genua"
-107 = "Brescia"
-110 = "Trent"
-116 = "Florence"
-118 = "Rome"
-121 = "Naples"
-3048 = "South Tirol"
-7017 = "Gathia"
-7020 = "Campaign"
-7083 = "Camonica" #or "Valley Camonica"
-
-# Albania and Epirus
-3179 = "Nauplia"
-3181 = "Avlona"
-4174 = "Durazzo"
-5094 = "Puka"
-
-# Macedonia
-148 = "Salonica"
-
-# Thrace
-149 = "Adrianople"
-
-
-#Imagine's Work
-
-#newzealand
-1107 = "Wellington"
-2737 = "Napier"
-5604 = "Palmerston North"
-5605 = "New Plymouth"
-2739 = "Hamilton"
-5609 = "Auckland"
-1106 = "Northland"
-5608 = "Thames"
-1108 = "Tauranga"
-5607 = "Gisborne"
-2738 = "Nelson"
-5603 = "Westport"
-5601 = "Greymouth"
-5600 = "Christchurch"
-5598 = "Timaru"
-1109 = "Dunedin"
-1246 = "Invercargill"
-5597 = "Queenstown"
-
-#australia
-1085 = "Tasmania"
-1087 = "Melbourne"
-2734 = "Canberra"
-2735 = "Millicent"
-1088 = "Mildura"
-1089 = "Narrandera"
-1090 = "Sydney"
-1092 = "Brisbane"
-1091 = "Moree"
-1094 = "Bundaberg"
-1093 = "Monto"
-2733 = "Mackay"
-2732 = "Townsville"
-2731 = "Cooktown"
-2730 = "Weipa"
-1086 = "Adelaide"
-2736 = "Whyalla"
-2727 = "Albany"
-1084 = "Perth"
-2726 = "Geraldton"
-2729 = "Barunga"
-2728 = "Darwin" 
-5610 = "Masterton"
-
-
-#Cinnamon Ryce Jan 2019
-
-#Indonesia & Malaya
+#Southeast Asia
 597 = "Johore"
 617 = "Lambri"
 621 = "Bencoolen"
@@ -2183,20 +2793,15 @@
 641 = "Macassar"
 659 = "Ligan"
 2392 = "Salangor" #Or Salengore
-#2639 = "Lomboc" #Or Lombock
 2673 = "Pacem"
 2678 = "Banca" #Or Banka
 2679 = "Billiton"
 2860 = "Moco-Moco"
 2686 = "Bintang"
 2706 = "Succadana" #Or just with a single c
-
-#Burma
 579 = "Mrohaung"
 1815 = "Bassein"
 4399 = "Rangoon"
-
-#Indochina
 592 = "Ratpri"
 593 = "Ligor"
 600 = "Ayuthia"
@@ -2204,17 +2809,6 @@
 2387 = "Pripri"
 2388 = "Phitsalok"
 2391 = "Junkceylon" #Or Jungceylon
-
-#Chairman Meow 11.5
-
-#Latvia
-38 = "Rie" #Name from Richard Hakylut in 1589
-
-
-
-#CR's British naming for SEA provinces
-
-#Indochina Extended
 601 = "Sucotay"
 603 = "Tungyai"
 604 = "Udong"
@@ -2239,15 +2833,11 @@
 8642 = "Petriupri" #Or Petriupuri
 8653 = "Haifo"
 8729 = "Kamarat"
-
-#Burma Extended
 585 = "Tongo"
 1815 = "Bassein" #Or Persaim
 2402 = "Sandoway"
 4394 = "Sillah"
 8679 = "Meady"
-
-#Philippines
 651 = "Sooloo"
 652 = "Mindanao" #Or Magindanao
 2699 = "Bicol"
@@ -2257,8 +2847,6 @@
 4355 = "Caranga"
 8720 = "Bantilan"
 8721 = "Tawee"
-
-#Indonesia & Malaya Extended
 594 = "Patani"
 595 = "Perac"
 599 = "Calantan"
@@ -2288,7 +2876,7 @@
 2688 = "Cheribon"
 2689 = "Cendal"
 2691 = "Cediri"
-2693 = "Lomboc" #Accidentally set to province 2639
+2693 = "Lomboc"
 2695 = "Dilli"
 2708 = "Cotaringen" #Or Cota-ringen
 2709 = "Taracan"
@@ -2313,89 +2901,3 @@
 8693 = "Cawoor"
 8695 = "Lampoong" #Or Lampon"
 8696 = "Ticoo"
-
-#By Arga Dec 2019
-
-#portugal
-227 = "Lisbon"
-
-#switzerland
-1869 = "Zurich"
-
-#atlantic
-4565 = "Tenerife"
-5096 = "Grand Canaria"
-
-#west africa
-1113 = "Cap-Vert"
-1114 = "Bissau"
-2239 = "The Gambia"
-2241 = "Konakry"
-2242 = "Christopolis" #first american settlement
-
-#brazil
-762 = "Saint Thomas"
-763 = "Rio"
-764 = "Saint Amaro"
-
-#By Math5615 Dec 2019
-#East Indies
-8632 = "Hog Island"
-
-#By Math Jan 2019
-2469 = "Mazagan"
-5872 = "Quinault"
-
-#By CR Apr 2020
-#Venezuela
-741 = "Comana"
-831 = "Caraccas"
-
-#Guyana
-2937 = "Surinam"
-
-#Maranhao
-749 = "Maragnan" #Francophone, alternatively Marahan
-
-#Cear?
-751 = "Siara"
-753 = "Grand River" #Possible English name
-
-#Pernambuco
-755 = "Pernambuc" #Francophone
-2912 = "Seregippe"
-
-#Bahia
-756 = "All Saints Bay" #Bahia
-757 = "Ilheos"
-760 = "Porto Seguro"
-
-#Rio de Janeiro
-761 = "Spiritu Santo"
-
-#Panama
-2819 = "New Edinburgh" #Historical Scottish settlement
-
-#Nicaragua
-838 = "Sandy Bay" #Capital of Mosquito Protectorate
-2660 = "Greytown" #Historical settlement in San Juan del Norte
-2661 = "Cape River" #English name; unknown origin
-4592 = "Bluefields" #British settlement
-
-#Guatemala
-839 = "Salvador" #Possible Anglicization
-841 = "Guatimala"
-
-#Honduras
-840 = "Truxillo"
-2637 = "Porto Caballos"
-
-#Guatemala Lowlands
-2636 = "Livingston" #Spanish town named after an American politician
-4589 = "Cayo"
-
-#East Yucatan
-2652 = "Cancoon"
-
-#Campeche
-845 = "Campeachy" #Or Campechy

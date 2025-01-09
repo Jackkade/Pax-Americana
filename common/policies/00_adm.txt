@@ -2027,7 +2027,7 @@ aristocratic_rule_act = {
 	}
 	
 	governing_capacity_modifier = 0.1
-	global_autonomy = -0.05
+	global_tax_modifier = 0.1 # Harb's Autonomy Overhaul
 
 	effect = {}
 	removed_effect = {}
