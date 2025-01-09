@@ -4,15 +4,9 @@ northwest_territories_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = northwest_territories
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -32,15 +26,9 @@ columbia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = columbia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -60,15 +48,9 @@ alaska_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = alaska
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -88,15 +70,9 @@ australia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = australia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -116,15 +92,9 @@ patagonia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = patagonia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -144,15 +114,9 @@ amazonas_node_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = amazonas_node
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -172,15 +136,9 @@ southern_australia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = southern_australia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -200,15 +158,9 @@ california_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = california
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -228,14 +180,8 @@ missouri_river_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
-			domestic_merchant_trigger = {
-				node = missouri_river_trade
-			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
+		domestic_merchant_trigger = {
+			node = missouri_river_trade
 		}
 	}
 	
@@ -256,15 +202,9 @@ rio_grande_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = rio_grande
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -284,15 +224,9 @@ ohio_river_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = ohio_river_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -312,15 +246,9 @@ mississippi_river_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = mississippi_river
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -340,15 +268,9 @@ james_bay_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = james_bay
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -368,15 +290,9 @@ ohio_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = ohio
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -396,15 +312,9 @@ laplata_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = laplata
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -424,15 +334,9 @@ cuiaba_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = cuiaba
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -452,15 +356,9 @@ lima_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = lima
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -480,15 +378,9 @@ jalisco_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = jalisco_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -508,15 +400,9 @@ mexico_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = mexico
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -536,15 +422,9 @@ yucatan_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = yucatan_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -564,15 +444,9 @@ african_great_lakes_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = african_great_lakes
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -592,15 +466,9 @@ kongo_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = kongo
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -620,15 +488,9 @@ namibia_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = namibia_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -648,15 +510,9 @@ zambezi_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = zambezi
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -676,15 +532,9 @@ katsina_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = katsina
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -704,15 +554,9 @@ ethiopia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = ethiopia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -732,15 +576,9 @@ dongola_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = dongola_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -760,15 +598,9 @@ timbuktu_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = timbuktu
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -788,15 +620,9 @@ girin_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = girin
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -816,15 +642,9 @@ lhasa_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = lhasa
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -844,15 +664,9 @@ burma_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = burma
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -872,15 +686,9 @@ chengdu_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = chengdu
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -900,15 +708,9 @@ gulf_of_siam_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = gulf_of_siam
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -928,15 +730,9 @@ canton_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = canton
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -956,15 +752,9 @@ the_moluccas_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = the_moluccas
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -984,15 +774,9 @@ philippines_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = philippines
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1012,15 +796,9 @@ polynesia_node_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = polynesia_node
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1040,15 +818,9 @@ nippon_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = nippon
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1068,15 +840,9 @@ hangzhou_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = hangzhou
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1096,15 +862,9 @@ xian_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = xian
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1124,15 +884,9 @@ beijing_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = beijing
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1152,15 +906,9 @@ malacca_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = malacca
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1180,15 +928,9 @@ siberia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = siberia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1208,15 +950,9 @@ yumen_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = yumen
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1236,15 +972,9 @@ ganges_delta_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = ganges_delta
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1264,15 +994,9 @@ doab_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = doab
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1292,15 +1016,9 @@ lahore_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = lahore
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1320,15 +1038,9 @@ deccan_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = deccan
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1348,15 +1060,9 @@ comorin_cape_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = comorin_cape
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1376,15 +1082,9 @@ gujarat_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = gujarat
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1404,15 +1104,9 @@ gulf_of_aden_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = gulf_of_aden
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1432,15 +1126,9 @@ hormuz_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = hormuz
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1460,15 +1148,9 @@ samarkand_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = samarkand
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1488,15 +1170,9 @@ persia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = persia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1516,15 +1192,9 @@ basra_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = basra
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1544,15 +1214,9 @@ pontus_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = pontus_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1572,15 +1236,9 @@ aleppo_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = aleppo
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1600,15 +1258,9 @@ astrakhan_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = astrakhan
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1628,15 +1280,9 @@ kazan_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = kazan
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1656,15 +1302,9 @@ zanzibar_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = zanzibar
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1684,15 +1324,9 @@ cape_of_good_hope_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = cape_of_good_hope
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1712,15 +1346,9 @@ ivory_coast_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = ivory_coast
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1740,15 +1368,9 @@ panama_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = panama
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1768,15 +1390,9 @@ brazil_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = brazil
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1796,15 +1412,9 @@ florida_straights_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = florida_straights_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1824,15 +1434,9 @@ carribean_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = carribean_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1852,15 +1456,9 @@ chesapeake_bay_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = chesapeake_bay
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1880,15 +1478,9 @@ massachusets_bay_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = massachusets_bay_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1908,15 +1500,9 @@ st_lawrence_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = st_lawrence
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1936,15 +1522,9 @@ alexandria_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = alexandria
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1964,15 +1544,9 @@ tunis_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = tunis
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -1992,15 +1566,9 @@ safi_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = safi
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2020,15 +1588,9 @@ white_sea_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = white_sea
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2048,15 +1610,9 @@ murava_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = murava
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2076,15 +1632,9 @@ moscow_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = moscow_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2104,15 +1654,9 @@ crimea_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = crimea
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2132,15 +1676,9 @@ kiev_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = kiev
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2160,15 +1698,9 @@ novgorod_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = novgorod
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2188,15 +1720,9 @@ constantinople_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = constantinople
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2216,15 +1742,9 @@ aegean_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = aegean_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2244,15 +1764,9 @@ pest_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = pest
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2272,15 +1786,9 @@ krakow_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = krakow
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2300,15 +1808,9 @@ ragusa_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = ragusa
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2328,15 +1830,9 @@ danzig_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = danzig_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2356,15 +1852,9 @@ baltic_sea_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = baltic_sea
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2384,15 +1874,9 @@ napoli_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = napoli
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2412,15 +1896,9 @@ porto_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = porto_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2440,15 +1918,9 @@ sevilla_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = sevilla
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2468,15 +1940,9 @@ valencia_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = valencia
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2496,15 +1962,9 @@ venice_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = venice
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2524,15 +1984,9 @@ genua_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = genua
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2552,15 +2006,9 @@ wien_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = wien
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2580,15 +2028,9 @@ irish_sea_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = irish_sea
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2608,15 +2050,9 @@ north_sea_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = north_sea
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2636,15 +2072,9 @@ lubeck_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = lubeck
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2664,15 +2094,9 @@ saxony_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = saxony
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2692,15 +2116,9 @@ lyon_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = lyon_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2720,15 +2138,9 @@ bordeaux_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = bordeaux
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2748,15 +2160,9 @@ rheinland_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = rheinland
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2776,15 +2182,9 @@ koeln_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = koeln_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2804,15 +2204,9 @@ rouen_trade_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = rouen_trade
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2832,15 +2226,9 @@ champagne_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = champagne
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2860,15 +2248,9 @@ english_channel_node_domestic_merchant_modifier = {
 	}
 	hidden = yes
 	trigger = {
-		OR = {
 			domestic_merchant_trigger = {
 				node = english_channel
 			}
-			AND = {
-				NOT = { is_month = 1 }
-				is_month = 0
-			}
-		}
 	}
 	
 	on_activation = {
@@ -2877,6 +2259,94 @@ english_channel_node_domestic_merchant_modifier = {
 	on_deactivation = {
 		domestic_merchant_effect = {
 			node = english_channel
+		}
+	}
+}
+
+
+darfur_trade_node_domestic_merchant_modifier = {
+	potential = {
+		always = yes
+	}
+	hidden = yes
+	trigger = {
+			domestic_merchant_trigger = {
+				node = darfur_trade
+			}
+	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		domestic_merchant_effect = {
+			node = darfur_trade
+		}
+	}
+}
+
+
+adrar_trade_node_domestic_merchant_modifier = {
+	potential = {
+		always = yes
+	}
+	hidden = yes
+	trigger = {
+			domestic_merchant_trigger = {
+				node = adrar_trade
+			}
+	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		domestic_merchant_effect = {
+			node = adrar_trade
+		}
+	}
+}
+
+
+tuat_trade_node_domestic_merchant_modifier = {
+	potential = {
+		always = yes
+	}
+	hidden = yes
+	trigger = {
+			domestic_merchant_trigger = {
+				node = tuat_trade
+			}
+	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		domestic_merchant_effect = {
+			node = tuat_trade
+		}
+	}
+}
+
+
+tripoli_trade_node_domestic_merchant_modifier = {
+	potential = {
+		always = yes
+	}
+	hidden = yes
+	trigger = {
+			domestic_merchant_trigger = {
+				node = tripoli_trade
+			}
+	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		domestic_merchant_effect = {
+			node = tripoli_trade
 		}
 	}
 }
