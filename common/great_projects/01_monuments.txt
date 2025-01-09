@@ -5354,7 +5354,7 @@ the_grand_palace = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_absolutism = 0.25
-			governing_capacity_modifier = 0.05
+			expand_administration_cost = -0.05 # Harb's Autonomy Overhaul
 		}
 
 		#what effects happen when this tier is achieved
@@ -5384,7 +5384,7 @@ the_grand_palace = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_absolutism = 0.5
-			governing_capacity_modifier = 0.1
+			expand_administration_cost = -0.10 # Harb's Autonomy Overhaul
 			vassal_forcelimit_bonus = 0.30
 		}
 
@@ -5415,7 +5415,7 @@ the_grand_palace = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_absolutism = 1
-			governing_capacity_modifier = 0.15
+			expand_administration_cost = -0.25 # Harb's Autonomy Overhaul
 			vassal_forcelimit_bonus = 0.5
 			ae_impact = -0.1
 		}
@@ -9766,7 +9766,8 @@ el_escorial = {
 		country_modifiers = {
 			global_autonomy = -0.01	
 			global_tariffs = 0.05
-			treasure_fleet_income = 0.05			
+			treasure_fleet_income = 0.05		
+			expand_administration_cost = -0.05	 # Harb's Autonomy Overhaul
 		}
 
 		#what effects happen when this tier is achieved
@@ -9796,7 +9797,7 @@ el_escorial = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.025
-			governing_capacity_modifier = 0.05
+			expand_administration_cost = -0.1 # Harb's Autonomy Overhaul
 			global_tariffs = 0.1
 			treasure_fleet_income = 0.1
 		}
@@ -9828,7 +9829,7 @@ el_escorial = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.05
-			governing_capacity_modifier = 0.1
+			expand_administration_cost = -0.2 # Harb's Autonomy Overhaul
 			global_tariffs = 0.2
 			treasure_fleet_income = 0.2
 		}
@@ -15498,6 +15499,7 @@ royal_palace_caserta = {
 		country_modifiers = {
 			prestige = 0.25
 			reform_progress_growth = 0.05
+			expand_administration_cost = -0.05 # Harb's Autonomy Overhaul
 		}
 		on_upgraded = {
 		}
@@ -15516,8 +15518,8 @@ royal_palace_caserta = {
 		}
 		country_modifiers = {
 			prestige = 0.5
-			reform_progress_growth = 0.1
-			governing_capacity = 50
+			reform_progress_growth = 0.15
+			expand_administration_cost = -0.1 # Harb's Autonomy Overhaul
 		}
 		on_upgraded = {
 		}
@@ -15536,8 +15538,8 @@ royal_palace_caserta = {
 		}
 		country_modifiers = {
 			prestige = 1
-			reform_progress_growth = 0.15
-			governing_capacity = 100
+			reform_progress_growth = 0.25
+			expand_administration_cost = -0.2 # Harb's Autonomy Overhaul
 		}
 		on_upgraded = { #(Chrys) small little flavour, idea that it outgrows Capua historically
 			if = {
@@ -16520,7 +16522,7 @@ white_house = {
 		}
 		country_modifiers = {
 			reform_progress_growth = 0.05
-			state_maintenance_modifier = -0.1 #BT Changed as part of govcap overhaul
+			expand_administration_cost = -0.05 # Harb's Autonomy Overhaul
 			reelection_cost = -0.05
 		}
 		on_upgraded = {
@@ -16540,7 +16542,7 @@ white_house = {
 		}
 		country_modifiers = {
 			reform_progress_growth = 0.1
-			state_maintenance_modifier = -0.25 #BT Changed as part of govcap overhaul
+			expand_administration_cost = -0.010 # Harb's Autonomy Overhaul
 			reelection_cost = -0.1
 		}
 		on_upgraded = {
@@ -16560,8 +16562,7 @@ white_house = {
 		}
 		country_modifiers = {
 			reform_progress_growth = 0.2
-			state_maintenance_modifier = -0.5 #BT Changed as part of govcap overhaul
-			state_governing_cost = -0.05 #BT; -0.25
+			expand_administration_cost = -0.25 # Harb's Autonomy Overhaul
 			reelection_cost = -0.1
 		}
 		on_upgraded = {
@@ -18240,7 +18241,7 @@ dujiangyan = {
 		}
 		province_modifiers = {
 			local_development_cost_modifier = -0.05
-			local_governing_cost = -0.2
+			local_autonomy = -0.025 # Harb's Autonomy Overhaul
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.05
@@ -18261,7 +18262,7 @@ dujiangyan = {
 			allowed_num_of_buildings = 1
 		}
 		area_modifier = {
-			local_governing_cost = -0.2
+			local_autonomy = -0.025 # Harb's Autonomy Overhaul
 		}
 		region_modifier = { 
 			local_monthly_devastation = -0.05
@@ -18282,7 +18283,7 @@ dujiangyan = {
 		area_modifier = {
 			local_development_cost_modifier = -0.1
 			allowed_num_of_buildings = 1
-			local_governing_cost = -0.4
+			local_autonomy = -0.05 # Harb's Autonomy Overhaul
 		}
 		country_modifiers = {
 			global_monthly_devastation = -0.05
@@ -18379,7 +18380,8 @@ palace_of_the_popes = {
 			
 		}
 		area_modifier = {
-			local_governing_cost = -0.15
+			local_autonomy = -0.025 # Harb's Autonomy Overhaul
+			local_unrest = -1 # Harb's Autonomy Overhaul
 		}
 		country_modifiers = {
 			church_privilege_slots = 1 
@@ -18411,7 +18413,8 @@ palace_of_the_popes = {
 			
 		}
 		area_modifier = {
-			local_governing_cost = -0.25
+			local_autonomy = -0.05 # Harb's Autonomy Overhaul
+			local_unrest = -2 # Harb's Autonomy Overhaul
 		}
 		country_modifiers = {
 			church_privilege_slots = 1 
@@ -18450,7 +18453,8 @@ palace_of_the_popes = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_governing_cost = -0.33
+			local_autonomy = -0.05 # Harb's Autonomy Overhaul
+			local_unrest = -2 # Harb's Autonomy Overhaul
 		}
 		country_modifiers = {
 			church_privilege_slots = 1 
