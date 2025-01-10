@@ -2851,7 +2851,10 @@ south_iroquoisia_area = {
 susquehanna_area = {
 	2556 2557 4875 4876
 	7324 7326 7332
-
+}
+northeast_america_wastelands_area = {
+	4925 4926 4928 7342
+	7328 7348
 }
 
 ###
@@ -2931,7 +2934,7 @@ piedmont_north_america_area = {
 }
 carolinas_area = {
 	929 932 2542 2543 2546
-	7348 7349 7353 7359
+	7349 7353 7359
 }
 south_carolina_area = {
 	933 2541 2544 2545
@@ -2956,6 +2959,10 @@ north_florida_area = {
 west_florida_area = {
 	922 923 2530 2533
 	7380 7381 7388 7389 7391 7436
+}
+southeast_america_wastelands_area = {
+	4930 4931 4932 4933
+	7340 7341 7372
 }
 
 ###
@@ -3892,12 +3899,6 @@ kimberley_area = {	#BT16
 }
 dampierland_area = {	#BT16
 	4866 4867 6378 6379 6380 
-<<<<<<< Updated upstream
-}
-northern_australian_wastelands_area	= {	#Northern Australian Wastelands - BT17 Added
-	1790 1791 6435 
-=======
->>>>>>> Stashed changes
 }
 northern_australian_wastelands_area	= {	#Northern Australian Wastelands - BT17 Added
 	1790 1791 6435 
@@ -4223,8 +4224,7 @@ wasteland_area = { # 120	#BT17 Note, many wastelands have been moved to regionna
 	5550
 	7282 7283
 	8796
-	# Pax Americana Provinces
-	7328 7341 7340 7342 7372
+	# Pax Americana Provinces 
 	# Pax Americana Provinces CAN
 	6453 6463 6464 
 }
@@ -4523,12 +4523,9 @@ indonesian_islands_area = {  }
 south_laos_area = { }
 
 cap_verde_area = { }
-<<<<<<< Updated upstream
-=======
 
 eastern_maine_area = { }
 
 hudson_valley_area = { }
 
 south_dakota_area = { }
->>>>>>> Stashed changes
