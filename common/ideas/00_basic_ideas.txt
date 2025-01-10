@@ -1294,8 +1294,7 @@ exploration_ideas = {
 				tag = CEL			#BtP tag who should colonise if it manages to form (precedent of Irish discovery and colonisation or the North Isles, Iceland, and according to some scholars likely Northern Canada, Greenland, and Jan Mayen)
 			}
 			adm_tech = 14
-		}
-		modifier = {	#Bonus for historical countries at the fourth idea (Approximately year 1583)modifier = {
+		}	#Bonus for historical countries at the fourth idea (Approximately year 1583)modifier = {
 			factor = 15
 			OR = {
 				tag = HOL			#Historically 1602	(as Netherlands)

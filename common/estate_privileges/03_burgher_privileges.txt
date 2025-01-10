@@ -4011,8 +4011,10 @@ estate_burghers_ITA_permit_merchant_colonists = {
 	}
 
 	benefits = {
-		colonists = 1
-		trade_steering = 0.05
+		modifier = {
+			colonists = 1
+			trade_steering = 0.05
+		}
 	}
 	
 	ai_will_do = {
