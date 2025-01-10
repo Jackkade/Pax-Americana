@@ -1673,13 +1673,6 @@ ivory = {
 				region = philippines_region
 			}
 		}
-		modifier = {	#High chance of ivory (whaling/scrimshaw)
-			factor = 4.0
-			OR = {
-				province_id = 5591
-				province_id = 5093
-			}
-		}
 		modifier = {
 			factor = 2.0
 			FROM = {

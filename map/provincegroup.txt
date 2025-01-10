@@ -2178,6 +2178,15 @@ anc_secure_ancona_provinces = {
 	119 2977 7025 7026 7027 7029 7030 7034 7035 7037 
 }
 
+<<<<<<< Updated upstream
+=======
+kok_mam_subjugate_beyliks_provinces = {
+	5147 #Alaiye
+	323 324 4307 5146 6020 6019 4314 5150 2302 6021 #Karaman
+	5135 327 6025 5154 5138 #Ramazan
+	2301 6029 332 6028 5158 2303 6101 #Dulkadir
+}
+>>>>>>> Stashed changes
 
 
 

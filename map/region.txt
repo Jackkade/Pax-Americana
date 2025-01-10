@@ -1213,6 +1213,7 @@ northeast_america_region = { # 8 areas
 		eastern_maine_area
 		great_valley_area 
 		delmarva_area
+		northeast_america_wastelands_area	#Northeast American Wastelands - BT17 Added
 	}
 }
 canada_region = { # 13 areas
@@ -1231,6 +1232,7 @@ canada_region = { # 13 areas
 		huronia_area
 		grand_river_area
 		estrie_area
+		canadian_wastelands_area	#Canadian Wastelands - BT17 Added
 	}
 }
 southeast_america_region =  { # 9 areas
@@ -1245,6 +1247,7 @@ southeast_america_region =  { # 9 areas
 		north_florida_area
 		appalachia_area
 		south_appalachia_area
+		southeast_america_wastelands_area	#Southeast American Wastelands - BT17 Added
 	}
 	monsoon = {
 		00.06.01
@@ -1264,6 +1267,7 @@ mississippi_region = { # 11 areas
 		left_bank_delta_area
 		ouachita_area
 		atchafalaya_area
+		missisippi_wastelands_area	#Missisippian Wastelands - BT17 Added
 	}
 	monsoon = {
 		00.06.01

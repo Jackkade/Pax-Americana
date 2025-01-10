@@ -782,7 +782,7 @@ province_event = { #Nordic-Afro-Karibish
 
 #Attempts to preserve pre-colonial cultures
 province_event = { #Colony Finished
-	id = colony_reset_culture_vars.100
+	id = pax_americana_afro_cultures.100
 	title = null
 	desc = null
 	picture = null

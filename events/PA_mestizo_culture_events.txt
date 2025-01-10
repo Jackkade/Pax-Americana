@@ -478,7 +478,7 @@ province_event = { #Dutch/Meksikaans Mestizo
 }
 
 province_event = { #Danish/Thulenlandic Mestizo
-	id = pax_americana_mestizo_cultures.5
+	id = pax_americana_mestizo_cultures.6
 	title = mexican_castillian_spread.title
 	desc = mexican_castillian_spread.desc
 	picture = southamericagfx_RELIGIOUS_CONVERSION_eventPicture

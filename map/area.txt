@@ -93,9 +93,6 @@ ostra_svealand_area = {
 	#Unused area in Scandinavia
 }
 
-algiers_area = {
-	#Unused area in Maghreb
-}
 
 ottawa_valley_area = {
 	#Unused area in North America
@@ -1590,7 +1587,7 @@ liaoning_area = {
 }
 
 ###
-# Hindusthan
+# Hindustan
 ###
 sirhind_area = {
 	510 2065 4411 4463
@@ -1994,7 +1991,6 @@ chuanbei_area = {
 xinan_wastelands_area = {	#Xinan Wastelands - BT17 Added
 	4402 4403 
 }
-
 ###
 # Philippines
 ###
@@ -2506,7 +2502,7 @@ guinea_wastelands_area = {
 # Niger
 ###
 tekrur_area = {
-	1115 2237 2240 2244
+	1115 2237 2240 2244 
 }
 manding_area = {
 	1120 1121 1124 2248
@@ -2648,16 +2644,16 @@ lower_zambezi_area = {
 	1187 1190 1191 
 }
 upper_zambezi_area = {
-	4046 4047 4050
+	4046 4047 4050 
 }
 shire_area = {
-	4038 4039 4040
+	4038 4039 4040 
 }
 butua_area = {
-	1185 1188 1189
+	1185 1188 1189 
 }
 zimbabwe_area = {
-	1184 2950 2951 2952
+	1184 2950 2951 2952 
 }
 ruvuma_area = {
 	4036 4037 4042 4043
@@ -2902,6 +2898,9 @@ huronia_area = {
 }
 grand_river_area = { # BT
 	991 992 2581 2585 2588 2590 4894 4897 6442 6459
+}
+canadian_wastelands_area = {	#Canadian Wastelands - BT17 Added
+	4924 
 }
 
 ###
@@ -3197,7 +3196,10 @@ siskiyou_area = { # BT
 	2480 4956 5798 5803 5804 5847 5850
 }
 blue_mountains_area = { # BT
-	2019 4957 5612 5754 5825
+	2019 4957 5612 5754 5825 
+}
+cascadian_wastelands_area = {	#Cascadian Wastelands - BT17 Added
+	1913 5514 5116 5117 5510 5511 5528 5530 5531 5532 
 }
 
 ###
@@ -3246,7 +3248,10 @@ lower_colorado_river_area = { # BT
 	867 2491 4966 5042 5838
 }
 lake_cahuilla_area = { # BT
-	4639 5774 5791 5858
+	4639 5774 5791 5858 
+}
+californian_wastelands_area	= {	#Californian Wastelands - BT17 Added
+	5129 5508 5516 5526 
 }
 
 ###
@@ -3300,7 +3305,10 @@ nunavut_area = { # BT
 	5067 5069 5070 5071 
 }
 ungava_area = { # BT
-	998 1805 4999 5006 5007 5592 5593 5594
+	998 1805 4999 5006 5007 5592 5593 5594 
+}
+hudson_bay_wastelands_area = {	#Hudson Bay Wastelands - BT17 Added
+	1804 1807 5124 
 }
 
 ###
@@ -3322,7 +3330,10 @@ the_barrens_area = {
 	1812 4985 5072 5073 5081
 }
 omenica_area = {
-	2603 4982 5776 5890
+	2603 4982 5776 5890 
+}
+northwest_territories_wastelands_area = {	#Northwest Territories Wastelands - BT17 Added
+	1814 5123 5509 5512 5529  
 }
 
 ###
@@ -3845,6 +3856,9 @@ coral_coast_area = {	#BT16
 	color = { 5 200 110 }
 	2732 2733 6204 6205 6206 6207 6210 6211 6216
 }
+northeastern_australian_wastelands_area = {	#Northeastern Australian Wastelands - BT17 Added
+	6432 6433 
+}
 
 ###
 # Northern Australia
@@ -3878,10 +3892,17 @@ kimberley_area = {	#BT16
 }
 dampierland_area = {	#BT16
 	4866 4867 6378 6379 6380 
+<<<<<<< Updated upstream
+}
+northern_australian_wastelands_area	= {	#Northern Australian Wastelands - BT17 Added
+	1790 1791 6435 
+=======
+>>>>>>> Stashed changes
 }
 northern_australian_wastelands_area	= {	#Northern Australian Wastelands - BT17 Added
 	1790 1791 6435 
 }
+
 ###
 # Western Australia
 ###
@@ -4502,3 +4523,12 @@ indonesian_islands_area = {  }
 south_laos_area = { }
 
 cap_verde_area = { }
+<<<<<<< Updated upstream
+=======
+
+eastern_maine_area = { }
+
+hudson_valley_area = { }
+
+south_dakota_area = { }
+>>>>>>> Stashed changes
