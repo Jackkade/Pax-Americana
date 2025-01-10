@@ -6,34 +6,38 @@ pa_new_colony = {
 	hidden = yes
 
 	trigger = {
-		NOT = {
-			OR = {
-				#The idea here is that the colony will be finished once the owner has invested something in the province.
+		OR = {
+			NOT = {
+				OR = {
+					#The idea here is that the colony will be finished once the owner has invested something in the province.
 
-				#Now this will work
-				num_of_times_improved = 3
+					#Now this will work
+					num_of_times_improved = 3
 
-				
-				num_of_buildings_in_province = 3
+					
+					num_of_buildings_in_province = 3
 
-				#AI will never do this unfortuately
-				num_of_times_expanded_infrastructure = 1
+					#AI will never do this unfortuately
+					num_of_times_expanded_infrastructure = 1
 
-				#Has Production Manufactory
-				has_building = wharf
-				has_building = weapons
-				has_building = textile
-				has_building = plantations
-				has_building = tradecompany
-				has_building = farm_estate
-				has_building = mills
-				#Maybe Shouldn't? 
-				has_building = furnace
-				has_building = mint
+					#Has Production Manufactory
+					has_building = wharf
+					has_building = weapons
+					has_building = textile
+					has_building = plantations
+					has_building = tradecompany
+					has_building = farm_estate
+					has_building = mills
+					#Maybe Shouldn't? 
+					has_building = furnace
+					has_building = mint
+				}
 			}
-			had_province_flag = {
-				flag = new_colony_established
-				days = 365
+			NOT = {
+				had_province_flag = {
+					flag = new_colony_established
+					days = 365
+				}
 			}
 		}
 		OR = {
