@@ -1,0 +1,43 @@
+has_tax_building_trigger = {
+	OR = {
+		has_building = temple
+		has_building = cathedral
+		has_building = tax_assessor #BTMB Added
+	}
+}
+
+has_production_building_trigger = {
+	OR = {
+		has_building = workshop
+		has_building = counting_house
+		has_building = customs_house #BTMB Added
+	}
+}
+
+#New BTMB triggers that can be used for BTMB compatibility.
+has_university_building_trigger = {
+	OR = {
+		has_building = college #BTMB Added
+		has_building = university
+	}
+}
+
+is_march_or_similar_subject = {
+	OR = { #Add more if any more march-like subjects are added.
+		is_subject_of_type = march
+		is_subject_of_type = client_march
+		is_subject_of_type = hereditary_pronoia_subject_type
+		is_subject_of_type = pronoia_subject_type
+	}
+}
+
+owner_has_ducats = {
+	FROM = {
+		current_income_balance = 0 	# Must have positive income
+		is_at_war = no				# Must be at peace
+		treasury = $cash$			# Amount of cash the nation needs
+		NOT = {
+			num_of_loans = 1		# Must not have loans
+		}
+	}
+}
