@@ -12,7 +12,7 @@ pa_new_colony = {
 					#The idea here is that the colony will be finished once the owner has invested something in the province.
 
 					#Now this will work
-					num_of_times_improved = 4
+					num_of_times_improved = 5
 
 					
 					num_of_buildings_in_province = 3
