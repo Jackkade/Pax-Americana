@@ -42,6 +42,7 @@ american_republic = {
 		enables_aristocratic_idea_group = no
 		has_limited_terms = yes
 		has_candidate_bonus = yes
+		max_possible_parliament_seats = 13
 	}
 	conditional = {
 		allow = {
@@ -95,6 +96,7 @@ federal_republic = {
 		enables_aristocratic_idea_group = no
 		has_limited_terms = yes
 		has_candidate_bonus = yes
+		max_possible_parliament_seats = 13
 	}
 	conditional = {
 		allow = {
