@@ -108,7 +108,7 @@ usa_southern_cash_crops = {
 }
 
 usa_western_settlers = {
-	local_colonist_placement_chance = 0.10
+	local_development_cost_modifier = -0.10 
 }
 
 usa_interior_settlement = {
@@ -126,7 +126,7 @@ usa_carribean_plantations = {
 }
 
 usa_expediated_statehood = {
-	statewide_governing_cost = -0.20
+	local_state_maintenance_modifier = -0.15 
 	local_development_cost = -0.1 
 	local_culture_conversion_cost = -0.15
 }
@@ -135,7 +135,7 @@ usa_expediated_statehood = {
 pa_slave_plantation = {
 	local_production_efficiency = 0.2 
 	trade_goods_size_modifier = 0.15
-	local_governing_cost_increase = 5 
+	local_state_maintenance_modifier = 0.25 
 	local_culture_conversion_cost = 1.0
 	local_institution_spread = -0.3 
 }
