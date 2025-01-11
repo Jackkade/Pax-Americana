@@ -32,7 +32,7 @@ american_republic = {
 	modifiers = {
 		war_exhaustion = -0.04
 		stability_cost_modifier = -0.15
-		governing_capacity = 100
+		governing_capacity = 20
 		max_absolutism = 35
 		max_terms = 4
 	}
@@ -85,7 +85,7 @@ federal_republic = {
 		diplomatic_reputation = 1
 		global_spy_defence = 0.1
 		candidate_random_bonus = 1
-		governing_capacity = 100
+		governing_capacity = 20
 		max_absolutism = 10
 		max_terms = 2
 	}
