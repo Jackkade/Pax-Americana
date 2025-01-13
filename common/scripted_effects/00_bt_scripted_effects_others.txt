@@ -1,0 +1,338 @@
+
+#Beyond Typus work done by all contributors other than Draiocht
+#	Example:
+# 
+#	example_effect = {
+#		treasury = 100
+#		add_adm_power = 50
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+
+#############################################################
+#############################################################
+#############################################################
+#Dub's work
+#############################################################
+#############################################################
+#############################################################
+
+add_or_spawn_center_of_trade = {
+    if = { #If has center of trade, add level.
+        limit = {
+            OR = {
+                province_has_center_of_trade_of_level = 1
+                province_has_center_of_trade_of_level = 2
+                province_has_center_of_trade_of_level = 3
+            }
+        }
+        add_center_of_trade_level = $level$
+    }
+    else = {
+        center_of_trade = $level$
+    }
+}
+
+swap_ideas = { #Should really be this easy, i.e "swap_ideas = yes"
+	if = {
+		limit = { has_custom_ideas = no }
+		country_event = { id = ideagroups.1 } #Swap Ideas
+	}
+}
+
+create_interregnum_effect = {
+    hidden_effect = {
+        every_country = {
+            limit = {
+                marriage_with = ROOT
+            }
+            break_marriage = ROOT
+        }
+        kill_heir = { allow_new_heir = no }
+    }
+    define_ruler = {
+        name = "(Interregnum)"
+        adm = 2
+        dip = 2
+        mil = 2
+        regency = yes
+    }
+}
+
+#Changes every reference of one culture into another for the purposes of switching culture group, like Celtica's uniting Brythonic & Gaelic into Celtic, or Manchu's Jurchen Evenk into Manchu Chinese.
+#Usage: change_culture_group_effect = { old_culture=X new_culture=Y }
+#old_culture: The culture to replace
+#new_culture: The culture to replace the old culture with.
+#Note: Lacks a tooltip and is a hidden effect, therefore requiring a custom_tooltip
+change_culture_group_effect = {
+	#Primary Culture
+	every_country = {
+		limit = { primary_culture = $old_culture$ }
+		change_primary_culture = $new_culture$
+	}
+	#Accepted Culture
+	every_country = {
+		limit = { accepted_culture = $old_culture$ }
+		remove_accepted_culture = $old_culture$
+		add_accepted_culture = $new_culture$
+	}
+	#Provinces
+	every_province = {
+		limit = { culture = $old_culture$ }
+		change_culture = $new_culture$
+	}
+	#Rulers
+	every_country = {
+		limit = { ruler_culture = $old_culture$ }
+		set_ruler_culture = $new_culture$
+	}
+	#Heirs
+	every_country = {
+		limit = { heir_culture = $old_culture$ }
+		set_heir_culture = $new_culture$
+	}
+	#Consorts
+	every_country = {
+		limit = { consort_culture = $old_culture$ }
+		set_consort_culture = $new_culture$
+	}
+	#Advisors (Can't be done currently due to lack of EU4 effects)
+}
+
+#############################################################
+#############################################################
+#############################################################
+#Harbivore
+#############################################################
+#############################################################
+#############################################################
+BT_AU_FrederickIII_dies_first = {				#Ruler of HAB and STY
+    #Habsburger succession elements
+    if = {
+		limit = {
+			OR = {
+				tag = STY
+				tag = HAB
+			}
+			has_country_flag = bt_au_albrecht_friedrich_brothers_alive 
+			HAB = {
+				NOT = { is_subject = yes }
+			}
+		}
+		if = {
+			limit = {
+				VOR = { has_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+				VOR = { ai = yes }
+			}
+			VOR = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive exile_ruler_as = { name = albrechtVI } }
+			STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive inherit = VOR }
+			set_ruler = albrechtVI
+			HAB = { kill_ruler = yes }
+			set_country_flag = bt_au_albrechtVI_is_archduke
+		}
+		else = {
+			HAB = {
+				clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 
+				remove_country_modifier = bt_au_cannot_get_heir_or_die
+				remove_country_modifier = bt_fredricks_diplomats
+			}
+			STY = {
+				clr_country_flag = bt_au_albrecht_friedrich_brothers_alive
+				remove_country_modifier = bt_au_cannot_get_heir_or_die
+				remove_country_modifier = bt_fredricks_diplomats
+			}
+		}
+	}
+}
+
+BT_AU_AlbrechtVI_dies_first = {				#Ruler of Further Austria
+    #Habsburger succession elements
+    if = {
+		limit = {
+			tag = VOR
+			has_country_flag = bt_au_albrecht_friedrich_brothers_alive
+			has_heir = no
+			ai = yes
+		}
+		if = {
+			limit = {
+				STY = { exists = yes }
+				has_heir = no #If Further Austria
+			}
+			STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive inherit = VOR }	#Styria Inherits Further austria
+			HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+		}
+		else_if = {
+			limit = {
+				HAB = { exists = yes has_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+				has_heir = no #If Further Austria
+			}
+			HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive inherit = VOR }	#Austria Inherits Further austria
+		}
+		STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+		HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }				#If they have an heir nothing happens (They cant get an heir with Harbs modifier)
+		VOR = {
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 	
+			remove_country_modifier = bt_au_cannot_get_heir
+		}
+	}
+	else_if = {				#If you are Further Austria and your ruler dies you will become Styria or Austria and then inherit your old tag of VOR. 
+		limit = { 
+				tag = VOR
+				has_country_flag = bt_au_albrecht_friedrich_brothers_alive
+				has_heir = no
+				ai = no
+		}
+		if = {
+			limit = {
+				STY = { exists = yes }
+				has_heir = no #If Further Austria
+			}
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 
+			switch_tag = STY 
+			inherit = VOR
+		}
+		else_if = {
+			limit = {
+				HAB = { exists = yes has_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+				has_heir = no #If Further Austria
+			}	
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive
+			switch_tag = HAB
+			inherit = VOR
+		}
+		STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+		HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+		VOR = { 
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 
+			remove_country_modifier = bt_au_cannot_get_heir
+		}
+	}
+    if = {
+		limit = {
+			OR = {
+				tag = STY
+				tag = HAB
+			}
+			has_country_flag = bt_au_albrechtVI_is_archduke 
+		}
+		remove_country_modifier = bt_au_cannot_get_heir
+	}
+}
+
+
+
+clear_austrian_unification_flags = {
+	if = { limit = { OR = { tag = STY tag = VOR AND = { tag = HAB has_country_flag = bt_au_albrecht_friedrich_brothers_alive } } }
+	STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+	HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+	VOR = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+	}
+}
+
+change_nation_focus_bonuses_effect = {
+	if = {
+		limit = {
+			national_focus = ADM 
+		}
+		add_country_modifier = { 
+			name = btaddon_modifier_adm_focus
+			duration = -1
+		}
+		remove_country_modifier = btaddon_modifier_dip_focus
+		remove_country_modifier = btaddon_modifier_mil_focus
+		remove_country_modifier = btaddon_modifier_none_focus
+	}
+	else_if = {
+		limit = {
+			national_focus = DIP 
+		}
+		add_country_modifier = { 
+			name = btaddon_modifier_dip_focus
+			duration = -1
+		}
+		remove_country_modifier = btaddon_modifier_adm_focus
+		remove_country_modifier = btaddon_modifier_mil_focus
+		remove_country_modifier = btaddon_modifier_none_focus
+
+	}
+	else_if = {
+		limit = {
+			national_focus = MIL 
+		}
+		add_country_modifier = { 
+			name = btaddon_modifier_mil_focus
+			duration = -1
+		}
+		remove_country_modifier = btaddon_modifier_adm_focus
+		remove_country_modifier = btaddon_modifier_dip_focus
+		remove_country_modifier = btaddon_modifier_none_focus
+
+	}
+	else = {	## No national Focus
+		add_country_modifier = {
+			name = btaddon_modifier_none_focus
+			duration = -1
+		}
+		remove_country_modifier = btaddon_modifier_adm_focus
+		remove_country_modifier = btaddon_modifier_dip_focus
+		remove_country_modifier = btaddon_modifier_mil_focus
+	}
+}
+
+add_UOP_modifier = {
+	set_global_flag = UOP_modifiers_given
+	every_province = {
+		limit = {
+			OR = {
+				### Subcontinents
+				superregion = persia_superregion
+				superregion = tartary_superregion
+				superregion = india_superregion
+				superregion = far_east_superregion
+				superregion = china_superregion
+				superregion = south_america_superregion
+				superregion = andes_superregion
+				### Regions
+				region = oceanea_region
+				#
+				region = kongo_region
+				region = central_africa_region
+				region = east_africa_region
+				# 
+				region = guinea_region
+				region = niger_region
+				region = sahel_region
+				#
+				region = arabia_region
+				#
+				region = ural_region
+				area = azov_area
+				area = lower_yik_area
+				area = middle_don_area
+				area = lower_don_area
+				area = astrakhan_area
+				#Caucasia
+				area = circassia_area
+				area = dagestan_area
+				province_id = 2195 #Adyghe
+				#Southern Central America
+				area = nicaragua_area
+				area = costa_rica_area
+				area = panama_area
+				area = honduras_area
+			}
+			is_wasteland = no
+		}
+		add_permanent_province_modifier = {
+			name = BT_UOP_province
+			duration = -1
+			desc = BT_UOP_province_tooltip
+		}
+	}
+}
