@@ -172,7 +172,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 6051;483;sea;1503;-1;-1;-1;-1;Mayaguana-Inagua
 6051;5577;sea;1503;-1;-1;-1;-1;Mayaguana-TurksAndCaicos
 5577;483;sea;1503;-1;-1;-1;-1;TurksAndCaicos-Inagua
-492;5584;sea;1526;-1;-1;-1;-1;PuertoRico-StThomas
+7531;7539;sea;1526;-1;-1;-1;-1;PuertoRico-StThomas
 493;5584;sea;1526;-1;-1;-1;-1;StThomas-Tortola
 5584;6050;sea;1526;-1;-1;-1;-1;StThomas-StCroix
 1881;5586;sea;1523;-1;-1;-1;-1;Anguilla-StMartin
@@ -222,4 +222,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7537;4618;sea;1516;-1;-1;-1;-1;Gonave-Hispanolia
 4593;7605;sea;1513;-1;-1;-1;-1;Cozumel-Ecab
 7555;7566;sea;1512;-1;-1;-1;-1;Ceiba-Roatan
+6060;838;sea;1514;-1;-1;-1;-1;misquitoCoast
+7539;5584;sea;1526;-1;-1;-1;-1;Bieke-Amonhara
 -1;-1;;-1;-1;-1;-1;-1;-1;
