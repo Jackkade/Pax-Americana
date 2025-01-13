@@ -1388,6 +1388,7 @@ hudson_bay_region = { # 14 areas
 		manitoba_area
 		nunavut_area
 		ungava_area
+		winnipeg_area
 		hudson_bay_wastelands_area		#Hudson Bay Wastelands - BT17 Added
 	}
 }

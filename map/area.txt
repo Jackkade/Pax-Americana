@@ -2854,7 +2854,7 @@ susquehanna_area = {
 }
 northeast_america_wastelands_area = {
 	4925 4926 4928 7342
-	7328 7348
+	7328
 }
 
 ###
@@ -2934,7 +2934,7 @@ piedmont_north_america_area = {
 }
 carolinas_area = {
 	929 932 2542 2543 2546
-	7349 7353 7359
+	7348 7349 7353 7359 
 }
 south_carolina_area = {
 	933 2541 2544 2545
