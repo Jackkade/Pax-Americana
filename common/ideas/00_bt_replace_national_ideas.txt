@@ -32,7 +32,6 @@ new_USA_ideas = {
 		effect = { remove_temporary_colonist = yes }
 	}
 	new_usa_lessons_of_valley_forge = {
-		land_morale = 0.10
 		land_attrition = -0.15 					#This is actually what valley forge was about 
 	}
 	new_usa_workshop_of_the_world = {
@@ -46,7 +45,7 @@ new_USA_ideas = {
 	new_usa_empire_of_liberty = {
 	#	min_autonomy_in_territories = -0.10 	#This is a weird modifier for US which didn't really form an empire in the timeframe.
 		allowed_marine_fraction = 0.5 			#Moved here because it doesn't really make sense as a tradition. Also, they were founded in 1775, I'm not sure why Draiocht thinks they were founded in 1944 -Jackkade 
-		global_foreign_trade_power = 0.33  		#Big Bonus to represent free trade ideology
+		land_morale = 0.10
 	}
 }
 #Scandinavia

@@ -1,0 +1,31 @@
+namespace = PA_USA_flavor
+
+
+# Articles of Confederation
+country_event = { #TODO needs Localization
+	id = PA_USA_flavor.1
+	title = PA_USA_flavor.1.t
+	desc = PA_USA_flavor.1.d
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture #TODO CHANGE
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		tag = USA
+        is_subject = no
+        NOT = { have_had_reform = congress_of_confederation_reform }
+        NOT = { has_reform = congress_of_confederation_reform }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = PA_USA_flavor.1.a
+        change_government = republic
+        add_government_reform = congress_of_confederation_reform
+	}
+}

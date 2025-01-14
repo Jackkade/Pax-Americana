@@ -953,8 +953,6 @@ republic = {
 				merchant_representation_reform
 				modern_economics_reform
 				chinampa_farms_reform
-				#pa
-				public_land_survey_system_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -982,6 +980,8 @@ republic = {
 				equality_principle_reform
 				imperial_principle_reform
 				enlightened_principle_reform
+				#pa
+				public_land_survey_system_reform
 			}
 		}
 		electorate = {

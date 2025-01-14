@@ -4,11 +4,71 @@
 #fresh each BT update as far as I can tell, sadly. I'm afraid the matter appears to be completely out of my hands, but if you have a suggestion to improve cross compatibility, please do share.
 # -This file contains new reforms at the bottom.
 
+#Articles of Confederation
+congress_of_confederation_reform = {
+	icon = "articles_confederation"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				tag = USA
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = congress_of_confederation_reform
+			}
+		}
+		NOT = {
+			OR = {
+				have_had_reform = american_republic
+				have_had_reform = federal_republic
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "American Dream"
+	}
+	legacy_equivalent = american_republic_legacy
+	modifiers = {
+		global_autonomy = -0.03
+		republican_tradition = -0.5 
+		max_absolutism = -25
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		max_possible_parliament_seats = 13
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			english_parliament = yes
+		}
+	}
+	duration = 2
+	ai = {
+		factor = 1000
+	}
+
+}
+
+#Alt-History republic? maybe jeffersonian? unsure what do with it currently
 american_republic = {
 	icon = "parliament"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "American Dream"
+		always = no #TODO find better use for this reform
 		OR = {
 			AND = {
 				OR = {
@@ -36,21 +96,6 @@ american_republic = {
 		max_absolutism = 35
 		max_terms = 4
 	}
-	#I wanted to add this but don't want people ruling for life
-	#	states_general_mechanic = {
-	#		federalists = {
-	#			monthly_reform_progress_modifier = 0.1
-	#			global_tax_modifier = 0.25
-	#			parliament_backing_chance = -0.50 
-	#			republican_tradition = -0.5 
-	#		}
-	#
-	#		democratic_republicans = {
-	#			expand_administration_cost = -0.25 
-	#			parliament_backing_chance = -0.50
-	#			republican_tradition = -0.5 
-	#		}
-	#	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
@@ -74,11 +119,11 @@ american_republic = {
 	duration = 4
 }
 
+#IRL US constitution
 federal_republic = {
 	icon = "constitution"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "American Dream"
 		OR = {
 			AND = {
 				tag = USA
@@ -97,10 +142,9 @@ federal_republic = {
 		has_dlc = "American Dream"
 	}
 	modifiers = {
-		diplomatic_reputation = 1
-		global_spy_defence = 0.1
+		expand_administration_cost = -0.1
 		candidate_random_bonus = 1
-		governing_capacity = 20
+		governing_capacity = 30
 		max_absolutism = 10
 		max_terms = 2
 	}
@@ -203,6 +247,27 @@ bill_of_rights_reform = {
 		factor = 100
 	}
 }
+american_system_reform = {
+	icon = "alexander_hamilton"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_government_attribute = is_pirate_republic_reform
+		}
+		tag = USA
+	}
+	modifiers = {
+		build_cost = -0.1
+		mercantilism_cost = -0.1 
+		global_own_trade_power = 0.05
+		global_prov_trade_power_modifier = 0.05
+		global_trade_goods_size_modifier = 0.05
+		global_foreign_trade_power = -0.2
+	}
+	ai = {
+		factor = 100
+	}
+}
 public_land_survey_system_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
@@ -213,6 +278,7 @@ public_land_survey_system_reform = {
 		tag = USA
 	}
 	modifiers = {
+		expand_administration_cost = -0.15
 		native_uprising_chance = 0.25 
 		colonists = 1
 		colony_development_boost = 1
