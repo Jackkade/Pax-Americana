@@ -1,0 +1,26 @@
+country_decisions = {
+
+    giveup_colonies_decision = {
+		potential = {
+            any_owned_province = {
+                has_active_triggered_province_modifier = pa_new_colony
+            }
+		}
+		allow = {
+            always = yes
+		}
+		effect = {
+			every_owned_province = {
+                limit = {
+                    has_active_triggered_province_modifier = pa_new_colony
+                }
+                decolonize = THIS
+            }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+}
