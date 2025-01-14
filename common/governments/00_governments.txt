@@ -953,6 +953,8 @@ republic = {
 				merchant_representation_reform
 				modern_economics_reform
 				chinampa_farms_reform
+				#PA
+				american_system_reform
 			}
 		}
 		consolidation_of_power_category = {
