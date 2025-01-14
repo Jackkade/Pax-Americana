@@ -17,12 +17,12 @@ pa_new_colonial_nation = { #Modifier meant to prevent colonial nations from bank
 
 ## Missions
 usa_rugged_independence = {
-	hostile_attrition = 1 
-	max_hostile_attrition = 1 
+	hostile_attrition = 1
+	max_hostile_attrition = 1
 }
 
 usa_go_west_young_man = {
-	colonists = 1 
+	colonists = 1
 }
 
 usa_mississippi_mouth = {
@@ -36,9 +36,12 @@ usa_mississippi_mouth = {
 ## Colonialization Rework
 
 pa_new_colony_cooldown = {
-	# 2 Ducats per month, to represent continued upkeep
-	global_tax_income = -24	
-
+	
+	#Supply chain strain
+	global_tax_modifier = -0.05
+	production_efficiency = -0.05 
+	trade_efficiency = -0.05
+	
 	#Still a drain on national resources
 	local_tax_modifier = -1.0 
 	trade_goods_size = -0.2
@@ -52,53 +55,6 @@ pa_new_colony_cooldown = {
 	#Don't have infrastructure to convert population
 	local_missionary_strength = -1 
 	local_religious_unity_contribution = -1
-}
-
-pa_new_colonial_nation_colony = {
-	# 2 Ducats per month, to refund ducats
-	global_tax_income = 24	
-
-	#Prevent death spiral
-	local_unrest = -2 
-
-}
-
-# Reduced Cost Modifiers
-pa_new_colony_reduced_cost_1 = { #-20%
-	global_tax_income = 4.8
-}
-pa_new_colony_reduced_cost_2 = { #-20%
-	global_tax_income = 4.8
-}
-pa_new_colony_reduced_cost_3 = { #-20%
-	global_tax_income = 4.8
-}
-
-# Increased Cost Modifiers
-pa_new_colony_increased_cost_1 = { #+50%
-	global_tax_income = -12
-}
-pa_new_colony_increased_cost_2 = { #+100%
-	global_tax_income = -24
-}
-pa_new_colony_increased_cost_3 = { #+150%
-	global_tax_income = -36
-}
-pa_new_colony_increased_cost_4 = { #+200%
-	global_tax_income = -48
-}
-# Native Colony Cost Modifiers
-pa_new_colony_increased_cost_native = { #+50%
-	global_tax_income = -12
-}
-# Burghers Privilege increased cost
-pa_new_colony_increased_cost_burgers_privilege = { #+50%
-	global_tax_income = -8
-}
-
-#Overlord cost for colonial nation colonies
-pa_new_colonial_nation_colony_overlord_upkeep = {
-	global_tax_income = -36
 }
 
 ## Missions

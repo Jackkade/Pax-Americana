@@ -50,28 +50,6 @@ on_colonial_nation_established = {
         }
         change_religion = FROM
     }
-    every_owned_province = {
-        limit = {
-            has_active_triggered_province_modifier = pa_new_colony
-        }
-        set_colonial_maintnance_effect = yes
-        add_province_modifier = {
-            name = pa_new_colonial_nation_colony
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-        overlord = {
-            random_owned_province = {
-                limit = {
-                    NOT = { has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep }
-                }
-                add_province_modifier = {
-                    name = pa_new_colonial_nation_colony_overlord_upkeep
-                    #hidden = yes
-                    duration = 7300		#Currently 20 Years, may need to be lower
-                }
-            }
-        }
-    }
     add_country_modifier = { 
         name = pa_new_colonial_nation
         duration = 7300 
@@ -79,34 +57,6 @@ on_colonial_nation_established = {
 }
 #Fix to colonial nation bankruptcy when fed colonies
 on_province_owner_change = {
-    if = {
-        limit = {
-            owner = {
-                is_colonial_nation = yes
-            }
-            has_province_modifier = pa_new_colony_cooldown
-        }
-        owner = {
-            overlord = {
-                random_owned_province = {
-                    limit = {
-                        NOT = { has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep }
-                    }
-                    add_province_modifier = {
-                        name = pa_new_colonial_nation_colony_overlord_upkeep
-                        #hidden = yes
-                        duration = 7300		#Currently 20 Years, may need to be lower
-                    }
-                }
-            }
-        }
-        set_colonial_maintnance_effect = yes
-        add_province_modifier = {
-            name = pa_new_colonial_nation_colony
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    
 }
 
 on_conquest = {
@@ -192,25 +142,6 @@ on_conquest = {
         remove_building = glorious_monument
         remove_building = spy_agency
     }
-    if = {
-        limit = {
-            FROM = {
-                is_colonial_nation = yes
-            }
-            has_province_modifier = pa_new_colonial_nation_colony
-        }
-        FROM = {
-            overlord = {
-				random_owned_province = {
-					limit = {
-						has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
-					}
-					remove_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
-				}
-			}
-        }
-    }
-    set_colonial_maintnance_effect = yes
 }
 
 on_colony_finished = { #ROOT - Province
@@ -220,7 +151,6 @@ on_colony_finished = { #ROOT - Province
         name = pa_new_colony_cooldown
         duration = 7300		#Currently 20 Years, may need to be lower
     }
-    set_colonial_maintnance_effect = yes
     set_province_flag = new_colony_established
 }
 

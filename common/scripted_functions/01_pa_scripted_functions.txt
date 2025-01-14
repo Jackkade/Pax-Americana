@@ -21,11 +21,6 @@
 #	-	
 can_colonize_province = {
 	condition = {
-		potential = {
-            FROM = { 
-                ai = yes
-            }
-		}
         potential = {
             FROM = { 
                 ai = yes
