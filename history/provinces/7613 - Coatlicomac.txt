@@ -7,4 +7,4 @@ owner = COA
 controller = COA
 add_core = COA
 discovered_by = mesoamerican
-trade_goods = sugar
+trade_goods = bt_trade_good_fruit

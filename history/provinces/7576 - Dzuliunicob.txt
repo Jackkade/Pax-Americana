@@ -7,4 +7,4 @@ owner = DZU
 controller = DZU
 add_core = DZU
 discovered_by = mesoamerican
-trade_goods = cocoa
+trade_goods = salt

@@ -7,4 +7,4 @@ owner = TBC
 controller = TBC
 add_core = TBC
 discovered_by = mesoamerican
-trade_goods = sugar
+trade_goods = bt_trade_good_fruit

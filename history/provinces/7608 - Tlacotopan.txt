@@ -7,4 +7,4 @@ owner = CAZ
 controller = CAZ
 add_core = CAZ
 discovered_by = mesoamerican
-trade_goods = sugar
+trade_goods = bt_trade_good_fruit

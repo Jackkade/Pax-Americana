@@ -8,3 +8,4 @@ controller = TEO
 add_core = TEO
 discovered_by = mesoamerican
 trade_goods = gold
+trade_goods = bt_trade_good_silver

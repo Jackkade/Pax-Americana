@@ -7,5 +7,5 @@ owner = TMT
 controller = TMT
 add_core = TMT
 discovered_by = mesoamerican
-trade_goods = spices
+trade_goods = bt_trade_good_fruit
 is_city = yes

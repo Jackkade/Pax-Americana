@@ -15,6 +15,7 @@ discovered_by = mesoamerican
 discovered_by = MAY
 discovered_by = ZAP
 discovered_by = mesoamerican
+trade_goods = bt_trade_good_silver
 1519.1.1 = { discovered_by = SPA } 
 1521.8.13 = { 
     owner = SPA
