@@ -747,15 +747,6 @@ USA_missions_5 = {
 			}
 		}
 		effect = {
-			carribeans_region = {
-				limit = {
-					culture_group = british
-					NOT = {
-						culture = american
-					}
-				}
-				change_culture = american
-			}
 			add_power_projection = { 
 				type = 25_permanent_power_projection
 				amount = 25
