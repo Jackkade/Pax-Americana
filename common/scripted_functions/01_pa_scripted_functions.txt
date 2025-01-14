@@ -30,6 +30,8 @@ can_colonize_province = {
                     NOT = {
                         current_income_balance = 6
                         tax_income_percentage = 0.01
+                        production_income_percentage = 0.01
+                        trade_income_percentage = 0.01
                     }
                 }
                 #####    Portugal Banned with cas or SPA
