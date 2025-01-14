@@ -2,6 +2,16 @@
 on_startup = {
     pre_colonial_culture_preserver_effect = yes
 }
+
+on_bankruptcy = {
+    every_owned_province = {
+        limit = {
+            has_active_triggered_province_modifier = pa_new_colony
+        }
+        decolonize = THIS
+    }
+}
+
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
 on_colony_established = {
     add_colonysize = 1000
