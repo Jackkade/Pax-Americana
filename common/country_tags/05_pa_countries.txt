@@ -1,5 +1,7 @@
 #Colonial Tags
+#Generic
 GRL = "countries/Greenland.txt"
+#Spanish
 NSP = "countries/NewSpain.txt"
 
 
