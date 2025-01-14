@@ -712,6 +712,8 @@ republic = {
 				#Added by Beyond Typus
 				puppet_kingdom_reform
 				transitional_government_reform
+				#PA
+				congress_of_confederation_reform
 			}
 		}
 		republican_virtues = {
