@@ -1,5 +1,7 @@
+#Colonial Tags
+GRL = "countries/Greenland.txt"
+NSP = "countries/NewSpain.txt"
 
-GRL = "countries/Greenland.txt" #PA
 
 #Native Tags
 UAY = "countries/Uaymil.txt"
