@@ -36,7 +36,21 @@ american_republic = {
 		max_absolutism = 35
 		max_terms = 4
 	}
-
+	#I wanted to add this but don't want people ruling for life
+	#	states_general_mechanic = {
+	#		federalists = {
+	#			monthly_reform_progress_modifier = 0.1
+	#			global_tax_modifier = 0.25
+	#			parliament_backing_chance = -0.50 
+	#			republican_tradition = -0.5 
+	#		}
+	#
+	#		democratic_republicans = {
+	#			expand_administration_cost = -0.25 
+	#			parliament_backing_chance = -0.50
+	#			republican_tradition = -0.5 
+	#		}
+	#	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
