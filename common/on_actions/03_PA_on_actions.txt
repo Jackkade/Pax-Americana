@@ -152,6 +152,7 @@ on_colony_finished = { #ROOT - Province
         duration = 7300		#Currently 20 Years, may need to be lower
     }
     set_province_flag = new_colony_established
+    add_dip_power = -50
 }
 
 # province, general conversion through effects

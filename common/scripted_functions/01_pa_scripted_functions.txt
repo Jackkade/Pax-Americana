@@ -22,17 +22,15 @@
 can_colonize_province = {
 	condition = {
         potential = {
-            FROM = { 
-                ai = yes
+            FROM = {
+                OR = {
+                    ai = yes
+                    NOT = { dip_power = 50 }
+                }
             }
             OR = {
                 FROM = { #Must be economically able to colonize
-                    NOT = {
-                        current_income_balance = 6
-                        tax_income_percentage = 0.01
-                        production_income_percentage = 0.01
-                        trade_income_percentage = 0.01
-                    }
+                    NOT = { dip_power = 50 }
                 }
                 #####    Portugal Banned with cas or SPA
                 AND = {
