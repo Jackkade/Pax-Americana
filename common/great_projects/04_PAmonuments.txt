@@ -2035,7 +2035,7 @@ ciudad_colonial = {
 		}
 
 		country_modifiers = {
-			colony_cost_modifier = -0.33 
+			native_assimilation = 0.10
 			colonists = 1 
 		}
 
@@ -2065,7 +2065,7 @@ ciudad_colonial = {
 		}
 
 		country_modifiers = {
-			colony_cost_modifier = -0.50 
+			native_assimilation = 0.30
 			colonists = 1 
 		}
 
@@ -2097,7 +2097,7 @@ ciudad_colonial = {
 		}
 
 		country_modifiers = {
-			colony_cost_modifier = -0.50 
+			native_assimilation = 0.50
 			colonists = 2
 		}
 		on_upgraded = {

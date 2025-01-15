@@ -1873,8 +1873,8 @@ expansion_ideas = {	#Expansion Reworked to include general expansion
 	#important = yes
 
 	bonus = {
-		colony_cost_modifier = -0.20	#Technically does nothing, but the colonies check this when determining their cost
 		harsh_treatment_cost = -0.15
+		native_assimilation = 0.33 #Not great sctrictly speaking, consider it a bonus
 	}
 
 	additional_colonists = {

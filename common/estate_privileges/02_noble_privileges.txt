@@ -3480,7 +3480,7 @@ estate_nobles_expedition_rights = {
 		has_any_exploration_idea = yes
 	}
 	benefits = {
-		colony_cost_modifier = -0.20
+		free_maintenance_on_expl_conq = yes 
 	}
 	
 	on_granted = {

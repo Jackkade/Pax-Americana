@@ -400,8 +400,8 @@ estate_burghers_new_world_charter = {
 		always = yes
 	}
 	penalties = {
-		colony_cost_modifier = 0.50
 		global_tariffs = -0.10
+		governing_capacity = -20 
 	}
 	benefits = {
 		colonists = 1
@@ -472,6 +472,7 @@ estate_burghers_new_world_charter = {
 					tag = GBR
 					tag = SCO
 					tag = FRA
+					is_colonial_nation = yes 
 				}
 			}
 		}
