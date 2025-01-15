@@ -37,11 +37,6 @@ usa_mississippi_mouth = {
 
 pa_new_colony_cooldown = {
 	
-	#Supply chain strain
-	global_tax_modifier = -0.05
-	production_efficiency = -0.05 
-	trade_efficiency = -0.05
-	
 	#Still a drain on national resources
 	local_tax_modifier = -1.0 
 	trade_goods_size = -0.2
