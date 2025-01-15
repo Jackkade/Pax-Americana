@@ -1,5 +1,8 @@
-ï»¿l_english:
+l_english:
 
+ SENDCOLONIST:0 "Send colonist to attempt to increase the size of your colony.\n Costs §R50§! §YDiplomatic Power§! when the colonist arrives."
+
+ #GEO
  new_york_area:0 "Hudson Valley"
  great_valley_area:0 "Potomac"
  piedmont_north_america_area:0 "Tuscarora"
