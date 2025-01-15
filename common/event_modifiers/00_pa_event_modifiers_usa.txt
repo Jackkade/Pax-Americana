@@ -43,7 +43,10 @@ pa_new_colony_cooldown = {
 	trade_goods_size_modifier = -1.0
 	local_production_efficiency = -1.0
 	local_autonomy = 0.1 
-
+	local_governing_cost = 2
+	min_local_autonomy = 100
+	local_build_time = 0.5
+	
 	#Natives don't like you
 	local_unrest = 2 
 
