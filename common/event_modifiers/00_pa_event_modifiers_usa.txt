@@ -36,7 +36,9 @@ usa_mississippi_mouth = {
 ## Colonialization Rework
 
 pa_new_colony_cooldown = {
-	
+	#can build without prior infrastructure
+	allowed_num_of_buildings = 2
+
 	#Still a drain on national resources
 	local_tax_modifier = -1.0 
 	trade_goods_size = -0.2
@@ -46,7 +48,7 @@ pa_new_colony_cooldown = {
 	local_governing_cost = 2
 	min_local_autonomy = 100
 	local_build_time = 0.5
-	
+
 	#Natives don't like you
 	local_unrest = 2 
 
