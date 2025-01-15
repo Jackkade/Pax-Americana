@@ -30,6 +30,22 @@ usa_mississippi_mouth = {
 	placed_merchant_power = 5
 }
 
+#Changed from vanilla
+cultural_assimilation = {
+	global_unrest = 2
+	culture_conversion_time = -0.1 
+}
+
+first_bank_usa = {
+	global_tax_modifier = 0.1
+	interest = -0.5
+}
+
+us_mint = {
+	inflation_action_cost = -0.15
+	interest = -0.5
+}
+
 
 ### Province ###
 

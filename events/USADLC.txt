@@ -773,7 +773,7 @@ country_event = {
 			limit = { trade_goods = fur }
 			add_province_modifier = { 
 				name = north_american_fur_trade 
-				duration = 3650
+				duration = -1
 			} 
 		}
 		change_price = {
@@ -807,7 +807,7 @@ country_event = {
 			tag = USA
 			has_country_flag = usa_declaration_independence_flag
 		}
-		is_year = 1790
+
 		NOT = { has_country_modifier = cultural_assimilation }
 	}
 	
@@ -843,7 +843,7 @@ country_event = {
 			tag = USA
 			has_country_flag = usa_declaration_independence_flag
 		}
-		is_year = 1780
+		has_institution = enlightenment
 		NOT = { has_country_modifier = american_academy_of_arts_and_sciences }
 	}
 	
@@ -854,7 +854,7 @@ country_event = {
 		add_years_of_income = -0.25
 		add_country_modifier = { 
 			name = american_academy_of_arts_and_sciences
-			duration = 7300
+			duration = -1
 		}
 	}
 	option = {
@@ -1480,11 +1480,11 @@ country_event = {
 	trigger = {
 		has_dlc = "American Dream"
 		tag = USA
-		is_year = 1790
 		NOT = { war_with = GBR }
 		NOT = { 
 			has_country_modifier = first_bank_usa 
 		} 
+		full_idea_group = economic_ideas
 	}
 	
 	mean_time_to_happen = { months = 200 }
@@ -1543,13 +1543,10 @@ country_event = {
 			tag = USA
 			has_country_flag = usa_declaration_independence_flag
 		}
-		is_year = 1794
-		NOT = {
-			is_year = 1825
-		}
 		any_owned_province = {
 			trade_goods = cotton
 		}
+		has_institution = industrialization
 		NOT = { 
 			any_owned_province = {
 				has_province_modifier = cotton_gin
@@ -1666,7 +1663,7 @@ country_event = {
 			tag = USA
 			has_country_flag = usa_declaration_independence_flag
 		}
-		is_year = 1792
+		dip_tech = 16
 		NOT = { has_country_modifier = us_mint }
 	}
 	
@@ -1676,7 +1673,7 @@ country_event = {
 		name = "usa_dlc.EVTOPTA45"
 		add_country_modifier = { 
 			name = us_mint 
-			duration = 7300 
+			duration = -1 
 		}
 	}
 	option = {
@@ -3138,7 +3135,10 @@ country_event = {
 			ai = yes
 		}
 		any_province = {
-			colonial_region = colonial_eastern_america
+			OR = {
+				colonial_region = colonial_eastern_america
+				colonial_region = colonial_florida
+			}
 			OR = {
 				owned_by = SPA
 				owner = {
@@ -3159,7 +3159,10 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				colonial_region = colonial_eastern_america
+				OR = {
+					colonial_region = colonial_eastern_america
+					colonial_region = colonial_florida
+				}
 				OR = {
 					owned_by = SPA
 					owner = {
