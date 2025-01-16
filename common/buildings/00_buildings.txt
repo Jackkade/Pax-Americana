@@ -35,13 +35,13 @@
 
 #BT More Buildings: For the purposes of the university, declaring college in front for reference.
 college = {
-	cost = 300			#BTAddOn changed from 150. This is late game, vital to the spread of the enlightenment, and generally very important. Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think. Changing cost and time to be closer to/higher than the earlier manufactories. Note I'll also increase the enlightenment spread from a uni, so this becomes something to be built in key cities & let spread, not something to spam everywhere at tech 17 for tech spread and dev cost.
+	cost = 200			#BTAddOn changed from 150. This is late game, vital to the spread of the enlightenment, and generally very important. Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think. Changing cost and time to be closer to/higher than the earlier manufactories. Note I'll also increase the enlightenment spread from a uni, so this becomes something to be built in key cities & let spread, not something to spam everywhere at tech 17 for tech spread and dev cost.
 	time = 24			#BTAddOn changed from 12. This is not meant to be spammed when the enlightenment hits to catch up, increased to 4y
 	
 	modifier = {
-		local_institution_spread = 0.33			#BTAddOn new. Fits perfectly in the new tech system =D. Currently 100 percent bonus, which may be a bit much, but on the other hand still requires normal spread, and if a province is advanced enough to have a university, it probably is somwhat cutting edge anyway. Nice counterpoint for new non western tech penalties, too, so a tech minded country in Asia or Africa can still keep up with the spread bonus offsetting tech group spread penalties.
-		local_tax_modifier = 0.1			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
-		local_production_efficiency = 0.1			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		local_institution_spread = 0.25			#BTAddOn new. Fits perfectly in the new tech system =D. Currently 100 percent bonus, which may be a bit much, but on the other hand still requires normal spread, and if a province is advanced enough to have a university, it probably is somwhat cutting edge anyway. Nice counterpoint for new non western tech penalties, too, so a tech minded country in Asia or Africa can still keep up with the spread bonus offsetting tech group spread penalties.
+		local_tax_modifier = 0.2			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		local_production_efficiency = 0.2			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
 		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 		#local_development_cost = -0.20			#BTAddOn removed. I wouldn't say universities aid development per se, so I'm moving this bonus elsewhere. Consider many older uni city examples, Cambrige, Oxford, Siena, Padua, Murcia, Heidelberg, Toulouse. Not really tiny, but not bastions of development and industry the London, Moscow, Berlin, Paris (though Paris did have a uni) etc. ended up moving dev bonus to production buildings to better represent this reality.
 		#allowed_num_of_buildings = 1			#BTAddOn removed. Terrain Overhaul addon (balanced to be enabled alongside misc addon) makes max buildings possible at around 40 development, instead of 100 development, so this isn't neccessary, and also a tad silly, if I may say so... 'Yay, we now have uni so we can build more buildings in our city'.... mkay
@@ -671,7 +671,7 @@ temple = {
 	on_obsolete = {
 	}
 	ai_will_do = {
-		factor = 75
+		factor = 25
 		modifier = { #Province is currently a colony. Build buildings to finish colony
 			factor = 4
 			has_active_triggered_province_modifier = pa_new_colony 
@@ -1710,10 +1710,10 @@ courthouse = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = -0.25
+		local_state_maintenance_modifier = -0.15 # Harb's Autonomy Overhaul
 		#local_autonomy = -0.1
-		local_autonomy = -0.025
-		max_governing_capacity_from_courthouses = 0.25
+		local_autonomy = -0.025 # Harb's Autonomy Overhaul
+		max_governing_capacity_from_courthouses = 0.25 # Harb's Autonomy Overhaul
 		#local_governing_cost = -0.25
 		#local_governing_cost = -0.1
 	}
@@ -3155,14 +3155,14 @@ cathedral = {
 
 
 university = {
-	cost = 600			#BTAddOn changed from 300. This is late game, vital to the spread of the enlightenment, and generally very important. Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think. Changing cost and time to be closer to/higher than the earlier manufactories. Note I'll also increase the enlightenment spread from a uni, so this becomes something to be built in key cities & let spread, not something to spam everywhere at tech 17 for tech spread and dev cost.
+	cost = 400			#BTAddOn changed from 300. This is late game, vital to the spread of the enlightenment, and generally very important. Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think. Changing cost and time to be closer to/higher than the earlier manufactories. Note I'll also increase the enlightenment spread from a uni, so this becomes something to be built in key cities & let spread, not something to spam everywhere at tech 17 for tech spread and dev cost.
 	time = 48			#BTAddOn changed from 12. This is not meant to be spammed when the enlightenment hits to catch up, increased to 4y
 	
 	make_obsolete = college
 	modifier = {
 		local_institution_spread = 0.5			#BTAddOn new. Fits perfectly in the new tech system =D. Currently 100 percent bonus, which may be a bit much, but on the other hand still requires normal spread, and if a province is advanced enough to have a university, it probably is somwhat cutting edge anyway. Nice counterpoint for new non western tech penalties, too, so a tech minded country in Asia or Africa can still keep up with the spread bonus offsetting tech group spread penalties.
-		local_tax_modifier = 0.15			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
-		local_production_efficiency = 0.15			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		local_tax_modifier = 0.3			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		local_production_efficiency = 0.3			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
 		base_local_dev_points = 0.04	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 		#local_development_cost = -0.20			#BTAddOn removed. I wouldn't say universities aid development per se, so I'm moving this bonus elsewhere. Consider many older uni city examples, Cambrige, Oxford, Siena, Padua, Murcia, Heidelberg, Toulouse. Not really tiny, but not bastions of development and industry the London, Moscow, Berlin, Paris (though Paris did have a uni) etc. ended up moving dev bonus to production buildings to better represent this reality.
 		#allowed_num_of_buildings = 1			#BTAddOn removed. Terrain Overhaul addon (balanced to be enabled alongside misc addon) makes max buildings possible at around 40 development, instead of 100 development, so this isn't neccessary, and also a tad silly, if I may say so... 'Yay, we now have uni so we can build more buildings in our city'.... mkay
@@ -4500,10 +4500,10 @@ town_hall = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = -0.5
+		local_state_maintenance_modifier = -0.3 # Harb's Autonomy Overhaul
 		#local_autonomy = -0.2
-		local_autonomy = -0.05
-		max_governing_capacity_from_townhalls = 0.5
+		local_autonomy = -0.05 # Harb's Autonomy Overhaul
+		max_governing_capacity_from_townhalls = 0.5 # Harb's Autonomy Overhaul
 		#local_governing_cost = -0.5
 		#local_governing_cost = -0.2
 	}
@@ -5660,6 +5660,7 @@ weapons = {
 	manufactory = {
 		copper
 		iron
+		bt_trade_good_gunpowder
 		pa_trade_good_obsidian
 	}
 	modifier = {
@@ -5674,6 +5675,8 @@ weapons = {
 		OR = {
 			trade_goods = copper
 			trade_goods = iron
+			trade_goods = bt_trade_good_gunpowder
+			trade_goods = pa_trade_good_obsidian
 		}
 	}
 	on_built = {
@@ -5715,6 +5718,7 @@ weapons = {
 				OR = {
 					trade_goods = copper
 					trade_goods = iron
+					trade_goods = bt_trade_good_gunpowder
 				}
 			}
 		}
@@ -6251,6 +6255,7 @@ tradecompany = {
 		cloves
 		fur
 		incense
+		bt_trade_good_whaling
 	}
 	modifier = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
@@ -6268,6 +6273,7 @@ tradecompany = {
 			trade_goods = fur
 			trade_goods = incense
 			trade_goods = cloves
+			trade_goods = bt_trade_good_whaling
 		}
 	}
 	on_built = {
@@ -6313,6 +6319,7 @@ tradecompany = {
 					trade_goods = fur
 					trade_goods = incense
 					trade_goods = cloves
+					trade_goods = bt_trade_good_whaling
 				}
 			}
 		}
@@ -6667,6 +6674,7 @@ mills = {
 		tropical_wood
 		glass
 		chinaware
+		bt_trade_good_masonry
 	}
 	modifier = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
@@ -6683,6 +6691,7 @@ mills = {
 			trade_goods = tropical_wood
 			trade_goods = glass
 			trade_goods = chinaware
+			trade_goods = bt_trade_good_masonry
 		}
 	}
 	
@@ -6724,6 +6733,7 @@ mills = {
 					trade_goods = tropical_wood
 					trade_goods = glass
 					trade_goods = chinaware
+					trade_goods = bt_trade_good_masonry
 				}
 			}
 		}
@@ -7073,6 +7083,7 @@ ramparts = {
 					OR = {
 						trade_goods = copper
 						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
 					}
 					FROM = { mil_tech = 11 }
 				}
@@ -7105,6 +7116,7 @@ ramparts = {
 						trade_goods = cloves
 						trade_goods = fur
 						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
 					}
 					FROM = { dip_tech = 14 }
 				}
@@ -7126,6 +7138,7 @@ ramparts = {
 						trade_goods = tropical_wood
 						trade_goods = glass
 						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
 					}
 					FROM = { adm_tech = 16 }
 				}
@@ -7319,6 +7332,7 @@ soldier_households = {
 					OR = {
 						trade_goods = copper
 						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
 					}
 					FROM = { mil_tech = 11 }
 				}
@@ -7351,6 +7365,7 @@ soldier_households = {
 						trade_goods = cloves
 						trade_goods = fur
 						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
 					}
 					FROM = { dip_tech = 14 }
 				}
@@ -7372,6 +7387,7 @@ soldier_households = {
 						trade_goods = tropical_wood
 						trade_goods = glass
 						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
 					}
 					FROM = { adm_tech = 16 }
 				}
@@ -7564,6 +7580,7 @@ impressment_offices = {
 					OR = {
 						trade_goods = copper
 						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
 					}
 					FROM = { mil_tech = 11 }
 				}
@@ -7596,6 +7613,7 @@ impressment_offices = {
 						trade_goods = cloves
 						trade_goods = fur
 						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
 					}
 					FROM = { dip_tech = 14 }
 				}
@@ -7617,6 +7635,7 @@ impressment_offices = {
 						trade_goods = tropical_wood
 						trade_goods = glass
 						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
 					}
 					FROM = { adm_tech = 16 }
 				}
@@ -7779,8 +7798,10 @@ state_house = {
 	modifier = {
 		#statewide_governing_cost = -0.2
 		#local_governing_cost_increase = -4
-		local_autonomy = -0.01
-		local_state_maintenance_modifier = -0.5
+		local_autonomy = -0.15
+		province_trade_power_value = 2.5
+		local_governing_cost = -0.25
+		local_state_maintenance_modifier = -0.5 # Harb's Autonomy Overhaul
 	}
 	# bonus_modifier = {
 		# #statewide_governing_cost = -0.2
@@ -7825,6 +7846,7 @@ state_house = {
 					OR = {
 						trade_goods = copper
 						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
 					}
 					FROM = { mil_tech = 11 }
 				}
@@ -7857,6 +7879,7 @@ state_house = {
 						trade_goods = cloves
 						trade_goods = fur
 						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
 					}
 					FROM = { dip_tech = 14 }
 				}
@@ -7878,6 +7901,7 @@ state_house = {
 						trade_goods = tropical_wood
 						trade_goods = glass
 						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
 					}
 					FROM = { adm_tech = 16 }
 				}

@@ -1123,8 +1123,8 @@ supply_convoys = {
 		full_idea_group = expansion_ideas
 	}	
 	
-	state_maintenance_modifier = -0.5
-	liberty_desire_from_subject_development = -0.25
+	state_maintenance_modifier = -0.1 # Harb's Autonomy Overhaul
+	liberty_desire_from_subject_development = -0.3 # Harb's Autonomy Overhaul
 	
 	effect = {}
 	removed_effect = {}

@@ -316,8 +316,9 @@ development_scaled = {
 
 capital_city = {
 	fort_level = 1
-	local_autonomy = -0.5 # Harb's Autonomy Overhaul
+	local_autonomy = -0.3 # Harb's Autonomy Overhaul
 	local_governing_cost = -0.5 # Harb's Autonomy Overhaul
+	province_trade_power_value = 5 # Harb's Autonomy Overhaul a little free bonus for poorer nations
 }
 
 
@@ -339,7 +340,7 @@ patriarch_authority_global = {
 }
 
 pasha_state = {
-	local_state_maintenance_modifier = -0.33
+	local_state_maintenance_modifier = -0.1 # Harb's Autonomy Overhaul
 	local_autonomy = 0.1 # Harb's Autonomy Overhaul
 	local_tolerance_of_heathens = 10
 }
@@ -594,13 +595,14 @@ local_autonomy_multiplicative = {
 local_autonomy = {
 	local_governing_cost = -1.0 # Harb's Autonomy Overhaul
 	local_autonomy = -0.4 # Harb's Autonomy Overhaul
-	local_state_maintenance_modifier = -1 # Harb's Autonomy Overhaul
+	local_state_maintenance_modifier = -0.5 # Harb's Autonomy Overhaul
 	local_fort_maintenance_modifier = -0.5 # Harb's Autonomy Overhaul
 	local_garrison_size = -0.5 # Harb's Autonomy Overhaul
 	local_defensiveness = -0.5 # Harb's Autonomy Overhaul
 }
 
 local_autonomy_trade_company_multiplicative = {
+	province_trade_power_modifier = -0.5 # Harb's Autonomy Overhaul
 	local_manpower_modifier = -1.0
 	local_sailors_modifier = -1.0
 	local_tax_modifier = -1.0
@@ -610,7 +612,7 @@ local_autonomy_trade_company_multiplicative = {
 }
 
 local_autonomy_trade_company = {
-	local_governing_cost = -2 # Harb's Autonomy Overhaul
+	local_governing_cost = -1.8 # Harb's Autonomy Overhaul
 	local_autonomy = -0.4 # Harb's Autonomy Overhaul
 	local_fort_maintenance_modifier = -0.25 # Harb's Autonomy Overhaul
 	local_garrison_size = -0.25 # Harb's Autonomy Overhaul
@@ -646,15 +648,15 @@ resource_depleted = {
 }
 
 in_trade_company = {
-	province_trade_power_modifier = 1
-	naval_forcelimit = 0.25 # BT halved from the overhauled provinces
+	province_trade_power_modifier = 0.5
+	#naval_forcelimit = 0.1 # Harb's Autonomy Overhaul
 	local_missionary_strength = -0.2
 	#local_institution_spread = 0.10			#BTAddOn removed - why exactly does an institution spread faster in the ass end of the empire weeks away from the capital.... This also makes institutions spread faster to 3rd world neighbours than to European neighbours, which is silly.
 	local_governing_cost = 1.75 # Harb's Autonomy Overhaul
 	min_local_autonomy = -110 # Harb's Autonomy Overhaul
 	local_unrest = -2 # Harb's Autonomy Overhaul
 	trade_goods_size_modifier = 0.25 # Harb's Autonomy Overhaul
-	local_autonomy = -1 # Harb's Autonomy Overhaul
+	local_autonomy = -1.06 # Harb's Autonomy Overhaul
 }
 
 left_trade_company = {
@@ -707,6 +709,7 @@ base_values = {
 	num_of_parliament_issues = 10
 	has_marines = yes
 	promote_culture_cost = 0.5 #BT Accepted Culture Slots overhaul: Tech reduces promote culture cost by up to -50% by the end of the game. This is here partly to prevent modifier stacking until the absolute last part of the game, but also just makes sense to me. //Dub
+	monthly_reform_progress = 0.4 # Harb's Autonomy Overhaul
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -1329,7 +1332,7 @@ no_debate_in_parliament = {
 republican_tradition = {
 	global_unrest = -2
 	rr_jacobins_influence = 0.1
-	reform_progress_growth = 1.0
+	reform_progress_growth = 0.5
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
 	monthly_authority_power = -0.05
@@ -2423,7 +2426,7 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_1 = -1
 	monthly_prussian_militarized_society_2 = -1
 	monthly_prussian_militarized_society_3 = -1
-	monthly_ottoman_decadence = 1 # Harb's Autonomy Overhaul
+	#monthly_ottoman_decadence = 1 # Harb's Autonomy Overhaul Removed because it causes a feedback loop
 	monthly_authority_power = 0.5
 	yearly_corruption = 2 # Harb's Autonomy Overhaul
 	#stability_cost_modifier = 1.0 #Removed because all power cost already does this # Harb's Autonomy Overhaul
@@ -2455,17 +2458,15 @@ expanded_infrastructure = {		#Need to make sure to change modifiers in 00_expand
 	regiment_recruit_speed = -0.1 # Harb's Autonomy Overhaul
 	ship_recruit_speed = -0.1 # Harb's Autonomy Overhaul
 	local_defensiveness = 0.1 # Harb's Autonomy Overhaul
-	local_garrison_size = 0.1 # Harb's Autonomy Overhaul
 	local_tax_modifier = 0.1 # Harb's Autonomy Overhaul
 	local_production_efficiency = 0.1 # Harb's Autonomy Overhaul
 	local_manpower_modifier = 0.1 # Harb's Autonomy Overhaul
 	local_sailors_modifier = 0.1 # Harb's Autonomy Overhaul
 	local_ship_repair = 0.1 # Harb's Autonomy Overhaul
 	local_autonomy = -0.04 # Harb's Autonomy Overhaul
-	local_build_cost = -0.1 # Harb's Autonomy Overhaul
 	local_build_time = -0.1 # Harb's Autonomy Overhaul
 	province_trade_power_modifier = 0.1 # Harb's Autonomy Overhaul
-	local_state_maintenance_modifier  = 0.5 # Harb's Autonomy Overhaul
+	local_state_maintenance_modifier  = 0.2 # Harb's Autonomy Overhaul
 	local_great_project_upgrade_cost = -0.1	 # Harb's Autonomy Overhaul
 	local_dev_points_modifier = 0.3 #BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI # Harb's Autonomy Overhaul
 }
@@ -2473,7 +2474,7 @@ expanded_infrastructure = {		#Need to make sure to change modifiers in 00_expand
 centralize_state = {
 	#statewide_governing_cost = -0.2 # Harb's Autonomy Overhaul
 	local_autonomy = -0.01 # Harb's Autonomy Overhaul
-	local_centralize_state_cost = -0.05 # Harb's Autonomy Overhaul
+	local_centralize_state_cost = -0.1 # Harb's Autonomy Overhaul
 	#local_prosperity_growth = 0.25 # Harb's Autonomy Overhaul
 	#local_state_maintenance_modifier = -0.2 # Harb's Autonomy Overhaul
 	picture = "centralize_state"

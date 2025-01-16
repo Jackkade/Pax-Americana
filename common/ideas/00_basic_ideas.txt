@@ -2033,6 +2033,7 @@ administrative_ideas = {
 	bonus = {
 		governing_capacity_modifier = 0.1
 		eunuchs_loyalty_modifier = 0.1
+		expand_administration_cost = -0.25
 	}
 
 	administrative_council = {
@@ -2545,7 +2546,7 @@ infrastructure_ideas = { #New in 1.3X. It's just like administrative ideas in th
 
 	state_efficiency = {
 		global_prosperity_growth = 0.25
-		state_maintenance_modifier = -0.33
+		state_maintenance_modifier = -0.2 # Harb's Autonomy Overhaul
 	}
 	organised_construction = {
 		build_cost = -0.1 

@@ -2912,7 +2912,7 @@ nw_native_ideas = {
 plains_native_ideas = {
 	start = {
 		tolerance_own = 1
-		state_maintenance_modifier = -0.25
+		state_maintenance_modifier = -0.1 # Harb's Autonomy Overhaul
 	}
 	
 	bonus = {
