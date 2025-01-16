@@ -52,6 +52,10 @@ us_mint = {
 ## Colonialization Rework
 
 pa_new_colony_cooldown = {
+	#Main Cost for colonizing 
+	governing_capacity = -10
+	governing_capacity_modifier = -0.01
+
 	#can build without prior infrastructure
 	allowed_num_of_buildings = 2
 
@@ -61,7 +65,6 @@ pa_new_colony_cooldown = {
 	trade_goods_size_modifier = -1.0
 	local_production_efficiency = -1.0
 	local_autonomy = 0.1 
-	local_governing_cost = 2
 	min_local_autonomy = 100
 	local_build_time = 0.5
 

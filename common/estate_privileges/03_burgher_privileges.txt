@@ -400,8 +400,8 @@ estate_burghers_new_world_charter = {
 		always = yes
 	}
 	penalties = {
+		governing_capacity_modifier = -0.05
 		global_tariffs = -0.10
-		governing_capacity = -20 
 	}
 	benefits = {
 		colonists = 1
