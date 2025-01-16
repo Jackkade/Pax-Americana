@@ -32,6 +32,17 @@ can_colonize_province = {
                 FROM = { #Must be economically able to colonize
                     NOT = { dip_power = 50 }
                 }
+                FROM = {
+                    ai = yes
+                    OR = {
+                        governing_capacity_percentage = 0.8
+                        num_of_owned_provinces_with = {
+                            value = 5
+                            has_active_triggered_province_modifier = pa_new_colony
+                        }
+                    }
+
+                }
                 #####    Portugal Banned with cas or SPA
                 AND = {
                     FROM = { 
@@ -68,6 +79,16 @@ can_colonize_province = {
                     }
                     OR = {
                         continent = oceania
+                        region = maghreb_region
+                        region = east_maghreb_region
+                        region = egypt_region
+                        region = nubia_region
+                        region = eastern_sahara_region
+                        region = western_sahara_region
+                        region = sahel_region
+                        region = central_sahara_region
+                        region = abyssinia_region
+                        region = horn_of_africa_region
                         superregion = north_america_superregion
                     }
                 }
