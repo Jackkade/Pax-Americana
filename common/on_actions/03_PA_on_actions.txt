@@ -1,899 +1,296 @@
 
-on_startup = {
-    pre_colonial_culture_preserver_effect = yes
+on_colony_finished = { #ROOT - Province
     if = {
 		limit = {
+			is_empty = no
 			NOT = {
-				has_global_flag = domestic_merchants_assigned
+				culture_group = afro_american_group
 			}
-		}
-		set_global_flag = domestic_merchants_assigned
-        4980 = {
-            add_province_triggered_modifier = northwest_territories_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = northwest_territories }
-        }
-        1558 = {
-            add_province_triggered_modifier = columbia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = columbia }
-        }
-        1560 = {
-            add_province_triggered_modifier = alaska_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = alaska }
-        }
-        1410 = {
-            add_province_triggered_modifier = australia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = australia }
-        }
-        2868 = {
-            add_province_triggered_modifier = patagonia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = patagonia }
-        }
-        2935 = {
-            add_province_triggered_modifier = amazonas_node_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = amazonas_node }
-        }
-        1424 = {
-            add_province_triggered_modifier = southern_australia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = southern_australia }
-        }
-        1556 = {
-            add_province_triggered_modifier = california_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = california }
-        }
-        903 = {
-            add_province_triggered_modifier = missouri_river_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = missouri_river_trade }
-        }
-        2499 = {
-            add_province_triggered_modifier = rio_grande_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = rio_grande }
-        }
-        940 = {
-            add_province_triggered_modifier = ohio_river_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = ohio_river_trade }
-        }
-        893 = {
-            add_province_triggered_modifier = mississippi_river_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = mississippi_river }
-        }
-        1487 = {
-            add_province_triggered_modifier = james_bay_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = james_bay }
-        }
-        944 = {
-            add_province_triggered_modifier = ohio_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = ohio }
-        }
-        1536 = {
-            add_province_triggered_modifier = laplata_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = laplata }
-        }
-        800 = {
-            add_province_triggered_modifier = cuiaba_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = cuiaba }
-        }
-        809 = {
-            add_province_triggered_modifier = lima_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = lima }
-        }
-        854 = {
-            add_province_triggered_modifier = jalisco_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = jalisco_trade }
-        }
-        852 = {
-            add_province_triggered_modifier = mexico_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = mexico }
-        }
-        845 = {
-            add_province_triggered_modifier = yucatan_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = yucatan_trade }
-        }
-        1649 = {
-            add_province_triggered_modifier = african_great_lakes_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = african_great_lakes }
-        }
-        4097 = {
-            add_province_triggered_modifier = kongo_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = kongo }
-        }
-        5393 = {
-            add_province_triggered_modifier = namibia_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = namibia_trade }
-        }
-        1191 = {
-            add_province_triggered_modifier = zambezi_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = zambezi }
-        }
-        1149 = {
-            add_province_triggered_modifier = katsina_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = katsina }
-        }
-        1224 = {
-            add_province_triggered_modifier = ethiopia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = ethiopia }
-        }
-        1228 = {
-            add_province_triggered_modifier = dongola_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = dongola_trade }
-        }
-        1132 = {
-            add_province_triggered_modifier = timbuktu_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = timbuktu }
-        }
-        730 = {
-            add_province_triggered_modifier = girin_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = girin }
-        }
-        677 = {
-            add_province_triggered_modifier = lhasa_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = lhasa }
-        }
-        584 = {
-            add_province_triggered_modifier = burma_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = burma }
-        }
-        679 = {
-            add_province_triggered_modifier = chengdu_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = chengdu }
-        }
-        1365 = {
-            add_province_triggered_modifier = gulf_of_siam_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = gulf_of_siam }
-        }
-        1371 = {
-            add_province_triggered_modifier = canton_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = canton }
-        }
-        1357 = {
-            add_province_triggered_modifier = the_moluccas_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = the_moluccas }
-        }
-        1397 = {
-            add_province_triggered_modifier = philippines_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = philippines }
-        }
-        1692 = {
-            add_province_triggered_modifier = polynesia_node_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = polynesia_node }
-        }
-        1376 = {
-            add_province_triggered_modifier = nippon_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = nippon }
-        }
-        684 = {
-            add_province_triggered_modifier = hangzhou_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = hangzhou }
-        }
-        700 = {
-            add_province_triggered_modifier = xian_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = xian }
-        }
-        1816 = {
-            add_province_triggered_modifier = beijing_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = beijing }
-        }
-        1361 = {
-            add_province_triggered_modifier = malacca_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = malacca }
-        }
-        1064 = {
-            add_province_triggered_modifier = siberia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = siberia }
-        }
-        707 = {
-            add_province_triggered_modifier = yumen_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = yumen }
-        }
-        1343 = {
-            add_province_triggered_modifier = ganges_delta_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = ganges_delta }
-        }
-        524 = {
-            add_province_triggered_modifier = doab_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = doab }
-        }
-        507 = {
-            add_province_triggered_modifier = lahore_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = lahore }
-        }
-        1948 = {
-            add_province_triggered_modifier = deccan_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = deccan }
-        }
-        1340 = {
-            add_province_triggered_modifier = comorin_cape_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = comorin_cape }
-        }
-        504 = {
-            add_province_triggered_modifier = gujarat_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = gujarat }
-        }
-        1331 = {
-            add_province_triggered_modifier = gulf_of_aden_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = gulf_of_aden }
-        }
-        1334 = {
-            add_province_triggered_modifier = hormuz_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = hormuz }
-        }
-        454 = {
-            add_province_triggered_modifier = samarkand_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = samarkand }
-        }
-        426 = {
-            add_province_triggered_modifier = persia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = persia }
-        }
-        410 = {
-            add_province_triggered_modifier = basra_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = basra }
-        }
-        330 = {
-            add_province_triggered_modifier = pontus_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = pontus_trade }
-        }
-        377 = {
-            add_province_triggered_modifier = aleppo_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = aleppo }
-        }
-        464 = {
-            add_province_triggered_modifier = astrakhan_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = astrakhan }
-        }
-        1082 = {
-            add_province_triggered_modifier = kazan_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = kazan }
-        }
-        1448 = {
-            add_province_triggered_modifier = zanzibar_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = zanzibar }
-        }
-        1460 = {
-            add_province_triggered_modifier = cape_of_good_hope_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = cape_of_good_hope }
-        }
-        1466 = {
-            add_province_triggered_modifier = ivory_coast_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = ivory_coast }
-        }
-        835 = {
-            add_province_triggered_modifier = panama_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = panama }
-        }
-        1531 = {
-            add_province_triggered_modifier = brazil_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = brazil }
-        }
-        1505 = {
-            add_province_triggered_modifier = florida_straights_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = florida_straights_trade }
-        }
-        1521 = {
-            add_province_triggered_modifier = carribean_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = carribean_trade }
-        }
-        950 = {
-            add_province_triggered_modifier = chesapeake_bay_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = chesapeake_bay }
-        }
-        968 = {
-            add_province_triggered_modifier = massachusets_bay_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = massachusets_bay_trade }
-        }
-        1490 = {
-            add_province_triggered_modifier = st_lawrence_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = st_lawrence }
-        }
-        358 = {
-            add_province_triggered_modifier = alexandria_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = alexandria }
-        }
-        341 = {
-            add_province_triggered_modifier = tunis_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = tunis }
-        }
-        345 = {
-            add_province_triggered_modifier = safi_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = safi }
-        }
-        1652 = {
-            add_province_triggered_modifier = white_sea_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = white_sea }
-        }
-        300 = {
-            add_province_triggered_modifier = murava_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = murava }
-        }
-        295 = {
-            add_province_triggered_modifier = moscow_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = moscow_trade }
-        }
-        1322 = {
-            add_province_triggered_modifier = crimea_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = crimea }
-        }
-        280 = {
-            add_province_triggered_modifier = kiev_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = kiev }
-        }
-        33 = {
-            add_province_triggered_modifier = novgorod_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = novgorod }
-        }
-        1320 = {
-            add_province_triggered_modifier = constantinople_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = constantinople }
-        }
-        5493 = {
-            add_province_triggered_modifier = aegean_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = aegean_trade }
-        }
-        4239 = {
-            add_province_triggered_modifier = pest_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = pest }
-        }
-        262 = {
-            add_province_triggered_modifier = krakow_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = krakow }
-        }
-        1309 = {
-            add_province_triggered_modifier = ragusa_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = ragusa }
-        }
-        43 = {
-            add_province_triggered_modifier = danzig_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = danzig_trade }
-        }
-        1 = {
-            add_province_triggered_modifier = baltic_sea_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = baltic_sea }
-        }
-        121 = {
-            add_province_triggered_modifier = napoli_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = napoli }
-        }
-        227 = {
-            add_province_triggered_modifier = porto_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = porto_trade }
-        }
-        224 = {
-            add_province_triggered_modifier = sevilla_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = sevilla }
-        }
-        1295 = {
-            add_province_triggered_modifier = valencia_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = valencia }
-        }
-        1308 = {
-            add_province_triggered_modifier = venice_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = venice }
-        }
-        1298 = {
-            add_province_triggered_modifier = genua_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = genua }
-        }
-        134 = {
-            add_province_triggered_modifier = wien_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = wien }
-        }
-        1284 = {
-            add_province_triggered_modifier = irish_sea_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = irish_sea }
-        }
-        1975 = {
-            add_province_triggered_modifier = north_sea_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = north_sea }
-        }
-        45 = {
-            add_province_triggered_modifier = lubeck_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = lubeck }
-        }
-        59 = {
-            add_province_triggered_modifier = saxony_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = saxony }
-        }
-        203 = {
-            add_province_triggered_modifier = lyon_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = lyon_trade }
-        }
-        174 = {
-            add_province_triggered_modifier = bordeaux_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = bordeaux }
-        }
-        1876 = {
-            add_province_triggered_modifier = rheinland_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = rheinland }
-        }
-        85 = {
-            add_province_triggered_modifier = koeln_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = koeln_trade }
-        }
-        167 = {
-            add_province_triggered_modifier = rouen_trade_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = rouen_trade }
-        }
-        183 = {
-            add_province_triggered_modifier = champagne_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = champagne }
-        }
-        1269 = {
-            add_province_triggered_modifier = english_channel_node_domestic_merchant_modifier
-            domestic_merchant_effect = { node = english_channel }
-        }
-    }
-}
-
-##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
-on_colony_established = {
-    add_colonysize = 1000
-    add_province_triggered_modifier = pa_new_colony
-    set_province_flag = new_colony_established
-}
-
-# province
-# root = location, from = country that abandons colony
-# Fired right before the colony is abandoned.
-on_abandon_colony = {
-    reset_to_pre_colonial_culture_religion = yes
-    province_event = { 
-        id = colony_reset_culture_vars.100
-        days = 1
-    }
-    clr_province_flag = new_colony_established
-}
-
-#scope = new country, FROM = parent country
-on_colonial_nation_established = {
-        #   Fix to colonial nations adopting native culture
-    if = {
-        limit = {
-            NOT = {
-                culture_group = FROM
-            }
-        }
-        change_primary_culture = FROM
-    }
-    if = {
-        limit = {
-            NOT = {
-                religion_group = FROM
-            }
-        }
-        change_religion = FROM
-    }
-    every_owned_province = {
-        limit = {
-            has_active_triggered_province_modifier = pa_new_colony
-        }
-        add_province_modifier = {
-            name = pa_new_colonial_nation_colony
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-        overlord = {
-            random_owned_province = {
-                limit = {
-                    NOT = { has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep }
-                }
-                add_province_modifier = {
-                    name = pa_new_colonial_nation_colony_overlord_upkeep
-                    #hidden = yes
-                    duration = 7300		#Currently 20 Years, may need to be lower
-                }
-            }
-        }
-    }
-    add_country_modifier = { 
-        name = pa_new_colonial_nation
-        duration = 7300 
-    }
-}
-#Fix to colonial nation bankruptcy when fed colonies
-on_province_owner_change = {
-    if = {
-        limit = {
-            owner = {
-                is_colonial_nation = yes
-            }
-            has_province_modifier = pa_new_colony_cooldown
-        }
-        owner = {
-            overlord = {
-                random_owned_province = {
-                    limit = {
-                        NOT = { has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep }
-                    }
-                    add_province_modifier = {
-                        name = pa_new_colonial_nation_colony_overlord_upkeep
-                        #hidden = yes
-                        duration = 7300		#Currently 20 Years, may need to be lower
-                    }
-                }
-            }
-        }
-        add_province_modifier = {
-            name = pa_new_colonial_nation_colony
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    
-}
-
-on_conquest = {
-	if = {
-        limit = {
-            is_valid_for_conquest_colony = yes
-            owner = {   #Natives Don't need to colonize their conquests
-                NOT = {
-                    OR = {
-                        technology_group = north_american
-                        technology_group = south_american
+			OR = {      # Only convert colony in New World & Oceania
+				continent = north_america
+				continent = south_america
+				continent = oceania
+			}
+			owner = { # Natives to the continents won't replace other natives except through convential means
+				NOT = {
+					OR = {
+						technology_group = north_american
+						technology_group = south_american
+						technology_group = mesoamerican
+						technology_group = andean
+						technology_group = aboriginal_tech
+						technology_group = polynesian_tech
 						technology_group = high_american
-                    }
-                }
-            }
-            NOT = {
-                has_province_modifier = pa_new_colony_cooldown 
-            }
-        }
-        add_province_modifier = {
-            name = pa_new_colony_cooldown
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-        add_province_triggered_modifier = pa_new_colony
-        set_province_flag = new_colony_established
-        add_core = ROOT
-        add_nationalism = -20   #Nerf to sepratism, colony already represented
-        #Kicking out all the natives makes the infrastructure collapse
-        set_base_tax = 1 
-        set_base_production = 1
-        set_base_manpower = 1
-        remove_building = college
-        remove_building = marketplace
-        remove_building = workshop
-        remove_building = temple
-        remove_building = barracks
-        remove_building = shipyard
-        remove_building = fort_15th
-        remove_building = coastal_defence
-        remove_building = courthouse
-        remove_building = dock
-        remove_building = regimental_camp
-        remove_building = fort_16th
-        remove_building = naval_battery
-        remove_building = cathedral
-        remove_building = university
-        remove_building = trade_depot
-        remove_building = grand_shipyard
-        remove_building = training_fields
-        remove_building = fort_17th
-        remove_building = stock_exchange
-        remove_building = counting_house
-        remove_building = town_hall
-        remove_building = drydock
-        remove_building = conscription_center
-        remove_building = fort_18th
-        remove_building = wharf
-        remove_building = weapons
-        remove_building = textile
-        remove_building = plantations
-        remove_building = tradecompany
-        remove_building = farm_estate
-        remove_building = mills
-        remove_building = furnace
-        remove_building = ramparts
-        remove_building = soldier_households
-        remove_building = impressment_offices
-        remove_building = state_house
-        remove_building = road_network
-        remove_building = mb_canal
-        remove_building = grain_depot
-        remove_building = mint
-        remove_building = tax_assessor
-        remove_building = armory
-        remove_building = arsenal
-        remove_building = naval_arsenal
-        remove_building = naval_base
-        remove_building = constable
-        remove_building = treasury_office
-        remove_building = post_office
-        remove_building = customs_house
-        remove_building = march_building
-        remove_building = glorious_monument
-        remove_building = spy_agency
-    }
-    if = {
-        limit = {
-            FROM = {
-                is_colonial_nation = yes
-            }
-            has_province_modifier = pa_new_colonial_nation_colony
-        }
-        FROM = {
-            overlord = {
-				random_owned_province = {
-					limit = {
-						has_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
 					}
-					remove_province_modifier = pa_new_colonial_nation_colony_overlord_upkeep
 				}
 			}
-        }
-    }
-    if = {
-        limit = {
-            owner = {
-                has_active_policy = colonial_expansions
-                
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_1
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    if = {
-        limit = {
-            owner = {
-                full_idea_group = expansion_ideas
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_2
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    if = {
-        limit = {
-            owner = {
-                has_estate_privilege = estate_nobles_expedition_rights
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_3
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-
-    if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                has_estate_privilege = estate_burghers_new_world_charter 
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_burgers_privilege
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-
-    if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                primitives = yes 
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_native
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-
-    if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 35
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_4
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    else_if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 30
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_3
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    else_if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 25
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_2
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    else_if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 15
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_1
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-}
-
-on_colony_finished = { #ROOT - Province
-	#on_colony_finished_effect = yes
-    reset_to_pre_colonial_culture_religion = yes
-    add_permanent_province_modifier = {
-        name = pa_new_colony_cooldown
-        duration = 7300		#Currently 20 Years, may need to be lower
-    }
-    if = {
-        limit = {
-            owner = {
-                has_active_policy = colonial_expansions
-                
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_1
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    if = {
-        limit = {
-            owner = {
-                full_idea_group = expansion_ideas
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_2
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    if = {
-        limit = {
-            owner = {
-                has_estate_privilege = estate_nobles_expedition_rights
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_reduced_cost_3
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-
-    if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                has_estate_privilege = estate_burghers_new_world_charter 
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_burgers_privilege
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-
-    if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                primitives = yes 
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_native
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-
-    if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 35
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_4
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    else_if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 30
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_3
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    else_if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 25
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_2
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    else_if = {     #anti limitless expansion modifiers
-        limit = {
-            owner = {
-                calc_true_if = {
-                    all_owned_province = {
-                        has_province_modifier = pa_new_colony_cooldown 
-                    }
-                    amount = 15
-                }
-            }
-        }
-        add_permanent_province_modifier = {
-            name = pa_new_colony_increased_cost_1
-            duration = 7300		#Currently 20 Years, may need to be lower
-        }
-    }
-    set_province_flag = new_colony_established
-}
-
-# province, general conversion through effects
-on_province_culture_changed = {
-    if = {
-        limit = {
-    		is_city = no
-        }
-		change_culture = variable:pre_colonial_culture_var
-    }
-}
-
-on_province_religion_changed = {
-    if = {
-        limit = {
-    		is_city = no
-        }
-		change_religion = variable:pre_colonial_religion_var
-    }
+		}
+		#Hugeass switch case incoming
+		if = {			#Caribbeans
+			limit = {
+				region = carribeans_region
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = anglo_caribbean
+				change_original_culture = anglo_caribbean
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = antillean
+				change_original_culture = antillean
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = caribisch
+				change_original_culture = caribisch
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						primary_culture = portugese
+					}
+				}
+				change_culture = carregadores
+				change_original_culture = carregadores
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+						NOT = { primary_culture = brazilian }
+						NOT = { primary_culture = alemarese }
+						NOT = { primary_culture = mestico }
+						NOT = { primary_culture = carregadores }
+					}
+				}
+				change_culture = caribeno
+				change_original_culture = caribeno
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = karibisk
+				change_original_culture = karibisk
+			}
+		}
+		else_if = {			#Central America
+			limit = {
+				region = central_america_region
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = belizean
+				change_original_culture = belizean
+			}
+			else_if = { #Castillian
+				limit = {
+					owner = {
+						culture_group = iberian
+						NOT = { primary_culture = brazilian }
+						NOT = { primary_culture = alemarese }
+						NOT = { primary_culture = mestico }
+						NOT = { primary_culture = carregadores }
+					}
+				}
+				change_culture = centrado
+				change_original_culture = centrado
+			}
+		}
+		else_if = {			#Canada
+			limit = {
+				region = canada_region
+			}
+			if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = quebecois
+				change_original_culture = quebecois
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = vinlandic
+				change_original_culture = vinlandic
+			}
+		}	#Break Here, this is kinda hackey but I want this to be well organized
+		if = {	#If the culture has already been converted, don't convert again
+			limit = {
+				OR = {
+					culture_group = british
+					culture_group = french
+					culture_group = iberian
+					culture_group = germanic
+					culture_group = scandinavian
+				}
+			}
+			#Pass
+		}
+		else_if = {			#North America
+			limit = {
+				continent = north_america
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = american
+				change_original_culture = american
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = louisianans
+				change_original_culture = louisianans
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = amerikaans
+				change_original_culture = amerikaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						primary_culture = portugese
+					}
+				}
+				change_culture = brazilian
+				change_original_culture = brazilian
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+						NOT = { primary_culture = brazilian }
+						NOT = { primary_culture = alemarese }
+						NOT = { primary_culture = mestico }
+						NOT = { primary_culture = carregadores }
+					}
+				}
+				change_culture = norteno
+				change_original_culture = norteno
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = nyasvenish
+				change_original_culture = nyasvenish
+			}
+			else = {	#None of previous cultures
+				change_culture = owner
+				change_original_culture = owner
+			}
+		}
+		else_if = {		#South America
+			limit = {
+				continent = south_america
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = columbian
+				change_original_culture = columbian
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = antartique
+				change_original_culture = antartique
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = braziliaans
+				change_original_culture = braziliaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						primary_culture = portugese
+					}
+				}
+				change_culture = brazilian
+				change_original_culture = brazilian
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+						NOT = { primary_culture = brazilian }
+						NOT = { primary_culture = alemarese }
+						NOT = { primary_culture = mestico }
+						NOT = { primary_culture = carregadores }
+					}
+				}
+				change_culture = platinean
+				change_original_culture = platinean
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = antarktish
+				change_original_culture = antarktish
+			}
+			else = {	#None of previous
+				change_culture = owner
+				change_original_culture = owner
+			}
+		}
+		else = {		#Neither
+			change_culture = owner
+			change_original_culture = owner
+		}
+		change_religion = owner		#Always Change religion
+	}
 }
 
 on_buy_religious_reform = {
