@@ -23,26 +23,9 @@ can_colonize_province = {
 	condition = {
         potential = {
             FROM = {
-                OR = {
-                    ai = yes
-                    NOT = { dip_power = 50 }
-                }
+                ai = yes
             }
             OR = {
-                FROM = { #Must be economically able to colonize
-                    NOT = { dip_power = 50 }
-                }
-                FROM = {
-                    ai = yes
-                    OR = {
-                        governing_capacity_percentage = 0.8
-                        num_of_owned_provinces_with = {
-                            value = 5
-                            has_active_triggered_province_modifier = pa_new_colony
-                        }
-                    }
-
-                }
                 #####    Portugal Banned with cas or SPA
                 AND = {
                     FROM = { 
