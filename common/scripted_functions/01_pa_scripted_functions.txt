@@ -26,6 +26,39 @@ can_colonize_province = {
                 ai = yes
             }
             OR = {
+                FROM = {
+                    AND = { #Currently only Netherlands should colonize
+                        culture_group = germanic
+                        NOT = { tag = NED }
+                    }
+
+                }
+                FROM = {
+                    AND = { #No Colonial Content for Italians yet, so AI shouldn't colonize
+                        culture_group = latin
+                    }
+                }
+                FROM = {
+                    AND = { #Form France if you want to colonize, Brittany will get content Later
+                        culture_group = french
+                        NOT = { tag = FRA }
+                    }
+                }
+                FROM = {
+                    AND = { #Only independent Scotland should colonize
+                        tag = SCO
+                        is_subject = yes 
+                    }
+                }
+                FROM = {
+                    AND = { #Only Non-Subject Ireland should Colonize
+                        culture_group = gaelic
+                        OR = {
+                            NOT = { tag = IRE }
+                            is_subject = yes
+                        }
+                    }
+                }
                 #####    Portugal Banned with cas or SPA
                 AND = {
                     FROM = { 
