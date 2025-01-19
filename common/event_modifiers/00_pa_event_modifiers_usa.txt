@@ -49,33 +49,6 @@ us_mint = {
 
 ### Province ###
 
-## Colonialization Rework
-
-pa_new_colony_cooldown = {
-	#Main Cost for colonizing 
-	governing_capacity = -10
-	governing_capacity_modifier = -0.01
-
-	#can build without prior infrastructure
-	allowed_num_of_buildings = 2
-
-	#Still a drain on national resources
-	local_tax_modifier = -1.0 
-	trade_goods_size = -0.2
-	trade_goods_size_modifier = -1.0
-	local_production_efficiency = -1.0
-	local_autonomy = 0.1 
-	min_local_autonomy = 100
-	local_build_time = 0.5
-
-	#Natives don't like you
-	local_unrest = 2 
-
-	#Don't have infrastructure to convert population
-	local_missionary_strength = -1 
-	local_religious_unity_contribution = -1
-}
-
 ## Missions
 usa_southern_cash_crops = {
 	local_production_efficiency = 0.05 
@@ -83,7 +56,7 @@ usa_southern_cash_crops = {
 }
 
 usa_western_settlers = {
-	local_development_cost_modifier = -0.10 
+	local_colonial_growth = 15
 }
 
 usa_interior_settlement = {
