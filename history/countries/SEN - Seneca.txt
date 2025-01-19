@@ -7,6 +7,7 @@ primary_culture = iroquois
 religion = totemism
 technology_group = north_american
 capital = 958
+historical_friend = ONO
 
 1444.11.11 = {
 	monarch = {
