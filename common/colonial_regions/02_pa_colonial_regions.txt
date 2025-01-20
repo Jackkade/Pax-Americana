@@ -126,7 +126,7 @@ colonial_central_america = {
 
 # New England
 colonial_massachusetts = {
-	color = { 13  44  155 }
+	color = { 13  155  44 }
 
 	# Random New World
 	tax_income = 0
