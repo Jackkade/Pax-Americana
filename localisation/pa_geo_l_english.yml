@@ -127,6 +127,28 @@
  COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_CentralAmerica:0 "[Root.GetAdjective] Central America"
  COLONIAL_CENTRAL_AMERICA_Belize:0 "Belize"
  COLONIAL_CENTRAL_AMERICA_Panama:0 "Panama"
+ colonial_massachusetts:0 "Colonial Massachusetts"
+ COLONIAL_MASSACHUSETTS_NewEngland:0 "New England"
+ COLONIAL_MASSACHUSETTS_NewEngland_ADJ:0 "New English"
+ COLONIAL_MASSACHUSETTS_Root_Culture_GetGroupName_Massachusetts:0 "[Root.GetAdjective] Massachusetts"
+ COLONIAL_MASSACHUSETTS_Root_Culture_GetGroupName_Massachusetts_ADJ:0 "[Root.GetAdjective] Massachuset"
+ COLONIAL_MASSACHUSETTS_Root_Culture_GetGroupName_Connecticut:0 "[Root.GetAdjective] Connecticut"
+ COLONIAL_MASSACHUSETTS_Root_Culture_GetGroupName_Connecticut_ADJ:0 "[Root.GetAdjective] Connecticutian"
+ COLONIAL_MASSACHUSETTS_Vermont:0 "Vermont"
+ COLONIAL_MASSACHUSETTS_Vermont_ADJ:0 "Vermonter"
+ COLONIAL_MASSACHUSETTS_Maine:0 "Maine"
+ COLONIAL_MASSACHUSETTS_Maine_ADJ:0 "Mainer"
+ colonial_carolina:0 "Colonial Carolinas"
+ COLONIAL_CAROLINA_Root_Culture_GetGroupName_Piedmont:0 "[Root.GetAdjective] Piedmont"
+ COLONIAL_CAROLINA_Root_Culture_GetGroupName_Piedmont_ADJ:0 "[Root.GetAdjective] Piedmontese"
+ COLONIAL_CAROLINA_Root_Culture_GetGroupName_Georgia:0 "[Root.GetAdjective] Georgia"
+ COLONIAL_CAROLINA_Root_Culture_GetGroupName_Georgia_ADJ:0 "[Root.GetAdjective] Georgian"
+ COLONIAL_CAROLINA_Tennessee:0 "Tennessee"
+ COLONIAL_CAROLINA_Tennessee_ADJ:0 "Tennessean"
+ COLONIAL_CAROLINA_Carolina:0 "Carolina"
+ COLONIAL_CAROLINA_Carolina_ADJ:0 "Carolinian"
+
+
 
  #Areas
  estrie_area:0 "Estrie"

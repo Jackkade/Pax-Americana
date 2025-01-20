@@ -123,3 +123,133 @@ colonial_central_america = {
 		name = "COLONIAL_CENTRAL_AMERICA_Panama"
 	}
 }
+
+# New England
+colonial_massachusetts = {
+	color = { 13  44  155 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 4
+	native_ferocity = 2
+	native_hostileness = 8
+	
+	trade_goods = {
+		fur = 2
+		grain = 8
+		salt = 5
+		wool = 7
+		fish = 5
+		sugar = 8
+		gold = 5
+		naval_supplies = 1
+	}
+	
+	culture = {
+		salish = 10
+		interior_salish = 10
+		plateau_penutian = 10
+		chinook = 4
+		dakelh = 4
+		wakashan = 2
+		coast_penutian = 2
+		ktunaxa = 2
+		shoshone = 2
+		nuxalk = 1
+		umpqua = 1
+		tlingit = 1
+		haida = 1
+		quileute = 1
+		tsimshianic = 1
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		966 967 968 969 970 971 2010 2013 2560 2561 2562 2564 2565 4873 4874 7302 7303 7304 7305 7306 7307 7308 7316 7317
+	}
+
+	
+	names = {
+		trigger = { primary_culture = english }
+		name = "COLONIAL_MASSACHUSETTS_NewEngland"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_MASSACHUSETTS_Root_Culture_GetGroupName_Massachusetts"
+	}
+	names = {
+		name = "COLONIAL_MASSACHUSETTS_Root_Culture_GetGroupName_Connecticut"
+	}
+	names = {
+		name = "COLONIAL_MASSACHUSETTS_Vermont"
+	}
+	names = {
+		name = "COLONIAL_MASSACHUSETTS_Maine"
+	}
+}
+
+# Carolina/Georgia
+colonial_carolina = {
+	color = { 113  33  155 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 4
+	native_ferocity = 2
+	native_hostileness = 8
+	
+	trade_goods = {
+		fur = 2
+		grain = 8
+		salt = 5
+		wool = 7
+		fish = 5
+		sugar = 8
+		gold = 5
+		naval_supplies = 1
+	}
+	
+	culture = {
+		salish = 10
+		interior_salish = 10
+		plateau_penutian = 10
+		chinook = 4
+		dakelh = 4
+		wakashan = 2
+		coast_penutian = 2
+		ktunaxa = 2
+		shoshone = 2
+		nuxalk = 1
+		umpqua = 1
+		tlingit = 1
+		haida = 1
+		quileute = 1
+		tsimshianic = 1
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		918 919 925 929 930 931 932 933 934 935 936 937 938 939 2527 2528 2531 2532 2537 2538 2539 2540 2541 2542 2543 2544 2545 2546 2547 4878 4879 4880 4881 4882 4883 4913 7347 7348 7349 7350 7351 7352 7353 7354 7355 7356 7357 7358 7359 7360 7361 7362 7367 7368 7369 7370 7371 7373 7375 7377 7379 7382 7383 7384 7385 7386 7470
+	}
+
+	# Generic
+	names = {
+		name = "COLONIAL_CAROLINA_Root_Culture_GetGroupName_Piedmont"
+	}
+	names = {
+		name = "COLONIAL_CAROLINA_Root_Culture_GetGroupName_Georgia"
+	}
+	names = {
+		name = "COLONIAL_CAROLINA_Tennessee"
+	}
+	names = {
+		name = "COLONIAL_CAROLINA_Carolina"
+	}
+}
+
