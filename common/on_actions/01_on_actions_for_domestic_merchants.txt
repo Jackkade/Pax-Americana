@@ -250,7 +250,7 @@ on_startup = {
 			add_province_triggered_modifier = carribean_trade_node_domestic_merchant_modifier
 			domestic_merchant_effect = { node = carribean_trade }
 		}
-		1500 = {
+		950 = {
 			add_province_triggered_modifier = chesapeake_bay_node_domestic_merchant_modifier
 			domestic_merchant_effect = { node = chesapeake_bay }
 		}

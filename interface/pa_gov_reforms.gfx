@@ -1,10 +1,10 @@
 spriteTypes = {
 	spriteType = {
-		name = "alexander_hamilton"
+		name = "government_reform_alexander_hamilton"
 		texturefile = "gfx//interface//government_reform_icons//alexander_hamilton.dds"
 	}
 	spriteType = {
-		name = "articles_confederation"
+		name = "government_reform_articles_confederation"
 		texturefile = "gfx//interface//government_reform_icons//articles_confederation.dds"
 	}
 }
