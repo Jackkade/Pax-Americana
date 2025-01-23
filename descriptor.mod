@@ -14,6 +14,7 @@ tags={
 name="Pax Americana: Beyond Typus Addon"
 dependencies={
 	"Beyond Typus"
+	"BeyondTypusInteral"
 }
 supported_version="v1.37.*"
 remote_file_id="3326641280"
