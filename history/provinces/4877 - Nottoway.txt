@@ -1,8 +1,4 @@
 # No previous file for Nottoway
-owner = TSC
-controller = TSC
-add_core = TSC
-is_city = yes
 culture = tutelo
 religion = totemism
 capital = "Nottoway"
