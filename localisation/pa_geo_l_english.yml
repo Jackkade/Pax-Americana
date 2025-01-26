@@ -113,6 +113,9 @@
 
  # Province Groups
  culture_anglo_afro_american_region:0 ""
+ #Special Case, is localized
+ natural_trade_center_provinces:0 "Potential Trade Center"
+
 
  # Colonial Regions
  colonial_rio_grande:0 "Colonial Rio Grande"

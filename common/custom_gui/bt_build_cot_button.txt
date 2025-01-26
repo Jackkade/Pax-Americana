@@ -1,0 +1,66 @@
+custom_button = {
+	name = build_cot_button #Must match a scripted guiButtonType in a .gui file
+	potential = {
+		NOT = {
+			province_has_center_of_trade_of_level = 1
+		}
+		area_for_scope_province = {
+			type = all
+			OR = {
+				province_group = natural_trade_center_provinces
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+		}
+		OR = {
+			continent = north_america 
+			continent = south_america
+			continent = oceania
+		}
+	}
+	trigger = {
+		OR = {
+			owned_by = FROM
+			owner = {
+				is_subject_of = FROM
+			}
+		}
+		development = 10
+		FROM = {
+			treasury = 100
+		}
+		# if = { #Cooldown mechanic
+			# limit = {
+				# NOT = {
+					# had_country_flag = {
+						# flag = extra_colonist_button_cd
+						# days = 30
+					# }
+				# }
+				# has_country_flag = extra_colonist_button_cd
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = extra_envoy_button_cd_tooltip
+				# always = no
+			# }
+		# }
+	} 
+	effect = {
+		center_of_trade = 1
+		FROM = {
+			add_treasury = -100 
+		}
+	} #Effect
+	#tooltip = build_cot_button_loc #Can use customizable localisation
+	frame = { #Not Coastal
+		number = 2
+		trigger = { 
+			NOT = { has_port = yes  }
+		}
+	}
+	frame = { #Coastal
+		number = 1 
+		trigger = {
+			has_port = yes 
+		}
+	}
+}
