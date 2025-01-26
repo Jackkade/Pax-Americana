@@ -14,13 +14,3 @@ native_ferocity = 1
 native_hostileness = 3 
 
 discovered_by = north_american
-
-
-#Province History
-1444.1.1 = { tribal_owner = NEH }
-1444.11.15 = { #BeyondTypus batch edit shortcut second performance start begins
-	tribal_owner = XXX
-} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
-1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-	tribal_owner = NEH
-} #Return to proper mod added owners and cuts vanilla core, typically.
