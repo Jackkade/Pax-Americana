@@ -1,11 +1,10 @@
-#1008 - Winnipeg
-
-culture = bungi
+# 1008 - Winnipeg
+culture = cree
 religion = totemism
 capital = "Manitoba"
 trade_goods = unknown
 hre = no
-base_tax = 1 
+base_tax = 1
 base_production = 1
 base_manpower = 1
 native_size = 5
