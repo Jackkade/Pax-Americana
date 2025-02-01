@@ -171,9 +171,9 @@ can_colonize_province = {
                         region = mexico_region
                         continent = south_america
                         continent = africa
-                        NOT = { region = south_africa_region }
-                        NOT = { area = south_atlantic_islands_area }
                     }
+                    NOT = { region = south_africa_region }
+                    NOT = { area = south_atlantic_islands_area }
                 }
                 #####
 
