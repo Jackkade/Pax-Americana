@@ -155,6 +155,16 @@ on_colony_finished = { #ROOT - Province
 				change_original_culture = centrado
 				set_province_flag = converted_to_colonial_culture
 			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = nasetlandic
+				change_original_culture = nasetlandic
+				set_province_flag = converted_to_colonial_culture
+			}
 		}
 		else_if = {			#Canada
 			limit = {
