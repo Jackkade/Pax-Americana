@@ -78,6 +78,7 @@ on_colony_finished = { #ROOT - Province
 						NOT = { primary_culture = alemarese }
 						NOT = { primary_culture = mestico }
 						NOT = { primary_culture = carregadores }
+						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = caribeno
@@ -109,6 +110,36 @@ on_colony_finished = { #ROOT - Province
 				change_original_culture = belizean
 				set_province_flag = converted_to_colonial_culture
 			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = panameen
+				change_original_culture = panameen
+				set_province_flag = converted_to_colonial_culture
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = istmusisch
+				change_original_culture = istmusisch
+				set_province_flag = converted_to_colonial_culture
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						primary_culture = portugese
+					}
+				}
+				change_culture = centraliano
+				change_original_culture = centraliano
+				set_province_flag = converted_to_colonial_culture
+			}
 			else_if = { #Castillian
 				limit = {
 					owner = {
@@ -117,6 +148,7 @@ on_colony_finished = { #ROOT - Province
 						NOT = { primary_culture = alemarese }
 						NOT = { primary_culture = mestico }
 						NOT = { primary_culture = carregadores }
+						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = centrado
@@ -204,6 +236,7 @@ on_colony_finished = { #ROOT - Province
 						NOT = { primary_culture = alemarese }
 						NOT = { primary_culture = mestico }
 						NOT = { primary_culture = carregadores }
+						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = norteno
@@ -271,6 +304,7 @@ on_colony_finished = { #ROOT - Province
 						NOT = { primary_culture = alemarese }
 						NOT = { primary_culture = mestico }
 						NOT = { primary_culture = carregadores }
+						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = platinean

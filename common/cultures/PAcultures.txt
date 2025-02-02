@@ -677,6 +677,46 @@ french	= {
 			Raymonde Sarrazine Sol�ne Sophie St�phanie Sybille Tiburge Valence Yolande
 		}
 	}
+	panameen = {	#Central American French
+		primary = XXX
+		dynasty_names = { #French Names
+		"de Valois" "de Bourbon" "de la Tour" "d'Anjou"
+		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
+		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
+		"de Castellane" "d'Auvergne" "de Montb�liard" "de Metz"
+		#CKII Frankish
+		"de Laval" "de la Tour du Pin" "de La Tr�moille" "de Cr�quy" "de Broglie"
+		"de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier"
+		"de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy"
+		"de Barrau" "de La Fayette" "d'Armagnac" "de Roug�" "du Quenoy" "de Ficquelmont"
+		"de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie"
+		"de Vaudemont" "de Nicola�"
+		}
+		male_names = {
+			�douard �rrard �tienne Ad�mar Adrien Aimery Alain
+			Aldebert Ald�ric Alphonse Amaury Am�d�e Ancel Andr� Antoine Archambaud Arnaud
+			Arnault Arnoul Aubry Aymar Barth�l�mi Baudouin Beno�t B�renger Bernard Bertrand Bohemond
+			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Fran�ois
+			Fr�d�ric Gaucher Gaucelin Gauthier Geoffroi G�raud Gilbert Gilles Godefroi
+			Guichard Guiges Guilhem Guillaume Guy H�lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
+			Jaufr� Jaspert Jean Jourdain Julien L�on L�onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
+			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thi�baut
+			Thierry Thomas Valeran Yves
+		}
+		female_names = {
+			�l�onore �lodie �tiennette Ad�le Adalmode Adelaide Adelinde
+			Agn�s Al�arde Alice Ali�nor Agathe
+			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
+			B�atrice B�atrix Belleassez Beno�te B�reng�re
+			Berthe Blanche Bonne Bourgogne Bourguigne C�cile Cath�rine
+			Charlotte Constance Denise Douce Echive Eglantine
+			Elisabeth Emma Ermengarde Ermessinde Esclarmonde
+			Euphrosine Eustachie Eve Gerberge Gis�le Guillaumette H�loise Helvis Hodierne Ide Ild�garde
+			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
+			Mascarose Mathilde M�lisande M�lisende M�lusine P�ronelle Pernelle Perinne Pernette Plaisance
+			Raymonde Sarrazine Sol�ne Sophie St�phanie Sybille Tiburge Valence Yolande
+		}
+	}
 }
 
 iberian = { #Castillian
@@ -775,7 +815,7 @@ iberian = { #Castillian
 	alemarese = {	#Portuguese NA
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		primary = POR
+		primary = XXX
 		dynasty_names = {
 			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
 			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
@@ -804,7 +844,7 @@ iberian = { #Castillian
 	mestico = {	#Portuguese Mestizo
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		primary = POR
+		primary = XXX
 		dynasty_names = {
 			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
 			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
@@ -833,7 +873,36 @@ iberian = { #Castillian
 	carregadores = {	#Portuguese SA
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		primary = POR
+		primary = XXX
+		dynasty_names = {
+			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
+			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
+			#CK2
+			"da C�mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+		}
+		male_names = {
+			Afonso Aires Aleixo Alexandre Alberto �lvaro Andr� Ant�nio Bartolomeu Barnab� Benjamim Bermudo 
+			Bernardo Caetano Carlos Crist�v�o Daniel Dami�o Dinis Diogo Duarte Eduardo Egas Est�v�o Fern�o 
+			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gon�alo Guilherme Gustavo 
+			Guterre Henrique Herm�gio In�cio Jaime Jo�o Joaquim Jorge Jos� "Jos� Maria" Lopo Louren�o Lucas 
+			Lu�s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
+			Ot�vio Pascoal Paulo Paio Pedro Pero P�ncio Rafael Rodrigo Rog�rio Rui Raimundo Sancho Sebasti�o 
+			Sim�o Soeiro Tiago Teodoro Teod�sio Teot�nio Tobias Tom�s Uriel Vasco Vicente V�tor Xavier 
+		}
+		female_names = {
+			Aldara Aldon�a Ana "Ana Maria" Beatriz Bereng�ria Branca Cristina Cristiana Constan�a D�rdia 
+			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar In�s J�lia Joana 
+			Leonor Let�cia Madalena Mafalda Matilda Margarida Maria "Maria da Concei��o" "Maria das Dores" 
+			"Maria da Assun��o" "Maria da Natividade" "Maria de F�tima" "Maria de Lurdes" "Maria do C�u" 
+			"Maria da Luz" "Maria da Gra�a" "Maria Jos�" "Maria Madalena" "Maria Teresa" "Maria Ant�nia" 
+			"Maria Carolina" "Maria Jo�o" "Maria Manuel" "Maria Lu�s" Mariana Marisa Marinha Mor Ouroana 
+			Sancha Teodora Teresa Urraca Vit�ria
+		}
+	}
+	centraliano = {	#Portuguese Central America
+		country = { } 
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = XXX
 		dynasty_names = {
 			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
 			"de Moura" "de N�poles" "de Menezes" "de Saldanha"
@@ -860,6 +929,7 @@ iberian = { #Castillian
 		}
 	}
 }
+
 germanic = { #These are assumed to be dutch currently
 	
 	amerikaans = {	#NA
@@ -872,6 +942,57 @@ germanic = { #These are assumed to be dutch currently
 		primary = XXX #Needs new tag
 	}
 	caribisch = {	#Caribbean
+		primary = XXX
+		male_names = { # Dutch Names
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
+			Gerulf
+			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
+			Gwijde Hendrik Henry Herman Herman Hubert
+			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
+			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Marquart Niclaes Nicholas
+			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Robert Robert Rodulf 
+			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
+			Waelram Walter Walter
+			Wicher Willem William Wolfard Hendrik Maurits
+			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
+			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
+			Roeland Rogier Thomas Vincent Zacharias
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+		}
+		dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van J�lich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+	}
+	istmusisch = {	#Central American
 		primary = XXX
 		male_names = { # Dutch Names
 			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
