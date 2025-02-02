@@ -33,7 +33,7 @@ country_event = {
 		change_price = {
 			trade_goods = pa_trade_good_obsidian
 			key = TRIANGLE_TRADE
-			value = -3.0
+			value = -0.3
 			duration = -1
 		}
 		2657 = {
