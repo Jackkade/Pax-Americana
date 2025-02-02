@@ -1,8 +1,8 @@
 religion = nahuatl
 culture = aztek
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 8
+base_production = 8
+base_manpower = 7
 owner = TYC
 controller = TYC
 add_core = TYC

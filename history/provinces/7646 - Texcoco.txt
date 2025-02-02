@@ -1,8 +1,8 @@
 religion = nahuatl
 culture = aztek
-base_tax = 5
-base_production = 4
-base_manpower = 4
+base_tax = 10
+base_production = 10
+base_manpower = 7
 owner = AZT
 controller = AZT
 add_core = AZT

@@ -1,7 +1,7 @@
 religion = nahuatl
 culture = totonac
-base_tax = 3
-base_production = 3
+base_tax = 4
+base_production = 4
 base_manpower = 3
 owner = CUE
 controller = CUE
