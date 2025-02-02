@@ -16,7 +16,7 @@ NSP_ideas = {
 	
 	NSP_nahua_integration = {
 		global_unrest = -2
-		promote_culture_cost = -0.15
+		promote_culture_cost = -0.25
 	}
 	NSP_new_reconquista = {
 		missionaries = 1
