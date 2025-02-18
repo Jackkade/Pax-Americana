@@ -169,6 +169,8 @@
  yucatan_jungle_area:0 "Central Yucatan"
  el_salvador_area:0 "El Salvador"
  lacandon_area:0 "Lacandon"
+ tlapanec_area:0 "Tlapanec"
+ mosquito_area:0 "Mosquito"
  
  #Provinces
  PROV7300:0 "Montaukett"
