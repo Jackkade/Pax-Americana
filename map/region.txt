@@ -1460,6 +1460,7 @@ central_america_region = { # 10 areas
 		honduras_area
 		nicaragua_area
 		costa_rica_area
+		mosquito_area
 		panama_area # Brian; moved from colombia_region
 	}
 	monsoon = {
@@ -1536,6 +1537,7 @@ colombia_region = { # 13 areas
 		colombian_amazonas_area
 		cordillera_occidental_area
 		coquivacoa_area
+		colombian_wastelands_area
 		#panama_area # Brian; moved to central_america_region
 	}
 	monsoon = {
