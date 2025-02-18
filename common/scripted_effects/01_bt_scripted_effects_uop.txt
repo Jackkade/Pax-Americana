@@ -36,11 +36,6 @@ add_UOP_modifier = {
 				area = circassia_area
 				area = dagestan_area
 				province_id = 2195 #Adyghe
-				#Southern Central America
-				area = nicaragua_area
-				area = costa_rica_area
-				area = panama_area
-				area = honduras_area
 			}
 			is_wasteland = no
 		}
