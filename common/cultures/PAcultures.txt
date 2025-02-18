@@ -2119,6 +2119,23 @@ otomanguean = {
 			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl
 		}
 	}
+	mangue = {
+		primary = XXX
+		male_names = {
+			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc
+			Tizoc Tizocic Tlacaelel Tlacaeleltzin Tlalli Tlaloc Tochtli Tototl Tzompantzin Tlilpotonqui
+			Topiltzin Totoquihuaztli
+			Ueman Yaotl Yayauhqui Yolotli Yolyamanitzin Xicohtencatl Xiuhpilli Xihuitl Xipil Xipilli Xochitl
+			Xochipepe Xochipilli Yaotl Zipactonal Zolin
+		}
+		female_names = {
+			Quiauhxochitl Sacnite Techichpotzin Tezozomoc Tziquetzalpoztectzin
+			Tezcatlan Tlacotl Tlahco Tlahcoehua Toltecatl Tonalnan Tlazozomizqui
+			Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin Zyanya
+			Acacitlu Citali Citlamina Etapali Ichtaca Icnoyotl Ilhuitl Macuilxochitl Mahuitzic Moyolehuani Moztla
+			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl
+		}
+	}
 	tlapanec = {
 		primary = TLA
 		male_names = {
@@ -2329,5 +2346,272 @@ maya = {
 		Muyil Nakum Nakbe Naranjo Nebaj Okop Oxcutzcab Oxkintok Palenque Pomon� Pusilha Quirigua Sayil Seibal Sisila Tonina
 		Tikal Tulum Tancah Tazumal Tecoh Topoxt� Uxmal Uaxactun Ucanal Uci Utatlan Wak� Xcalumkin Xcaret Xcorralche Xcucsuc
 		Xculoc Xlapak Xpuhil Xultun Xunantunich Yaklmai Yaxchilan Yaxha Yo'okop Zipacna Zaculeu
+	}
+}
+
+chibchan = {
+	graphical_culture = southamericagfx
+
+	muisca = {
+		primary = MCA
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	kuna = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	rama = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	guaimi = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	guatuso = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	bribri = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	paya = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	cara = {
+		primary = QTO
+		dynasty_names = {
+			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa
+			Curiatao Cusi  Guacra Guaritito Guaritopa Huachuri Huaman Huascar Huaypalcon Illaquita Inquill Llicllic Maila Maras
+			Marcavilca Mayta  Ninancoro Ozcoc Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca Quilaco Quingallumbo
+			Quintiraura Quisquis Quizo Rimac Ronpa Sahuaraura Sotaurco Tanqui Tucuycuyche Tupac-Amaru Yupanqui
+		}
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+	
+}
+miskito_g = {
+	miskito = {
+		primary = MIS
+		dynasty_names = {
+			Miskito Chibchan
+		}
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+	sumo = {
+		primary = MIS
+		dynasty_names = {
+			Miskito Chibchan
+		}
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+	matagalpa = {
+		primary = MIS
+		dynasty_names = {
+			Miskito Chibchan
+		}
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+}
+
+
+arawakan_g = {
+	graphical_culture = southamericagfx
+
+	arawak = { #Central Taino
+		male_names = {
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	west_taino = { #West Taino
+		male_names = {
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	east_taino = { #East Taino
+		male_names = {
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	ineri = { #(JP) Kalinago, aka Igneri
+		male_names = {
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	shebaya = { #(JP) I think this is meant to be Suppoya and Nepoya who were Arawaks. Going to merge this in with above for now
+		male_names = {
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	guajiro = { #	Lokono / Northern Mainland Arawak
+		primary = ARW
+		male_names = {
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	garifuna = { #	Black Mainland Arawak
+		primary = XXX
+		male_names = {
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	maipurean = {
+		male_names = {
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
 	}
 }

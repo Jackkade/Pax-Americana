@@ -699,21 +699,21 @@ scandinavian = { #Nordic
 		country = {  }
 		province = { local_has_carolean = yes }
 		male_names = {
-			Aðalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnþórr Arnviðr Ásbjörn Ásgeirr Ásketill Ásmundr Ásvaldr Auðr Baggi Bárðr Birgir Bjarni Bjartr Björn Brandr Bróðir # La Pléiade
+			Aðalsteinn Aghi Agmundr Agnarr Ýki Ýleifr Alfarr Alfvin Algautr Ari Arnfinnr Ýrni Arnórr Arnþórr Arnviðr Ýsbjörn Ýsgeirr Ýsketill Ýsmundr Ýsvaldr Auðr Baggi Bárðr Birgir Bjarni Bjartr Björn Brandr Bróðir # La Pléiade
 			Brynjarr Búi Dagfinnr Dagr Danr Egill Eileifr Einarr Eindriði Eiríkr Erlendr Erlingr Eysteinn Eyvindr Félagi Finnr Flæmingr Fólki Friðþjófr Fróði Gauti Gautstafr Geirr Górmr Guðbrandr Guðfriðr Guðini # La Pléiade
 			Guðleifr Guðmundr Gulbrandr Gunnarr Gunni Gunnvaldr Hákon Hálfdan Hallbjörn Halli Hallr Hallsteinn Hallþórr Hallvarðr Haraldr Hávarðr Helgi Hemingr Herleifr Hildingr Hjálmarr Hólmgeirr Hrafn Hreiðarr Hróaldr # La Pléiade
-			Hróarr Hróðgeirr Hróðólfr Hróðvaldr Hrólfr Hrörekr Hugleikr Ingi Ingimárr Ingólfr Ívarr Jarl Jósteinn Kálfr Kári Ketill Knútr Kóri Leifr Magni Mundi Njáll Oddbjörn Oddr Oddvarr Ölvir Ráðúlfr Ragnarr Ragnvaldr # La Pléiade
+			Hróarr Hróðgeirr Hróðólfr Hróðvaldr Hrólfr Hrörekr Hugleikr Ingi Ingimárr Ingólfr Ývarr Jarl Jósteinn Kálfr Kári Ketill Knútr Kóri Leifr Magni Mundi Njáll Oddbjörn Oddr Oddvarr Ölvir Ráðúlfr Ragnarr Ragnvaldr # La Pléiade
 			Randúlfr Rúni Sigfröðr Sigmundr Sigsteinn Sigurðr Sindri Snorri Stáli Steinarr Steingrímr Steinn Stígandr Stigr Sumarliði Sundri Suni Svantepolk Sveinn Sverrir Þórarinn Þórbjörn Þórfastr Þórfreðr Þórgeirr # La Pléiade
 			Þórgísl Þórgnýr Þórir Þórketill Þórleifr Þórleikr Þórmóðr Þórsteinn Þórvaldr Þróndr Tófi Tóki Tryggvi Úlfr Uni Valdimárr Végarðr Vetrliði Vígi Víkingr Vragi Yngvarr # La Pléiade
 		}
 		female_names = {
-			Alfhildr Álöf Arnbjörg Ása Ásdís Áshildr Áslaug Ásta Ástríðr Auðr Auðrhildr Bergljót Björg Borghildr Bóþildr Brynhildr Brynja Dagmár Dagný Dagrún Edda Eydís Fríða Grímhildr Guðlaug Guðleif Guðríðr Guðrún Gulla # La Pléiade
+			Alfhildr Ýlöf Arnbjörg Ýsa Ýsdís Ýshildr Ýslaug Ýsta Ýstríðr Auðr Auðrhildr Bergljót Björg Borghildr Bóþildr Brynhildr Brynja Dagmár Dagný Dagrún Edda Eydís Fríða Grímhildr Guðlaug Guðleif Guðríðr Guðrún Gulla # La Pléiade
 			Gunna Gunnbjörg Gunnhildr Gunnvör Gyða Hallþóra Helga Hildr Hjördís Hlíf Hrafnhildr Hreiðunn Iðunn Inga Ingibjörg Ingigerðr Ingríðr Ingunn Ingvildr Jórunnr Katla Ketilriðr Magnhildr Myrgjöl Ólaug Ragna Ragnbjörg # La Pléiade
 			Ragnfríðr Ragnheiðr Ragnhildr Rúna Saldís Signý Sigríðr Sigrún Sólveig Steinunn Svanhildr Þone Þóra Þórbjörg Þórdís Þórfríðr Þórhildr Þórný Þórunn Þórveig Þórví Þrud Þrúðr Þýri Tófa Unnr Valdís Vígdís # La Pléiade
 			Yngvildr
 		}
 		dynasty_names = {
-			Áslaugsson Ástriðarson Ásvaldsson Eindriðesson Eiríksson Gormsson Hákonarson Haraldsson Loðbrok Munsö Ragnarsson Sigurðarson Skjöldung Snorrason Þórgilsson Þórsteinsson Þórvaldsson Tryggvason Völsung # La Pléiade
+			Ýslaugsson Ýstriðarson Ýsvaldsson Eindriðesson Eiríksson Gormsson Hákonarson Haraldsson Loðbrok Munsö Ragnarsson Sigurðarson Skjöldung Snorrason Þórgilsson Þórsteinsson Þórvaldsson Tryggvason Völsung # La Pléiade
 			Wægmunding Ylfing Yngling # La Pléiade
 		}
 	}
@@ -722,9 +722,9 @@ scandinavian = { #Nordic
 		graphical_culture = westerngfx
 		primary = ICE
 		male_names = {
-			Agnar Ásgeir Björn Eidur Einar Emil Geir Gudmund Gunnar Hannes
+			Agnar Ýsgeir Björn Eidur Einar Emil Geir Gudmund Gunnar Hannes
 			Hermann Jón Kristján Magnús Ólafur Pétur Sigurdur Stefán Sveinn Tryggvi
-			Hrafn Ormur Ketill Eiríkur Bótólfur Grímur Holti Ívar Árni Andrés Þorsteinn
+			Hrafn Ormur Ketill Eiríkur Bótólfur Grímur Holti Ývar Ýrni Andrés Þorsteinn
 			Smiður Þorgautur Vigfús Arnfinnur Helgi Hannes Loftur Torfi Hinrik Diðrik
 			Þorleifur Søren Týli Jóhann Ögmundur Poul Benedikt Enevold Holger
 		}
@@ -739,10 +739,10 @@ scandinavian = { #Nordic
 			Thyra
 		}
 		dynasty_names = {
-			Arnórsson Ásgeirsson Benediktsson Bjarnasen Björnsson Eggers Eldjárn Hafstein Hansen
+			Arnórsson Ýsgeirsson Benediktsson Bjarnasen Björnsson Eggers Eldjárn Hafstein Hansen
 			Hermannsson Johánesson Jónsson Magnússon Stefánsson Steinthosson Thórdarson Thórhallson Thorláksson Thurs
 			Oddsson Ormsson Þórisson Þorláksson Sveinbjarnarson Andrésson Þorsteinsson Þorgrímsson Bjarnarson
-			Þórðarson Gíslason Eyjólfsson Pétursson Snorrason Sveinsson Guðmundsson Ívarsson Styrsson Ólafsson
+			Þórðarson Gíslason Eyjólfsson Pétursson Snorrason Sveinsson Guðmundsson Ývarsson Styrsson Ólafsson
 		}
 	}
 	#BtPLegacy Culture
@@ -1072,13 +1072,13 @@ gaelic = {
 			"Corcu Loígde"
 		}
 		male_names = {
-			Turlough Donal Muireadhach Conchobhar Feidlimidh Cathaoir Muchadh Áed Fonnchadh Brian Criomhthann Art Cathal
+			Turlough Donal Muireadhach Conchobhar Feidlimidh Cathaoir Muchadh Ýed Fonnchadh Brian Criomhthann Art Cathal
 			Gearóid Muiris Tadhg Seán Niall Einrí Conn Eoghan Aonghus Comhghall Maeleachlain Diarmaid Flann Aerdghal
 			Bearach Caoímhin Donnabhain Eíhmhín Fearghal Iarfhlaith Lorccán Mathúin Naomhán Oisín Pádraig Ríagáin Somhairle
-			Abbán Abél Abel Adomnán Áed Áedgen Áeducán Áedán Áengus
-			Affiath Ailbe Ailbrend Ailbrenn Ailchú Aildobur Ailgel Áilgenán Ailgus Ailill Ailpín
-			Ainbchellach Áindle Ainftech Enfidaig Ainmere Airechtach Airfhindán Airfhindán Airfhinnán
-			Airleid Airmedach Amalgaid Amlaíb Anfudán Anlón Anmchaid Ánrothán Ardgal Ardgar Art
+			Abbán Abél Abel Adomnán Ýed Ýedgen Ýeducán Ýedán Ýengus
+			Affiath Ailbe Ailbrend Ailbrenn Ailchú Aildobur Ailgel Ýilgenán Ailgus Ailill Ailpín
+			Ainbchellach Ýindle Ainftech Enfidaig Ainmere Airechtach Airfhindán Airfhindán Airfhinnán
+			Airleid Airmedach Amalgaid Amlaíb Anfudán Anlón Anmchaid Ýnrothán Ardgal Ardgar Art
 			Artbran Artgal Artgus Artucán Artúr Assiucc Augaire Augustín Aurthuile
 			Báethgalach Báethíne Báetán Béoáed Barrfhind Beccán Berrach Bhátair Blathmacc Bran
 			Brandub Brangen Bressal Brian Brian Briccéne Briccíne Broccán Bruatur Bruide Brénaind
@@ -1106,17 +1106,17 @@ gaelic = {
 			Finnsnechtae Fintan Flaithbertach Flaithem Flaithemán Flaithgus Flaithrí Flann Flannacán
 			Flannchad Flannán Fogartach Folachtach Forannán Forbassach Fothad Fothud Fuacarta Fubthad
 			Fuirechtach Fursu Fáelcar Fáelchad Fáelchú Fáeldobur Fáelgus Fáelán Fáelbe Fíachnae Fíadchú
-			Fíngin Fínsnechta Fócarta Gabrán Garalt Garbith Gilla-Íosa Gilla-Brígte Gilbert Gilla-Coluim
+			Fíngin Fínsnechta Fócarta Gabrán Garalt Garbith Gilla-Ýosa Gilla-Brígte Gilbert Gilla-Coluim
 			Gilla-Comgáin Gilla-Críst Gilchrist Gilla-na-Náem Gilla-Pátraic Gilpatrick Gilla-Ruad Gilroy
 			Glaisiuc Glaschu Glún-Iairn Gormacán Gormgus Gormán Guaire Gáethán Gáethíne
-			Gósacht Iacob Iarlaithe Imchad Indrechtach Ioseph Íomhar Labraid Lachtnae
+			Gósacht Iacob Iarlaithe Imchad Indrechtach Ioseph Ýomhar Labraid Lachtnae
 			Lachtnán Lachtnéne Laidcenn Laidgenn Laidíne Laisrén Lennán Lennon Lethlobur Liam
 			Lochlann Loingsech Lonán Lorcán Lugh Leon Lugaid Lugáed Láegaire Lóchéne Lóchíne Lóeguire
 			Mac-Laisre Mainchíne Maine Manchán Martan Mathgamain Matudán Minchán Mo-Chonna Mo-Lua
 			Móenach Máel-Anfaid Liber Fiachnae Erc Dúnchad Cillíne Caissíne Bran
 			Morand Morann Mugrón Muirchertach Muirecán Muiredach Murdoch Muirgius Murchad Murchú
 			Máel-Bresail Máel-Brígte Máel-Cein Máel-Cianáin Máel-Ciaráin Máel-Coluim Malcolm Máel-Corgis
-			Máel-Dubh Máel-Dúin Máel-Fothartaig Máel-Fábaill Máel-Íosa Malise Máel-Máedóc
+			Máel-Dubh Máel-Dúin Máel-Fothartaig Máel-Fábaill Máel-Ýosa Malise Máel-Máedóc
 			Máel-Martain Máel-Mórda Máel-Muire Malmure Máel-Míchíl Máel-Petair Máel-Pátraic Máel-Ruanaid
 			Máel-Sechnaill Máel-Tólai Máelán Máenach Máthair Múadán Nadarchu Nannid Natfraech Natfraich
 			Natsluaig Nechtan Niall Niallgus Niallán Nuadu Odrán Óengus Óenucán
@@ -1132,7 +1132,7 @@ gaelic = {
 		}
 		female_names = {
 			Saraid Órfhlaith Fedelma
-			Ablach Áedammair Affraic Euphemia Aíbinn Aibilín Aileann Áine Agnes Anlaith Aróc
+			Ablach Ýedammair Affraic Euphemia Aíbinn Aibilín Aileann Ýine Agnes Anlaith Aróc
 			Barrdub Ben-Laigen Ben-Míde Ben-Muman Ben-Ulad Brigit Bé-Fáil Bébinn Cacht
 			Caillech-Fhinnéin Cainnech Caisséne Caitilín Caíntigern Caírech Cathán Catríona
 			Catherine Cellach Ciar Cnes Coblaith Cobflaith Conchenn Condál Crínóch
@@ -1140,7 +1140,7 @@ gaelic = {
 			Der-Ilei Derilla Der-Lugdach Dianaim Doriend Dub-Dil Dub-Essa Dub-Lemna Dubchoblaig Dubgilla
 			Dúinsech Dúnlaith Echrad Éibhleann Eithne Ellbríg Emer Étaín
 			Faílenn Fedelm Finneacht Flann Forbflaith Fíne Garb
-			Gelgéis Gerróc Gnathnad Gormlaith Gormflaith Gráinne Imag Íte Lann
+			Gelgéis Gerróc Gnathnad Gormlaith Gormflaith Gráinne Imag Ýte Lann
 			Lasairfíona Lathir Lerben Lerthan Lígach Mauda Muadhnait
 			Muirenn Murron Muirgel Muirne Morna Máel-Mide Máel-Muire Malmure Máire Máiread
 			Máirgred Margaret Mór Mor Mór-Muman Nárbflaith Nuala Finnguala Órlaith Órnat Róis Ros Sadb
@@ -1468,19 +1468,19 @@ iberian = {
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = CAS
 		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
+			"de Trastámara" "de Guzmán" "Ýlvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ývalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
 			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Ýlvaro Baltasar
 			Bernardo Bertrán Hernando
 			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo
 			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco
+			Alfonso Alphonse Alonso Alphonse Ýlvar Oliver Ýlvaro Oliver Bermudo Vermudo Diego Diaco
 			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil
 			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan
 			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono
@@ -1498,19 +1498,19 @@ iberian = {
 	mexican = {
 		primary = MEX
 		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
+			"de Trastámara" "de Guzmán" "Ýlvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ývalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
 			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Ýlvaro Baltasar
 			Bernardo Bertrán Hernando
 			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo
 			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco
+			Alfonso Alphonse Alonso Alphonse Ýlvar Oliver Ýlvaro Oliver Bermudo Vermudo Diego Diaco
 			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil
 			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan
 			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono
@@ -1528,19 +1528,19 @@ iberian = {
 	platinean = {
 		primary = LAP
 		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
+			"de Trastámara" "de Guzmán" "Ýlvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ývalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
 			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Ýlvaro Baltasar 
 			Bernardo Bertrán Hernando
 			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
 			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
+			Alfonso Alphonse Alonso Alphonse Ýlvar Oliver Ýlvaro Oliver Bermudo Vermudo Diego Diaco 
 			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
 			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
 			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
@@ -1560,19 +1560,19 @@ iberian = {
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = LON
 		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
+			"de Trastámara" "de Guzmán" "Ýlvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ývalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
 			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Ýlvaro Baltasar
 			Bernardo Bertrán Hernando
 			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo
 			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco
+			Alfonso Alphonse Alonso Alphonse Ýlvar Oliver Ýlvaro Oliver Bermudo Vermudo Diego Diaco
 			Henry Fadrique Frederick Felipe Fruela Froila  Gil
 			Egidius Guillén Guillermo Juan
 			Lupo Luis Manrique Martín Martin Munio Ordoño
@@ -1664,19 +1664,19 @@ iberian = {
 		primary = SVL		#primary culture of a Andalusian duchy tag (BTU Note: Potentially new Seville tag, SVL?)
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
+			"de Trastámara" "de Guzmán" "Ýlvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ývalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
 			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Ýlvaro Baltasar
 			Bernardo Bertrán Hernando
 			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo
 			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco
+			Alfonso Alphonse Alonso Alphonse Ýlvar Oliver Ýlvaro Oliver Bermudo Vermudo Diego Diaco
 			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil
 			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan
 			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono
@@ -1702,7 +1702,7 @@ iberian = {
 			"da Câmara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
 		}
 		male_names = {
-			Afonso Aires Aleixo Alexandre Alberto Álvaro André António Bartolomeu Barnabé Benjamim Bermudo 
+			Afonso Aires Aleixo Alexandre Alberto Ýlvaro André António Bartolomeu Barnabé Benjamim Bermudo 
 			Bernardo Caetano Carlos Cristóvão Daniel Damião Dinis Diogo Duarte Eduardo Egas Estêvão Fernão 
 			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gonçalo Guilherme Gustavo 
 			Guterre Henrique Hermígio Inácio Jaime João Joaquim Jorge José "José Maria" Lopo Lourenço Lucas 
@@ -1733,10 +1733,10 @@ iberian = {
 		}
 		male_names = {
 			João Filipe Pedro António Duarte Henrique José Manuel Sebastião Miguel Teodósio Diniz
-			Alexandre Carlos Diego Jaime Luís Álvaro André Bartolomeu Caetano Damião Estevão Francisco
+			Alexandre Carlos Diego Jaime Luís Ýlvaro André Bartolomeu Caetano Damião Estevão Francisco
 			Xavier Gabriel Garcia Gaspar Gil Guilherme Inácio Joaquim Jorge Lourenço Marco Nicolau
 			Paulo Rafael Rogério Rui Simão Vicente Otávio
-			Afonso Aires Álvaro Bermudo Diogo Diaco Egas Estêvão Fernão
+			Afonso Aires Ýlvaro Bermudo Diogo Diaco Egas Estêvão Fernão
 			Ferdinando Fernando Garcia Gil Gomes Gonçalo Gutierre
 			Valter Henrique Hermígio João Lourenço Martim Martin
 			Mendo Munio Nuno Pôncio Mem
@@ -2035,7 +2035,7 @@ finno_ugric = { #Ugric
 	}
 	ostyaki = {
 		male_names = {
-			Ággi Áigesárri Áilu Ámmot Ára Árrajuoksa Ásllat Èoavvá Ahkemiella Algebaeivi Baeivi Aare Agul Ahas Aho Ahti Ahvo
+			Ýggi Ýigesárri Ýilu Ýmmot Ýra Ýrrajuoksa Ýsllat Èoavvá Ahkemiella Algebaeivi Baeivi Aare Agul Ahas Aho Ahti Ahvo
 			Alar Alo Alur Aopelg Aotõiv Arp Arvet Arvo Atko Aul Aulemb Kaur Kiur Kiurupelg Koit Kosk Kudres Susi Sutemeel Meigo
 			Neeme Niglas Vilitõiv Vilivald Tasulemb Toivo Toom Tunne Tutkas Tuul Tõeleid Tõiv Tõivulemb Tõll Urmas Uru Valdur
 			Kezhevat Kichay Koksha Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas
@@ -2044,7 +2044,7 @@ finno_ugric = { #Ugric
 			Uchva Varaka Vechkas Velmayka Virdyan Viryas Viryay Atyamas Azyren Chipaz Kardaz Kinyak
 		}
 		female_names = {
-			Áidná Álgen Állet Èuvje Biellá Biergá Buohttá Duojá Gealá Gierá Giste Juoksáhkká Leandu Kati Kiir Kiire Killu Käbi
+			Ýidná Ýlgen Ýllet Èuvje Biellá Biergá Buohttá Duojá Gealá Gierá Giste Juoksáhkká Leandu Kati Kiir Kiire Killu Käbi
 			Lagle Laine Lee Leek Leelo Leili Lemme Liis Lill Linda Luule Elyuva Inyava Kanyava Kanyuva Kirdyava Kunava Kunyavka
 			Litava Liyava Mazava Megurka Sinyava Siyamka Slyugan'ka Sochava Styaka Syryava Tatka Tekay Tetyava Tikshayka
 			Toyaksha Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Rayda Ruzava Sanal'ka Sangasa
@@ -2475,7 +2475,7 @@ carpathian = {
 		Ulászló László Lajos Albert János Mátyás Zsigmond András Károly István Béla Anasztáz Barnabás
 		Boldizsár Dávid Dömötör Edvárd Ernö Ferenc Gábor György Izsák Jenö József Kálmán Kázmér Lörinc
 		Miklós Oszkár Ottó Patrik Péter Simon Tamás Vencel
-		Ábel Ádárn Ágoston Álmos Árpád Õdön Otto Alajos Ambrus András Andrew Antal Attila Bálint
+		Ýbel Ýdárn Ýgoston Ýlmos Ýrpád Õdön Otto Alajos Ambrus András Andrew Antal Attila Bálint
 		Albert Balázs Benedek Benedict Bernát Bernard Bertók Bertalan Boldizsár Bonuslo
 		Borisz Boris Csák Csaba Csongor Dénes Dömötör Dezsõ Domoszló Donát Elek Elemér Endre Ernõ
 		Philip Ferenc Francis Frigyes Gábor Gábriel Gabriel Gáspár Caspar Géza Gazsi
@@ -2488,7 +2488,7 @@ carpathian = {
 		Zoltán Zsigmond Sigmund Zsolt Saul Soma
 	}
 	female_names = {
-		Ágnes Agnes Éva Eva Adelaida Adelaide Agáta Agatha Amália Amelia Angyalka Anikó Aranka
+		Ýgnes Agnes Éva Eva Adelaida Adelaide Agáta Agatha Amália Amelia Angyalka Anikó Aranka
 		Bertha Borbála Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emõke Emese Erika Erzsébet
 		Elisabeth Eszter Berta Anna
 		Etel Euphemia Euphemia Gizella Gisela Györgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildikó
@@ -4832,6 +4832,20 @@ chibchan = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
+	kuna = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá Busbanzá Saboyá
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charalá Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
 	cara = {
 		primary = QTO
 		dynasty_names = {
@@ -4941,7 +4955,7 @@ carribean = { #All vanilla cultures from this group moved to more appropriate gr
 	guanahatabey = {
 		#primary = YZY
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -4954,7 +4968,7 @@ carribean = { #All vanilla cultures from this group moved to more appropriate gr
 	#Beyond Typus Culture
 	macoris = {
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -4967,7 +4981,7 @@ carribean = { #All vanilla cultures from this group moved to more appropriate gr
 	#Beyond Typus Culture
 	ciguayo = {
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -4980,7 +4994,7 @@ carribean = { #All vanilla cultures from this group moved to more appropriate gr
 	#Beyond Typus Culture
 	warao = { #A real life OSV language... quirky
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -4994,7 +5008,7 @@ carribean = { #All vanilla cultures from this group moved to more appropriate gr
 	waikeri = { #'According to Alexander von Humboldt, the Waikerí said that their language and that of the Warao were related.' - per wiki... well... I can't say I've done things with less evidence, but sure, why not.
 		#primary = YZV
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -11163,7 +11177,7 @@ kongo_group = {
 		Lukeni Loanga Kalumbwe Kikondja Imbangala Kasanje Shila Kazembe Lunda Kuba
 	}
 	male_names = {
-		Garcia Álvaro Pedro Afonso Ntinu Nkuwu Henrique António Bernardo José Ambrósio Aleixo André Daniel Diogo
+		Garcia Ýlvaro Pedro Afonso Ntinu Nkuwu Henrique António Bernardo José Ambrósio Aleixo André Daniel Diogo
 		Nicolau Nzinga Nkuwa Sebastião Ilunga Sanza Kumwimba Kasongo Kekenya Kaumbo Miketo Nday Mwine Maloba
 		Kitamba Cibind Nawej Munying Kateng Cakasekene Cikombe Kalong Mutand Mbala Mukaz Mpemba
 	}
@@ -12205,7 +12219,7 @@ aquitanian = {
 		}
 		male_names = {
 			Enrique Carlos Francisco Juan Luis Gastón Pedro Buenaventura Godofredo Jaime Lanzarote
-			Martín García Felipe Teobaldo Alfonso Agustín Alejandro Álvaro Andrés Antonio Bernardo César
+			Martín García Felipe Teobaldo Alfonso Agustín Alejandro Ýlvaro Andrés Antonio Bernardo César
 			Cristóbal Diego Esteban Fernando Gaspar José Melchor Nicolás Simón Leonel
 			Alfontso Alphonse Alvar Oliver Antso Sancho Aznar Belasko Vasco Bermudo Vermudo
 			Bernard Diaco Donato Donatus Egidio Egidius Eneko Inigo Erramun Raymond
@@ -12903,13 +12917,13 @@ unified_celtic_group = {
 			"Corcu Loígde"
 		}
 		male_names = {
-			Turlough Donal Muireadhach Conchobhar Feidlimidh Cathaoir Muchadh Áed Fonnchadh Brian Criomhthann Art Cathal
+			Turlough Donal Muireadhach Conchobhar Feidlimidh Cathaoir Muchadh Ýed Fonnchadh Brian Criomhthann Art Cathal
 			Gearóid Muiris Tadhg Seán Niall Einrí Conn Eoghan Aonghus Comhghall Maeleachlain Diarmaid Flann Aerdghal
 			Bearach Caoímhin Donnabhain Eíhmhín Fearghal Iarfhlaith Lorccán Mathúin Naomhán Oisín Pádraig Ríagáin Somhairle
-			Abbán Abél Abel Adomnán Áed Áedgen Áeducán Áedán Áengus
-			Affiath Ailbe Ailbrend Ailbrenn Ailchú Aildobur Ailgel Áilgenán Ailgus Ailill Ailpín
-			Ainbchellach Áindle Ainftech Enfidaig Ainmere Airechtach Airfhindán Airfhindán Airfhinnán
-			Airleid Airmedach Amalgaid Amlaíb Anfudán Anlón Anmchaid Ánrothán Ardgal Ardgar Art
+			Abbán Abél Abel Adomnán Ýed Ýedgen Ýeducán Ýedán Ýengus
+			Affiath Ailbe Ailbrend Ailbrenn Ailchú Aildobur Ailgel Ýilgenán Ailgus Ailill Ailpín
+			Ainbchellach Ýindle Ainftech Enfidaig Ainmere Airechtach Airfhindán Airfhindán Airfhinnán
+			Airleid Airmedach Amalgaid Amlaíb Anfudán Anlón Anmchaid Ýnrothán Ardgal Ardgar Art
 			Artbran Artgal Artgus Artucán Artúr Assiucc Augaire Augustín Aurthuile
 			Báethgalach Báethíne Báetán Béoáed Barrfhind Beccán Berrach Bhátair Blathmacc Bran
 			Brandub Brangen Bressal Brian Brian Briccéne Briccíne Broccán Bruatur Bruide Brénaind
@@ -12937,17 +12951,17 @@ unified_celtic_group = {
 			Finnsnechtae Fintan Flaithbertach Flaithem Flaithemán Flaithgus Flaithrí Flann Flannacán
 			Flannchad Flannán Fogartach Folachtach Forannán Forbassach Fothad Fothud Fuacarta Fubthad
 			Fuirechtach Fursu Fáelcar Fáelchad Fáelchú Fáeldobur Fáelgus Fáelán Fáelbe Fíachnae Fíadchú
-			Fíngin Fínsnechta Fócarta Gabrán Garalt Garbith Gilla-Íosa Gilla-Brígte Gilbert Gilla-Coluim
+			Fíngin Fínsnechta Fócarta Gabrán Garalt Garbith Gilla-Ýosa Gilla-Brígte Gilbert Gilla-Coluim
 			Gilla-Comgáin Gilla-Críst Gilchrist Gilla-na-Náem Gilla-Pátraic Gilpatrick Gilla-Ruad Gilroy
 			Glaisiuc Glaschu Glún-Iairn Gormacán Gormgus Gormán Guaire Gáethán Gáethíne
-			Gósacht Iacob Iarlaithe Imchad Indrechtach Ioseph Íomhar Labraid Lachtnae
+			Gósacht Iacob Iarlaithe Imchad Indrechtach Ioseph Ýomhar Labraid Lachtnae
 			Lachtnán Lachtnéne Laidcenn Laidgenn Laidíne Laisrén Lennán Lennon Lethlobur Liam
 			Lochlann Loingsech Lonán Lorcán Lugh Leon Lugaid Lugáed Láegaire Lóchéne Lóchíne Lóeguire
 			Mac-Laisre Mainchíne Maine Manchán Martan Mathgamain Matudán Minchán Mo-Chonna Mo-Lua
 			Móenach Máel-Anfaid Liber Fiachnae Erc Dúnchad Cillíne Caissíne Bran
 			Morand Morann Mugrón Muirchertach Muirecán Muiredach Murdoch Muirgius Murchad Murchú
 			Máel-Bresail Máel-Brígte Máel-Cein Máel-Cianáin Máel-Ciaráin Máel-Coluim Malcolm Máel-Corgis
-			Máel-Dubh Máel-Dúin Máel-Fothartaig Máel-Fábaill Máel-Íosa Malise Máel-Máedóc
+			Máel-Dubh Máel-Dúin Máel-Fothartaig Máel-Fábaill Máel-Ýosa Malise Máel-Máedóc
 			Máel-Martain Máel-Mórda Máel-Muire Malmure Máel-Míchíl Máel-Petair Máel-Pátraic Máel-Ruanaid
 			Máel-Sechnaill Máel-Tólai Máelán Máenach Máthair Múadán Nadarchu Nannid Natfraech Natfraich
 			Natsluaig Nechtan Niall Niallgus Niallán Nuadu Odrán Óengus Óenucán
@@ -12963,7 +12977,7 @@ unified_celtic_group = {
 		}
 		female_names = {
 			Saraid Órfhlaith Fedelma
-			Ablach Áedammair Affraic Euphemia Aíbinn Aibilín Aileann Áine Agnes Anlaith Aróc
+			Ablach Ýedammair Affraic Euphemia Aíbinn Aibilín Aileann Ýine Agnes Anlaith Aróc
 			Barrdub Ben-Laigen Ben-Míde Ben-Muman Ben-Ulad Brigit Bé-Fáil Bébinn Cacht
 			Caillech-Fhinnéin Cainnech Caisséne Caitilín Caíntigern Caírech Cathán Catríona
 			Catherine Cellach Ciar Cnes Coblaith Cobflaith Conchenn Condál Crínóch
@@ -12971,7 +12985,7 @@ unified_celtic_group = {
 			Der-Ilei Derilla Der-Lugdach Dianaim Doriend Dub-Dil Dub-Essa Dub-Lemna Dubchoblaig Dubgilla
 			Dúinsech Dúnlaith Echrad Éibhleann Eithne Ellbríg Emer Étaín
 			Faílenn Fedelm Finneacht Flann Forbflaith Fíne Garb
-			Gelgéis Gerróc Gnathnad Gormlaith Gormflaith Gráinne Imag Íte Lann
+			Gelgéis Gerróc Gnathnad Gormlaith Gormflaith Gráinne Imag Ýte Lann
 			Lasairfíona Lathir Lerben Lerthan Lígach Mauda Muadhnait
 			Muirenn Murron Muirgel Muirne Morna Máel-Mide Máel-Muire Malmure Máire Máiread
 			Máirgred Margaret Mór Mor Mór-Muman Nárbflaith Nuala Finnguala Órlaith Órnat Róis Ros Sadb
@@ -13647,7 +13661,7 @@ arawakan_g = {
 
 	arawak = { #Central Taino
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -13659,7 +13673,7 @@ arawakan_g = {
 	}
 	west_taino = { #West Taino
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -13671,7 +13685,7 @@ arawakan_g = {
 	}
 	east_taino = { #East Taino
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -13683,7 +13697,7 @@ arawakan_g = {
 	}
 	ineri = { #(JP) Kalinago, aka Igneri
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -13695,7 +13709,7 @@ arawakan_g = {
 	}
 	shebaya = { #(JP) I think this is meant to be Suppoya and Nepoya who were Arawaks. Going to merge this in with above for now
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -13719,7 +13733,7 @@ arawakan_g = {
 	}
 	maipurean = {
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy
 		}
 		female_names = {
@@ -13737,7 +13751,7 @@ cariban_g = {
 	carib = {
 		primary = CAB
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 		}
 		female_names = {
 			Hayá Isani
@@ -13748,7 +13762,7 @@ cariban_g = {
 	}
 	karina = {
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 		}
 		female_names = {
 			Hayá Isani
@@ -13759,7 +13773,7 @@ cariban_g = {
 	}
 	yao_carib = { #Poorly attested, might or might not Carib, but whatever... best info we have says it probably is
 		male_names = {
-			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Ýhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 		}
 		female_names = {
 			Hayá Isani

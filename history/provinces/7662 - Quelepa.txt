@@ -1,5 +1,5 @@
 religion = mesoamerican_religion
-culture = miskito
+culture = matagalpa
 base_tax = 1
 base_production = 1
 base_manpower = 1

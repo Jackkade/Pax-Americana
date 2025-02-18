@@ -1,0 +1,15 @@
+# No previous file for Kuna
+
+culture = kuna
+discovered_by = south_american
+discovered_by = MCA
+religion = animism
+capital = "Kuna"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 6
+native_ferocity = 2
+native_hostileness = 5
