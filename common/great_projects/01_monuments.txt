@@ -2579,7 +2579,7 @@ machu_picchu = {
 
 chichen_itza = {
 	# province it starts in
-	start = 846
+	start = 7558
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 600.01.01
@@ -16571,7 +16571,7 @@ white_house = {
 }
 
 tikal = {
-	start = 842 #Petén
+	start = 7580 #Petén
 	date = 10.01.01
 	time = { months = 0	}
 	build_cost = 0
