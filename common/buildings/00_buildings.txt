@@ -1,0 +1,7975 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# Building AI is now mainly hard-coded. The AI will estimate how much it gains yearly from each building,
+# convert the value to ducats, and take the building with biggest yearly return as a percentage of the build cost.
+# If lower than 1%, the AI will not consider the yearly return worth it.
+# It will also require higher yearly return if the economy in not in prime shape.
+# Forts' value also get converted to a yearly return based on terrain and strategic position, as well as available budget for fort maintenance.
+
+# AI can still be modded though; it will multiply the yearly return with the value of ai_will_do.
+# If you don't want the AI to build a building at all, make ai_will_do become 0.
+# AI will consider each building to be worth 0.01 ducats per year as a base, so making ai_will_do above cost will have them build it at some point.
+# It will still check whether it can afford a building before doing so though, but may save up to it.
+
+#Dub reoverhauled AI buildings dictations from scratch because AI factors were not working as intended.
+#My philosophy is that we want the AI to be smart, not flavourful, with regards to what buildings it builds.
+#Any province that the AI has will either be used by them, or the player when conquered.
+#An AI with stronger provinces is an AI that will stand up against the player better, therefore providing a more enjoyable game.
+#An AI that builds buildings for flavour will find its provinces' buildings demolished when the player gets ahold of them.
+#Which ultimately leaves the player there to spend ducats to upgrade them properly, or just not bother and just build every building in every province using the building interface.
+#If they do, they suffer from major click fatigue in BT because more provinces.
+#I should say this pre-emptily that, because the AI now actually sees value in weird things, such as building additional buildings on a province with other buildings, it hasn't been the easiest to balance these. 
+#Still, I think I've made a decent attempt at making the AI be smart about what buildings it builds, and hopefully, players will enjoy a smarter AI.
+
+#BT More Buildings: For the purposes of the university, declaring college in front for reference.
+college = {
+	cost = 200			#BTAddOn changed from 150. This is late game, vital to the spread of the enlightenment, and generally very important. Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think. Changing cost and time to be closer to/higher than the earlier manufactories. Note I'll also increase the enlightenment spread from a uni, so this becomes something to be built in key cities & let spread, not something to spam everywhere at tech 17 for tech spread and dev cost.
+	time = 24			#BTAddOn changed from 12. This is not meant to be spammed when the enlightenment hits to catch up, increased to 4y
+	
+	modifier = {
+		local_institution_spread = 0.25			#BTAddOn new. Fits perfectly in the new tech system =D. Currently 100 percent bonus, which may be a bit much, but on the other hand still requires normal spread, and if a province is advanced enough to have a university, it probably is somwhat cutting edge anyway. Nice counterpoint for new non western tech penalties, too, so a tech minded country in Asia or Africa can still keep up with the spread bonus offsetting tech group spread penalties.
+		local_tax_modifier = 0.2			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		local_production_efficiency = 0.2			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+		#local_development_cost = -0.20			#BTAddOn removed. I wouldn't say universities aid development per se, so I'm moving this bonus elsewhere. Consider many older uni city examples, Cambrige, Oxford, Siena, Padua, Murcia, Heidelberg, Toulouse. Not really tiny, but not bastions of development and industry the London, Moscow, Berlin, Paris (though Paris did have a uni) etc. ended up moving dev bonus to production buildings to better represent this reality.
+		#allowed_num_of_buildings = 1			#BTAddOn removed. Terrain Overhaul addon (balanced to be enabled alongside misc addon) makes max buildings possible at around 40 development, instead of 100 development, so this isn't neccessary, and also a tad silly, if I may say so... 'Yay, we now have uni so we can build more buildings in our city'.... mkay
+	}
+
+	on_built = {
+		add_development_from_building = {
+			building = college
+			type = tax
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = college
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0
+			is_state = no
+		}
+		modifier = { #You can spawn enlightenment here if this building is built!
+			factor = 5
+			development = 32
+			is_capital = yes
+			continent = europe
+			NOT = { is_institution_enabled = enlightenment }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			continent = europe
+			FROM = { has_institution = manufactories } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = enlightenment
+			FROM = { has_unembraced_institution = enlightenment }
+			continent = europe
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+		
+		################################################################################
+		###############	Almost guaranteeing unis in provinces with real historical universities	###############
+		################################################################################
+		modifier = {
+			factor = 20
+			OR = { #There's a lot of universities missing like the Swedish ones and some in Italy, but who cares.
+				province_id = 4730			#Bologna, 1088
+				province_id = 237			#Oxford, 1096
+				province_id = 183			#Paris (Sorbonne), 1160 (I thought it was older...)
+				province_id = 4370 			# Brian fixed; Cambridge, 1209
+				province_id = 216			#Salamanca, 1218
+				province_id = 4729 			# Brian fixed; Padua, 1222 or older
+				province_id = 121			#Naples, 1224
+				province_id = 196			#Toulouse, 1229
+				province_id = 200			#Montpellier, 1289
+				province_id = 119			#Macerata (Ancona), 1290
+				province_id = 1851			#Coimbra (actually started in Lisbon and moved to Coimbra in 1537, but whatever), 1290
+				province_id = 217			#Alcala (Madrid), 1293
+				province_id = 118			#Rome, 1303
+				province_id = 2976			#Perugia (Umbria), 1308
+				province_id = 116			#Florence, 1321
+				province_id = 115			#Pisa, 1343
+				province_id = 266			#Prague, 1348
+				province_id = 4728			#Pavia, 1361
+				province_id = 262			#Jagiellonian (Krakow), 1364
+				province_id = 134			#Vienna, 1365
+				province_id = 77			#Ruprecht Karl University of Heidelberg, 1386
+				province_id = 113			#Ferrara, 1391
+				province_id = 103			#Turin, 1404
+				province_id = 117			#Siena, 1408
+				province_id = 62			#Leipzig, 1409
+				province_id = 250			#St. Andrews (Fife), 1413
+				province_id = 46			#Rostock, 1419
+				province_id = 168			#Caen, 1432
+				province_id = 124			#Catania (Mesina), 1434
+			}
+		}
+	}
+}
+
+################################################
+# Tier 1, 15th Century Buildings
+################################################
+marketplace = {
+	cost = 50			#BTAddOn changed from 100. Logically, a market shouldn't be so expensive, and in gameplay terms, 100 ducats this early is also rather expensive. Lowering cost and effect by half.
+	time = 12
+
+	modifier = {
+		province_trade_power_modifier = 0.25			#BTAddOn changed from .5 A 50 percent bonus available at practically day 1 was overpowered, and it snowballed for CoTs. While we still want CoTs strong, not x15 any other province this early. BT's lower avg dev but generally same dev for capitals and CoTs only made this worse, as well.
+		base_local_dev_points = 0.01	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+
+	}
+	on_built = {
+		add_development_from_building = {
+			building = marketplace
+			type = production
+			value = 1
+		}
+		if = {
+			limit = {
+				FROM = { 
+					has_dlc = "Mandate of Heaven"
+					has_country_flag = mam_trade_building_prosperity_flag
+				}
+			}
+			add_prosperity = 5
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = marketplace
+			type = production
+			value = 1
+		}
+		if = {
+			limit = {
+				FROM = { 
+					has_dlc = "Mandate of Heaven"
+					has_country_flag = mam_trade_building_prosperity_flag
+				}
+				
+			}
+			add_prosperity = -5
+		}
+	}
+
+	on_construction_started = { } #Fires when you start the construction,  ROOT - Province FROM - Country that started
+	on_construction_canceled = { } #Fires when you cancel the construction, ROOT - Province FROM - Country that canceled
+
+	on_obsolete = {
+	}
+
+	ai_will_do = { 
+		#Vanilla base factor: 1.5. 
+		#Vanilla cost: 100. 
+		#Base yearly return: 1.5*(0.01+value(+50% trade power))
+		#BT Building Changes:
+		#1. Half trade power increase. --> Double factor.
+		#2. Half cost of building --> Half factor.
+		# --> Base factor = 1.5 if we want vanilla behaviour.
+		factor = 1 #These had slightly too high factors.
+		modifier = { #These are any CoT as well as any province over 50 dev. Logically the AI should build them there.
+			factor = 2
+			province_trade_power = 5
+		}
+		modifier = { #These are level 2 CoT as well as any province over 100 dev. Logically the AI should build them there.
+			factor = 2
+			province_trade_power = 10
+		}
+		#At this point the AI will be 100 times more likely to build these in level 2 CoTs. No need to encourage further.
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+workshop = {
+	cost = 50			#BTAddOn changed from 100. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 12
+	modifier = {
+		local_development_cost = -0.1			#BTAddOn new. A little non-cash boost to make this building not worthless when it is too late in the game to make your ducats back from the cost to build it. Note the corresponding dev cost reduction has been removed from universities, where I felt it made less logical sense. Here, production and industry encourage development.
+		local_production_efficiency = 0.2			#BTAddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces).
+		base_local_dev_points = 0.01	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	on_built = {
+		add_development_from_building = {
+			building = workshop
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = workshop
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	allow_in_gold_provinces = no
+
+	ai_will_do = {
+		#Vanilla base factor: 1. 
+		#Vanilla cost: 100. 
+		#Base yearly return: 1*(0.01+value(+50% production efficiency)) --> 0.99 ducats gained/year --> +0.0825 ducats/month and AI will click.
+		#BT Building Changes:
+		#1. 3/5ths production --> Increase factor by +66%
+		#2. Half cost of building --> Half factor.
+		#BT Base yearly return: 1*(0.01+value(+30% production efficiency)) --> 0.49 ducats gained/year --> +0.04 ducats/month
+		#We desire this to be at around +0.02 ducats/month. Mainly because you need a lot of dev or high producing trade good.
+		factor = 3 #Doubled because the AI doesn't seem to see much value with this one. (Added 1 for dev points and for dev cost)
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 5
+		}
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 10
+		}
+		modifier = { #Encourage if a proper manufactory was built in the province
+			factor = 10
+			has_manufactory_no_custom_tooltip_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+temple = {
+	cost = 50			#BTAddOn note - Though 'temple' is a somewhat vague term and may refer to any variety of buildings feasibly costing between 5 and 5000 ducats. Balancing for gameplay to match other similar buildings.
+	time = 12
+	modifier = {
+		local_missionary_strength = 0.01			#BTAddOn new effect. Giving the temple the same bonus of this building's upgrade, simply weaker. Makes it more useful when it is too late in the game to make money back from building cost.
+		#local_tax_modifier = 0.4			#BTAddOn changed from 0.4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		local_culture_conversion_cost = -0.15
+		local_unrest = -1
+	}
+	on_built = {
+		on_built_tax_building_effect = yes
+		on_province_tax_building_built_estate_privileges_effect = yes
+		add_development_from_building = {
+			building = temple
+			type = tax
+			value = 1
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+			}
+			FROM = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = temples_modifier }
+				owned_by = FROM 
+			}
+			add_province_modifier = {
+				name = gov_expanded_temple_rights_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			add_province_modifier = {
+				name = turkoman_peaceful_worshipping
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = -0.25
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = 0.5
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_flag = azt_temples_buffs_flag }
+			}
+			add_province_modifier = {
+				name = azt_religious_classes
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	on_destroyed = {
+		on_province_tax_building_destroyed_estate_privileges_effect = yes
+		remove_development_from_building = {
+			building = temple
+			type = tax
+			value = 1
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			remove_province_modifier = turkoman_peaceful_worshipping
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+			}
+			FROM = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -2
+				}
+			}
+		}
+		remove_province_modifier = gov_expanded_temple_rights_mod
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = 0.25
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = -1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_religious_classes
+			}
+			remove_province_modifier = azt_religious_classes
+		}
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 25
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 3
+			has_owner_religion = no			
+			has_owner_harmonized_religion = no
+			has_owner_secondary_religion = no
+			NOT = {								#BT Harb AI will not get this now if the province is not hurting them
+				OR = {
+					tolerance_to_this = 0
+					has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+					has_province_modifier = eth_accepted_society
+					has_province_modifier = estate_burghers_guaranteed_autonomy_mod
+					has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+					has_province_modifier = estate_church_lao_animism_mod
+					has_province_modifier = judaism_abrahamic_roots
+					has_province_modifier = son_fetishism_as_secondary_religion_province
+					has_province_modifier = msi_integrated_province
+					has_province_modifier = estate_church_muslim_integration_mod
+				}
+			}
+		}
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 2.1
+			has_owner_accepted_culture = no
+			NOT = { #But if brother culture, don't enable
+				culture_group = ROOT
+			}
+			OR = {
+				has_owner_religion = yes			
+				has_owner_harmonized_religion = yes
+				has_owner_secondary_religion = yes		
+			}					
+		}
+		modifier = { #If AI has special privilege or whatever that buffs temples, build it.
+			factor = 2.1
+			OR = {
+				AND = { #Country gets dev from buildings
+					FROM = { has_country_flag = improve_development_on_buildings_built }
+					NOT = { gained_development_from_building = { building = $building$ } }
+				}
+				AND = { #Zoroastrian CoR
+					NOT = { development = 31 }
+					owner = { has_country_flag = can_place_center_of_reformation }
+					is_reformation_center = no
+					expelling_minorities = no
+					NOT = {
+						any_neighbor_province = {
+							is_reformation_center = yes
+						}
+					}
+					NOT = {
+						any_province = {
+							area = PREV
+							is_reformation_center = yes
+							religion = zoroastrian
+						}
+					}
+					OR = {
+						has_owner_religion = yes
+						NOT = { has_active_triggered_province_modifier = religious_center }
+					}
+				}
+				AND = { #Karma Temples
+					FROM = {
+						OR = {
+							religion = buddhism
+							religion = mahayana
+							religion = vajrayana
+						}
+						has_estate_privilege = estate_church_karma_temples
+					}
+				}
+				AND = { #Papal influence from temples
+					FROM = {
+						religion = catholic
+						has_estate_privilege = estate_church_influence_temples
+					}
+				}
+				AND = { #Manpower from tax buildings	
+					owner = {
+						has_country_flag = gets_manpower_from_tax_buildings
+					}
+				}
+				AND = { #Dev cost from temples
+					owner = { has_estate_privilege = estate_church_development_of_temples }
+					OR = {
+						has_owner_religion = yes
+						has_owner_harmonized_religion = yes
+						has_owner_secondary_religion = yes
+					}
+				}
+				AND = { #Dhimmi communities
+					owner = {
+						has_estate_privilege = estate_dhimmi_development_of_communities
+						NOT = { religion_group = PREV }
+					}
+				}
+				AND = { #Gets loyalty from temples
+					FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+				}
+				AND = { #Has expanded temple rights
+					FROM = { has_government_attribute = temples_modifier }
+					owned_by = FROM 
+				}
+				AND = { #Local unrest redux from mosques
+					FROM = { has_country_flag = mosque_local_unrest_flag }
+				}
+				AND = { #Crown land from mosques
+					FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+				}
+				AND = { #Aztec Blood Gathering mechanic
+					FROM = { has_government_mechanic = blood_gathering_mechanic }
+				}
+			}
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+barracks = {
+	cost = 50			#BTAddOn changed from 100. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 12
+	modifier = {
+		local_manpower_modifier = 0.25			#BTAddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		supply_limit = 0.5
+	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = 0.001
+			}
+		}
+		add_development_from_building = {
+			building = barracks
+			type = manpower
+			value = 1
+		}
+		update_improved_military_buildings_modifier = {
+			building = barracks
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_barracks_households
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_manpower = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = -0.001
+			}
+		}
+		remove_development_from_building = {
+			building = barracks
+			type = manpower
+			value = 1
+		}
+		update_improved_military_buildings_modifier = {
+			building = barracks
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_barracks_households
+			}
+			remove_province_modifier = azt_barracks_households
+		}
+	}
+	on_obsolete = {
+	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.005
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.005
+#			}
+#		}
+#	}
+
+	ai_will_do = {
+		#AI is capable of seeing economic factor from this.
+		factor = 80
+		modifier = { #Encourage if high manpower province.
+			factor = 1.2
+			base_manpower = 5
+		}
+		modifier = { #Encourage if high manpower province.
+			factor = 1.2
+			base_manpower = 10
+		}
+		modifier = { #Encourage if this was built in the province
+			factor = 10
+			has_building = soldier_households
+		}
+		modifier = { #Build if low on manpower.
+			factor = 1.5
+			owner = { NOT = { manpower_percentage = 0.2 } }
+		}
+		modifier = { #Build if low on manpower.
+			factor = 3
+			owner = { NOT = { manpower_percentage = 0.1 } }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+shipyard = { #BT: Actually Naval Arsenal in-game
+	cost = 100			#BTAddOn notes - leaving cost here despite lowering most others. Dramtically improving naval capabilities was a bit overpowered, in my opinion. Especially compared to the regimental camp with half effect at double the price.
+	time = 12
+	build_trigger = {
+		has_port = yes
+	}
+	modifier = {
+		naval_forcelimit = 1			#BTAddOn changed from 2. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		ship_recruit_speed = -0.20
+		local_ship_repair = 0.40
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	on_built = {
+		add_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1
+		}
+		if = {
+			limit = { has_province_modifier = sca_swe_danish_shipyard }
+			remove_province_modifier = sca_swe_danish_shipyard
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 45
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = { #Using vanilla's behaviour here - we don't want the AI to spam out these.
+			factor = 105 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get a massive boost to this building on a fort province. Don't know why, but let's reduce it.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+fort_15th = {
+	cost = 100			#BTAddOn changed from original 200. Castles were way too cheap to build but also too expensive to maintain in BT. Note upkeep is controlled in defines and is generated based on fort level, I believe with reduced fort levels the vanilla .5 per month per level is fine
+	time = 30
+	modifier = {
+		fort_level = 1			#BTAddOn changed from original 2. Fort levels are just ridiculous in vanilla and require far too many cannons, especially at later levels. After some testing, I'm content with my new 1-2-3-5 system. 
+		local_unrest = -0.5			#BTAddOn new. The days of controling a region by building a castle there were largely over by the later EU4 period, but I really like the concept of forts establishing a permanent military presence, much like friendly troops in the province reduce unrest. Also want another bonus to justify cost
+		local_defensiveness = 0.1			#BTAddOn new. The point of weakening forts isn't to speed up the game, or make conquest easier or faster, but rather to reduce how mandatory cannons and obscenely large armies are for sieges. Local defensiveness slows things back down after reducing fort levels.
+	}
+
+	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	on_built = {
+		if = {
+			limit = {
+				FROM = { NOT = { mil_tech = 14 } has_government_attribute = on_fort_built_nobles_loyalty }
+			}
+			FROM = {
+				if = {
+					limit = {
+						has_estate = estate_nobles
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_maratha
+					}
+					add_estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_rajput
+					}
+					add_estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 5
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_development_of_castles
+				}
+				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = orm_forts_trade_power_buff_flag
+				}
+			}
+			add_province_modifier = {
+				name = orm_forts_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = { 
+				owner = { has_country_flag = ven_defensive_reward_flag }
+				NOT = { has_province_modifier = ven_defensive_stance_modifier } 
+			}
+			add_province_modifier = {
+				name = ven_defensive_stance_modifier
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	on_destroyed = {
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = ven_defensive_stance_modifier
+			}
+			remove_province_modifier = ven_defensive_stance_modifier
+		}
+		if = {
+			limit = {
+				has_province_modifier = orm_forts_buff
+			}
+			remove_province_modifier = orm_forts_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
+		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	on_obsolete = {
+	}
+
+	onmap = yes
+	influencing_fort = yes
+
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+		modifier = {
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
+		}
+		modifier = { #Kindly nudge the AI towards making defensive lines.
+			factor = 3
+			NOT = { has_influencing_fort = yes }
+		}
+		modifier = { #There's little point building a fort next to another one.
+			factor = 0.1
+			has_influencing_fort = yes
+			#is_capital = no
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+coastal_defence = {
+
+	cost = 100
+	time = 12
+	build_trigger = {
+		has_port = yes
+	}
+	modifier = {
+		blockade_force_required = 0.5
+		hostile_disembark_speed = 1.0
+		block_slave_raid = yes
+	}
+
+	ai_will_do = {
+		factor = 1 #The base calculated value of this building is .25 on an island, or has no land connection to capital.
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = { #I am raided. I might need protection.
+			factor = 105
+			has_province_modifier = slaves_raided
+		}
+		modifier = { #Fixing the "I am special province, I give a flat +0.25 factor value."
+			factor = 0.038
+			OR = {
+				is_island = yes
+				NOT = { is_in_capital_area = yes }
+			}
+		}
+		modifier = { #Fixing the "I am special province, I give a flat +0.25 factor value.". If both, it turns into +0.50, so this halves the above factor, essentially.
+			factor = 0.5
+			AND = {
+				is_island = yes
+				is_in_capital_area = yes
+			}
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+
+################################################
+# Tier 2, 16th Century Buildings
+################################################
+courthouse = {
+	cost = 50			#BTAddOn changed from 100. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 12
+	
+	build_trigger = { #BT 13 added to balance states territories and tradecompanies.
+		is_state = yes
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = -0.15 # Harb's Autonomy Overhaul
+		#local_autonomy = -0.1
+		local_autonomy = -0.025 # Harb's Autonomy Overhaul
+		max_governing_capacity_from_courthouses = 0.25 # Harb's Autonomy Overhaul
+		#local_governing_cost = -0.25
+		#local_governing_cost = -0.1
+	}
+
+	keep_trigger = {
+		is_state = yes
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = courthouse
+			type = tax
+			value = 1
+		}
+		if = { 
+			limit = { 
+				FROM = { has_country_flag = fra_courthouse_bonus_flag }
+			}
+			add_province_modifier = {
+				name = fra_improved_court_houses_modifier
+				duration = -1 
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = courthouse
+			type = tax
+			value = 1
+		}
+		remove_province_modifier = fra_improved_court_houses_modifier
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		#The AI will barely see any benefit to this building. State maintenance is miniscule.
+		factor = 3
+		modifier = {
+			factor = 0
+			NOT = {
+				is_state = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 0.9 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.2 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.3 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.4 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.5 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 5 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 10 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 15 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 20 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 25 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 30 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 35 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 40 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 45 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 50 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 60 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 70 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 80 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 90 }
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+dock = {
+	cost = 50			#BTAddOn changed from 100. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 12
+	build_trigger = {
+		has_port = yes
+	}
+	modifier = {
+		local_sailors_modifier = 0.5
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		#AI sees no monetary benefit from this, therefore factor needs to equal cost for AI to build.
+		factor = 5 #Vanilla has this set to 1, so clearly the AI shall never build these.
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = { #Encourage if this was built in the province
+			factor = 10
+			has_building = impressment_offices
+		}
+		modifier = { #Build if low on sailors.
+			factor = 2
+			owner = { NOT = { sailors_percentage = 0.2 } }
+		}
+		modifier = { #Build if low on sailors.
+			factor = 3
+			owner = { NOT = { sailors_percentage = 0.1 } }
+		}
+		modifier = { #Don't build bloody docks if you're not using your navy.
+			factor = 0
+			owner = { sailors_percentage = 0.75 }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to give a +0.1 calculated value per dev on fort provinces. I'm just dividing the total value by 10 because it's a magnitude above any other modifiers.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+regimental_camp = {
+	cost = 100			#BTAddOn changed from 200. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 12
+	modifier = {
+		land_forcelimit = 0.5			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		regiment_recruit_speed = -0.125			#BTAddOn new. Adding this new feature to match the shipyard equivalents, which also speed recruit time.
+		supply_limit = 0.5
+	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.005
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.005
+#			}
+#		}
+#	}
+	on_built = {
+		add_development_from_building = {
+			building = regimental_camp
+			type = manpower
+			value = 1
+		}
+		update_improved_military_buildings_modifier = {
+			building = regimental_camp
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = 0.001
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_conscription_households
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = regimental_camp
+			type = manpower
+			value = 1
+		}
+		update_improved_military_buildings_modifier = {
+			building = regimental_camp
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = -0.001
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_conscription_households
+			}
+			remove_province_modifier = azt_conscription_households
+		}
+	}
+
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 1 #The AI seems to give this thing a lot of weight somehow. Not sure how or why, but it *loves* building it on fort provinces.
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 0.90 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 0.95 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 1.00 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 1.05 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 1.10 monthly_income = 3 }
+		}
+		##
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { manpower_percentage = 0.90 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { manpower_percentage = 0.95 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { manpower_percentage = 1.00 monthly_income = 3 }
+		}
+		##
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 6 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 9 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 12 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 15 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 18 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 21 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 24 }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.5
+			NOT = { num_free_building_slots = 3 }
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+fort_16th = {
+	cost = 300			#BTAddOn changed from original 400
+	time = 36			#BTAddOn changed from original 30. Increasing build time of later forts by 6 months, 12 months, and 24 months
+	make_obsolete = fort_15th
+	modifier = {
+		fort_level = 2			#BTAddOn changed from 4
+		local_unrest = -1.0			#BTAddOn new
+		local_defensiveness = 0.2			#BTAddOn new
+	}
+
+	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	on_built = {
+		if = {
+			limit = {
+				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
+			}
+			FROM = {
+				if = {
+					limit = {
+						has_estate = estate_nobles
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_maratha
+					}
+					add_estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_rajput
+					}
+					add_estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 5
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_development_of_castles
+				}
+				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	on_destroyed = {
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
+		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	on_obsolete = {
+	}
+
+	onmap = yes
+
+	influencing_fort = yes
+
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+		modifier = {
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
+		}
+		modifier = { #Kindly nudge the AI towards making defensive lines.
+			factor = 3
+			NOT = { has_influencing_fort = yes }
+		}
+		modifier = { #There's little point building a fort next to another one.
+			factor = 0.1
+			has_influencing_fort = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+naval_battery = {
+
+	make_obsolete = coastal_defence
+	cost = 300
+	time = 24
+	build_trigger = {
+		has_port = yes
+	}
+	modifier = {
+		blockade_force_required = 1.0
+		hostile_disembark_speed = 2.0
+		hostile_fleet_attrition = 5
+		block_slave_raid = yes
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = { #There should be some logic for this to exist.
+			factor = 800
+			sea_zone = { #No naval battery in sea zone
+				NOT = {
+					any_neighbor_province = {
+						owned_by = FROM
+						has_building = naval_battery
+					}
+				}
+			}
+		}
+		modifier = { #If above is true, favourite islands slightly more.
+			factor = 1.5
+			sea_zone = { #No naval battery in sea zone
+				NOT = {
+					any_neighbor_province = {
+						owned_by = FROM
+						has_building = naval_battery
+					}
+				}
+			}
+			is_island = yes
+		}
+		modifier = { #Fixing the "I am special province, I give a flat +0.25 factor value."
+			factor = 0.038
+			OR = {
+				is_island = yes
+				NOT = { is_in_capital_area = yes }
+			}
+		}
+		modifier = { #Fixing the "I am special province, I give a flat +0.25 factor value.". If both, it turns into +0.50, so this halves the above factor, essentially.
+			factor = 0.5
+			AND = {
+				is_island = yes
+				is_in_capital_area = yes
+			}
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+################################################
+# Tier 3, 17th Century Buildings
+################################################
+cathedral = {
+	make_obsolete = temple
+
+	cost = 200			#BTAddOn changed from 300. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 24			#BTAddOn changed from 12. Doubling upgraded buildings' build time
+	modifier = {
+		local_missionary_strength = 0.02			#BTAddOn changed from 0.03, might slow conversion slightly, but avg dev is also lower, so that might be a good thing
+		#local_tax_modifier = 0.6
+		local_culture_conversion_cost = -0.30
+		local_unrest = -2
+	}
+	on_built = {
+		on_built_tax_building_effect = yes
+		on_province_tax_building_built_estate_privileges_effect = yes
+		add_development_from_upgrading_or_building = {
+			building = cathedral
+			obsolete_building = temple
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+			}
+			FROM = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 5
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = temples_modifier }
+				owned_by = FROM 
+			}
+			add_province_modifier = {
+				name = gov_expanded_temple_rights_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			add_province_modifier = {
+				name = turkoman_peaceful_worshipping
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = -0.25
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = 0.5
+				}
+			}
+		}
+		add_province_modifier = {
+			name = azt_religious_classes
+			duration = -1
+			hidden = yes
+		}
+	}
+	on_destroyed = {
+		on_province_tax_building_destroyed_estate_privileges_effect = yes
+		remove_development_from_building = {
+			building = cathedral
+			type = tax
+			value = 2
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			remove_province_modifier = turkoman_peaceful_worshipping
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+			}
+			FROM = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -5
+				}
+			}
+		}
+		remove_province_modifier = gov_expanded_temple_rights_mod
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = 0.25
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_government_mechanic = blood_gathering_mechanic }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = blood_gathering_mechanic
+					power_type = blood
+					value = -1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_religious_classes
+			}
+			remove_province_modifier = azt_religious_classes
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 75
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 3
+			has_owner_religion = no			
+			has_owner_harmonized_religion = no
+			has_owner_secondary_religion = no
+			NOT = {								#BT Harb AI will not get this now if the province is not hurting them
+				OR = {
+					tolerance_to_this = 0
+					has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+					has_province_modifier = eth_accepted_society
+					has_province_modifier = estate_burghers_guaranteed_autonomy_mod
+					has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+					has_province_modifier = estate_church_lao_animism_mod
+					has_province_modifier = judaism_abrahamic_roots
+					has_province_modifier = son_fetishism_as_secondary_religion_province
+					has_province_modifier = msi_integrated_province
+					has_province_modifier = estate_church_muslim_integration_mod
+				}
+			}
+		}
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 2.1
+			has_owner_accepted_culture = no	
+			OR = {
+				has_owner_religion = yes			
+				has_owner_harmonized_religion = yes
+				has_owner_secondary_religion = yes		
+			}					
+		}
+		modifier = { #If AI has special privilege or whatever that buffs temples, build it.
+			factor = 2.1
+			OR = {
+				AND = { #Country gets dev from buildings
+					FROM = { has_country_flag = improve_development_on_buildings_built }
+					NOT = { gained_development_from_building = { building = $building$ } }
+				}
+				AND = { #Zoroastrian CoR
+					NOT = { development = 31 }
+					owner = { has_country_flag = can_place_center_of_reformation }
+					is_reformation_center = no
+					expelling_minorities = no
+					NOT = {
+						any_neighbor_province = {
+							is_reformation_center = yes
+						}
+					}
+					NOT = {
+						any_province = {
+							area = PREV
+							is_reformation_center = yes
+							religion = zoroastrian
+						}
+					}
+					OR = {
+						has_owner_religion = yes
+						NOT = { has_active_triggered_province_modifier = religious_center }
+					}
+				}
+				AND = { #Karma Temples
+					FROM = {
+						OR = {
+							religion = buddhism
+							religion = mahayana
+							religion = vajrayana
+						}
+						has_estate_privilege = estate_church_karma_temples
+					}
+				}
+				AND = { #Papal influence from temples
+					FROM = {
+						religion = catholic
+						has_estate_privilege = estate_church_influence_temples
+					}
+				}
+				AND = { #Manpower from tax buildings	
+					owner = {
+						has_country_flag = gets_manpower_from_tax_buildings
+					}
+				}
+				AND = { #Dev cost from temples
+					owner = { has_estate_privilege = estate_church_development_of_temples }
+					OR = {
+						has_owner_religion = yes
+						has_owner_harmonized_religion = yes
+						has_owner_secondary_religion = yes
+					}
+				}
+				AND = { #Dhimmi communities
+					owner = {
+						has_estate_privilege = estate_dhimmi_development_of_communities
+						NOT = { religion_group = PREV }
+					}
+				}
+				AND = { #Gets loyalty from temples
+					FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+				}
+				AND = { #Has expanded temple rights
+					FROM = { has_government_attribute = temples_modifier }
+					owned_by = FROM 
+				}
+				AND = { #Local unrest redux from mosques
+					FROM = { has_country_flag = mosque_local_unrest_flag }
+				}
+				AND = { #Crown land from mosques
+					FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+				}
+				AND = { #Aztec Blood Gathering mechanic
+					FROM = { has_government_mechanic = blood_gathering_mechanic }
+				}
+			}
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+
+university = {
+	cost = 400			#BTAddOn changed from 300. This is late game, vital to the spread of the enlightenment, and generally very important. Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think. Changing cost and time to be closer to/higher than the earlier manufactories. Note I'll also increase the enlightenment spread from a uni, so this becomes something to be built in key cities & let spread, not something to spam everywhere at tech 17 for tech spread and dev cost.
+	time = 48			#BTAddOn changed from 12. This is not meant to be spammed when the enlightenment hits to catch up, increased to 4y
+	
+	make_obsolete = college
+	modifier = {
+		local_institution_spread = 0.5			#BTAddOn new. Fits perfectly in the new tech system =D. Currently 100 percent bonus, which may be a bit much, but on the other hand still requires normal spread, and if a province is advanced enough to have a university, it probably is somwhat cutting edge anyway. Nice counterpoint for new non western tech penalties, too, so a tech minded country in Asia or Africa can still keep up with the spread bonus offsetting tech group spread penalties.
+		local_tax_modifier = 0.3			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		local_production_efficiency = 0.3			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		base_local_dev_points = 0.04	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+		#local_development_cost = -0.20			#BTAddOn removed. I wouldn't say universities aid development per se, so I'm moving this bonus elsewhere. Consider many older uni city examples, Cambrige, Oxford, Siena, Padua, Murcia, Heidelberg, Toulouse. Not really tiny, but not bastions of development and industry the London, Moscow, Berlin, Paris (though Paris did have a uni) etc. ended up moving dev bonus to production buildings to better represent this reality.
+		#allowed_num_of_buildings = 1			#BTAddOn removed. Terrain Overhaul addon (balanced to be enabled alongside misc addon) makes max buildings possible at around 40 development, instead of 100 development, so this isn't neccessary, and also a tad silly, if I may say so... 'Yay, we now have uni so we can build more buildings in our city'.... mkay
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = university
+			obsolete_building = college
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = university
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 2.5
+		modifier = {
+			factor = 0
+			is_state = no
+		}
+		modifier = { #You can spawn enlightenment here if this building is built!
+			factor = 5
+			development = 32
+			is_capital = yes
+			continent = europe
+			NOT = { is_institution_enabled = enlightenment }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			continent = europe
+			FROM = { has_institution = manufactories } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = enlightenment
+			FROM = { has_unembraced_institution = enlightenment }
+			continent = europe
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+		
+		################################################################################
+		###############	Almost guaranteeing unis in provinces with real historical universities	###############
+		################################################################################
+		modifier = {
+			factor = 20
+			OR = { #There's a lot of universities missing like the Swedish ones and some in Italy, but who cares.
+				province_id = 4730			#Bologna, 1088
+				province_id = 237			#Oxford, 1096
+				province_id = 183			#Paris (Sorbonne), 1160 (I thought it was older...)
+				province_id = 4370 			# Brian fixed; Cambridge, 1209
+				province_id = 216			#Salamanca, 1218
+				province_id = 4729 			# Brian fixed; Padua, 1222 or older
+				province_id = 121			#Naples, 1224
+				province_id = 196			#Toulouse, 1229
+				province_id = 200			#Montpellier, 1289
+				province_id = 119			#Macerata (Ancona), 1290
+				province_id = 1851			#Coimbra (actually started in Lisbon and moved to Coimbra in 1537, but whatever), 1290
+				province_id = 217			#Alcala (Madrid), 1293
+				province_id = 118			#Rome, 1303
+				province_id = 2976			#Perugia (Umbria), 1308
+				province_id = 116			#Florence, 1321
+				province_id = 115			#Pisa, 1343
+				province_id = 266			#Prague, 1348
+				province_id = 4728			#Pavia, 1361
+				province_id = 262			#Jagiellonian (Krakow), 1364
+				province_id = 134			#Vienna, 1365
+				province_id = 77			#Ruprecht Karl University of Heidelberg, 1386
+				province_id = 113			#Ferrara, 1391
+				province_id = 103			#Turin, 1404
+				province_id = 117			#Siena, 1408
+				province_id = 62			#Leipzig, 1409
+				province_id = 250			#St. Andrews (Fife), 1413
+				province_id = 46			#Rostock, 1419
+				province_id = 168			#Caen, 1432
+				province_id = 124			#Catania (Mesina), 1434
+			}
+		}
+	}
+}
+
+trade_depot = {
+	cost = 200			#BTAddOn changed from 300. 
+	time = 24			#BTAddOn changed from 12. Doubling upgraded buildings' build time
+	
+	make_obsolete = marketplace
+
+	modifier = {
+		province_trade_power_modifier = 0.75			#BTAddOn changed from 1.0, for reasons explained in market entry.
+		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = trade_depot
+			obsolete_building = marketplace
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = trade_depot
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		#Vanilla base factor: 1.5. 
+		#Vanilla cost: 300.
+		#Vanilla cost to upgrade: 250.
+		#Base yearly return from 0: 1.5*(0.01+value(+100% trade power))
+		#Base yearly return from upgrade: 1.5*(0.01+value(+50% trade power))
+		#AI needs 2.4 times as much encouragement to upgrade compared to building from 0.
+		#BT Building Changes:
+		#1. 3/4ths trade power of vanilla. --> Increase factor by 33%.
+		#2. 2/3rds cost of building --> Decrease factor by 33%.
+		# --> Base factor = 1.5 if we want vanilla behaviour.
+		#For upgrading:
+		#1. Trade power gain is +50%, not +100% --> Require increased factor
+		#2. Cost is +300%, not +100% --> Require increased factor
+		#Therefore, AI is *much* less likely to upgrade from the marketplace in BT.
+		factor = 3
+		modifier = { #These are any CoT as well as any province over 50 dev. Logically the AI should build them there.
+			factor = 2
+			province_trade_power = 5
+		}
+		modifier = { #These are level 2 CoT as well as any province over 100 dev. Logically the AI should build them there.
+			factor = 2
+			province_trade_power = 10
+		}
+		modifier = { #We want the AI to build these where it already has a marketplace.
+			factor = 2
+			has_building = marketplace
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+grand_shipyard = { #BT: Actually Naval Base in-game
+	cost = 300			#BTAddOn notes - leaving this alone, see shipyard entry for logic
+	time = 24			#BTAddOn changed from 12. Doubling second level military buildings build time.
+	
+	make_obsolete = shipyard
+
+	build_trigger = {
+		has_port = yes
+	}
+	modifier = {
+		naval_forcelimit = 2			#BTAddOn changed from 4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		ship_recruit_speed = -0.30
+		local_ship_repair = 0.60
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = grand_shipyard
+			obsolete_building = shipyard
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = grand_shipyard
+			type = production
+			value = 2
+		}
+		if = {
+			limit = { has_province_modifier = sca_swe_danish_shipyard }
+			remove_province_modifier = sca_swe_danish_shipyard
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 45 #I don't know why this is so bloody high, but it is, and I'm nerfing it.
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = { #Using vanilla's behaviour here - we don't want the AI to spam out these.
+			factor = 315 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get a massive boost to this building on a fort province. Don't know why, but let's reduce it.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+training_fields = {
+	cost = 200			#BTAddOn changed from 300. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 24			#BTAddOn changed from 12. Doubling second level military buildings build time.
+	
+	make_obsolete = barracks
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.02
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.01
+#			}
+#		}
+#	}
+
+	modifier = {
+		local_manpower_modifier = 0.5			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		supply_limit = 1
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_manpower = 1
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = training_fields
+			obsolete_building = barracks
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+		update_improved_military_buildings_modifier = {
+			building = training_fields
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = 0.001
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_barracks_households
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_manpower = -1
+			}
+		}
+		update_improved_military_buildings_modifier = {
+			building = training_fields
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = -0.001
+			}
+		}
+		remove_development_from_building = {
+			building = training_fields
+			type = manpower
+			value = 2
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_barracks_households
+			}
+			remove_province_modifier = azt_barracks_households
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		#AI is capable of seeing economic factor from this.
+		factor = 240
+		modifier = { #Encourage if high manpower province.
+			factor = 1.2
+			base_manpower = 5
+		}
+		modifier = { #Encourage if high manpower province.
+			factor = 1.2
+			base_manpower = 10
+		}
+		modifier = { #Encourage if this was built in the province
+			factor = 10
+			has_building = soldier_households
+		}
+		modifier = { #Build if low on manpower.
+			factor = 2
+			owner = { NOT = { manpower_percentage = 0.2 } }
+		}
+		modifier = { #Build if low on manpower.
+			factor = 3
+			owner = { NOT = { manpower_percentage = 0.1 } }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+
+fort_17th = {
+	cost = 600			#BTAddOn changed from original 600
+	time = 48			#BTAddOn changed from original 30. Increasing build time of later forts by 6 months, 12 months, and 24 months
+	
+	make_obsolete = fort_16th
+
+	modifier = {
+		fort_level = 3			#BTAddOn changed from 6
+		local_unrest = -1.5			#BTAddOn new
+		local_defensiveness = 0.3			#BTAddOn new
+	}
+
+	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	on_built = {
+		if = {
+			limit = {
+				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
+			}
+			FROM = {
+				if = {
+					limit = {
+						has_estate = estate_nobles
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_maratha
+					}
+					add_estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_rajput
+					}
+					add_estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 5
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_development_of_castles
+				}
+				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	on_destroyed = {
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
+		}
+		
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	on_obsolete = {
+	}
+
+	onmap = yes
+
+	influencing_fort = yes
+
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+		modifier = {
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
+		}
+		modifier = { #Kindly nudge the AI towards making defensive lines.
+			factor = 3
+			NOT = { has_influencing_fort = yes }
+		}
+		modifier = { #There's little point building a fort next to another one.
+			factor = 0.1
+			has_influencing_fort = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+
+
+################################################
+# Tier 4, 18th Century Buildings
+################################################
+stock_exchange = {
+	cost = 400
+	time = 36			#BTAddOn changed from 12. tripling stock exchange build time, as a doubled upgraded building
+	
+	make_obsolete = trade_depot
+
+	modifier = {
+		province_trade_power_modifier = 1.5			#BTAddOn changed from 1.25. While earlier levels were weaker than vanilla, I'm increasing the final level, because by this tech level, the centres of wealth should be pulling a massive slice of the wealth in a node, and the many new provinces will have had plenty chance to build up and compete with the capitals much more than in vanilla.
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_trade_depot
+			}
+			add_development_from_upgrading_or_building = {
+				building = stock_exchange
+				obsolete_building = trade_depot
+				type = production
+				value = 3
+				upgrade_value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_marketplace
+			}
+			add_development_from_upgrading_or_building = {
+				building = stock_exchange
+				obsolete_building = marketplace
+				type = production
+				value = 3
+				upgrade_value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = stock_exchange
+			type = production
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		#Vanilla base factor: 1.5. 
+		#Vanilla cost: 400.
+		#Vanilla cost to upgrade: 100.
+		#Base yearly return from 0: 1.5*(0.01+value(+125% trade power))
+		#Base yearly return from upgrade: 1.5*(0.01+value(+25% trade power))
+		#AI needs 1.25 times as much encouragement to upgrade compared to building from 0.
+		#BT Building Changes:
+		#1. 6/5ths trade power of vanilla. --> Decrease factor by 17%.
+		# --> Base factor = 1.25 if we want vanilla behaviour.
+		#For upgrading:
+		#1. Trade power gain is +100%, not +50% --> Require decreased factor
+		#2. Cost is +100%, not +33% --> Require increased factor
+		#Therefore, AI is less likely to upgrade from the marketplace in BT.
+		factor = 3
+		modifier = { #These are any CoT as well as any province over 50 dev. Logically the AI should build them there.
+			factor = 2
+			province_trade_power = 5
+		}
+		modifier = { #These are level 2 CoT as well as any province over 100 dev. Logically the AI should build them there.
+			factor = 2
+			province_trade_power = 10
+		}
+		modifier = { #We want the AI to build these where it already has a marketplace.
+			factor = 2
+			has_building = trade_depot
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+counting_house = {
+	cost = 200			#BTAddOn changed from 400. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 24			#BTAddOn changed from 12. Doubling upgraded buildings' build time
+	
+	make_obsolete = workshop
+	modifier = {
+		local_development_cost = -0.2			#BTAddOn new. A little non-cash boost to make this building not worthless when it is too late in the game to make your ducats back from the cost to build it. Note the corresponding dev cost reduction has been removed from universities, where I felt it made less logical sense. Here, production and industry encourage development.
+		local_production_efficiency = 0.4			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = counting_house
+			obsolete_building = workshop
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = counting_house
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	allow_in_gold_provinces = no
+
+	ai_will_do = {
+		#Vanilla base factor: 1. 
+		#Vanilla cost: 400. 
+		#Base yearly return: 1*(0.01+value(+100% production efficiency)) --> 3.99 ducats gained/year --> +0.3325 ducats/month and AI will click.
+		#Base yearly return from upgrade: 1*(0.01+value(+50% production efficiency)) -> 2.99 ducats gained/year --> +0.249 ducats/month and AI will upgrade.
+		#AI needs 1.5 times as much encouragement to upgrade compared to building from 0.
+		#BT Building Changes:
+		#1. 3/5ths production --> Increase factor by +66%
+		#2. Half cost of building --> Half factor.
+		#BT Base yearly return: 1*(0.01+value(+60% production efficiency)) --> 1.99 ducats gained/year --> +0.1658 ducats/month
+		#BT Base yearly return from upgrade: 1*(0.01+value(+30% production efficiency)) --> 1.49 ducats gained/year --> +0.1242 ducats/month
+		#We desire this to be at around +0.04 ducats/month. Mainly because you need a lot of dev or high producing trade good.
+		factor = 5 #Tripled because this means about .04 ducats/month increase. (Added 1 for dev cost reduction and dev points)
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 5
+		}
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 10
+		}
+		modifier = { #Encourage if a proper manufactory was built in the province
+			factor = 10
+			has_manufactory_no_custom_tooltip_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+
+
+
+town_hall = {
+	cost = 200
+	time = 24			#BTAddOn changed from 12. Doubling upgraded buildings' build time
+	
+	make_obsolete = courthouse
+	
+	build_trigger = { #BT 13 added to balance states territories and tradecompanies.
+		is_state = yes
+	}
+
+	keep_trigger = {
+		is_state = yes
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = -0.3 # Harb's Autonomy Overhaul
+		#local_autonomy = -0.2
+		local_autonomy = -0.05 # Harb's Autonomy Overhaul
+		max_governing_capacity_from_townhalls = 0.5 # Harb's Autonomy Overhaul
+		#local_governing_cost = -0.5
+		#local_governing_cost = -0.2
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = town_hall
+			obsolete_building = courthouse
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+		if = { 
+			limit = { 
+				FROM = { has_country_flag = fra_courthouse_bonus_flag }
+				NOT = { has_province_modifier = fra_improved_court_houses_modifier }
+			}
+			add_province_modifier = {
+				name = fra_improved_court_houses_modifier
+				duration = -1 
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = town_hall
+			type = tax
+			value = 2
+		}
+		remove_province_modifier = fra_improved_court_houses_modifier 
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		#The AI will barely see any benefit to this building. State maintenance is miniscule.
+		factor = 3
+		modifier = {
+			factor = 0
+			NOT = {
+				is_state = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 0.9 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.2 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.3 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.4 }
+		}
+		modifier = {
+			factor = 1.5
+			FROM = { governing_capacity_percentage = 1.5 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 5 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 10 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 15 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 20 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 25 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 30 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 35 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 40 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 45 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 50 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 60 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 70 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 80 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { average_home_autonomy = 90 }
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+drydock = {
+	cost = 200			#BTAddOn changed from 300. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 24			#BTAddOn changed from 12. Doubling second level military buildings build time.
+	
+	make_obsolete = dock
+
+	build_trigger = {
+		has_port = yes
+	}
+
+	modifier = {
+		local_sailors_modifier = 1.0
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = drydock
+			obsolete_building = dock
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = drydock
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+
+	ai_will_do = {
+		#AI sees no monetary benefit from this, therefore factor needs to equal cost for AI to build.
+		factor = 40 #Vanilla has this set to 1, so clearly the AI shall never build these.
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = { #Encourage if this was built in the province
+			factor = 10
+			has_building = impressment_offices
+		}
+		modifier = { #Build if low on sailors.
+			factor = 2
+			owner = { NOT = { sailors_percentage = 0.2 } }
+		}
+		modifier = { #Build if low on sailors.
+			factor = 3
+			owner = { NOT = { sailors_percentage = 0.1 } }
+		}
+		modifier = { #Don't build bloody docks if you're not using your navy.
+			factor = 0
+			owner = { sailors_percentage = 0.75 }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI puts a flat 0.5 calculated value on fort provinces. I'm just dividing the total value by 10 because it's a magnitude above any other modifiers.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+conscription_center = {
+	cost = 300			#BTAddOn changed from 400. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+	time = 24			#BTAddOn changed from 12. Doubling second level military buildings build time.
+	
+	make_obsolete = regimental_camp
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.02
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.01
+#			}
+#		}
+#	}
+
+	modifier = {
+		land_forcelimit = 1			#BTAddOn changed from 2.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		regiment_recruit_speed = -0.25			#BTAddOn new. Adding this new feature to match the shipyard equivalents, which also speed recruit time.
+		supply_limit = 1
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = conscription_center
+			obsolete_building = regimental_camp
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+		update_improved_military_buildings_modifier = {
+			building = conscription_center
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = 0.001
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = azt_calpulli_houses_flag
+				}
+			}
+			add_province_modifier = {
+				name = azt_conscription_households
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = conscription_center
+			type = manpower
+			value = 2
+		}
+		update_improved_military_buildings_modifier = {
+			building = conscription_center
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = jap_tanegashima_teppo
+					has_dlc = "Cradle of Civilization" 
+				}
+			}
+			FROM = {
+				add_army_professionalism = -0.001
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = azt_conscription_households
+			}
+			remove_province_modifier = azt_conscription_households
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1 #The AI seems to give this thing a lot of weight somehow. Not sure how or why, but it *loves* building it on fort provinces.
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 0.90 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 0.95 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 1.00 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 1.05 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 1.10 monthly_income = 3 }
+		}
+		##
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { manpower_percentage = 0.90 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { manpower_percentage = 0.95 monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { manpower_percentage = 1.00 monthly_income = 3 }
+		}
+		##
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 3 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 6 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 9 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 12 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 15 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 18 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 21 }
+		}
+		modifier = {
+			factor = 1.1 # Little above build cost
+			FROM = { monthly_income = 24 }
+		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.5
+			NOT = { num_free_building_slots = 3 }
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+
+
+fort_18th = {
+	cost = 1000			#BTAddOn changed from original 800
+	time = 72			#BTAddOn changed from original 30. Increasing build time of later forts by 6 months (to 3y), then 12 more months (to 4y), and then 24 more months (to 6y)
+	
+	
+	make_obsolete = fort_17th
+
+	modifier = {
+		fort_level = 5			#BTAddOn changed from 8
+		local_unrest = -2.0			#BTAddOn new
+		local_defensiveness = 0.5			#BTAddOn new
+	}
+
+	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = on_fort_built_nobles_loyalty }
+			}
+			FROM = {
+				if = {
+					limit = {
+						has_estate = estate_nobles
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_maratha
+					}
+					add_estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 5
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_rajput
+					}
+					add_estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 5
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_development_of_castles
+				}
+				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					NOT = {
+						full_idea_group = defensive_ideas
+					}
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					has_country_flag = ned_buffed_forts_flag
+					full_idea_group = defensive_ideas
+				}
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = ned_low_countries_fort_buff_buffed
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	on_destroyed = {
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff
+			}
+			remove_province_modifier = ned_low_countries_fort_buff
+		}
+		if = {
+			limit = {
+				has_province_modifier = ned_low_countries_fort_buff_buffed
+			}
+			remove_province_modifier = ned_low_countries_fort_buff_buffed
+		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	on_obsolete = {
+	}
+
+	onmap = yes
+	influencing_fort = yes
+
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+		modifier = {
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
+		}
+		modifier = { #Kindly nudge the AI towards making defensive lines.
+			factor = 3
+			NOT = { has_influencing_fort = yes }
+		}
+		modifier = { #There's little point building a fort next to another one.
+			factor = 0.1
+			has_influencing_fort = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+################################################
+# Manufactories
+################################################
+
+manufactory = {
+	cost = 300 # BT lowered price and trade goods earned because too much scaling 
+	time = 36			#BTAddOn changed from 60. 5 year construction times are way out of line with all other buildings, and quite unneccessary, I think. Reducing this to comparable with other buildings.
+	modifier = {
+	}
+}
+
+#If trade good assignment changes, also update scripted trigger "has_manufactory trigger"!
+
+wharf = {
+	manufactory = {
+		naval_supplies
+		fish
+		salt
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#naval_forcelimit = 1			#BTAddOn new - Just a fun little new bonus
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = naval_supplies
+			trade_goods = fish
+			trade_goods = salt
+		}
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
+		
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = naval_supplies
+					trade_goods = fish
+					trade_goods = salt
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+weapons = {
+	manufactory = {
+		copper
+		iron
+		bt_trade_good_gunpowder
+		pa_trade_good_obsidian
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#land_forcelimit = 0.5			#BTAddOn new - Just a fun little new bonus
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = copper
+			trade_goods = iron
+			trade_goods = bt_trade_good_gunpowder
+			trade_goods = pa_trade_good_obsidian
+		}
+	}
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+					trade_goods = bt_trade_good_gunpowder
+					trade_goods = pa_trade_good_obsidian
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+textile = {
+	manufactory = {
+		wool
+		cloth
+		silk
+		dyes
+		bt_trade_good_books
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#local_tax_modifier = 0.25			#BTAddOn new - Just a fun little new bonus
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = wool
+			trade_goods = cloth
+			trade_goods = silk
+			trade_goods = dyes
+			trade_goods = bt_trade_good_books
+		}
+	}
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = wool
+					trade_goods = cloth
+					trade_goods = silk
+					trade_goods = dyes
+					trade_goods = bt_trade_good_books
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+plantations = {
+	manufactory = {
+		coffee
+		cotton
+		sugar
+		tobacco
+		tea
+		cocoa
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5		#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#local_production_efficiency = 0.25			#BTAddOn new - Just a fun little new bonus
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = coffee
+			trade_goods = cotton
+			trade_goods = sugar
+			trade_goods = tobacco
+			trade_goods = tea
+			trade_goods = cocoa
+		}
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = coffee
+					trade_goods = cotton
+					trade_goods = sugar
+					trade_goods = tobacco
+					trade_goods = tea
+					trade_goods = cocoa
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+tradecompany = {
+	manufactory = {
+		ivory
+		slaves
+		spices
+		cloves
+		fur
+		incense
+		bt_trade_good_whaling
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#province_trade_power_modifier = 0.5			#BTAddOn new - Just a fun little new bonus
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = ivory
+			trade_goods = slaves
+			trade_goods = spices
+			trade_goods = fur
+			trade_goods = incense
+			trade_goods = cloves
+			trade_goods = bt_trade_good_whaling
+		}
+	}
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = ivory
+					trade_goods = slaves
+					trade_goods = spices
+					trade_goods = fur
+					trade_goods = incense
+					trade_goods = cloves
+					trade_goods = bt_trade_good_whaling
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+farm_estate = {
+	manufactory = {
+		grain
+		livestock
+		wine
+		bt_trade_good_beer
+		bt_trade_good_fruit
+		bt_trade_good_apiculture
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#local_production_efficiency = 0.25			#BTAddOn new - Just a fun little new bonus
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = grain
+			trade_goods = livestock
+			trade_goods = wine
+			trade_goods = bt_trade_good_beer
+			trade_goods = bt_trade_good_fruit
+			trade_goods = bt_trade_good_apiculture
+		}
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = geo_wine_manufactory_flag
+				}
+			}
+			add_base_production = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory 
+			type = production 
+			value = 2 
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = geo_wine_manufactory_flag
+				}
+			}
+			add_base_production = -1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = bt_trade_good_beer
+					trade_goods = bt_trade_good_fruit
+					trade_goods = bt_trade_good_apiculture
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+mills = {
+	manufactory = {
+		paper
+		gems
+		tropical_wood
+		glass
+		chinaware
+		bt_trade_good_masonry
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#local_tax_modifier = 0.25			#BTAddOn new - Just a fun little new bonus
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = paper
+			trade_goods = gems
+			trade_goods = tropical_wood
+			trade_goods = glass
+			trade_goods = chinaware
+			trade_goods = bt_trade_good_masonry
+		}
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = production 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = paper
+					trade_goods = gems
+					trade_goods = tropical_wood
+					trade_goods = glass
+					trade_goods = chinaware
+					trade_goods = bt_trade_good_masonry
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+furnace = {
+	manufactory = {
+		coal
+	}
+
+	potential = {
+		has_dlc = "Rule Britannia"
+	}
+
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		global_trade_goods_size_modifier = 0.03			#BTAddOn changed from 0.05. This was just too huge, especially with all the new provinces.
+		base_local_dev_points = 0.03	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	}
+	onmap = yes
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	
+	keep_trigger = {
+		trade_goods = coal
+	}
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				trade_goods = coal
+			}
+		}
+		modifier = { #Why haven't you built this yet?
+			factor = 10000
+			trade_goods = coal
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+ramparts = {
+	manufactory = {
+		all
+	}
+
+	#build_trigger = {
+	#	is_flatland = yes
+	#}
+	modifier = {
+		local_hostile_attrition = 1
+		local_defensiveness = 0.2
+		local_defender_dice_roll_bonus = 1
+		local_fort_maintenance_modifier = -0.25
+	}
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	
+	on_built = {
+		add_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1 
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_development_of_castles
+				}
+				NOT = { has_province_modifier = estate_nobles_development_of_castles_ramparts_mod }
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_ramparts_mod
+				duration = -1
+			}
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = { has_province_modifier = per_reinforced_defenses }
+			remove_province_modifier = per_reinforced_defenses
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_ramparts_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_ramparts_mod
+		}
+	}
+	ai_will_do = {
+		factor = 1 #The base value of this building is actually 1.01 if it's on a fort.
+		modifier = {
+			factor = 5
+			has_fort_building_trigger = yes
+			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
+			OR = {
+				AND = {
+					OR = {
+						trade_goods = naval_supplies
+						trade_goods = fish
+						trade_goods = salt
+					}
+					FROM = { dip_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
+					}
+					FROM = { mil_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = wool
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = bt_trade_good_books
+					}
+					FROM = { adm_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = sugar
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = cocoa
+					}
+					FROM = { adm_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = ivory
+						trade_goods = slaves
+						trade_goods = spices
+						trade_goods = cloves
+						trade_goods = fur
+						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
+					}
+					FROM = { dip_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = bt_trade_good_beer
+						trade_goods = bt_trade_good_fruit
+						trade_goods = bt_trade_good_apiculture
+					}
+					FROM = { adm_tech = 6 }
+				}
+				AND = {
+					OR = {
+						trade_goods = paper
+						trade_goods = gems
+						trade_goods = tropical_wood
+						trade_goods = glass
+						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
+					}
+					FROM = { adm_tech = 16 }
+				}
+				AND = {
+					trade_goods = coal
+					FROM = { adm_tech = 21 }
+				}
+			}
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+soldier_households = {
+	manufactory = {
+		all
+	}
+
+	bonus_manufactory = { # Will apply an extra modifier if these goods
+		grain
+		fish
+		livestock
+		wine
+		bt_trade_good_fruit
+	}
+
+	modifier = {
+		local_manpower = 0.75
+	}
+	bonus_modifier = {
+		local_manpower = 0.75
+	}
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1 
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = improved_military_buildings
+				}
+			}
+			add_province_modifier = {
+				name = wei_suo_system_reform_soldier_households_modifier
+				duration = -1
+			}
+		}
+		#BT Added: Give free training fields upon constructing soldier households (Current only Bulgarian Missions)
+		if = {
+			limit = {
+				FROM = { #Once gov reform mechanic is added, change this effect to be an OR statement.
+					has_country_flag = mechanic_soldier_households_free_training_fields_flag
+				}
+				num_free_building_slots = 1
+			}
+			add_building = training_fields
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1
+		}
+		if = {
+			limit = {
+				has_province_modifier = wei_suo_system_reform_soldier_households_modifier
+			}
+			remove_province_modifier = wei_suo_system_reform_soldier_households_modifier
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 40 #Apparently the AI seems to see *some* sort of value in these buildings with manpower modifiers and forcelimit modifiers.
+			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
+			OR = {
+				AND = {
+					OR = {
+						trade_goods = naval_supplies
+						trade_goods = fish
+						trade_goods = salt
+					}
+					FROM = { dip_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
+					}
+					FROM = { mil_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = wool
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = bt_trade_good_books
+					}
+					FROM = { adm_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = sugar
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = cocoa
+					}
+					FROM = { adm_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = ivory
+						trade_goods = slaves
+						trade_goods = spices
+						trade_goods = cloves
+						trade_goods = fur
+						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
+					}
+					FROM = { dip_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = bt_trade_good_beer
+						trade_goods = bt_trade_good_fruit
+						trade_goods = bt_trade_good_apiculture
+					}
+					FROM = { adm_tech = 6 }
+				}
+				AND = {
+					OR = {
+						trade_goods = paper
+						trade_goods = gems
+						trade_goods = tropical_wood
+						trade_goods = glass
+						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
+					}
+					FROM = { adm_tech = 16 }
+				}
+				AND = {
+					trade_goods = coal
+					FROM = { adm_tech = 21 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				trade_goods = grain
+				trade_goods = fish
+				trade_goods = livestock
+				trade_goods = wine
+				trade_goods = bt_trade_good_fruit
+			}
+		}
+		modifier = { #The AI seems to get ten times the value factor on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+impressment_offices = {
+	manufactory = {
+		all
+	}
+
+	bonus_manufactory = { # Will apply an extra modifier if these goods
+		salt
+		fish
+		naval_supplies
+		tropical_wood
+		bt_trade_good_beer
+	}
+
+	build_trigger = {
+		has_port = yes
+	}
+
+	modifier = {
+		local_sailors = 250
+		ship_recruit_speed = -0.1
+		local_ship_cost = -0.1 #BT increased to incentivise
+	}
+	bonus_modifier = {
+		local_sailors = 250
+		ship_recruit_speed = -0.1
+		local_ship_cost = -0.1 #BT increased to incentivise
+	}
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = impressment_offices
+			type = manpower
+			value = 2
+		}
+		add_dev_from_building = {
+			building = impressment_offices 
+			type = manpower 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = impressment_offices
+			type = manpower
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = impressment_offices 
+			type = manpower 
+			value = 1 
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = {
+			factor = 40 #Apparently the AI sees a lot of value if there's already naval forcelimit and/or sailor modifiers on the province.
+			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
+			OR = {
+				AND = {
+					OR = {
+						trade_goods = naval_supplies
+						trade_goods = fish
+						trade_goods = salt
+					}
+					FROM = { dip_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
+					}
+					FROM = { mil_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = wool
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = bt_trade_good_books
+					}
+					FROM = { adm_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = sugar
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = cocoa
+					}
+					FROM = { adm_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = ivory
+						trade_goods = slaves
+						trade_goods = spices
+						trade_goods = cloves
+						trade_goods = fur
+						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
+					}
+					FROM = { dip_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = bt_trade_good_beer
+						trade_goods = bt_trade_good_fruit
+						trade_goods = bt_trade_good_apiculture
+					}
+					FROM = { adm_tech = 6 }
+				}
+				AND = {
+					OR = {
+						trade_goods = paper
+						trade_goods = gems
+						trade_goods = tropical_wood
+						trade_goods = glass
+						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
+					}
+					FROM = { adm_tech = 16 }
+				}
+				AND = {
+					trade_goods = coal
+					FROM = { adm_tech = 21 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				trade_goods = salt
+				trade_goods = fish
+				trade_goods = naval_supplies
+				trade_goods = tropical_wood
+				trade_goods = bt_trade_good_beer
+			}
+		}
+		modifier = { #The AI seems to get ten times the value factor on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
+
+state_house = {
+	manufactory = {
+		all
+	}
+
+	# bonus_manufactory = { # Will apply an extra modifier if these goods
+		# paper
+		# glass
+		# gems
+		# bt_trade_good_books
+		# chinaware
+	# }
+
+	build_trigger = {
+		is_state = yes
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = FROM
+				}
+				OR = {
+					has_building = state_house
+					has_construction = state_house
+				}
+			}
+		}
+	}
+	
+	keep_trigger = {
+		is_state = yes
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = FROM
+				}
+				OR = {
+					has_building = state_house
+					has_construction = state_house
+				}
+			}
+		}
+	}
+
+	modifier = {
+		#statewide_governing_cost = -0.2
+		#local_governing_cost_increase = -4
+		local_autonomy = -0.15
+		province_trade_power_value = 2.5
+		local_governing_cost = -0.25
+		local_state_maintenance_modifier = -0.5 # Harb's Autonomy Overhaul
+	}
+	# bonus_modifier = {
+		# #statewide_governing_cost = -0.2
+		# local_governing_cost_increase = -4
+		# local_autonomy = -0.050
+		# local_state_maintenance_modifier = -0.25
+	# }
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = state_house
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = state_house
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 505 #AI sees absolutely no value in this building.
+			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
+			OR = {
+				AND = {
+					OR = {
+						trade_goods = naval_supplies
+						trade_goods = fish
+						trade_goods = salt
+					}
+					FROM = { dip_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+						trade_goods = bt_trade_good_gunpowder
+					}
+					FROM = { mil_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = wool
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = bt_trade_good_books
+					}
+					FROM = { adm_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = sugar
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = cocoa
+					}
+					FROM = { adm_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = ivory
+						trade_goods = slaves
+						trade_goods = spices
+						trade_goods = cloves
+						trade_goods = fur
+						trade_goods = incense
+						trade_goods = bt_trade_good_whaling
+					}
+					FROM = { dip_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = bt_trade_good_beer
+						trade_goods = bt_trade_good_fruit
+						trade_goods = bt_trade_good_apiculture
+					}
+					FROM = { adm_tech = 6 }
+				}
+				AND = {
+					OR = {
+						trade_goods = paper
+						trade_goods = gems
+						trade_goods = tropical_wood
+						trade_goods = glass
+						trade_goods = chinaware
+						trade_goods = bt_trade_good_masonry
+					}
+					FROM = { adm_tech = 16 }
+				}
+				AND = {
+					trade_goods = coal
+					FROM = { adm_tech = 21 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			NOT = {
+				has_province_flag = has_expanded_infrastucture_here
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				trade_goods = paper
+				trade_goods = glass
+				trade_goods = gems
+				trade_goods = bt_trade_good_books
+			}
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
+
