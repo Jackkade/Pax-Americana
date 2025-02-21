@@ -11,6 +11,7 @@ colonial_viceroyalty_pa = {
 	upgrade_subject_type = yes
 	is_colony_subtype = yes
 	can_send_missionary_to_subject = yes	
+	can_have_subjects_of_other_types = yes
 	count = colony
 
 	forcelimit_to_overlord = 0.15
