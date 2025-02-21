@@ -1,0 +1,53 @@
+
+colonial_viceroyalty_pa = {
+	copy_from = colony
+	
+	# Graphics:
+	sprite = GFX_icon_viceroyalty_relation
+	diplomacy_overlord_sprite = GFX_icon_viceroyalty_overlord
+	diplomacy_subject_sprite = GFX_icon_viceroyalty_subject
+	
+	change_colonial_type = no
+	upgrade_subject_type = yes
+	is_colony_subtype = yes
+	can_send_missionary_to_subject = yes	
+	count = colony
+
+	forcelimit_to_overlord = 0.15
+	manpower_to_overlord = 0.0
+	naval_forcelimit_to_overlord = 0.15
+	sailors_to_overlord = 0.0
+
+	max_government_rank = 0
+
+	# Subject Interactions:
+	embargo_rivals = yes
+	support_loyalists = yes
+	subsidize_armies = yes
+	send_officers = yes
+	enforce_religion = yes
+	takeondebt = yes
+	block_settlement_growth = yes
+	allow_settlement_growth = yes
+	enforce_culture = no
+	customize_subject = no
+	fortify_march = yes
+	
+	# Modifiers:
+	modifier_subject = clear # Harb's Autonomy Overhaul
+	modifier_subject = { # Harb's Autonomy Overhaul
+		modifier = is_colony_subject
+	}
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = crown_colony_overlord
+		trigger = {
+			total_development = 80
+		}
+	}
+
+	modifier_subject = {
+		modifier = crown_colony_subject
+	}
+	
+}
