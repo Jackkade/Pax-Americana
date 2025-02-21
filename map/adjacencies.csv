@@ -191,7 +191,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 6047;500;sea;1522;-1;-1;-1;-1;Grenadines-StVincent
 5582;6047;sea;1522;-1;-1;-1;-1;Grenada-Grenadines
 502;5581;sea;1522;-1;-1;-1;-1;Trinidad-Tobago
-5578;2808;sea;1519;-1;-1;-1;-1;Aruba-Coro
 7777;54;sea;1268;-1;-1;2785;1911;Pinneberg-Stade
 7776;54;sea;1268;2784;1916;2782;1915;Itzehoe-Stade
 4141;8297;sea;1268;-1;-1;2775;1916;Dithmarschen-Hadeln
@@ -224,4 +223,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7555;7566;sea;1512;-1;-1;-1;-1;Ceiba-Roatan
 6060;838;sea;1514;-1;-1;-1;-1;misquitoCoast
 7539;5584;sea;1526;-1;-1;-1;-1;Bieke-Amonhara
+5578;491;sea;1519;-1;-1;-1;-1;Aruba-Curaco
+491;6046;sea;1519;-1;-1;-1;-1;Curaco-Bonaire
 -1;-1;;-1;-1;-1;-1;-1;-1;
