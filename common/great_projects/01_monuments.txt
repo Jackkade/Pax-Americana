@@ -21158,7 +21158,11 @@ tzintzuntzan = {
 	starting_tier = 1
 	type = monument
 	build_trigger = {
-		culture_group = central_american
+		OR = {
+			culture_group = central_american
+			culture_group = otomanguean
+			culture_group = southern_uto_aztecan
+		}
 		province_is_or_accepts_culture = yes
 		province_is_or_accepts_religion = {
 			religion = nahuatl
@@ -21167,14 +21171,22 @@ tzintzuntzan = {
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = {
-		culture_group = central_american
+		OR = {
+			culture_group = central_american
+			culture_group = otomanguean
+			culture_group = southern_uto_aztecan
+		}
 		province_is_or_accepts_culture = yes
 		province_is_or_accepts_religion = {
 			religion = nahuatl
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = central_american
+		OR = {
+			culture_group = central_american
+			culture_group = otomanguean
+			culture_group = southern_uto_aztecan
+		}
 		province_is_or_accepts_culture = yes
 		province_is_or_accepts_religion = {
 			religion = nahuatl

@@ -2255,3 +2255,340 @@ rosehall_great_house = {
 	}
 
 }
+
+zocalo = {
+	start = 852		#Mexico City
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1443.1.1		# 
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	keep_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_gold_depletion_chance_modifier = -0.50
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_core_creation = -0.25
+			local_missionary_maintenance_cost = -0.10
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			local_gold_depletion_chance_modifier = -0.50
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_core_creation = -0.25
+			local_gold_depletion_chance_modifier = -0.25
+			local_missionary_maintenance_cost = -0.15 
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			local_gold_depletion_chance_modifier = -0.5
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_core_creation = -0.25
+			local_gold_depletion_chance_modifier = -0.25
+			local_missionary_maintenance_cost = -0.15 
+		}
+
+		country_modifiers = {
+			discipline = 0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+
+}
+
+san_juan_de_ulua = {
+	start = 2647		#Veracruz
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1443.1.1		# 
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	can_upgrade_trigger = {
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	keep_trigger = {
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			province_trade_power_value = 30
+		}
+
+		area_modifier = {
+			block_slave_raid = yes
+		}
+
+		region_modifier = {
+		}
+
+		country_modifiers = {
+			unjustified_demands = -0.1
+			land_attrition = -0.1
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+			province_trade_power_value = 30
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			block_slave_raid = yes
+		}
+
+		country_modifiers = {
+			unjustified_demands = -0.1
+			land_attrition = -0.1
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+			province_trade_power_value = 50
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_own_coast_naval_combat_bonus = 1 
+			block_slave_raid = yes
+		}
+
+		country_modifiers = {
+			unjustified_demands = -0.2
+			land_attrition = -0.1
+		}
+
+		on_upgraded = {
+		}
+	}
+
+}

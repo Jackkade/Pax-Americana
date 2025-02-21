@@ -64,4 +64,14 @@ spriteTypes = {
 		name = "GFX_great_project_rosehall_great_house"	
 		texturefile = "gfx//interface//great_projects//great_project_rosehall_great_house.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_great_project_zocalo"	
+		texturefile = "gfx//interface//great_projects//great_project_zocalo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_san_juan_de_ulua"	
+		texturefile = "gfx//interface//great_projects//great_project_san_juan_de_ulua.dds"
+	}
 }
