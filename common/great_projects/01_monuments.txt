@@ -3699,6 +3699,9 @@ tenochtitlan = {
 			is_mestizo_culture = yes
 		}
 		province_is_or_accepts_culture = yes
+		province_is_or_accepts_religion = {
+			religion = nahuatl
+		}
 	}
 
 	#what to do when it's built
@@ -3720,6 +3723,9 @@ tenochtitlan = {
 			is_mestizo_culture = yes
 		}
 		province_is_or_accepts_culture = yes
+		province_is_or_accepts_religion = {
+			religion = nahuatl
+		}
 	}
 
 	#can our country upgrade it?
@@ -3731,6 +3737,9 @@ tenochtitlan = {
 			is_mestizo_culture = yes
 		}
 		province_is_or_accepts_culture = yes
+		province_is_or_accepts_religion = {
+			religion = nahuatl
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
