@@ -1,0 +1,24 @@
+namespace = PA_NSP_flavor
+
+country_event = {   #Cortez detroys the aztecs
+    id = PA_NSP_flavor.1
+	title = PA_NSP_flavor.1.t
+	desc = PA_NSP_flavor.1.d
+	picture = DECLARATION_INDEPENDENCE_eventPicture #TODO change
+
+	fire_only_once = yes
+	
+	major = yes
+
+    trigger = {
+
+    }
+    mean_time_to_happen = {
+
+    }
+
+    option = {
+
+    }
+
+}

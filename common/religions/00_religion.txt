@@ -925,6 +925,8 @@ christian = {
 		heretic = { LATTER_DAY_SAINTS BICKERTONIE GODBEITES }
 		
 		date = 1829.1.8 # Book of Mormon Finished
+
+		fervor = yes
 	}
 
 	harmonized_modifier = harmonized_christian
