@@ -175,6 +175,69 @@ federal_republic = {
 	duration = 4
 }
 
+#New Spain Viceroyalty
+colonial_viceroyalty_reform = {
+	icon = "crown_colony_government"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	fixed_rank = 0
+	potential = {
+		is_colonial_nation = yes
+		OR = {
+			has_reform = crown_colony_government
+			has_reform = private_enterprise_colony_government
+			has_reform = self_governing_colony_government
+		}
+	}
+	trigger = {
+		is_subject_of_type = colonial_viceroyalty_pa
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {		
+		army_tradition = 0.5
+		missionaries = 1
+		nobles_influence_modifier = 0.05
+		governing_capacity = 50 # Harb's Autonomy Overhaul
+		governing_capacity_modifier = 0.1
+		max_absolutism = 55
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = private_enterprise }
+				add_government_reform = private_enterprise_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_subject_of_type = private_enterprise }
+				add_government_reform = private_enterprise_colony_government
+			}
+			if = {
+				limit = { is_subject_of_type = self_governing_colony }
+				add_government_reform = self_governing_colony_government
+			}
+		}
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		enables_estate_nobles = yes
+		enables_estate_burghers = yes
+		enables_estate_church = yes
+	}
+	duration = 8
+}
+
 english_parliamentary_republic_government = {
 	icon = "house_of_lords"
 	lock_level_when_selected = yes

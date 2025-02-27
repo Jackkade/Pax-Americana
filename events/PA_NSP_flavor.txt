@@ -1,6 +1,6 @@
 namespace = PA_NSP_flavor
 
-country_event = {   #Cortez detroys the aztecs
+country_event = {   #Cortez detroys the Aztecs
     id = PA_NSP_flavor.1
 	title = PA_NSP_flavor.1.t
 	desc = PA_NSP_flavor.1.d
@@ -11,14 +11,113 @@ country_event = {   #Cortez detroys the aztecs
 	major = yes
 
     trigger = {
-
+        OR = {
+            tag = CAS
+            tag = SPA
+        }
+        religion_group = christian
+        cuba_area = {
+            type = all
+            country_or_non_sovereign_subject_holds = ROOT
+        }
+        east_cuba_area = {
+            type = all
+            country_or_non_sovereign_subject_holds = ROOT
+        }
+        AZT = {
+            primitives = yes 
+            ai = yes
+            num_of_subjects = 1
+            NOT = { religion_group = christian }
+        }
+        NOT = {
+            is_year = 1600
+        }
     }
     mean_time_to_happen = {
-
+        years = 20
+        modifier = {    #Erm... yep, your doomed
+            factor = 0.7
+            AZT = {
+                doom = 30 
+            }
+        }
+        modifier = {
+            factor = 0.7
+            AZT = {
+                doom = 60 
+            }
+        }
+        modifier = {
+            factor = 0.7
+            AZT = {
+                doom = 90 
+            }
+        }
     }
 
     option = {
+        name = PA_NSP_flavor.1.a
 
-    }
+		AZT = {
+            disband_all_units = yes 
+            every_owned_province = {
+                add_core = NSP
+            }
+        }
+        NSP = {
+            inherit = AZT
+            every_subject_country = {
+                limit = {
+                    is_subject_of_type = nahuatl_tributary 
+                }
+                grant_independence = yes 
+            }
+            add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}	
+            add_yearly_manpower = 2
+            add_adm_power = 100 
+            add_dip_power = 100 
+            add_mil_power = 100 
+            add_treasury = 500
+            change_religion = ROOT
+            change_primary_culture = ROOT
+            change_government = republic
+            add_government_reform = colonial_viceroyalty_reform
+            add_republican_tradition = 100
+            change_country_color = { country = ROOT } 
+            define_ruler = {
+                name = "Hernándo"
+                dynasty = "Cortés"
+                culture = ROOT
+                religion = ROOT
+                adm = 5
+                dip = 3
+                mil = 6
+                fixed = yes
+                age = 36
+                claim = 100
+            }
+        }
+        create_subject = {
+            subject_type = colonial_viceroyalty_pa
+            subject = NSP
+        }
+        add_trust = {
+            who = NSP
+            value = 25
+            mutual = yes
+        }
+        reverse_add_opinion = {
+            who = NSP
+            modifier = bt_sc_loyal_subject
+        }
+        NSP = {
+            add_liberty_desire = -50
+        }
+        ai_chance = { factor = 100 }
+	}
 
 }
