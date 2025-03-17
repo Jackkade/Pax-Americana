@@ -27,9 +27,6 @@ can_colonize_province = {
             }
             OR = {
                 FROM = {
-                    is_colonial_nation = yes 
-                }
-                FROM = {
                     AND = { #Currently only Netherlands should colonize
                         culture_group = germanic
                         NOT = { tag = NED }
