@@ -24,6 +24,11 @@ can_colonize_province = {
         potential = {
             FROM = {
                 ai = yes
+                OR = {
+                    capital_scope = { continent = europe }
+                    capital_scope = { continent = africa }
+                    capital_scope = { continent = asia }
+                }
             }
             OR = {
                 FROM = {
