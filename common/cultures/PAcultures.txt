@@ -2469,6 +2469,7 @@ chibchan = {
 	}
 	
 }
+
 miskito_g = {
 	miskito = {
 		primary = MIS
@@ -2513,7 +2514,6 @@ miskito_g = {
 		}
 	}
 }
-
 
 arawakan_g = {
 	graphical_culture = southamericagfx
