@@ -116,53 +116,6 @@ can_colonize_province = {
                     }
                 }
                 #####
-
-                #####    England/Great Britain Banned Locations
-                AND = {
-                    FROM = {
-                        OR = {
-                            tag = ENG 
-                            tag = GBR
-                        }
-                    }
-                    NOT = {
-                        is_year = 1750
-                    }
-                    OR = {
-                        region = california_region
-                        region = central_america_region
-                        region = rio_grande_region
-                        region = mexico_region
-                        continent = south_america
-                        continent = africa
-                        NOT = { region = south_africa_region }
-                        NOT = { area = south_atlantic_islands_area }
-                    }
-                }
-                #####
-
-                #####    France Banned Locations
-                AND = {
-                    FROM = {
-                        tag = FRA
-                    }
-                    NOT = {
-                        is_year = 1700
-                    }
-                    OR = {
-                        region = california_region
-                        region = central_america_region
-                        region = rio_grande_region
-                        region = mexico_region
-                        region = la_plata_region
-                        region = peru_region
-                        region = colombia_region
-                        continent = africa
-                        continent = asia
-                        continent = oceania
-                    }
-                }
-                #####
                 
                 #####    Russia/East Slavic Banned Locations
                 AND = {
