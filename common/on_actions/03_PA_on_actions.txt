@@ -38,7 +38,6 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = anglo_caribbean
 				change_original_culture = anglo_caribbean
-				set_province_flag = converted_to_colonial_culture
 			}
 			else_if = { #French
 				limit = {
@@ -48,7 +47,6 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = antillean
 				change_original_culture = antillean
-				set_province_flag = converted_to_colonial_culture
 			}
 			else_if = { #Dutch
 				limit = {
@@ -58,7 +56,6 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = caribisch
 				change_original_culture = caribisch
-				set_province_flag = converted_to_colonial_culture
 			}
 			else_if = {	#Portugese
 				limit = {
@@ -68,7 +65,6 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = carregadores
 				change_original_culture = carregadores
-				set_province_flag = converted_to_colonial_culture
 			}
 			else_if = {	#Spanish
 				limit = {
@@ -82,7 +78,6 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = caribeno
 				change_original_culture = caribeno
-				set_province_flag = converted_to_colonial_culture
 			}
 			else_if = {	#Scandinavian
 				limit = {
@@ -92,8 +87,8 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = karibisk
 				change_original_culture = karibisk
-				set_province_flag = converted_to_colonial_culture
 			}
+			set_province_flag = converted_to_colonial_culture
 		}
 		else_if = {			#Central America
 			limit = {
@@ -107,7 +102,6 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = belizean
 				change_original_culture = belizean
-				set_province_flag = converted_to_colonial_culture
 			}
 			else_if = { #Castillian
 				limit = {
@@ -121,8 +115,8 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = centrado
 				change_original_culture = centrado
-				set_province_flag = converted_to_colonial_culture
 			}
+			set_province_flag = converted_to_colonial_culture
 		}
 		else_if = {			#Canada
 			limit = {
@@ -136,7 +130,6 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = quebecois
 				change_original_culture = quebecois
-				set_province_flag = converted_to_colonial_culture
 			}
 			else_if = {	#Scandinavian
 				limit = {
@@ -146,8 +139,8 @@ on_colony_finished = { #ROOT - Province
 				}
 				change_culture = vinlandic
 				change_original_culture = vinlandic
-				set_province_flag = converted_to_colonial_culture
 			}
+			set_province_flag = converted_to_colonial_culture
 		}	#Break Here, this is kinda hackey but I want this to be well organized
 		
 		if = {	#If the culture has already been converted, don't convert again
