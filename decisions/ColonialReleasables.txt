@@ -20,9 +20,7 @@ country_decisions = {
 			NOT = { exists = GRL }
 			greenland_area = {
 				type = all
-				NOT = {
-					has_province_modifier = pa_new_colony_cooldown
-				}
+				is_city = yes
 				owned_by = ROOT
 			}
 		}
