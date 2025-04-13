@@ -375,22 +375,28 @@ colonial_eastern_america = {
 		}
 		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
 	}
-	# names = {
-		# trigger = {
-			# culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		# }
-		# name = "COLONIAL_EASTERN_AMERICA_BTP_Vinland"
-	# }
 	names = {
 		trigger = {
 			culture_group = germanic
 			NOT = {
 				primary_culture = dutch
+				primary_culture = flemish
 				tag = NED
 				tag = HOL
 			}
 		}
 		name = "COLONIAL_EASTERN_AMERICA_BTP_Neudeutschland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Nieuw_Holland"
 	}
 	names = {
 		trigger = { culture_group = byzantine }

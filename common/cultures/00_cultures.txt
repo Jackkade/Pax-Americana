@@ -876,7 +876,7 @@ british = {
 			George Gregory Gideon Gerald Grover Gouveneur Gordon
 			Humphrey Howard Hector Harold Horatio Henry
 			Isaac Israel Ian Irving
-			Joseph Jeffrey Jubal John Jebediah James Jacob Julius Julian Justin Josiah Joshua
+			Jack Joseph Jeffrey Jubal John Jebediah James Jacob Julius Julian Justin Josiah Joshua
 			Leonard Louis Lawrence Leland Luke Lionel Lorenzo Lamont Lyman
 			Moses Michael Mark Martin Milton Merriweather
 			Nathaniel Noah Nehemiah Nicholas
@@ -921,7 +921,7 @@ british = {
 			Custis Curtiss Clinch Cranston Call Canby Crawford Corbin
 			Davis Daniels Dolan Durant Dewitt Dent Drake Dilworth
 			Early Evans Eppes
-			Findlay Franklin Ford Farragut Featherstone Fitzgerald Firefly Fox Fillmore
+			Findlay Franklin Ford Farragut Featherstone Fitzgerald Firefly Fox Fillmore Fletcher
 			Garrett Gurney Grant Gibson Garfield Gage Gallatin Gorslin
 			Harding Hayes Hamilton Hughes Hart Harrison Hannegan Hill Hicks Holly Hammer Harney Halleck
 			Hancock Hawkins Harris
