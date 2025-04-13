@@ -46,7 +46,29 @@ colonial_rio_grande = {
 		855 858 859 860 861 863 864 880 881 882 883 884 885 886 887 888 2496 2497 2498 2499 2500 2614 2618 2619 2665 2666 2667 2668 2669 4606 4627 4628 4629 4630 4631 4644 4646 4647 4648 4909 4910 4911 5063 5066 5826 5830 5832 5844 7471 7472 7473 7474 7475 7476 7477 7478 7479 7480 7481 7482 7483 7484 7485 7486 7487 7514 7515 7516 7517 7518 7519 7520 7521 7523 7524 7525 7526 7527 7528
 		7561 7562 7669 7670 7671 7672 7673
 	}
-
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_RIO_GRANDE_Groﬂes_Flussland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_RIO_GRANDE_Groterivierland"
+	}
 	# Generic
 	names = {
 		name = "COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_Texas"
@@ -109,6 +131,30 @@ colonial_central_america = {
 		835 836 837 838 839 840 841 842 843 845 846 2632 2633 2634 2635 2636 2637 2638 2640 2650 2651 2652 2653 2660 2661 2662 2663 2664 2819 4585 4586 4587 4588 4589 4590 4591 4592 4593 4594 4595 4597 6060 7553 7554 7555 7556 7557 7558 7559 7560 7564 7565 7566 7567 7568 7569 7570 7571 7572 7573 7574 7575 7576 7577 7579 7580 7581 7582 7583 7584 7585 7586 7587 7588 7589 7590 7591 7592 7593 7594 7595 7596 7597 7599 7600 7605 7607 7661 7662 7663 7664 7665 7666 7971 7972 7973 7674 6700 6701 7678 7679 7680 7681 7682 7683 7684 7685 7686 7687 7688 7689 7690 7691 7692 7693 7694 7695 7696 7698 7699
 	}
 
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_CENTRAL_AMERICA_Zentraland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_CENTRAL_AMERICA_Centralegrond"
+	}
+
 	# Generic
 	names = {
 		name = "COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_Guatemala"
@@ -121,6 +167,51 @@ colonial_central_america = {
 	}
 	names = {
 		name = "COLONIAL_CENTRAL_AMERICA_Panama"
+	}
+	names = {
+		trigger = {
+			any_owned_province = { 
+				OR = {
+					area = yucatan_area
+					area = east_yucatan_area
+				}
+			}
+		}
+		name = "COLONIAL_MEXICO_Yucatan"
+	}
+	names = {
+		trigger = { owns = 841 } # Guatemala
+		name = "COLONIAL_MEXICO_Guatemala"
+	}
+	names = {
+		trigger = {
+			owns = 885 # Teyas
+		}
+		name = "COLONIAL_MEXICO_Texas"
+	}
+	names = {
+		trigger = {
+			owns = 843 # Belize
+		}
+		name = "PROV843"
+	}
+	names = {
+		trigger = {
+			owns = 837 # Nicaragua
+		}
+		name = "PROV837"
+	}
+	names = {
+		trigger = {
+			owns = 835 # Panama
+		}
+		name = "PROV835"
+	}
+	names = {
+		trigger = {
+			owns = 840 # Honduras
+		}
+		name = "PROV840"
 	}
 }
 
@@ -176,6 +267,32 @@ colonial_massachusetts = {
 		trigger = { primary_culture = english }
 		name = "COLONIAL_MASSACHUSETTS_NewEngland"
 	}
+
+
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_MASSACHUSETTS_Nordamerika"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_MASSACHUSETTS_Nieuw_Friesland"
+	}
+
 	# Generic
 	names = {
 		name = "COLONIAL_MASSACHUSETTS_Root_Culture_GetGroupName_Massachusetts"
@@ -236,6 +353,31 @@ colonial_carolina = {
 
 	provinces = {
 		918 919 925 929 930 931 932 933 934 935 936 937 938 939 2527 2528 2531 2532 2537 2538 2539 2540 2541 2542 2543 2544 2545 2546 2547 4878 4879 4880 4881 4882 4883 4913 7347 7348 7349 7350 7351 7352 7353 7354 7355 7356 7357 7358 7359 7360 7361 7362 7367 7368 7369 7370 7371 7373 7375 7377 7379 7382 7383 7384 7385 7386 7470
+	}
+
+	
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_CAROLINA_Karolingia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_CAROLINA_Oranjeprovincies"
 	}
 
 	# Generic

@@ -47,11 +47,6 @@ colonial_alaska = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_ALASKA_BTP_Denalien"
 	}
@@ -189,11 +184,6 @@ colonial_canada = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_CANADA_BTP_Kanata"
 	}
@@ -793,11 +783,6 @@ colonial_california = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_CALIFORNIA_BTP_Kalifien"
 	}
@@ -876,17 +861,21 @@ colonial_mexico = {
 		name = "COLONIAL_MEXICO_New_Castile"
 	}
 	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_MEXICO_New_Anglica"
+	}
+	names = {
 		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_MEXICO_BTP_Meksavik"
 	}
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_MEXICO_BTP_Mexicaland"
 	}
@@ -927,51 +916,6 @@ colonial_mexico = {
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		trigger = {
-			any_owned_province = { 
-				OR = {
-					area = yucatan_area
-					area = east_yucatan_area
-				}
-			}
-		}
-		name = "COLONIAL_MEXICO_Yucatan"
-	}
-	names = {
-		trigger = { owns = 841 } # Guatemala
-		name = "COLONIAL_MEXICO_Guatemala"
-	}
-	names = {
-		trigger = {
-			owns = 885 # Teyas
-		}
-		name = "COLONIAL_MEXICO_Texas"
-	}
-	names = {
-		trigger = {
-			owns = 843 # Belize
-		}
-		name = "PROV843"
-	}
-	names = {
-		trigger = {
-			owns = 837 # Nicaragua
-		}
-		name = "PROV837"
-	}
-	names = {
-		trigger = {
-			owns = 835 # Panama
-		}
-		name = "PROV835"
-	}
-	names = {
-		trigger = {
-			owns = 840 # Honduras
-		}
-		name = "PROV840"
 	}
 }
 
@@ -1039,6 +983,7 @@ colonial_the_carribean = {
 			culture_group = germanic
 			NOT = {
 				primary_culture = dutch
+				primary_culture = flemish
 				tag = NED
 				tag = HOL
 			}
@@ -1049,6 +994,7 @@ colonial_the_carribean = {
 		trigger = {
 			OR = {
 				primary_culture = dutch
+				primary_culture = flemish
 				tag = NED
 				tag = HOL
 			}
@@ -1171,11 +1117,6 @@ colonial_colombia = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_COLOMBIA_BTP_Welsien"
 	}
@@ -1263,11 +1204,6 @@ colonial_peru = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_PERU_BTP_Pyrien"
 	}
@@ -1397,11 +1333,6 @@ colonial_la_plata = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_LA_PLATA_BTP_Silberland"
 	}
@@ -1540,11 +1471,6 @@ colonial_brazil = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_BRAZIL_BTP_Pernambien"
 	}
@@ -1637,11 +1563,6 @@ colonial_australia = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
 		}
 		name = "COLONIAL_AUSTRALIA_BTP_Suedland"
 	}

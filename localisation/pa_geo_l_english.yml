@@ -151,6 +151,26 @@
  COLONIAL_CAROLINA_Carolina:0 "Carolina"
  COLONIAL_CAROLINA_Carolina_ADJ:0 "Carolinian"
 
+ #Specific
+ COLONIAL_MEXICO_New_Anglica:0 "New Anglica"
+ COLONIAL_MEXICO_New_Anglica_ADJ:0 "New Anglican"
+ COLONIAL_CAROLINA_Oranjeprovincies:0 "Oranjeprovincies"
+ COLONIAL_CAROLINA_Oranjeprovincies_ADJ:0 "Oranjeprovincian"
+ COLONIAL_CAROLINA_Karolingia:0 "Karolingia"
+ COLONIAL_CAROLINA_Karolingia_ADJ:0 "Karolingian"
+ COLONIAL_MASSACHUSETTS_Nieuw_Friesland:0 "Nieuw Friesland"
+ COLONIAL_MASSACHUSETTS_Nieuw_Friesland_ADJ:0 "Nieuw Friesian"
+ COLONIAL_MASSACHUSETTS_Nordamerika:0 "Nordamerika"
+ COLONIAL_MASSACHUSETTS_Nordamerika_ADJ:0 "Nordamerikan"
+ COLONIAL_CENTRAL_AMERICA_Centralegrond:0 "Centralegrond"
+ COLONIAL_CENTRAL_AMERICA_Centralegrond_ADJ:0 "Centralegronder"
+ COLONIAL_CENTRAL_AMERICA_Zentraland:0 "Zentraland"
+ COLONIAL_CENTRAL_AMERICA_Zentraland_ADJ:0 "Zentralandish"
+ COLONIAL_RIO_GRANDE_Groterivierland:0 "Groterivierland"
+ COLONIAL_RIO_GRANDE_Groterivierland_ADJ:0 "Groterivierlander"
+ COLONIAL_RIO_GRANDE_Großes_Flussland:0 "Großes Flussland"
+ COLONIAL_RIO_GRANDE_Großes_Flussland_ADJ:0 "Großes Flusslandish"
+
 
 
  #Areas
