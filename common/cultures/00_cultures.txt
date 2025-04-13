@@ -1904,7 +1904,7 @@ french = {
 		"de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy"
 		"de Barrau" "de La Fayette" "d'Armagnac" "de Rougé" "du Quenoy" "de Ficquelmont"
 		"de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie"
-		"de Vaudemont" "de NicolaÃ¿"
+		"de Vaudemont" "de Nicolaÿ"
 	}
 	male_names = {
 		Édouard Érrard Étienne Adémar Adrien Aimery Alain
@@ -10652,8 +10652,8 @@ mande = {
 		Bannu Bassarou Bassi Birama Bisi Biyu Bonga Cisse Dankaran Daoud David Dawud David Demba Diara Düru
 		Faga-Laye Fatta Fodi Fuluku FÃ¤dazu Gane Gao Hargani Harun Igoumou Ishaq Isaac Ismail Ismail Kabayo Kalabi Kambine
 		Kanafa Kassa KasseÃ¯ Kaya Kayna Kinkin Kisha Kodama KoÃ¯zé Kukuray Kusoy Lahiltoul M'Bali Maammarou Maghan
-		Mahmud Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata MaÃ¿roumfa Missi-Izé Morobani Musa Moses
-		Nintasanay Nuh Ouali OuankoÃ¿ Ouati Reidja Sakoura Salman Solomon Samsou-Béri Samsou-KeÃ¯na Sandaki Soumaba
+		Mahmud Mahmud Majan Malla Mamadi Mamoudou Manding-Bory Mari-Djata Maÿroumfa Missi-Izé Morobani Musa Moses
+		Nintasanay Nuh Ouali Ouankoÿ Ouati Reidja Sakoura Salman Solomon Samsou-Béri Samsou-KeÃ¯na Sandaki Soumaba
 		Soumaoro Soundiata Sulayman Solomon Takoi Tib Tomo Thomas Tunka Umar Umar Yama Yaqub Jacob Yasiboy Zakoi Zenku
 	}
 	female_names = {
