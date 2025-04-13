@@ -283,7 +283,7 @@ afro_american_group = {
 			John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael 
 			Mogens Nicholas Odd Olav Olaf Peder PridbjÃ¸rn Ragnar Ragnvald Rolf Rune RÃ¸rik Rurik Severin 
 			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven SÃ¤mund Thorolf Thorvald Torben TorbjÃ¸rn
-			TorbjÃ¶rn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
 			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
 			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
 			Holger JÃ¸rgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
@@ -639,175 +639,101 @@ french	= {
 	}
 	antillean = {	#Caribbean
 		primary = XXX
-		dynasty_names = { #French Names
-		"de Valois" "de Bourbon" "de la Tour" "d'Anjou"
-		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
-		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
-		"de Castellane" "d'Auvergne" "de Montbï¿½liard" "de Metz"
-		#CKII Frankish
-		"de Laval" "de la Tour du Pin" "de La Trï¿½moille" "de Crï¿½quy" "de Broglie"
-		"de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier"
-		"de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy"
-		"de Barrau" "de La Fayette" "d'Armagnac" "de Rougï¿½" "du Quenoy" "de Ficquelmont"
-		"de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie"
-		"de Vaudemont" "de Nicolaï¿½"
-		}
-		male_names = {
-			ï¿½douard ï¿½rrard ï¿½tienne Adï¿½mar Adrien Aimery Alain
-			Aldebert Aldï¿½ric Alphonse Amaury Amï¿½dï¿½e Ancel Andrï¿½ Antoine Archambaud Arnaud
-			Arnault Arnoul Aubry Aymar Barthï¿½lï¿½mi Baudouin Benoï¿½t Bï¿½renger Bernard Bertrand Bohemond
-			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Franï¿½ois
-			Frï¿½dï¿½ric Gaucher Gaucelin Gauthier Geoffroi Gï¿½raud Gilbert Gilles Godefroi
-			Guichard Guiges Guilhem Guillaume Guy Hï¿½lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
-			Jaufrï¿½ Jaspert Jean Jourdain Julien Lï¿½on Lï¿½onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
-			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thiï¿½baut
-			Thierry Thomas Valeran Yves
-		}
-		female_names = {
-			ï¿½lï¿½onore ï¿½lodie ï¿½tiennette Adï¿½le Adalmode Adelaide Adelinde
-			Agnï¿½s Alï¿½arde Alice Aliï¿½nor Agathe
-			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
-			Bï¿½atrice Bï¿½atrix Belleassez Benoï¿½te Bï¿½rengï¿½re
-			Berthe Blanche Bonne Bourgogne Bourguigne Cï¿½cile Cathï¿½rine
-			Charlotte Constance Denise Douce Echive Eglantine
-			Elisabeth Emma Ermengarde Ermessinde Esclarmonde
-			Euphrosine Eustachie Eve Gerberge Gisï¿½le Guillaumette Hï¿½loise Helvis Hodierne Ide Ildï¿½garde
-			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
-			Mascarose Mathilde Mï¿½lisande Mï¿½lisende Mï¿½lusine Pï¿½ronelle Pernelle Perinne Pernette Plaisance
-			Raymonde Sarrazine Solï¿½ne Sophie Stï¿½phanie Sybille Tiburge Valence Yolande
-		}
 	}
 	panameen = {	#Central American French
 		primary = XXX
-		dynasty_names = { #French Names
-		"de Valois" "de Bourbon" "de la Tour" "d'Anjou"
-		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
-		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
-		"de Castellane" "d'Auvergne" "de Montbï¿½liard" "de Metz"
-		#CKII Frankish
-		"de Laval" "de la Tour du Pin" "de La Trï¿½moille" "de Crï¿½quy" "de Broglie"
-		"de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier"
-		"de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy"
-		"de Barrau" "de La Fayette" "d'Armagnac" "de Rougï¿½" "du Quenoy" "de Ficquelmont"
-		"de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie"
-		"de Vaudemont" "de Nicolaï¿½"
-		}
-		male_names = {
-			ï¿½douard ï¿½rrard ï¿½tienne Adï¿½mar Adrien Aimery Alain
-			Aldebert Aldï¿½ric Alphonse Amaury Amï¿½dï¿½e Ancel Andrï¿½ Antoine Archambaud Arnaud
-			Arnault Arnoul Aubry Aymar Barthï¿½lï¿½mi Baudouin Benoï¿½t Bï¿½renger Bernard Bertrand Bohemond
-			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Franï¿½ois
-			Frï¿½dï¿½ric Gaucher Gaucelin Gauthier Geoffroi Gï¿½raud Gilbert Gilles Godefroi
-			Guichard Guiges Guilhem Guillaume Guy Hï¿½lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
-			Jaufrï¿½ Jaspert Jean Jourdain Julien Lï¿½on Lï¿½onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
-			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thiï¿½baut
-			Thierry Thomas Valeran Yves
-		}
-		female_names = {
-			ï¿½lï¿½onore ï¿½lodie ï¿½tiennette Adï¿½le Adalmode Adelaide Adelinde
-			Agnï¿½s Alï¿½arde Alice Aliï¿½nor Agathe
-			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
-			Bï¿½atrice Bï¿½atrix Belleassez Benoï¿½te Bï¿½rengï¿½re
-			Berthe Blanche Bonne Bourgogne Bourguigne Cï¿½cile Cathï¿½rine
-			Charlotte Constance Denise Douce Echive Eglantine
-			Elisabeth Emma Ermengarde Ermessinde Esclarmonde
-			Euphrosine Eustachie Eve Gerberge Gisï¿½le Guillaumette Hï¿½loise Helvis Hodierne Ide Ildï¿½garde
-			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
-			Mascarose Mathilde Mï¿½lisande Mï¿½lisende Mï¿½lusine Pï¿½ronelle Pernelle Perinne Pernette Plaisance
-			Raymonde Sarrazine Solï¿½ne Sophie Stï¿½phanie Sybille Tiburge Valence Yolande
-		}
 	}
 }
 
 iberian = { #Castillian
 	norteno = { #Eastern NA non-mexican
 		primary = XXX
-		dynasty_names = {#Castillian Names
-			"de Trastï¿½mara" "de Guzmï¿½n" "ï¿½lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Tï¿½llez-Girï¿½n "Manrique de Lara" "de ï¿½valos" Enrï¿½quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalï¿½"
+		dynasty_names = {
+			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zï¿½ï¿½iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso ï¿½lvaro Baltasar
-			Bernardo Bertrï¿½n Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco Garcï¿½a Gï¿½mez Gonzalo Gutierre Hermenegildo
-			Ignacio Laï¿½n Lope Miguel Nuï¿½o Odï¿½n Ramï¿½n Rodrigo Tomï¿½s Valeriano
-			Alfonso Alphonse Alonso Alphonse ï¿½lvar Oliver ï¿½lvaro Oliver Bermudo Vermudo Diego Diaco
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila Garcï¿½a Garcia Gil
-			Egidius Gï¿½mez Gomez Gonzalo Gonzalo Guillï¿½n William Guillermo William Gutierre Walter Juan
-			Lope Lupo Luis Louis Manrique Amalric Martï¿½n Martin Munio Munio Nuï¿½o Nuno Ordoï¿½o Ordono
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar
+			Bernardo Bertrán Hernando
+			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo
+			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
+			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco
+			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil
+			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan
+			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono
 			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho
 			Suero Tello Vela Vela Suero Oveco John Enrique
 		}
 		female_names = {
 			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza
-			Constance Elvira Elvira Estefanï¿½a Stephania Fronilda Fronilde Gontroda Gotruda Inï¿½s Agnes
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda Marï¿½a Maria Marina Marine
-			Mayor Mayor Mencï¿½a Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
+			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes
+			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine
+			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
 			Isabel
 		}
 
 	}
 	centrado = { #Central American
 		primary = XXX
-		dynasty_names = {#Castillian Names
-			"de Trastï¿½mara" "de Guzmï¿½n" "ï¿½lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Tï¿½llez-Girï¿½n "Manrique de Lara" "de ï¿½valos" Enrï¿½quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalï¿½"
+		dynasty_names = {
+			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zï¿½ï¿½iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso ï¿½lvaro Baltasar
-			Bernardo Bertrï¿½n Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco Garcï¿½a Gï¿½mez Gonzalo Gutierre Hermenegildo
-			Ignacio Laï¿½n Lope Miguel Nuï¿½o Odï¿½n Ramï¿½n Rodrigo Tomï¿½s Valeriano
-			Alfonso Alphonse Alonso Alphonse ï¿½lvar Oliver ï¿½lvaro Oliver Bermudo Vermudo Diego Diaco
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila Garcï¿½a Garcia Gil
-			Egidius Gï¿½mez Gomez Gonzalo Gonzalo Guillï¿½n William Guillermo William Gutierre Walter Juan
-			Lope Lupo Luis Louis Manrique Amalric Martï¿½n Martin Munio Munio Nuï¿½o Nuno Ordoï¿½o Ordono
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar
+			Bernardo Bertrán Hernando
+			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo
+			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
+			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco
+			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil
+			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan
+			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono
 			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho
 			Suero Tello Vela Vela Suero Oveco John Enrique
 		}
 		female_names = {
 			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza
-			Constance Elvira Elvira Estefanï¿½a Stephania Fronilda Fronilde Gontroda Gotruda Inï¿½s Agnes
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda Marï¿½a Maria Marina Marine
-			Mayor Mayor Mencï¿½a Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
+			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes
+			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine
+			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
 			Isabel
 		}
 	}
 	caribeno = {
 		primary = XXX
-		dynasty_names = {#Castillian Names
-			"de Trastï¿½mara" "de Guzmï¿½n" "ï¿½lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Tï¿½llez-Girï¿½n "Manrique de Lara" "de ï¿½valos" Enrï¿½quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalï¿½"
+		dynasty_names = {
+			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
+			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zï¿½ï¿½iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 		}
 		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso ï¿½lvaro Baltasar
-			Bernardo Bertrï¿½n Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco Garcï¿½a Gï¿½mez Gonzalo Gutierre Hermenegildo
-			Ignacio Laï¿½n Lope Miguel Nuï¿½o Odï¿½n Ramï¿½n Rodrigo Tomï¿½s Valeriano
-			Alfonso Alphonse Alonso Alphonse ï¿½lvar Oliver ï¿½lvaro Oliver Bermudo Vermudo Diego Diaco
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila Garcï¿½a Garcia Gil
-			Egidius Gï¿½mez Gomez Gonzalo Gonzalo Guillï¿½n William Guillermo William Gutierre Walter Juan
-			Lope Lupo Luis Louis Manrique Amalric Martï¿½n Martin Munio Munio Nuï¿½o Nuno Ordoï¿½o Ordono
+			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar
+			Bernardo Bertrán Hernando
+			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo
+			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
+			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco
+			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil
+			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan
+			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono
 			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho
 			Suero Tello Vela Vela Suero Oveco John Enrique
 		}
 		female_names = {
 			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza
-			Constance Elvira Elvira Estefanï¿½a Stephania Fronilda Fronilde Gontroda Gotruda Inï¿½s Agnes
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda Marï¿½a Maria Marina Marine
-			Mayor Mayor Mencï¿½a Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
+			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes
+			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine
+			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
 			Isabel
 		}
 	}
@@ -817,28 +743,38 @@ iberian = { #Castillian
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = XXX
 		dynasty_names = {
-			"de Aviz" "de Braganï¿½a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
-			"de Moura" "de Nï¿½poles" "de Menezes" "de Saldanha"
+			"de Bragança" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo"
+			"de Moura" "de Medeiros" "de Menezes" "de Saldanha" "de Alencar"
 			#CK2
-			"da Cï¿½mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+			"da Câmara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa" "de Guanabara" "de Oliveira"
+			"da Fonseca" "de Caxias"
+
 		}
 		male_names = {
-			Afonso Aires Aleixo Alexandre Alberto ï¿½lvaro Andrï¿½ Antï¿½nio Bartolomeu Barnabï¿½ Benjamim Bermudo 
-			Bernardo Caetano Carlos Cristï¿½vï¿½o Daniel Damiï¿½o Dinis Diogo Duarte Eduardo Egas Estï¿½vï¿½o Fernï¿½o 
-			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gonï¿½alo Guilherme Gustavo 
-			Guterre Henrique Hermï¿½gio Inï¿½cio Jaime Joï¿½o Joaquim Jorge Josï¿½ "Josï¿½ Maria" Lopo Lourenï¿½o Lucas 
-			Luï¿½s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
-			Otï¿½vio Pascoal Paulo Paio Pedro Pero Pï¿½ncio Rafael Rodrigo Rogï¿½rio Rui Raimundo Sancho Sebastiï¿½o 
-			Simï¿½o Soeiro Tiago Teodoro Teodï¿½sio Teotï¿½nio Tobias Tomï¿½s Uriel Vasco Vicente Vï¿½tor Xavier 
+			João Filipe Pedro António Duarte Henrique José Manuel Sebastião Miguel Teodósio Diniz
+			Alexandre Carlos Diego Jaime Luís Álvaro André Bartolomeu Caetano Damião Estevão Francisco
+			Xavier Gabriel Garcia Gaspar Gil Guilherme Inácio Joaquim Jorge Lourenço Marco Nicolau
+			Paulo Rafael Rogério Rui Simão Vicente Otávio
+			Afonso Aires Álvaro Bermudo Diogo Diaco Egas Estêvão Fernão
+			Ferdinando Fernando Garcia Gil Gomes Gonçalo Gutierre
+			Valter Henrique Hermígio João Lourenço Martim Martin
+			Mendo Munio Nuno Pôncio Mem
+			Rodrigo Rui Raimundo Vasco Vicente
+
+			Moacir Caíque Ubirajara Ubiratã Joacir Domingos Quintino Deodoro Eduardo Emílio Castro Pascoal
+			Moreira Cláudio Dirceu Evandro Tomé Amado Silvério Basílio Cipriano Amaro Cosme Júlio Lucas
+			Severino Severiano Benjamim Epaminondas Seixas Torquato Antônio Getúlio Silveriano Brás
+
+
 		}
 		female_names = {
-			Aldara Aldonï¿½a Ana "Ana Maria" Beatriz Berengï¿½ria Branca Cristina Cristiana Constanï¿½a Dï¿½rdia 
-			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar Inï¿½s Jï¿½lia Joana 
-			Leonor Letï¿½cia Madalena Mafalda Matilda Margarida Maria "Maria da Conceiï¿½ï¿½o" "Maria das Dores" 
-			"Maria da Assunï¿½ï¿½o" "Maria da Natividade" "Maria de Fï¿½tima" "Maria de Lurdes" "Maria do Cï¿½u" 
-			"Maria da Luz" "Maria da Graï¿½a" "Maria Josï¿½" "Maria Madalena" "Maria Teresa" "Maria Antï¿½nia" 
-			"Maria Carolina" "Maria Joï¿½o" "Maria Manuel" "Maria Luï¿½s" Mariana Marisa Marinha Mor Ouroana 
-			Sancha Teodora Teresa Urraca Vitï¿½ria
+			Aldara Alduara Beatriz Berengária Branca
+			Constância Elvira Estevânia Fruilhe Fronilde Gontinha Gontroda
+			Guiomar Inês Agnes Joana Leonor Eleanor Mafalda Matilda Margarida Maria
+			Marinha Marinês Ouroana Teresa Urraca Constança Célia
+
+			Maiara Janaína Iara Tainara Iracema Mariana Bárbara Josefina Ana "Ana Paula" Aurélia
+			Adelaide Firmina Emília Cecília Lauriana Isabel
 		}
 	}
 	mestico = {	#Portuguese Mestizo
@@ -846,28 +782,38 @@ iberian = { #Castillian
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = XXX
 		dynasty_names = {
-			"de Aviz" "de Braganï¿½a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
-			"de Moura" "de Nï¿½poles" "de Menezes" "de Saldanha"
+			"de Bragança" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo"
+			"de Moura" "de Medeiros" "de Menezes" "de Saldanha" "de Alencar"
 			#CK2
-			"da Cï¿½mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+			"da Câmara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa" "de Guanabara" "de Oliveira"
+			"da Fonseca" "de Caxias"
+
 		}
 		male_names = {
-			Afonso Aires Aleixo Alexandre Alberto ï¿½lvaro Andrï¿½ Antï¿½nio Bartolomeu Barnabï¿½ Benjamim Bermudo 
-			Bernardo Caetano Carlos Cristï¿½vï¿½o Daniel Damiï¿½o Dinis Diogo Duarte Eduardo Egas Estï¿½vï¿½o Fernï¿½o 
-			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gonï¿½alo Guilherme Gustavo 
-			Guterre Henrique Hermï¿½gio Inï¿½cio Jaime Joï¿½o Joaquim Jorge Josï¿½ "Josï¿½ Maria" Lopo Lourenï¿½o Lucas 
-			Luï¿½s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
-			Otï¿½vio Pascoal Paulo Paio Pedro Pero Pï¿½ncio Rafael Rodrigo Rogï¿½rio Rui Raimundo Sancho Sebastiï¿½o 
-			Simï¿½o Soeiro Tiago Teodoro Teodï¿½sio Teotï¿½nio Tobias Tomï¿½s Uriel Vasco Vicente Vï¿½tor Xavier 
+			João Filipe Pedro António Duarte Henrique José Manuel Sebastião Miguel Teodósio Diniz
+			Alexandre Carlos Diego Jaime Luís Álvaro André Bartolomeu Caetano Damião Estevão Francisco
+			Xavier Gabriel Garcia Gaspar Gil Guilherme Inácio Joaquim Jorge Lourenço Marco Nicolau
+			Paulo Rafael Rogério Rui Simão Vicente Otávio
+			Afonso Aires Álvaro Bermudo Diogo Diaco Egas Estêvão Fernão
+			Ferdinando Fernando Garcia Gil Gomes Gonçalo Gutierre
+			Valter Henrique Hermígio João Lourenço Martim Martin
+			Mendo Munio Nuno Pôncio Mem
+			Rodrigo Rui Raimundo Vasco Vicente
+
+			Moacir Caíque Ubirajara Ubiratã Joacir Domingos Quintino Deodoro Eduardo Emílio Castro Pascoal
+			Moreira Cláudio Dirceu Evandro Tomé Amado Silvério Basílio Cipriano Amaro Cosme Júlio Lucas
+			Severino Severiano Benjamim Epaminondas Seixas Torquato Antônio Getúlio Silveriano Brás
+
+
 		}
 		female_names = {
-			Aldara Aldonï¿½a Ana "Ana Maria" Beatriz Berengï¿½ria Branca Cristina Cristiana Constanï¿½a Dï¿½rdia 
-			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar Inï¿½s Jï¿½lia Joana 
-			Leonor Letï¿½cia Madalena Mafalda Matilda Margarida Maria "Maria da Conceiï¿½ï¿½o" "Maria das Dores" 
-			"Maria da Assunï¿½ï¿½o" "Maria da Natividade" "Maria de Fï¿½tima" "Maria de Lurdes" "Maria do Cï¿½u" 
-			"Maria da Luz" "Maria da Graï¿½a" "Maria Josï¿½" "Maria Madalena" "Maria Teresa" "Maria Antï¿½nia" 
-			"Maria Carolina" "Maria Joï¿½o" "Maria Manuel" "Maria Luï¿½s" Mariana Marisa Marinha Mor Ouroana 
-			Sancha Teodora Teresa Urraca Vitï¿½ria
+			Aldara Alduara Beatriz Berengária Branca
+			Constância Elvira Estevânia Fruilhe Fronilde Gontinha Gontroda
+			Guiomar Inês Agnes Joana Leonor Eleanor Mafalda Matilda Margarida Maria
+			Marinha Marinês Ouroana Teresa Urraca Constança Célia
+
+			Maiara Janaína Iara Tainara Iracema Mariana Bárbara Josefina Ana "Ana Paula" Aurélia
+			Adelaide Firmina Emília Cecília Lauriana Isabel
 		}
 	}
 	carregadores = {	#Portuguese SA
@@ -875,28 +821,38 @@ iberian = { #Castillian
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = XXX
 		dynasty_names = {
-			"de Aviz" "de Braganï¿½a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
-			"de Moura" "de Nï¿½poles" "de Menezes" "de Saldanha"
+			"de Bragança" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo"
+			"de Moura" "de Medeiros" "de Menezes" "de Saldanha" "de Alencar"
 			#CK2
-			"da Cï¿½mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+			"da Câmara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa" "de Guanabara" "de Oliveira"
+			"da Fonseca" "de Caxias"
+
 		}
 		male_names = {
-			Afonso Aires Aleixo Alexandre Alberto ï¿½lvaro Andrï¿½ Antï¿½nio Bartolomeu Barnabï¿½ Benjamim Bermudo 
-			Bernardo Caetano Carlos Cristï¿½vï¿½o Daniel Damiï¿½o Dinis Diogo Duarte Eduardo Egas Estï¿½vï¿½o Fernï¿½o 
-			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gonï¿½alo Guilherme Gustavo 
-			Guterre Henrique Hermï¿½gio Inï¿½cio Jaime Joï¿½o Joaquim Jorge Josï¿½ "Josï¿½ Maria" Lopo Lourenï¿½o Lucas 
-			Luï¿½s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
-			Otï¿½vio Pascoal Paulo Paio Pedro Pero Pï¿½ncio Rafael Rodrigo Rogï¿½rio Rui Raimundo Sancho Sebastiï¿½o 
-			Simï¿½o Soeiro Tiago Teodoro Teodï¿½sio Teotï¿½nio Tobias Tomï¿½s Uriel Vasco Vicente Vï¿½tor Xavier 
+			João Filipe Pedro António Duarte Henrique José Manuel Sebastião Miguel Teodósio Diniz
+			Alexandre Carlos Diego Jaime Luís Álvaro André Bartolomeu Caetano Damião Estevão Francisco
+			Xavier Gabriel Garcia Gaspar Gil Guilherme Inácio Joaquim Jorge Lourenço Marco Nicolau
+			Paulo Rafael Rogério Rui Simão Vicente Otávio
+			Afonso Aires Álvaro Bermudo Diogo Diaco Egas Estêvão Fernão
+			Ferdinando Fernando Garcia Gil Gomes Gonçalo Gutierre
+			Valter Henrique Hermígio João Lourenço Martim Martin
+			Mendo Munio Nuno Pôncio Mem
+			Rodrigo Rui Raimundo Vasco Vicente
+
+			Moacir Caíque Ubirajara Ubiratã Joacir Domingos Quintino Deodoro Eduardo Emílio Castro Pascoal
+			Moreira Cláudio Dirceu Evandro Tomé Amado Silvério Basílio Cipriano Amaro Cosme Júlio Lucas
+			Severino Severiano Benjamim Epaminondas Seixas Torquato Antônio Getúlio Silveriano Brás
+
+
 		}
 		female_names = {
-			Aldara Aldonï¿½a Ana "Ana Maria" Beatriz Berengï¿½ria Branca Cristina Cristiana Constanï¿½a Dï¿½rdia 
-			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar Inï¿½s Jï¿½lia Joana 
-			Leonor Letï¿½cia Madalena Mafalda Matilda Margarida Maria "Maria da Conceiï¿½ï¿½o" "Maria das Dores" 
-			"Maria da Assunï¿½ï¿½o" "Maria da Natividade" "Maria de Fï¿½tima" "Maria de Lurdes" "Maria do Cï¿½u" 
-			"Maria da Luz" "Maria da Graï¿½a" "Maria Josï¿½" "Maria Madalena" "Maria Teresa" "Maria Antï¿½nia" 
-			"Maria Carolina" "Maria Joï¿½o" "Maria Manuel" "Maria Luï¿½s" Mariana Marisa Marinha Mor Ouroana 
-			Sancha Teodora Teresa Urraca Vitï¿½ria
+			Aldara Alduara Beatriz Berengária Branca
+			Constância Elvira Estevânia Fruilhe Fronilde Gontinha Gontroda
+			Guiomar Inês Agnes Joana Leonor Eleanor Mafalda Matilda Margarida Maria
+			Marinha Marinês Ouroana Teresa Urraca Constança Célia
+
+			Maiara Janaína Iara Tainara Iracema Mariana Bárbara Josefina Ana "Ana Paula" Aurélia
+			Adelaide Firmina Emília Cecília Lauriana Isabel
 		}
 	}
 	centraliano = {	#Portuguese Central America
@@ -904,28 +860,38 @@ iberian = { #Castillian
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = XXX
 		dynasty_names = {
-			"de Aviz" "de Braganï¿½a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo"
-			"de Moura" "de Nï¿½poles" "de Menezes" "de Saldanha"
+			"de Bragança" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo"
+			"de Moura" "de Medeiros" "de Menezes" "de Saldanha" "de Alencar"
 			#CK2
-			"da Cï¿½mara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+			"da Câmara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa" "de Guanabara" "de Oliveira"
+			"da Fonseca" "de Caxias"
+
 		}
 		male_names = {
-			Afonso Aires Aleixo Alexandre Alberto ï¿½lvaro Andrï¿½ Antï¿½nio Bartolomeu Barnabï¿½ Benjamim Bermudo 
-			Bernardo Caetano Carlos Cristï¿½vï¿½o Daniel Damiï¿½o Dinis Diogo Duarte Eduardo Egas Estï¿½vï¿½o Fernï¿½o 
-			Fernando Filipe Francisco Gabriel Garcia Gaspar Gil Gilberto Gomes Gonï¿½alo Guilherme Gustavo 
-			Guterre Henrique Hermï¿½gio Inï¿½cio Jaime Joï¿½o Joaquim Jorge Josï¿½ "Josï¿½ Maria" Lopo Lourenï¿½o Lucas 
-			Luï¿½s "Marco Paulo" Marcos Martim Manuel Mem Mendo Miguel Monio Monteiro Munio Muno Nicolau Nuno 
-			Otï¿½vio Pascoal Paulo Paio Pedro Pero Pï¿½ncio Rafael Rodrigo Rogï¿½rio Rui Raimundo Sancho Sebastiï¿½o 
-			Simï¿½o Soeiro Tiago Teodoro Teodï¿½sio Teotï¿½nio Tobias Tomï¿½s Uriel Vasco Vicente Vï¿½tor Xavier 
+			João Filipe Pedro António Duarte Henrique José Manuel Sebastião Miguel Teodósio Diniz
+			Alexandre Carlos Diego Jaime Luís Álvaro André Bartolomeu Caetano Damião Estevão Francisco
+			Xavier Gabriel Garcia Gaspar Gil Guilherme Inácio Joaquim Jorge Lourenço Marco Nicolau
+			Paulo Rafael Rogério Rui Simão Vicente Otávio
+			Afonso Aires Álvaro Bermudo Diogo Diaco Egas Estêvão Fernão
+			Ferdinando Fernando Garcia Gil Gomes Gonçalo Gutierre
+			Valter Henrique Hermígio João Lourenço Martim Martin
+			Mendo Munio Nuno Pôncio Mem
+			Rodrigo Rui Raimundo Vasco Vicente
+
+			Moacir Caíque Ubirajara Ubiratã Joacir Domingos Quintino Deodoro Eduardo Emílio Castro Pascoal
+			Moreira Cláudio Dirceu Evandro Tomé Amado Silvério Basílio Cipriano Amaro Cosme Júlio Lucas
+			Severino Severiano Benjamim Epaminondas Seixas Torquato Antônio Getúlio Silveriano Brás
+
+
 		}
 		female_names = {
-			Aldara Aldonï¿½a Ana "Ana Maria" Beatriz Berengï¿½ria Branca Cristina Cristiana Constanï¿½a Dï¿½rdia 
-			Doroteia Elvira Estevainha Stephania Fruilhe Gontinha Gotruda Gontroda Guiomar Inï¿½s Jï¿½lia Joana 
-			Leonor Letï¿½cia Madalena Mafalda Matilda Margarida Maria "Maria da Conceiï¿½ï¿½o" "Maria das Dores" 
-			"Maria da Assunï¿½ï¿½o" "Maria da Natividade" "Maria de Fï¿½tima" "Maria de Lurdes" "Maria do Cï¿½u" 
-			"Maria da Luz" "Maria da Graï¿½a" "Maria Josï¿½" "Maria Madalena" "Maria Teresa" "Maria Antï¿½nia" 
-			"Maria Carolina" "Maria Joï¿½o" "Maria Manuel" "Maria Luï¿½s" Mariana Marisa Marinha Mor Ouroana 
-			Sancha Teodora Teresa Urraca Vitï¿½ria
+			Aldara Alduara Beatriz Berengária Branca
+			Constância Elvira Estevânia Fruilhe Fronilde Gontinha Gontroda
+			Guiomar Inês Agnes Joana Leonor Eleanor Mafalda Matilda Margarida Maria
+			Marinha Marinês Ouroana Teresa Urraca Constança Célia
+
+			Maiara Janaína Iara Tainara Iracema Mariana Bárbara Josefina Ana "Ana Paula" Aurélia
+			Adelaide Firmina Emília Cecília Lauriana Isabel
 		}
 	}
 }
@@ -934,16 +900,7 @@ germanic = { #These are assumed to be dutch currently
 	
 	amerikaans = {	#NA
 		primary = XXX #Needs new tag
-	}
-	meksikaans = {	#Dutch Mestizo
-		primary = XXX #Needs new tag
-	}
-	braziliaans = { #SA
-		primary = XXX #Needs new tag
-	}
-	caribisch = {	#Caribbean
-		primary = XXX
-		male_names = { # Dutch Names
+		male_names = {
 			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
 			Barnaerd Bernard Bartolomeus Bartolomeus
 			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
@@ -980,7 +937,160 @@ germanic = { #These are assumed to be dutch currently
 		dynasty_names = {
 			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
 			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
-			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jï¿½lich-Hengebach"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+	}
+	meksikaans = {	#Dutch Mestizo
+		primary = XXX #Needs new tag
+		male_names = {
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
+			Gerulf
+			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
+			Gwijde Hendrik Henry Herman Herman Hubert
+			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
+			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Marquart Niclaes Nicholas
+			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Robert Robert Rodulf 
+			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
+			Waelram Walter Walter
+			Wicher Willem William Wolfard Hendrik Maurits
+			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
+			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
+			Roeland Rogier Thomas Vincent Zacharias
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+		}
+		dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+	}
+	braziliaans = { #SA
+		primary = XXX #Needs new tag
+		male_names = {
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
+			Gerulf
+			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
+			Gwijde Hendrik Henry Herman Herman Hubert
+			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
+			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Marquart Niclaes Nicholas
+			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Robert Robert Rodulf 
+			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
+			Waelram Walter Walter
+			Wicher Willem William Wolfard Hendrik Maurits
+			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
+			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
+			Roeland Rogier Thomas Vincent Zacharias
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+		}
+		dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+	}
+	caribisch = {	#Caribbean
+		primary = XXX
+		male_names = {
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
+			Gerulf
+			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
+			Gwijde Hendrik Henry Herman Herman Hubert
+			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
+			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Marquart Niclaes Nicholas
+			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Robert Robert Rodulf 
+			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
+			Waelram Walter Walter
+			Wicher Willem William Wolfard Hendrik Maurits
+			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
+			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
+			Roeland Rogier Thomas Vincent Zacharias
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+		}
+		dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
 			# CKII
 			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
 			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
@@ -994,7 +1104,7 @@ germanic = { #These are assumed to be dutch currently
 	}
 	istmusisch = {	#Central American
 		primary = XXX
-		male_names = { # Dutch Names
+		male_names = {
 			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
 			Barnaerd Bernard Bartolomeus Bartolomeus
 			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
@@ -1031,7 +1141,7 @@ germanic = { #These are assumed to be dutch currently
 		dynasty_names = {
 			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
 			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
-			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jï¿½lich-Hengebach"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
 			# CKII
 			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
 			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
@@ -1051,20 +1161,20 @@ scandinavian = {
 		primary = XXX
 		
 		male_names = {
-			Christian Christoph Oskar Adolf August GÃ¶ran Sigismund Alfred Axel Edvard Gottfrid 
+			Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid 
 			Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante 
 			Tomas Ulrik
 			Albrikt Albert Alf Algot Anders Arne Arnfast Astrad 
-			Bengt Benedict Bertil Birger BjÃ¶rn Bo Borkvard Brage Bror
+			Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror
 			Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip 
 			Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold
-			Helge Henrik Hjalmar Holmger HÃ¥kan Inge Ingemar Ingvar
+			Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar
 			Edward Johan John Karl Klas Knut Lars Magnus
 			Markus Marcus 
 			Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf 
-			Ragnvald SÃ¶rkver Sigurd Starkad Sten StyrbjÃ¶rn Sune Sven
-			Sverker SÃ¶lve Thomas Tjudmund Toke TorbjÃ¶rn Tord Torbrand Torkel Torolf 
-			Thorolf Torsten Toste Totil Tyke Ulf Valdemar Ã…ke Ã–sten 
+			Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven
+			Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf 
+			Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen 
 		}
 		female_names = {
 			Christina Ulrika Eleonora Hedwig
@@ -1072,166 +1182,166 @@ scandinavian = {
 			Elisabet Gunhild Helena Holmfrid Iliana Inga 
 			Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda 
 			Margareta MÃ¤rta Martha Ragnhild Sara Sarah Sigrid Sofia 
-			Sophia Thordis Ulvhilde Ã…sa
+			Sophia Thordis Ulvhilde Åsa
 		}
 		dynasty_names = {
 			"Bonde" "Vasa" "Tre Rosor" "Oxenstierna" "Sparre" "Sture" "Tott" "Trolle" "Bielke" "Brahe"
-			"Horn" "Ribbing" "Skytte" "BanÃ©r" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud" 
-			"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "BurenskÃ¶ld"
-			"BÃ¶llja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
-			"HÃ¥rd" "Forstena" "Kurck" "Eka" "Hjort" "JÃ¤gerhorn" "LilliehÃ¶Ã¶k"
+			"Horn" "Ribbing" "Skytte" "Banér" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud" 
+			"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "Burensköld"
+			"Böllja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
+			"Hård" "Forstena" "Kurck" "Eka" "Hjort" "JÃ¤gerhorn" "Lilliehöök"
 			"Porse" "Palme" Gumsehuvud
-			"BÃ¥Ã¥t" "Ulv" "SjÃ¶blad" "LÃ¤ma" "Posse" "RosenstrÃ¥le" "Thott" "Bagge"
+			"Bååt" "Ulv" "Sjöblad" "LÃ¤ma" "Posse" "Rosenstråle" "Thott" "Bagge"
 			"Bese" "GÃ¤dda" "Hatt" "Marsvin" "Oxhufvud" "Stake" "Tre Rutor" "HÃ¤stesko"
-			"Ulfsax" "Tre SjÃ¶blad" "Bratt" "Munk" "EketrÃ¤" "Gera"
+			"Ulfsax" "Tre Sjöblad" "Bratt" "Munk" "EketrÃ¤" "Gera"
 			"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
 		}
 	}
 	antarktish = {	#South America, pretty much made up but included for completeness. GT from antarctic
 		primary = XXX
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund ArnbjÃ¶rn Arngrimr Arni Arne Arnfast 
-				AsbjÃ¶rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger BjÃ¶rn Beorn Bo Borkvard 
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
 				Botulfr Bragi Brage BuÃ°li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
 				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke 
 				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey GuÃ°mundr 
-				Gudmund GudrÃ¶d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
-				Holmger Hrafn Hrolfr Rolf Hrane HÃ¦steinn Hjalmar Hysing 
-				IngÃ³lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
-				Kjartan Klas Knut Kol KolbjÃ¶rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr RÃ¶gnvaldr 
-				Ragnvald Skuli Skule Snorri SigbjÃ¶rn Sigtrygg SigurÃ°r Sigurd Starkad Steinn Sten 
-				Sturla StyrbjÃ¶rn Styrkar Somerled Suni Sune Sveinn Sven Sverker SÃ¦mundr SÃ¤mund 
-				SÃ¶lvi SÃ¶lve SÃ¶rkver Tjudmund Toke Tolir ÃorbjÃ¶rn TorbjÃ¶rn Ãorfinn Torfinn Ãorbrandr Torbrand 
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
+				Kjartan Klas Knut Kol Kolbjörn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg SigurÃ°r Sigurd Starkad Steinn Sten 
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr SÃ¤mund 
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Ãorbjörn Torbjörn Ãorfinn Torfinn Ãorbrandr Torbrand 
 				Ãordr Tord Ãorgil Torkel Ãorsteinn Torsten Ãorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
-				Vagn Valdemar Vladimir Ã…ke Yngvar Ingvar Ã–rvar Orvar Ã–ysteinn Eysteinn HÃ¥kon Olav 
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt BjÃ¸rn Daniel Edvard Eilert Elias Esben 
-				Kasper Kennet Knut Ludvig Mikael NjÃ¥ld Njord Oddmund Peder Rikard Simon SÃ¸ren Tollak
+				Vagn Valdemar Vladimir Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjørn Daniel Edvard Eilert Elias Esben 
+				Kasper Kennet Knut Ludvig Mikael Njåld Njord Oddmund Peder Rikard Simon Søren Tollak
 		}
 		female_names = {
-			Torhild Aleta Alfhildr Alfhild Alfridh AlvÃ¶r Anna Asa Ã…sa Aslaug Asta Astrid Beata 
-			Birgitta Brigid BjÃ¶rg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Anna Asa Åsa Aslaug Asta Astrid Beata 
+			Birgitta Brigid Björg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
 			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena 
-			Helen Holmfrid Iliana Inga Ingfrid IngibjÃ¶rg Ingeborg IngjerÃ°r Ingegerd Ingrid Karin 
+			Helen Holmfrid Iliana Inga Ingfrid Ingibjörg Ingeborg IngjerÃ°r Ingegerd Ingrid Karin 
 			Katarina Catherine Kraka Kristina Christina Linda Maer MalmfriÃ° Malmfrid Margareta Margaret 
-			Maria Rikissa RÃ¶gnfrid Ragnfrid RÃ¶gnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
+			Maria Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
 			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Ãora Thora Ãordis Thordis Ãyra 
 			Thyra
 		}
 		dynasty_names = {
-			"HÃ¥rfagreÃ¦tta" "Bielke" "Bildt" "Galte" "Paus" "SmÃ¸r" "Benkestok" "Kane" "Bonde"
-			"Drake" "av Hafrsfjord" "Ytra" "av AskÃ¸" "Koss" "av RÃ¸ra" "av Nordland" "Hylling"
-			"Alfr" "Herja" "VansÃ¶" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
 			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
 			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
-			"Galtung" "Heubsch" "KlÃ¸cker" "LÃ¸venskiold" "Rosenvinge" "Werenskiold" "Kruckow"
-			"Mowat" "RÃ¸mer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
 			# CKII
-			"Skanke" "Bolt" "Giske" "Brockenhuus" "AdelswÃ¤rd" "Kane" "Blixen" "LÃ¸vendal" "Balke"
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "AdelswÃ¤rd" "Kane" "Blixen" "Løvendal" "Balke"
 			"Vedel" "Bjelke" "Galle" "Griis"
 		}
 	}
 	vinlandic = {	#Canadian... May be split further later into vinlandic and markish, but the distinction is unessecary currently.
 		primary = XXX
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund ArnbjÃ¶rn Arngrimr Arni Arne Arnfast 
-				AsbjÃ¶rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger BjÃ¶rn Beorn Bo Borkvard 
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
 				Botulfr Bragi Brage BuÃ°li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
 				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke 
 				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey GuÃ°mundr 
-				Gudmund GudrÃ¶d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
-				Holmger Hrafn Hrolfr Rolf Hrane HÃ¦steinn Hjalmar Hysing 
-				IngÃ³lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
-				Kjartan Klas Knut Kol KolbjÃ¶rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr RÃ¶gnvaldr 
-				Ragnvald Skuli Skule Snorri SigbjÃ¶rn Sigtrygg SigurÃ°r Sigurd Starkad Steinn Sten 
-				Sturla StyrbjÃ¶rn Styrkar Somerled Suni Sune Sveinn Sven Sverker SÃ¦mundr SÃ¤mund 
-				SÃ¶lvi SÃ¶lve SÃ¶rkver Tjudmund Toke Tolir ÃorbjÃ¶rn TorbjÃ¶rn Ãorfinn Torfinn Ãorbrandr Torbrand 
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
+				Kjartan Klas Knut Kol Kolbjörn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg SigurÃ°r Sigurd Starkad Steinn Sten 
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr SÃ¤mund 
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Ãorbjörn Torbjörn Ãorfinn Torfinn Ãorbrandr Torbrand 
 				Ãordr Tord Ãorgil Torkel Ãorsteinn Torsten Ãorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
-				Vagn Valdemar Vladimir Ã…ke Yngvar Ingvar Ã–rvar Orvar Ã–ysteinn Eysteinn HÃ¥kon Olav 
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt BjÃ¸rn Daniel Edvard Eilert Elias Esben 
-				Kasper Kennet Knut Ludvig Mikael NjÃ¥ld Njord Oddmund Peder Rikard Simon SÃ¸ren Tollak
+				Vagn Valdemar Vladimir Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjørn Daniel Edvard Eilert Elias Esben 
+				Kasper Kennet Knut Ludvig Mikael Njåld Njord Oddmund Peder Rikard Simon Søren Tollak
 		}
 		female_names = {
-			Torhild Aleta Alfhildr Alfhild Alfridh AlvÃ¶r Anna Asa Ã…sa Aslaug Asta Astrid Beata 
-			Birgitta Brigid BjÃ¶rg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Anna Asa Åsa Aslaug Asta Astrid Beata 
+			Birgitta Brigid Björg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
 			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena 
-			Helen Holmfrid Iliana Inga Ingfrid IngibjÃ¶rg Ingeborg IngjerÃ°r Ingegerd Ingrid Karin 
+			Helen Holmfrid Iliana Inga Ingfrid Ingibjörg Ingeborg IngjerÃ°r Ingegerd Ingrid Karin 
 			Katarina Catherine Kraka Kristina Christina Linda Maer MalmfriÃ° Malmfrid Margareta Margaret 
-			Maria Rikissa RÃ¶gnfrid Ragnfrid RÃ¶gnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
+			Maria Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
 			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Ãora Thora Ãordis Thordis Ãyra 
 			Thyra
 		}
 		dynasty_names = {
-			"HÃ¥rfagreÃ¦tta" "Bielke" "Bildt" "Galte" "Paus" "SmÃ¸r" "Benkestok" "Kane" "Bonde"
-			"Drake" "av Hafrsfjord" "Ytra" "av AskÃ¸" "Koss" "av RÃ¸ra" "av Nordland" "Hylling"
-			"Alfr" "Herja" "VansÃ¶" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
 			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
 			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
-			"Galtung" "Heubsch" "KlÃ¸cker" "LÃ¸venskiold" "Rosenvinge" "Werenskiold" "Kruckow"
-			"Mowat" "RÃ¸mer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
 			# CKII
-			"Skanke" "Bolt" "Giske" "Brockenhuus" "AdelswÃ¤rd" "Kane" "Blixen" "LÃ¸vendal" "Balke"
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "AdelswÃ¤rd" "Kane" "Blixen" "Løvendal" "Balke"
 			"Vedel" "Bjelke" "Galle" "Griis"
 		}
 	}
 	hellulandic = {	#Hudson Bay region. May spread to greenland currently.
 		primary = XXX
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund ArnbjÃ¶rn Arngrimr Arni Arne Arnfast 
-				AsbjÃ¶rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger BjÃ¶rn Beorn Bo Borkvard 
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
+				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
 				Botulfr Bragi Brage BuÃ°li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
 				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke 
 				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey GuÃ°mundr 
-				Gudmund GudrÃ¶d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
-				Holmger Hrafn Hrolfr Rolf Hrane HÃ¦steinn Hjalmar Hysing 
-				IngÃ³lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
-				Kjartan Klas Knut Kol KolbjÃ¶rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr RÃ¶gnvaldr 
-				Ragnvald Skuli Skule Snorri SigbjÃ¶rn Sigtrygg SigurÃ°r Sigurd Starkad Steinn Sten 
-				Sturla StyrbjÃ¶rn Styrkar Somerled Suni Sune Sveinn Sven Sverker SÃ¦mundr SÃ¤mund 
-				SÃ¶lvi SÃ¶lve SÃ¶rkver Tjudmund Toke Tolir ÃorbjÃ¶rn TorbjÃ¶rn Ãorfinn Torfinn Ãorbrandr Torbrand 
+				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
+				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
+				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
+				Kjartan Klas Knut Kol Kolbjörn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
+				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg SigurÃ°r Sigurd Starkad Steinn Sten 
+				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr SÃ¤mund 
+				Sölvi Sölve Sörkver Tjudmund Toke Tolir Ãorbjörn Torbjörn Ãorfinn Torfinn Ãorbrandr Torbrand 
 				Ãordr Tord Ãorgil Torkel Ãorsteinn Torsten Ãorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
-				Vagn Valdemar Vladimir Ã…ke Yngvar Ingvar Ã–rvar Orvar Ã–ysteinn Eysteinn HÃ¥kon Olav 
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt BjÃ¸rn Daniel Edvard Eilert Elias Esben 
-				Kasper Kennet Knut Ludvig Mikael NjÃ¥ld Njord Oddmund Peder Rikard Simon SÃ¸ren Tollak
+				Vagn Valdemar Vladimir Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjørn Daniel Edvard Eilert Elias Esben 
+				Kasper Kennet Knut Ludvig Mikael Njåld Njord Oddmund Peder Rikard Simon Søren Tollak
 		}
 		female_names = {
-			Torhild Aleta Alfhildr Alfhild Alfridh AlvÃ¶r Anna Asa Ã…sa Aslaug Asta Astrid Beata 
-			Birgitta Brigid BjÃ¶rg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
+			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Anna Asa Åsa Aslaug Asta Astrid Beata 
+			Birgitta Brigid Björg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
 			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena 
-			Helen Holmfrid Iliana Inga Ingfrid IngibjÃ¶rg Ingeborg IngjerÃ°r Ingegerd Ingrid Karin 
+			Helen Holmfrid Iliana Inga Ingfrid Ingibjörg Ingeborg IngjerÃ°r Ingegerd Ingrid Karin 
 			Katarina Catherine Kraka Kristina Christina Linda Maer MalmfriÃ° Malmfrid Margareta Margaret 
-			Maria Rikissa RÃ¶gnfrid Ragnfrid RÃ¶gnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
+			Maria Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
 			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Ãora Thora Ãordis Thordis Ãyra 
 			Thyra
 		}
 		dynasty_names = {
-			"HÃ¥rfagreÃ¦tta" "Bielke" "Bildt" "Galte" "Paus" "SmÃ¸r" "Benkestok" "Kane" "Bonde"
-			"Drake" "av Hafrsfjord" "Ytra" "av AskÃ¸" "Koss" "av RÃ¸ra" "av Nordland" "Hylling"
-			"Alfr" "Herja" "VansÃ¶" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
 			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
 			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
-			"Galtung" "Heubsch" "KlÃ¸cker" "LÃ¸venskiold" "Rosenvinge" "Werenskiold" "Kruckow"
-			"Mowat" "RÃ¸mer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
+			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
 			# CKII
-			"Skanke" "Bolt" "Giske" "Brockenhuus" "AdelswÃ¤rd" "Kane" "Blixen" "LÃ¸vendal" "Balke"
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "AdelswÃ¤rd" "Kane" "Blixen" "Løvendal" "Balke"
 			"Vedel" "Bjelke" "Galle" "Griis"
 		}
 	}
 	karibisk = {	#Caribbean / Danish
 		primary = XXX
 		male_names = {
-			Anders Andrew Anund Asger Balder Benedikt Benedict BjÃ¸rn Beorn Bo Christopher Edvard Edward 
-			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim HÃ¥rik 
-			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf JÃ¸rn Jakob Jacob Jens Joakim Johann
+			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward 
+			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf Jørn Jakob Jacob Jens Joakim Johann
 			John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael 
-			Mogens Nicholas Odd Olav Olaf Peder PridbjÃ¸rn Ragnar Ragnvald Rolf Rune RÃ¸rik Rurik Severin 
-			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven SÃ¤mund Thorolf Thorvald Torben TorbjÃ¸rn
-			TorbjÃ¶rn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Mogens Nicholas Odd Olav Olaf Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven SÃ¤mund Thorolf Thorvald Torben Torbjørn
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
 			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
 			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
-			Holger JÃ¸rgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
 			Frans Gnupa
 		}
 		female_names = {
@@ -1241,34 +1351,34 @@ scandinavian = {
 			Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
 			Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
 			Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
-			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Ã…se Ã…sa
+			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
 		}
 		dynasty_names = {
-			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "GÃ¸ye" "Trolle" "Rantzau"
+			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
 			"Friis" "Gyllenstierna" #Gyldenstierne
 			"Bille" "Adeler" "Arenstorff" "Brockenhuus"
 			"Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
 			"Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
 			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt"
-			"Frille" "RÃ¸nnow"
+			"Frille" "Rønnow"
 			# CKII
-			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "GrÃ¸n" "Daa"
+			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
 			"Reventlow" "Juul" "Ulfeldt" "Bang"
 		}
 	}
 	thulenlandic = {	#Danish Mestizo
 		primary = XXX
 		male_names = {
-			Anders Andrew Anund Asger Balder Benedikt Benedict BjÃ¸rn Beorn Bo Christopher Edvard Edward 
-			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim HÃ¥rik 
-			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf JÃ¸rn Jakob Jacob Jens Joakim Johann
+			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward 
+			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf Jørn Jakob Jacob Jens Joakim Johann
 			John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael 
-			Mogens Nicholas Odd Olav Olaf Peder PridbjÃ¸rn Ragnar Ragnvald Rolf Rune RÃ¸rik Rurik Severin 
-			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven SÃ¤mund Thorolf Thorvald Torben TorbjÃ¸rn
-			TorbjÃ¶rn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Mogens Nicholas Odd Olav Olaf Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Svend Sven SÃ¤mund Thorolf Thorvald Torben Torbjørn
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
 			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
 			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
-			Holger JÃ¸rgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
 			Frans Gnupa
 		}
 		female_names = {
@@ -1278,18 +1388,18 @@ scandinavian = {
 			Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
 			Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
 			Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
-			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Ã…se Ã…sa
+			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
 		}
 		dynasty_names = {
-			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "GÃ¸ye" "Trolle" "Rantzau"
+			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
 			"Friis" "Gyllenstierna" #Gyldenstierne
 			"Bille" "Adeler" "Arenstorff" "Brockenhuus"
 			"Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
 			"Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
 			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt"
-			"Frille" "RÃ¸nnow"
+			"Frille" "Rønnow"
 			# CKII
-			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "GrÃ¸n" "Daa"
+			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
 			"Reventlow" "Juul" "Ulfeldt" "Bang"
 		}
 	}
@@ -1297,20 +1407,20 @@ scandinavian = {
 		primary = XXX
 		
 		male_names = {
-			Christian Christoph Oskar Adolf August GÃ¶ran Sigismund Alfred Axel Edvard Gottfrid 
+			Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid 
 			Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante 
 			Tomas Ulrik
 			Albrikt Albert Alf Algot Anders Arne Arnfast Astrad 
-			Bengt Benedict Bertil Birger BjÃ¶rn Bo Borkvard Brage Bror
+			Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror
 			Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip 
 			Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold
-			Helge Henrik Hjalmar Holmger HÃ¥kan Inge Ingemar Ingvar
+			Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar
 			Edward Johan John Karl Klas Knut Lars Magnus
 			Markus Marcus 
 			Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf 
-			Ragnvald SÃ¶rkver Sigurd Starkad Sten StyrbjÃ¶rn Sune Sven
-			Sverker SÃ¶lve Thomas Tjudmund Toke TorbjÃ¶rn Tord Torbrand Torkel Torolf 
-			Thorolf Torsten Toste Totil Tyke Ulf Valdemar Ã…ke Ã–sten 
+			Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven
+			Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf 
+			Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen 
 		}
 		female_names = {
 			Christina Ulrika Eleonora Hedwig
@@ -1318,18 +1428,18 @@ scandinavian = {
 			Elisabet Gunhild Helena Holmfrid Iliana Inga 
 			Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda 
 			Margareta MÃ¤rta Martha Ragnhild Sara Sarah Sigrid Sofia 
-			Sophia Thordis Ulvhilde Ã…sa
+			Sophia Thordis Ulvhilde Åsa
 		}
 		dynasty_names = {
 			"Bonde" "Vasa" "Tre Rosor" "Oxenstierna" "Sparre" "Sture" "Tott" "Trolle" "Bielke" "Brahe"
-			"Horn" "Ribbing" "Skytte" "BanÃ©r" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud" 
-			"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "BurenskÃ¶ld"
-			"BÃ¶llja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
-			"HÃ¥rd" "Forstena" "Kurck" "Eka" "Hjort" "JÃ¤gerhorn" "LilliehÃ¶Ã¶k"
+			"Horn" "Ribbing" "Skytte" "Banér" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud" 
+			"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "Burensköld"
+			"Böllja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
+			"Hård" "Forstena" "Kurck" "Eka" "Hjort" "JÃ¤gerhorn" "Lilliehöök"
 			"Porse" "Palme" Gumsehuvud
-			"BÃ¥Ã¥t" "Ulv" "SjÃ¶blad" "LÃ¤ma" "Posse" "RosenstrÃ¥le" "Thott" "Bagge"
+			"Bååt" "Ulv" "Sjöblad" "LÃ¤ma" "Posse" "Rosenstråle" "Thott" "Bagge"
 			"Bese" "GÃ¤dda" "Hatt" "Marsvin" "Oxhufvud" "Stake" "Tre Rutor" "HÃ¤stesko"
-			"Ulfsax" "Tre SjÃ¶blad" "Bratt" "Munk" "EketrÃ¤" "Gera"
+			"Ulfsax" "Tre Sjöblad" "Bratt" "Munk" "EketrÃ¤" "Gera"
 			"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
 		}
 	}
@@ -2360,7 +2470,7 @@ chibchan = {
 		}
 		male_names = {
 			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
-			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata TutazÃºa Cuba
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
 		}
 		female_names = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
@@ -2374,7 +2484,7 @@ chibchan = {
 		}
 		male_names = {
 			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
-			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata TutazÃºa Cuba
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
 		}
 		female_names = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
@@ -2388,7 +2498,7 @@ chibchan = {
 		}
 		male_names = {
 			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
-			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata TutazÃºa Cuba
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
 		}
 		female_names = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
@@ -2402,7 +2512,7 @@ chibchan = {
 		}
 		male_names = {
 			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
-			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata TutazÃºa Cuba
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
 		}
 		female_names = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
@@ -2416,7 +2526,7 @@ chibchan = {
 		}
 		male_names = {
 			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
-			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata TutazÃºa Cuba
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
 		}
 		female_names = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
@@ -2430,7 +2540,7 @@ chibchan = {
 		}
 		male_names = {
 			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
-			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata TutazÃºa Cuba
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
 		}
 		female_names = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
@@ -2444,7 +2554,7 @@ chibchan = {
 		}
 		male_names = {
 			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
-			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata TutazÃºa Cuba
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutazúa Cuba
 		}
 		female_names = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
@@ -2520,8 +2630,8 @@ arawakan_g = {
 
 	arawak = { #Central Taino
 		male_names = {
-			Ãhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			HayÃ¡ Isani Takuiba Twengga
@@ -2532,8 +2642,8 @@ arawakan_g = {
 	}
 	west_taino = { #West Taino
 		male_names = {
-			Ãhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			HayÃ¡ Isani Takuiba Twengga
@@ -2544,8 +2654,8 @@ arawakan_g = {
 	}
 	east_taino = { #East Taino
 		male_names = {
-			Ãhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			HayÃ¡ Isani Takuiba Twengga
@@ -2556,8 +2666,8 @@ arawakan_g = {
 	}
 	ineri = { #(JP) Kalinago, aka Igneri
 		male_names = {
-			Ãhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			HayÃ¡ Isani Takuiba Twengga
@@ -2568,8 +2678,8 @@ arawakan_g = {
 	}
 	shebaya = { #(JP) I think this is meant to be Suppoya and Nepoya who were Arawaks. Going to merge this in with above for now
 		male_names = {
-			Ãhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			HayÃ¡ Isani Takuiba Twengga
@@ -2581,7 +2691,7 @@ arawakan_g = {
 	guajiro = { #	Lokono / Northern Mainland Arawak
 		primary = ARW
 		male_names = {
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			Takuiba Twengga
@@ -2593,7 +2703,7 @@ arawakan_g = {
 	garifuna = { #	Black Mainland Arawak
 		primary = XXX
 		male_names = {
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			Takuiba Twengga
@@ -2604,8 +2714,8 @@ arawakan_g = {
 	}
 	maipurean = {
 		male_names = {
-			Ãhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
-			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata ToruÃ­ Mbicy
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruí Mbicy
 		}
 		female_names = {
 			HayÃ¡ Isani Takuiba Twengga
