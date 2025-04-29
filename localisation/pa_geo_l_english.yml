@@ -1,6 +1,16 @@
 ﻿l_english:
  #US
-
+ 
+ #Alternatives
+ SBN:0 "Staatenbundnis"
+ SBN_ADJ:0 "Amerikanisch"
+ ULA:0 "Union Libre"
+ ULA_ADJ:0 "Americain"
+ AEA:0 "Alianza de Estados" 
+ AEA_ADJ:0 "Americanos"
+ FSA:0 "Forenede Stater"
+ FSA_ADJ:0 "Amerikansk"
+ 
  #Nations
  GRL:0 "Greenland"
  GRL_ADJ:0 "Greenlandic"
