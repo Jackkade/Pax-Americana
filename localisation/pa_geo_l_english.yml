@@ -205,6 +205,8 @@
  lacandon_area:0 "Lacandon"
  tlapanec_area:0 "Tlapanec"
  mosquito_area:0 "Mosquito"
+ galapagos_area:0 "Galapagos"
+ peruvian_wastelands_area:0 "Peruvian Wastelands"
  
  #Provinces
  PROV7300:0 "Montaukett"

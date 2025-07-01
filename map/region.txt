@@ -1585,6 +1585,8 @@ peru_region = { # 9 areas
 		ucayali_area
 		cajamarca_area
 		huanuco_area
+		galapagos_area
+		peruvian_wastelands_area
 	}
 	monsoon = {
 		00.05.01
