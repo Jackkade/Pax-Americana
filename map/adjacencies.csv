@@ -225,4 +225,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7539;5584;sea;1526;-1;-1;-1;-1;Bieke-Amonhara
 5578;491;sea;1519;-1;-1;-1;-1;Aruba-Curaco
 491;6046;sea;1519;-1;-1;-1;-1;Curaco-Bonaire
+2002;6788;sea;1702;-1;-1;-1;-1;Galapagos
+2002;6789;sea;1702;-1;-1;-1;-1;Galapagos
+6789;6788;sea;1702;-1;-1;-1;-1;Galapagos 
 -1;-1;;-1;-1;-1;-1;-1;-1;
