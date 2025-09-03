@@ -207,6 +207,8 @@
  mosquito_area:0 "Mosquito"
  galapagos_area:0 "Galapagos"
  peruvian_wastelands_area:0 "Peruvian Wastelands"
+ colombian_wastelands_area:0 "Colombian Wastelands"
+ veraguas_area:0 "Veraguas"
  
  #Provinces
  PROV7300:0 "Montaukett"
@@ -996,7 +998,7 @@
  PROV6707:0 ""
  PROV6708:0 ""
  PROV6709:0 ""
- PROV6710:0 ""
+ PROV6710:0 "Wounaan"
  PROV6711:0 "Panama"
  PROV6712:0 ""
  PROV6713:0 "Guatavita"
@@ -1006,7 +1008,7 @@
  PROV6717:0 ""
  PROV6718:0 ""
  PROV6719:0 ""
- PROV6720:0 ""
+ PROV6720:0 "Guna Yala"
  PROV6721:0 "Panama"
  PROV6722:0 ""
  PROV6723:0 ""

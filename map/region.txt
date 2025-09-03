@@ -1462,6 +1462,7 @@ central_america_region = { # 10 areas
 		costa_rica_area
 		mosquito_area
 		panama_area # Brian; moved from colombia_region
+		veraguas_area
 	}
 	monsoon = {
 		00.06.01
