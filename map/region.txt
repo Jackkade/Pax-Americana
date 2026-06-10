@@ -1525,23 +1525,38 @@ brazil_region = { # 20 areas
 		00.04.30
 	}
 }
-colombia_region = { # 13 areas
+colombia_region = { # 22 areas
 	areas = {
-		western_llanos  
+		  
 		bogota_area
 		popayan_area
 		colombian_amazonas_area
 		cordillera_occidental_area
 		coquivacoa_area
+		santander_area
+		cauca_area
+		cauca_valley_area
+		huila_area
+		magdalena_area
+		bolivar_area
+		cordoba_area
+		putomayo_area
+		vichada_area
+		caqueta_area
+		tolima_area
+		caldas_area
+		choco_area
+		cesar_area
+		meta_area
+		arauca_area
 		colombian_wastelands_area
-		#panama_area # Brian; moved to central_america_region
 	}
 	monsoon = {
 		00.05.01
 		00.11.30
 	}
 }
-venezuela_region = { # 13 areas
+venezuela_region = { # 14 areas
 	areas = {
 		central_llanos_area
 		eastern_llanos  
@@ -1549,6 +1564,14 @@ venezuela_region = { # 13 areas
 		venezuela_area
 		guyana_area
 		upper_guyana_area
+		delta_amacurio_area
+		esmeralda_area
+		barinas_area
+		falcon_area
+		merida_area
+		sucre_area
+		western_llanos
+		venezuelan_wastelands_area
 	}
 	monsoon = {
 		00.05.01
@@ -1584,7 +1607,7 @@ upper_peru_region = { # 9 areas
 		paraguay_area
 	}
 }
-peru_region = { # 9 areas
+peru_region = { # 17 areas
 	areas = {
 		quito_area
 		iquitos_area
@@ -1596,6 +1619,12 @@ peru_region = { # 9 areas
 		cajamarca_area
 		huanuco_area
 		galapagos_area
+		esmeraldas_area
+		ecuador_area
+		loja_area
+		pastaza_area
+		guayas_area
+		manabi_area
 		peruvian_wastelands_area
 	}
 	monsoon = {

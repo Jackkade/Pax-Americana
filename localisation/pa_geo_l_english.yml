@@ -208,6 +208,7 @@
  galapagos_area:0 "Galapagos"
  peruvian_wastelands_area:0 "Peruvian Wastelands"
  colombian_wastelands_area:0 "Colombian Wastelands"
+ venezuelan_wastelands_area: "Venezuelan Wastelands"
  veraguas_area:0 "Veraguas"
  
  #Provinces
@@ -1076,8 +1077,8 @@
  PROV6785:0 ""
  PROV6786:0 ""
  PROV6787:0 ""
- PROV6788:0 ""
- PROV6789:0 ""
+ PROV6788:0 "Puerto Ayora"
+ PROV6789:0 "Puerto Egas"
  PROV6790:0 ""
  PROV6791:0 "Panama"
  PROV6792:0 ""
