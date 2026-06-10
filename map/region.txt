@@ -1513,6 +1513,8 @@ brazil_region = { # 20 areas
 		grao_para_area
 		amapa_area
 		amazon_area
+		suriname_area
+
 	}
 	monsoon = {
 		00.12.01
@@ -1525,14 +1527,7 @@ brazil_region = { # 20 areas
 }
 colombia_region = { # 13 areas
 	areas = {
-		guyana_area
-		suriname_area
-		upper_guyana_area
-		venezuela_area
-		maracaibo_area
-		eastern_llanos  
 		western_llanos  
-		central_llanos_area
 		bogota_area
 		popayan_area
 		colombian_amazonas_area
@@ -1540,6 +1535,20 @@ colombia_region = { # 13 areas
 		coquivacoa_area
 		colombian_wastelands_area
 		#panama_area # Brian; moved to central_america_region
+	}
+	monsoon = {
+		00.05.01
+		00.11.30
+	}
+}
+venezuela_region = { # 13 areas
+	areas = {
+		central_llanos_area
+		eastern_llanos  
+		maracaibo_area
+		venezuela_area
+		guyana_area
+		upper_guyana_area
 	}
 	monsoon = {
 		00.05.01
