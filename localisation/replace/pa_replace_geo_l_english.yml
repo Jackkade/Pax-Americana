@@ -11,6 +11,13 @@
  lower_louisiana_area:0 "Mississippi Delta"
  greater_antilles_area:0 "Puerto Rico"
  cuba_area:0 "West Cuba"
+ coquivacoa_area:0 "Guajira"
+ cordillera_occidental_area:0 "Antioquia"
+ popayan_area:0 "Narino"
+ central_llanos_area:0 "Guarico"
+ eastern_llanos:0 "Apure"  
+ western_llanos:0 "Anzoategui"
+
  colonial_eastern_america:0 "Colonial Chesapeake"
  COLONIAL_EASTERN_AMERICA_Thirteen_Colonies:0 "Virginia"
  COLONIAL_EASTERN_AMERICA_Thirteen_Colonies_ADJ:0 "Virginian"
