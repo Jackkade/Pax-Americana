@@ -1,0 +1,19 @@
+# No previous file for Imbabura
+owner = QTO
+controller = QTO
+culture = barbacoa
+religion = inti
+capital = "Imbabura"
+is_city = yes
+trade_goods = grain
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+add_core = QTO
+discovered_by = south_american
+discovered_by = andean
+discovered_by = south_american
+native_size = 15
+native_ferocity = 3
+native_hostileness = 4

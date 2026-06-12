@@ -1,0 +1,20 @@
+# No previous file for Macara
+owner = CHM
+controller = CHM
+culture = chimuan
+religion = inti
+capital = "Macara"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = CHM
+discovered_by = south_american
+discovered_by = andean
+discovered_by = CHM
+discovered_by = south_american
+native_size = 15
+native_ferocity = 3
+native_hostileness = 4

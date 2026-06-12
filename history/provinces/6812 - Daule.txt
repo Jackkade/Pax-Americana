@@ -1,0 +1,15 @@
+# No previous file for Daule
+culture = chimuan
+discovered_by = south_american
+discovered_by = andean
+religion = inti
+capital = "Daule"
+is_city = no
+trade_goods = unknown
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+native_size = 15
+native_ferocity = 3
+native_hostileness = 4

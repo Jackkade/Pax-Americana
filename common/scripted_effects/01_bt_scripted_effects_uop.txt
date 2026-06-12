@@ -11,8 +11,8 @@ add_UOP_modifier = {
 				superregion = india_superregion
 				superregion = far_east_superregion
 				superregion = china_superregion
-				superregion = south_america_superregion
-				superregion = andes_superregion
+				
+				
 				### Regions
 				region = oceanea_region
 				#
@@ -26,6 +26,10 @@ add_UOP_modifier = {
 				#
 				region = arabia_region
 				#
+				region = brazil_region
+				region = la_plata_region
+				region = upper_peru_region
+
 				region = ural_region
 				area = azov_area
 				area = lower_yik_area
@@ -36,6 +40,14 @@ add_UOP_modifier = {
 				area = circassia_area
 				area = dagestan_area
 				province_id = 2195 #Adyghe
+				#
+				area = antisuyu_area
+				area = peruan_coast
+				area = kuntisuyu_area
+				area = huanuco_area
+				area = chimor_area
+				area = ucayali_area
+				area = cajamarca_area
 			}
 			is_wasteland = no
 		}

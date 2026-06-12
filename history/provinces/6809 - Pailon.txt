@@ -1,0 +1,19 @@
+# No previous file for Pailon
+culture = barbacoa
+religion = inti
+capital = "Pailon"
+is_city = no
+trade_goods = unknown
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = QTO
+discovered_by = south_american
+discovered_by = andean
+discovered_by = south_american
+religion = animism
+tradegood = unknown
+native_size = 15
+native_ferocity = 3
+native_hostileness = 4

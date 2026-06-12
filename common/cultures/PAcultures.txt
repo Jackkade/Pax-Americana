@@ -2476,6 +2476,76 @@ chibchan = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
+	sinu = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipat√° Busbanz√° Saboy√°
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charal√° Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutaz˙a Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	tairona = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipat√° Busbanz√° Saboy√°
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charal√° Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutaz˙a Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	panche = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipat√° Busbanz√° Saboy√°
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charal√° Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutaz˙a Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	calima = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipat√° Busbanz√° Saboy√°
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charal√° Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutaz˙a Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
+	tairona = {
+		primary = XXX
+		dynasty_names = {
+			Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga Huachuri Huaman Huascar Huaypalcon Tunduma Chipat√° Busbanz√° Saboy√°
+			Tenza Tibirita Duitama Paipa Cerinza Tibana Charal√° Toca
+		}
+		male_names = {
+			Meicuchuca Saguamanchica Nemequene Tisquesusa Sagpipa Michua Quemuenchatocha Aquiminzaque Ah Can
+			Cuxininegua Uzathama Tibacuy Guecha Mico-Chuco Aquimin Tomagata Tutaz˙a Cuba
+		}
+		female_names = {
+			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
+		}
+	}
 	kuna = {
 		primary = XXX
 		dynasty_names = {
@@ -2577,6 +2647,26 @@ chibchan = {
 			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
 		}
 	}
+
+	barbacoa = {
+		primary = XXX
+		dynasty_names = {
+			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa
+			Curiatao Cusi  Guacra Guaritito Guaritopa Huachuri Huaman Huascar Huaypalcon Illaquita Inquill Llicllic Maila Maras
+			Marcavilca Mayta  Ninancoro Ozcoc Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca Quilaco Quingallumbo
+			Quintiraura Quisquis Quizo Rimac Ronpa Sahuaraura Sotaurco Tanqui Tucuycuyche Tupac-Amaru Yupanqui
+		}
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+
+
 	
 }
 
@@ -2700,6 +2790,54 @@ arawakan_g = {
 			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
 		}
 	}
+	baniwa = { #	Baniwa
+		primary = ARW
+		male_names = {
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirij√° Arata ToruÌ Mbicy
+		}
+		female_names = {
+			Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	mariche = { #	=
+		primary = ARW
+		male_names = {
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirij√° Arata ToruÌ Mbicy
+		}
+		female_names = {
+			Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	piritu = { #
+		primary = ARW
+		male_names = {
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirij√° Arata ToruÌ Mbicy
+		}
+		female_names = {
+			Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	huitoto = { #
+		primary = ARW
+		male_names = {
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirij√° Arata ToruÌ Mbicy
+		}
+		female_names = {
+			Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
 	garifuna = { #	Black Mainland Arawak
 		primary = XXX
 		male_names = {
@@ -2719,6 +2857,74 @@ arawakan_g = {
 		}
 		female_names = {
 			Hay√° Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+}
+
+maranon = {
+	zaparo = {
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+	choco = {
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+}
+
+
+carribean = {
+	yaruro = {
+		male_names = {
+			¡hari Ebedimu Gunfuli Kaigouchi Ilumani Pirij· SemÈn
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirij· Arata ToruÌ Mbicy
+		}
+		female_names = {
+			Hay· Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+
+}
+
+
+cariban_g = {
+	palenque = {
+		primary = CAB
+		male_names = {
+			¡hari Ebedimu Gunfuli Kaigouchi Ilumani Pirij· SemÈn
+		}
+		female_names = {
+			Hay· Isani
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	achagua = {
+		primary = CAB
+		male_names = {
+			¡hari Ebedimu Gunfuli Kaigouchi Ilumani Pirij· SemÈn
+		}
+		female_names = {
+			Hay· Isani
 		}
 		dynasty_names = {
 			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
