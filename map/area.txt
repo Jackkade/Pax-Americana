@@ -3451,7 +3451,7 @@ huasteca_area = {
 }
 nayarit_area  = {
 	854 2617 4578 5020
-	7624 7625 7626
+	6706 7624 7625 7626
 }
 sonora_y_sinaloa_area  = {
 	855 859 5063

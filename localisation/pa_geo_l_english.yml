@@ -162,6 +162,11 @@
  COLONIAL_CAROLINA_Tennessee_ADJ:0 "Tennessean"
  COLONIAL_CAROLINA_Carolina:0 "Carolina"
  COLONIAL_CAROLINA_Carolina_ADJ:0 "Carolinian"
+ colonial_venezuela:0 "Colonial Venezuela"
+ COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Venezuela:0 "[Root.GetAdjective] Venezuela"
+ COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Venezuela_ADJ:0 "[Root.GetAdjective] Venezuelan"
+ COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Guyana:0 "[Root.GetAdjective] Guyana"
+ COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Guyana_ADJ:0 "[Root.GetAdjective] Guyanese"
 
  #Specific
  COLONIAL_MEXICO_New_Anglica:0 "New Anglica"

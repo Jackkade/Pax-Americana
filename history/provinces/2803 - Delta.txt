@@ -1,5 +1,5 @@
 # - Orinocu Delta
-culture = carib
+culture = warao
 discovered_by = south_american
 religion = animism
 capital = "Santo Thomas"

@@ -395,3 +395,43 @@ colonial_carolina = {
 	}
 }
 
+
+# Venezuela
+colonial_venezuela = {
+	color = { 226 220 90 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+		fur = 3
+		cocoa = 7
+		gold = 3
+		grain = 4
+		naval_supplies = 1
+	}
+
+	culture = {
+		guajiro = 15
+		inca = 6
+	}
+	
+	religion = {
+		animism = 10
+	}
+	
+	provinces = {
+		741 742 743 744 745 830 831 834 2803 2804 2805 2807 2808 2809 2810 2811 2813 2931 2937 2939 4609 4610 4611 4612 4613 4614 4615 4616 4617 6839 6847 6848 6849 6850 6851 6852 6853 6854 6855 6856 6858 6859 6861 6862 6863 6864 6865 6866 6867 6868 6869 6870 6871 6872 6873 6874 6875 6876 6877 6878 6879 6880 6881 6882 6883 6884 6885 6886 6887 6888 6889 6890 6891 6892 6893 6894 6895 6896 6897 6898 6899 6900 6901 6903 6904
+	}
+
+	# Generic
+	names = {
+		name = "COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Venezuela"
+	}
+	names = {
+		name = "COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Guyana"
+	}
+}
