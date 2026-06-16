@@ -78,6 +78,7 @@ can_colonize_province = {
                         region = upper_peru_region
                         region = peru_region
                         region = colombia_region
+                        region = venezuela_region
                         region = iberia_region
                     }
                 }
@@ -191,6 +192,7 @@ can_colonize_province = {
                         region = la_plata_region
                         region = peru_region
                         region = colombia_region
+                        region = venezuela_region
                         continent = africa
                         continent = asia
                         continent = oceania

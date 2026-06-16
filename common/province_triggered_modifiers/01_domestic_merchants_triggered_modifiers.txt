@@ -63,6 +63,47 @@ alaska_node_domestic_merchant_modifier = {
 	}
 }
 
+bogota_trade_node_domestic_merchant_modifier = {
+	potential = {
+		always = yes
+	}
+	hidden = yes
+	trigger = {
+			domestic_merchant_trigger = {
+				node = bogota_trade
+			}
+	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		domestic_merchant_effect = {
+			node = bogota_trade
+		}
+	}
+}
+caracas_trade_node_domestic_merchant_modifier = {
+	potential = {
+		always = yes
+	}
+	hidden = yes
+	trigger = {
+			domestic_merchant_trigger = {
+				node = caracas_trade
+			}
+	}
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+		domestic_merchant_effect = {
+			node = caracas_trade
+		}
+	}
+}
+
 
 australia_node_domestic_merchant_modifier = {
 	potential = {

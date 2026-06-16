@@ -438,5 +438,15 @@ on_startup = {
 			add_province_triggered_modifier = yucatan_trade_node_domestic_merchant_modifier
 			domestic_merchant_effect = { node = yucatan_trade }
 		}
+		825 = {
+			add_province_triggered_modifier = bogota_trade_node_domestic_merchant_modifier
+			domestic_merchant_effect = { node = bogota_trade }
+		}
+		831 = {
+			add_province_triggered_modifier = caracas_trade_node_domestic_merchant_modifier
+			domestic_merchant_effect = { node = caracas_trade }
+		}
+		
+		
 	}
 }
