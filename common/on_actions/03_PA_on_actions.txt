@@ -63,7 +63,16 @@ on_colony_finished = { #ROOT - Province
 			else_if = {	#Portugese
 				limit = {
 					owner = {
-						primary_culture = portugese
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
 					}
 				}
 				change_culture = carregadores
@@ -74,11 +83,6 @@ on_colony_finished = { #ROOT - Province
 				limit = {
 					owner = {
 						culture_group = iberian
-						NOT = { primary_culture = brazilian }
-						NOT = { primary_culture = alemarese }
-						NOT = { primary_culture = mestico }
-						NOT = { primary_culture = carregadores }
-						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = caribeno
@@ -133,7 +137,16 @@ on_colony_finished = { #ROOT - Province
 			else_if = {	#Portugese
 				limit = {
 					owner = {
-						primary_culture = portugese
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
 					}
 				}
 				change_culture = centraliano
@@ -144,11 +157,6 @@ on_colony_finished = { #ROOT - Province
 				limit = {
 					owner = {
 						culture_group = iberian
-						NOT = { primary_culture = brazilian }
-						NOT = { primary_culture = alemarese }
-						NOT = { primary_culture = mestico }
-						NOT = { primary_culture = carregadores }
-						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = centrado
@@ -232,7 +240,16 @@ on_colony_finished = { #ROOT - Province
 			else_if = {	#Portugese
 				limit = {
 					owner = {
-						primary_culture = portugese
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
 					}
 				}
 				change_culture = brazilian
@@ -242,11 +259,6 @@ on_colony_finished = { #ROOT - Province
 				limit = {
 					owner = {
 						culture_group = iberian
-						NOT = { primary_culture = brazilian }
-						NOT = { primary_culture = alemarese }
-						NOT = { primary_culture = mestico }
-						NOT = { primary_culture = carregadores }
-						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = norteno
@@ -262,6 +274,306 @@ on_colony_finished = { #ROOT - Province
 				change_original_culture = nyasvenish
 			}
 			else = {	#None of previous cultures
+				change_culture = owner
+				change_original_culture = owner
+			}
+		}
+		else_if = { #Colombia
+			limit = {
+				OR = {
+					region = venezuela_region
+					region = colombia_region
+				}
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = columbian
+				change_original_culture = columbian
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = antartique
+				change_original_culture = antartique
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = braziliaans
+				change_original_culture = braziliaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
+					}
+				}
+				change_culture = guianes
+				change_original_culture = guianes
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+					}
+				}
+				change_culture = colombian
+				change_original_culture = colombian
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = antarktish
+				change_original_culture = antarktish
+			}
+			else = {	#None of previous
+				change_culture = owner
+				change_original_culture = owner
+			}
+		}
+		else_if = { #Andes/Peru
+			limit = {
+				OR = {
+					region = peru_region
+					region = upper_peru_region
+				}
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = columbian
+				change_original_culture = columbian
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = antartique
+				change_original_culture = antartique
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = braziliaans
+				change_original_culture = braziliaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
+					}
+				}
+				change_culture = pacifico
+				change_original_culture = pacifico
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+					}
+				}
+				change_culture = andino
+				change_original_culture = andino
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = antarktish
+				change_original_culture = antarktish
+			}
+			else = {	#None of previous
+				change_culture = owner
+				change_original_culture = owner
+			}
+		}
+		else_if = { #Brazil
+			limit = {
+				OR = {
+					region = brazil_region
+					#region = amazon_region
+				}
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = columbian
+				change_original_culture = columbian
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = antartique
+				change_original_culture = antartique
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = braziliaans
+				change_original_culture = braziliaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
+					}
+				}
+				change_culture = brazilian
+				change_original_culture = brazilian
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+					}
+				}
+				change_culture = amazonico
+				change_original_culture = amazonico
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = antarktish
+				change_original_culture = antarktish
+			}
+			else = {	#None of previous
+				change_culture = owner
+				change_original_culture = owner
+			}
+		}
+		else_if = { #La Plata
+			limit = {
+				OR = {
+					region = la_plata_region
+					#region = amazon_region
+				}
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = columbian
+				change_original_culture = columbian
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = antartique
+				change_original_culture = antartique
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = braziliaans
+				change_original_culture = braziliaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
+					}
+				}
+				change_culture = brazilian
+				change_original_culture = brazilian
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+					}
+				}
+				change_culture = platinean
+				change_original_culture = platinean
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = antarktish
+				change_original_culture = antarktish
+			}
+			else = {	#None of previous
 				change_culture = owner
 				change_original_culture = owner
 			}
@@ -300,7 +612,16 @@ on_colony_finished = { #ROOT - Province
 			else_if = {	#Portugese
 				limit = {
 					owner = {
-						primary_culture = portugese
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
 					}
 				}
 				change_culture = brazilian
@@ -310,11 +631,6 @@ on_colony_finished = { #ROOT - Province
 				limit = {
 					owner = {
 						culture_group = iberian
-						NOT = { primary_culture = brazilian }
-						NOT = { primary_culture = alemarese }
-						NOT = { primary_culture = mestico }
-						NOT = { primary_culture = carregadores }
-						NOT = { primary_culture = centraliano }
 					}
 				}
 				change_culture = platinean
