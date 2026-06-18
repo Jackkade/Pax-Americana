@@ -74,4 +74,19 @@ spriteTypes = {
 		name = "GFX_great_project_san_juan_de_ulua"	
 		texturefile = "gfx//interface//great_projects//great_project_san_juan_de_ulua.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_great_project_caracas_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_caracas_cathedral.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_tegucigalpa_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_tegucigalpa_cathedral.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_lake_guatavita"	
+		texturefile = "gfx//interface//great_projects//great_project_lake_guatavita.dds"
+	}
 }

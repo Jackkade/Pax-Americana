@@ -446,7 +446,5 @@ on_startup = {
 			add_province_triggered_modifier = caracas_trade_node_domestic_merchant_modifier
 			domestic_merchant_effect = { node = caracas_trade }
 		}
-		
-		
 	}
 }

@@ -2277,12 +2277,6 @@ zocalo = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
-		}
-		OWNER = {
-			technology_group = western 
-		}
 	}
 
 	on_built = {
@@ -2451,9 +2445,6 @@ san_juan_de_ulua = {
 	type = monument
 
 	build_trigger = {
-		OWNER = {
-			technology_group = western 
-		}
 	}
 
 	on_built = {
@@ -2586,6 +2577,495 @@ san_juan_de_ulua = {
 			unjustified_demands = -0.2
 			land_attrition = -0.1
 		}
+
+		on_upgraded = {
+		}
+	}
+
+}
+
+caracas_cathedral = {
+	start = 831		#Caracas
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1443.1.1		# 
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	keep_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_colonial_growth = 15
+			local_colony_cost_modifier = -0.15
+		}
+
+		country_modifiers = {
+			shock_damage = 0.10
+			manpower_in_accepted_culture_provinces = 0.05
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_colonial_growth = 20
+			local_colony_cost_modifier = -0.15
+		}
+
+		country_modifiers = {
+			shock_damage = 0.10
+			manpower_in_accepted_culture_provinces = 0.10
+			missionaries = 1
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_colony_cost_modifier = -0.25
+		}
+
+		country_modifiers = {
+			local_colonial_growth = 15
+			shock_damage = 0.15
+			manpower_in_accepted_culture_provinces = 0.10
+			missionaries = 1
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+}
+
+
+tegucigalpa_cathedral = {
+	start = 7679		#Tegucigalpa
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1443.1.1		# 
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	keep_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+		OWNER = {
+			technology_group = western 
+		}
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+		}
+
+		country_modifiers = {
+			tolerance_own = 1
+			land_attrition = -0.1
+
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+		}
+
+		country_modifiers = {
+			tolerance_own = 1
+			land_attrition = -0.1
+			global_heathen_missionary_strength = 0.02
+
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+		}
+
+		country_modifiers = {
+			tolerance_own = 2
+			land_attrition = -0.1
+			global_heathen_missionary_strength = 0.03
+		}
+
+		on_upgraded = {
+		}
+	}
+
+}
+
+
+lake_guatavita = {
+	start = 6713		#Guatavita
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1443.1.1		# 
+	
+	time = {
+		months = 0
+	}
+	
+	build_cost = 0
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 10
+	
+	starting_tier = 1
+	
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+	
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_production_efficiency = 0.1
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+		}
+
+		country_modifiers = {
+			religious_unity = 0.1
+			stability_cost_modifier = -0.1
+		}
+
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+			local_production_efficiency = 0.1
+		}
+
+		region_modifier = {
+		}
+
+		country_modifiers = {
+			religious_unity = 0.1
+			stability_cost_modifier = -0.15
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		region_modifier = {
+			local_production_efficiency = 0.15
+		}
+
+		country_modifiers = {
+			religious_unity = 0.1
+			stability_cost_modifier = -0.15
+		}
+
 
 		on_upgraded = {
 		}
