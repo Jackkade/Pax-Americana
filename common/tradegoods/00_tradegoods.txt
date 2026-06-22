@@ -408,6 +408,7 @@ wool = {
 				region = carribeans_region
 				region = brazil_region
 				region = colombia_region
+				region = venezuela_region
 				region = southeast_america_region
 				region = mississippi_region
 			}
@@ -1953,6 +1954,7 @@ coffee = {
 			NOT = { region = central_america_region }
 			NOT = { region = mexico_region }
 			NOT = { region = colombia_region }
+			NOT = { region = venezuela_region }
 			NOT = { region = borneo_region }
 			NOT = { region = sumatran_region }
 			NOT = { region = celebes_region }
@@ -1972,7 +1974,10 @@ coffee = {
 		}
 		modifier = {
 			factor = 1.5
-			region = colombia_region
+			OR = {
+				region = colombia_region
+				region = venezuela_region
+			}
 		}
 		modifier = {
 			factor = 0
@@ -2130,6 +2135,7 @@ sugar = {
 			NOT = { region = mexico_region }
 			NOT = { region = central_america_region }
 			NOT = { region = colombia_region }
+			NOT = { region = venezuela_region }
 			NOT = { region = deccan_region }
 			NOT = { region = west_india_region }
 			NOT = { area = mascarenes_area }
@@ -2300,6 +2306,7 @@ cocoa = {
 			is_random_new_world = no
 			NOT = { region = central_america_region }
 			NOT = { region = colombia_region }
+			NOT = { region = venezuela_region }
 			NOT = { region = peru_region }
 			NOT = { region = brazil_region }
 			NOT = { region = carribeans_region }
@@ -2552,6 +2559,7 @@ livestock = {
 					NOT = { region = central_africa_region }
 					NOT = { region = east_africa_region }
 					NOT = { region = colombia_region }
+					NOT = { region = venezuela_region }
 					NOT = { region = brazil_region }
 				}
 				AND = {
@@ -2566,6 +2574,7 @@ livestock = {
 				region = carribeans_region
 				region = brazil_region
 				region = colombia_region
+				region = venezuela_region
 				region = southeast_america_region
 				region = mississippi_region
 			}
@@ -2826,6 +2835,7 @@ gems = {
 			NOT = { region = peru_region }
 			NOT = { region = upper_peru_region }
 			NOT = { region = colombia_region }
+			NOT = { region = venezuela_region }
 			NOT = { region = indonesia_region }
 			NOT = { region = moluccas_region }
 			NOT = { region = hindusthan_region }

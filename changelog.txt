@@ -81,3 +81,12 @@ Pax Americana Update 1.3 - Mesoamerica
   - 'Norteno' North American Castillian
   - 'Centrado' Central American Castillian
   - 'Belizean' Central American British
+
+Pax Americana Update 1.4 - El Dorado
+
+# Major Map rework
+- Completely reworked map of Central America
+- Completely reworked map of Colombia, Venezuela, and Ecuador
+- Minor map changes in California and Guyana
+- 3 New Monuments
+- 2 New Trade Nodes, Bogota and Caracas
