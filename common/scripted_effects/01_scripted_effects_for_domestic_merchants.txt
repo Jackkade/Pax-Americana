@@ -10,6 +10,15 @@ domestic_merchant_effect = {
 			clear_global_event_target = strongest_in_$node$
 		}
 	}
+	else = {
+		every_country = {
+			limit = {
+				has_country_modifier = merchant_for_$node$
+			}
+			remove_country_modifier = merchant_for_$node$
+			clear_global_event_target = strongest_in_$node$
+		}
+	}
 	most_province_trade_power = {
 		save_global_event_target_as = strongest_in_$node$
 		add_country_modifier = {
