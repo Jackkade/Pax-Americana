@@ -131,12 +131,16 @@ dom_cas_missions_1 = {
 		provinces_to_highlight = {
 			region = iberia_region
 			NOT = { religion_group = ROOT }
+			is_wasteland = no
 		}
 
 		trigger = {
 			iberia_region = {
 				type = all
-				religion_group = ROOT
+				OR = {
+					religion_group = ROOT
+					is_wasteland = yes
+				}	
 			}
 		}
 
@@ -504,6 +508,7 @@ dom_cas_missions_1_b = {
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT }
+					is_wasteland = no
 				}
 				add_permanent_claim = ROOT 
 			}
@@ -572,12 +577,16 @@ dom_cas_missions_1_b = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			is_wasteland = no
 		}
 		
 		trigger = {
 			italy_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_wasteland = yes
+				}	
 			}
 		}
 		effect = {
@@ -895,6 +904,7 @@ dom_cas_missions_2 = {
 		provinces_to_highlight = {
 			region = france_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			is_wasteland = no
 		}
 		trigger = {
 			OR = { 
@@ -1223,11 +1233,15 @@ dom_cas_missions_2_b = {
 		provinces_to_highlight = {
 			region = iberia_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			is_wasteland = no
 		}
 		trigger = {
 			iberia_region = {
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					is_wasteland = yes
+				}	
 			}
 			if = { 
 				limit = { 
@@ -1352,6 +1366,7 @@ dom_cas_missions_2_b = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
+					is_wasteland = no
 				}
 				add_claim = ROOT
 			}
@@ -1641,6 +1656,7 @@ dom_cas_missions_2_c = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
+					is_wasteland = no
 				}
 				add_permanent_claim = ROOT
 			}
@@ -2178,7 +2194,7 @@ dom_cas_missions_3_b = {
 			area = catalonia_area 
 			OR = {
 				NOT = { owned_by = ROOT }
-				local_autonomy_above_min = 10 
+				NOT = { has_state_edict = edict_centralization_effort }
 			}
 		}
 		trigger = {
@@ -2189,7 +2205,7 @@ dom_cas_missions_3_b = {
 			catalonia_area = {
 				type = all
 				owned_by = ROOT 
-				NOT = { local_autonomy_above_min = 10 }
+				has_state_edict = edict_centralization_effort
 			}
 			stability = 1 
 			NOT = { num_of_rebel_armies = 1 }
@@ -2213,7 +2229,7 @@ dom_cas_missions_3_b = {
 				limit = { government = monarchy }
 				catalonia_area = {
 					type = all 
-					NOT = { local_autonomy_above_min = 10 }
+					has_state_edict = edict_centralization_effort
 					owned_by = ROOT 
 				}
 				NOT = { 
@@ -2522,6 +2538,7 @@ dom_cas_missions_3_c = {
 			region = central_america_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
+			is_wasteland = no
 		}
 		trigger = {
 			custom_trigger_tooltip = {
@@ -2530,6 +2547,7 @@ dom_cas_missions_3_c = {
 					type = all
 					OR = {
 						is_empty = yes
+						is_wasteland = yes
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
@@ -3367,7 +3385,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernï¿½n Cortï¿½s"
+				name = "Hernán Cortés"
 			}
 			7542 = {
 				add_base_tax = 3 #BT Dev doubling
@@ -3386,6 +3404,7 @@ dom_cas_missions_4_c = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
+					is_wasteland = no
 				}
 				add_permanent_claim = ROOT
 			}
@@ -3404,6 +3423,7 @@ dom_cas_missions_4_c = {
 			region = mexico_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
+			is_wasteland = no
 		}
 
 		trigger = {
@@ -3433,7 +3453,10 @@ dom_cas_missions_4_c = {
 			}
 			mexico_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_wasteland = yes
+				}
 			}
 		}
 		effect = {
@@ -3509,6 +3532,7 @@ dom_cas_missions_4_c = {
 				NOT = { fort_level = 2 }
 			}
 			has_discovered = ROOT
+			is_wasteland = no
 		}
 
 		trigger = {
@@ -4083,6 +4107,7 @@ dom_cas_missions_5_b = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
+					is_wasteland = no
 				}
 				add_permanent_claim = ROOT
 			}
@@ -4201,11 +4226,15 @@ dom_cas_missions_5_c = {
 				province_id = 1466
 			}
 			has_discovered = ROOT
+			is_wasteland = no
 		}
 
 		trigger = {
 			guinea_region = {
-				owned_by = ROOT
+				OR = {
+					owned_by = ROOT
+					is_wasteland = yes
+				}
 			}
 			1466 = {
 				is_strongest_trade_power = ROOT
@@ -4331,7 +4360,7 @@ dom_cas_missions_5_c = {
 				}
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value =  5
+				value =  10
 				colonial_region = colonial_cuba
 			}
 		}
@@ -4408,26 +4437,16 @@ dom_cas_missions_5_c = {
 		position = 11
 		provinces_to_highlight = {
 			OR = {
-				area = mexico_area
-				area = eastern_mexico_area
-				area = puebla_area
+				region = mexico_region
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 
 		trigger = {
-			mexico_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			eastern_mexico_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			puebla_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = mexico_region
+				value = 25
 			}
 		}
 
@@ -4476,7 +4495,7 @@ dom_cas_missions_5_c = {
 							continent = north_america
 							continent = south_america
 						}
-						value = 15
+						value = 30
 					}
 				}
 			}
