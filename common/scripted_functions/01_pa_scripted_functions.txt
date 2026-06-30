@@ -25,6 +25,7 @@ can_colonize_province = {
             FROM = {
                 ai = yes
                 NOT = { is_colonial_nation = yes }
+                is_subject = no
             }
             OR = {
                 FROM = {
