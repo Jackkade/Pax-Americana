@@ -32,7 +32,6 @@ can_colonize_province = {
                         culture_group = germanic
                         NOT = { tag = NED }
                     }
-
                 }
                 FROM = {
                     AND = { #No Colonial Content for Italians yet, so AI shouldn't colonize
@@ -197,6 +196,7 @@ can_colonize_province = {
                         continent = asia
                         continent = oceania
                     }
+                    NOT = { region = guinea_region }
                 }
                 #####
                 

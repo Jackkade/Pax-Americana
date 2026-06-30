@@ -184,14 +184,9 @@ colonial_viceroyalty_reform = {
 	fixed_rank = 0
 	potential = {
 		is_colonial_nation = yes
-		OR = {
-			has_reform = crown_colony_government
-			has_reform = private_enterprise_colony_government
-			has_reform = self_governing_colony_government
-		}
 	}
 	trigger = {
-		is_subject_of_type = colonial_viceroyalty_pa
+		tag = NSP
 	}
 	legacy_equivalent = colonial_government_legacy
 	modifiers = {		

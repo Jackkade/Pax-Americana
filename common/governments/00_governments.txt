@@ -714,6 +714,7 @@ republic = {
 				transitional_government_reform
 				#PA
 				congress_of_confederation_reform
+				colonial_viceroyalty_reform
 			}
 		}
 		republican_virtues = {
