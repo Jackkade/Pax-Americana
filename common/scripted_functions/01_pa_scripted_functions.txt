@@ -25,9 +25,11 @@ can_colonize_province = {
             FROM = {
                 ai = yes
                 NOT = { is_colonial_nation = yes }
-                is_subject = no
             }
             OR = {
+                FROM = {    #No Subjects
+                    is_subject = yes
+                }
                 FROM = {
                     AND = { #Currently only Netherlands should colonize
                         culture_group = germanic
