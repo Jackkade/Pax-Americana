@@ -28,6 +28,7 @@ province_event = { #Anglo-African-American
             trade_goods = cotton
             trade_goods = tobacco
             trade_goods = sugar
+            trade_goods = cocoa
         }
         is_city = yes
     }

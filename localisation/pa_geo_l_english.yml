@@ -1,5 +1,14 @@
 ﻿l_english:
  #US
+ USA_AMERICA:0 "America"
+ USA_AMERICA_ADJ:0 "American"
+ USA_COLUMBIA:0 "Columbia"
+ USA_COLUMBIA_ADJ:0 "Columbian"
+ USA_FREDON:0 "Fredonia"
+ USA_FREDON_ADJ:0 "Fredonian"
+ USA_NORTH_AMERICA:0 "North America"
+ USA_NORTH_AMERICA_ADJ:0 "North American"
+ 
  
  #Alternatives
  SBN:0 "Staatenbundnis"

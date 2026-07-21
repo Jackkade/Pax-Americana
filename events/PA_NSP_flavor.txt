@@ -96,7 +96,6 @@ country_event = {   #Cortez detroys the Aztecs
                 adm = 5
                 dip = 3
                 mil = 6
-                fixed = yes
                 age = 36
                 claim = 100
             }

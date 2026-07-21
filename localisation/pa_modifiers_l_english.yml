@@ -22,7 +22,7 @@
  pa_new_colony_increased_cost_burgers_privilege:0 "Increased Colony Cost - §RNew World Charter§!"
  pa_new_colonial_nation_colony_overlord_upkeep:0 ""
  
- #US
+ #USA
  usa_rugged_independence:0 "Rugged Independence"
  usa_go_west_young_man:0 "Go west, Young man!"
  usa_mississippi_mouth:0 "Mississippi Shipping Rights"
@@ -32,15 +32,25 @@
  usa_fortify_florida:0 "Floridan Fortifications"
  usa_carribean_plantations:0 "Caribbean Plantations"
  usa_expediated_statehood:0 "Cuban State Capital"
-
-
-
+ usa_gateway_to_the_west:0 "Gateway to The West"
+ usa_pacific_fleet:0 "United States Pacific Fleet"
+ usa_secure_coasts:0 "Secure Atlantic Coast"
+ usa_dominate_fur_trade:0 "Dominating the Fur Trade"
+ usa_hardy_settlers:0 "Hardy Settlers"
+ usa_continentality:0 "Continentality"
+ usa_pearl_harbor:0 "Pearl Harbor"
+ usa_destiny_manifest:0 "Destiny, Made Manifest"
+ usa_western_ranches:0 "Western Ranches"
+ usa_joined_the_oceans:0 "Joined the Oceans"
+ usa_central_american_statehood:0 "Central American Statehood"
+ usa_mexican_statehood:0 "Mexican Statehood"
+ usa_northern_reaches:0 "Northern Territories"
  #Trade
  USA_TRADE_ST_LAWRENCE:0 "St. Lawrence Trade Fleet"
  USA_TRADE_GREAT_LAKES:0 "Great Lakes Trade Fleet"
  USA_TRADE_MISSISSIPPI:0 "Mississippi Trade Fleet"
  USA_TRADE_CARRIBEAN:0 "Caribbean Private Trade Fleet"
-
+ USA_TRADE_POLYNESIA:0 "Pacific Trade Routes"
  #Estate
  PA_SLAVERY_EXPANDED:0 "Slavery Expanded"
 

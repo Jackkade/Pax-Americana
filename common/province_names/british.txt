@@ -464,6 +464,7 @@
 4944 = { "Fort Chilcotin" "Fort Chilcotin" }
 4945 = { "The Dalles" "The Dalles" }
 4946 = { "Maupin" "Maupin" }
+4948 = { "Flathead" "Flathead"}
 4947 = { "Nelson" "Nelson" }
 4949 = { "Methow River" "Mazama" }
 4956 = { "Eagle Point" "Eagle Point" }
@@ -1070,6 +1071,7 @@
 5617 = { "Fort James" "Fort James" }    #or Fort Berthold, or Fort Atkinson, or Sakakawea
 5618 = { "Timberlake" "Timberlake" }
 5619 = { "Fort Robinson" "Fort Robinson" }
+5621 = { "Minneapolis" "Minneapolis"}
 5629 = { "Fort Laramie" "Fort Laramie" }
 5627 = { "Havre" "Havre" }
 5633 = { "Fort Peck" "Fort Peck" }
@@ -1082,6 +1084,8 @@
 7459 = { "Decorah" "Decorah" }
 7460 = { "Red Oak" "Red Oak" }
 7461 = { "Council Bluffs" "Council Bluffs" }
+7462 = { "Breckenridge" "Breckenridge"}
+7463 = { "Winoa" "Winoa"}
 7489 = { "Ponca City" "Ponca City" }
 7490 = { "Tulsa" "Tulsa" }
 7491 = { "Sallisaw" "Sallisaw" }
@@ -1202,9 +1206,12 @@
 #Mexico
 
 
+852 = { "Mexico" "Mexico City" }
 855 = { "Mazatlan" "Mazatlan" }
 859 = { "Los Mochis" "Los Mochis" }
 860 = { "Lerdo" "Lerdo" }
+2647 = { "Nearcrossing" "Nearcrossing" }
+2652
 5063 = { "Culiacan" "Culiacan" }
 4647 = { "Old Durango" "Old Durango" }
 4648 = { "Papasquiro" "Papasquiro" }
@@ -1212,7 +1219,7 @@
 7527 = { "Cuencame" "Cuencame" }
 
 #Central America
-835 = { "Panama" "Panama" }
+835 = { "Colon" "Colon" }
 838 = { "Sandy Bay" "Sandy Bay" } #Capital of Mosquito Protectorate
 839 = { "Salvador" "Salvador" } #Possible Anglicization
 840 = { "Truxillo" "Truxillo" }
@@ -1226,3 +1233,6 @@
 2664 = { "Saint James" "Saint James" } #(JP) "Santiago de Veraguas"
 4592 = { "Bluefields" "Bluefields" } #British settlement
 4595 = { "Saint Felix" "Saint Felix" } #(JP) San Felix is in this province, meant to be "Guaymí", or "Ngäbe"
+
+#Brazil
+756 = {"Southtown" "Southtown"}

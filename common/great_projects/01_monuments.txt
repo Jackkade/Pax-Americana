@@ -15579,7 +15579,7 @@ san_antonio_missions = {
 
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 
@@ -15591,13 +15591,13 @@ san_antonio_missions = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion_group = christian
 		}
 	}
 
@@ -15654,6 +15654,9 @@ san_antonio_missions = {
 		}
 		area_modifier = {
 			local_unrest = -1
+			
+		}
+		region_modifier = {
 			local_colonial_growth = 15
 		}
 		country_modifiers = {
@@ -15676,6 +15679,8 @@ san_antonio_missions = {
 		}
 		area_modifier = {
 			local_unrest = -2
+		}
+		region_modifier = { 
 			local_colonial_growth = 25
 		}
 		country_modifiers = {
