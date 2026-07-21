@@ -34,15 +34,16 @@ congress_of_confederation_reform = {
 	}
 	legacy_equivalent = american_republic_legacy
 	modifiers = {
-		global_autonomy = -0.03
+		global_autonomy = 0.025
 		republican_tradition = -0.5 
 		max_absolutism = -25
+		max_possible_parliament_seats = 26
+
 	}
 
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		max_possible_parliament_seats = 13
 	}
 	conditional = {
 		allow = {
@@ -103,7 +104,6 @@ american_republic = {
 		enables_aristocratic_idea_group = no
 		has_limited_terms = yes
 		has_candidate_bonus = yes
-		max_possible_parliament_seats = 13
 	}
 	conditional = {
 		allow = {
@@ -138,6 +138,12 @@ federal_republic = {
 			}
 		}
 	}
+	trigger = {
+		OR = {
+			have_had_reform = federal_republic
+			has_unlocked_government_reform = { government_reform = federal_republic }
+		}
+	}
 	legacy_equivalent = federal_republic_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
@@ -145,9 +151,11 @@ federal_republic = {
 		has_dlc = "American Dream"
 	}
 	modifiers = {
-		expand_administration_cost = -0.1
+
+		expand_administration_cost = -0.25
 		candidate_random_bonus = 1
-		governing_capacity = 30
+		governing_capacity = 50
+		global_autonomy = 0.05
 		max_absolutism = 10
 		max_terms = 2
 	}
@@ -157,7 +165,6 @@ federal_republic = {
 		enables_aristocratic_idea_group = no
 		has_limited_terms = yes
 		has_candidate_bonus = yes
-		max_possible_parliament_seats = 13
 	}
 	conditional = {
 		allow = {
@@ -287,6 +294,48 @@ english_parliamentary_republic_government = {
 	}
 }
 
+
+union_of_states_reform = {
+	icon = "constitution"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		NOT = { tag = USA }
+	}
+	modifiers = {
+		global_trade_power = 0.1
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+		can_use_trade_post = yes
+	}
+	trigger = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+	}
+	boost_income = yes
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.35
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = merchants_reform
+				has_reform = venice_merchants_reform
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 2 }
+			is_part_of_hre = yes
+		}
+	}
+}
+
 bill_of_rights_reform = {
 	icon = "constitution"
 	allow_normal_conversion = yes
@@ -306,6 +355,29 @@ bill_of_rights_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+expanded_bill_of_rights_reform = {
+	icon = "constitution"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_government_attribute = is_pirate_republic_reform
+		}
+		tag = USA
+		has_unlocked_government_reform = { government_reform = expanded_bill_of_rights_reform }
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.10
+		global_unrest = -2
+		development_cost_modifier = -0.05
+		burghers_loyalty_modifier = 0.10
+		church_influence_modifier = -0.05
+		female_advisor_chance = 0.1
+		promote_culture_cost = -0.15
+	}
+	ai = {
+		factor = 1000
 	}
 }
 american_system_reform = {
@@ -344,6 +416,51 @@ public_land_survey_system_reform = {
 		global_autonomy = 0.02
 		governing_capacity = 10
 		governing_capacity_modifier = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+the_united_states_reform = {	#Better version of 'Union of States'
+	icon = "constitution"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_government_attribute = is_pirate_republic_reform
+		}
+		tag = USA
+	}
+	modifiers = {
+		trade_steering = 0.15
+ 		governing_capacity_modifier = 0.10
+		colonists = 1
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+		can_use_trade_post = yes
+	}
+	boost_income = yes
+	ai = {
+		factor = 1000
+	}
+}
+
+three_branches_of_government_reform = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_government_attribute = is_pirate_republic_reform
+		}
+		tag = USA
+	}
+	modifiers = {
+		free_policy = 1
+		global_autonomy = -0.05
+		max_absolutism = -25
 	}
 	ai = {
 		factor = 100

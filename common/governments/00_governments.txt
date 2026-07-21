@@ -757,6 +757,7 @@ republic = {
 				support_state_reform
 				#Pax Americana
 				bill_of_rights_reform
+				expanded_bill_of_rights_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -914,6 +915,8 @@ republic = {
 				enforced_autocracy_reform
 				#1.37
 				seven_provinces_reform
+				#Pax Americana
+				three_branches_of_government_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -926,6 +929,8 @@ republic = {
 				#1.36
 				superiority_of_the_state_reform
 				divided_aristocracy_reform
+				#PA
+				the_united_states_reform
 			}
 		}
 		economical_matters_republic = {

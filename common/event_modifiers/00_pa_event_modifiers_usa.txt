@@ -30,6 +30,50 @@ usa_mississippi_mouth = {
 	placed_merchant_power = 5
 }
 
+usa_pacific_fleet = {
+	max_flagships = 1 
+	naval_forcelimit_modifier = 0.33 
+	global_sailors_modifier = 0.1
+}
+
+usa_secure_coasts = {
+	sea_repair = yes
+	global_own_trade_power = 0.15
+}
+
+usa_dominate_fur_trade = {
+	trade_efficiency = 0.15
+}
+
+usa_hardy_settlers = {
+	global_colonial_growth = 10 
+	colonist_placement_chance = 0.05 
+}
+
+usa_continentality = {
+	governing_capacity = 100 
+}
+
+usa_destiny_manifest = {
+	prestige_decay = -0.01 
+	monthly_splendor = 2
+}
+usa_joined_the_oceans = {
+	reduced_trade_penalty_on_non_main_tradenode = 1.0
+}
+
+usa_northern_reaches = {
+	governing_capacity = 100 
+}
+usa_mexican_statehood = {
+	governing_capacity = 250
+}
+
+usa_central_american_statehood = {
+	governing_capacity = 100 
+	global_autonomy = -0.05  
+}
+
 #Changed from vanilla
 cultural_assimilation = {
 	global_unrest = 2
@@ -47,12 +91,18 @@ us_mint = {
 }
 
 
+
 ### Province ###
 
 ## Missions
 usa_southern_cash_crops = {
 	local_production_efficiency = 0.05 
-	trade_goods_size_modifier = 0.05
+	trade_goods_size_modifier = 0.15
+}
+
+usa_western_ranches = {
+	province_trade_power_modifier = 0.15
+	trade_goods_size_modifier = 0.10
 }
 
 usa_western_settlers = {
@@ -62,6 +112,7 @@ usa_western_settlers = {
 usa_interior_settlement = {
 	local_development_cost = -0.1
 	local_build_cost = -0.15
+	local_culture_conversion_cost = -0.25
 }
 
 usa_fortify_florida = {
@@ -77,6 +128,18 @@ usa_expediated_statehood = {
 	local_state_maintenance_modifier = -0.15 
 	local_development_cost = -0.1 
 	local_culture_conversion_cost = -0.15
+}
+
+usa_gateway_to_the_west = {
+	local_development_cost = -0.1 
+	province_trade_power_value = 25
+}
+
+usa_pearl_harbor = {
+	local_ship_cost = -0.35
+	ship_recruit_speed = -0.25 
+	local_ship_repair = 0.10
+	naval_forcelimit = 10
 }
 
 ## Events

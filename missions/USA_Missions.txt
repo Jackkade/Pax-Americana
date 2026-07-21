@@ -31,6 +31,7 @@ USA_missions_1 = {
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=usa_liberate_canada }
+			give_permaclaims_for_mission = { mission=usa_seize_newfoundland }
 		}
 	}
 	##Mission End
@@ -40,7 +41,7 @@ USA_missions_1 = {
 		required_missions {
 			usa_liberate_acadia
 		}
-		position = 5
+		position = 4
 		provinces_to_highlight = {
 			province_group = usa_liberate_canada_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -55,10 +56,6 @@ USA_missions_1 = {
 			}
 		}
 		effect = {
-			add_power_projection = { 
-				type = 10_permanent_power_projection
-				amount = 10 
-			}
 			canada_region = {
 				limit = {
 					owned_by = ROOT
@@ -73,8 +70,210 @@ USA_missions_1 = {
 					key = USA_TRADE_ST_LAWRENCE
 				}
 			}
+			give_permaclaims_for_mission = { mission=usa_great_white_north }
 			usa_great_white_north_provinces = {
-				add_permanent_claim = ROOT
+				limit = {
+					NOT = {
+						is_city = yes 
+					}
+				}
+				add_permanent_province_modifier  = {
+					name = "usa_western_settlers"
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_great_white_north = {
+		icon = mission_invade_england_ITA
+		required_missions {
+			usa_liberate_canada
+		}
+		position = 5
+		provinces_to_highlight = {
+			province_group = usa_great_white_north_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_great_white_north_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=100
+			}
+			trading_bonus = {
+				trade_goods = fur
+				value = yes
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_fifty_four_or_fight }
+			usa_great_white_north_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			add_country_modifier = {
+				name = "usa_dominate_fur_trade"
+				duration = 18250
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_fifty_four_or_fight = {
+		icon = mission_extent_yasak_to_the_east
+		required_missions {
+			usa_great_white_north
+		}
+		position = 6
+		provinces_to_highlight = {
+			province_group = usa_fifty_four_or_fight_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_fifty_four_or_fight_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=54
+			}
+		}
+		effect = {
+			usa_fifty_four_or_fight_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			add_country_modifier = {
+				name = "usa_continentality"
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_sea_to_shining_sea = {
+		icon = mission_usa_oregon_trail
+		required_missions {
+			usa_breadbasket_america
+		}
+		position = 7
+		provinces_to_highlight = {
+			province_group = usa_sea_to_shining_sea_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_sea_to_shining_sea_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=40
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_sewards_icebox }
+			usa_sea_to_shining_sea_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			add_country_modifier = {
+				name = "usa_destiny_manifest"
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_sewards_icebox = {
+		icon = mission_colonize_alaska
+		required_missions {
+			usa_sea_to_shining_sea
+		}
+		position = 8
+		provinces_to_highlight = {
+			province_group = usa_sewards_icebox_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_sewards_icebox_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=40
+			}
+		}
+		effect = {
+			usa_sewards_icebox_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			add_country_modifier = {
+				name = "usa_northern_reaches"
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_annex_hawaii = {
+		icon = mission_oceania_royal_marriage
+		required_missions {
+			usa_reach_the_golden_gate
+		}
+		position = 9
+		provinces_to_highlight = {
+			province_group = usa_annex_hawaii_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_annex_hawaii_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=4
+			}
+		}
+		effect = {
+			4935 = {
+				add_province_modifier = {
+					name = "usa_pearl_harbor"
+					duration = -1
+				}
+				center_of_trade = 1
+			}
+			1692 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 50
+					key = USA_TRADE_POLYNESIA
+				}
 			}
 		}
 	}
@@ -173,6 +372,64 @@ USA_missions_2 = {
 	}
 	##Mission End
 	##Mission Start
+	usa_seize_newfoundland = {
+		icon = mission_scandinavian_port_authority
+		required_missions {
+			usa_liberate_acadia
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_group = usa_seize_newfoundland_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_seize_newfoundland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=9
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_the_arctic_shield }
+			add_country_modifier = {
+				name = "usa_secure_coasts"
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_the_arctic_shield = {
+		icon = mission_rb_settle_the_north
+		required_missions {
+			usa_seize_newfoundland
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_group = usa_the_arctic_shield_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_the_arctic_shield_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=8
+			}
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "usa_hardy_settlers"
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
 	usa_breadbasket_america = {
 		icon = mission_maize
 		required_missions {
@@ -194,7 +451,52 @@ USA_missions_2 = {
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=usa_sea_to_shining_sea }
+			give_permaclaims_for_mission = { mission=usa_rocky_mountain_high }
+
 			usa_breadbasket_america_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			903 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 30
+					key = USA_TRADE_MISSISSIPPI
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_rocky_mountain_high = {
+		icon = mission_usa_rocky_mountains
+		required_missions {
+			usa_breadbasket_america
+		}
+		position = 7
+		provinces_to_highlight = {
+			province_group = usa_rocky_mountain_high_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_rocky_mountain_high_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=45
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_reach_the_golden_gate }
+
+			usa_rocky_mountain_high_provinces = {
 				limit = {
 					owned_by = ROOT
 				}
@@ -207,28 +509,134 @@ USA_missions_2 = {
 	}
 	##Mission End
 	##Mission Start
-	usa_sea_to_shining_sea = {
+	usa_reach_the_golden_gate = {
 		icon = mission_colonize_california
 		required_missions {
-			usa_breadbasket_america
+			usa_rocky_mountain_high
+			usa_to_the_colorado
 		}
-		position = 7
+		position = 8
 		provinces_to_highlight = {
-			province_group = usa_sea_to_shining_sea_provinces
+			province_group = usa_reach_the_golden_gate_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
-				provinces=usa_sea_to_shining_sea_provinces
+				provinces=usa_reach_the_golden_gate_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=50
+				value=45
 			}
 		}
 		effect = {
-			north_america_superregion = {
-				add_permanent_claim = ROOT
+			give_permaclaims_for_mission = { mission=usa_annex_hawaii }
+			give_permaclaims_for_mission = { mission=usa_build_the_panama_canal }
+			give_permaclaims_for_mission = { mission=usa_across_the_rio_grande }
+			usa_reach_the_golden_gate_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			add_country_modifier = {
+				name = "usa_pacific_fleet"
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	
+	##Mission Start
+	usa_build_the_panama_canal = {
+		icon = mission_colonize_panama
+		required_missions {
+			usa_reach_the_golden_gate
+		}
+		position = 10
+		provinces_to_highlight = {
+			province_group = usa_build_the_panama_canal_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			835 = {
+				owned_by = ROOT
+				has_great_project = {
+					type = panama_canal
+					tier = 1
+				}
+			}
+			6701 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+
+			add_power_projection = { 
+				type = 10_permanent_power_projection
+				amount = 10 
+			}
+			add_country_modifier = {
+				name = "usa_joined_the_oceans"
+				duration = -1
+			}
+			6701 = {
+				center_of_trade = 1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_central_american_states = {
+		icon = mission_colonial
+		required_missions {
+			usa_build_the_panama_canal
+			usa_annex_yucatan
+		}
+		position = 11
+		provinces_to_highlight = {
+			province_group = usa_central_american_states_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_central_american_states_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=35
+			}
+		}
+		effect = {
+			central_america_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_nationalism = -15
+			}
+			usa_central_american_states_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = "usa_central_american_statehood"
+				duration = -1
 			}
 		}
 	}
@@ -303,6 +711,15 @@ USA_missions_3 = {
 				name = "usa_go_west_young_man"
 				duration = 18250
 			}
+			usa_protect_midatlantic_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
 		}
 	}
 	##Mission End
@@ -329,6 +746,31 @@ USA_missions_3 = {
 		effect = {
 			add_stability = 1 
 			add_army_tradition = 15
+			usa_across_appalachians_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
+			usa_across_appalachians_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
 		}
 	}
 	##Mission End
@@ -351,6 +793,9 @@ USA_missions_3 = {
 				owner_type=country_or_non_sovereign_subject_holds
 				value=20
 			}
+			900 = {
+				owned_by = ROOT
+			}
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission= usa_breadbasket_america }
@@ -361,6 +806,218 @@ USA_missions_3 = {
 					power = 30
 					key = USA_TRADE_MISSISSIPPI
 				}
+			}
+			900 = {
+				add_province_modifier = {
+					name = "usa_gateway_to_the_west"
+					duration = -1
+				}
+			}
+			usa_up_old_man_river_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			usa_up_old_man_river_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_to_the_colorado = {
+		icon = mission_pue_restore_mesa_verde
+		required_missions {
+			usa_liberate_texas
+		}
+		position = 7
+		provinces_to_highlight = {
+			province_group = usa_to_the_colorado_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_to_the_colorado_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=30
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_complete_california }
+			add_country_modifier = {
+				name = "usa_go_west_young_man"
+				duration = -1
+			}
+			usa_to_the_colorado_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			usa_to_the_colorado_provinces = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_western_ranches"
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	
+	
+	##Mission Start
+	usa_complete_california = {
+		icon = mission_unite_home_region
+		required_missions {
+			usa_reach_the_golden_gate
+		}
+		position = 9
+		provinces_to_highlight = {
+			province_group = usa_complete_california_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_complete_california_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=25
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_secure_sinaloa }
+			usa_complete_california_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			usa_complete_california_provinces = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_western_ranches"
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_secure_sinaloa = {
+		icon = mission_sw_yucca_plants
+		required_missions {
+			usa_complete_california
+			usa_across_the_rio_grande
+		}
+		position = 10
+		provinces_to_highlight = {
+			province_group = usa_secure_sinaloa_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_secure_sinaloa_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=12
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_pacify_mexico }
+			usa_secure_sinaloa_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_pacify_mexico = {
+		icon = mission_mesoamerica
+		required_missions {
+			usa_secure_sinaloa
+			usa_annex_yucatan
+		}
+		position = 11
+		provinces_to_highlight = {
+			province_group = usa_pacify_mexico_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_pacify_mexico_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=100
+			}
+		}
+		effect = {
+			add_stability_or_adm_power = yes
+
+			mexico_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_nationalism = -10 
+			}
+			unlock_government_reform = {
+				government_reform = expanded_bill_of_rights_reform
+			}
+			if = {
+				limit = {
+					has_reform = bill_of_rights_reform
+				}
+			}
+			add_government_reform = expanded_bill_of_rights_reform
+			add_country_modifier = {
+				name = "usa_mexican_statehood"
+				duration = -1
 			}
 		}
 	}
@@ -407,12 +1064,24 @@ USA_missions_4 = {
 					OR = {
 						trade_goods = cotton 
 						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
 					}
 					owned_by = ROOT
 				}
 				add_province_modifier = {
 					name = "usa_southern_cash_crops"
 					duration = -1
+				}
+			}
+			usa_free_dixieland_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
 				}
 			}
 		}
@@ -441,6 +1110,7 @@ USA_missions_4 = {
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=usa_up_old_man_river }
+			give_permaclaims_for_mission = { mission=usa_liberate_texas }
 			add_country_modifier = {
 				name = "usa_mississippi_mouth"
 				duration = -1
@@ -451,6 +1121,31 @@ USA_missions_4 = {
 					duration = -1
 					power = 30
 					key = USA_TRADE_MISSISSIPPI
+				}
+			}
+			usa_aquire_new_orleans_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
+			usa_aquire_new_orleans_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
 				}
 			}
 		}
@@ -483,78 +1178,43 @@ USA_missions_4 = {
 				}
 				add_nationalism = -10 
 			}
-			random_owned_province = { #RandProv 1
+			give_permaclaims_for_mission = { mission=usa_to_the_colorado }
+			usa_liberate_texas_provinces = {
 				limit = {
-					province_group = usa_liberate_texas_provinces
-					NOT = {
-						has_province_flag = usa_americanized_flag
-					}
+					owned_by = ROOT
 				}
-				change_culture = ROOT
-				change_religion = ROOT
-				set_province_flag = usa_americanized_flag
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
 			}
-			random_owned_province = { #RandProv 1
+			usa_liberate_texas_provinces = {
 				limit = {
-					province_group = usa_liberate_texas_provinces
-					NOT = {
-						has_province_flag = usa_americanized_flag
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
 					}
+					owned_by = ROOT
 				}
-				change_culture = ROOT
-				change_religion = ROOT
-				set_province_flag = usa_americanized_flag
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
 			}
-			random_owned_province = { #RandProv 2
+			usa_liberate_texas_provinces = {
 				limit = {
-					province_group = usa_liberate_texas_provinces
-					NOT = {
-						has_province_flag = usa_americanized_flag
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
 					}
+					owned_by = ROOT
 				}
-				change_culture = ROOT
-				change_religion = ROOT
-				set_province_flag = usa_americanized_flag
-			}
-			random_owned_province = { #RandProv 3
-				limit = {
-					province_group = usa_liberate_texas_provinces
-					NOT = {
-						has_province_flag = usa_americanized_flag
-					}
-				}
-				change_culture = ROOT
-				change_religion = ROOT
-				set_province_flag = usa_americanized_flag
-			}
-			random_owned_province = { #RandProv 4
-				limit = {
-					province_group = usa_liberate_texas_provinces
-					NOT = {
-						has_province_flag = usa_americanized_flag
-					}
-				}
-				change_culture = ROOT
-				change_religion = ROOT
-				set_province_flag = usa_americanized_flag
-			}
-			random_owned_province = { #RandProv 5
-				limit = {
-					province_group = usa_liberate_texas_provinces
-					NOT = {
-						has_province_flag = usa_americanized_flag
-					}
-				}
-				change_culture = ROOT
-				change_religion = ROOT
-				set_province_flag = usa_americanized_flag
-			}
-			hidden_effect = { #Clearing the flag above.
-				every_owned_province = {
-					limit = {
-						has_province_flag = usa_americanized_flag
-					}
-					clr_province_flag = usa_americanized_flag 
+				add_province_modifier = {
+					name = "usa_western_ranches"
+					duration = -1
 				}
 			}
 		}
@@ -590,9 +1250,148 @@ USA_missions_4 = {
 					key = USA_TRADE_CARRIBEAN
 				}
 			}
+			usa_secure_hispanolia_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
 		}
 	}
 	##Mission End
+	##Mission Start
+	usa_across_the_rio_grande = {
+		icon = claim_the_borderlands
+		required_missions {
+			usa_reach_the_golden_gate
+		}
+		position = 9
+		provinces_to_highlight = {
+			province_group = usa_across_the_rio_grande_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_across_the_rio_grande_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=12
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_annex_yucatan }
+			usa_across_the_rio_grande_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
+			usa_across_the_rio_grande_provinces = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_western_ranches"
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	usa_annex_yucatan = {
+		icon = mission_chichen_itza
+		required_missions {
+			usa_across_the_rio_grande
+		}
+		position = 10
+		provinces_to_highlight = {
+			province_group = usa_annex_yucatan_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=usa_annex_yucatan_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=25
+			}
+			845 = {
+				owned_by = ROOT
+			}
+			2634 = {
+				owned_by = ROOT
+			}
+			2652 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			give_permaclaims_for_mission = { mission=usa_central_american_states }
+			usa_annex_yucatan_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
+			845 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 30
+					key = USA_TRADE_CARRIBEAN
+				} 
+				change_culture = anglo_afro_american
+				add_base_production = 2
+				add_province_modifier = {
+					name = "pa_slave_plantation"
+					duration = -1
+				}
+			}
+			2634 = {
+				change_culture = anglo_afro_american
+				add_base_production = 2
+				add_province_modifier = {
+					name = "pa_slave_plantation"
+					duration = -1
+				}
+			}
+			2652 = {
+				change_culture = ROOT
+			}
+		}
+	}
+	##Mission End
+	
 	##
 	
 }
@@ -635,12 +1434,24 @@ USA_missions_5 = {
 					OR = {
 						trade_goods = cotton 
 						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
 					}
 					owned_by = ROOT
 				}
 				add_province_modifier = {
 					name = "usa_southern_cash_crops"
 					duration = -1
+				}
+			}
+			usa_settle_mississippi_territory_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
 				}
 			}
 		}
@@ -682,6 +1493,31 @@ USA_missions_5 = {
 					duration = -1
 				}
 			}
+			usa_conquer_florida_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
+			usa_conquer_florida_provinces = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_interior_settlement"
+					duration = 9125
+				}
+			}
 		}
 	}
 	##Mission End
@@ -689,7 +1525,7 @@ USA_missions_5 = {
 	usa_cuban_statehood = {
 		icon = mission_found_havana
 		required_missions {
-			usa_conquer_florida
+			#usa_conquer_florida
 		}
 		position = 7
 		provinces_to_highlight = {
@@ -723,6 +1559,22 @@ USA_missions_5 = {
 					key = USA_TRADE_CARRIBEAN
 				}
 			}
+			usa_cuban_statehood_provinces = {
+				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "usa_southern_cash_crops"
+					duration = -1
+				}
+			}
 		}
 	}
 	##Mission End
@@ -751,12 +1603,24 @@ USA_missions_5 = {
 				type = 25_permanent_power_projection
 				amount = 25
 			}
+			add_country_modifier = {
+				name = "colonial_venture_act_modifier"
+				duration = -1
+
+			}
 			usa_place_in_the_sun_provinces = {
 				limit = {
+					OR = {
+						trade_goods = cotton 
+						trade_goods = tobacco 
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+					}
 					owned_by = ROOT
 				}
 				add_province_modifier = {
-					name = "usa_carribean_plantations"
+					name = "usa_southern_cash_crops"
 					duration = -1
 				}
 			}

@@ -62,6 +62,9 @@ country_event = {
 	
 	option = {
 		name = PA_USA_flavor.2.a
+		unlock_government_reform = {
+			government_reform = federal_republic
+		}
         add_government_reform = federal_republic
 		add_stability_or_adm_power = yes
 	}
