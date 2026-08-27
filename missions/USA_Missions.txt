@@ -570,7 +570,7 @@ USA_missions_2 = {
 					tier = 1
 				}
 			}
-			6701 = {
+			9701 = {
 				owned_by = ROOT
 			}
 		}
@@ -584,7 +584,7 @@ USA_missions_2 = {
 				name = "usa_joined_the_oceans"
 				duration = -1
 			}
-			6701 = {
+			9701 = {
 				center_of_trade = 1
 			}
 		}

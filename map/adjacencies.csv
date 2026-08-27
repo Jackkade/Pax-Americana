@@ -86,7 +86,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 227;3108;sea;1292;-1;-1;-1;-1;Lisboa-Setubal
 7193;7200;sea;1322;-1;-1;-1;-1;Ichki-KyzylYar
 4700;6004;sea;1319;-1;-1;-1;-1;Lesbos-Bergama
-6881;502;sea;1522;-1;-1;-1;-1;Cumana-Trinidad
+9881;502;sea;1522;-1;-1;-1;-1;Cumana-Trinidad
 741;5579;sea;1520;-1;-1;-1;-1;Cumana-Waikeri
 484;4622;sea;1518;-1;-1;-1;-1;Havana-Siwanea
 4624;4622;sea;1518;-1;-1;-1;-1;Guanahatabey-Siwanea
@@ -225,8 +225,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7539;5584;sea;1526;-1;-1;-1;-1;Bieke-Amonhara
 5578;491;sea;1519;-1;-1;-1;-1;Aruba-Curaco
 491;6046;sea;1519;-1;-1;-1;-1;Curaco-Bonaire
-2002;6788;sea;1702;-1;-1;-1;-1;Galapagos
-2002;6789;sea;1702;-1;-1;-1;-1;Galapagos
-6789;6788;sea;1702;-1;-1;-1;-1;Galapagos 
-5855;6790;sea;1555;-1;-1;-1;-1;California-Islands
+2002;9788;sea;1702;-1;-1;-1;-1;Galapagos
+2002;9789;sea;1702;-1;-1;-1;-1;Galapagos
+9789;9788;sea;1702;-1;-1;-1;-1;Galapagos 
+5855;9790;sea;1555;-1;-1;-1;-1;California-Islands
 -1;-1;;-1;-1;-1;-1;-1;-1
