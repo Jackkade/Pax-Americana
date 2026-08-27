@@ -118,6 +118,8 @@
  yucatan_trade:0 "Yucatan"
  caracas_trade: "Caracas"
  bogota_trade: "Bogota"
+ goias_trade: "Goias"
+ sao_paulo_trade: "Sao Paulo"
  #Trade Companies
  trade_company_massachusets_bay_trade:0 "Massachusets Charter"
  trade_company_chesapeake_bay_trade:0 "Chesapeake Charter"
