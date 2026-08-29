@@ -1637,7 +1637,7 @@ colombia_region = { # 22 areas
 venezuela_region = { # 14 areas
 	areas = {
 		central_llanos_area
-		eastern_llanos  
+		eastern_llanos_area
 		maracaibo_area
 		venezuela_area
 		guyana_area
@@ -1648,7 +1648,7 @@ venezuela_region = { # 14 areas
 		falcon_area
 		merida_area
 		sucre_area
-		western_llanos
+		western_llanos_area
 		venezuelan_wastelands_area
 	}
 	monsoon = {

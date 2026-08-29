@@ -3966,13 +3966,13 @@ falcon_area = {
 merida_area = {
 	4609 4611 4613 9847 9848 9859 9867 9869 9870 9871
 }
-eastern_llanos = {
+eastern_llanos_area = {
 	2810 4614 9877 9878 9879
 }
 sucre_area = {
 	741 2805 9881 9885 9886 9887
 }
-western_llanos = {
+western_llanos_area = {
 	4615 4616 9880 9882 9883
 }
 central_llanos_area = {
