@@ -26,11 +26,11 @@ add_UOP_modifier = {
 				#
 				region = arabia_region
 				#
-				region = brazil_region
 				region = la_plata_region
-				region = upper_peru_region
 
 				region = ural_region
+				
+				
 				area = azov_area
 				area = lower_yik_area
 				area = middle_don_area
@@ -48,6 +48,13 @@ add_UOP_modifier = {
 				area = chimor_area
 				area = ucayali_area
 				area = cajamarca_area
+				
+				area = jujuy_area
+				area = tucuman_area
+				area = chaco_area
+				area = upper_peru
+				area = potosi_area
+				area = paraguay_area
 			}
 			is_wasteland = no
 		}

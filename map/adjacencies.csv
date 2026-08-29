@@ -64,7 +64,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4363;4364;sea;1283;-1;-1;-1;-1;Argyll-Inner Hebrides
 8155;4364;sea;1283;-1;-1;-1;-1;Locahber-Inner Hebrides
 3137;4364;sea;1283;-1;-1;-1;-1;Ross-Inner Hebrides
-747;2890;sea;1529;-1;-1;-1;-1;Amapa-Marajo
+747;9939;sea;1529;-1;-1;-1;-1;Amapa-Marajo
+747;9936;sea;1529;-1;-1;-1;-1;Amapa-Marajo
+9936;9939;sea;1529;-1;-1;-1;-1;Amapa-Marajo
+9940;2929;sea;1529;-1;-1;-1;-1;Amapa-Marajo
+9940;9942;sea;1529;-1;-1;-1;-1;Amapa-Marajo
 782;2869;sea;1539;-1;-1;-1;-1;Tierra Del Fuego-Florida Blanca
 782;783;sea;1539;-1;-1;-1;-1;Tierra Del Fuego-Kawesqar
 778;2851;sea;1536;-1;-1;-1;-1;Rio de la Plata-Colonia
