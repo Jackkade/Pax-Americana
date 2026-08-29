@@ -1490,31 +1490,109 @@ carribeans_region = { # 8 areas
 		00.11.30
 	}
 }
-# South America / 5 regions / 63 areas
-brazil_region = { # 20 areas
+# South America / 8 regions / 149 areas
+brazil_region = { # 25 areas
 	areas = {
-		rio_grande_do_sol_area
-		minas_gerais_area
-		diamantina_area
-		goias_area
 		pontal_area
-		mato_grosso_area
-		ofaie_area
-		guapore_area
-		sao_paolo_area
-		west_sao_paolo_area
-		rio_de_janeiro_area
+		tocantins_area
 		bahia_area
+		jequie_area
+		northern_bahia_area
+		upper_sao_francisco_area
+		barreiras_area
+		porto_seguro_area
+		algoas_area
+		sergipe_area
 		pernambuco_area
-		ceara_area
 		sao_francisco_area
-		maranhao_area
+		rio_grande_do_norte_area
+		paraiba_area
+		borborema_area
+		ceara_area
+		crateus_area
 		piaui_area
+		picos_area
+		corrente_area
+		maranhao_area
+		gurupi_area
+		grajau_area
+		caxias_area
+		balsas_area
+	}
+	monsoon = {
+		00.12.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.04.30
+	}
+}
+south_brazil_region = { # 30 areas
+	areas = {
+		goias_area
+		catalao_area
+		south_goias_area
+		rio_grande_do_sol_area
+		passo_fundo_area
+		pelotas_area
+		campanha_area
+		minas_gerais_area
+		araxas_area
+		diamantina_area
+		jequitinhonha_area
+		rio_doce_area
+		zona_da_mata_area
+		rio_de_janeiro_area
+		lagos_area
+		espirito_santo_area
+		paraiba_paulista_area
+		ofaie_area
+		south_mato_grosso_area
+		dorodos_area
+		sao_paolo_area
+		rio_preto_area
+		assis_area
+		itapetintinga_aera
+		campinas_area
+		curitaba_area
+		parana_area
+		west_sao_paolo_area
+		santa_catarina_area
+		serrana_area
+	}
+	monsoon = {
+		00.12.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.04.30
+	}
+}
+amazon_region = { # 21 areas
+	areas = {
 		grao_para_area
 		amapa_area
 		amazon_area
 		suriname_area
-
+		guapore_area
+		mato_grosso_area
+		upper_amazon_area
+		marajo_area
+		abuna_area
+		roraima_area
+		belem_area
+		tucurui_area
+		redencao_area
+		araguaia_area
+		north_mato_grosso_area
+		pantanal_area
+		parecis_area
+		beni_area
+		moxos_area
+		pando_area
+		brazilian_wastelands_area
 	}
 	monsoon = {
 		00.12.01
@@ -1594,14 +1672,13 @@ la_plata_region = { # 12 areas
 		south_atlantic_islands_area
 	}
 }
-upper_peru_region = { # 9 areas
+upper_peru_region = { # 8 areas
 	areas = {
 		northern_chile_area
 		tucuman_area
 		jujuy_area
 		chaco_area
-		beni_area
-		moxos_area
+		cochabamba_area
 		upper_peru  
 		potosi_area
 		paraguay_area

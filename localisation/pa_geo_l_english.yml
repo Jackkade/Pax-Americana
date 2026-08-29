@@ -203,6 +203,9 @@
  COLONIAL_HISPANIOLA_Dominikus:0 "Dominikus"
  COLONIAL_HISPANIOLA_Dominikus_ADJ:0 "Dominikusish"
 
+ #Regions
+ south_brazil_region:0 "South Brazil"
+ amazon_region:0 "Amazon"
 
 
  #Areas
