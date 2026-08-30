@@ -3271,6 +3271,17 @@ je_tupi = {
 			Bartira Potira Porasy Jougousa Azelene
 		}
 	}
+	tabajara = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
 }
 
 je = {
