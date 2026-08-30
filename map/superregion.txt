@@ -127,6 +127,8 @@ central_america_superregion = {
 }
 south_america_superregion = {
 	brazil_region
+	south_brazil_region
+	amazon_region
 	colombia_region
 	venezuela_region
 }

@@ -449,7 +449,7 @@ laplata={
 	}
 }
 goias_trade={
-	location=758
+	location=2907
 	outgoing={
 		name="brazil"
 		path={

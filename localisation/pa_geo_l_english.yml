@@ -120,6 +120,7 @@
  bogota_trade: "Bogota"
  goias_trade: "Goias"
  sao_paulo_trade: "Sao Paulo"
+
  #Trade Companies
  trade_company_massachusets_bay_trade:0 "Massachusets Charter"
  trade_company_chesapeake_bay_trade:0 "Chesapeake Charter"
@@ -150,9 +151,13 @@
  COLONIAL_RIO_GRANDE_RioGrande_ADJ:0 "Rio Grandese"
  colonial_central_america:0 "Colonial Central America"
  COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_Guatemala:0 "[Root.GetAdjective] Guatemala"
+ COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_Guatemala_ADJ:0 "[Root.GetAdjective] Guatemalan"
  COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_CentralAmerica:0 "[Root.GetAdjective] Central America"
+ COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_CentralAmerica_ADJ:0 "[Root.GetAdjective] Central American"
  COLONIAL_CENTRAL_AMERICA_Belize:0 "Belize"
+ COLONIAL_CENTRAL_AMERICA_Belize_ADJ:0 "Belizian"
  COLONIAL_CENTRAL_AMERICA_Panama:0 "Panama"
+ COLONIAL_CENTRAL_AMERICA_Panama_ADJ:0 "Panamanian"
  colonial_massachusetts:0 "Colonial Massachusetts"
  COLONIAL_MASSACHUSETTS_NewEngland:0 "New England"
  COLONIAL_MASSACHUSETTS_NewEngland_ADJ:0 "New English"
@@ -176,8 +181,13 @@
  colonial_venezuela:0 "Colonial Venezuela"
  COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Venezuela:0 "[Root.GetAdjective] Venezuela"
  COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Venezuela_ADJ:0 "[Root.GetAdjective] Venezuelan"
- COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Guyana:0 "[Root.GetAdjective] Guyana"
- COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Guyana_ADJ:0 "[Root.GetAdjective] Guyanese"
+ COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Maracaibo:0 "[Root.GetAdjective] Maracaibo"
+ COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Maracaibo_ADJ:0 "[Root.GetAdjective] Maracaibon"
+ colonial_guyana:0 "Colonial Guyana"
+ COLONIAL_GUYANA_Root_Culture_GetGroupName_Guyana:0 "[Root.GetAdjective] Guyana"
+ COLONIAL_GUYANA_Root_Culture_GetGroupName_Guyana_ADJ:0 "[Root.GetAdjective] Guyanese"
+ COLONIAL_GUYANA_Root_Culture_GetGroupName_Suriname:0 "[Root.GetAdjective] Suriname"
+ COLONIAL_GUYANA_Root_Culture_GetGroupName_Suriname_ADJ:0 "[Root.GetAdjective] Surinamese"
 
  #Specific
  COLONIAL_MEXICO_New_Anglica:0 "New Anglica"
