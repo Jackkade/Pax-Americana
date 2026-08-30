@@ -3041,6 +3041,30 @@ arawakan_g = {
 			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
 		}
 	}
+	marajo = {
+		male_names = {
+			áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruá Mbicy
+		}
+		female_names = {
+			HayÃ¡ Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+	bororo = {
+		male_names = {
+			áhari Ebedimu Gunfuli Kaigouchi Ilumani PirijÃ¡ SemÃ©n
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah PirijÃ¡ Arata Toruá Mbicy
+		}
+		female_names = {
+			HayÃ¡ Isani Takuiba Twengga
+		}
+		dynasty_names = {
+			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
 }
 
 maranon = {
@@ -3107,6 +3131,185 @@ cariban_g = {
 		}
 		dynasty_names = {
 			Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+		}
+	}
+}
+
+je_tupi = {
+	mawe = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	guapore = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	awa = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	maraba = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	tremembe = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	potiguara = {
+		primary = PTG
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	tupiniquim = {
+		primary = TPQ
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	aimore = {
+		primary = TUA
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	caete = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	goitacaz = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	tamolo = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	xakriaba = {
+		dynasty_names = {
+			Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+		}
+		male_names = {
+			Tibiriçá Piquerobi Caiubi Ramalho Italo Arah Pirijá Arata Toruí Mbicy
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+}
+
+je = {
+	monkoka = {
+		primary = TUA
+		dynasty_names = {
+			Aimoré Prajé Takrukrak Krekmún Ituêto Futikrak Gueren Gutucrac Mekmek Minhagiran Nakrehê Naknyanúk
+		}
+		male_names = {
+			Jandui Raoni Janduwy Caracara Kerioukeiou Karupoto
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+}
+
+pano_tacanan_group = {
+	graphical_culture = northamericagfx
+	pano = {
+		dynasty_names = {
+			Aimoré Prajé Takrukrak Krekmún Ituêto Futikrak Gueren Gutucrac Mekmek Minhagiran Nakrehê Naknyanúk
+		}
+		male_names = {
+			Jandui Raoni Janduwy Caracara Kerioukeiou Karupoto
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
+		}
+	}
+	tacanan = {
+		dynasty_names = {
+			Aimoré Prajé Takrukrak Krekmún Ituêto Futikrak Gueren Gutucrac Mekmek Minhagiran Nakrehê Naknyanúk
+		}
+		male_names = {
+			Jandui Raoni Janduwy Caracara Kerioukeiou Karupoto
+		}
+		female_names = {
+			Bartira Potira Porasy Jougousa Azelene
 		}
 	}
 }
