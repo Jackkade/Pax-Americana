@@ -170,3 +170,24 @@ nuuk_natural_harbor_modifier = {
 	picture = "estuary_icon"
 }
 
+
+amazon_estuary_modifier = {
+	province_trade_power_value = 35
+	picture = "estuary_icon"
+}
+amazon_tributary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+sao_francisco_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+parnaiba_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+tocantins_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}

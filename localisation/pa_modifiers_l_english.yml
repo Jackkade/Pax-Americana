@@ -57,3 +57,13 @@
  #Geography
  nuuk_natural_harbor_modifier:0 "Nuuk Natural Harbor"
  nuuk_natural_harbor_modifier_desc:0 "Controlling the natural harbor of Nuuk strengthens our hold of trade in the region."
+ amazon_estuary_modifier:0 "Amazon Estuary"
+ amazon_estuary_modifier_desc:0 "Controlling the important river estuary of the Amazon strengthens our hold of trade in the region."
+ amazon_tributary_modifier:0 "Amazon Tributary"
+ amazon_tributary_modifier_desc:0 "Controlling the important river Tributary in the Amazon strengthens our hold of trade in the region."
+ sao_francisco_estuary_modifier:0 "Sao Francisco Estuary"
+ sao_francisco_estuary_modifier_desc:0 "Controlling the important river estuary of the Sao Francisco strengthens our hold of trade in the region."
+ parnaiba_estuary_modifier:0 "Parnaiba Estuary"
+ parnaiba_estuary_modifier_desc:0 "Controlling the important river estuary of the Parnaiba strengthens our hold of trade in the region."
+ tocantins_estuary_modifier:0 "Tocantins Estuary"
+ tocantins_estuary_modifier_desc:0 "Controlling the important river estuary of the Tocantins strengthens our hold of trade in the region."
