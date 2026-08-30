@@ -346,7 +346,7 @@ colonial_carolina = {
 		quileute = 1
 		tsimshianic = 1
 	}
-	
+
 	religion = {
 		shamanism = 10
 	}
