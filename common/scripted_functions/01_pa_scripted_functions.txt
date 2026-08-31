@@ -50,7 +50,7 @@ can_colonize_province = {
                 FROM = {
                     AND = { #Only independent Scotland should colonize
                         tag = SCO
-                        is_subject = yes 
+                        is_subject = yes
                     }
                 }
                 FROM = {
@@ -150,6 +150,8 @@ can_colonize_province = {
                     OR = {
                         continent = africa
                         region = brazil_region
+                        region = south_brazil_region
+                        region = amazon_region
                     }
                 }
                 #####
@@ -195,6 +197,7 @@ can_colonize_province = {
                         region = peru_region
                         region = colombia_region
                         region = venezuela_region
+                        region = south_brazil_region
                         continent = africa
                         continent = asia
                         continent = oceania
@@ -232,7 +235,7 @@ can_colonize_province = {
                         }
                     }
                     NOT = {
-                        is_year = 1600
+                        is_year = 1750
                     }
                     OR = {
                         NOT = {
