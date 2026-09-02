@@ -1117,7 +1117,7 @@ colonial_colombia = {
 		trigger = {
 			culture_group = germanic
 		}
-		name = "COLONIAL_COLOMBIA_BTP_Welsien"
+		name = "COLONIAL_COLOMBIA_BTP_Kolumbia"
 	}
 	names = {
 		trigger = {

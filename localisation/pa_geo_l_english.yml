@@ -188,6 +188,21 @@
  COLONIAL_GUYANA_Root_Culture_GetGroupName_Guyana_ADJ:0 "[Root.GetAdjective] Guyanese"
  COLONIAL_GUYANA_Root_Culture_GetGroupName_Suriname:0 "[Root.GetAdjective] Suriname"
  COLONIAL_GUYANA_Root_Culture_GetGroupName_Suriname_ADJ:0 "[Root.GetAdjective] Surinamese"
+ colonial_amazon:0 "Colonial Amazon"
+ COLONIAL_AMAZON_Root_Culture_GetGroupName_Amazonia:0 "[Root.GetAdjective] Amazonia"
+ COLONIAL_AMAZON_Root_Culture_GetGroupName_Amazonia_ADJ:0 "[Root.GetAdjective] Amazonian"
+ COLONIAL_AMAZON_Root_Culture_GetGroupName_Amazonas:0 "[Root.GetAdjective] Amazonas"
+ COLONIAL_AMAZON_Root_Culture_GetGroupName_Amazonas_ADJ:0 "[Root.GetAdjective] Amazonas"
+ colonial_pernambuco:0 "Colonial Pernambuco"
+ COLONIAL_PERNAMBUCO_Root_Culture_GetGroupName_Pernambuco:0 "[Root.GetAdjective] Pernambuco"
+ COLONIAL_PERNAMBUCO_Root_Culture_GetGroupName_Pernambuco_ADJ:0 "[Root.GetAdjective] Pernambucan"
+ COLONIAL_PERNAMBUCO_Root_Culture_GetGroupName_Ceara:0 "[Root.GetAdjective] Ceara"
+ COLONIAL_PERNAMBUCO_Root_Culture_GetGroupName_Ceara_ADJ:0 "[Root.GetAdjective] Cearenese"
+ colonial_paulistania:0 "Colonial Paulistania"
+ COLONIAL_PAULISTANIA_Root_Culture_GetGroupName_Paulistania:0 "[Root.GetAdjective] Paulistania"
+ COLONIAL_PAULISTANIA_Root_Culture_GetGroupName_Paulistania_ADJ:0 "[Root.GetAdjective] Paulistanian"
+ COLONIAL_PAULISTANIA_Root_Culture_GetGroupName_Parana:0 "[Root.GetAdjective] Parana"
+ COLONIAL_PAULISTANIA_Root_Culture_GetGroupName_Parana_ADJ:0 "[Root.GetAdjective] Paranaense"
 
  #Specific
  COLONIAL_MEXICO_New_Anglica:0 "New Anglica"
@@ -212,11 +227,23 @@
  COLONIAL_EASTERN_AMERICA_Nieuw_Holland_ADJ:0 "Nieuw Hollander"
  COLONIAL_HISPANIOLA_Dominikus:0 "Dominikus"
  COLONIAL_HISPANIOLA_Dominikus_ADJ:0 "Dominikusish"
+ COLONIAL_COLOMBIA_Kolumbia:0 "Kolumbia"
+ COLONIAL_COLOMBIA_Kolumbia_ADJ:0 "Kolumbian"
+ COLONIAL_PAULISTANIA_BTP_Paulusland:0 "Paulusland"
+ COLONIAL_PAULISTANIA_BTP_Paulusland_ADJ:0 "Pauluslander"
+ COLONIAL_PAULISTANIA_BTP_Saint_Paul:0 "Saint Paul"
+ COLONIAL_PAULISTANIA_BTP_Saint_Paul_ADJ:0 "Paulician"
+ COLONIAL_PAULISTANIA_Sao_Paulo:0 "Sao Paulo"
+ COLONIAL_PAULISTANIA_Sao_Paulo_ADJ:0 "Paulista"
+ COLONIAL_VENEZUELA_EN:0 "New Venice"
+ COLONIAL_VENEZUELA_EN_ADJ:0 "New Venetian"
+ COLONIAL_VENEZUELA_Venezuela:0 "Venezuela"
+ COLONIAL_VENEZUELA_Venezuela_ADJ:0 "Venezuelan"
 
  #Regions
  south_brazil_region:0 "South Brazil"
  amazon_region:0 "Amazon"
-
+ venezuela_region:0 "Venezuela"
 
  #Areas
  estrie_area:0 "Estrie"

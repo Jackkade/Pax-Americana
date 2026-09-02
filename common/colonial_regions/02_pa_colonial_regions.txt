@@ -427,6 +427,23 @@ colonial_venezuela = {
 		741 742 830 831 834 2803 2804 2805 2807 2808 2809 2810 2811 2813 2939 4609 4610 4611 4612 4613 4614 4615 4616 4617 9839 9847 9848 9849 9850 9851 9852 9853 9854 9855 9856 9858 9859 9861 9862 9863 9864 9865 9866 9867 9868 9869 9870 9871 9872 9873 9874 9875 9876 9877 9878 9879 9880 9881 9882 9883 9884 9885 9886 9887 9888 9889 9890 9892 9893 9894 9895 9896 9897 9898 9899 9900
 	}
 
+	names = {
+		trigger = {
+			culture_group = iberian
+		}
+		name = "COLONIAL_VENEZUELA_Venezuela"
+	}
+
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_VENEZUELA_EN"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+		}
+		name = "COLONIAL_COLOMBIA_BTP_Welsien"
+	}
 	# Generic
 	names = {
 		name = "COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Venezuela"
@@ -478,7 +495,7 @@ colonial_guyana = {
 
 #Amazon/Grao-Para
 colonial_amazon = {
-	color = { 13 113 44 }
+	color = { 13 91 33 }
 
 	# Random New World
 	tax_income = 3
@@ -516,7 +533,7 @@ colonial_amazon = {
 
 #Pernambuco
 colonial_pernambuco = {
-	color = { 144 90 33 }
+	color = { 190 71 133 }
 
 	# Random New World
 	tax_income = 3
@@ -562,7 +579,7 @@ colonial_pernambuco = {
 }
 #Sao Paulo
 colonial_paulistania = {
-	color = { 44 144 13 }
+	color = { 144 13 13 }
 
 	# Random New World
 	tax_income = 3
@@ -594,6 +611,12 @@ colonial_paulistania = {
 			culture_group = germanic
 		}
 		name = "COLONIAL_PAULISTANIA_BTP_Paulusland"
+	}
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_PAULISTANIA_BTP_Saint_Paul"
 	}
 	names = {
 		trigger = {	primary_culture = portugese }
