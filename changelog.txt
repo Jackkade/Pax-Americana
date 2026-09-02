@@ -90,3 +90,12 @@ Pax Americana Update 1.4 - El Dorado
 - Minor map changes in California and Guyana
 - 3 New Monuments
 - 2 New Trade Nodes, Bogota and Caracas
+
+Pax Americana Update 1.5 - 
+
+# Major Map rework
+- Completely reworked map of Brazil
+- Completely reworked map of Amazon
+- Completely reworked map of Guyanas
+- 2 New Trade Nodes, Sao Paulo and Goias
+- 
