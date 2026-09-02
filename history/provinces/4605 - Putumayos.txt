@@ -1,6 +1,6 @@
 # No previous file for Putumayos
 culture = zaparo
-discovered_by = south_american
+discovered_by = andean
 discovered_by = andean
 discovered_by = MCA
 religion = animism
@@ -16,6 +16,14 @@ native_hostileness = 5
 base_tax = 1
 base_production = 1
 base_manpower = 1
+discovered_by = south_american
+discovered_by = andean
+discovered_by = south_american
+discovered_by = andean
+discovered_by = south_american
+discovered_by = andean
+discovered_by = south_american
+discovered_by = andean
 1525.1.1 = { discovered_by = SPA } 
 1533.8.29 = { 
     discovered_by = SPA
