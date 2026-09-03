@@ -1340,6 +1340,7 @@ gold = {
 				area = catalao_area
 				area = south_goias_area
 				area = tocantins_area
+				area = rio_preto_area
 				area = diamantina_area
 				area = mato_grosso_area
 				area = ofaie_area
