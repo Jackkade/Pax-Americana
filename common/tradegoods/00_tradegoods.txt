@@ -407,6 +407,8 @@ wool = {
 			OR = {
 				region = carribeans_region
 				region = brazil_region
+				region = south_brazil_region
+				region = amazon_region
 				region = colombia_region
 				region = venezuela_region
 				region = southeast_america_region
@@ -1331,6 +1333,13 @@ gold = {
 			OR = {
 				region = peru_region
 				area = minas_gerais_area
+				area = araxas_area
+				area = araguaia_area
+				area = south_mato_grosso_area
+				area = north_mato_grosso_area
+				area = catalao_area
+				area = south_goias_area
+				area = tocantins_area
 				area = diamantina_area
 				area = mato_grosso_area
 				area = ofaie_area
@@ -1361,6 +1370,7 @@ gold = {
 				region = northeastern_australia_region
 				region = western_australia_region
 				region = northern_australia_region
+				region = amazon_region
 			}
 		}
 		modifier = {	#Gold is a bit rarer here
@@ -1493,6 +1503,8 @@ iron = {
 			NOT = { region = northeastern_australia_region }
 			NOT = { region = northern_australia_region }
 			NOT = { region = brazil_region }
+			NOT = { region = south_brazil_region }
+			NOT = { region = amazon_region }
 			NOT = { continent = north_america }
 			NOT = { continent = south_america }
 			NOT = { province_id = 18 }
@@ -1950,6 +1962,8 @@ coffee = {
 			NOT = { region = la_plata_region }
 			NOT = { region = peru_region }
 			NOT = { region = brazil_region }
+			NOT = { region = south_brazil_region }
+			NOT = { region = amazon_region }
 			NOT = { region = carribeans_region }
 			NOT = { region = central_america_region }
 			NOT = { region = mexico_region }
@@ -2132,6 +2146,8 @@ sugar = {
 			is_random_new_world = no
 			NOT = { region = carribeans_region }
 			NOT = { region = brazil_region }
+			NOT = { region = south_brazil_region }
+			NOT = { region = amazon_region }
 			NOT = { region = mexico_region }
 			NOT = { region = central_america_region }
 			NOT = { region = colombia_region }
@@ -2220,6 +2236,8 @@ tobacco = {
 			NOT = { area = upper_canada_area }			#BT New
 			NOT = { area = lower_canada_area }			#BT New
 			NOT = { region = brazil_region }
+			NOT = { region = south_brazil_region }
+			NOT = { region = amazon_region }
 			NOT = { region = carribeans_region }
 			NOT = { area = appalachia_area }
 			NOT = { area = south_appalachia_area }
@@ -2309,6 +2327,8 @@ cocoa = {
 			NOT = { region = venezuela_region }
 			NOT = { region = peru_region }
 			NOT = { region = brazil_region }
+			NOT = { region = south_brazil_region }
+			NOT = { region = amazon_region }
 			NOT = { region = carribeans_region }
 		}
 		modifier = {
@@ -2561,6 +2581,8 @@ livestock = {
 					NOT = { region = colombia_region }
 					NOT = { region = venezuela_region }
 					NOT = { region = brazil_region }
+					NOT = { region = south_brazil_region }
+					NOT = { region = amazon_region }
 				}
 				AND = {
 					has_climate = arctic
@@ -2573,6 +2595,8 @@ livestock = {
 			OR = {
 				region = carribeans_region
 				region = brazil_region
+				region = south_brazil_region
+				region = amazon_region
 				region = colombia_region
 				region = venezuela_region
 				region = southeast_america_region
@@ -2958,7 +2982,11 @@ gems = {
 		}
 		modifier = {
 			factor = 1.5
-			region = brazil_region
+			OR = {
+				region = brazil_region
+				region = south_brazil_region
+				region = amazon_region
+			}
 		}
 		modifier = {
 			factor = 1.2
