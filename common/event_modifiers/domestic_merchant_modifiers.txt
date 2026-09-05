@@ -307,6 +307,18 @@ merchant_for_champagne = {
 merchant_for_english_channel = {
 	merchants = 1
 }
+merchant_for_darfur_trade = {
+	merchants = 1
+}
+merchant_for_adrar_trade = {
+	merchants = 1
+}
+merchant_for_tuat_trade = {
+	merchants = 1
+}
+merchant_for_tripoli_trade = {
+	merchants = 1
+}
 merchant_for_bogota_trade = {
 	merchants = 1
 }
