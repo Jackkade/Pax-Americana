@@ -95,7 +95,15 @@ Pax Americana Update 1.5 -
 
 # Major Map rework
 - Completely reworked map of Brazil
+ - 121 New Provinces in North Brazil
+ - 164 New Provinces in South Brazil
 - Completely reworked map of Amazon
-- Completely reworked map of Guyanas
+ - 78 New Provinces in Brazilian Amazon
+ - 18 New Provinces in Bolivian Amazon
+- Finished reworked map of Guyanas
+ - 4 New provinces
+- Fixed some Jank in Vanilla South America not reworked yet.
+- Enlarged the Map to fit with BT's new map
 - 2 New Trade Nodes, Sao Paulo and Goias
-- 
+- 4 New Colonial Regions, Paulistania, Guyana, Pernambuco, and Amazon
+- 7 New Monuments in Brazil
