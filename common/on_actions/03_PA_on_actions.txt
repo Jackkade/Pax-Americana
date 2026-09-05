@@ -432,7 +432,8 @@ on_colony_finished = { #ROOT - Province
 			limit = {
 				OR = {
 					region = brazil_region
-					#region = amazon_region
+					region = south_brazil_region
+					region = amazon_region
 				}
 			}
 			if = {	#British
@@ -486,8 +487,20 @@ on_colony_finished = { #ROOT - Province
 						culture_group = iberian
 					}
 				}
-				change_culture = amazonico
-				change_original_culture = amazonico
+				if = {
+					limit = {
+						OR = {
+							region = amazon_region
+							region = brazil_region
+						}
+					}
+					change_culture = amazonico
+					change_original_culture = amazonico
+				}
+				else = {
+					change_culture = platinean
+					change_original_culture = platinean
+				}
 			}
 			else_if = {	#Scandinavian
 				limit = {
@@ -507,7 +520,6 @@ on_colony_finished = { #ROOT - Province
 			limit = {
 				OR = {
 					region = la_plata_region
-					#region = amazon_region
 				}
 			}
 			if = {	#British
@@ -624,8 +636,8 @@ on_colony_finished = { #ROOT - Province
 						}
 					}
 				}
-				change_culture = brazilian
-				change_original_culture = brazilian
+				change_culture = pacifico
+				change_original_culture = pacifico
 			}
 			else_if = {	#Spanish
 				limit = {
