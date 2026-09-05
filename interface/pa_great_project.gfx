@@ -89,4 +89,39 @@ spriteTypes = {
 		name = "GFX_great_project_lake_guatavita"	
 		texturefile = "gfx//interface//great_projects//great_project_lake_guatavita.dds"
 	}
+
+	spriteType = {
+		name = "GFX_great_project_sao_miguel_das_missoes"	
+		texturefile = "gfx//interface//great_projects//great_project_sao_miguel_das_missoes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_ouro_preto"	
+		texturefile = "gfx//interface//great_projects//great_project_ouro_preto.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_palacio_de_friburgo"	
+		texturefile = "gfx//interface//great_projects//great_project_palacio_de_friburgo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_patio_do_colegio"	
+		texturefile = "gfx//interface//great_projects//great_project_patio_do_colegio.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_fortaleza_de_santa_cruz_da_barra"	
+		texturefile = "gfx//interface//great_projects//great_project_fortaleza_de_santa_cruz_da_barra.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_forte_do_castelo_de_belem"	
+		texturefile = "gfx//interface//great_projects//great_project_forte_do_castelo_de_belem.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_sao_bento_monastery"	
+		texturefile = "gfx//interface//great_projects//great_project_sao_bento_monastery.dds"
+	}
 }
