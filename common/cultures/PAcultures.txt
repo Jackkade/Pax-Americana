@@ -245,6 +245,40 @@ afro_american_group = {
 	#Portuguese 
 	afro_brazilian = {
 		primary = XXX
+		dynasty_names = {
+			"de Bragança" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo"
+			"de Moura" "de Medeiros" "de Menezes" "de Saldanha" "de Alencar"
+			#CK2
+			"da Câmara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa" "de Guanabara" "de Oliveira"
+			"da Fonseca" "de Caxias"
+
+		}
+		male_names = {
+			João Filipe Pedro António Duarte Henrique José Manuel Sebastião Miguel Teodósio Diniz
+			Alexandre Carlos Diego Jaime Luís Álvaro André Bartolomeu Caetano Damião Estevão Francisco
+			Xavier Gabriel Garcia Gaspar Gil Guilherme Inácio Joaquim Jorge Lourenço Marco Nicolau
+			Paulo Rafael Rogério Rui Simão Vicente Otávio
+			Afonso Aires Álvaro Bermudo Diogo Diaco Egas Estêvão Fernão
+			Ferdinando Fernando Garcia Gil Gomes Gonçalo Gutierre
+			Valter Henrique Hermígio João Lourenço Martim Martin
+			Mendo Munio Nuno Pôncio Mem
+			Rodrigo Rui Raimundo Vasco Vicente
+
+			Moacir Caíque Ubirajara Ubiratã Joacir Domingos Quintino Deodoro Eduardo Emílio Castro Pascoal
+			Moreira Cláudio Dirceu Evandro Tomé Amado Silvério Basílio Cipriano Amaro Cosme Júlio Lucas
+			Severino Severiano Benjamim Epaminondas Seixas Torquato Antônio Getúlio Silveriano Brás
+
+
+		}
+		female_names = {
+			Aldara Alduara Beatriz Berengária Branca
+			Constância Elvira Estevânia Fruilhe Fronilde Gontinha Gontroda
+			Guiomar Inês Agnes Joana Leonor Eleanor Mafalda Matilda Margarida Maria
+			Marinha Marinês Ouroana Teresa Urraca Constança Célia
+
+			Maiara Janaína Iara Tainara Iracema Mariana Bárbara Josefina Ana "Ana Paula" Aurélia
+			Adelaide Firmina Emília Cecília Lauriana Isabel
+		}
 	}
 
 	#Dutch/German (Mainly Dutch)

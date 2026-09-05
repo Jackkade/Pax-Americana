@@ -246,7 +246,7 @@ on_startup = {
 			add_province_triggered_modifier = panama_node_domestic_merchant_modifier
 			domestic_merchant_effect = { node = panama }
 		}
-		1531 = {
+		756 = {
 			add_province_triggered_modifier = brazil_node_domestic_merchant_modifier
 			domestic_merchant_effect = { node = brazil }
 		}
@@ -445,6 +445,14 @@ on_startup = {
 		831 = {
 			add_province_triggered_modifier = caracas_trade_node_domestic_merchant_modifier
 			domestic_merchant_effect = { node = caracas_trade }
+		}
+		766 = {
+			add_province_triggered_modifier = sao_paulo_trade_node_domestic_merchant_modifier
+			domestic_merchant_effect = { node = sao_paulo_trade }
+		}
+		2907 = {
+			add_province_triggered_modifier = goias_trade_node_domestic_merchant_modifier
+			domestic_merchant_effect = { node = goias_trade }
 		}
 	}
 }

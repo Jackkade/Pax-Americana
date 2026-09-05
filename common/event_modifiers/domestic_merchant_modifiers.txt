@@ -313,3 +313,9 @@ merchant_for_bogota_trade = {
 merchant_for_caracas_trade = {
 	merchants = 1
 }
+merchant_for_goias_trade = {
+	merchants = 1
+}
+merchant_for_sao_paulo_trade = {
+	merchants = 1
+}
