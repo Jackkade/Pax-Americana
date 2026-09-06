@@ -22,7 +22,7 @@ country_decisions = {
 				}
 				NOT = { has_country_flag = changed_from_colonial_nation }
 			}
-			culture_group = british
+			#culture_group = british
 			was_never_end_game_tag_trigger = yes
 			is_nomad = no
 			is_random_new_world = no
@@ -106,6 +106,25 @@ country_decisions = {
 				}
 				change_primary_culture = american
 			}
+			else_if = {
+				limit = {
+					culture_group = germanic
+					NOT = { 
+						primary_culture = amerikaans
+					}
+				}
+				change_primary_culture = amerikaans
+			}
+			else_if = {
+				limit = {
+					culture_group = scandinavian
+					NOT = { 
+						primary_culture = nyasvenish
+					}
+				}
+				change_primary_culture = nyasvenish
+			}
+
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -134,28 +153,35 @@ country_decisions = {
 				limit = {
 					culture_group = french
 				}
-				override_country_name = ULA 
+				override_country_name = ULA_USA
 			}
 			else_if = {
 			
 				limit = {
 					culture_group = germanic
 				}
-				override_country_name = SBN 	
+				override_country_name = SBN_USA
 			}
 			else_if = {
 			
 				limit = {
-					culture_group = nordic
+					culture_group = scandinavian
 				}
-				override_country_name = FSA 	
+				override_country_name = FSA_USA
 			}
 			else_if = {
 			
 				limit = {
 					culture_group = iberian
 				}
-				override_country_name = AEA
+				override_country_name = AEA_USA
+			}
+			else_if = {
+			
+				limit = {
+					culture_group = latin
+				}
+				override_country_name = LDS_USA
 			}
 			set_country_flag = changed_from_colonial_nation
 			set_country_flag = formed_usa_flag #BT Added: This decision was missing a specific tag.

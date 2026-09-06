@@ -1758,7 +1758,7 @@ scandinavian = {
 			"Reventlow" "Juul" "Ulfeldt" "Bang"
 		}
 	}
-	nasetlandic = {		#North America, based on swedish because of new sweden
+	nasetlandic = {		#Central America
 		primary = XXX
 		
 		male_names = {
@@ -1798,7 +1798,6 @@ scandinavian = {
 			"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
 		}
 	}
-	
 }
 
 eastern_algonquian = {

@@ -11,14 +11,16 @@
  
  
  #Alternatives
- SBN:0 "Staatenbundnis"
- SBN_ADJ:0 "Amerikanisch"
- ULA:0 "Union Libre"
- ULA_ADJ:0 "Americain"
- AEA:0 "Alianza de Estados" 
- AEA_ADJ:0 "Americanos"
- FSA:0 "Forenede Stater"
- FSA_ADJ:0 "Amerikansk"
+ SBN_USA:0 "Staatenbundnis"
+ SBN_USA_ADJ:0 "Amerikanisch"
+ ULA_USA:0 "Union Libre"
+ ULA_USA_ADJ:0 "Americain"
+ AEA_USA:0 "Alianza de Estados" 
+ AEA_USA_ADJ:0 "Americanos"
+ FSA_USA:0 "Forenede Stater"
+ FSA_USA_ADJ:0 "Amerikansk"
+ LDS_USA:0 "Lega di Stati"
+ LDS_USA_ADJ:0 "Americano"
  
  #Nations
  GRL:0 "Greenland"
