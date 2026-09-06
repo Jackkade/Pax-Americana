@@ -130,6 +130,33 @@ country_decisions = {
 				add_government_reform = feudalism_reform
 			}
 			add_prestige = 25
+			if = {
+				limit = {
+					culture_group = french
+				}
+				override_country_name = ULA 
+			}
+			else_if = {
+			
+				limit = {
+					culture_group = germanic
+				}
+				override_country_name = SBN 	
+			}
+			else_if = {
+			
+				limit = {
+					culture_group = nordic
+				}
+				override_country_name = FSA 	
+			}
+			else_if = {
+			
+				limit = {
+					culture_group = iberian
+				}
+				override_country_name = AEA
+			}
 			set_country_flag = changed_from_colonial_nation
 			set_country_flag = formed_usa_flag #BT Added: This decision was missing a specific tag.
 			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
