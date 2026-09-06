@@ -198,6 +198,71 @@ on_colony_finished = { #ROOT - Province
 				change_original_culture = vinlandic
 				set_province_flag = converted_to_colonial_culture
 			}
+		}
+		else_if = {			#Hudson Bay
+			limit = {
+				region = hudson_bay_region
+			}
+			if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = quebecois
+				change_original_culture = quebecois
+				set_province_flag = converted_to_colonial_culture
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = hellulandic
+				change_original_culture = hellulandic
+				set_province_flag = converted_to_colonial_culture
+			}
+		}
+		else_if = {			#Northwest Territories
+			limit = {
+				region = northwest_territories_region
+			}
+			if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = quebecois
+				change_original_culture = quebecois
+				set_province_flag = converted_to_colonial_culture
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = vinlandic
+				change_original_culture = vinlandic
+				set_province_flag = converted_to_colonial_culture
+			}
+		}
+		else_if = {			#Great Lakes
+			limit = {
+				region = great_lakes_region
+			}
+			if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = quebecois
+				change_original_culture = quebecois
+				set_province_flag = converted_to_colonial_culture
+			}
 		}	#Break Here, this is kinda hackey but I want this to be well organized
 		
 		if = {	#If the culture has already been converted, don't convert again
@@ -205,6 +270,150 @@ on_colony_finished = { #ROOT - Province
 				has_province_flag = converted_to_colonial_culture 
 			}
 			#Pass
+		}
+		else_if = {			#Southeast America
+			limit = {
+				region = southeast_america_region
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = american
+				change_original_culture = american
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = plantagenian
+				change_original_culture = plantagenian
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = amerikaans
+				change_original_culture = amerikaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
+					}
+				}
+				change_culture = alemarese
+				change_original_culture = alemarese
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+					}
+				}
+				change_culture = norteno
+				change_original_culture = norteno
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = nyasvenish
+				change_original_culture = nyasvenish
+			}
+			else = {	#None of previous cultures
+				change_culture = owner
+				change_original_culture = owner
+			}
+		}
+		else_if = {			#Northeast America
+			limit = {
+				region = northeast_america_region
+			}
+			if = {	#British
+				limit = {
+					owner = {
+						culture_group = british
+					}
+				}
+				change_culture = american
+				change_original_culture = american
+			}
+			else_if = { #French
+				limit = {
+					owner = {
+						culture_group = french
+					}
+				}
+				change_culture = septiman
+				change_original_culture = septiman
+			}
+			else_if = { #Dutch
+				limit = {
+					owner = {
+						culture_group = germanic
+					}
+				}
+				change_culture = amerikaans
+				change_original_culture = amerikaans
+			}
+			else_if = {	#Portugese
+				limit = {
+					owner = {
+						OR = {
+							primary_culture = portugese
+							primary_culture = brazilian
+							primary_culture = alemarese
+							primary_culture = mestico
+							primary_culture = carregadores
+							primary_culture = centraliano
+							primary_culture = guianes
+							primary_culture = pacifico
+						}
+					}
+				}
+				change_culture = alemarese
+				change_original_culture = alemarese
+			}
+			else_if = {	#Spanish
+				limit = {
+					owner = {
+						culture_group = iberian
+					}
+				}
+				change_culture = norteno
+				change_original_culture = norteno
+			}
+			else_if = {	#Scandinavian
+				limit = {
+					owner = {
+						culture_group = scandinavian
+					}
+				}
+				change_culture = nyasvenish
+				change_original_culture = nyasvenish
+			}
+			else = {	#None of previous cultures
+				change_culture = owner
+				change_original_culture = owner
+			}
 		}
 		else_if = {			#North America
 			limit = {
@@ -252,8 +461,8 @@ on_colony_finished = { #ROOT - Province
 						}
 					}
 				}
-				change_culture = brazilian
-				change_original_culture = brazilian
+				change_culture = alemarese
+				change_original_culture = alemarese
 			}
 			else_if = {	#Spanish
 				limit = {
@@ -537,8 +746,8 @@ on_colony_finished = { #ROOT - Province
 						culture_group = french
 					}
 				}
-				change_culture = antartique
-				change_original_culture = antartique
+				change_culture = lotharingian
+				change_original_culture = lotharingian
 			}
 			else_if = { #Dutch
 				limit = {

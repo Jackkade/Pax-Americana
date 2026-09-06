@@ -838,7 +838,16 @@ british = {
 }
 
 french	= {
+	septiman = {	#Northeast America
+		primary = XXX
+	}
+	plantagenian = {	#Southeast America
+		primary = XXX
+	}
 	mehique = {		#French Mestizo
+		primary = XXX
+	}
+	lotharingian = {	South Brazil and Platinea
 		primary = XXX
 	}
 	antartique = {	#South American
