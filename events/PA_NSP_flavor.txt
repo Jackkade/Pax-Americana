@@ -65,8 +65,10 @@ country_event = {   #Cortez detroys the Aztecs
                 add_core = NSP
             }
         }
+        inherit = AZT
+        release = NSP
         NSP = {
-            inherit = AZT
+            #inherit = AZT
             every_subject_country = {
                 limit = {
                     is_subject_of_type = nahuatl_tributary 
@@ -78,9 +80,9 @@ country_event = {   #Cortez detroys the Aztecs
 				duration = 3650
 			}	
             add_yearly_manpower = 2
-            add_adm_power = 100 
-            add_dip_power = 100 
-            add_mil_power = 100 
+            add_adm_power = 120 
+            add_dip_power = 120 
+            add_mil_power = 120 
             add_treasury = 500
             change_religion = ROOT
             change_primary_culture = ROOT
