@@ -1,0 +1,188 @@
+
+weapons = {
+	manufactory = {
+		copper
+		iron
+		bt_trade_good_gunpowder
+	}
+	modifier = {
+		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
+		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
+		#land_forcelimit = 0.5			#BTAddOn new - Just a fun little new bonus
+		#base_local_dev_points = 0.03	#Killed
+	}
+	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = copper
+			trade_goods = iron
+			trade_goods = bt_trade_good_gunpowder
+			trade_goods = pa_trade_good_obsidian
+		}
+	}
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		add_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1 
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+		remove_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.2 #(Added 0.2 for dev points)
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+					trade_goods = bt_trade_good_gunpowder
+				}
+			}
+		}
+		modifier = { #Both for historical as well as gameplay reasons, TC land should definitely have manufactories.
+			factor = 5
+			is_owned_by_trade_company = yes
+		}
+		modifier = { #You can spawn manufactories here if this building is built!
+			factor = 5
+			OR = {
+				continent = europe
+				development = 48
+			}
+			development = 24
+			NOT = { is_institution_enabled = manufactories }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = manufactories
+			FROM = { has_unembraced_institution = manufactories }
+		}
+		modifier = {
+			factor = 1.1
+			base_production = 4
+		}
+		modifier = {
+			factor = 1.2
+			base_production = 8
+		}
+		modifier = {
+			factor = 1.4
+			base_production = 12
+		}
+		modifier = { # Small nudge for the capital
+			factor = 1.25
+			is_capital = yes
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 300
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.2
+			owner_has_ducats = {
+				cash = 400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 500
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.4
+			owner_has_ducats = {
+				cash = 700
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 900
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.6
+			owner_has_ducats = {
+				cash = 1000
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1200
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 1.8
+			owner_has_ducats = {
+				cash = 1400
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1600
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 1800
+			}
+		}
+		modifier = { #Encouragement for nations with money
+			factor = 2
+			owner_has_ducats = {
+				cash = 2000
+			}
+		}
+	}
+}
