@@ -21,7 +21,7 @@
  atheist_rebels_desc:0 "Irreligious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their lack of faith and smite all believers."
  atheist_rebels_army:0 "$RELIGION$ Army"
  deist:0 "Deist"
- deist_religion_desc:0 ""
+ deist_religion_desc:0 "Deists believe in an almighty creator, similar to Christianity, but do so with the belief that such belief is based on reason. Deists reject revelation as a valid source of spiritual knowledge, and as such do not recognize the bible or other religious texts as containing useful information about providence. Deists believe that everyday life is governed by rules of nature that can be studied and replicated, and while the role of providence is not agreed upon by all Deists, they largely believe that providence rarely intervenes."
  deist_rebels_demand:0 "Convert $COUNTRYNAME$"
  deist_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  deist_rebels_title:0 "Religious"

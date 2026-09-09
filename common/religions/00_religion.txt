@@ -2772,6 +2772,8 @@ rationalist = {
 			local_missionary_strength = -0.05
 		}
 		
+		date = 1792.1.1
+
 		heretic = { ANTICLERICAL }
 	}
 	deist = {
@@ -2789,6 +2791,9 @@ rationalist = {
 			local_missionary_strength = -0.02
 		}
 		
+
+		date = 1794.1.1
+
 		heretic = { ANTICLERICAL }
 	}
 }

@@ -2333,7 +2333,6 @@
 1203 = "M?linde"						#Malindi. Notes
 2796 = "Pat?"							#Pate. Notes
 4020 = "Comores"						#Comoros. Notes	
-
 ######Americas######
 
 #Caribbean
@@ -2355,7 +2354,7 @@
 496 = { "Guadeloupe" "Basse-Terre" } 			#Guadeloupe. Notes
 497 = { "Dominique"	"Roseau" }					#Dominica. Notes
 498 = { "Martinique" "Fort-Royal" }				#Martinique. Notes - Will be then called 'Fort-de-France' in 1807. 
-499 = { "Sainte-Lucie" "CarùÈnage de Sainte-Lucie" }				#St. Lucia. Notes
+499 = { "Sainte-Lucie" "CarcÈnage de Sainte-Lucie" }				#St. Lucia. Notes
 500 = { "Saint-Vincent" "Barrouallie" }			#St. Vincent. Notes - 'Barrouallie' was the first French settlement on the island.
 501 = { "Barbade" "Pontville" }					#Barbados. Notes - 'Pontville' is a litteral translation of 'Bridgetown'.
 502 = { "TrinitÈ" "Port-de-France" }			#Trinidad. Notes - 'Port of Spain', so why not 'Port of France'. 
@@ -2363,8 +2362,8 @@
 2656 = "Camagouai"						        #Camaguey. Notes
 2658 = { "Azua" "Azua" }						#Maguana. Notes
 2659 = { "Saint-Yague" "Saint-Yague" }			#Magua. Notes
-4618 = { "Gonaùves" "Gonaùves" }	          #Gonaibo. Notes
-4619 = { "Cap-Franùais" "Cap-Franùais" }
+4618 = { "Gonaives" "Gonaives" }	          #Gonaibo. Notes
+4619 = { "Cap-Francais" "Cap-Francais" }
 4620 = { "Samanais" "Samanais" }              #Ciguyao. Notes
 4621 = { "Saint-Pierre Macrois" "Saint-Domingue" }	#Hosama. Notes
 4622 = "Œle des Pins"					       #Siwanea. Notes
