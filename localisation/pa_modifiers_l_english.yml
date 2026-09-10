@@ -67,3 +67,7 @@
  parnaiba_estuary_modifier_desc:0 "Controlling the important river estuary of the Parnaiba strengthens our hold of trade in the region."
  tocantins_estuary_modifier:0 "Tocantins Estuary"
  tocantins_estuary_modifier_desc:0 "Controlling the important river estuary of the Tocantins strengthens our hold of trade in the region."
+ mississippi_tributary_modifier: 0 "Mississippi Tributary"
+ mississippi_tributary_modifier_desc:0 "Controlling the important river Tributary in the Mississippi strengthens our hold of trade in the region."
+ mississippi_floodplains_modifier:0 "Mississippi Floodplains"
+ mississippi_floodplains_modifier_desc:0 "This province is extremely marshy, but it is within the Mississippi Delta's Floodplains, boosting agricultural output immensely and allowing easy transport on the river."
