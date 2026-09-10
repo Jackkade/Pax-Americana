@@ -194,7 +194,7 @@ mississippi_floodplains_modifier = {
 	local_development_cost = -0.4
 	trade_goods_size = 1
 	supply_limit = 4
-	local_dev_points_modifier = 0.35
+	local_dev_points_modifier = 0.35	#TODO: add this to localization when integrated with BT
 }
 mississippi_tributary_modifier = {
 	province_trade_power_value = 10
