@@ -1,0 +1,31 @@
+conserve_the_religion_reform = {
+	icon = "cult_of_supreme_being"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = yes
+		has_dlc = "Emperor"
+		NOT = {
+			num_of_religion = {
+				religion = atheist
+				value = 0.3
+			}
+		}
+	}
+	modifiers = {
+		rr_royalists_influence = 0.1
+		papal_influence = 100
+		tolerance_own = 2
+		idea_cost = -0.05
+	}
+	effect = {
+		if = {
+			limit = { has_country_modifier = cult_of_reason }
+			add_stability = -1
+			remove_country_modifier = cult_of_reason
+		}
+	}
+	
+	ai = {
+		factor = 1
+	}
+}

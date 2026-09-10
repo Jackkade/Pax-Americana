@@ -1,0 +1,34 @@
+#State and Religion
+#in Common
+restoration_of_clergy_reform = {
+	icon = "religious_leader"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = yes
+		has_dlc = "Emperor"
+		NOT = {
+			num_of_religion = {
+				religion = atheist
+				value = 0.3
+			}
+		}
+	}
+	modifiers = {
+		tolerance_own = 3
+		max_revolutionary_zeal = -10
+		papal_influence = 100
+	}
+	effect = {
+		if = {
+			limit = { has_country_modifier = cult_of_reason }
+			add_stability = -1
+			remove_country_modifier = cult_of_reason
+		}
+	}
+	custom_attributes = {
+		enables_estate_church = yes
+	}
+	ai = {
+		factor = 2.5
+	}
+}

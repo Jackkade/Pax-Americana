@@ -34,9 +34,9 @@ country_decisions = {
 			NOT = { stability = -1 }
 		}
 		effect = {
-			set_country_flag = original_religion@ 
-			enable_religion = atheism
-			change_religion = atheism
+			disable_estate_effect = { estate = estate_church }
+			enable_religion = atheist
+			change_religion = atheist
 			
 			remove_country_modifier = the_test_act
 			remove_country_modifier = superintendent_office
