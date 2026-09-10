@@ -15,9 +15,10 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 2
 discovered_by = north_american
+add_permanent_province_modifier = { name = mississippi_floodplains_modifier duration = -1 }
 1444.1.1 = { tribal_owner = XXX } 
-1444.11.15 = { tribal_owner = XXX }
-1444.11.18 = { tribal_owner = XXX }
+1444.11.15 = { tribal_owner = XXX } 
+1444.11.18 = { tribal_owner = XXX } 
 1554.1.1 = { discovered_by = SPA } 
 1600.1.1 = { culture = osage } # Mississippian collapse. Pacaha tag now represent Quapaw.
 1762.1.1 = { 

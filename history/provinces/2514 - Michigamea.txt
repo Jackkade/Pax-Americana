@@ -12,10 +12,11 @@ native_ferocity = 1
 native_hostileness = 2
 tribal_owner = KSK
 discovered_by = north_american
+add_permanent_province_modifier = { name = mississippi_floodplains_modifier duration = -1 }
 1444.1.1 = { tribal_owner = XXX } 
-1444.11.15 = { tribal_owner = XXX }
-1444.11.18 = { tribal_owner = XXX }
-1659.1.1 = { discovered_by = FRA } # Médard Chouart Des Groseilliers
+1444.11.15 = { tribal_owner = XXX } 
+1444.11.18 = { tribal_owner = XXX } 
+1659.1.1 = { discovered_by = FRA } # MÃ©dard Chouart Des Groseilliers
 1701.8.14 = { 
     owner = ---
     controller = ---
