@@ -724,7 +724,7 @@ dom_cas_missions_1_c = {
 
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
+				value = 10
 				colonial_region = colonial_la_plata
 				is_city = yes
 			}
@@ -750,7 +750,10 @@ dom_cas_missions_1_c = {
 		completed_by = 1509.1.1
 		position = 10
 		provinces_to_highlight = {
-			colonial_region = colonial_colombia
+			OR = {
+				colonial_region = colonial_colombia
+				colonial_region = colonial_venezuela
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -763,8 +766,11 @@ dom_cas_missions_1_c = {
 					tooltip = colombia_holy_order_tooltip
 					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
 						has_holy_order_trigger = yes
-						colonial_region = colonial_colombia
-						value = 5
+						OR = {
+							colonial_region = colonial_colombia
+							colonial_region = colonial_venezuela
+						}
+						value = 10
 					}
 				}
 			}
@@ -773,12 +779,19 @@ dom_cas_missions_1_c = {
 					tooltip = colombia_holy_order_alternative_tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						religion = ROOT
-						colonial_region = colonial_colombia
-						value = 25
+						OR = {
+							colonial_region = colonial_colombia
+							colonial_region = colonial_venezuela
+						}
+						value = 50
 					}
 				}
 			}
 			colonial_colombia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			colonial_venezuela = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1445,7 +1458,7 @@ dom_cas_missions_2_c = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
+				value = 10
 				colonial_region = colonial_colombia
 				is_city = yes
 			}
@@ -1459,143 +1472,18 @@ dom_cas_missions_2_c = {
 				manuever = 5
 				siege = 1
 			}
-			upper_peru = {
+			upper_peru_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			potosi_area = {
+			peru_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = ROOT
-			}
-			antisuyu_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			kuntisuyu_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			huanuco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			cajamarca_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			quito_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			794 = {
-				add_permanent_claim = ROOT
-			}
-			2837 = {
-				add_permanent_claim = ROOT
-			}
-			2823 = {
-				add_permanent_claim = ROOT
-			}
-			2826 = {
-				add_permanent_claim = ROOT
-			}
-			812 = {
-				add_permanent_claim = ROOT
-			}
-			2822 = {
-				add_permanent_claim = ROOT
-			}
-			2821 = {
-				add_permanent_claim = ROOT
-			}
-			guatemala_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_yucatan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			yucatan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			chiapas_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			oaxaca_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-
-			eastern_mexico_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			guerrero_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			michoacan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			2657 = {
-				add_permanent_claim = ROOT
-			}
-			2621 = {
-				add_permanent_claim = ROOT
-			}
-			854 = {
-				add_permanent_claim = ROOT
-			}
-			2642 = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -1611,39 +1499,28 @@ dom_cas_missions_2_c = {
 		position = 10
 		provinces_to_highlight = {
 			OR = {
-				area = upper_peru
-				area = potosi_area
-				area = antisuyu_area
-				area = kuntisuyu_area
-				province_id = 794
-				province_id = 2837
+				region = upper_peru_region
+				region = peru_region
 			}
+			is_city = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 
 		trigger = {
-			upper_peru = {
+			upper_peru_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					is_city = no
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
-			potosi_area = {
+			peru_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			antisuyu_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			kuntisuyu_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			794 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2837 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					is_city = no
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 
@@ -4418,6 +4295,20 @@ dom_cas_missions_5_c = {
 				add_permanent_claim = ROOT
 			}
 			puebla_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			hidalgo_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			huasteca_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
