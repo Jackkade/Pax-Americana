@@ -33,9 +33,11 @@ can_colonize_province = {
                 }
                 FROM = {    #Colonies only colonize their regions
                     is_colonial_nation = yes
-                    NOT = {
-                        colonial_region = capital
-                    }
+                    ROOT = {
+                        NOT = {
+                            colonial_region = capital
+                        }
+                    }        
                 }
                 FROM = {
                     AND = { #Currently only Netherlands should colonize
@@ -71,7 +73,7 @@ can_colonize_province = {
                 }
                 #####    Portugal Banned with cas or SPA
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = { 
                         OR = {
                             tag = POR
@@ -96,7 +98,7 @@ can_colonize_province = {
 
                 #####    Portugal Americas & oceania
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = { 
                         OR = {
                             tag = POR
@@ -125,7 +127,7 @@ can_colonize_province = {
 
                 #####    Castille Banned Locations
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = { 
                         OR = {
                             tag = CAS 
@@ -147,7 +149,7 @@ can_colonize_province = {
 
                 #####    Castille Banned If no Portugal
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = { 
                         OR = {
                             tag = CAS
@@ -169,7 +171,7 @@ can_colonize_province = {
 
                 #####    England/Great Britain Banned Locations
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = {
                         OR = {
                             tag = ENG 
@@ -194,7 +196,7 @@ can_colonize_province = {
 
                 #####    France Banned Locations
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = {
                         tag = FRA
                     }
@@ -221,7 +223,7 @@ can_colonize_province = {
                 
                 #####    Russia/East Slavic Banned Locations
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = { 
                         OR = {
                             tag = RUS
@@ -248,7 +250,7 @@ can_colonize_province = {
                 
                 #####    Danish-Norwegians banned from colonizing not greenland
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = { 
                         OR = {
                             tag = DAN
@@ -267,7 +269,7 @@ can_colonize_province = {
 
                 #####    Non European Non adjacent
                 AND = {
-                    NOT = { is_colonial_nation = yes }
+                    FROM = { NOT = { is_colonial_nation = yes } }
                     FROM = { 
                         NOT = {
                             OR = {
