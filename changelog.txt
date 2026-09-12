@@ -107,3 +107,6 @@ Pax Americana Update 1.5 -
 - 2 New Trade Nodes, Sao Paulo and Goias
 - 4 New Colonial Regions, Paulistania, Guyana, Pernambuco, and Amazon
 - 7 New Monuments in Brazil
+
+- Improvements
+ - Colonies now only colonize their home region
