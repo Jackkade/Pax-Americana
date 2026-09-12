@@ -24,7 +24,6 @@ can_colonize_province = {
         potential = {
             FROM = {
                 ai = yes
-                NOT = { is_colonial_nation = yes }
             }
             OR = {
                 FROM = {    #No Non colonial Subjects
@@ -33,11 +32,11 @@ can_colonize_province = {
                 }
                 FROM = {    #Colonies only colonize their regions
                     is_colonial_nation = yes
-                    ROOT = {
+                    capital_scope = {
                         NOT = {
-                            colonial_region = capital
+                            colonial_region = ROOT
                         }
-                    }        
+                    }
                 }
                 FROM = {
                     AND = { #Currently only Netherlands should colonize
