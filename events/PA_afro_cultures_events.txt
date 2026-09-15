@@ -913,7 +913,7 @@ province_event = { #Nordic-Afro-Karibish
 }
 #Brazil
 province_event = { #Anglo-African-Colombian
-	id = pax_americana_afro_cultures.1c
+	id = pax_americana_afro_cultures.301
 	title = anglo_african_american_spread.title
 	desc = anglo_african_american_spread.desc
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
@@ -1052,7 +1052,7 @@ province_event = { #Anglo-African-Colombian
 }
 
 province_event = { #Franco-Afro-Antartique
-	id = pax_americana_afro_cultures.2c
+	id = pax_americana_afro_cultures.302
 	title = anglo_african_american_spread.title
 	desc = anglo_african_american_spread.desc
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
@@ -1191,7 +1191,7 @@ province_event = { #Franco-Afro-Antartique
 }
 
 province_event = { #Ibero-Afro-Brazilian
-	id = pax_americana_afro_cultures.3c
+	id = pax_americana_afro_cultures.303
 	title = anglo_african_american_spread.title
 	desc = anglo_african_american_spread.desc
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
@@ -1341,7 +1341,7 @@ province_event = { #Ibero-Afro-Brazilian
 
 
 province_event = { #Ibero-Afro-Colombian
-	id = pax_americana_afro_cultures.4c
+	id = pax_americana_afro_cultures.304
 	title = anglo_african_american_spread.title
 	desc = anglo_african_american_spread.desc
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
@@ -1493,7 +1493,7 @@ province_event = { #Ibero-Afro-Colombian
 }
 
 province_event = { #Dutch-Afro-Caribisch
-	id = pax_americana_afro_cultures.5c
+	id = pax_americana_afro_cultures.305
 	title = anglo_african_american_spread.title
 	desc = anglo_african_american_spread.desc
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
