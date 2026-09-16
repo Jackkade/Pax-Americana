@@ -83,7 +83,7 @@ gc_por_1 = {
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
-				colonial_region = colonial_paulistania
+				colonial_region = colonial_brazil
 				is_city = yes
 			}
 		}
@@ -587,7 +587,7 @@ gc_por_2_b = {
 			756 = {
 				is_strongest_trade_power = ROOT
 			}
-			224 = { #Changed to 25% of trade.
+			227 = { #Changed to 25% of trade.
 				trade_share = {
 					country = ROOT
 					share = 25
