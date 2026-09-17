@@ -2403,7 +2403,7 @@ dom_cas_missions_3_c = {
 		}
 
 		ai_weight = {
-			factor = 250
+			factor = 1000
 		}
 	}
 	
@@ -3288,7 +3288,7 @@ dom_cas_missions_4_c = {
 		}
 
 		ai_weight = {
-			factor = 250
+			factor = 1000
 		}
 	}
 	
@@ -4318,7 +4318,7 @@ dom_cas_missions_5_c = {
 		}
 
 		ai_weight = {
-			factor = 250
+			factor = 1000
 		}
 	}
 	
