@@ -233,8 +233,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2002;9789;sea;1702;-1;-1;-1;-1;Galapagos
 9789;9788;sea;1702;-1;-1;-1;-1;Galapagos 
 5855;9790;sea;1555;-1;-1;-1;-1;California-Islands
-9479;9480;sea;1555;-1;-1;-1;-1;Mostardes-Leonideo
-9479;9483;sea;1555;-1;-1;-1;-1;Mostardes-Pelotas
-9482;9480;sea;1555;-1;-1;-1;-1;Jaguarao-Leonideo
-;9790;sea;1555;-1;-1;-1;-1;
+9479;9480;sea;1535;-1;-1;-1;-1;Mostardes-Leonideo
+9479;9483;sea;1535;-1;-1;-1;-1;Mostardes-Pelotas
+9482;9480;sea;1535;-1;-1;-1;-1;Jaguarao-Leonideo
+9970;749;sea;1530;-1;-1;-1;-1;Cajapio-Maranhao
 -1;-1;;-1;-1;-1;-1;-1;-1
