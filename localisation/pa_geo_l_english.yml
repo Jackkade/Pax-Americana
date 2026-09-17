@@ -11,6 +11,7 @@
  
  
  #Alternatives
+ #USA
  SBN_USA:0 "Staatenbundnis"
  SBN_USA_ADJ:0 "Amerikanisch"
  ULA_USA:0 "Union Libre"
@@ -21,12 +22,33 @@
  FSA_USA_ADJ:0 "Amerikansk"
  LDS_USA:0 "Lega di Stati"
  LDS_USA_ADJ:0 "Americano"
+ #Thirteen Colonies
+ #Canada OR Newfoundland
+ TTC_14:0 "Fourteen Colonies"
+ TTC_14_ADJ:0 "Colonial"
+ #Florida OR Acadia
+ TTC_15:0 "Fifteen Colonies"
+ TTC_15_ADJ:0 "Colonial"
+ #Florida OR Acadia AND Canada OR Newfoundland
+ TTC_16:0 "Sixteen Colonies"
+ TTC_16_ADJ:0 "Colonial"
+ #Florida AND Acadia OR Florida OR Acadia AND Canada AND Newfoundland
+ TTC_17:0 "Seventeen Colonies"
+ TTC_17_ADJ:0 "Colonial"
+ #Florida AND Acadia AND Canada OR Newfoudland
+ TTC_18:0 "Eighteen Colonies"
+ TTC_18_ADJ:0 "Colonial"
+ #Florida AND Acadia AND Canada AND Newfoundland
+ TTC_19:0 "Nineteen Colonies"
+ TTC_19_ADJ:0 "Colonial"
  
  #Nations
  GRL:0 "Greenland"
  GRL_ADJ:0 "Greenlandic"
  NSP:0 "New Spain"
  NSP_ADJ:0 "New Spanish"
+ TTC:0 "Thirteen Colonies"
+ TTC_ADJ:0 "Colonial"
  UAY:0 "Uaymil"
  UAY_ADJ:0 "Uaymilian"
  ECA:0 "Ecab"

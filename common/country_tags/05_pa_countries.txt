@@ -3,7 +3,8 @@
 GRL = "countries/Greenland.txt"
 #Spanish
 NSP = "countries/NewSpain.txt"
-
+#English
+TTC = "countries/ThirteenColonies.txt"
 
 #Native Tags
 UAY = "countries/Uaymil.txt"
