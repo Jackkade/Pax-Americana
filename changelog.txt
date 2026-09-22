@@ -91,7 +91,7 @@ Pax Americana Update 1.4 - El Dorado
 - 3 New Monuments
 - 2 New Trade Nodes, Bogota and Caracas
 
-Pax Americana Update 1.5 - 
+Pax Americana Update 1.5 - The New Colossus
 
 # Major Map rework
 - Completely reworked map of Brazil
@@ -107,6 +107,8 @@ Pax Americana Update 1.5 -
 - 2 New Trade Nodes, Sao Paulo and Goias
 - 4 New Colonial Regions, Paulistania, Guyana, Pernambuco, and Amazon
 - 7 New Monuments in Brazil
+- Added more colonial cultures to South America
+- Added New World African Cultures for South America
 
 - Improvements
  - Colonies now only colonize their home region

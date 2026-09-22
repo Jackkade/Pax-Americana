@@ -1,4 +1,4 @@
-version="1.2"
+version="1.5"
 tags={
 	"Alternative History"
 	"Expansion"
