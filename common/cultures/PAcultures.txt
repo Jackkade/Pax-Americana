@@ -2010,6 +2010,21 @@ siouan = {
 			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
 		}
 	}
+	cahokian = {
+		primary = CAO
+		dynasty_names = {
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk
+			Saukenuk Thakiwakie
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
 	biloxi = {
 		primary = XXX
 		dynasty_names = {
