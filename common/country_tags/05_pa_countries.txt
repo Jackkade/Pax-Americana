@@ -47,3 +47,6 @@ TYC = "countries/Tepayacac.txt"
 TTQ = "countries/Tlatalquiltepec.txt"
 HCC = "countries/Huayacocotla.txt"
 QUH = "countries/Quiahuiztlan.txt"
+
+#Formable
+TUT = "countries/TurtleIsland.txt"
