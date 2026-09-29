@@ -65,6 +65,9 @@
  PROV2920:0 "Miranda"
  PROV2936:0 "Southern Guyana"
  
+ #Tags
+ CNP:0 "Kaan Peech"
+ CNP_ADJ:0 "Kaan Peechan"
 
  #Cultures
  yoron:0 "Tunica"
