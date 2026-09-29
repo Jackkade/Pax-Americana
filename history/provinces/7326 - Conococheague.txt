@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = susquehannock
+culture = shawnee
 religion = totemism
 capital = "Conococheague"
 trade_goods = unknown

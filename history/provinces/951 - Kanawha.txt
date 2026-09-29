@@ -1,8 +1,5 @@
-culture = shawnee
-owner = CLG
-controller = CLG
-add_core = CLG
-is_city = yes
+culture = moneton
+is_city = no
 religion = totemism
 capital = "Kanawha"
 trade_goods = unknown

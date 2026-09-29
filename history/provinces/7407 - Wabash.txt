@@ -1,4 +1,9 @@
 # No previous file for Pax Americana province
+owner = OSA
+controller = OSA
+add_core = OSA
+
+is_city = yes
 culture = osage
 religion = totemism
 capital = "Wabash"

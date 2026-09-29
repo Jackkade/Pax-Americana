@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = illini
+culture = cahokian
 religion = totemism
 capital = "Cuivere"
 trade_goods = unknown

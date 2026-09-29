@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = osage
+culture = ofo
 religion = totemism
 capital = "Myaamiaki"
 trade_goods = unknown

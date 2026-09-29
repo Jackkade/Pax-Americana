@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = illini
+culture = iowa
 religion = totemism
 capital = "Manitou"
 trade_goods = unknown

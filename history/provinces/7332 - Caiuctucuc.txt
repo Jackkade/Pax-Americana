@@ -1,9 +1,13 @@
 # No previous file for Pax Americana province
-culture = susquehannock
+culture = shawnee
 religion = totemism
 capital = "Caiuctucuc"
 trade_goods = unknown
 hre = no
+owner = HWK
+controller = HWK
+add_core = HWK
+is_city = yes
 base_tax = 2
 base_production = 1
 base_manpower = 1

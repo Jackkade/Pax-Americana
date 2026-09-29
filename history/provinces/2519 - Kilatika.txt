@@ -1,5 +1,5 @@
 # No previous file for Kilatika
-culture = miami
+culture = illini
 religion = totemism
 capital = "Kilatika"
 trade_goods = unknown
@@ -15,7 +15,7 @@ discovered_by = north_american
 1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
 1444.11.18 = { tribal_owner = XXX } 
-1659.1.1 = { discovered_by = FRA } # Médard Chouart Des Groseilliers
+1659.1.1 = { discovered_by = FRA } # MÃ©dard Chouart Des Groseilliers
 1679.1.1 = { discovered_by = ENG } 
 1707.5.12 = { discovered_by = GBR } 
 1813.10.5 = { 

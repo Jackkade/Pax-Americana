@@ -1,9 +1,6 @@
 # No previous file for Pax Americana province
-owner = KSP
-controller = KSP
-add_core = KSP
-is_city = yes
-culture = shawnee
+is_city = no
+culture = osage
 religion = totemism
 capital = "Foster"
 trade_goods = unknown

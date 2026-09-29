@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = susquehannock
+culture = moneton
 religion = totemism
 capital = "Okahok Amai"
 trade_goods = unknown

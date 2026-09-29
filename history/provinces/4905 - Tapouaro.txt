@@ -1,5 +1,5 @@
 # No previous file for Tapouaro
-culture = illini
+culture = iowa
 religion = totemism
 capital = "Tapouaro"
 trade_goods = unknown

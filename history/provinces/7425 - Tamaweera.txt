@@ -1,9 +1,6 @@
 # No previous file for Pax Americana province
-owner = CAO
-controller = CAO
-add_core = CAO
-is_city = yes
-culture = illini
+is_city = no
+culture = cahokian
 religion = totemism
 capital = "Tamaweera"
 trade_goods = unknown

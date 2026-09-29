@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = shawnee
+culture = osage
 religion = totemism
 capital = "Annis"
 trade_goods = unknown

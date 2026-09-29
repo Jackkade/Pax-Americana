@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = tionontate
+culture = miami
 religion = totemism
 capital = "Kineenpokimeekwaki"
 trade_goods = unknown

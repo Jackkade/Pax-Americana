@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = shawnee
+culture = moneton
 religion = totemism
 capital = "Shiallah"
 trade_goods = unknown

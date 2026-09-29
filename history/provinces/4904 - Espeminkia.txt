@@ -1,5 +1,5 @@
 # No previous file for Espeminkia
-culture = illini
+culture = cahokian
 religion = totemism
 capital = "Espeminkia"
 trade_goods = unknown

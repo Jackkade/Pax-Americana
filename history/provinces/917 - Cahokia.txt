@@ -1,12 +1,9 @@
 # 917 - Cahokia
-owner = CAO
-controller = CAO
-add_core = CAO
-is_city = yes
-culture = illini
+is_city = no
+culture = cahokian
 religion = totemism
 capital = "Cahokia"
-trade_goods = grain
+trade_goods = unknown
 hre = no
 base_tax = 2
 base_production = 2

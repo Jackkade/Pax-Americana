@@ -1,5 +1,5 @@
 # No previous file for Kuttawa
-culture = shawnee
+culture = osage
 religion = totemism
 capital = "Kuttawa"
 trade_goods = unknown

@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = osage
+culture = miami
 religion = totemism
 capital = "Atchatatkan"
 trade_goods = unknown

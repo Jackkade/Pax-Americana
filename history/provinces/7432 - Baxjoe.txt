@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = illini
+culture = chiwere
 religion = totemism
 capital = "Baxjoe"
 trade_goods = unknown

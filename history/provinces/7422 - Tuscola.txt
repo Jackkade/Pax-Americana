@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = miami
+culture = illini
 religion = totemism
 capital = "Tuscola"
 trade_goods = unknown

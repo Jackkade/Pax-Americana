@@ -1,5 +1,5 @@
 # No previous file for Pax Americana province
-culture = ofo
+culture = chickasaw
 religion = totemism
 capital = "Koroa"
 trade_goods = unknown

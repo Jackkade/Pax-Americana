@@ -1,9 +1,6 @@
 # No previous file for Pax Americana province
-owner = HWK
-controller = HWK
-add_core = HWK
-is_city = yes
-culture = shawnee
+is_city = no
+culture = moneton
 religion = totemism
 capital = "Olivet"
 trade_goods = unknown

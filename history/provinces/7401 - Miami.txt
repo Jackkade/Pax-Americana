@@ -1,9 +1,6 @@
 # No previous file for Pax Americana province
-owner = OSA
-controller = OSA
-add_core = OSA
-is_city = yes
-culture = osage
+is_city = no
+culture = ofo
 religion = totemism
 capital = "Miami"
 trade_goods = unknown
