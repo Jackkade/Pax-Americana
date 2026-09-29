@@ -1,0 +1,5 @@
+government = tribal
+technology_group = north_american
+primary_culture = iroquois
+religion = totemism
+capital = 960
