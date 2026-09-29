@@ -4,7 +4,7 @@ religion = totemism
 capital = "Mengkonkia"
 trade_goods = unknown
 hre = no
-base_tax = 2
+base_tax = 1
 base_production = 1
 base_manpower = 1
 native_size = 10
@@ -15,7 +15,7 @@ latent_trade_goods = { coal }
 1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
 1444.11.18 = { tribal_owner = XXX } 
-1659.1.1 = { discovered_by = FRA } # MÃ¯Â¿Â½dard Chouart Des Groseilliers
+1659.1.1 = { discovered_by = FRA } # MÃƒÂ¯Ã‚Â¿Ã‚Â½dard Chouart Des Groseilliers
 1679.1.1 = { discovered_by = ENG } 
 1707.5.12 = { discovered_by = GBR } 
 1732.1.1 = { 

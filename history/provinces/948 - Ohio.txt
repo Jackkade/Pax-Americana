@@ -8,7 +8,7 @@ religion = totemism
 capital = "Ohio"
 trade_goods = unknown
 hre = no
-base_tax = 2
+base_tax = 1
 base_production = 1
 base_manpower = 1
 native_size = 10
@@ -19,7 +19,7 @@ discovered_by = north_american
 1444.11.15 = { tribal_owner = XXX } 
 1444.11.18 = { tribal_owner = XXX } 
 1671.1.1 = { discovered_by = ENG } # Abraham Wood
-1679.1.1 = { discovered_by = FRA } # RenÃƒÂ©-Robert Cavelier
+1679.1.1 = { discovered_by = FRA } # RenÃƒÆ’Ã‚Â©-Robert Cavelier
 1707.5.12 = { discovered_by = GBR } 
 1750.1.1 = { 
     owner = LEN

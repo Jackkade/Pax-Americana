@@ -8,7 +8,7 @@ religion = totemism
 capital = "Wabash"
 trade_goods = grain
 hre = no
-base_tax = 2
+base_tax = 1
 base_production = 1
 base_manpower = 1
 native_size = 10
@@ -18,7 +18,7 @@ discovered_by = north_american
 1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
 1444.11.18 = { tribal_owner = XXX } 
-1659.1.1 = { discovered_by = FRA } # MÃ©dard Chouart Des Groseilliers
+1659.1.1 = { discovered_by = FRA } # MÃƒÂ©dard Chouart Des Groseilliers
 1670.1.1 = { 
     owner = ---
     controller = ---
