@@ -4,7 +4,7 @@ religion = totemism
 capital = "Potano"
 trade_goods = unknown
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
 base_manpower = 1
 native_size = 10
@@ -48,4 +48,4 @@ discovered_by = north_american
     controller = USA
     add_core = USA
     remove_core = SPA
-} # The Adams-On�s Treaty
+} # The Adams-OnÃ­s Treaty

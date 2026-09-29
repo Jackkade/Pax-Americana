@@ -6,13 +6,13 @@ trade_goods = unknown
 hre = no
 base_tax = 2
 base_production = 3
-base_manpower = 2
+base_manpower = 1
 native_ferocity = 1
 native_hostileness = 1
 native_size = 3
 1444.1.1 = { discovered_by = CAB } 
 1444.1.1 = { discovered_by = ARW } 
-1509.1.1 = { discovered_by = CAS } # Most of Cuba not mapped until 1509 by Sebasti·n de Ocampo
+1509.1.1 = { discovered_by = CAS } # Most of Cuba not mapped until 1509 by Sebasti√°n de Ocampo
 1516.1.23 = { discovered_by = SPA } 
 1545.1.1 = { 
     owner = SPA
@@ -21,6 +21,6 @@ native_size = 3
     culture = castillian
     religion = catholic
     is_city = yes
-    capital = "San Isidoro de HolguÌn"
+    capital = "San Isidoro de Holgu√≠n"
     trade_goods = tobacco
-} # Founded by Captain GarcÌa HolguÌn
+} # Founded by Captain Garc√≠a Holgu√≠n

@@ -21,7 +21,7 @@ native_size = 3
     culture = castillian
     religion = catholic
     trade_goods = coffee
-} # Founded by Diego Vel·zquez
+} # Founded by Diego Vel√°zquez
 
 1516.1.23 = { 
     discovered_by = SPA

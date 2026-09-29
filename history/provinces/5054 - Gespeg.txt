@@ -4,7 +4,7 @@ religion = totemism
 capital = "Pelseg"
 trade_goods = unknown
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
 base_manpower = 1
 native_size = 10
@@ -34,7 +34,7 @@ discovered_by = north_american
     culture = cosmopolitan_french
     religion = catholic
     trade_goods = fish
-    capital = "Gasp�"
+    capital = "GaspÃ©"
 } # First permanent fishing posts on the Gaspe peninsula
 
 1707.5.12 = { discovered_by = GBR } 

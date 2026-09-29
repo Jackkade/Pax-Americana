@@ -14,4 +14,4 @@ discovered_by = north_american
 1444.1.1 = { tribal_owner = XXX } 
 1444.11.15 = { tribal_owner = XXX } 
 1444.11.18 = { tribal_owner = XXX } 
-1732.1.1 = { discovered_by = FRA } # La Vérendrye
+1732.1.1 = { discovered_by = FRA } # La VÃ©rendrye
