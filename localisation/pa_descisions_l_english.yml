@@ -3,3 +3,7 @@
  greenland_colony_release_desc:0 "With Greenland within our entire control, we can create a colonial administration to directly manage the island for us."
  iroquois_nation_title:0 "Form Iroquois Confederacy"
  iroquois_nation_desc:0 "With the Five Tribes united, it is time to establish a proper confederacy by which we can expand our collective influence."
+ PA_conquer_local_tribe_title:0 "Subjugate Neighboring Tribe"
+ PA_conquer_local_tribe_desc:0 "We can use our army to subjugate our less powerful neighbors."
+ turtle_island_nation_title:0 "Form Turtle Island"
+ turtle_island_nation_desc:0 "TODO :)"

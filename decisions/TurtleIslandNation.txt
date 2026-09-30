@@ -1,0 +1,137 @@
+country_decisions = {
+
+	turtle_island_nation = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = central_algonquian
+				culture_group = plains_algonquian
+				culture_group = eastern_algonquian				
+				culture_group = iroquoian				
+			}
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = TUT }
+            NOT = {
+                has_country_flag = formed_turtle_island_flag
+            }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 35
+				}
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				superregion = north_america_superregion
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				superregion = north_america_superregion
+				value = 100
+			}
+			OR = {
+				num_accepted_cultures = 15
+				AND = {
+					government_rank = 3
+					num_accepted_cultures = 10
+				}
+			}
+			NOT = { exists = TUT }
+		}
+		effect = {
+			change_tag = TUT
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { superregion = north_america_superregion }
+					OR = {
+						culture_group = iroquoian
+						culture_group = plains_algonquian
+						culture_group = central_algonquian
+						culture_group = eastern_algonquian
+					}
+				}
+				ROOT = { inherit = PREV }
+			}
+			northeast_america_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUT
+			}
+			canada_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUT
+			}
+			southeast_america_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUT
+			}
+			mississippi_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUT
+			}
+			great_lakes_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUT
+			}
+			great_plains_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUT
+			}
+			hudson_bay_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TUT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#can't have more than one elective monarchy in the game
+			if = {
+				limit = {
+					has_reform = elective_monarchy
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			add_prestige = 100
+			set_country_flag = formed_turtle_island_flag
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		ai_importance = 400
+	}
+}
