@@ -1,0 +1,77 @@
+country_decisions = {
+	PA_conquer_local_tribe = {
+		major = yes
+
+		potential = {
+			religion = totemism
+			OR = {
+				technology_group = north_american
+				technology_group = high_american
+			}
+			any_owned_province = {
+				any_empty_neighbor_province = {
+					is_city = no
+					superregion = north_america_superregion
+				} 
+			}
+		}
+		allow = {
+			manpower_percentage = 0.8 
+			any_owned_province = {
+				any_empty_neighbor_province = {
+					num_of_units_in_province = {
+						who = ROOT
+						amount = 5
+					}
+					superregion = north_america_superregion
+					is_city = no
+				}
+				is_core = ROOT
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					any_empty_neighbor_province = {
+						num_of_units_in_province = {
+							who = ROOT
+							amount = 5
+						}
+						superregion = north_america_superregion
+						is_city = no
+					}
+					is_core = ROOT
+				}
+				random_empty_neighbor_province = {
+					limit = {
+						num_of_units_in_province = {
+							who = ROOT
+							amount = 5
+						}
+						superregion = north_america_superregion
+						NOT = { is_city = yes }
+					}
+					cede_province = ROOT
+					add_nationalism = 30
+					if = {
+						limit = {
+							NOT = {
+								culture = ROOT
+							}
+						}
+						spawn_rebels = {
+							type = nationalist_rebels
+							size = 2
+							culture = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
