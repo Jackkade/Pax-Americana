@@ -34,7 +34,7 @@ country_decisions = {
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				superregion = north_america_superregion
-				value = 100
+				value = 250
 			}
 			OR = {
 				num_accepted_cultures = 15
@@ -48,7 +48,7 @@ country_decisions = {
 		effect = {
 			change_tag = TUT
 			on_change_tag_effect = yes
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes #No missions right now
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
