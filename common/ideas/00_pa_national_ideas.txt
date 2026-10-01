@@ -42,3 +42,44 @@ NSP_ideas = {
 		governing_capacity_modifier = 0.2
 	}
 }
+#Turtle Island
+TUT_ideas = {
+	start = {
+		global_institution_spread = 0.5
+		discipline = 0.05
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.33
+	}
+	
+	trigger = {
+		tag = TUT
+	}
+	free = yes
+	
+	TUT_take_back_turtle_island = {
+		land_morale = 0.10
+		cb_on_religious_enemies = yes 
+	}
+	TUT_assert_native_culture = {
+		idea_cost = -0.1
+	}
+	TUT_woodlands_warriors = {
+		infantry_power = 0.10
+		land_forcelimit_modifier = 0.30
+	}
+	TUT_unite_the_tribes = {
+		core_creation = -0.20
+	}
+	TUT_controlled_burns = {
+		build_cost = -0.15
+	}
+	TUT_great_confederacy = {
+		promote_culture_cost = -0.25
+		expand_administration_cost = -0.50 
+	}
+	TUT_keepers_of_the_doors = {
+		global_own_trade_power = 0.25
+	}
+}
